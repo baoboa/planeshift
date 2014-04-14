@@ -1,0 +1,184 @@
+<widget_description>
+
+    <widget name="Parents" factory="pawsCharParents"
+            visible="no" movable="no" resizable="no" resizetoscreen="yes" >
+        <frame x="0" y="0" width="800" height="600" border="no" />
+        <font name="cupandtalon.ttf" r="255" g="255" b="255" sr="0" sg="0" sb="0" shadow="yes" size="15" resizetoscreen="yes" />
+        <bgimage resource="login_background" />
+
+        <!-- Title -->
+        <widget name="label_parents" factory="pawsTextBox">
+            <frame x="200" y="40" width="400" height="35" />
+            <font name="scurlock.ttf" r="255" g="255" b="255" sr="0" sg="0" sb="0" shadow="yes" size="24" resizetoscreen="yes" />
+            <text string="PARENTS" horizAdjust="CENTRE" />
+        </widget>
+
+        <!-- CP -->
+        <widget name="CP" factory="pawsTextBox">
+            <frame x="605" y="40" width="100" height="40" border="no" />
+            <text string="" horizAdjust="CENTRE" />
+            <bgimage resource="cpBox" />
+        </widget>
+
+        <!-- Father Name -->
+        <widget name="label_father" factory="pawsTextBox">
+            <frame x="100" y="125" width="150" height="30" border="no"/>
+        <font name="cupandtalon.ttf"  r="255" g="255" b="255" sr="0" sg="0" sb="0" shadow="yes" size="18" resizetoscreen="yes" />
+            <text string="Father:" />
+        </widget>
+
+        <!-- Father Status -->
+        <widget name="fstatus" factory="pawsRadioButtonGroup" >
+            <frame x="100" y="150" width="220" height="90" border="no" />
+        <font name="cupandtalon.ttf" r="255" g="255" b="255" sr="0" sg="0" sb="0" shadow="yes" size="14" resizetoscreen="yes" />
+            <radio on="radioon2" off="radiooff2" size="30"/>
+
+            <widget name="FNormal" factory="pawsRadioButton">
+                <frame x="0" y="0" width="150" height="30" border="no" />
+                <text string="Normal" position="right"/>
+            </widget>
+
+            <widget name="FFamous" factory="pawsRadioButton">
+                <frame x="0" y="30" width="150" height="30" />
+                <text string="Famous" position="right"/>
+            </widget>
+
+            <widget name="FExceptional" factory="pawsRadioButton">
+                <frame x="0" y="60" width="150" height="30" />
+                <text string="Exceptional" position="right" />
+            </widget>
+        </widget>
+
+        <!-- Father Job -->
+        <widget name="text" factory="pawsTextBox" >
+            <frame x="295" y="125" width="80" height="30" />
+            <font name="cupandtalon.ttf"  r="255" g="255" b="255" sr="0" sg="0" sb="0" shadow="yes" size="18" resizetoscreen="yes" />
+            <text string="Job:" />
+        </widget>
+
+        <widget name="fatherjobs" factory="pawsListBox" id="1000" >
+            <frame x="295" y="150" width="160" height="110" border="no" />
+            <font name="LiberationSans-Regular.ttf" r="255" g="255" b="255" sr="0" sg="0" sb="0" shadow="yes" size="12" resizetoscreen="yes" />
+            <scrollbar arrowup="Up Arrow" arrowdown="Down Arrow" arrowsize="8" width="15"  border="no"/>
+            <highlight resource="Highlight" />
+            <columns height="20">
+                <column width="140" >
+                    <widget name="" factory="pawsTextBox"></widget>
+                </column>
+            </columns>
+        </widget>
+
+        <widget name="fjobdesc" factory="pawsMultiLineTextBox"  >
+            <frame x="490" y="150" width="250" height="110" border="no" />
+        <font name="LiberationSans-Regular.ttf" r="255" g="255" b="255" sr="0" sg="0" sb="0" shadow="yes" size="12" />
+            <text string="Select the job your father has" />
+        </widget>
+
+        <!-- Mother Name -->
+        <widget name="mlabel" factory="pawsTextBox">
+            <frame x="100" y="280" width="150" height="30" border="no"/>
+        <font name="cupandtalon.ttf" r="255" g="255" b="255" sr="0" sg="0" sb="0" shadow="yes" size="18" resizetoscreen="yes" />
+            <text string="Mother:" />
+        </widget>
+
+        <!-- Mother Status -->
+        <widget name="mstatus" factory="pawsRadioButtonGroup" >
+            <frame x="100" y="310" width="200" height="90" border="no" />
+            <font name="cupandtalon.ttf" r="255" g="255" b="255" sr="0" sg="0" sb="0" shadow="yes" size="14" resizetoscreen="yes" />
+            <radio on="radioon2" off="radiooff2" size="32"/>
+
+            <widget name="MNormal" factory="pawsRadioButton">
+                <frame x="0" y="0" width="150" height="30" border="no" />
+                <text string="Normal" position="right"/>
+            </widget>
+
+            <widget name="MFamous" factory="pawsRadioButton">
+                <frame x="0" y="30" width="150" height="30" />
+                <text string="Famous" position="right"/>
+            </widget>
+
+            <widget name="MExceptional" factory="pawsRadioButton">
+                <frame x="0" y="60" width="150" height="30" />
+                <text string="Exceptional" position="right"/>
+            </widget>
+        </widget>
+
+        <!-- Mother Job -->
+        <widget name="text" factory="pawsTextBox" >
+            <frame x="295" y="280" width="80" height="30" />
+            <font name="cupandtalon.ttf" r="255" g="255" b="255" sr="0" sg="0" sb="0" shadow="yes" size="18" resizetoscreen="yes" />
+            <text string="Job:" />
+        </widget>
+
+        <widget name="motherjobs" factory="pawsListBox" id="2000" >
+            <frame x="295" y="310" width="160" height="110" border="no" />
+        <font name="LiberationSans-Regular.ttf" r="255" g="255" b="255" sr="0" sg="0" sb="0" shadow="yes" size="12" resizetoscreen="yes" />
+            <scrollbar arrowup="Up Arrow" arrowdown="Down Arrow" arrowsize="8" width="15"  border="no"/>
+            <highlight resource="Highlight" />
+            <columns height="20">
+                <column width="140" >
+                    <widget name="" factory="pawsTextBox"></widget>
+                </column>
+            </columns>
+        </widget>
+
+        <widget name="mjobdesc" factory="pawsMultiLineTextBox"  >
+            <frame x="490" y="310" width="250" height="110" border="no" />
+        <font name="LiberationSans-Regular.ttf" r="255" g="255" b="255" sr="0" sg="0" sb="0" shadow="yes" size="12" />
+            <text string="Select the job your mother has" />
+        </widget>
+
+        <!-- Religion Select -->
+        <widget name="text" factory="pawsTextBox">
+            <frame x="100" y="430" width="100" height="20" />
+        <font name="cupandtalon.ttf" r="255" g="255" b="255" sr="0" sg="0" sb="0" shadow="yes" size="18" resizetoscreen="yes" />
+            <text string="Religion:" />
+        </widget>
+
+        <widget name="Religions" factory="pawsListBox" id="4000">
+            <frame x="120" y="450" width="150" height="80" border="no" />
+            <font name="LiberationSans-Regular.ttf" r="255" g="255" b="255" sr="0" sg="0" sb="0" shadow="yes" size="12" resizetoscreen="yes" />
+            <scrollbar arrowup="Up Arrow" arrowdown="Down Arrow" arrowsize="8" width="15"  border="no"/>
+            <highlight resource="Highlight" />
+            <columns height="20" headings="no">
+                <column width="130" >
+                    <widget name="Religion" factory="pawsTextBox"></widget>
+                </column>
+            </columns>
+        </widget>
+
+        <widget name="religiondesc" factory="pawsMultiLineTextBox">
+          <frame x="295" y="450" width="400" height="60" border="no" />
+          <font name="LiberationSans-Regular.ttf" r="255" g="255" b="255" sr="0" sg="0" sb="0" shadow="yes" size="12" resizetoscreen="yes" />
+          <text string="Please select your character's religion."/>
+        </widget>
+
+        <!-- Navigation Buttons -->
+        <widget name="navBar" factory="pawsWidget">
+            <frame x="30" y="550" width="740" height="40" />
+            <font name="scurlock.ttf" r="255" g="255" b="255" sr="0" sg="0" sb="0" shadow="no" size="16" resizetoscreen="yes" />
+
+            <widget name="BackButton" factory="pawsButton" id="6000">
+                <frame x="110" y="0" width="100" height="40" />
+                <label text="Prev"/>
+                <bgimage resource="buttonDefault" />
+            </widget>
+
+            <!-- Randomize button -->
+            <widget name="randomize" factory="pawsButton">
+                <frame x="306" y="0" width="130" height="40" />
+                <label text="Randomize"/>
+                <bgimage resource="buttonBrown" />
+            </widget>
+
+            <widget name="NextButton" factory="pawsButton" id="5000">
+                <frame x="520" y="0" width="100" height="40" />
+                <label text="Next" />
+                <bgimage resource="buttonDefault" />
+            </widget>
+
+        </widget>
+
+    </widget>
+
+</widget_description>

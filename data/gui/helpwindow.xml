@@ -1,0 +1,21 @@
+<widget_description>
+    <pawsHelp name="HelpWindow" visible="no" savepositions="yes" movable="yes" resizable="yes" configurable="yes" style="New Standard GUI" keepaspect="no">
+
+       <frame x="100" y="90" width="630" height="285" border="yes"/>
+       <title resource="Scaling Title Bar" text="Help" align="left" close_button="yes"/>
+       <pawsSimpleTree name="HelpTree">
+          <frame x="27" y="29" width="250" height ="224" border="yes" />
+       </pawsSimpleTree>
+
+       <pawsDocumentView name="HelpText">
+            <frame x="294" y="29" width="320" height="224" border="no"/>
+            <attachpoints>
+                <attach point="ATTACH_RIGHT"/>
+                <attach point="ATTACH_TOP"/>
+                <attach point="ATTACH_LEFT"/>
+                <attach point="ATTACH_BOTTOM"/>
+            </attachpoints>
+        </pawsDocumentView>
+
+    </pawsHelp>
+</widget_description>

@@ -1,0 +1,33 @@
+#! /usr/bin/php
+<?php
+//converter for factions from the old faction_standing cvs to a proper database format.
+// Change your database settings here:
+$db = mysql_connect("localhost", "planeshift", "planeshift") or die ("Unable to connect!"); // host, user, pass
+mysql_select_db("planeshift", $db) or die("Could not select database");
+
+//loads all the id and faction standing for parsing
+$scripts = mysql_query("SELECT id, faction_standings from characters") or die("fatal error: couldn't select stuff: " . mysql_error() . "\n");
+while ($row = mysql_fetch_array($scripts))
+{
+    //get the pid of the character and the faction standing in the current format
+    $pid = $row[0];
+    $factions = $row[1];
+    //parse the faction list and output sql queries
+    $factionID = strtok($factions,",");
+    //if we don't find additional entries we are done
+    while($factionID != FALSE && $factionID != "")
+    {
+        $factionVALUE = strtok(",");
+        //protection against malformed faction standings
+        if($factionVALUE === FALSE || $factionVALUE == "")
+        {
+            break;
+        }
+        //add the new faction in the new table
+        $query = "INSERT INTO character_factions (character_id, faction_id, value) values (".$pid.",".$factionID.",".$factionVALUE.")";
+        mysql_query($query);
+        $factionID = strtok(",");
+    }
+}
+
+?>

@@ -1,0 +1,120 @@
+<widget_description>
+
+    <pawsPetitionGMWindow name="PetitionGMWindow" visible="no" savepositions="yes" movable="yes" resizable="yes" keepaspect="no" configurable="yes" style="New Standard GUI">
+
+        <frame x="0" y="100" width="600" height="350" border="yes" />
+        <minframe width="600" height="350" />
+        <title resource="Scaling Title Bar" text="Manage Petitions" align="left" close_button="yes" />
+
+        <widget name="PetitionList" factory="pawsListBox" sortBy="5" sortOrder="asc">
+            <frame x="25" y="12" width="565" height="160" border="no"/>
+            <columns height="20" headings="yes">
+                <column width="25" >
+                    <pawsTextBox name="Lvl" />
+                </column>
+                <column width="80" >
+                    <pawsTextBox name="GM" />
+                </column>
+                <column width="80" >
+                    <pawsTextBox name="Player" />
+                </column>
+                <column width="50" >
+                    <pawsTextBox name="Online" />
+                </column>
+                <column width="75" >
+                    <pawsTextBox name="Status" />
+                </column>
+                <column width="120" >
+                    <pawsTextBox name="Created Date" />
+                </column>
+                <column width="200">
+                    <pawsTextBox name="Petition" />
+                </column>
+            </columns>
+
+             <attachpoints>
+		<attach point="ATTACH_RIGHT" />
+		<attach point="ATTACH_TOP" />
+		<attach point="ATTACH_LEFT" />
+		<attach point="ATTACH_BOTTOM" />
+             </attachpoints>
+
+        </widget>
+
+        <pawsTextBox name="PetitionTextLabel" style="Header Font">
+            <frame x="40" y="179" width="150" height="20" border="no"/>
+            <text string="Petition text:" />
+	    <attachpoints>
+		<attach point="ATTACH_RIGHT" />
+		<attach point="ATTACH_LEFT" />
+		<attach point="ATTACH_BOTTOM" />
+	    </attachpoints>
+        </pawsTextBox>
+
+        <pawsMessageTextBox name="PetitionText" style="Fancy Standard MsgText">
+            <frame x="25" y="201" width="565" height="105" border="yes" />
+	    <attachpoints>
+		<attach point="ATTACH_RIGHT" />
+		<attach point="ATTACH_LEFT" />
+		<attach point="ATTACH_BOTTOM" />
+	    </attachpoints>
+        </pawsMessageTextBox>
+
+        <pawsButton name="Admin Petition" id="8" style="Standard Button">
+            <frame x="20" y="324" width="75" height="22" />
+            <label text="Admin" />
+	    <attachpoints>
+		<attach point="ATTACH_BOTTOM" />
+	    </attachpoints>
+        </pawsButton>
+
+        <pawsButton name="Assign Button" id="2" style="Standard Button">
+            <frame x="100" y="324" width="75" height="22" />
+            <label text="Claim" />
+	    <attachpoints>
+		<attach point="ATTACH_BOTTOM" />
+	    </attachpoints>
+        </pawsButton>
+
+        <pawsButton name="Unassign Button" id="3" style="Standard Button">
+            <frame x="180" y="324" width="75" height="22" />
+            <label text="Unclaim" />
+	    <attachpoints>
+		<attach point="ATTACH_BOTTOM" />
+	    </attachpoints>
+        </pawsButton>
+
+        <pawsButton name="Escalate Button" id="4" style="Standard Button">
+            <frame x="260" y="324" width="75" height="22" />
+            <label text="Escalate" />
+	    <attachpoints>
+		<attach point="ATTACH_BOTTOM" />
+	    </attachpoints>
+        </pawsButton>
+
+        <pawsButton name="Descalate Button" id="5" style="Standard Button">
+            <frame x="340" y="324" width="75" height="22" />
+            <label text="Descalate" />
+	    <attachpoints>
+		<attach point="ATTACH_BOTTOM" />
+	    </attachpoints>
+        </pawsButton>
+
+        <pawsButton name="Close Button" id="6"  style="Standard Button">
+            <frame x="420" y="324" width="75" height="22" />
+            <label text="Close" />
+	    <attachpoints>
+		<attach point="ATTACH_BOTTOM" />
+	    </attachpoints>
+        </pawsButton>
+
+        <pawsButton name="Cancel Button" id="7" style="Standard Button">
+            <frame x="500" y="324" width="75" height="22" />
+            <label text="Delete" />
+	    <attachpoints>
+		<attach point="ATTACH_BOTTOM" />
+	    </attachpoints>
+        </pawsButton>
+
+    </pawsPetitionGMWindow>
+</widget_description>

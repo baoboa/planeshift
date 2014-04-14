@@ -1,0 +1,446 @@
+<Author text="Silverstein" />
+<StringTable>
+  <item orig="750" trans="" />
+  <item orig="System text color" trans="Color del text del Sistema" />
+  <item orig="Put an item up for sale or offer to buy something." trans="Posar a la venda un objecte o oferir-se per comprar quelcom" />
+  <item orig="Stats" trans="Nivells" />
+  <item orig="Admin text color" trans="Color del text d'Administració" />
+  <item orig="Allow spawning item with missing mesh" trans="Permetre repoblació d'objectes sense unió" />
+  <item orig="Desc" trans="Descripció" />
+  <item orig="!!!WARNING!!!" trans="!!!ULL VIU!!!" />
+  <item orig="Others' attacks (Successful ones)" trans="Atacs d'algú altre (Reeixits)" />
+  <item orig="Own attacks that missed the target" trans="Atacs d'un mateix que han fallat l'objectiu" />
+  <item orig="Graphics" trans="Gràfics" />
+  <item orig="Loading GUI" trans="Carregant interfície gràfica" />
+  <item orig="Can I join you ?" trans="Em puc ajuntar amb tu?" />
+  <item orig="server" trans="servidor" />
+  <item orig="CHILDHOOD" trans="INFANTESA" />
+  <item orig="LIFE EVENTS" trans="ESDEVENIMENTS VITALS" />
+  <item orig="SL" trans="" />
+  <item orig="Buy" trans="Comprar" />
+  <item orig="Guild message of the day (A short message):" trans="Missatge del dia del gremi (Missatge curt):" />
+  <item orig="Modifiers" trans="Modificadors" />
+  <item orig="Actions sounds" trans="Sons de les accions" />
+  <item orig="Randomize" trans="Aleatori" />
+  <item orig="Create alliance" trans="Crear aliança" />
+  <item orig="Third Person Lara" trans="Tercera Persona a l'estil Lara" />
+  <item orig="Disband" trans="Dissoldre" />
+  <item orig="Edit" trans="Editar" />
+  <item orig="System" trans="Sistema" />
+  <item orig="Load" trans="Carregar" />
+  <item orig="Buffs" trans="Aficionats" />
+  <item orig="Stack Count" trans="Comptador de la Pila" />
+  <item orig="Talk to people in your sector." trans="Parlar a la gent del teu sector." />
+  <item orig="Factions:" trans="Faccions:" />
+  <item orig="Paths" trans="Camins" />
+  <item orig="Active" trans="Actiu" />
+  <item orig="Creatures:" trans="Criatures:" />
+  <item orig="View" trans="Veure" />
+  <item orig="PATHS" trans="CAMINS" />
+  <item orig="Shadows" trans="Ombres" />
+  <item orig="Unclaim" trans="Abandonar" />
+  <item orig="Server:" trans="Servidor:" />
+  <item orig="Enable Shadows" trans="Habilitar Ombres" />
+  <item orig="Exit PlaneShift" trans="Sortir de PlaneShift" />
+  <item orig="Escalation Level:" trans="Nivell d'Escalament" />
+  <item orig="Notify when members login/logout" trans="Notificar quan els membres inicien/acaben la sessió" />
+  <item orig="Talk to someone privately." trans="Parlar a algú en privat" />
+  <item orig="Magic Skills List:" trans="Llista d'Habilitats Màgiques" />
+  <item orig="House:" trans="Casa:" />
+  <item orig="Withdraw" trans="Retirar" />
+  <item orig="%s from %s: %s" trans="%s de %s: %s" />
+  <item orig="%s from %s: %s" trans="%s de %s: %s" />
+  <item orig="Instant Cast" trans="Encanteri Instantani" />
+  <item orig="H:" trans="" />
+  <item orig="Amount available to withdraw" trans="Quantitat disponible per retirar" />
+  <item orig="Adaptive distance" trans="Distància adaptativa" />
+  <item orig="Ban" trans="Bloquejar" />
+  <item orig="Third Person M64" trans="Tercera Persona a l'estil M64" />
+  <item orig="Interface Volume" trans="Volum de la Interfície" />
+  <item orig="Edit points" trans="Editar els punts" />
+  <item orig="Points" trans="Punts" />
+  <item orig="Coins to exchange:" trans="Monedes a canviar:" />
+  <item orig="PvP" trans="" />
+  <item orig="landscape" trans="paisatge" />
+  <item orig="Type:" trans="Tipus:" />
+  <item orig="Time: " trans="Hora:" />
+  <item orig="Exchange coins" trans="Canviar monedes" />
+  <item orig="Log the system messages" trans="Registrar els missatges del sistema" />
+  <item orig="Hostility" trans="Hostilitat" />
+  <item orig="Account User Name:" trans="Nom d'Usuari del Compte:" />
+  <item orig="Auction" trans="Subhasta" />
+  <item orig="You currently have no petitions." trans="Actualment no tens peticions." />
+  <item orig="Attributes" trans="Atributs" />
+  <item orig="You will now ignore %s." trans="A partir d'ara ignores %s." />
+  <item orig="Study" trans="Estudiar" />
+  <item orig="Private Notes" trans="Anotacions Privades" />
+  <item orig="Change name" trans="Canviar-li el nom" />
+  <item orig="Getting Characters" trans="Obtenint Personatges" />
+  <item orig="Unknown command" trans="Comanda Desconeguda" />
+  <item orig="Others' attacks that missed the target" trans="Atacs d'algú altre que han fallat l'objectiu" />
+  <item orig="Min. FPS:" trans="" />
+  <item orig="Main" trans="Principal" />
+  <item orig="Change" trans="Canviar" />
+  <item orig="Descalate" trans="Desescalar" />
+  <item orig="Mother Name:" trans="Nom de la teva Mare" />
+  <item orig="Privil." trans="Privil." />
+  <item orig="Skin Colour" trans="Color de Pell" />
+  <item orig="Master:" trans="Mestre" />
+  <item orig="Details" trans="Detalls" />
+  <item orig="Collision Detection" trans="Detecció de Col·lisions" />
+  <item orig="Max. FPS:" trans="" />
+  <item orig="Prev" trans="Anterior" />
+  <item orig="Requesting connection" trans="Demanant la connexió" />
+  <item orig="Prv notes" trans="Notes Prv." />
+  <item orig="Reload Cache" trans="Recarregar la Memòria Cau" />
+  <item orig="Amount available to deposit" trans="Quantitat disponible per dipositar" />
+  <item orig="Movements" trans="Moviments" />
+  <item orig="Mesh:" trans="Unió:" />
+  <item orig="Resolution" trans="Resolució" />
+  <item orig="Gender:" trans="Gènere" />
+  <item orig="Refresh MOTD" trans="Refrescar el Missatge del Dia" />
+  <item orig="Login" trans="Inicia la Sessió" />
+  <item orig="Z:" trans="" />
+  <item orig="Spell Description:" trans="Descripció de l'Encanteri" />
+  <item orig="Petition Info" trans="Info de la Petició" />
+  <item orig="%s has invited you to join a group. Click Yes to accept or No to reject." trans="%s t'ha convidat a ajuntar-te al seu grup. Fes clic a Sí per acceptar o No per refusar." />
+  <item orig="You must select a petition from the list in order to cancel it." trans="Has de seleccionar una petició de la lista per tal de cancel·lar-la" />
+  <item orig="Alliance" trans="Aliança" />
+  <item orig="Full Mesh" trans="Unió Completa" />
+  <item orig="I am leaving" trans="Estic anant-me'n" />
+  <item orig="List:" trans="Llista:" />
+  <item orig="LOGIN" trans="INICI DE SESSIÓ" />
+  <item orig="Remove" trans="Suprimir" />
+  <item orig="Action:" trans="Acció:" />
+  <item orig="Never tired" trans="Mai cansat" />
+  <item orig="Do you really wish to leave Yliakum?" trans="Vols realment sortir d'Yliakum?" />
+  <item orig="Count" trans="Comptar" />
+  <item orig="Enter the command(s):" trans="Introdueix la comanda/es:" />
+  <item orig="Month:" trans="Mes:" />
+  <item orig="Chat" trans="Conversa" />
+  <item orig="Father Name:" trans="Nom del teu Pare" />
+  <item orig="Rank" trans="Grau" />
+  <item orig="Spawn item" trans="Crear objecte" />
+  <item orig="o&clock" trans="en punt" />
+  <item orig="Own combat stance changes" trans="Canvis d'actitud en el propi combat" />
+  <item orig="Experience" trans="Experiència" />
+  <item orig="Upload!" trans="Carregar!" />
+  <item orig="Deposit" trans="Dipositar" />
+  <item orig="? Weight" trans="? Pes" />
+  <item orig="No Target" trans="Sense Objectiu" />
+  <item orig="Tria" trans="" />
+  <item orig="Group text color" trans="Color del text de Grup" />
+  <item orig="New" trans="Nou" />
+  <item orig="Mute sounds on focus loss" trans="Emmudeix els sons quan es perdi el focus" />
+  <item orig="Add Linked" trans="" />
+  <item orig="keyboard" trans="teclat" />
+  <item orig="Activity:" trans="Activitat:" />
+  <item orig="You have been assigned to the selected petition." trans="Has estat assignat a la petició seleccionada." />
+  <item orig="Combat" trans="Combat" />
+  <item orig="Path" trans="Camí" />
+  <item orig="Kill Player" trans="Matar el Jugador" />
+  <item orig="%s says: %s" trans="%s diu: %s" />
+  <item orig="Get Reward" trans="Obtenir Recompensa" />
+  <item orig="Magic" trans="Màgia" />
+  <item orig="Own attacks that fail to penetrate the armor" trans="Atacs d'un mateix que no han pogut penetrar l'armadura" />
+  <item orig="Credits" trans="Crèdits" />
+  <item orig="details" trans="detalls" />
+  <item orig="HP" trans="" />
+  <item orig="%s shouts: %s" trans="%d crida: %s" />
+  <item orig="No server running at the moment" trans="Ara mateix no hi ha cap servidor en marxa" />
+  <item orig="You have entered edit mode." trans="Has entrat el mode d'edició" />
+  <item orig="CHARACTER CREATION" trans="CREACIÓ DEL CARÀCTER" />
+  <item orig="Glyphs" trans="Glif" />
+  <item orig="Alliance:" trans="Aliança:" />
+  <item orig="Various Skill description:" trans="Descripció de les Habilitats Diverses" />
+  <item orig="Edit level" trans="Editar el nivell" />
+  <item orig="Leave" trans="Sortir" />
+  <item orig="Capacity:" trans="Capacitat:" />
+  <item orig="Debuffs" trans="Desaficionar" />
+  <item orig="You have ignored the following players:" trans="Has ignorat els jugadors següents:" />
+  <item orig="Items:" trans="Objectes:" />
+  <item orig="Others' attacks that fail to penetrate the armor" trans="Atacs d'algú altre que no han pogut penetrar l'armadura" />
+  <item orig="Admin" trans="Admin" />
+  <item orig="mouse" trans="ratolí" />
+  <item orig="Various Skills List:" trans="Llistat d'Habilitats Variades" />
+  <item orig="Stats description:" trans="Descripció dels nivells" />
+  <item orig="Lets go !" trans="Som-hi !" />
+  <item orig="Account:" trans="Compte:" />
+  <item orig="%s %s" trans="" />
+  <item orig="Trias" trans="Tries" />
+  <item orig="General" trans="General" />
+  <item orig="Life" trans="Vida" />
+  <item orig="Password:" trans="Contrasenya:" />
+  <item orig="Currently, there are no petitions." trans="Ara mateix no hi ha peticions." />
+  <item orig="Set" trans="Establir" />
+  <item orig="Actions Volume" trans="Volum de les Accions" />
+  <item orig="Quest Testing" trans="Test de Proves" />
+  <item orig="Year:" trans="Any:" />
+  <item orig="Save" trans="Desar" />
+  <item orig="Promote" trans="Ascendir" />
+  <item orig="Combat Skills" trans="Habilitats de Combat" />
+  <item orig="Polygon:" trans="Polígon" />
+  <item orig="Talk to everyone in your guild privately." trans="Parlar a tothom al teu gremi en privat." />
+  <item orig="Others' attacks that are dodged" trans="Atacs d'algú altre que han estat eludits" />
+  <item orig="Combat music" trans="Música de Combat" />
+  <item orig="Own attacks (Successful ones)" trans="Atacs propis (Reeixits)" />
+  <item orig="The selected petition was cancelled." trans="S'ha cancel·lat la petició seleccionada." />
+  <item orig="Welcome back" trans="Benvingut de nou" />
+  <item orig="You are ignoring all replies from that person." trans="Ignores totes les rèpliques d'aquesta persona." />
+  <item orig="Description:" trans="Descripció:" />
+  <item orig="Chat text color" trans="Color del text de la Conversa"/>
+  <item orig="Cancel" trans="Cancel·lar" />
+  <item orig="None" trans="Cap" />
+  <item orig="Trade" trans="Comerciar" />
+  <item orig="Game Control" trans="Control del Joc" />
+  <item orig="Mainchat brackets" trans="Claudàtors de la conversa principal" />
+  <item orig="Progression Points" trans="Punts de Progressió" />
+  <item orig="Faction" trans="Facció" />
+  <item orig="You have ignored no-one." trans="No estàs ignorant ningú." />
+  <item orig="NPC text color" trans="Color del text dels NPCs" />
+  <item orig="%s tells group: %s" trans="%s diu al grup: %s" />
+  <item orig="Quick" trans="Ràpid" />
+  <item orig="Public notes" trans="Anotacions públiques" />
+  <item orig="Confirmation" trans="Confirmació" />
+  <item orig="Master Volume" trans="Volum Principal" />
+  <item orig="Withdraw and Deposit" trans="Retirar i Dipositar" />
+  <item orig="Labels" trans="Etiquetes" />
+  <item orig="Upload" trans="Carregar" />
+  <item orig="Exchange" trans="Intercanviar" />
+  <item orig="Combat Skills List:" trans="Llistat d'Habilitats de Combat:" />
+  <item orig="tweaks" trans="Ajustaments" />
+  <item orig="Confirmation upon PvP duel:" trans="Confirmació del duel entre jugadors:" />
+  <item orig="Petition text:" trans="Text de la petició:" />
+  <item orig="Secret guild" trans="Gremi secret" />
+  <item orig="List Attributes" trans="Atributs de la Llista" />
+  <item orig="Claim" trans="Reclamar" />
+  <item orig="Radius:" trans="Radi:" />
+  <item orig="0" trans="" />
+  <item orig="disabled" trans="inhabilitat" />
+  <item orig="Tells" trans="Frases dites" />
+  <item orig="Manage petitions to help users." trans="Administra les peticions per a ajudar els usuaris." />
+  <item orig="No Fall Damage" trans="Sense Dany per Caiguda" />
+  <item orig="Communication" trans="Comunicació" />
+  <item orig="Cannot connect to server" trans="No es pot connectar amb el servidor" />
+  <item orig="Your text color" trans="El teu color del text" />
+  <item orig="1" trans="" />
+  <item orig="Invisible" trans="Invisible" />
+  <item orig="CHARACTER SELECT" trans="SELECCIÓ DEL PERSONATGE" />
+  <item orig="Pickupable" trans="Es pot agafar de terra" />
+  <item orig="Detail information:" trans="Informació dels detalls:" />
+  <item orig="You will no longer ignore %s." trans="A partir d'ara no ignores %s." />
+  <item orig="Others' combat stance changes" trans="Canvis d'actitud en el combat dels altres" />
+  <item orig="Ambiguous command: " trans="Comanda ambigua:" />
+  <item orig="The selected petition was %s" trans="S'ha seleccionat la petició %s" />
+  <item orig="Loading game" trans="Carregant el joc" />
+  <item orig="Use Collision Detection" trans="Fes servir la Detecció de Col·lisions" />
+  <item orig="Invite" trans="Convidar" />
+  <item orig="Sector:" trans="Sector:" />
+  <item orig="Mix yourtext color" trans="Barrejar el teu color del text" />
+  <item orig="Permissions" trans="Permisos" />
+  <item orig="X:" trans="" />
+  <item orig="5" trans="" />
+  <item orig="Make leader" trans="Fer líder" />
+  <item orig="Money" trans="Diners" />
+  <item orig="Guild" trans="Gremi" />
+  <item orig="0 Trias" trans="0 Tries" />
+  <item orig="Parents" trans="Pares" />
+  <item orig="Jobs" trans="Feines" />
+  <item orig="Chat - Bubbles" trans="Conversa - Bombolles" />
+  <item orig="Welcome to PlaneShift!" trans="Benvingut a PlaneShift!" />
+  <item orig="Delete" trans="Esborrar" />
+  <item orig="Entities" trans="Entitats" />
+  <item orig="Auction text color" trans="Color del text de les Subhastes" />
+  <item orig="Hello" trans="Hola" />
+  <item orig="You're offered" trans="T'ofereixen " />
+  <item orig="Hi" trans="Hola" />
+  <item orig="Own attacks that are dodged" trans="Atacs d'un mateix que s'han eludit" />
+  <item orig="Done" trans="Fet" />
+  <item orig="Birth" trans="Naixement" />
+  <item orig="Keys" trans="Tecles" />
+  <item orig="Faction description:" trans="Descripció de la facció" />
+  <item orig="Perform an action see by people in your vicinity." trans="Fes una acció vista per la gent al teu voltant." />
+  <item orig="Reload" trans="Recarregar" />
+  <item orig="Players" trans="Jugadors" />
+  <item orig="Phys Stam." trans="Salut fis." />
+  <item orig="Stats:" trans="Nivells:" />
+  <item orig="NPC" trans="" />
+  <item orig="Music Volume" trans="Volum de la Música" />
+  <item orig="Defend me !" trans="Defenseu-me !" />
+  <item orig="Spell List:" trans="Llistat d'Encanteris" />
+  <item orig="FPS cap:" trans="Cap. FPS:" />
+  <item orig="Tell text color" trans="Color del text per Dir" />
+  <item orig="CP: 0" trans="" />
+  <item orig="BIRTH" trans="NAIXEMENT" />
+  <item orig="Unmute Player" trans="Desemmudir el Jugador" />
+  <item orig="Online only" trans="Només en línia" />
+  <item orig="Pub notes" trans="Notes pub." />
+  <item orig="Edit Master" trans="Editar Mestre" />
+  <item orig="Amount to deposit" trans="Quantitat a dipositar" />
+  <item orig="Join Game" trans="Ajuntar-se al Joc" />
+  <item orig="Locked" trans="Bloquejat" />
+  <item orig="Account Password:" trans="Contrasenya del Compte:" />
+  <item orig="Items" trans="Objectes" />
+  <item orig="Factions" trans="Faccions" />
+  <item orig="Weight:" trans="Pes:" />
+  <item orig="Petition submitted:" trans="Petició cursada:" />
+  <item orig="Men Stam." trans="Salut Ment." />
+  <item orig="Requesting World" trans="Demanant el Món" />
+  <item orig="Group" trans="Grup" />
+  <item orig="Help text color" trans="Color del text de l'Ajuda" />
+  <item orig="Face" trans="Cara" />
+  <item orig="OK" trans="" />
+  <item orig="First Person" trans="Primera Persona" />
+  <item orig="Selection" trans="Selecció" />
+  <item orig="?" trans="" />
+  <item orig="Trigger:" trans="Disparador:" />
+  <item orig="Refresh List" trans="Actualitzar el Llistat" />
+  <item orig="Character Name" trans="Nom del Personatge" />
+  <item orig="Kick Player" trans="Fer fora el Jugador" />
+  <item orig="Filter incoming bad words" trans="Filtrar els renecs entrants" />
+  <item orig="Skill" trans="Habilitat" />
+  <item orig="The selected petition has been escalated." trans="S'ha escalat la petició seleccionada." />
+  <item orig="Your notes:" trans="Les teves anotacions:" />
+  <item orig="Rotate" trans="Giravoltar" />
+  <item orig="Birth Event:" trans="Esdeveniment a la Naixença:" />
+  <item orig="Character description:" trans="Descripció del Personatge" />
+  <item orig="No" trans="No" />
+  <item orig="Combat messages regarding me" trans="Missatges de combat que m'afecten" />
+  <item orig="Player name:" trans="Nom del jugador:" />
+  <item orig="Mouse" trans="Ratolí" />
+  <item orig="Position:" trans="Posició:" />
+  <item orig="Help" trans="Ajuda" />
+  <item orig="View chat" trans="Mostrar la conversa" />
+  <item orig="Min. distance:" trans="Distància min.:" />
+  <item orig="Quit" trans="Sortir" />
+  <item orig="Lockpicking" trans="Rebentar panys" />
+  <item orig="models" trans="models" />
+  <item orig="Siblings" trans="Germans" />
+  <item orig="Camera" trans="Càmera" />
+  <item orig="Remember password" trans="Recordar la contrasenya" />
+  <item orig="Third Person Follow" trans="Tercera Persona Seguint" />
+  <item orig="Character Name:" trans="Nom del Personatge:" />
+  <item orig="Day:" trans="Dia:" />
+  <item orig="Clear" trans="Netejar" />
+  <item orig="Next" trans="Següent" />
+  <item orig="Stat" trans="Nivell" />
+  <item orig="%s tells you: %s" trans="%s et diu: %s" />
+  <item orig="D:" trans="" />
+  <item orig="Jobs Skill description:" trans="Descripció de les Habilitats de les Feines:" />
+  <item orig="Mana" trans="Manà" />
+  <item orig="Yes" trans="Sí" />
+  <item orig="Reset" trans="Reiniciar" />
+  <item orig="Interface sounds" trans="Sons de la interfície" />
+  <item orig="Talk to your group privately." trans="Parlar al teu grup en privat." />
+  <item orig="Own attacks that are blocked" trans="Atacs d'un mateix que s'han blocat" />
+  <item orig="Religion:" trans="Religió:" />
+  <item orig="You can not ignore yourself." trans="No et pots ignorar a tu mateix." />
+  <item orig="Members" trans="Membres" />
+  <item orig="List all of the petitions you have submitted." trans="Llistat de totes les peticions que has cursat." />
+  <item orig="Settings" trans="Paràmetres" />
+  <item orig="You must select a petition from the list in order to assign yourself." trans="Has de seleccionar una petició del llistat per tal d'assignar-t'hi." />
+  <item orig="Count:" trans="Compte:" />
+  <item orig="Back" trans="Enrere" />
+  <item orig="graphics" trans="gràfics" />
+  <item orig="You tell %s: %s" trans="Dius a %s: %s" />
+  <item orig="Add New" trans="Afegir-ne un de Nou" />
+  <item orig="Infinite Inventory" trans="Inventari Infinit" />
+  <item orig="Lose focus on send" trans="Perdre el focus en trametre" />
+  <item orig="Hair Style" trans="Estil dels Cabells" />
+  <item orig="New Character" trans="Personatge Nou" />
+  <item orig="Magic Skill description:" trans="Descripció de l'Habilitat Màgica:" />
+  <item orig="M:" trans="" />
+  <item orig="Infinite Mana" trans="Manà Infinit" />
+  <item orig="Status:" trans="Estatus:" />
+  <item orig="Teleport To Player" trans="Teletransportar-se al Jugador" />
+  <item orig="Add" trans="Afegir" />
+  <item orig="PARENTS" trans="PARES" />
+  <item orig="Petition Text:" trans="Text de la Petició:" />
+  <item orig="Invincible" trans="Invencible" />
+  <item orig="You're offering" trans="Ofereixes" />
+  <item orig="Jobs Skills List:" trans="Llistat d'Habilitats de les Feines:" />
+  <item orig="Magic Skills" trans="Habilitats Màgiques" />
+  <item orig="Combat messages regarding others" trans="Missatges de combat que afecten a d'altres" />
+  <item orig="Actions" trans="Accions" />
+  <item orig="Chat - Filters" trans="Conversa - Filtres" />
+  <item orig="Amount to withdraw" trans="Quantitat a retirar" />
+  <item orig="Others' attacks that are blocked" trans="Atacs d'algú altre que s'han blocat" />
+  <item orig="Talk to the people in your immediate vicinity." trans="Parla a la gent en el teu entorn immediat." />
+  <item orig="Player name color" trans="Nom del Jugador" />
+  <item orig="Random name" trans="Nom aleatori" />
+  <item orig="Couldn't resolve server hostname." trans="No es pot resoldre el nom del servidor." />
+  <item orig="Escalate" trans="Escalar" />
+  <item orig="30" trans="" />
+  <item orig="Various Skills" trans="Habilitats Diverses" />
+  <item orig="Events" trans="Esdeveniments" />
+  <item orig="Trias:" trans="Tries:" />
+  <item orig="Auto Tab selection:" trans="Selecció Auto de les Pest." />
+  <item orig="Chat - Tabs" trans="Conversa - Pestanyes" />
+  <item orig="Makes the server log what target player is saying." trans="Fa que el servidor registri el que diu el jugador objectiu." />
+  <item orig="New Account" trans="Nou Compte" />
+  <item orig="Beard Style" trans="Estil de la Barba" />
+  <item orig="Mute Player" trans="Emmudir el Jugador" />
+  <item orig="Shortcut key:" trans="Drecera de teclat:" />
+  <item orig="Controls" trans="Controls" />
+  <item orig="Name:" trans="Nom:" />
+  <item orig="Discard" trans="Descartar" />
+  <item orig="Y:" trans="" />
+  <item orig="Servers:" trans="Servidors:" />
+  <item orig="Join" trans="Afegir-se" />
+  <item orig="Assigned GM:" trans="GM Assignat:" />
+  <item orig="Lockable" trans="Bloquejable" />
+  <item orig="Distance:" trans="Distància" />
+  <item orig="Echo screen text" trans="Pantalla d'eco" />
+  <item orig="Loading world" trans="Carregant el món" />
+  <item orig="New User? Register at http://www.planeshift.it/account/create" trans="Usuari nou? Registra't at http://www.planeshift.it/account/create" />
+  <item orig="Quests" trans="Proves" />
+  <item orig="Please wait for verification from server" trans="Si us plau espera la verificació per part del servidor" />
+  <item orig="o'clock" trans="en punt" />
+  <item orig="You must select a petition from the list in order to close it." trans="Has de seleccionar una petició del llistat per tal de tancar-la." />
+  <item orig="Name" trans="Nom" />
+  <item orig="Getting entities" trans="Obtenint entitats" />
+  <item orig="You must select a petition from the list in order to escalate it." trans="Has de seleccionar una petició del llistat per tal de escalar-la." />
+  <item orig="Custom" trans="A mida" />
+  <item orig="Sound" trans="So" />
+  <item orig="Background music" trans="Música de fons" />
+  <item orig="Uncompleted" trans="Sense completar" />
+  <item orig="Petitons are waiting." trans="Hi ha peticions esperant." />
+  <item orig="Completed" trans="Completat" />
+  <item orig="none" trans="cap" />
+  <item orig="Alternates" trans="Alternatives" />
+  <item orig="Save MOTD" trans="Guardar el MOTD" />
+  <item orig="network" trans="xarxa" />
+  <item orig="Interface" trans="Interfície" />
+  <item orig="Loop background music" trans="Música de fons cíclica" />
+  <item orig="Shout text color" trans="Color del text dels Crits" />
+  <item orig="Log the chat messages" trans="Registrar els missatges de la conversa" />
+  <item orig="Filter outgoing bad words" trans="Filtrar els renecs sortints" />
+  <item orig="Realm" trans="Reialme" />
+  <item orig="cancelled." trans="cancel·lat" />
+  <item orig="closed." trans="tancat" />
+  <item orig="Waiting on server data.." trans="Esperant les dades del servidor.." />
+  <item orig="View all" trans="Veure-ho tot" />
+  <item orig="Unknown Chat Type: %d" trans="Tipus de conversa desconeguda" />
+  <item orig="/ 100" trans="" />
+  <item orig="Free Rotation" trans="Rotació Lliure" />
+  <item orig="Actual FPS may vary." trans="Els FPS reals poden variar." />
+  <item orig="You must select a petition from the list in order to view it." trans="Has de seleccionar una petició del llistat per tal de mostrar-la." />
+  <item orig="Spells" trans="Encanteris" />
+  <item orig="Shortcuts" trans="Dreceres" />
+  <item orig="Guild text color" trans="Color del text del Gremi" />
+  <item orig="Random" trans="Aleatori" />
+  <item orig="Job:" trans="Feina:" />
+  <item orig="Ok" trans="" />
+  <item orig="Sell" trans="Vendre" />
+  <item orig="Way" trans="Via" />
+  <item orig="controls" trans="controls" />
+  <item orig="Close" trans="Tancar" />
+  <item orig="Website:" trans="Lloc Web:" />
+  <item orig="Various" trans="Diversos" />
+  <item orig="Combat Skill description:" trans="Descripció de l'Habilitat de Combat:" />
+  <item orig="Ambient sounds" trans="Sons d'ambient" />
+  <item orig="Greetings" trans="Salutacions" />
+  <item orig="Select a reward:" trans="Tria una recompensa:" />
+  <item orig="Ambient Volume" trans="Volum d'Ambient" />
+  <item orig="Hair Colour" trans="Color dels Cabells" />
+</StringTable>

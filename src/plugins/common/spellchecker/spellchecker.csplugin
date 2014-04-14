@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<plugin>
+  <scf>
+    <classes>
+      <class>
+        <name>crystalspace.planeshift.spellchecker</name>
+        <implementation>SpellChecker</implementation>
+        <description>Hunspell-Spellchecker</description>
+      </class>
+    </classes>
+  </scf>
+</plugin>

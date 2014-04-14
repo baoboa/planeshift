@@ -1,0 +1,17 @@
+#include "resource.h"
+#include <windows.h>
+
+IDD_CRASH DIALOGEX 10,10,240,165
+CAPTION "PlaneShift has quit unexpectedly!"
+FONT 8,"MS Sans Serif",0,0,0
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_TOPMOST
+BEGIN
+  CONTROL "",IDC_COMMENTS,"Edit",WS_CHILDWINDOW|WS_VISIBLE|WS_TABSTOP|ES_MULTILINE|ES_WANTRETURN|ES_AUTOVSCROLL,6,81,234,60,WS_EX_CLIENTEDGE
+  CONTROL "Please help us fix the problem by describing what happened before the crash.",IDC_STC1,"Static",WS_CHILDWINDOW|WS_VISIBLE,6,60,231,17
+  CONTROL "A report containing only information strictly necessary to identify this problem will be sent to the PlaneShift developers. Please consult the PlaneShift forums for more details.",IDC_STC2,"Static",WS_CHILDWINDOW|WS_VISIBLE,6,6,231,39
+  CONTROL "For concerns about privacy, please see http://watson.microsoft.com/dw/1033/dcp.asp.",IDC_STC3,"Static",WS_CHILDWINDOW|WS_VISIBLE,6,35,225,20
+  CONTROL "Send",IDOK,"Button",WS_CHILDWINDOW|WS_VISIBLE|WS_TABSTOP|BS_DEFPUSHBUTTON,56,149,48,12
+  CONTROL "Don't Send",IDCANCEL,"Button",WS_CHILDWINDOW|WS_VISIBLE|WS_TABSTOP|BS_DEFPUSHBUTTON,127,149,48,12
+END
+

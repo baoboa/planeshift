@@ -1,0 +1,102 @@
+<image_list>
+
+<image file="/this/art/eedit/normal.png" resource="peStandardMousePointer">
+    <alpha level="0" />
+    <trans r="255" g="255" b="255" />
+</image>
+
+<image file="/this/art/eedit/busy.png" resource="peBusyMousePointer">
+    <alpha level="0" />
+    <trans r="255" g="0" b="255" />    
+</image>
+
+<image file="/this/art/eedit/titlebar.png" resource="peTitleBar">
+    <alpha level="0" />
+    <trans r="255" g="0" b="255" />    
+</image>
+<image file="/this/art/eedit/titlebar.png" resource="peTitleBarShort">
+    <texturerect x="0" y="0" width="256" height="24" />
+    <alpha level="0" />
+    <trans r="255" g="0" b="255" />    
+</image>
+<image file="/this/art/eedit/backtall.png" resource="peBackTall">
+    <alpha level="0" />
+    <trans r="255" g="0" b="255" />    
+</image>
+<image file="/this/art/eedit/back.png" resource="peBack">
+    <alpha level="0" />
+    <trans r="255" g="0" b="255" />    
+</image>
+<image file="/this/art/eedit/backmedium.png" resource="peBackMedium">
+    <!--<texturerect x="0" y="128" width="256" height="128" />-->
+    <alpha level="0" />
+    <trans r="255" g="0" b="255" />
+</image>
+<image file="/this/art/eedit/backshort.png" resource="peBackShort">
+    <!--<texturerect x="0" y="192" width="256" height="64" />-->
+    <alpha level="0" />
+    <trans r="255" g="0" b="255" />
+</image>
+<image file="/this/art/eedit/shaded.png" resource="peShaded">
+    <alpha level="0" />
+    <trans r="255" g="0" b="255" />    
+</image>
+
+<image file="/this/art/eedit/radiooff.png" resource="peRadioOff">
+    <alpha level="0" />
+    <trans r="255" g="0" b="255" />    
+</image>
+<image file="/this/art/eedit/radioon.png" resource="peRadioOn">
+    <alpha level="0" />
+    <trans r="255" g="0" b="255" />    
+</image>
+
+<image file="/this/art/eedit/buttondown.png" resource="peButtonDown">
+    <alpha level="0" />
+</image>
+<image file="/this/art/eedit/buttonup.png" resource="peButtonUp">
+    <alpha level="0" />
+</image>
+
+
+<image file="/this/art/eedit/listselect.png" resource="peListSelect">
+    <alpha level="0" />
+</image>
+
+<image file="/this/art/eedit/treeexpand.png" resource="peTreeExpand">
+    <alpha level="0" />
+</image>
+
+<image file="/this/art/eedit/treecollapse.png" resource="peTreeCollapse">
+    <alpha level="0" />
+</image>
+
+<image file="/this/art/eedit/scrollthumb.png" resource="peScrollBarThumb">
+    <alpha level="0" />
+</image>
+
+<image file="/this/art/eedit/scrollthumbmove.png" resource="peScrollBarThumbMoving">
+    <alpha level="0" />
+</image>
+
+<image file="/this/art/eedit/spindown.png" resource="peSpinDown">
+    <alpha level="0" />
+</image>
+<image file="/this/art/eedit/spinup.png" resource="peSpinUp">
+    <alpha level="0" />
+</image>
+
+<image file="/this/art/eedit/down.png" resource="peDownArrow">
+    <alpha level="0" />
+</image>
+<image file="/this/art/eedit/up.png" resource="peUpArrow">
+    <alpha level="0" />
+</image>
+<image file="/this/art/eedit/left.png" resource="peLeftArrow">
+    <alpha level="0" />
+</image>
+<image file="/this/art/eedit/right.png" resource="peRightArrow">
+    <alpha level="0" />
+</image>
+
+</image_list>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" ?> 
+<library>
+    <textures>
+        <texture name="fire">
+            <file>/this/data/effects/examples/puff_01.dds</file>
+        </texture>
+    </textures>
+    <materials>
+        <material name="fire">
+            <texture>fire</texture>
+        </material>
+    </materials>
+	<meshfact name="fire">
+	  <plugin>crystalspace.mesh.loader.factory.particles</plugin>
+	    <params>
+          <material>fire</material>
+          
+          <emitter type="sphere">
+            <duration>10</duration>
+            <radius>20</radius>            
+            <emissionrate>4</emissionrate>
+            <mass min="1" max="6" />
+            <uniformvelocity />
+            <initialvelocity x="0" y="3" z="0" />
+            <initialttl min="0.1" max="1" />
+            <placement>center</placement>                                          
+          </emitter>
+ <particlesize x="1.5" y="" />
+          <effector type="force">
+            <randomacceleration x="0" y="0" z="0" />
+          </effector>    
+          		  
+          <effector type="lincolor">
+            <color red=".6" green=".4" blue=".5" alpha="1" />
+          </effector>        
+	  </params>
+	</meshfact>
+</library>

@@ -1,0 +1,5 @@
+SubDir TOP src tools wordnet ;
+
+Library wordnet :
+	[ Wildcard *.c *.h ]
+;

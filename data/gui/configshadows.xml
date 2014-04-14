@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<widget_description>
+    <widget name="ConfigShadowsTree" factory="pawsConfigShadows"
+            visible="no" savepositions="no" movable="no"
+            resizable="no" style="New Standard GUI" >
+        <frame x="225" y="10" width="400" height="300" border="no" />
+        <bgimage resource="Scaling Widget Background" />
+        <widget name="enabled" factory="pawsCheckBox">
+            <frame x="10" y="10" width="350" height="20"/>
+            <text string="Enable Shadows" />
+        </widget>
+    </widget>
+
+</widget_description>

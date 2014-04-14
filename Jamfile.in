@@ -1,0 +1,235 @@
+TOP ?= "@top_srcdir@" ;
+BUILDTOP ?= "@top_builddir@" ;
+
+SubDir TOP ;
+
+# Common include directories.
+
+IncludeDir ;
+# For MSVC project files, we need to include a dir containing MSVC specific includes.
+# Note: this has to appear before vanilla include as some files in include/msvc/ are
+# supposed to override the same named ones in include/.
+if [ Property build : projgen ] = msvc
+{
+  IncludeDir "include" msvc ;
+}
+IncludeDir "include" ;
+IncludeDir src client ;
+IncludeDir src server ;
+IncludeDir src common ;
+IncludeDir src tools wordnet ;
+IncludeDir src tools breakpad ;
+IncludeDir src tools breakpad third_party linux include ;
+IncludeDir $(BUILDTOP) : : literal transient ;
+IncludeDir $(BUILDTOP)/include : : literal transient ;
+
+
+# Delete the following dir and subdirs on running 'jam clean'.
+
+CleanDir clean :
+    out ;
+	
+# Delete the following files on running 'jam distclean'.
+
+Clean distclean :
+    config.log
+	configure
+    Jamconfig
+    Jamfile
+	include/psconfig.h
+	include/psconfig.h.in
+	include/psstdint.h ;
+	
+# Delete the following dir and subdirs on running 'jam distclean'.
+
+CleanDir distclean :
+    autom4te.cache ;
+	
+# Invokes 'jam clean' on running 'jam distclean'.
+
+Depends distclean : clean ;
+
+# Description for 'jam help'.
+
+Help distclean : "Remove built targets and configuration" ;
+
+#######################################################################
+#						    Msvcgen Setup							  #
+#######################################################################
+
+# Specify the folder in which they are contained, and then the version of the project files to be generated.
+
+MsvcGenSubDir TOP mk msvc : common ;
+MsvcGenSubDir TOP mk msvc8 : 8 ;
+MsvcGenSubDir TOP mk msvc9 : 9 ;
+MsvcGenSubDir TOP mk msvc10 : 10 ;
+
+# Dir in which the msvcgen files are located.
+
+MsvcGenTemplateDir TOP mk msvcgen ;
+
+# File containing custom scripting. Found in mk/msvcgen.
+
+MsvcGenVariable customize : custom.cslib custom2.cslib custom3.cslib ;
+
+# Set up the workspaces we want msvcgen to synthesize.
+
+include [ ConcatDirs $(SUBDIR) mk msvcgen workspaces.jam ] ;
+
+# Set project-specific compiler and linker options for msvcgen.
+
+local hash = "\$" ;
+
+# CrystalSpace 
+
+MsvcGenConfig CRYSTAL.AVAILABLE : yes ;
+MsvcGenConfig CRYSTAL.DEFINES ;
+MsvcGenConfig CRYSTAL.CFLAGS ;
+MsvcGenConfig CRYSTAL.LFLAGS ;
+MsvcGenConfig CRYSTAL.LIBS : libcrystalspace.lib ws2_32.lib zlib.lib ;
+MsvcGenConfig CRYSTAL.LIBS.DEBUG : libcrystalspace_d.lib ws2_32.lib zlib.lib ;
+
+local varsuffix.x86 = X86 ;
+local varsuffix.x64 = X64 ;
+local dirsuffix.x86 = "" ;
+local dirsuffix.x64 = "-x64" ;
+local a ;
+for a in x86 x64
+{
+  MsvcGenConfig CRYSTAL.INCDIRS.$(varsuffix.$(a)) :
+    [ ConcatDirs .. .. .. CS include ]
+    [ ConcatDirs .. .. .. CS winlibs $(a) include ]
+    [ ConcatDirs .. .. .. CS win32libs include ]
+    [ ConcatDirs "$(hash)(CRYSTAL)" include ]
+    [ ConcatDirs "$(hash)(CRYSTAL)" winlibs $(a) include ]
+    [ ConcatDirs "$(hash)(CRYSTAL)" win32libs include ]
+    ;
+  MsvcGenConfig CRYSTAL.LIBDIRS.$(varsuffix.$(a)) :
+    [ ConcatDirs .. .. .. CS out release$(MSVC_VERSION)$(dirsuffix.$(a)) libs ]
+    [ ConcatDirs .. .. .. CS winlibs $(a) lib ]
+    [ ConcatDirs .. .. .. CS win32libs lib ]
+    [ ConcatDirs "$(hash)(CRYSTAL)" out release$(MSVC_VERSION)$(dirsuffix.$(a)) libs ]
+    [ ConcatDirs "$(hash)(CRYSTAL)" winlibs $(a) lib ]
+    [ ConcatDirs "$(hash)(CRYSTAL)" win32libs lib ]
+    ;
+  MsvcGenConfig CRYSTAL.LIBDIRS.DEBUG.$(varsuffix.$(a)) :
+    [ ConcatDirs .. .. .. CS out debug$(MSVC_VERSION)$(dirsuffix.$(a)) libs ]
+    [ ConcatDirs .. .. .. CS winlibs $(a) lib ]
+    [ ConcatDirs .. .. .. CS win32libs lib ]
+    [ ConcatDirs "$(hash)(CRYSTAL)" out debug$(MSVC_VERSION)$(dirsuffix.$(a)) libs ]
+    [ ConcatDirs "$(hash)(CRYSTAL)" winlibs $(a) lib ]
+    [ ConcatDirs "$(hash)(CRYSTAL)" win32libs lib ]
+    ;
+}
+
+MsvcGenConfig CRYSTAL.STATICDEPS : $(TOP)/mk/jam/crystalspace_staticplugins_msvc.jam ;
+
+# Generate project files for static targets.
+
+MsvcGenConfig HAVE_STATIC_PLUGINS : yes ;
+
+MsvcGenConfig REPORTER : yes ;
+
+# MySQL
+
+MsvcGenConfig LIBMYSQLCLIENT.AVAILABLE : yes ;
+MsvcGenConfig LIBMYSQLCLIENT.DEFINES ;
+MsvcGenConfig LIBMYSQLCLIENT.CFLAGS ;
+MsvcGenConfig LIBMYSQLCLIENT.LFLAGS ;
+MsvcGenConfig LIBMYSQLCLIENT.LIBS : "libmysql.lib" ;
+MsvcGenConfig LIBMYSQLCLIENT.LIBS.DEBUG : "libmysql.lib" ;
+MsvcGenConfig LIBMYSQLCLIENT.INCDIRS ;
+MsvcGenConfig LIBMYSQLCLIENT.LIBDIRS ;
+MsvcGenConfig LIBMYSQLCLIENT.LIBDIRS.DEBUG ;
+
+# SQLITE3
+
+MsvcGenConfig LIBSQLITE3.AVAILABLE : no ;
+MsvcGenConfig LIBSQLITE3.DEFINES ;
+MsvcGenConfig LIBSQLITE3.CFLAGS ;
+MsvcGenConfig LIBSQLITE3.LFLAGS ;
+MsvcGenConfig LIBSQLITE3.LIBS : "sqlite3.lib" ;
+MsvcGenConfig LIBSQLITE3.LIBS.DEBUG : "sqlite3.lib" ;
+MsvcGenConfig LIBSQLITE3.INCDIRS ;
+MsvcGenConfig LIBSQLITE3.LIBDIRS ;
+MsvcGenConfig LIBSQLITE3.LIBDIRS.DEBUG ;
+
+# POSTGRESQL(LIBPQ)
+
+MsvcGenConfig LIBPQ.AVAILABLE : no ;
+MsvcGenConfig LIBPQ.DEFINES ;
+MsvcGenConfig LIBPQ.CFLAGS ;
+MsvcGenConfig LIBPQ.LFLAGS ;
+MsvcGenConfig LIBPQ.LIBS : "libpq.lib" ;
+MsvcGenConfig LIBPQ.LIBS.DEBUG : "libpq.lib" ;
+MsvcGenConfig LIBPQ.INCDIRS ;
+MsvcGenConfig LIBPQ.LIBDIRS ;
+MsvcGenConfig LIBPQ.LIBDIRS.DEBUG ;
+
+# HUNSPELL
+
+MsvcGenConfig HUNSPELL.AVAILABLE : no ;
+MsvcGenConfig HUNSPELL.DEFINES ;
+MsvcGenConfig HUNSPELL.CFLAGS ;
+MsvcGenConfig HUNSPELL.LFLAGS ;
+MsvcGenConfig HUNSPELL.LIBS : "hunspell.lib" ;
+MsvcGenConfig HUNSPELL.LIBS.DEBUG : "hunspell.lib" ;
+MsvcGenConfig HUNSPELL.INCDIRS ;
+MsvcGenConfig HUNSPELL.LIBDIRS ;
+MsvcGenConfig HUNSPELL.LIBDIRS.DEBUG ;
+
+# CURL
+
+MsvcGenConfig CURL.AVAILABLE : yes ;
+MsvcGenConfig CURL.DEFINES ;
+MsvcGenConfig CURL.CFLAGS ;
+MsvcGenConfig CURL.LFLAGS ;
+MsvcGenConfig CURL.LIBS : libcurl.lib Wldap32.lib Winmm.lib ;
+MsvcGenConfig CURL.LIBS.DEBUG : libcurl.lib Wldap32.lib Winmm.lib ;
+MsvcGenConfig CURL.INCDIRS ;
+MsvcGenConfig CURL.LIBDIRS ;
+MsvcGenConfig CURL.LIBDIRS.DEBUG ;
+
+# Cal3D
+
+MsvcGenConfig CAL3D.AVAILABLE : yes ;
+MsvcGenConfig CAL3D.LIBS.8 : "cal3d-vc8.lib" ;
+MsvcGenConfig CAL3D.LIBS.DEBUG.8 : "cal3d-vc8_d.lib" ;
+MsvcGenConfig CAL3D.LIBS.9 : "cal3d-vc9.lib" ;
+MsvcGenConfig CAL3D.LIBS.DEBUG.9 : "cal3d-vc9_d.lib" ;
+MsvcGenConfig CAL3D.LIBS.10 : "cal3d-vc10.lib" ;
+MsvcGenConfig CAL3D.LIBS.DEBUG.10 : "cal3d-vc10_d.lib" ;
+
+# Breakpad
+MsvcGenConfig BREAKPAD.AVAILABLE : yes ;
+MsvcGenConfig BREAKPAD.DEFINES ;
+MsvcGenConfig BREAKPAD.CFLAGS ;
+MsvcGenConfig BREAKPAD.LFLAGS ;
+MsvcGenConfig BREAKPAD.LIBS : "wininet.lib" ;
+MsvcGenConfig BREAKPAD.LIBS.DEBUG ;
+MsvcGenConfig BREAKPAD.INCDIRS ;
+MsvcGenConfig BREAKPAD.LIBDIRS ;
+MsvcGenConfig BREAKPAD.LIBDIRS.DEBUG ;
+
+####################################################################
+
+# Msvcgen setup _must_ occur before compile group registration!
+
+# Write a description of each compile group for 'jam help'
+Description server : "Server components" ;
+Description psnpcclient : "NPC client components" ;
+Description client : "Client components" ;
+Description tests : "Tests" ;
+Description tools : "Tools" ;
+Description client_static : "Static client components" ;
+Description server_static : "Static server components" ;
+
+# Register the compile groups. To add a project to a compile group, add the line CompileGroups project : compilegroup ; in the projects Jamfile.
+
+RegisterCompileGroups server psserver psclient psnpcclient client tests tools client_static server_static ;
+
+# List the first layer of subdirectories containing the jamfiles for the projects you wish to compile. This is order sensistive.
+# Library targets must be seen by Jam before Application and Plugin targets.
+
+SubInclude TOP src ;
+SubInclude TOP docs ;

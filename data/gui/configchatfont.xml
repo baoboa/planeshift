@@ -1,0 +1,38 @@
+<widget_description>
+    <widget name="ConfigChatFont" factory="pawsConfigChatFont"
+            visible="no" savepositions="no" movable="no" resizable="no" style="New Standard GUI">
+
+        <frame x="10" y="10" width="400" height="300" border="no" />
+        <bgimage resource="Scaling Widget Background" />
+
+        <widget name="" factory="pawsTextBox">
+            <frame x="15" y="10" width="50" height="20" />
+            <text string="Font"/>
+        </widget>
+
+        <widget name="textFont" factory="pawsComboBox" id="1015" alwaysontop="true" >
+            <frame x="60" y="10" width="150" height="20" border="no" />
+            <listbox rows="3" height="20" useScrollBar="true" />
+        </widget>
+
+        <widget name="" factory="pawsTextBox">
+            <frame x="15" y="35" width="100" height="20" />
+            <text string="Text Size"/>
+        </widget>
+
+        <widget name="textSize" factory="pawsScrollBar" direction="horizontal" style="Standard Scrollbar Horizontal">
+            <frame x="100" y="35" width="110" height="20" border="no" />
+        </widget>
+
+        <widget name="" factory="pawsTextBox">
+            <frame x="15" y="60" width="100" height="20" />
+            <text string="Text Spacing"/>
+        </widget>
+
+        <widget name="textSpacing" factory="pawsScrollBar" direction="horizontal" style="Standard Scrollbar Horizontal">
+            <frame x="100" y="60" width="110" height="20" border="no" />
+        </widget>
+
+    </widget>
+
+</widget_description>

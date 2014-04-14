@@ -1,0 +1,495 @@
+#!/bin/bash
+
+TOPDIR=$PWD
+OUTPUTDIR=$TOPDIR/updatefiles
+REPO=$TOPDIR/../repo
+VERSION=$1
+OLDPATH=$TOPDIR/old
+NEWPATH=$TOPDIR/new
+XD3PATH=$TOPDIR/xdelta3
+MIRRORS=$TOPDIR/mirrors
+UPDATERNAME=pslaunch
+PLATFORMS="win32 win64 linux32 linux64 macosx"
+
+function generatenew {
+local new=0
+
+for i in $(ls .);
+do
+  if [ -d $i ]
+  then
+    cd $i
+    generatenew $1$i"/"
+    new=$(($new + $?))
+    cd ..
+  else
+    if [ ! -e $OLDPATH/$1$i ]
+    then
+      EXEC=false
+      if [ -x $i ]
+      then
+        EXEC=true
+      fi
+      filemd5sum=${md5sum2% $NEWPATH/$1$i}
+      read filemd5sum <<< "$filemd5sum"
+      echo "    <newfile name=\""$1$i"\" exec=\""$EXEC"\" md5sum=\""$filemd5sum"\" />" >> $OUTPUTDIR/newfiles.xml
+      if [ ! -d $OUTPUTDIR/$1 ]
+      then
+        mkdir -p $OUTPUTDIR/$1
+      fi
+      cp $i $OUTPUTDIR/$1$i
+      new=$(($new + 1))
+    fi
+  fi
+done
+
+return $new
+}
+
+function generatedeleted {
+local deleted=0
+
+for i in $(ls .);
+do
+  if [ -d $i ]
+  then
+    cd $i
+    generatedeleted $1$i"/"
+    deleted=$((deleted + $?))
+    cd ..
+  else
+    echo "    <deleted name=\""$1$i"\" />" >> $OUTPUTDIR/deletedfiles.xml
+    deleted=$((deleted + 1))
+  fi
+done
+
+return $deleted
+}
+
+function generatechanged {
+local changed=0
+
+for i in $(ls .);
+do
+  if [ -d $i ]
+  then
+    cd $i
+    if [ -d $NEWPATH/$1$i ]
+    then
+      generatechanged $1$i"/"
+      changed=$(($changed + $?))
+    else
+      generatedeleted $1$i"/"
+      changed=$(($changed + 1))
+    fi
+    cd ..
+  else
+    if [ -e $NEWPATH/$1$i ]
+    then
+      md5sum1=$(md5sum $i)
+      md5sum2=$(md5sum $NEWPATH/$1$i)
+      if [ ${md5sum1% $i} != ${md5sum2% $NEWPATH/$1$i} ]
+      then
+        path=$1$i
+        $XD3PATH -f -e -9 -s $i $NEWPATH/$1$i $OUTPUTDIR/$path".vcdiff"
+        # add error handling here
+        oldfilemd5sum=${md5sum2% $OLDPATH/$1$i}
+        read oldfilemd5sum <<< "$oldfilemd5sum"
+        filemd5sum=${md5sum2% $NEWPATH/$1$i}
+        read filemd5sum <<< "$filemd5sum"
+        echo "    <changedfile filepath=\""$1$i"\" diff=\""$path".vcdiff\" md5sum=\""$filemd5sum"\" oldmd5sum=\""$oldfilemd5sum"\" />" >> $OUTPUTDIR/changedfiles.xml
+        if [ ! -d $OUTPUTDIR"/"$1 ]
+        then
+          mkdir -p $OUTPUTDIR"/"$1
+        fi
+        changed=$((changed + 1))
+      fi
+    else
+      echo "    <deleted name=\""$1$i"\" />" >> $OUTPUTDIR/deletedfiles.xml
+      changed=$((changed + 1))
+    fi
+  fi  
+done
+
+return $changed
+}
+
+function getupdaterversion {
+return $(wget -q -O - 'http://planeshift.svn.sourceforge.net/viewvc/*checkout*/planeshift/stable/src/pslaunch/updaterengine.h' | grep '^#define UPDATER_VERSION' | sed 's/^#define UPDATER_VERSION \([.0-9]*\).*$/\1/g')
+}
+
+function getmd5 {
+  local name="$1"
+  local md5=$(md5sum $name)
+  md5=${md5% $name}
+  read md5 <<< "$md5"
+  return md5
+}
+
+function generateupdaterinfo {
+echo "<config>" > $REPO/updaterinfo.xml
+echo "    <mirrors>" >> $REPO/updaterinfo.xml
+if [ -e $MIRRORS ]
+then
+  exec < $MIRRORS
+  while read line
+  do
+    echo "        "$line >> $REPO/updaterinfo.xml
+  done
+fi
+echo "    </mirrors>" >> $REPO/updaterinfo.xml
+
+UPDATER_VERSION=getupdaterversion
+UPDATERMD5="    <updater version=\""$UPDATER_VERSION"\""
+for PLATFORM in $PLATFORMS
+do
+  UPDATERPLATFORMMD5=
+  if [ -e $REPO"/"$UPDATERNAME$PLATFORM".zip" ]
+  then
+    UPDATERPLATFORMMD5=getmd5 $REPO"/"$UPDATERNAME$PLATFORM".zip"
+  fi
+  UPDATERMD5="$UPDATERMD5 md5"$PLATFORM"=\""$UPDATERPLAFORMMD5"\""
+done
+UPDATERMD5="$UPDATERMD5 />"
+echo $UPDATERMD5 >> $REPO/updaterinfo.xml
+
+echo "    <client>" >> $REPO/updaterinfo.xml
+abort=0
+if [ -d $REPO"_backup" ]
+then
+  copy=0
+  exec < $REPO"_backup/updaterinfo.xml"
+  while read line
+  do
+    if [ "$line" == "<client>" ]
+    then
+      copy=1
+    elif [ "$line" == "</client>" ]
+    then
+      copy=0
+    elif [ $copy -eq 1 ]
+    then
+      echo "        "$line >> $REPO/updaterinfo.xml
+    fi
+  done
+fi
+
+filecount=0
+count=1
+VERSIONUPDATE="        <version name=\""$VERSION"\""
+# check for platform updates
+# assumes $count is the first number for which $x is a platform md5
+for PLATFORM in $PLATFORMS
+do
+  VERSIONUPDATEMD5=
+  eval amount=$"$count"
+  if [ ! $amount -eq 0 ]
+  then
+    filecount=$(($filecount + $amount))
+    VERSIONUPDATEMD5=getmd5 $REPO"/"$PLATFORM"-"$VERSION".zip"
+  fi
+  VERSIONUPDATE="$VERSIONUPDATE md5"$PLATFORM"=\""$VERSIONUPDATEMD5"\""
+  count=$((count + 1))
+done
+
+# check for generic update
+VERSIONUPDATEMD5=
+eval amount=$"$count"
+if [ ! $amount -eq 0 ]
+then
+  filecount=$(($filecount + $amount))
+  VERSIONUPDATEMD5=getmd5 $REPO"/generic-"$VERSION".zip"
+fi
+VERSIONUPDATE="$VERSIONUPDATE />"
+
+ret=0
+if [ ! $filecount -eq 0 ]
+then
+  echo $VERSIONUPDATE >> $REPO/updaterinfo.xml
+else
+  echo "  no client files were updated - not creating a new client version"
+  ret=1
+fi
+echo "    </client>" >> $REPO/updaterinfo.xml
+echo "</config>" >> $REPO/updaterinfo.xml
+return $ret
+}
+
+function createupdate {
+rm -Rf $OUTPUTDIR 2>/dev/null
+mkdir -p $OUTPUTDIR
+
+echo "  Checking for new files."
+echo "<newfiles>" > $OUTPUTDIR/newfiles.xml
+cd $NEWPATH
+generatenew
+new=$?
+echo "</newfiles>" >> $OUTPUTDIR/newfiles.xml
+echo "    Found $new new files."
+cd $TOPDIR
+
+echo "  Checking for changed files."
+echo "<deletedfiles>" > $OUTPUTDIR/deletedfiles.xml
+echo "<changedfiles>" > $OUTPUTDIR/changedfiles.xml
+cd $OLDPATH
+generatechanged
+changed=$?
+echo "    Found $changed changed files."
+echo "</changedfiles>" >> $OUTPUTDIR/changedfiles.xml
+echo "</deletedfiles>" >> $OUTPUTDIR/deletedfiles.xml
+cd $TOPDIR
+
+return $(($new + $changed))
+}
+
+function extractzips
+{
+  for i in $(ls .);
+  do
+    if [ -d $i ]
+    then
+      cd $i
+      extractzips
+      cd ..
+    else
+      if [[ "$i" == *.zip ]]
+      then
+        mkdir -p "${i%.zip}" 2>/dev/null
+        cd "${i%.zip}"
+        cp ../$i .
+        echo "unzipping $i in "`pwd`
+        #unzip -q $i
+        echo "done"
+        rm $i
+        cd ..
+      fi
+    fi
+  done
+}
+
+# Check for version
+# to be done: check proper format
+if [ ! $VERSION ]
+then
+  echo "You must enter a version for the update."
+  echo "So you'd enter \"./makeupdate 1.5.23\" for version 1.5.23"
+  exit -1
+fi
+
+if [ -d $REPO -a -e $REPO"/updaterinfo.xml" ]
+then
+  read=0
+  exec < $REPO"/updaterinfo.xml"
+  while read line
+  do
+    if [ "$line" == "<client>" ]
+    then
+      read=1
+    elif [ "$line" == "</client>" ]
+    then
+      read=0
+    elif [ $read -eq 1 ]
+    then
+      if [[ "$line" =~ name=\"$VERSION\" ]]
+      then
+        echo "Version $VERSION already exists! Use another one!"
+        exit -2
+      fi
+    fi
+  done
+fi
+
+# Create repository.
+if [ ! -d $REPO ]
+then
+  echo "Creating repository."
+  mkdir -p $REPO
+else
+  echo "Creating a temporary backup of the repository."
+  # Create backup.
+  if [ -d $REPO"_backup" ]
+  then
+    rm -Rf $REPO"_backup"
+  fi
+  mv $REPO $REPO"_backup"
+  mkdir -p $REPO
+  # Restore old update files from the backup.
+  cd $REPO"_backup"
+  cp $(ls | grep -v backup) $REPO
+  cd $TOPDIR
+fi
+
+echo "Updating base repository files."
+# Move new 'backup' download files to the repo.
+cp -R $NEWPATH $REPO/backup
+
+# Find all zips and extract into directories.
+cd $REPO/backup/
+extractzips
+cd $TOPDIR
+
+# Move platform specific files out of 'new' and 'old'
+# create directories
+mkdir -p platform/{old,new}/{cfg,generic}
+mkdir -p platform/launcher/{art,data/gui}
+
+# move platform specific files
+for PLATFORM in $PLATFORMS
+do
+  mv $NEWPATH/$PLATFORM platform/new/$PLATFORM 2>/dev/null
+  mv $OLDPATH/$PLATFORM platform/old/$PLATFORM 2>/dev/null
+done
+
+# move generic files
+mv $NEWPATH/*.cfg platform/new/cfg
+mv $NEWPATH/* platform/new/generic
+mv $OLDPATH/*.cfg platform/old/cfg
+mv $OLDPATH/* platform/old/generic
+
+# move launcher specific files
+mv platform/new/generic/{art/pslaunch.zip,data/gui/pslaunch.xml} platform/launcher/
+rm -f platform/old/generic/{art,pslaunch.zip,data/gui/pslaunch.xml} 2>/dev/null
+
+# remove svn specific files
+find $TOPDIR/platform/ -name .svn -print | xargs rm -Rf
+
+# create platform updates
+for PLATFORM in $PLATFORMS
+do
+  # fine executable extension for platform
+  EXTENSION=
+  if [[ "$PLATFORM" =~ ^linux ]]
+  then
+    EXTENSION=".bin"
+  elif [[ "$PLATFORM" =~ ^win ]]
+  then
+    EXTENSION=".exe"
+  elif [[ "$PLATFORM" =~ ^mac ]]
+  then
+    EXTENSION=".app"
+  else
+    echo "Unknown platform $PLATFORM - skipping"
+    eval $"$PLATFORM"=0
+    continue
+  fi
+
+  if [ ! -d platform/new/$PLATFORM ]
+  then
+    echo "no platform specific files found for $PLATFORM - skipping"
+    eval $"$PLATFORM"=0
+    continue
+  fi
+
+  echo "Creating update for $PLATFORM:"
+  cd platform/new/$PLATFORM
+
+  # create launcher update
+  mkdir -p data/gui art
+  cp ../../launcher/pslaunch.zip art/
+  cp ../../launcher/pslaunch.xml data/gui/
+  zip -r -9 -q $REPO/$UPDATERNAME$PLATFORM".zip" $UPDATERNAME$EXTENSION $UPDATERNAME data art
+  rm -R art data
+  cd $TOPDIR
+
+  # put config files into platform specific output
+  mv platform/old/cfg/* $OLDPATH
+  mv platform/new/cfg/* $NEWPATH
+  mv platform/old/$PLATFORM/* $OLDPATH
+  mv platform/new/$PLATFORM/* $NEWPATH
+
+  # remove updater files
+  rm -Rf {$OLDPATH,$NEWPATH }/$UPDATERNAME{$EXTENSION,} 2>/dev/null
+
+  createupdate
+  amount=$?
+  eval $"$PLATFORM"=$amount
+  if [ ! $amount -eq 0 ]
+  then
+    cd $OUTPUTDIR
+    echo "  Packaging files."
+    zip -r -9 -q $REPO"/"$PLATFORM$VERSION".zip" *
+  else
+    echo "  Nothing to update!"
+  fi
+
+  cd $TOPDIR
+
+  # move config files back
+  mv $OLDPATH/*.cfg platform/old/cfg/
+  mv $NEWPATH/*.cfg platform/new/cfg/
+  mv $OLDPATH/* platform/old/$PLATFORM/
+  mv $NEWPATH/* platform/new/$PLATFORM/
+done
+
+# create generic update
+echo "Creating Generic update:"
+mv platform/old/generic/* $OLDPATH
+mv platform/new/generic/* $NEWPATH
+createupdate
+generic=$?
+if [ ! $generic -eq 0 ]
+then
+  cd $OUTPUTDIR
+  echo "  Packaging files."
+  zip -r -q -9 $REPO/generic-"$VERSION".zip *
+else
+  echo "  Nothing to update!"
+fi
+cd $TOPDIR
+mv $OLDPATH/* platform/old/generic/
+mv $NEWPATH/* platform/new/generic/
+
+# Restore platform files and clean up.
+echo "Cleaning Up."
+# plaform specific files
+for PLATFORM in $PLATFORM
+do
+  mv platform/new/$PLATFORM $NEWPATH/$PLATFORM
+  mv platform/old/$PLATFORM $OLDPATH/$PLATFORM
+done
+# generic files
+mv platform/new/{generic,cfg}/* $NEWPATH
+mv platform/old/{generic,cfg}/* $OLDPATH
+mv platform/launcher/pslaunch.xml platform/new/generic/data/gui/
+mv platform/launcher/pslaunch.zip platform/new/generic/art/
+
+rm -Rf platform
+rm -Rf updatefiles
+
+# Generate updaterinfo.xml
+GENINFO="generateupdaterinfo"
+for PLATFORM in $PLATFORMS
+do
+  eval amount=$"$PLATFORM"
+  GENINFO="$GENINFO $amount"
+done
+GENINFO="$GENINFO $generic"
+eval $GENINFO
+
+# Remove backup of repo.
+if [ $? -eq 0 ]
+then
+  rm -Rf $REPO"_backup" 2>/dev/null
+else
+  echo "Critical error: no files updated - restoring backup."
+  rm -Rf $REPO 2>/dev/null
+  mv $REPO"_backup" $REPO
+  echo "Done!"
+  exit -3
+fi
+  
+# Make integrity check file.
+echo "Making integrity check file."
+./makeintegrity
+
+# Mirror files.
+echo "Copying files to updater mirrors."
+if [ -x mirrorfiles ]
+then
+  ./mirrorfiles $VERSION
+fi
+
+echo "Done!"
+
+exit 0
+

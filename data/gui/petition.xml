@@ -1,0 +1,82 @@
+<widget_description>
+
+  <widget name="PetitionWindow" factory="pawsPetitionWindow" visible="no" savepositions="yes" movable="yes" keepaspect="no" resizable="yes" configurable="yes" style="New Standard GUI">
+
+    <frame x="0" y="100" width="600" height="350" border="yes" />
+    <minframe width="600" height="350" />
+    <title resource="Scaling Title Bar" text="Manage Petitions" align="left" close_button="yes"/>
+
+    <widget name="PetitionList" factory="pawsListBox" sortBy="2" sortOrder="asc">
+        <frame x="20" y="20" width="565" height="150" border="no"/>
+	<columns height="20" headings="yes">
+            <column width="110" >
+                <widget name="GM" factory="pawsTextBox">
+                </widget>
+            </column>
+            <column width="80" >
+                <widget name="Status" factory="pawsTextBox">
+                </widget>
+            </column>
+            <column width="125" >
+                <widget name="Created Date" factory="pawsTextBox">
+                </widget>
+            </column>
+            <column width="240" >
+                <widget name="Petition" factory="pawsTextBox">
+                </widget>
+            </column>
+        </columns>
+	<attachpoints>
+		<attach point="ATTACH_RIGHT" />
+		<attach point="ATTACH_TOP" />
+		<attach point="ATTACH_LEFT" />
+		<attach point="ATTACH_BOTTOM" />
+        </attachpoints>
+    </widget>
+
+    <widget name="PetitionTextLabel" factory="pawsTextBox" style="Header Font" >
+        <frame x="20" y="189" width="150" height="20" border="no"/>
+        <text string="Petition Text:" />
+	<attachpoints>
+		<attach point="ATTACH_RIGHT" />
+		<attach point="ATTACH_LEFT" />
+		<attach point="ATTACH_BOTTOM" />
+        </attachpoints>
+    </widget>
+
+    <widget name="PetitionText" factory="pawsMultilineEditTextBox" >
+        <frame x="20" y="211" width="565" height="84" border="yes" />
+	<attachpoints>
+		<attach point="ATTACH_RIGHT" />
+		<attach point="ATTACH_LEFT" />
+		<attach point="ATTACH_BOTTOM" />
+        </attachpoints>
+    </widget>
+
+    <widget name="Delete Button" factory="pawsButton" toggle="no" id="1" shadows="yes" style="Standard Button" >
+        <frame x="20" y="315" width="94" height="22" border="no" />
+        <label text="Delete" />
+	<attachpoints>
+		<attach point="ATTACH_BOTTOM" />
+        </attachpoints>
+    </widget>
+
+    <widget name="New Button" factory="pawsButton" toggle="no" id="2" shadows="yes" style="Standard Button" >
+        <frame x="140" y="315" width="94" height="22" border="no" />
+        <label text="New" />
+	<attachpoints>
+		<attach point="ATTACH_BOTTOM" />
+        </attachpoints>
+    </widget>
+
+    <widget name="Save Button" factory="pawsButton" toggle="no" id="3" shadows="yes" style="Standard Button" >
+        <frame x="265" y="315" width="94" height="22" border="no" />
+        <label text="Save" />
+	<attachpoints>
+		<attach point="ATTACH_BOTTOM" />
+        </attachpoints>
+    </widget>
+
+  </widget>
+
+</widget_description>

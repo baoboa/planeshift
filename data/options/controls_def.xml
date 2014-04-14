@@ -1,0 +1,175 @@
+<os name="MacOS/X">
+    <controls>
+        <bind action="Forward" key="w" />
+        <bind action="Backward" key="s" />
+        <bind action="Rotate left" key="" />
+        <bind action="Rotate right" key="" />
+        <bind action="Strafe left" key="a" />
+        <bind action="Strafe right" key="d" />
+        <bind action="Brightness up" key="Home" />
+        <bind action="Brightness down" key="End" />
+        <bind action="Brightness Reset" key="F10" />
+        <bind action="Forward (sec)" key="Up" />
+        <bind action="Backward (sec)" key="Down" />
+        <bind action="Rotate left (sec)" key="Left" />
+        <bind action="Rotate right (sec)" key="Right" />
+        <bind action="Strafe left (sec)" key="" />
+        <bind action="Strafe right (sec)" key="" />
+        <bind action="Run" key="Shift" />
+        <bind action="AutoMove" key="r" />
+        <bind action="MouseMove" key="" />
+        <bind action="Sneak" key="\" />
+        <bind action="ToggleRun" key="Ctrl" />
+        <bind action="Jump" key="Space" />
+        <bind action="Sit" key="z" />
+        <bind action="Look up" key="PgUp" />
+        <bind action="Look down" key="PgDn" />
+        <bind action="Zoom in" key="ScrollUp" />
+        <bind action="Zoom out" key="ScrollDown" />
+        <bind action="Camera mode" key="m" />
+        <bind action="Center camera" key="x" />
+        <bind action="CameraForward/Back" key="" />
+        <bind action="MouseLook" key="MiddleClick" />
+        <bind action="Toggle MouseLook" key="Tab" />
+        <bind action="Buddy" key="b" />
+        <bind action="Buy" key="" />
+        <bind action="Communications" key="" />
+        <bind action="Help" key="F1" />
+        <bind action="Inventory" key="i" />
+        <bind action="Bag" key="" />
+        <bind action="Options" key="o" />
+        <bind action="Quit" key="Alt+q" />
+        <bind action="Spell book" key="c" />
+        <bind action="Stats" key="p" />
+        <bind action="Toggle chat" key="Enter" />
+        <bind action="Reply tell" key="f" />
+        <bind action="Close" key="Esc" />
+        <bind action="Shortcut 1" key="1" />
+        <bind action="Shortcut 2" key="2" />
+        <bind action="Shortcut 3" key="3" />
+        <bind action="Shortcut 4" key="4" />
+        <bind action="Shortcut 5" key="5" />
+        <bind action="Shortcut 6" key="6" />
+        <bind action="Shortcut 7" key="7" />
+        <bind action="Shortcut 8" key="8" />
+        <bind action="Shortcut 9" key="9" />
+        <bind action="Shortcut 10" key="0" />
+        <bind action="Shortcut 11" key="" />
+        <bind action="Shortcut 12" key="" />
+        <bind action="Shortcut 13" key="" />
+        <bind action="Shortcut 14" key="" />
+        <bind action="Shortcut 15" key="" />
+        <bind action="Shortcut 16" key="" />
+        <bind action="Shortcut 17" key="" />
+        <bind action="Shortcut 18" key="" />
+        <bind action="Shortcut 19" key="" />
+        <bind action="Shortcut 20" key="" />
+        <bind action="Shortcut 21" key="" />
+        <bind action="Shortcut 22" key="" />
+        <bind action="Shortcut 23" key="" />
+        <bind action="Shortcut 24" key="" />
+        <bind action="Shortcut 25" key="" />
+        <bind action="Shortcut 26" key="" />
+        <bind action="Shortcut 27" key="" />
+        <bind action="Shortcut 28" key="" />
+        <bind action="Shortcut 29" key="" />
+        <bind action="Shortcut 30" key="" />
+        <bind action="Shortcut 31" key="" />
+        <bind action="Shortcut 32" key="" />
+        <bind action="Shortcut 33" key="" />
+        <bind action="Shortcut 34" key="" />
+        <bind action="Shortcut 35" key="" />
+        <bind action="Shortcut 36" key="" />
+        <bind action="Shortcut 37" key="" />
+        <bind action="Shortcut 38" key="" />
+        <bind action="Shortcut 39" key="" />
+        <bind action="Shortcut 40" key="" />
+    </controls>
+</os>
+<os name="DEFAULT">
+    <controls>
+        <bind action="Forward" key="w" />
+        <bind action="Backward" key="s" />
+        <bind action="Rotate left" key="a" />
+        <bind action="Rotate right" key="d" />
+        <bind action="Strafe left" key="q" />
+        <bind action="Strafe right" key="e" />
+        <bind action="Brightness up" key="F12" />
+        <bind action="Brightness down" key="F11" />
+        <bind action="Brightness Reset" key="F10" />
+        <bind action="Forward (sec)" key="Up" />
+        <bind action="Backward (sec)" key="Down" />
+        <bind action="Rotate left (sec)" key="Left" />
+        <bind action="Rotate right (sec)" key="Right" />
+        <bind action="Strafe left (sec)" key="" />
+        <bind action="Strafe right (sec)" key="" />
+        <bind action="Run" key="LShift" />
+        <bind action="ToggleRun" key="LCtrl" />
+        <bind action="AutoMove" key="r" />
+        <bind action="MouseMove" key="" />
+        <bind action="Sneak" key="RShift" />
+        <bind action="Jump" key="Space" />
+        <bind action="Sit" key="z" />
+        <bind action="Look up" key="PgUp" />
+        <bind action="Look down" key="PgDn" />
+        <bind action="Zoom in" key="ScrollUp" />
+        <bind action="Zoom out" key="ScrollDown" />
+        <bind action="Camera mode" key="m" />
+        <bind action="Center camera" key="x" />
+        <bind action="CameraForward/Back" key="" />
+        <bind action="MouseLook" key="MiddleClick" />
+        <bind action="Toggle MouseLook" key="Tab" />
+        <bind action="Buddy" key="b" />
+        <bind action="Buy" key="" />
+        <bind action="Communications" key="" />
+        <bind action="Help" key="F1" />
+        <bind action="Inventory" key="i" />
+        <bind action="Options" key="o" />
+        <bind action="Quit" key="Alt+q" />
+        <bind action="Spell book" key="c" />
+        <bind action="Stats" key="p" />
+        <bind action="Toggle chat" key="Enter" />
+        <bind action="Reply tell" key="f" />
+        <bind action="Close" key="Esc" />
+        <bind action="Shortcut 1" key="1" />
+        <bind action="Shortcut 2" key="2" />
+        <bind action="Shortcut 3" key="3" />
+        <bind action="Shortcut 4" key="4" />
+        <bind action="Shortcut 5" key="5" />
+        <bind action="Shortcut 6" key="6" />
+        <bind action="Shortcut 7" key="7" />
+        <bind action="Shortcut 8" key="8" />
+        <bind action="Shortcut 9" key="9" />
+        <bind action="Shortcut 10" key="0" />
+        <bind action="Shortcut 11" key="" />
+        <bind action="Shortcut 12" key="" />
+        <bind action="Shortcut 13" key="" />
+        <bind action="Shortcut 14" key="" />
+        <bind action="Shortcut 15" key="" />
+        <bind action="Shortcut 16" key="" />
+        <bind action="Shortcut 17" key="" />
+        <bind action="Shortcut 18" key="" />
+        <bind action="Shortcut 19" key="" />
+        <bind action="Shortcut 20" key="" />
+        <bind action="Shortcut 21" key="" />
+        <bind action="Shortcut 22" key="" />
+        <bind action="Shortcut 23" key="" />
+        <bind action="Shortcut 24" key="" />
+        <bind action="Shortcut 25" key="" />
+        <bind action="Shortcut 26" key="" />
+        <bind action="Shortcut 27" key="" />
+        <bind action="Shortcut 28" key="" />
+        <bind action="Shortcut 29" key="" />
+        <bind action="Shortcut 30" key="" />
+        <bind action="Shortcut 31" key="" />
+        <bind action="Shortcut 32" key="" />
+        <bind action="Shortcut 33" key="" />
+        <bind action="Shortcut 34" key="" />
+        <bind action="Shortcut 35" key="" />
+        <bind action="Shortcut 36" key="" />
+        <bind action="Shortcut 37" key="" />
+        <bind action="Shortcut 38" key="" />
+        <bind action="Shortcut 39" key="" />
+        <bind action="Shortcut 40" key="" />
+    </controls>
+</os>

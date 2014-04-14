@@ -1,0 +1,2 @@
+<!-- Simple file to disable/enable shadows drawn in-game.  It's a simple true/false attribute to switch -->
+<shadows enabled="true" />

@@ -1,0 +1,945 @@
+<Author text="Veluriane" />
+<StringTable>
+  <item orig="
+Do you really wish to leave Yliakum?" trans="Voulez vous vraiment quitter Yliakum?" />
+  <item orig=" " trans=" " />
+  <item orig=" 
+Do you really wish to leave Yliakum?" trans="Désirez-vous vraiment quitter Yliakum?
+" />
+  <item orig=" CP left." trans="CP de gauche" />
+  <item orig=" in front
+of you named " trans=" Devant vous se trouve un dénommé
+ " />
+  <item orig=" unanswered petitions." trans=" pétitions sans réponse" />
+  <item orig=" unaswered petitions." trans="Pétition sans réponse." />
+  <item orig=" Êtes-vous sûr de vouloir transmettre ces informations?" trans=" Êtes-vous sûr de vouloir transmettre ces informations?" />
+  <item orig="!!!WARNING!!!" trans="!!!ATTENTION!!!" />
+  <item orig="%s %s" trans="%s %s" />
+  <item orig="%s advises %s with this suggestion: %s" trans="%s vous conseille %s avec cette suggestion: %s" />
+  <item orig="%s asks: %s" trans="%s demande: %s" />
+  <item orig="%s from %s: %s" trans="%s de %s: %s" />
+  <item orig="%s from %s: %s" trans="%s de %s: %s" />
+  <item orig="%s has invited you to join a group. Click Yes to accept or No to reject." trans="%s vous invite à rejoindre un groupe. Cliquer OUI (Yes) si vous acceptez ou NON (NO) si vous refusez" />
+  <item orig="%s says: %s" trans="%s dit: %s" />
+  <item orig="%s shouts: %s" trans="%s crier: %s" />
+  <item orig="%s tells group: %s" trans="%s dire au groupe: %s" />
+  <item orig="%s tells you: %s" trans="%s vous dit: %s" />
+  <item orig="/ 100" trans="/ 100" />
+  <item orig="0" trans="0" />
+  <item orig="0 Trias" trans="0 Trias" />
+  <item orig="1" trans="1" />
+  <item orig="1 Tria" trans="1 tria" />
+  <item orig="10 Tria" trans="10 trias" />
+  <item orig="100%" trans="100%" />
+  <item orig="250 Tria" trans="250 Tria" />
+  <item orig="30" trans="30" />
+  <item orig="5" trans="5" />
+  <item orig="50 Tria" trans="50 Trias" />
+  <item orig="750" trans="750" />
+  <item orig="&gt;" trans="" />
+  <item orig="?" trans="?" />
+  <item orig="? Weight" trans="? Poids" />
+  <item orig="A full name is required, the first &amp; last name separated with a space. You can use any alphabetic (A-Z) in your name, but no numbers. Each name must be between 3 and 27 letters. 
+If your name is inappropriate, a Game Master (GM) will change it." trans="Un Nom complet est nécessaire, le prénom et le nom sont séparés par un espace. Vous pouvez utiliser les lettres (A-Z) mais pas les chiffres. Le nom doit faire entre  3 and 27 lettres de long.
+Si votre nom s&apos;avère inapproprié, un Maître du Jeu le changera." />
+  <item orig="ALL" trans="TOUT" />
+  <item orig="Accept trade" trans="Accepter la transaction" />
+  <item orig="Account Password:" trans="Mot de passe du compte:" />
+  <item orig="Account User Name:" trans="Nom de l&apos;utilisateur du compte:" />
+  <item orig="Account:" trans="Compte" />
+  <item orig="Action:" trans="Action" />
+  <item orig="Actions" trans="Actions" />
+  <item orig="Actions Volume" trans="Volume du bruitage" />
+  <item orig="Actions sounds" trans="Bruitage" />
+  <item orig="Active" trans="Vivant" />
+  <item orig="Active Magic" trans="Magie en cours" />
+  <item orig="Active Spells" trans="Sorts en cours" />
+  <item orig="Activity:" trans="Activité:" />
+  <item orig="Actual FPS may vary." trans="Le nombre de FPS actuel peut varier" />
+  <item orig="Adaptive distance" trans="Distance ajustable" />
+  <item orig="Add" trans="Ajouter" />
+  <item orig="Add Bezier Curve (b)" trans="Ajouter la courbe de Bézier" />
+  <item orig="Add Linked" trans="Ajouter un lien" />
+  <item orig="Add New" trans="Ajouter un nouveau" />
+  <item orig="Add a comment about this event if you wish" trans="Ajouter un commentaire au sujet de cet évènement si besoin" />
+  <item orig="Add/Edit Action" trans="Ajouter/éditer les actions" />
+  <item orig="Admin" trans="Administration" />
+  <item orig="Admin text color" trans="Couleur - Admin" />
+  <item orig="Administrative banking" trans="Banque administrative" />
+  <item orig="Advanced" trans="mode Avancé" />
+  <item orig="Aggressive" trans="Agressif" />
+  <item orig="All. Chat" trans="Toutes les discussions" />
+  <item orig="Alliance" trans="Alliance" />
+  <item orig="Alliance Chat" trans="Discussion Alliance" />
+  <item orig="Alliance text color" trans="Couleur - Alliance" />
+  <item orig="Alliance:" trans="Alliance:" />
+  <item orig="Allow spawning item with missing mesh" trans="Permettre la substitution d&apos;item de graphiques incomplets" />
+  <item orig="Allow the client to send a newly hashed password to the server (check: http://tinyurl.com/5smsz5l )" trans="" />
+  <item orig="Alternates" trans="Variantes" />
+  <item orig="Ambient Volume" trans="Volume Ambiante" />
+  <item orig="Ambient sounds" trans="Sons ambiants" />
+  <item orig="Ambiguous command: " trans="Commande ambigüe: " />
+  <item orig="Ambiguous name:" trans="Nom ambigu:" />
+  <item orig="Amount available to deposit" trans="Quantité de monnaie pouvant être déposée" />
+  <item orig="Amount available to withdraw" trans="Montant disponible pour un retrait" />
+  <item orig="Amount to deposit" trans="Montant du dépot" />
+  <item orig="Amount to withdraw" trans="Montant du retrait" />
+  <item orig="Apply to all" trans="Appliquer à tous" />
+  <item orig="Are you sure you want to discard the selected quest?" trans="Êtes-vous certain de vouloir supprimer la quête que vous avez sélectionnée?" />
+  <item orig="Are you sure you want to upload your character?" trans="Êtes-vous certain de vouloir ce personnage?" />
+  <item orig="Are you sure you want to upload?  " trans=" Êtes-vous sûr de vouloir transmettre ces informations?" />
+  <item orig="Are you sure you want to upload?  You have 16 CP left." trans="Voulez vous valider ? Il vous reste 16 CP " />
+  <item orig="Are you sure you want to upload?  You have 2 CP left." trans="Êtes-vous sûr de vouloir transmettre ces informations? Il vous reste 2 CP" />
+  <item orig="Arms" trans="Bras" />
+  <item orig="Assemble Slot" trans="Emplacement d&apos;assemblage" />
+  <item orig="Assigned GM:" trans="GM assigné:" />
+  <item orig="Attack" trans="Attaquer" />
+  <item orig="Attackable" trans="Attaquable" />
+  <item orig="Attributes" trans="Attributs" />
+  <item orig="Auction" trans="Enchères" />
+  <item orig="Auction Alignment" trans="Alignement du texte" />
+  <item orig="Auction outline colour" trans="Couleur - Contour" />
+  <item orig="Auction shadow colour" trans="Couleur - Ombre" />
+  <item orig="Auction text color" trans="Couleur - Enchères" />
+  <item orig="Auction text colour" trans="Couleur - Enchères" />
+  <item orig="Auto Tab selection:" trans="Auto Tab sélection" />
+  <item orig="Autoexec" trans="" />
+  <item orig="Available Events:" trans="Evenements disponibles" />
+  <item orig="BIRTH" trans="NAISSANCE" />
+  <item orig="BPM" trans="" />
+  <item orig="Back" trans="Retour" />
+  <item orig="Back_inv" trans="" />
+  <item orig="Background music" trans="Musique de fond" />
+  <item orig="Ban" trans="Bannir" />
+  <item orig="Banking" trans="Banque" />
+  <item orig="Basic chat" trans="Discussion de base" />
+  <item orig="Beard Style" trans="Style de barbe" />
+  <item orig="Before clicking next again, please make sure that your character name is not offensive and would be appropriate for a medieval setting. It must be unique and not similar to that of any real person or thing. Names in violation of this policy (www.planeshift.it/naming.html) will be changed by authorized people in-game.  The game forums can be found at:  http://www.hydlaa.com/smf/" trans="Avant de cliquer sur Suivant, Veuillez vous assurer que le nom de votre personnage n&apos;est pas offensent et compatible avec l&apos;univers médiéval. Il doit être unique et sans référence au monde réel. Tout nom en violation avec ces principes(voir www.planeshift.it/naming.html) sera modifiée pour être conforme au jeu. Les Forums relatifs au jeu peuvent être consultés sur:  http://www.hydlaa.com/smf/" />
+  <item orig="Belt" trans="Ceinture" />
+  <item orig="Birth" trans="Naissance" />
+  <item orig="Birth Event:" trans="Fait de Naissance:" />
+  <item orig="Bloody" trans="Furieux" />
+  <item orig="Book Writing" trans="Ecriture de livre" />
+  <item orig="Boots" trans="Chausses" />
+  <item orig="Bracers" trans="Bracelets" />
+  <item orig="Brightness" trans="" />
+  <item orig="Buddy List Hide" trans="Cacher la liste des Amis" />
+  <item orig="Buddy list" trans="Liste d&apos;Amis" />
+  <item orig="Buffs" trans="chargement temporaire" />
+  <item orig="Buy" trans="Acheter" />
+  <item orig="Buy Skill" trans="Acheter des compétences" />
+  <item orig="Buy Skill Level" trans="Acheter un niveau de Compétence" />
+  <item orig="Buy Skill Rank" trans="" />
+  <item orig="Buy/Sell" trans="Acheter/vendre" />
+  <item orig="Bye!" trans="" />
+  <item orig="CC" trans="CC" />
+  <item orig="CHARACTER CREATION" trans="CRÉATION D&apos;UN PERSONNAGE" />
+  <item orig="CHARACTER SELECT" trans="SELECTION DE PERSONNAGE" />
+  <item orig="CHILDHOOD" trans="ENFANCE" />
+  <item orig="CP Cost:" trans="Coûts du CP" />
+  <item orig="CP: 0" trans="CP: 0" />
+  <item orig="Camera" trans="Camera" />
+  <item orig="Can I join you ?" trans="M&apos;acceptez-vous dans votre groupe?" />
+  <item orig="Cancel" trans="Annuler" />
+  <item orig="Cannot connect to server" trans="Il est impossible de se connecter au serveur" />
+  <item orig="Capacity:" trans="Capacité" />
+  <item orig="Cast" trans="Incanter" />
+  <item orig="Change" trans="Changer" />
+  <item orig="Change Song Title" trans="" />
+  <item orig="Change name" trans="Changer le nom" />
+  <item orig="Channels" trans="Canaux" />
+  <item orig="Char Name" trans="Nom de Personnage" />
+  <item orig="Character Name" trans="Nom de personnage" />
+  <item orig="Character Name:" trans="Nom du Personnage:" />
+  <item orig="Character description:" trans="Description du personnage:" />
+  <item orig="Chat" trans="Discussion" />
+  <item orig="Chat - Bubbles" trans="Discussion - bulles" />
+  <item orig="Chat - Filters" trans="Discussion - Filtres" />
+  <item orig="Chat - Logs" trans="" />
+  <item orig="Chat - Spellchecker" trans="" />
+  <item orig="Chat - TabCompletion" trans="" />
+  <item orig="Chat - Tabs" trans="Discussion - onglets" />
+  <item orig="Chat text color" trans="Couleur - discussion" />
+  <item orig="Choose Your Character" trans="Choisissez votre personnage" />
+  <item orig="Choose your birthday:" trans="Choisissez une date de naissance" />
+  <item orig="Chose Color (c)" trans="Choisir une couleur(c)" />
+  <item orig="Circles available to deposit." trans="Quantité de Circles disponibles pour un dépôt" />
+  <item orig="Circles available to withdraw." trans="Quantité de Circles disponible pour retrait" />
+  <item orig="Claim" trans="Réclamer" />
+  <item orig="Clear" trans="Effacer" />
+  <item orig="Click a character name below, then click Join. Or click New Character." trans="Cliquez sur le nom d&apos;un des personnages ci-dessous, et cliquez sur Entrez" />
+  <item orig="Click to see Instructions" trans="Cliquez pour voir les instructions" />
+  <item orig="Close" trans="Fermer" />
+  <item orig="Coins to exchange:" trans="Monnaie de change:" />
+  <item orig="Collision Detection" trans="Détecteur de collision" />
+  <item orig="Colors" trans="Couleurs" />
+  <item orig="Combat" trans="Combat" />
+  <item orig="Combat Skill description:" trans="habiletés au combats" />
+  <item orig="Combat Skills" trans="Habiletés au combat" />
+  <item orig="Combat Skills List:" trans="Liste des habiletés au combat" />
+  <item orig="Combat messages regarding me" trans="Messages de combats me concernant" />
+  <item orig="Combat messages regarding others" trans="Messages de combats concernant les autres" />
+  <item orig="Combat music" trans="Musique de combat" />
+  <item orig="Combine" trans="Combiner" />
+  <item orig="Combine items in container" trans="Combiner les items dans le contenant" />
+  <item orig="Communication" trans="Communications" />
+  <item orig="Communications" trans="Communications" />
+  <item orig="Completed" trans="Terminé" />
+  <item orig="Confirmation" trans="Confirmation" />
+  <item orig="Confirmation upon PvP duel:" trans="Confirmer l&apos;autorisation d&apos;un duel PvP:" />
+  <item orig="Confirmations" trans="" />
+  <item orig="Connecting to server... Please wait" trans="Connexion au serveur... Veuillez Patienter" />
+  <item orig="Construct" trans="Construire" />
+  <item orig="Container" trans="Casier" />
+  <item orig="Controls" trans="Contrôles" />
+  <item orig="Convert password" trans="" />
+  <item orig="Couldn&apos;t resolve server hostname." trans="Impossible de trouver le nom d&apos;hôte du serveur." />
+  <item orig="Count" trans="Compter" />
+  <item orig="Count:" trans="Compter:" />
+  <item orig="Crafting" trans="" />
+  <item orig="Create Icon (+)" trans="Créer un icône" />
+  <item orig="Create Line (\)" trans="Créer une ligne (\)" />
+  <item orig="Create Text (t)" trans="Créer un texte" />
+  <item orig="Create a New Character" trans="Créer un nouveau Personnage" />
+  <item orig="Create alliance" trans="Créer une alliance" />
+  <item orig="Created Date" trans="" />
+  <item orig="Creatures" trans="créatures" />
+  <item orig="Creatures:" trans="Créatures:" />
+  <item orig="Credits" trans="Crédits" />
+  <item orig="Currently, there are no petitions." trans="Pour le moment il n&apos;y a aucune pétition." />
+  <item orig="Custom" trans="Personnalisation" />
+  <item orig="D:" trans="D" />
+  <item orig="Day:" trans="Jour:" />
+  <item orig="Dead body" trans="Corps morts" />
+  <item orig="Debuffs" trans="Annuler l&apos;effet" />
+  <item orig="Default" trans="par défaut" />
+  <item orig="Default last chat" trans="Rappel de discussion" />
+  <item orig="Defend me !" trans="Défendez moi!" />
+  <item orig="Defensive" trans="Défensif" />
+  <item orig="Delete" trans="Supprimer" />
+  <item orig="Delete Chord" trans="" />
+  <item orig="Delete Measure" trans="" />
+  <item orig="Delete Selected (del)" trans="Effacer la sélection" />
+  <item orig="Delete Selected Character" trans="Effacer le Personnage Selectionné" />
+  <item orig="Deposit" trans="Déposer" />
+  <item orig="Desc" trans="Desc" />
+  <item orig="DescOC" trans="DescOC" />
+  <item orig="Descalate" trans="diminuer" />
+  <item orig="Describe the petition and how you&apos;ve helped" trans="Décrivez la pétition et indiquez comment vous avez aidé." />
+  <item orig="Description" trans="Description" />
+  <item orig="Description:" trans="Description:" />
+  <item orig="Detail information:" trans="Information détaillée" />
+  <item orig="Details" trans="Détails" />
+  <item orig="Developers" trans="Développeurs" />
+  <item orig="Disband" trans="Défaire le groupe" />
+  <item orig="Discard" trans="Abandonné" />
+  <item orig="Dismiss" trans="congédier" />
+  <item orig="Distance:" trans="Distance:" />
+  <item orig="Divorce" trans="Divorce" />
+  <item orig="Do you really want to reset options to default values?" trans="Voulez vous vraiment restaurer les valeurs par défaut" />
+  <item orig="Don&apos;t show this window again" trans="" />
+  <item orig="Done" trans="Terminé" />
+  <item orig="Dot" trans="" />
+  <item orig="Double Staff Switch" trans="" />
+  <item orig="Drop" trans="Lâcher" />
+  <item orig="Dynamic Follow" trans="Suivre dynamiquement" />
+  <item orig="Echo screen text" trans="Renvoi du texte à l&apos;écran" />
+  <item orig="Edit" trans="Editer" />
+  <item orig="Edit Master" trans="Édition Principale" />
+  <item orig="Edit Max GP" trans="Édition maximum du GP" />
+  <item orig="Edit Mode" trans="" />
+  <item orig="Edit Mode (F2)" trans="Mode d&apos;édition" />
+  <item orig="Edit Permissions" trans="Permission d&apos;éditer" />
+  <item orig="Edit Shortcut..." trans="Éditer un raccourci" />
+  <item orig="Edit level" trans="Éditer le niveau" />
+  <item orig="Edit points" trans="Éditer les points" />
+  <item orig="Eighth" trans="" />
+  <item orig="Enable Chat Bubbles" trans="Permettre les bulles de conversation" />
+  <item orig="Enable NPC" trans="Bulle - NPC" />
+  <item orig="Enable NPC_me" trans="Bulle - NPC /me" />
+  <item orig="Enable NPC_my" trans="Bulle - NPC /my" />
+  <item orig="Enable NPC_narrate" trans="Bulle - Narration" />
+  <item orig="Enable Shadows" trans="Activer le rendu des ombres" />
+  <item orig="Enable alliance" trans="Bulle - Alliance" />
+  <item orig="Enable auction" trans="Bulle - Enchères" />
+  <item orig="Enable group" trans="Bulle - Groupe" />
+  <item orig="Enable guild" trans="Bulle - Guilde" />
+  <item orig="Enable me" trans="Bulle - /me" />
+  <item orig="Enable my" trans="Bulle - /my" />
+  <item orig="Enable npcinternal" trans="Bulle - NPC interne" />
+  <item orig="Enable say" trans="Bulle - Parler" />
+  <item orig="Enable shout" trans="Bulle - Crier" />
+  <item orig="Enable tell" trans="Bulle - Chuchoter" />
+  <item orig="Enable tellself" trans="Bulle - tellself" />
+  <item orig="Enabled" trans="Activé" />
+  <item orig="End Repeat" trans="" />
+  <item orig="Ending" trans="" />
+  <item orig="Enter" trans="Entrer" />
+  <item orig="Enter the command(s):" trans="Entrer la(es) commande(s):" />
+  <item orig="Entities" trans="Entités" />
+  <item orig="Escalate" trans="Intensifier" />
+  <item orig="Escalation Level:" trans="Intensifier le niveau" />
+  <item orig="Evaluate" trans="Evaluer" />
+  <item orig="Events" trans="Évènements" />
+  <item orig="Examine" trans="Examiner" />
+  <item orig="Exchange" trans="Échange" />
+  <item orig="Exchange all items" trans="Échanger tous les items" />
+  <item orig="Exchange coins" trans="Petite monnaie de change" />
+  <item orig="Exchange items" trans="Échanger les items" />
+  <item orig="Exchange one item" trans="Echanger un item" />
+  <item orig="Exit PlaneShift" trans="Sortir de PlaneShift" />
+  <item orig="Experience" trans="Expérience" />
+  <item orig="F" trans="F" />
+  <item orig="FPS cap:" trans="FPS cap" />
+  <item orig="Face" trans="Visage" />
+  <item orig="Faction" trans="Factions" />
+  <item orig="Faction description:" trans="Description de la faction:" />
+  <item orig="Factions" trans="Factions" />
+  <item orig="Factions:" trans="Factions:" />
+  <item orig="Fade Speed:" trans="Atténuation de vitesse" />
+  <item orig="Fading:" trans="Disparition" />
+  <item orig="Failed" trans="Raté" />
+  <item orig="Father Name:" trans="Nom du père:" />
+  <item orig="Father:" trans="Père" />
+  <item orig="Filter" trans="Filtre" />
+  <item orig="Filter incoming bad words" trans="Filtrer leurs insultes" />
+  <item orig="Filter outgoing bad words" trans="Filtrer vos insultes" />
+  <item orig="First Name" trans="" />
+  <item orig="First Person" trans="1ere Pers" />
+  <item orig="First name is invalid" trans="Prénom invalide" />
+  <item orig="Flashing" trans="Flashing" />
+  <item orig="Flat" trans="" />
+  <item orig="Free Movement" trans="Mouvements libres" />
+  <item orig="Free Rotation" trans="Rotation Libre" />
+  <item orig="Friends" trans="Amis" />
+  <item orig="Full Defensive" trans="Protégé" />
+  <item orig="Full Mesh" trans="Modèle/Maillage entier" />
+  <item orig="GM" trans="" />
+  <item orig="GM 1" trans="GM 1" />
+  <item orig="GM 2-5" trans="GM 2-5" />
+  <item orig="GM Spawn interface" trans="Interface des GM pour créer des items" />
+  <item orig="Game Board" trans="Plateau de jeu" />
+  <item orig="Game Control" trans="Les contrôles" />
+  <item orig="Game Master Options" trans="Option de GM" />
+  <item orig="Gender:" trans="sexe:" />
+  <item orig="General" trans="Général" />
+  <item orig="Get Reward" trans="Prenez votre récompense" />
+  <item orig="Getting Characters" trans="Créer le personnage" />
+  <item orig="Getting entities" trans="Entités de réception" />
+  <item orig="Give" trans="Donner" />
+  <item orig="Give Kill Experience" trans="Donne de l&apos;expérience en tuerie" />
+  <item orig="Give:" trans="Donner:" />
+  <item orig="Gloves" trans="Gants" />
+  <item orig="Glyph" trans="" />
+  <item orig="Glyphs" trans="Glyphes" />
+  <item orig="Gnd" trans="" />
+  <item orig="Graphics" trans="Graphismes" />
+  <item orig="Greetings" trans="Salutations" />
+  <item orig="Group" trans="Groupe" />
+  <item orig="Group Alignment" trans="Alignement du texte" />
+  <item orig="Group loot" trans="Gains de Groupe" />
+  <item orig="Group outline colour" trans="Couleur - Contour" />
+  <item orig="Group shadow colour" trans="Couleur - Ombre" />
+  <item orig="Group stats" trans="Statistiques du Groupe" />
+  <item orig="Group text color" trans="Couleur - Groupe" />
+  <item orig="Group text colour" trans="Couleur - Groupe" />
+  <item orig="Grouped with you" trans="Groupé avec vous" />
+  <item orig="Grouped with you and the same guild" trans="Groupé avec vous et de la même Guilde" />
+  <item orig="Guild" trans="Guilde" />
+  <item orig="Guild Alignment" trans="Alignement du texte" />
+  <item orig="Guild Bank" trans="Banque de la Gilde" />
+  <item orig="Guild info" trans="Information sur la guilde" />
+  <item orig="Guild message of the day (A short message):" trans="Court message quotidien de la guilde" />
+  <item orig="Guild outline colour" trans="Couleur - Contour" />
+  <item orig="Guild shadow colour" trans="Couleur - Ombre" />
+  <item orig="Guild text color" trans="Couleur - Guilde" />
+  <item orig="Guild text colour" trans="Couleur - Guilde" />
+  <item orig="H:" trans="H" />
+  <item orig="HP" trans="HP" />
+  <item orig="Hair Colour" trans="Couleur des cheveux" />
+  <item orig="Hair Style" trans="Style de cheveux" />
+  <item orig="Half" trans="" />
+  <item orig="Head" trans="Tête" />
+  <item orig="Health" trans="Santé" />
+  <item orig="Hello" trans="Salut" />
+  <item orig="Helm" trans="" />
+  <item orig="Help" trans="Aide" />
+  <item orig="Help text color" trans="Couleur - Aide" />
+  <item orig="Here you can place any OOC information except to advertise companies, products, or services from the real world.
+
+To disable this feature delete everything in the window by using the Modify Description button." trans="Ici vous pouvez ajouter des informations OOC (hors personnage)à l&apos;exception de publicité pour des produits, services ou compagnies du monde réel." />
+  <item orig="Hexas available to withdraw." trans="Combien d&apos;Hexas peuvent être retiré" />
+  <item orig="Hi" trans="Salut" />
+  <item orig="Hide Toolbar/Change Style" trans="Cacher la barre d&apos;outils/changer de style" />
+  <item orig="Hostility" trans="Agression, hostilités" />
+  <item orig="House:" trans="Maison:" />
+  <item orig="I am leaving" trans="Je quitte" />
+  <item orig="Id" trans="" />
+  <item orig="Ignore List" trans="Liste des ignorés" />
+  <item orig="Infinite Inventory" trans="Inventaire infini" />
+  <item orig="Infinite Mana" trans="Mana infini" />
+  <item orig="Information" trans="Information" />
+  <item orig="Insert Measure" trans="" />
+  <item orig="Insert Note" trans="" />
+  <item orig="Instance:" trans="Instance" />
+  <item orig="Instant Cast" trans="Incanter instantanement" />
+  <item orig="Interface" trans="Interface" />
+  <item orig="Interface - Advanced" trans="" />
+  <item orig="Interface Volume" trans="Volume de l&apos;interface" />
+  <item orig="Interface sounds" trans="Interface Son" />
+  <item orig="Introduce yourself" trans="Se présenter" />
+  <item orig="Inventory" trans="Inventaire" />
+  <item orig="Invincible" trans="Invincible" />
+  <item orig="Invisible" trans="Invisible" />
+  <item orig="Invite" trans="Inviter" />
+  <item orig="Item storage" trans="Emplacement de stockage" />
+  <item orig="Items" trans="Items" />
+  <item orig="Items:" trans="Items:" />
+  <item orig="Job:" trans="Travail" />
+  <item orig="Jobs" trans="Travail" />
+  <item orig="Jobs Skill description:" trans="Description des Compétences d&apos;Artisanat" />
+  <item orig="Jobs Skills List:" trans="Compétence d&apos;Artisanat" />
+  <item orig="Join" trans="Entrer" />
+  <item orig="Join Game" trans="Rejoindre le jeu" />
+  <item orig="Join default chan" trans="Canal par défaut" />
+  <item orig="Join default channel" trans="Canal par défaut" />
+  <item orig="Keys" trans="Touches" />
+  <item orig="Kick Player" trans="Expulser un joueur" />
+  <item orig="Kill Player" trans="Tuer le joueur" />
+  <item orig="LIFE EVENTS" trans="ÉVÈNEMENTS BIOGRAPHIQUES" />
+  <item orig="LOGIN" trans="Se connecter" />
+  <item orig="Labels" trans="Étiquettes" />
+  <item orig="Labels visibility" trans="Visibilités" />
+  <item orig="Language" trans="" />
+  <item orig="Last Name" trans="" />
+  <item orig="Last online" trans="" />
+  <item orig="Leader" trans="" />
+  <item orig="Leave" trans="Quitter" />
+  <item orig="Left Finger" trans="Doigt gauche" />
+  <item orig="Left Hand" trans="Main Gauche" />
+  <item orig="Legs" trans="Jambes" />
+  <item orig="Lets go !" trans="Allons-y!" />
+  <item orig="Level" trans="" />
+  <item orig="Life" trans="Vie" />
+  <item orig="List Attributes" trans="listes des attributs" />
+  <item orig="List all of the petitions you have submitted." trans="Liste de toutes vos pétitions soumises." />
+  <item orig="List:" trans="Liste:" />
+  <item orig="Load" trans="Chargement" />
+  <item orig="Load (l)" trans="Chargement (l)" />
+  <item orig="Loading GUI" trans="Chargement du l&apos;interface utilisateur graphique" />
+  <item orig="Loading game" trans="Chargement du jeu" />
+  <item orig="Loading world" trans="Chargement du monde" />
+  <item orig="Loading..." trans="Chargement..." />
+  <item orig="Lock" trans="Verrouiller" />
+  <item orig="Lock/Unlock" trans="" />
+  <item orig="Lockable" trans="Verrouillable" />
+  <item orig="Locked" trans="Bloqué" />
+  <item orig="Lockpicking" trans="Crochetage" />
+  <item orig="Log Out" trans="Déconnecter" />
+  <item orig="Log the chat messages" trans="Enregistrer les discussions" />
+  <item orig="Log the system messages" trans="Activer les logs systèmes" />
+  <item orig="Login" trans="se connecter" />
+  <item orig="Long Phrase Line Count" trans="Nb ligne des phrases longues " />
+  <item orig="Loop background music" trans="Musique de fond" />
+  <item orig="Loot" trans="Gains" />
+  <item orig="Lose focus on send" trans="Lose focus on send" />
+  <item orig="Lvl" trans="" />
+  <item orig="M" trans="M" />
+  <item orig="M. Stamina" trans="Stamina M." />
+  <item orig="M. stamina" trans="Stamina M." />
+  <item orig="M:" trans="M" />
+  <item orig="Magic" trans="Magie" />
+  <item orig="Magic Skill description:" trans="Description des compétences de magie" />
+  <item orig="Magic Skills" trans="Compétences de Magie" />
+  <item orig="Magic Skills List:" trans="Listes des Compétences en magie" />
+  <item orig="Main" trans="Principal" />
+  <item orig="Main chat brackets" trans="Parenthèses" />
+  <item orig="Main tab" trans="Fenêtre de discussion" />
+  <item orig="Mainchat brackets" trans="Parenthèses" />
+  <item orig="Make leader" trans="Rendre Chef" />
+  <item orig="Makes the server log what target player is saying." trans="Demander au serveur d&apos;enregistrer ce que la cible dit." />
+  <item orig="Mana" trans="Mana" />
+  <item orig="Manage Petitions" trans="Gérer les pétitions" />
+  <item orig="Manage petitions to help users." trans="Gérer les pétitions pour aider les joueurs." />
+  <item orig="Marriage" trans="" />
+  <item orig="Marry" trans="Mariage" />
+  <item orig="Master Volume" trans="Volume Principal" />
+  <item orig="Master:" trans="Maître" />
+  <item orig="Max Line Length" trans="Longueur maximum de la ligne" />
+  <item orig="Max. FPS:" trans="Max. FPS" />
+  <item orig="Max. Transparency:" trans="Transparence maximum.:" />
+  <item orig="Me Alignment" trans="Alignement du texte" />
+  <item orig="Me outline colour" trans="Couleur - Contour" />
+  <item orig="Me shadow colour" trans="Couleur - Ombre" />
+  <item orig="Me text colour" trans="Couleur - /me" />
+  <item orig="Members" trans="Membres" />
+  <item orig="Men Stam." trans=" Men Stamina " />
+  <item orig="Mental Stamina" trans="Stamina mentale" />
+  <item orig="Merchant" trans="Marchands" />
+  <item orig="Mesh" trans="" />
+  <item orig="Mesh:" trans="Modèle/Maillage" />
+  <item orig="Meter" trans="" />
+  <item orig="Min. FPS:" trans="FPS min:" />
+  <item orig="Min. Transparency:" trans="Transparence Min.:" />
+  <item orig="Min. distance:" trans="Distance min.:" />
+  <item orig="Mind" trans="Esprit" />
+  <item orig="Mix Action colours" trans="Mixer les couleurs" />
+  <item orig="Mix yourtext color" trans="Mixage des Couleurs" />
+  <item orig="Modifiers" trans="Modificateurs" />
+  <item orig="Modify Description" trans="Modifier la description" />
+  <item orig="Modify description" trans="" />
+  <item orig="Money" trans="Monnaies" />
+  <item orig="Money depositing and withdrawal" trans="Dépôts et retraits de monnaie" />
+  <item orig="Month:" trans="Mois:" />
+  <item orig="Mother Name:" trans="Nom de la mère:" />
+  <item orig="Mother:" trans="Mère" />
+  <item orig="Mount" trans="monter sur" />
+  <item orig="Mouse" trans="Souris" />
+  <item orig="Movements" trans="Mouvements" />
+  <item orig="Music Volume" trans="Volume de la Musique" />
+  <item orig="Mute Player" trans="Joueur silencieux" />
+  <item orig="Mute on focus loss" trans="Muet hors focus" />
+  <item orig="Mute sounds on focus loss" trans="Pas de son hors focus" />
+  <item orig="My Alignment" trans="Alignement du texte" />
+  <item orig="My outline colour" trans="Couleur - Contour" />
+  <item orig="My shadow colour" trans="Couleur - Ombre" />
+  <item orig="My text colour" trans="Couleur - /my" />
+  <item orig="NPC" trans="NPC" />
+  <item orig="NPC Alignment" trans="Alignement du texte" />
+  <item orig="NPC Owned" trans="NPC Owned" />
+  <item orig="NPC outline colour" trans="Couleur - Contour" />
+  <item orig="NPC shadow colour" trans="Couleur - Ombre" />
+  <item orig="NPC text color" trans="Couleur - NPC" />
+  <item orig="NPC text colour" trans="Couleur - NPC" />
+  <item orig="NPC_me Alignment" trans="Alignement du texte" />
+  <item orig="NPC_me outline colour" trans="Couleur - Contour" />
+  <item orig="NPC_me shadow colour" trans="Couleur - Ombre" />
+  <item orig="NPC_me text colour" trans="Couleur - NPC /me" />
+  <item orig="NPC_my Alignment" trans="Alignement du texte" />
+  <item orig="NPC_my outline colour" trans="Couleur - Contour" />
+  <item orig="NPC_my shadow colour" trans="Couleur - Ombre" />
+  <item orig="NPC_my text colour" trans="Couleur - NPC /my" />
+  <item orig="NPC_narrate Alignment" trans="Alignement du texte " />
+  <item orig="NPC_narrate outline colour" trans="Couleur - Contour" />
+  <item orig="NPC_narrate shadow colour" trans="Couleur - Ombre" />
+  <item orig="NPC_narrate text colour" trans="Couleur - Narration" />
+  <item orig="Name" trans="Nom" />
+  <item orig="Name (n)" trans="Nom" />
+  <item orig="Name of the mesh" trans="Nom du modèle/maillage" />
+  <item orig="Name of the mesh fact" trans="Nom du modèle/maillage" />
+  <item orig="Name of the pic" trans="Nom de l&apos;image" />
+  <item orig="Name:" trans="Nom:" />
+  <item orig="Natural" trans="" />
+  <item orig="Neck" trans="Cou" />
+  <item orig="Never tired" trans="Infatigable" />
+  <item orig="New" trans="Nouveau" />
+  <item orig="New Account" trans="Nouveau Compte" />
+  <item orig="New Character" trans="Nouveau Personnage" />
+  <item orig="New User? Register at http://www.planeshift.it/account/create" trans="Nouvel Utilisateur? Enregistrez vous sur: http://www.planeshift.it/account/create" />
+  <item orig="New petition from " trans="Nouvelle pétition de " />
+  <item orig="Next" trans="Suivant." />
+  <item orig="Next Icon (PgDn)" trans="Icône suivant" />
+  <item orig="Next Page" trans="" />
+  <item orig="No" trans="Non" />
+  <item orig="No Fall Damage" trans="Insensibilité aux chutes" />
+  <item orig="No Petitions" trans="Pas de pétitions" />
+  <item orig="No Petitions." trans="Aucune pétition." />
+  <item orig="No Target" trans="Pas de cible" />
+  <item orig="No more than 2 letters in a row allowed" trans="Pas plus de 2 lettres par colonnes" />
+  <item orig="No server running at the moment" trans="Aucun serveur ne fonctionne en ce moment" />
+  <item orig="None" trans="Aucun" />
+  <item orig="Normal" trans="Normal" />
+  <item orig="Notify when alliance members login/logout" trans="M&apos;avertir quand un membre de l&apos;Alliance se connecte/déconnecte" />
+  <item orig="Notify when members login/logout" trans="Avertir quand les membres entrent/sortent" />
+  <item orig="Number of Siblings" trans="Nombre de frères et soeurs" />
+  <item orig="OK" trans="OK" />
+  <item orig="OOC" trans="Hors de personnage (Out of Character)" />
+  <item orig="Octas available to withdraw." trans="Quantité d&apos;Octas disponible pour retrait" />
+  <item orig="Ok" trans="Oui" />
+  <item orig="Online" trans="" />
+  <item orig="Online only" trans="Seul en ligne" />
+  <item orig="Open Inventory" trans="Ouvrir l&apos;inventaire" />
+  <item orig="Options" trans="Options" />
+  <item orig="Options Window" trans="Fenêtres des options" />
+  <item orig="Others&apos; attacks (Successful ones)" trans="Autres: Attaques réussies" />
+  <item orig="Others&apos; attacks that are blocked" trans="Autres: Attaques parées" />
+  <item orig="Others&apos; attacks that are dodged" trans="Autres: Attaques esquivées" />
+  <item orig="Others&apos; attacks that fail to penetrate the armor" trans="Autres: Attaques absorbées par Armure adverse" />
+  <item orig="Others&apos; attacks that missed the target" trans="Autres: Attaques manquées" />
+  <item orig="Others&apos; combat stance changes" trans="Autres: Attitude au combat" />
+  <item orig="Own attacks (Successful ones)" trans="Vous: Attaques réussies" />
+  <item orig="Own attacks that are blocked" trans="Vous: Attaques parées" />
+  <item orig="Own attacks that are dodged" trans="Vous: Attaques esquivées" />
+  <item orig="Own attacks that fail to penetrate the armor" trans="Vous: Attaques absorbées par Armure adverse" />
+  <item orig="Own attacks that missed the target" trans="Vous: Attaques manquées" />
+  <item orig="Own combat stance changes" trans="Vous: Attitude au combat" />
+  <item orig="P. Stamina" trans="Stamina P.:" />
+  <item orig="P. stamina" trans="Stamina V." />
+  <item orig="PARENTS" trans="PARENTS" />
+  <item orig="PATHS" trans="Chemins" />
+  <item orig="PPs:" trans="PPs" />
+  <item orig="Parents" trans="Parents" />
+  <item orig="Password:" trans="Mot de passe" />
+  <item orig="Path" trans="Chemins" />
+  <item orig="Paths" trans="Chemins" />
+  <item orig="Perform an action see by people in your vicinity." trans="Effectuer une action visible des personnes à proximité." />
+  <item orig="Permissions" trans="Permissions" />
+  <item orig="Petition" trans="" />
+  <item orig="Petition Info" trans="Information sur les pétitions" />
+  <item orig="Petition Text:" trans="Texte de pétition:" />
+  <item orig="Petition submitted:" trans="Pétitions soumises:" />
+  <item orig="Petition text:" trans="Texte de pétition:" />
+  <item orig="Petitions" trans="Pétition" />
+  <item orig="Petitons are waiting." trans="Les pétitions sont en attentes." />
+  <item orig="Phys Stam." trans="Stamina physique" />
+  <item orig="Physical Stamina" trans="Stamina de Vie" />
+  <item orig="Pick up" trans="Ramasser" />
+  <item orig="Pickupable" trans="Peut être ramassé" />
+  <item orig="PlaneShift Tutorial" trans="Tutorial de PlaneShift" />
+  <item orig="Play/Solve" trans="Jouer/solutionner" />
+  <item orig="Play/Stop" trans="" />
+  <item orig="Player" trans="" />
+  <item orig="Player name color" trans="Couleur - Noms joueurs" />
+  <item orig="Player name:" trans="Nom du joueur:" />
+  <item orig="Players" trans="Joueurs" />
+  <item orig="Please choose a religion" trans="Veuillez choisir une religion" />
+  <item orig="Please choose life event(s)" trans="Veuillez choisir un(des)  événement(s) de votre vie" />
+  <item orig="Please choose parents&apos; jobs" trans="Veuillez choisir les professions ou emplois de vos parents" />
+  <item orig="Please choose your birth month" trans="Veuillez choisir votre mois de naissance" />
+  <item orig="Please choose your birthday" trans="Veuillez choisir une date de naissance" />
+  <item orig="Please choose your sibling count" trans="Veuillez choisir votre compte" />
+  <item orig="Please enter a full name" trans="Veuillez saisir un nom et un prénom" />
+  <item orig="Please enter a full name for mother" trans="Veuillez saisir le nom complet de la mère" />
+  <item orig="Please enter your password." trans="Veuillez saisir votre mot de passe" />
+  <item orig="Please re-login" trans="Veuillez vous reconnecter" />
+  <item orig="Please select a path" trans="Prière de choisir un chemin" />
+  <item orig="Please select a race" trans="Veuillez choisir une Race" />
+  <item orig="Please wait for verification from server" trans="Veuillez attendre la vérification du serveur" />
+  <item orig="Please wait for verification...." trans="Veuillez patienter pendant la vérification" />
+  <item orig="Points" trans="Points" />
+  <item orig="Poly" trans="" />
+  <item orig="Polygon:" trans="Polygone:" />
+  <item orig="Pop-ups" trans="" />
+  <item orig="Pos" trans="" />
+  <item orig="Position:" trans="Position:" />
+  <item orig="Prev" trans="Précédent" />
+  <item orig="Prev Page" trans="" />
+  <item orig="Previous Icon (PgUp)" trans="Icône précédent (pgUp)" />
+  <item orig="Private notes" trans="Note privée" />
+  <item orig="Privil." trans="Privilèges" />
+  <item orig="Progression Points" trans="Points de progression" />
+  <item orig="Promote" trans="Promouvoir" />
+  <item orig="Prv notes" trans="Notes privées" />
+  <item orig="Pub notes" trans="Note pub" />
+  <item orig="Public notes" trans="Note publique" />
+  <item orig="Purify" trans="Purifier" />
+  <item orig="Put an item up for sale or offer to buy something." trans="Mettre un objet en vente ou proposer d&apos;acheter quelque chose" />
+  <item orig="PvP" trans="PvP" />
+  <item orig="Quality:" trans="Qualité:" />
+  <item orig="Quarter" trans="" />
+  <item orig="Quest" trans="Quête" />
+  <item orig="Quest &amp; Events Notebook" trans="Cahiers de notes des Quêtes et Évènements" />
+  <item orig="Quest Responses" trans="Réponse de Quêtes" />
+  <item orig="Quest Testing" trans="Tester les Quêtes" />
+  <item orig="Quests" trans="Quêtes" />
+  <item orig="Quick" trans="Rapidement" />
+  <item orig="Quick Bar" trans="" />
+  <item orig="Quit" trans="Quitter" />
+  <item orig="Radius:" trans="Radius" />
+  <item orig="Random" trans="Aléatoire" />
+  <item orig="Random name" trans="Nom aléatoire" />
+  <item orig="Randomize" trans="Aléatoire" />
+  <item orig="Rank" trans="Rang" />
+  <item orig="Read Book" trans="lire le livre" />
+  <item orig="Realm" trans="Domaine" />
+  <item orig="Receive:" trans="Recevoir:" />
+  <item orig="Refresh List" trans="Rafraichir la liste" />
+  <item orig="Refresh MOTD" trans="Rafraîchir le MOTD" />
+  <item orig="Religion:" trans="Religion:" />
+  <item orig="Reload" trans="Recharger" />
+  <item orig="Reload Cache" trans="Recharger le cache" />
+  <item orig="Remember password" trans="Se rappeler le mot de passe" />
+  <item orig="Remove" trans="Enlever" />
+  <item orig="Rename" trans="Renommer" />
+  <item orig="Replaying previous chat..." trans="Rejoue la phrase précédente..." />
+  <item orig="Requesting World" trans="Recherche du Monde" />
+  <item orig="Requesting connection" trans="Demande de connexion" />
+  <item orig="Requirements" trans="Exigences" />
+  <item orig="Research" trans="Recherche" />
+  <item orig="Research Magic" trans="Chercher de nouveaux sorts" />
+  <item orig="Reset" trans="réinitialiser" />
+  <item orig="Resolution" trans="Résolution" />
+  <item orig="Rest" trans="" />
+  <item orig="Right Finger" trans="doigt de droite" />
+  <item orig="Right Hand" trans="main droite" />
+  <item orig="Rotate" trans="Rotation" />
+  <item orig="SINGLE" trans="SEUL" />
+  <item orig="SL" trans="SL" />
+  <item orig="Save" trans="Sauvegarder" />
+  <item orig="Save (s)" trans="Sauvegarde(s)" />
+  <item orig="Save MOTD" trans="sauvegarder MOTD" />
+  <item orig="Save the password in configurations files for easier login" trans="" />
+  <item orig="Save this book" trans="Sauvegarder ce livre" />
+  <item orig="Say Alignment" trans="Alignement du texte" />
+  <item orig="Say outline colour" trans="Couleur - Contour" />
+  <item orig="Say shadow colour" trans="Couleur - Ombre" />
+  <item orig="Say text colour" trans="Couleur - Parler" />
+  <item orig="Scale Font:" trans="Taille des fonts" />
+  <item orig="Secret guild" trans="Guilde secrète" />
+  <item orig="Sector" trans="" />
+  <item orig="Sector:" trans="Secteur:" />
+  <item orig="Select a reward:" trans="Sélectionnez une récompense:" />
+  <item orig="Select a vote (1-10)" trans="Sélectionner une valeur (1-10)" />
+  <item orig="Selected Events:" trans="Evenement sélectionné" />
+  <item orig="Selected Target" trans="Cible sélectionne" />
+  <item orig="Selection" trans="Sélection" />
+  <item orig="Sell" trans="Vendre" />
+  <item orig="Server:" trans="Serveur:" />
+  <item orig="Servers:" trans="Serveur:" />
+  <item orig="Set" trans="Cocher/Activer" />
+  <item orig="Setting Item" trans="Préparez un objet" />
+  <item orig="Settings" trans="Configurations" />
+  <item orig="Shadows" trans="Ombres" />
+  <item orig="Sharp" trans="" />
+  <item orig="Short Phrase Char Count" trans="Nb caractères des phrases courtes" />
+  <item orig="Shortcut key:" trans="Raccourcis" />
+  <item orig="Shortcuts" trans="Raccourcis" />
+  <item orig="Shout Alignment" trans="Alignement du texte" />
+  <item orig="Shout outline colour" trans="Couleur - Contour" />
+  <item orig="Shout shadow colour" trans="Couleur - Ombre" />
+  <item orig="Shout text color" trans="Couleur - Crier" />
+  <item orig="Shout text colour" trans="Couleur - Crier" />
+  <item orig="Show Toolbar" trans="Montrer la barre d&apos;outils" />
+  <item orig="Show guild " trans="Afficher la guilde" />
+  <item orig="Siblings" trans="Fraternités" />
+  <item orig="Sixteenth" trans="" />
+  <item orig="Skill" trans="Compétence" />
+  <item orig="Skill to unlock / lock" trans="habileté à verrouiller et déverrouiller" />
+  <item orig="Skills and stats" trans="Compétences et Statistiques" />
+  <item orig="Skin Colour" trans="Couleur de la peau" />
+  <item orig="Song Title" trans="" />
+  <item orig="Sound" trans="Son" />
+  <item orig="Sound location" trans="Perception des sons:" />
+  <item orig="Sound on private Tells" trans="Signaler un message Privé" />
+  <item orig="Spawn item" trans="Créer un item" />
+  <item orig="Spell Book" trans="Livre de sorts" />
+  <item orig="Spell Casting" trans="" />
+  <item orig="Spell Description:" trans="Description du sort:" />
+  <item orig="Spell List:" trans="Liste de sorts" />
+  <item orig="Spell Power" trans="Puissance de sort" />
+  <item orig="Spell book" trans="Livre des Sorts" />
+  <item orig="Spells" trans="Magie" />
+  <item orig="Stack Count" trans="empiler" />
+  <item orig="Start Personal Banking" trans="Commencer une banque personnel" />
+  <item orig="Start Repeat" trans="" />
+  <item orig="Stat" trans="Stats" />
+  <item orig="Stats" trans="Statistiques" />
+  <item orig="Stats and Skills" trans="Statistiques et Compétences" />
+  <item orig="Stats description:" trans="Description des statistiques" />
+  <item orig="Stats:" trans="Statistiques" />
+  <item orig="Status" trans="" />
+  <item orig="Status:" trans="Statut:" />
+  <item orig="Stop Attack" trans="Arrêter le combat" />
+  <item orig="Storage" trans="Stockage" />
+  <item orig="Store" trans="Emmagasiner" />
+  <item orig="Strength on the lock" trans="Force sur la serrure" />
+  <item orig="Study" trans="Etude" />
+  <item orig="Study Item" trans="Étudier l&apos;item" />
+  <item orig="Study notes:" trans="Notes d&apos;études" />
+  <item orig="Suggest Name" trans="Proposer un Nom" />
+  <item orig="System" trans="Système" />
+  <item orig="System Base" trans="Principale" />
+  <item orig="System text color" trans="Couleur - Système" />
+  <item orig="Take All" trans="" />
+  <item orig="Take and Stack All" trans="" />
+  <item orig="Take item" trans="Prendre un item" />
+  <item orig="Talk" trans="Parler" />
+  <item orig="Talk to everyone in your guild privately." trans="Parler en privé à chacun des membres de votre Guilde" />
+  <item orig="Talk to people in your sector." trans="Communiquer avec des personnes dans votre secteur" />
+  <item orig="Talk to someone privately." trans="Parler à quelqu&apos;un en privé" />
+  <item orig="Talk to the people in your immediate vicinity." trans="Parler aux personnes à proximité." />
+  <item orig="Talk to your group privately." trans="Parler à votre groupe en privé." />
+  <item orig="Target" trans="Cible" />
+  <item orig="Teleport To Player" trans="Téléporter un joueur" />
+  <item orig="Tell" trans="Dire" />
+  <item orig="Tell Alignment" trans="Alignement du texte" />
+  <item orig="Tell outline colour" trans="Couleur - Contour" />
+  <item orig="Tell shadow colour" trans="Couleur - Ombre" />
+  <item orig="Tell text color" trans="Couleur - Chuchoter" />
+  <item orig="Tell text colour" trans="Couleur - Chuchoter" />
+  <item orig="Tells" trans="Parler en privé" />
+  <item orig="Tellself Alignment" trans="Alignement du texte" />
+  <item orig="Tellself outline colour" trans="Couleur - Contour" />
+  <item orig="Tellself shadow colour" trans="Couleur - Ombre" />
+  <item orig="Tellself text colour" trans="Couleur - tellself" />
+  <item orig="Testers" trans="Testeurs" />
+  <item orig="The number of circles that you may exchange." trans="Quantité de Circles que vous pouvez échanger" />
+  <item orig="The number of circles you wish to deposit." trans="Quantité de Circles que vous souhaitez déposer." />
+  <item orig="The number of circles you wish to withdraw." trans="Quantité de Circles que vous désirez retirer" />
+  <item orig="The number of coins you wish to exchange." trans="Quantité de pièces que vous désirez échanger" />
+  <item orig="The number of hexas that you may exchange." trans="Nombre de Hexas que vous pouvez échanger" />
+  <item orig="The number of hexas you wish to deposit." trans="Quantité d&apos;Hexa que vous souhaitez déposer" />
+  <item orig="The number of hexas you wish to withdraw." trans="Quantité d&apos;Hexas que vous désirez retirer" />
+  <item orig="The number of octas that you may exchange." trans="Quantité d&apos;Octas que vous pouvez échanger." />
+  <item orig="The number of octas you wish to deposit." trans="Quantité d&apos;Octas que vous pouvez échanger." />
+  <item orig="The number of octas you wish to withdraw." trans="Quantité d&apos;Octas que vous désirez retirer" />
+  <item orig="The number of trias that you may exchange." trans="Quantité de trias pouvant être échangés" />
+  <item orig="The number of trias you wish to deposit." trans="Quantité de Trias que vous souhaitez déposer." />
+  <item orig="The number of trias you wish to withdraw." trans="Quantité de Trias que vous désirez retirer" />
+  <item orig="The selected petition has been escalated." trans="La pétition sélectionnée a été rendu plus prioritaire." />
+  <item orig="The selected petition was %s" trans="La pétition sélectionnée était %s" />
+  <item orig="The selected petition was cancelled." trans="La pétition sélectionnée a été annulée." />
+  <item orig="The server is locked!" trans="Le serveur est indisponible!" />
+  <item orig="The server is not running or is not reachable.  Please check the website or forums for more info." trans="Le serveur ne fonctionne pas ou est inatteignable. Veuillez vérifier sur le site officiel ou le forum pour plus d&apos;information" />
+  <item orig="The server isn&apos;t available!" trans="Le serveur est indisponible!" />
+  <item orig="The server isn&apos;t ready!" trans="Le serveur est disponible" />
+  <item orig="There are " trans="ils sont " />
+  <item orig="Third Person Follow" trans="3eme Pers(poursuite)" />
+  <item orig="Third Person Lara" trans="3eme Pers(Lara)" />
+  <item orig="Third Person M64" trans="3eme Pers(M64)" />
+  <item orig="This window is what people will read when they click on you; this box is not to be filled with anything other than things that a person could reasonably perceive with their senses. There is no reason to include anything beyond what one can sense when looking at your character. While sensual detail ONLY is to be included, this does not mean that you should be sparing, please include as many appeals to the senses as your character clearly eminates that can be sensed with the five accepted senses (sight, touch, hearing and smell (being primary)(only list taste if you anticipate people tasting your character)). If you are on the non rp server: Not only can you disregard the above, but you are encouraged to include epic descriptions of all sorts, quote great authors and even recite your own unpublished novels with no limitation whatsoever." trans="Cette fenêtre contient la description de ce que les autres joueurs verront dans le jeu en cliquant sur vous. Sur un serveur RP, cette description doit être remplie avec des informations que les autres joueurs seraient  susceptible de percevoir via leurs personnages. Par contre, sur un serveur non RP, vous êtes  encouragé à inclure des descriptions sur les exploits et aventures de votre personnage." />
+  <item orig="Time" trans="Temps" />
+  <item orig="Time: " trans="Heure: " />
+  <item orig="Tonality" trans="" />
+  <item orig="Tooltips" trans="" />
+  <item orig="Torso" trans="Torse" />
+  <item orig="Trade" trans="Commercer" />
+  <item orig="Train" trans="Entrainer" />
+  <item orig="Transfer to inventory" trans="Transférer à l&apos;inventaire" />
+  <item orig="Transient" trans="transitoire" />
+  <item orig="Tria" trans="Tria" />
+  <item orig="Tria:" trans="Tria" />
+  <item orig="Trias" trans="Trias" />
+  <item orig="Trias available to withdraw." trans="Maximum de trias que vous pouvez retirer" />
+  <item orig="Trias:" trans="Trias" />
+  <item orig="Trigger:" trans="Déclencheurs" />
+  <item orig="Type" trans="" />
+  <item orig="Type:" trans="Genre:" />
+  <item orig="Unclaim" trans="Non réclamé" />
+  <item orig="Uncompleted" trans="incomplète" />
+  <item orig="Unknown Chat Type: %d" trans="Type de discussion inconnu : %d" />
+  <item orig="Unknown command" trans="Commande inconnue" />
+  <item orig="Unlock" trans="Déverrouiller" />
+  <item orig="Unmount" trans="descendre de" />
+  <item orig="Unmute Player" trans="Player non-silencieux" />
+  <item orig="Unpickable" trans="Item fixe" />
+  <item orig="Upload" trans="Chargement" />
+  <item orig="Upload!" trans="Envoyer!" />
+  <item orig="Use" trans="Utiliser" />
+  <item orig="Use Collision Detection" trans="Utiliser la détection de collision" />
+  <item orig="Use Equipped tool" trans="Utiliser un outil equipé" />
+  <item orig="Use basic chat window (need reload)" trans="Utiliser la fenêtre par défaut (Recharger)" />
+  <item orig="Use simplified chat window" trans="Utilisez la fenêtre de discussion simplifiée" />
+  <item orig="Use simplified chat window (need reload)" trans="Utilisez la fenêtre de discussion simplifiée" />
+  <item orig="Use the container" trans="" />
+  <item orig="Various" trans="Divers" />
+  <item orig="Various Skill description:" trans="Compétences diverses" />
+  <item orig="Various Skills" trans="Divers Compétences" />
+  <item orig="Various Skills List:" trans="Liste des compétences diverses" />
+  <item orig="Verification complete" trans="Vérification complète" />
+  <item orig="View" trans="Voir" />
+  <item orig="View Item" trans="Voir un item" />
+  <item orig="View Stats" trans="Voir les statistiques" />
+  <item orig="View al.Chat" trans="Voir toutes les discussions" />
+  <item orig="View all" trans="Afficher tout" />
+  <item orig="View all. Chat" trans="Voir toutes les discussions" />
+  <item orig="View chat" trans="Afficher les discussions" />
+  <item orig="View item" trans="Voir l&apos;item" />
+  <item orig="Voices" trans="Voix" />
+  <item orig="Voices Volume" trans="Volume des voix" />
+  <item orig="Wait" trans="Attendre" />
+  <item orig="Waiting on server data.." trans="En attente des données du serveur..." />
+  <item orig="Way" trans="Chemin/Voie" />
+  <item orig="Weak Pickupable" trans="" />
+  <item orig="Website:" trans="Site Web:" />
+  <item orig="Weight:" trans="Poids" />
+  <item orig="Welcome back" trans="Bienvenue de nouveau" />
+  <item orig="Welcome to" trans="" />
+  <item orig="Welcome to PlaneShift!" trans="Bienvenue sur PlaneShift!" />
+  <item orig="Whisper" trans="Chuchoter" />
+  <item orig="Whole" trans="" />
+  <item orig="Withdraw" trans="Retirer" />
+  <item orig="Withdraw and Deposit" trans="Retirer ou déposer" />
+  <item orig="Write in this book" trans="Écrire dans ce livre" />
+  <item orig="X:" trans="X" />
+  <item orig="Y:" trans="S:" />
+  <item orig="Year:" trans="Année:" />
+  <item orig="Yes" trans="Oui" />
+  <item orig="You advise %s with this suggestion: %s" trans="Vous avertissez %s en lui suggérant : %s" />
+  <item orig="You are ignoring all replies from that person." trans="Vous ignorez les réponses de cette personne." />
+  <item orig="You can not ignore yourself." trans="Vous ne pouvez vous ignorer..." />
+  <item orig="You currently have no petitions." trans="Vous n&apos;avez pas de pétition à votre nom." />
+  <item orig="You have " trans="Vous avez" />
+  <item orig="You have been assigned to the selected petition." trans="La pétition sélectionnée vous a été attribuée" />
+  <item orig="You have entered edit mode." trans="Vous êtes entrez dans le mode d&apos;édition" />
+  <item orig="You have ignored no-one." trans="Vous n&apos;avez ignoré personne." />
+  <item orig="You have ignored the following players:" trans="Vous avez ignoré les joueurs suivants:" />
+  <item orig="You must be assigned to a petition in order to close it." trans="Vous devez assigner une pétition si vous voulez la clore" />
+  <item orig="You must enter the text" trans="Vous devez saisir un texte" />
+  <item orig="You must select a petition from the list in order to assign yourself." trans="Pour vous assigner une pétition vous devez d&apos;abord la sélectionner." />
+  <item orig="You must select a petition from the list in order to cancel it." trans="Pour annuler une pétition vous devez d&apos;abord la sélectionner." />
+  <item orig="You must select a petition from the list in order to close it." trans="Pour clôturer une pétition, vous devez d&apos;abord la sélectionner." />
+  <item orig="You must select a petition from the list in order to escalate it." trans="Pour rendre une pétition plus urgente, vous devez d&apos;abord la sélectionner." />
+  <item orig="You must select a petition from the list in order to view it." trans="Pour voir une pétition, vous devez d&apos;abord la sélectionner" />
+  <item orig="You see a " trans="Vous voyez un " />
+  <item orig="You tell" trans="Vous dites" />
+  <item orig="You tell %s: %s" trans="vous dites à %s: %s" />
+  <item orig="You will no longer ignore %s." trans="Vous n&apos;ignorerez plus %s." />
+  <item orig="You will now ignore %s." trans="A l&apos;avenir vous ignorerez %s." />
+  <item orig="You&apos;re offered" trans="Vous avez offert" />
+  <item orig="You&apos;re offering" trans="Vous offrez" />
+  <item orig="Your Familiars Stats and Skills" trans="Les statistiques et les compétences de votre animal familier" />
+  <item orig="Your notes:" trans="Vos notes:" />
+  <item orig="Your text color" trans="Couleur - /me" />
+  <item orig="Z:" trans="Z:" />
+  <item orig="alliance Alignment" trans="Alignement du texte" />
+  <item orig="alliance outline colour" trans="Couleur - Contour" />
+  <item orig="alliance shadow colour" trans="Couleur - Ombre" />
+  <item orig="alliance text colour" trans="Couleur - Alliance" />
+  <item orig="auctions" trans="Enchères" />
+  <item orig="cancelled." trans="annulé." />
+  <item orig="closed." trans="fermé." />
+  <item orig="controls" trans="contrôles" />
+  <item orig="details" trans="Détails" />
+  <item orig="disabled" trans="désactiver" />
+  <item orig="each values 1 Tria" trans="Chaque valeur 1 Tria" />
+  <item orig="each values 10 Tria" trans="Chaque valeur 10 Trias" />
+  <item orig="each values 250 Tria" trans="Chaque valeur 250 Trias" />
+  <item orig="each values 50 Tria" trans="Chaque Valeur 50 Trias" />
+  <item orig="female " trans="femme " />
+  <item orig="graphics" trans="Graphismes" />
+  <item orig="keyboard" trans="Clavier" />
+  <item orig="landscape" trans="paysage" />
+  <item orig="male " trans="masculin" />
+  <item orig="models" trans="Modèles" />
+  <item orig="mouse" trans="souris" />
+  <item orig="network" trans="Réseau" />
+  <item orig="no" trans="non" />
+  <item orig="none" trans="Aucun" />
+  <item orig="npcinternal Alignment" trans="Alignement du texte" />
+  <item orig="npcinternal outline colour" trans="Couleur - Contour" />
+  <item orig="npcinternal shadow colour" trans="Couleur - Ombre" />
+  <item orig="npcinternal text colour" trans="Couleur - NPC Interne" />
+  <item orig="o&amp;clock" trans="" />
+  <item orig="o&apos;clock" trans="" />
+  <item orig="says" trans="dit" />
+  <item orig="says:" trans="disent:" />
+  <item orig="server" trans="Serveur" />
+  <item orig="set attackable" trans="Active le mode Attaquable" />
+  <item orig="set buddyhide" trans="Masquer les amis" />
+  <item orig="set givekillexp" trans="Xp de combat" />
+  <item orig="set infiniteinventory" trans="Inventaire illimité" />
+  <item orig="set infinitemana" trans="Mana infini" />
+  <item orig="set instantcast" trans="incantation instantanée" />
+  <item orig="set invincible" trans="Invincibilité" />
+  <item orig="set invisible" trans="Active l&apos;invisibilité" />
+  <item orig="set nevertired" trans="Infatigable" />
+  <item orig="set nofalldamage" trans="Pas de dégât lors des chutes" />
+  <item orig="set questtester" trans="Active le mode Testeur de Quêtes" />
+  <item orig="set viewall" trans="Cocher Voir tout" />
+  <item orig="shouts" trans="crier" />
+  <item orig="tells you" trans="Vous dit:" />
+  <item orig="tweaks" trans="Pincements" />
+  <item orig="yes" trans="oui" />
+  <item orig="Êtes-vous certain de vouloir ce personnage?" trans="Êtes-vous certain de vouloir ce personnage?" />
+</StringTable>

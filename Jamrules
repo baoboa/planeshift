@@ -1,0 +1,24 @@
+if ! $(BUILDTOP)
+{
+BUILDTOP = $(TOP) ;
+}
+
+# Include configuration.
+JAMCONFIG ?= $(BUILDTOP)/Jamconfig ;
+include $(JAMCONFIG) ;
+
+# Set up compiler flags.
+# Unfortunately, we can not use FDefines here since Boost Jam does not have it,
+# and we have not yet included mk/jam/build.jam which provides an emulation
+# layer for Boost.  We can not include build.jam earlier because these flags
+# need to be defined before build.jam is included.  :-(
+COMPILER.CFLAGS.debug += -DCS_DEBUG -g3 ;
+COMPILER.LFLAGS.debug += -g3 ;
+COMPILER.CFLAGS.profile += -g3 -pg ;
+COMPILER.LFLAGS.profile += -g3 -pg ;
+
+# Extra warning flags
+COMPILER.CFLAGS.optimize += "-Wdisabled-optimization" ;
+
+# Include CS build rules
+include $(TOP)/mk/jam/build.jam ;

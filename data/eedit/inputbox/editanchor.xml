@@ -1,0 +1,37 @@
+<widget_description>
+
+<widget name="SelectEditAnchor" factory="EEditSelectEditAnchor" 
+        visible="yes" savepositions="no" movable="yes" resizable="no" resizetoscreen="no" >
+        
+    <frame x="0" y="0" width="240" height="105" border="yes" justtitle="yes" />
+    <title resource="TitleBar" text="Edit Anchor" align="left" />
+    <font name="LiberationSans-Regular.ttf" r="255" g="255" b="255" size="9"  sr="0" sg="0" sb="0" shadow="yes" />   
+    <bgimage resource="Back" alpha="0" />
+
+    <widget name="add_anchor_lbl" factory="pawsTextBox">
+        <frame x="10" y="14" width="85" height="18" border="no"/>
+        <font name="LiberationSans-Regular.ttf" r="255" g="255" b="255" size="9"  sr="0" sg="0" sb="0" shadow="yes" />   
+        <text string="New Name:" />
+    </widget>
+    <widget name="select_name" factory="pawsEditTextBox">
+        <frame x="95" y="8" width="135" height="25" border="no" />        
+        <font name="LiberationSans-Regular.ttf" r="255" g="255" b="255" size="9"  sr="0" sg="0" sb="0" shadow="yes" />   
+        <bgimage resource="Shaded" alpha="75" />
+    </widget>
+    <widget name="change_name" factory="pawsButton">
+        <frame x="160" y="38" width="70" height="25" border="no" />
+        <font name="LiberationSans-Regular.ttf" r="255" g="255" b="255" size="7"  sr="0" sg="0" sb="0" shadow="yes" />   
+        <buttonup resource="ButtonUp"/>
+        <buttondown resource="ButtonDown" />
+        <label text="Change"/>
+    </widget>
+    <widget name="delete_anchor" factory="pawsButton">
+        <frame x="10" y="70" width="90" height="25" border="no" />
+        <font name="LiberationSans-Regular.ttf" r="255" g="255" b="255" size="7"  sr="0" sg="0" sb="0" shadow="yes" />   
+        <buttonup resource="ButtonUp"/>
+        <buttondown resource="ButtonDown" />
+        <label text="Delete Anchor"/>
+    </widget>
+</widget>
+
+</widget_description>

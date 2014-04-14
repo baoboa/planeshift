@@ -1,0 +1,1 @@
+The dump_sym program for linux is compiled from the breakpad SVN: http://google-breakpad.googlecode.com/svn/trunk

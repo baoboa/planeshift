@@ -1,0 +1,25 @@
+#! /usr/bin/php
+<?php
+// Converter for loot modifiers - assumes DB schema has already been updated to 1214
+// (or at least prg_evt_equip has been renamed to equip_script).
+
+// Change your database settings here:
+$db = mysql_connect("localhost", "planeshift", "planeshift") or die ("Unable to connect!"); // host, user, pass
+mysql_select_db("planeshift", $db) or die("Could not select database");
+
+$scripts = mysql_query("SELECT I.id, I.name, P.event_script AS equip_script FROM item_stats I JOIN progression_events P ON I.equip_script = P.name WHERE equip_script LIKE 'randomitemequip%'") or die("fatal error: couldn't select stuff: " . mysql_error() . "\n");
+while ($row = mysql_fetch_array($scripts))
+{
+    $s = mysql_real_escape_string(
+         preg_replace('!<evt>!', '<apply aim="Actor" name="' . $row['name'] . '" type="buff">',
+         preg_replace('!</evt>!', '</apply>',
+         preg_replace('!<attack!', '<atk',
+         preg_replace('!<defense!', '<def',
+         preg_replace('!<hp!', '<hp-max',
+         preg_replace('!<([^ ]*) (name="[^"]*" )?[^>]*(value="[-0-9\.]*")[^>]*/>!', '<$1 $2$3/>', $row['equip_script'])))))));
+    echo "Updating " . $row['name'] . "...\n";
+    mysql_query("UPDATE item_stats SET equip_script = '$s' WHERE id=" . $row['id']) or die(mysql_error() . "\n");
+    mysql_query("DELETE FROM progression_events WHERE name = '" . mysql_real_escape_string($row['name']) . "'");
+}
+
+?>

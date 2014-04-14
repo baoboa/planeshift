@@ -1,0 +1,63 @@
+SubDir TOP src server ;
+
+SubInclude TOP src server bulkobjects ;
+
+Application psserver :
+	[ Wildcard *.cpp *.h ] : console
+;
+
+ExternalLibs psserver : CRYSTAL ;
+LinkWith psserver : bulkobjects fparser psnet psengine psutil psrpgrules psmusic ;
+CompileGroups psserver : server ;
+
+if $(HAVE_STATIC_PLUGINS) = "yes"
+{
+
+SubVariant static ;
+Application psserver_static : [ Wildcard *.cpp *.h ] $(extrafiles) : console independent noinstall nohelp ;
+CFlags psserver_static : [ FDefines CS_STATIC_LINKED ] ;
+LFlags psserver_static : -lcrystalspace_staticplugins-$(CRYSTAL.VERSION) ;
+MsvcDefine psserver_static : CS_STATIC_LINKED ;
+LinkWith psserver_static : planeshift_staticplugins planeshift_database_staticplugins bulkobjects fparser psnet psengine psutil psrpgrules psmusic ;
+
+LinkStaticPlugins psserver_static :
+  bindoc
+  csddsimg
+  csfont
+  csopcode
+  csparser
+  cssynldr
+  docpreproc
+  dsplex
+  dynavis
+  engine
+  frustvis
+  glshader_cg
+  imgplex
+  null2d
+  null3d
+  nullmesh
+  rm_unshadowed
+  reporter
+  shadermgr
+  shaderweaver
+  stdrep
+  vfs
+  xmlshader
+  xmltiny
+: 
+: CRYSTAL
+;
+
+LinkStaticPlugins psserver_static :
+  bgloader
+  dbmysql
+;
+
+ExternalLibs psserver_static : CRYSTAL ;
+CompileGroups psserver_static : server_static ;
+
+
+SubVariant ;
+}
+

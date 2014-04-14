@@ -1,0 +1,55 @@
+#! /usr/bin/php
+<?php
+// A validator for progression scripts - checks DB contents against the schema.
+// You need command line PHP and xmllint installed to run this.
+
+$SCHEMA_PATH = 'data/schemas';
+
+// Change your database settings here:
+$db = mysql_connect("localhost", "planeshift", "planeshift") or die ("Unable to connect!"); // host, user, pass
+mysql_select_db("planeshift", $db) or die("Could not select database");
+
+$progression_schema = $SCHEMA_PATH . '/ProgressionScript.rng';
+$applicative_schema = $SCHEMA_PATH . '/ApplicativeScript.rng';
+
+// Given query must return 'name' and 'script' columns.
+function validate($schema, $query)
+{
+    // snagged from the example in http://us2.php.net/manual/en/function.proc-open.php
+    $descriptorspec = array(
+        0 => array("pipe", "r"), // stdin is a pipe that the child will read from
+        1 => array("pipe", "w"), // stdout is a pipe that the child will write to
+        2 => array("pipe", "w")  // stderr is a file to write to
+    );
+
+    $scripts = mysql_query($query);
+    while ($row = mysql_fetch_array($scripts))
+    {
+        $process = proc_open("xmllint --relaxng $schema --noout -", $descriptorspec, $pipes);
+        if (!is_resource($process))
+        {
+            echo "Error when processing " . $row['name'] . ": couldn't run xmllint\n";
+            continue;
+        }
+
+        fwrite($pipes[0], $row['script']);
+        fclose($pipes[0]);
+    
+        fclose($pipes[1]); // we don't care about stdout.
+    
+        $errors = stream_get_contents($pipes[2]);
+    
+        fclose($pipes[2]);
+        if (proc_close($process) != 0)
+        {
+            echo "========= " . $row['name'] . " is invalid!\n" . $errors . "\n";
+        }
+    }
+}
+
+echo "==== Validating progression scripts ================\n";
+validate($progression_schema, 'SELECT name, event_script AS script FROM progression_events');
+
+echo "==== Validating item equip scripts ===========\n";
+validate($applicative_schema, 'SELECT name, equip_script AS script FROM item_stats WHERE equip_script <> ""');
+?>

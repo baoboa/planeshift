@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" ?> 
+<library>
+    <shaders>
+        <shader>
+            <file>/shader/lighting/fullbright.xml</file>
+        </shader>
+    </shaders>
+    <textures>
+        <texture name="labelfonttable">
+            <file>/this/art/effects/character_set_baar_sophia.dds</file>
+            <alpha><binary /></alpha>
+            <class>cegui</class>
+        </texture>
+    </textures>
+    <materials>
+        <material name="mat_labelfonttable">
+            <texture>labelfonttable</texture>
+	      <shader type="base">lighting_fullbright</shader>
+	      <shader type="diffuse">lighting_fullbright</shader>
+            <shader type="depthwrite">*null</shader>
+        </material>
+    </materials>
+    <addon plugin="PSEffects">
+        <effect name="label">
+            <anchor type="basic" name="pos">
+                <dir>none</dir>
+            </anchor>
+            <obj type="label" name="label" labelwidth="2.0" material="mat_labelfonttable"
+             sizefile="/this/data/effects/misc/glyphs_baar_sophia.xml">
+                <mixmode>alpha</mixmode>
+                <attach>pos</attach>
+                <death>none</death>
+                <dir>billboard</dir>
+            </obj>
+        </effect>
+    </addon>
+</library>

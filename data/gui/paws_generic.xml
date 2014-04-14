@@ -1,0 +1,30 @@
+<widget_description>
+<widget name="generic" factory="pawsGeneric"
+        visible="yes" savepositions="no" movable="no"
+        resizable="no" >
+
+    <!-- window background -->
+    <bgimage resource="Standard Background" alpha="0" fade="no" />
+
+    <!-- size of window and title -->
+    <frame x="0" y="0" width="800" height="600" border="no" />
+    <title resource="Blue Title" text="Generic PAWS window" align="left" />
+
+    <!-- label -->
+    <widget name="lbl" factory="pawsTextBox">
+        <frame x="200" y="380" width="400" height="24" border="no" />
+         <text string="This is a generic paws window." />
+    </widget>
+
+    <!-- OK button -->
+    <widget name="ok" factory="pawsButton">
+        <frame x="300" y="530" width="200" height="30" border="yes" />
+        <font name="LiberationSans-Regular.ttf" r="255" g="255" b="255" size="9"/>
+        <buttonup resource="Blue Title"/>
+        <buttondown resource="Blue Title" />
+    <label text="Ok"/>
+    </widget>
+
+</widget>
+</widget_description>
+

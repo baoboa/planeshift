@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?> 
+<library>
+    <shaders>
+        <shader>
+            <file>/shader/lighting/lighting_basic.xml</file>
+        </shader>
+    </shaders>
+    <textures>
+        <texture name="shadow">
+            <file>/this/art/effects/shadow.png</file>
+        </texture>
+    </textures>
+    <materials>
+        <material name="shadow">
+            <texture>shadow</texture>
+	      <shader type="base">lighting_basic</shader>
+	      <shader type="diffuse">lighting_basic</shader>
+            <shader type="depthwrite">*null</shader>
+        </material>
+    </materials>
+    <addon plugin="PSEffects">
+        <effect name="shadow">
+            <anchor type="basic" name="pos">
+                <dir>none</dir>
+            </anchor>
+            <obj type="decal" name="shadow" material="shadow">
+                <attach>pos</attach>
+                <death>none</death>
+                <dir>none</dir>
+                <mixmode>mult</mixmode>
+                <topClip enabled="true" scaleDist="2.0" />
+                <bottomClip enabled="true" scaleDist="0.5" />
+            </obj>
+        </effect>
+    </addon>
+</library>

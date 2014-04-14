@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!-- recast.csplugin -->
+<plugin>
+  <scf>
+    <classes>      
+      <class>
+        <name>cel.navmeshbuilder</name>
+        <implementation>celNavMeshBuilder</implementation>
+        <description>CEL navigation mesh builder</description>
+      </class>      
+      <class>
+        <name>cel.hnavstructbuilder</name>
+        <implementation>celHNavStructBuilder</implementation>
+        <description>CEL hierarchical navigation structure builder</description>
+      </class>
+    </classes>
+  </scf>
+</plugin>

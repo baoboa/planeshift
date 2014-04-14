@@ -1,0 +1,12 @@
+SubDir TOP src plugins database sqlite3 ;
+
+if $(LIBSQLITE3.AVAILABLE) = "yes"
+{
+Plugin dbsqlite3 :
+	[ Wildcard *.cpp *.h ]
+;
+ExternalLibs dbsqlite3 : CRYSTAL LIBSQLITE3 ;
+LinkWith dbsqlite3 : psutil ;
+CompileGroups dbsqlite3 : psserver psnpcclient ;
+
+}

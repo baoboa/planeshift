@@ -1,0 +1,9 @@
+<widget_description>
+
+    <widget name="GameBoardWindow" factory="pawsGameBoard" resizeable = "no" visible="no" movable="yes" configurable="yes" style="New Standard GUI">
+        <frame x="200" y="200" width="450" height="450" border="yes"/>
+        <title resource="Scaling Title Bar" text="Game Board" align="left" close_button="yes"/>
+    </widget>
+
+</widget_description>
+

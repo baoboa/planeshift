@@ -1,0 +1,10 @@
+SubDir TOP src plugins common bgloader ;
+
+Description bgloader : "Background Loader" ;
+
+Plugin bgloader
+	: [ Wildcard *.cpp *.h ]
+;
+
+ExternalLibs bgloader : CRYSTAL ;
+CompileGroups bgloader : psclient psserver psnpcclient ;

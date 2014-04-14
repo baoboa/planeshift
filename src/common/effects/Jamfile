@@ -1,0 +1,8 @@
+SubDir TOP src common effects ;
+
+Library effects 
+	: [ Wildcard *.cpp *.h ]
+	: noinstall
+;
+
+ExternalLibs effects : CRYSTAL ;

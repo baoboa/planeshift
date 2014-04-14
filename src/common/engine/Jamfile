@@ -1,0 +1,8 @@
+SubDir TOP src common engine ;
+
+Library psengine 
+	: [ Wildcard *.cpp *.h ]
+	: noinstall
+;
+
+ExternalLibs psengine : CRYSTAL ;

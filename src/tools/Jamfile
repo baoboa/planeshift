@@ -1,0 +1,10 @@
+SubDir TOP src tools ;
+
+SubInclude TOP src tools breakpad ;
+SubInclude TOP src tools ccheck ;
+SubInclude TOP src tools fparser ;
+SubInclude TOP src tools wordnet ;
+SubInclude TOP src tools xdelta3 ;
+SubInclude TOP src tools pawseditor ;
+SubInclude TOP src tools navgen ;
+SubInclude TOP src tools transtool ;

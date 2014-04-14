@@ -1,0 +1,116 @@
+<widget_description>
+
+
+
+<widget name="ErrorToolbox" factory="EEditErrorToolbox" 
+
+        visible="no" savepositions="yes" movable="yes" resizable="no" resizetoscreen="no" >
+
+        
+
+    <frame x="0" y="0" width="610" height="260" border="yes" justtitle="yes" />
+
+    <title resource="TitleBar" text="Effect Errors" align="left" />
+
+    <font name="LiberationSans-Regular.ttf" r="255" g="255" b="255" size="9"  sr="0" sg="0" sb="0" shadow="yes" />   
+
+    <bgimage resource="Back" alpha="75" />
+
+
+
+    <widget name="errors" factory="pawsMessageTextBox">
+
+        <frame x="5" y="5" width="600" height="220" border="no" />
+
+        <font name="LiberationSans-Regular.ttf" r="255" g="255" b="255" size="9"  sr="0" sg="0" sb="0" shadow="yes" />   
+
+    </widget>
+
+    
+
+    <widget name="only_effect_errors" factory="pawsCheckBox">
+
+        <frame x="15" y="230" width="135" height="25" />
+
+        <font name="LiberationSans-Regular.ttf" r="255" g="255" b="255" size="9"  sr="0" sg="0" sb="0" shadow="yes" />   
+
+        <checkbox off="RadioOff" on="RadioOn" />
+
+        <text string="Only Effect Errors"/>    
+
+    </widget>
+
+
+
+    <widget name="show_errors" factory="pawsCheckBox">
+
+        <frame x="150" y="230" width="90" height="25" />
+
+        <font name="LiberationSans-Regular.ttf" r="255" g="255" b="255" size="9"  sr="0" sg="0" sb="0" shadow="yes" />   
+
+        <checkbox off="RadioOff" on="RadioOn" />
+
+        <text string="Errors"/>    
+
+    </widget>
+
+    <widget name="show_warnings" factory="pawsCheckBox">
+
+        <frame x="240" y="230" width="90" height="25" />
+
+        <font name="LiberationSans-Regular.ttf" r="255" g="255" b="255" size="9"  sr="0" sg="0" sb="0" shadow="yes" />   
+
+        <checkbox off="RadioOff" on="RadioOn" />
+
+        <text string="Warnings"/>    
+
+    </widget>
+
+    <widget name="show_notifys" factory="pawsCheckBox" down="true">
+
+        <frame x="330" y="230" width="90" height="25" />
+
+        <font name="LiberationSans-Regular.ttf" r="255" g="255" b="255" size="9"  sr="0" sg="0" sb="0" shadow="yes" />   
+
+        <checkbox off="RadioOff" on="RadioOn" />
+
+        <text string="Notifys"/>    
+
+    </widget>
+
+
+
+    <widget name="clear" factory="pawsButton">
+
+        <frame x="450" y="230" width="70" height="25" border="no" />
+
+        <font name="LiberationSans-Regular.ttf" r="255" g="255" b="255" size="7"  sr="0" sg="0" sb="0" shadow="yes" />   
+
+        <buttonup resource="ButtonUp"/>
+
+        <buttondown resource="ButtonDown" />
+
+        <label text="Clear"/>
+
+    </widget>
+
+    <widget name="hide" factory="pawsButton">
+
+        <frame x="525" y="230" width="70" height="25" border="no" />
+
+        <font name="LiberationSans-Regular.ttf" r="255" g="255" b="255" size="7"  sr="0" sg="0" sb="0" shadow="yes" />   
+
+        <buttonup resource="ButtonUp"/>
+
+        <buttondown resource="ButtonDown" />
+
+        <label text="Hide"/>
+
+    </widget>
+
+</widget>
+
+
+
+</widget_description>
+

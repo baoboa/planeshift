@@ -1,0 +1,1 @@
+The dump_syms.exe program for windows is compiled from the breakpad SVN: http://google-breakpad.googlecode.com/svn/trunk

@@ -1,0 +1,184 @@
+<widget_description>
+    <widget name="MusicWindow" factory="pawsMusicWindow" visible="no" movable="yes" resizable="no" keepaspect="no">
+        <frame x="100" y="200" width="600" height="325" border="Leather Sketch Border" />
+        <minframe height="20" />
+        <title resource="MiddleAreaMap" text="Song Title" align="left" close_button="yes" shadow="false" />
+        <bgimage resource="MiddleAreaMap" />
+        <font name="scurlock.ttf" r="0" g="0" b="0" size="20" />
+
+        <widget name="EditButton" factory="pawsButton" id="100" toggle="yes" tooltip="Edit Mode">
+            <frame x="0" y="0" width="16" height="16" />
+            <buttonup resource="EditButtonOff" />
+            <buttondown resource="EditButtonOn" />
+            <eventMouseDown>Ret = MusicWindow:ClickEditButton()</eventMouseDown>
+        </widget>
+
+        <widget name="PlayButton" factory="pawsButton" id="101" toggle="yes" tooltip="Play/Stop">
+            <frame x="18" y="0" width="16" height="16" />
+            <buttonup resource="PlayButton" />
+            <buttondown resource="StopButton" />
+            <eventMouseDown>Ret = MusicWindow:ClickPlayButton()</eventMouseDown>
+        </widget>
+
+        <widget name="LoadButton" factory="pawsButton" id="102" tooltip="Load">
+            <frame x="36" y="0" width="16" height="16" />
+            <bgimage resource="LoadTool" />
+            <eventMouseDown>Ret = MusicWindow:ClickLoadButton()</eventMouseDown>
+        </widget>
+
+        <widget name="SaveButton" factory="pawsButton" id="103" tooltip="Save">
+            <frame x="54" y="0" width="16" height="16" />
+            <bgimage resource="SaveTool" />
+            <eventMouseDown>Ret = MusicWindow:ClickSaveButton()</eventMouseDown>
+        </widget>
+
+        <widget name="TitleButton" factory="pawsButton" id="104" tooltip="Change Song Title">
+            <frame x="72" y="0" width="16" height="16" />
+            <bgimage resource="NameTool" />
+            <eventMouseDown>Ret = MusicWindow:ClickTitleButton()</eventMouseDown>
+        </widget>
+
+        <widget name="DoubleStaffButton" factory="pawsButton" id="105" toggle="yes" tooltip="Double Staff Switch">
+            <frame x="108" y="0" width="16" height="16" />
+            <buttonup resource="SingleStaffButton" />
+            <buttondown resource="DoubleStaffButton" />
+            <eventMouseDown>Ret = MusicWindow:ClickDoubleStaffButton()</eventMouseDown>
+        </widget>
+
+        <widget name="TonalityButton" factory="pawsButton" id="106" tooltip="Tonality">
+            <frame x="126" y="0" width="16" height="16" />
+            <bgimage resource="TonalityButton" />
+            <eventMouseDown>Ret = MusicWindow:ClickTonalityButton()</eventMouseDown>
+        </widget>
+
+        <widget name="MeterButton" factory="pawsButton" id="107" tooltip="Meter">
+            <frame x="144" y="0" width="16" height="16" />
+            <bgimage resource="MeterButton" />
+            <eventMouseDown>Ret = MusicWindow:ClickMeterButton()</eventMouseDown>
+        </widget>
+
+        <widget name="BPMButton" factory="pawsButton" id="108" tooltip="BPM">
+            <frame x="162" y="0" width="16" height="16" />
+            <bgimage resource="BPMButton" />
+            <eventMouseDown>Ret = MusicWindow:ClickBPMButton()</eventMouseDown>
+        </widget>
+
+        <widget name="RestButton" factory="pawsButton" id="109" toggle="yes" tooltip="Rest">
+            <frame x="180" y="0" width="16" height="16" />
+            <buttonup resource="RestButtonOff" />
+            <buttondown resource="RestButtonOn" />
+        </widget>
+
+        <widget name="SixteenthButton" factory="pawsButton" id="200" toggle="yes" tooltip="Sixteenth">
+            <frame x="216" y="0" width="16" height="16" />
+            <buttonup resource="SixteenthButtonOff" />
+            <buttondown resource="SixteenthButtonOn" />
+        </widget>
+
+        <widget name="EighthButton" factory="pawsButton" id="201" toggle="yes" tooltip="Eighth">
+            <frame x="234" y="0" width="16" height="16" />
+            <buttonup resource="EighthButtonOff" />
+            <buttondown resource="EighthButtonOn" />
+        </widget>
+
+        <widget name="QuarterButton" factory="pawsButton" id="202" toggle="yes" tooltip="Quarter">
+            <frame x="252" y="0" width="16" height="16" />
+            <buttonup resource="QuarterButtonOff" />
+            <buttondown resource="QuarterButtonOn" />
+        </widget>
+
+        <widget name="HalfButton" factory="pawsButton" id="203" toggle="yes" tooltip="Half">
+            <frame x="270" y="0" width="16" height="16" />
+            <buttonup resource="HalfButtonOff" />
+            <buttondown resource="HalfButtonOn" />
+        </widget>
+
+        <widget name="WholeButton" factory="pawsButton" id="204" toggle="yes" tooltip="Whole">
+            <frame x="288" y="0" width="16" height="16" />
+            <buttonup resource="WholeButtonOff" />
+            <buttondown resource="WholeButtonOn" />
+        </widget>
+
+        <widget name="DotButton" factory="pawsButton" id="205" toggle="yes" tooltip="Dot">
+            <frame x="306" y="0" width="16" height="16" />
+            <buttonup resource="DotButtonOff" />
+            <buttondown resource="DotButtonOn" />
+            <eventMouseDown>Ret = MusicWindow:ClickDotButton()</eventMouseDown>
+        </widget>
+
+        <widget name="FlatButton" factory="pawsButton" id="300" toggle="yes" tooltip="Flat">
+            <frame x="342" y="0" width="16" height="16" />
+            <buttonup resource="FlatButtonOff" />
+            <buttondown resource="FlatButtonOn" />
+        </widget>
+        <widget name="NaturalButton" factory="pawsButton" id="301" toggle="yes" tooltip="Natural" visible="false">
+            <frame x="360" y="0" width="16" height="16" />
+            <buttonup resource="NaturalButtonOff" />
+            <buttondown resource="NaturalButtonOn" />
+        </widget>
+        <widget name="SharpButton" factory="pawsButton" id="302" toggle="yes" tooltip="Sharp">
+            <frame x="360" y="0" width="16" height="16" />
+            <buttonup resource="SharpButtonOff" />
+            <buttondown resource="SharpButtonOn" />
+        </widget>
+
+        <widget name="DeleteChordButton" factory="pawsButton" id="400" tooltip="Delete Chord">
+            <frame x="396" y="0" width="16" height="16" />
+            <bgimage resource="DeleteChordButton" />
+            <eventMouseDown>Ret = MusicWindow:ClickDeleteChordButton()</eventMouseDown>
+        </widget>
+
+        <widget name="DeleteMeasureButton" factory="pawsButton" id="401" tooltip="Delete Measure">
+            <frame x="414" y="0" width="16" height="16" />
+            <bgimage resource="DeleteMeasureButton" />
+            <eventMouseDown>Ret = MusicWindow:ClickDeleteMeasureButton()</eventMouseDown>
+        </widget>
+
+        <widget name="InsertNoteButton" factory="pawsButton" id="402" toggle="yes" tooltip="Insert Note">
+            <frame x="432" y="0" width="16" height="16" />
+            <buttonup resource="InsertNoteButtonOff" />
+            <buttondown resource="InsertNoteButtonOn" />
+        </widget>
+
+        <widget name="InsertMeasureButton" factory="pawsButton" id="403" tooltip="Insert Measure">
+            <frame x="450" y="0" width="16" height="16" />
+            <bgimage resource="InsertMeasureButton" />
+            <eventMouseDown>Ret = MusicWindow:ClickInsertMeasureButton()</eventMouseDown>
+        </widget>
+
+        <widget name="StartRepeatButton" factory="pawsButton" id="500" toggle="yes" tooltip="Start Repeat">
+            <frame x="486" y="0" width="16" height="16" />
+            <buttonup resource="StartRepeatButtonOff" />
+            <buttondown resource="StartRepeatButtonOn" />
+            <eventMouseDown>Ret = MusicWindow:ClickStartRepeatButton()</eventMouseDown>
+        </widget>
+
+        <widget name="EndRepeatButton" factory="pawsButton" id="501" toggle="yes" tooltip="End Repeat">
+            <frame x="504" y="0" width="16" height="16" />
+            <buttonup resource="EndRepeatButtonOff" />
+            <buttondown resource="EndRepeatButtonOn" />
+            <eventMouseDown>Ret = MusicWindow:ClickEndRepeatButton()</eventMouseDown>
+        </widget>
+
+        <widget name="EndingButton" factory="pawsButton" id="502" toggle="yes" tooltip="Ending">
+            <frame x="522" y="0" width="16" height="16" />
+            <buttonup resource="EndingButtonOff" />
+            <buttondown resource="EndingButtonOn" />
+            <eventMouseDown>Ret = MusicWindow:ClickEndingButton()</eventMouseDown>
+        </widget>
+
+        <widget name="FirstLine" factory="pawsSheetLine" id="1000">
+            <frame x="0" y="20" width="570" height="150" margin="10" />
+            <font name="sonora.ttf" r="0" g="0" b="0" size="35" />
+        </widget>
+
+        <widget name="SecondLine" factory="pawsSheetLine" id="1001">
+            <frame x="0" y="170" width="570" height="150" margin="10" />
+            <font name="sonora.ttf" r="0" g="0" b="0" size="35" />
+        </widget>
+
+        <widget name="ScrollBar" factory="pawsScrollBar" direction="vertical" maxValue="100" id="2000">
+            <frame x="570" y="20" width="30" height="300" />
+        </widget>
+    </widget>
+</widget_description>

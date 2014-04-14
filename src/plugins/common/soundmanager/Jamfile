@@ -1,0 +1,10 @@
+SubDir TOP src plugins common soundmanager ;
+
+Description soundmngr : "Sound Manager Plugin" ;
+
+Plugin soundmngr
+	: [ Wildcard *.cpp *.h ]
+;
+ExternalLibs soundmngr : CRYSTAL ;
+LinkWith soundmngr : psutil psmusic ;
+CompileGroups soundmngr : psclient ;

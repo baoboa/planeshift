@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<plugin>
+  <scf>
+    <classes>
+      <class>
+        <name>crystalspace.planeshift.sound.soundmngr</name>
+        <implementation>SoundManager</implementation>
+        <description>Sound Manager</description>
+      </class>
+    </classes>
+  </scf>
+</plugin>

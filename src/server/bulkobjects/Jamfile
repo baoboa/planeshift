@@ -1,0 +1,7 @@
+SubDir TOP src server bulkobjects ;
+
+Library bulkobjects :
+	[ Wildcard *.cpp *.h ]
+;
+ExternalLibs bulkobjects : CRYSTAL ;
+LinkWith bulkobjects : wordnet ;

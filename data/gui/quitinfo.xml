@@ -1,0 +1,18 @@
+<widget_description>
+
+<widget name="QuitInfoWindow" factory="pawsQuitInfoBox" visible="no" savepositions="no" movable="yes" resizable="no" style="New Standard GUI">
+
+    <frame x="0" y="0" width="512" height="240" border="yes" />
+
+    <widget name="Message Box" factory="pawsMultiLineTextBox" style="Header Font">
+        <frame x="50" y="20" width="400" height="140" border="no" />
+    </widget>
+
+    <widget name="OkButton" factory="pawsButton" id="100" style="Main Header Font">
+        <frame x="210" y="170" width="80" height="40" border="no"/>
+        <label text="Ok" />
+    </widget>
+
+</widget>
+
+</widget_description>

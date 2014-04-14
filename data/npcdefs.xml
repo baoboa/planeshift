@@ -1,0 +1,51 @@
+<locations>
+  <!-- This to test backward compability with the xml load. -->
+  <!-- For new locations use the sc_location_type and sc_locations table in db -->
+  <!-- Use importnpcdefs /this/data/npcdefs.xml to import these -->
+  <loctype name="guard stop">
+    <loc name="stop 1" x="-29" y="0" z="-168.5" sector="NPCroom" />
+    <loc name="stop 2" x="-19" y="0" z="-174.5" sector="NPCroom" />
+  </loctype>
+</locations>
+
+<paths>
+  <path name="bird1" constant_vel="1" sector="NPCroom" >
+    <spline_pt x="-40" y="8" z="-209" up_x="0" up_y="1" up_z="0" anim="walk" />
+    <spline_pt x="-33" y="6" z="-199" up_x="0" up_y="1" up_z="0" anim="run" />
+    <spline_pt x="-22" y="9" z="-219" up_x="0" up_y="1" up_z="0" anim="walk" />
+    <spline_pt x="1" y="5" z="-241" up_x="0" up_y="1" up_z="0" anim="run" />
+    <spline_pt x="16" y="8" z="-218" up_x="0" up_y="1" up_z="0" anim="walk" />
+    <spline_pt x="0" y="11" z="-201" up_x="0" up_y="1" up_z="0" anim="run" />
+    <spline_pt x="-40" y="8" z="-209" up_x="0" up_y="1" up_z="0" anim="walk" />
+  </path>
+  <path name="tribe1_path_1" constant_vel="1" sector="NPCroom" >
+    <spline_pt x="-80" y="0" z="-185" up_x="0" up_y="1" up_z="0" anim="walk" />
+    <spline_pt x="-60" y="0" z="-200" up_x="0" up_y="1" up_z="0" anim="walk" />
+    <spline_pt x="-90" y="0" z="-210" up_x="0" up_y="1" up_z="0" anim="walk" />
+
+    <spline_pt x="-80" y="0" z="-185" up_x="0" up_y="1" up_z="0" anim="walk" />
+  </path>
+  <path name="tribe1_path_2" constant_vel="1" sector="NPCroom" >
+    <spline_pt x="-80" y="0" z="-185" up_x="0" up_y="1" up_z="0" anim="walk" />
+    <spline_pt x="-70" y="0" z="-210" up_x="0" up_y="1" up_z="0" anim="walk" />
+    <spline_pt x="-50" y="0" z="-190" up_x="0" up_y="1" up_z="0" anim="walk" />
+
+    <spline_pt x="-80" y="0" z="-185" up_x="0" up_y="1" up_z="0" anim="walk" />
+  </path>
+</paths>
+
+<waypoints>
+  <!-- This to test backward compability with the xml load. -->
+  <!-- For new waypoints use the sc_waypoints table in db -->
+  <!-- Use importnpcdefs /this/data/npcdefs.xml to import these -->
+  <waypointlist>
+    <!-- Allow return is false by default. -->
+    <waypoint name="P1" x="0.00" y="0" z="-150.00" radius="1"  sector="NPCroom" allow_return="yes" />
+  </waypointlist>
+  <waylinks>
+    <!-- All links are be-directional by default.  -->
+    <point name="P1">
+      <link name="p1" /> <!-- Show link to waypoints from the DB -->
+    </point>
+  </waylinks>
+</waypoints>

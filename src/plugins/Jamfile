@@ -1,0 +1,4 @@
+SubDir TOP src plugins ;
+
+SubInclude TOP src plugins common ;
+SubInclude TOP src plugins database ;

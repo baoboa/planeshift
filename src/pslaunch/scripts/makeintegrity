@@ -1,0 +1,81 @@
+#!/bin/bash
+
+ROOT=$PWD
+REPO=$ROOT/../repo/backup
+XML=$REPO/integrity.xml
+ZIP=$REPO/integrity.zip
+PLATFORMS="win32 win64 linux32 linux64 macosx"
+
+function generate {
+for i in $(ls .);
+do
+  if [ "$i" == "integrity.xml" ]
+  then
+    continue
+  fi
+  if [[ -d $i ]]
+  then
+    cd $i
+    found=0
+    for PLATFORM in $PLATFORMS
+    do
+        if [ "$1" == $PLATFORM ]
+        then
+          generate $i"/" $1
+          found=1
+          break
+        fi
+    done
+    if [ $found -eq 0 ]
+    then
+      generate $1$i"/" $2
+    fi
+    cd ..
+    continue
+  fi
+  EXEC=false
+  if [ -x $i ]
+  then
+    EXEC=true
+  fi
+  MD5SUM=$(md5sum $i)
+  MD5SUM=${MD5SUM% $i}
+  read MD5SUM <<< "$MD5SUM"
+  found=0
+  for PLATFORM in $PLATFORMS
+  do
+    if [ "$1" == $PLATFORM ]
+    then
+      echo "    <md5sum path=\""$i"\" md5sum=\""$MD5SUM"\" exec=\""$EXEC"\" platform=\""${1%/}"\" />" >> $XML
+      found=1
+      break
+    fi
+  done
+  if [ $found -eq 0 ]
+  then
+    if [ $2 ]
+    then
+      echo "    <md5sum path=\""$1$i"\" md5sum=\""$MD5SUM"\" exec=\""$EXEC"\" platform=\""${2%/}"\" />" >> $XML
+    else
+      if [ "$1" == "" ] && [[ "$i" =~ .*cfg ]]
+      then
+        echo "    <md5sum path=\""$1$i"\" md5sum=\""$MD5SUM"\" exec=\""$EXEC"\" platform=\"cfg\" />" >> $XML 
+      else
+        echo "    <md5sum path=\""$1$i"\" md5sum=\""$MD5SUM"\" exec=\""$EXEC"\" platform=\"all\" />" >> $XML
+      fi
+    fi
+  fi
+done
+}
+
+cd $REPO
+
+rm -f $XML 2>/dev/null
+rm -f $ZIP 2>/dev/null
+
+echo "<md5sums>" >> $XML
+generate
+echo "</md5sums>" >> $XML
+
+zip -q -9 integrity.zip integrity.xml
+

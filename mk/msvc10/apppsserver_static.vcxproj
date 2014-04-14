@@ -1,0 +1,1647 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="ReleaseWithStaticLibs|Win32">
+      <Configuration>ReleaseWithStaticLibs</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ReleaseWithDlls|Win32">
+      <Configuration>ReleaseWithDlls</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="DebugWithStaticLibs|Win32">
+      <Configuration>DebugWithStaticLibs</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="DebugWithDlls|Win32">
+      <Configuration>DebugWithDlls</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MemoryTrackerWithStaticLibs|Win32">
+      <Configuration>MemoryTrackerWithStaticLibs</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MemoryTrackerWithDlls|Win32">
+      <Configuration>MemoryTrackerWithDlls</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RefTrackerWithStaticLibs|Win32">
+      <Configuration>RefTrackerWithStaticLibs</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RefTrackerWithDlls|Win32">
+      <Configuration>RefTrackerWithDlls</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ThreadCheckerWithStaticLibs|Win32">
+      <Configuration>ThreadCheckerWithStaticLibs</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ThreadCheckerWithDlls|Win32">
+      <Configuration>ThreadCheckerWithDlls</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="DebugPSReleaseCSCELWithStaticLibs|Win32">
+      <Configuration>DebugPSReleaseCSCELWithStaticLibs</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="DebugPSReleaseCSCELWithDlls|Win32">
+      <Configuration>DebugPSReleaseCSCELWithDlls</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ReleaseWithStaticLibs|x64">
+      <Configuration>ReleaseWithStaticLibs</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ReleaseWithDlls|x64">
+      <Configuration>ReleaseWithDlls</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="DebugWithStaticLibs|x64">
+      <Configuration>DebugWithStaticLibs</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="DebugWithDlls|x64">
+      <Configuration>DebugWithDlls</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MemoryTrackerWithStaticLibs|x64">
+      <Configuration>MemoryTrackerWithStaticLibs</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MemoryTrackerWithDlls|x64">
+      <Configuration>MemoryTrackerWithDlls</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RefTrackerWithStaticLibs|x64">
+      <Configuration>RefTrackerWithStaticLibs</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RefTrackerWithDlls|x64">
+      <Configuration>RefTrackerWithDlls</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ThreadCheckerWithStaticLibs|x64">
+      <Configuration>ThreadCheckerWithStaticLibs</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ThreadCheckerWithDlls|x64">
+      <Configuration>ThreadCheckerWithDlls</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="DebugPSReleaseCSCELWithStaticLibs|x64">
+      <Configuration>DebugPSReleaseCSCELWithStaticLibs</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="DebugPSReleaseCSCELWithDlls|x64">
+      <Configuration>DebugPSReleaseCSCELWithDlls</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{3F021542-A6A4-6683-5C52-EB9048DD23DE}</ProjectGuid>
+    <SccProjectName />
+    <SccLocalPath />
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)'=='ReleaseWithStaticLibs'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <UseOfMfc>false</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)'=='ReleaseWithDlls'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <UseOfMfc>false</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)'=='DebugWithStaticLibs'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <UseOfMfc>false</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)'=='DebugWithDlls'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <UseOfMfc>false</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)'=='MemoryTrackerWithStaticLibs'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <UseOfMfc>false</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)'=='MemoryTrackerWithDlls'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <UseOfMfc>false</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)'=='RefTrackerWithStaticLibs'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <UseOfMfc>false</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)'=='RefTrackerWithDlls'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <UseOfMfc>false</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)'=='ThreadCheckerWithStaticLibs'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <UseOfMfc>false</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)'=='ThreadCheckerWithDlls'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <UseOfMfc>false</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)'=='DebugPSReleaseCSCELWithStaticLibs'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <UseOfMfc>false</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)'=='DebugPSReleaseCSCELWithDlls'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <UseOfMfc>false</UseOfMfc>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Platform)'=='Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Platform)'=='x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='ReleaseWithStaticLibs|Win32'">false</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='ReleaseWithStaticLibs|Win32'">..\..\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='ReleaseWithStaticLibs|Win32'">..\..\out\release10\build\apppsserver_static\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='ReleaseWithStaticLibs|Win32'">psserver_static</TargetName>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='ReleaseWithDlls|Win32'">false</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='ReleaseWithDlls|Win32'">..\..\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='ReleaseWithDlls|Win32'">..\..\out\release10\build\apppsserver_static\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='ReleaseWithDlls|Win32'">psserver_static</TargetName>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='DebugWithStaticLibs|Win32'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='DebugWithStaticLibs|Win32'">..\..\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='DebugWithStaticLibs|Win32'">..\..\out\debug10\build\apppsserver_static\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='DebugWithStaticLibs|Win32'">psserver_static</TargetName>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='DebugWithDlls|Win32'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='DebugWithDlls|Win32'">..\..\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='DebugWithDlls|Win32'">..\..\out\debug10\build\apppsserver_static\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='DebugWithDlls|Win32'">psserver_static</TargetName>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MemoryTrackerWithStaticLibs|Win32'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MemoryTrackerWithStaticLibs|Win32'">..\..\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MemoryTrackerWithStaticLibs|Win32'">..\..\out\debug10\build\apppsserver_static\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MemoryTrackerWithStaticLibs|Win32'">psserver_static</TargetName>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MemoryTrackerWithDlls|Win32'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MemoryTrackerWithDlls|Win32'">..\..\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MemoryTrackerWithDlls|Win32'">..\..\out\debug10\build\apppsserver_static\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MemoryTrackerWithDlls|Win32'">psserver_static</TargetName>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RefTrackerWithStaticLibs|Win32'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RefTrackerWithStaticLibs|Win32'">..\..\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RefTrackerWithStaticLibs|Win32'">..\..\out\debug10\build\apppsserver_static\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RefTrackerWithStaticLibs|Win32'">psserver_static</TargetName>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RefTrackerWithDlls|Win32'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RefTrackerWithDlls|Win32'">..\..\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RefTrackerWithDlls|Win32'">..\..\out\debug10\build\apppsserver_static\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RefTrackerWithDlls|Win32'">psserver_static</TargetName>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='ThreadCheckerWithStaticLibs|Win32'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='ThreadCheckerWithStaticLibs|Win32'">..\..\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='ThreadCheckerWithStaticLibs|Win32'">..\..\out\debug10\build\apppsserver_static\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='ThreadCheckerWithStaticLibs|Win32'">psserver_static</TargetName>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='ThreadCheckerWithDlls|Win32'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='ThreadCheckerWithDlls|Win32'">..\..\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='ThreadCheckerWithDlls|Win32'">..\..\out\debug10\build\apppsserver_static\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='ThreadCheckerWithDlls|Win32'">psserver_static</TargetName>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='DebugPSReleaseCSCELWithStaticLibs|Win32'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='DebugPSReleaseCSCELWithStaticLibs|Win32'">..\..\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='DebugPSReleaseCSCELWithStaticLibs|Win32'">..\..\out\debug10\build\apppsserver_static\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='DebugPSReleaseCSCELWithStaticLibs|Win32'">psserver_static</TargetName>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='DebugPSReleaseCSCELWithDlls|Win32'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='DebugPSReleaseCSCELWithDlls|Win32'">..\..\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='DebugPSReleaseCSCELWithDlls|Win32'">..\..\out\debug10\build\apppsserver_static\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='DebugPSReleaseCSCELWithDlls|Win32'">psserver_static</TargetName>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='ReleaseWithStaticLibs|x64'">false</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='ReleaseWithStaticLibs|x64'">..\..\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='ReleaseWithStaticLibs|x64'">..\..\out\release10-x64\build\apppsserver_static\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='ReleaseWithStaticLibs|x64'">psserver_static</TargetName>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='ReleaseWithDlls|x64'">false</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='ReleaseWithDlls|x64'">..\..\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='ReleaseWithDlls|x64'">..\..\out\release10-x64\build\apppsserver_static\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='ReleaseWithDlls|x64'">psserver_static</TargetName>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='DebugWithStaticLibs|x64'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='DebugWithStaticLibs|x64'">..\..\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='DebugWithStaticLibs|x64'">..\..\out\debug10-x64\build\apppsserver_static\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='DebugWithStaticLibs|x64'">psserver_static</TargetName>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='DebugWithDlls|x64'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='DebugWithDlls|x64'">..\..\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='DebugWithDlls|x64'">..\..\out\debug10-x64\build\apppsserver_static\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='DebugWithDlls|x64'">psserver_static</TargetName>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MemoryTrackerWithStaticLibs|x64'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MemoryTrackerWithStaticLibs|x64'">..\..\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MemoryTrackerWithStaticLibs|x64'">..\..\out\debug10-x64\build\apppsserver_static\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MemoryTrackerWithStaticLibs|x64'">psserver_static</TargetName>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MemoryTrackerWithDlls|x64'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MemoryTrackerWithDlls|x64'">..\..\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MemoryTrackerWithDlls|x64'">..\..\out\debug10-x64\build\apppsserver_static\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MemoryTrackerWithDlls|x64'">psserver_static</TargetName>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RefTrackerWithStaticLibs|x64'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RefTrackerWithStaticLibs|x64'">..\..\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RefTrackerWithStaticLibs|x64'">..\..\out\debug10-x64\build\apppsserver_static\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RefTrackerWithStaticLibs|x64'">psserver_static</TargetName>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RefTrackerWithDlls|x64'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RefTrackerWithDlls|x64'">..\..\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RefTrackerWithDlls|x64'">..\..\out\debug10-x64\build\apppsserver_static\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RefTrackerWithDlls|x64'">psserver_static</TargetName>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='ThreadCheckerWithStaticLibs|x64'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='ThreadCheckerWithStaticLibs|x64'">..\..\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='ThreadCheckerWithStaticLibs|x64'">..\..\out\debug10-x64\build\apppsserver_static\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='ThreadCheckerWithStaticLibs|x64'">psserver_static</TargetName>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='ThreadCheckerWithDlls|x64'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='ThreadCheckerWithDlls|x64'">..\..\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='ThreadCheckerWithDlls|x64'">..\..\out\debug10-x64\build\apppsserver_static\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='ThreadCheckerWithDlls|x64'">psserver_static</TargetName>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='DebugPSReleaseCSCELWithStaticLibs|x64'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='DebugPSReleaseCSCELWithStaticLibs|x64'">..\..\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='DebugPSReleaseCSCELWithStaticLibs|x64'">..\..\out\debug10-x64\build\apppsserver_static\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='DebugPSReleaseCSCELWithStaticLibs|x64'">psserver_static</TargetName>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='DebugPSReleaseCSCELWithDlls|x64'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='DebugPSReleaseCSCELWithDlls|x64'">..\..\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='DebugPSReleaseCSCELWithDlls|x64'">..\..\out\debug10-x64\build\apppsserver_static\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='DebugPSReleaseCSCELWithDlls|x64'">psserver_static</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseWithStaticLibs|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <StringPooling>true</StringPooling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <ProgramDataBaseFileName>..\..\out\release10\build\apppsserver_static\Win32\psserver_static.pdb</ProgramDataBaseFileName>
+      <PreprocessorDefinitions>NDEBUG;CS_WIN32_CSCONFIG;__CRYSTAL_SPACE__;CS_SUPPORTS_MMX;_CONSOLE;CS_STATIC_LINKED;WIN32;CS_USE_STATIC_LIBS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalOptions>  %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>.;..\..;..\..\include\msvc;..\..\include;..\..\src\client;..\..\src\server;..\..\src\common;..\..\src\tools\wordnet;..\..\src\tools\breakpad;..\..\src\tools\breakpad\third_party\linux\include;..\..\..\CS\include;..\..\..\CS\winlibs\x86\include;..\..\..\CS\win32libs\include;$(CRYSTAL)\include;$(CRYSTAL)\winlibs\x86\include;$(CRYSTAL)\win32libs\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PrecompiledHeaderOutputFile>..\..\out\release10\build\apppsserver_static\apppsserver_static.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>..\..\out\release10\build\apppsserver_static\</AssemblerListingLocation>
+      <ObjectFileName>..\..\out\release10\build\apppsserver_static\</ObjectFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <ForceConformanceInForLoopScope>true</ForceConformanceInForLoopScope>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <CompileAs>Default</CompileAs>
+    </ClCompile>
+    <Link>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>LIBC;LIBCD;LIBCMT;LIBCMTD;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <OutputFile>..\..\psserver_static.exe</OutputFile>
+      <ProgramDatabaseFile>..\..\out\release10\build\apppsserver_static\Win32\psserver_static.pdb</ProgramDatabaseFile>
+      <SubSystem>Console</SubSystem>
+      <AdditionalOptions>libcrystalspace_opengl.lib opengl32.lib cg.lib cgGL.lib libcrystalspace_staticplugins.lib libcrystalspace.lib zlib.lib  %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>libcrystalspace.lib;ws2_32.lib;zlib.lib;libmysql.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <AdditionalLibraryDirectories>..\..\..\CS\out\release10\libs;..\..\..\CS\winlibs\x86\lib;..\..\..\CS\win32libs\lib;$(CRYSTAL)\out\release10\libs;$(CRYSTAL)\winlibs\x86\lib;$(CRYSTAL)\win32libs\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <TargetMachine>MachineX86</TargetMachine>
+      <LargeAddressAware>true</LargeAddressAware>
+    </Link>
+    <Lib>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Lib>
+    <PostBuildEvent>
+      <Command>md ..\..\out\release10\bin 2&gt; nul
+copy /y "$(TargetPath)" ..\..\out\release10\bin\
+</Command>
+    </PostBuildEvent>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;CS_WIN32_CSCONFIG;__CRYSTAL_SPACE__;CS_SUPPORTS_MMX;_CONSOLE;CS_STATIC_LINKED;PROJECTGEN_VERSION=10;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.;..\..\src\server;..\..;..\..\include\msvc;..\..\include;..\..\src\client;..\..\src\server;..\..\src\common;..\..\src\tools\wordnet;..\..\src\tools\breakpad;..\..\src\tools\breakpad\third_party\linux\include;..\..\..\CS\include;..\..\..\CS\winlibs\x86\include;..\..\..\CS\win32libs\include;$(CRYSTAL)\include;$(CRYSTAL)\winlibs\x86\include;$(CRYSTAL)\win32libs\include</AdditionalIncludeDirectories>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+    <Manifest>
+      <AdditionalManifestFiles>..\..\mk\msvc\apppsserver_static.manifest</AdditionalManifestFiles>
+    </Manifest>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseWithDlls|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <StringPooling>true</StringPooling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <ProgramDataBaseFileName>..\..\out\release10\build\apppsserver_static\Win32\psserver_static.pdb</ProgramDataBaseFileName>
+      <PreprocessorDefinitions>NDEBUG;CS_WIN32_CSCONFIG;__CRYSTAL_SPACE__;CS_SUPPORTS_MMX;_CONSOLE;CS_STATIC_LINKED;WIN32;CS_USE_SHARED_LIBS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalOptions>  %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>.;..\..;..\..\include\msvc;..\..\include;..\..\src\client;..\..\src\server;..\..\src\common;..\..\src\tools\wordnet;..\..\src\tools\breakpad;..\..\src\tools\breakpad\third_party\linux\include;..\..\..\CS\include;..\..\..\CS\winlibs\x86\include;..\..\..\CS\win32libs\include;$(CRYSTAL)\include;$(CRYSTAL)\winlibs\x86\include;$(CRYSTAL)\win32libs\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PrecompiledHeaderOutputFile>..\..\out\release10\build\apppsserver_static\apppsserver_static.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>..\..\out\release10\build\apppsserver_static\</AssemblerListingLocation>
+      <ObjectFileName>..\..\out\release10\build\apppsserver_static\</ObjectFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <ForceConformanceInForLoopScope>true</ForceConformanceInForLoopScope>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <CompileAs>Default</CompileAs>
+    </ClCompile>
+    <Link>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>LIBC;LIBCD;LIBCMT;LIBCMTD;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <OutputFile>..\..\psserver_static.exe</OutputFile>
+      <ProgramDatabaseFile>..\..\out\release10\build\apppsserver_static\Win32\psserver_static.pdb</ProgramDatabaseFile>
+      <SubSystem>Console</SubSystem>
+      <AdditionalOptions>libcrystalspace_opengl.lib opengl32.lib cg.lib cgGL.lib libcrystalspace_staticplugins.lib libcrystalspace.lib zlib.lib  %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>libcrystalspace.lib;ws2_32.lib;zlib.lib;libmysql.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <AdditionalLibraryDirectories>..\..\..\CS\out\release10\libs;..\..\..\CS\winlibs\x86\lib;..\..\..\CS\win32libs\lib;$(CRYSTAL)\out\release10\libs;$(CRYSTAL)\winlibs\x86\lib;$(CRYSTAL)\win32libs\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <TargetMachine>MachineX86</TargetMachine>
+      <LargeAddressAware>true</LargeAddressAware>
+    </Link>
+    <Lib>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Lib>
+    <PostBuildEvent>
+      <Command>md ..\..\out\release10\bin 2&gt; nul
+copy /y "$(TargetPath)" ..\..\out\release10\bin\
+</Command>
+    </PostBuildEvent>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;CS_WIN32_CSCONFIG;__CRYSTAL_SPACE__;CS_SUPPORTS_MMX;_CONSOLE;CS_STATIC_LINKED;PROJECTGEN_VERSION=10;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.;..\..\src\server;..\..;..\..\include\msvc;..\..\include;..\..\src\client;..\..\src\server;..\..\src\common;..\..\src\tools\wordnet;..\..\src\tools\breakpad;..\..\src\tools\breakpad\third_party\linux\include;..\..\..\CS\include;..\..\..\CS\winlibs\x86\include;..\..\..\CS\win32libs\include;$(CRYSTAL)\include;$(CRYSTAL)\winlibs\x86\include;$(CRYSTAL)\win32libs\include</AdditionalIncludeDirectories>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+    <Manifest>
+      <AdditionalManifestFiles>..\..\mk\msvc\apppsserver_static.manifest</AdditionalManifestFiles>
+    </Manifest>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugWithStaticLibs|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <MinimalRebuild>true</MinimalRebuild>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <ProgramDataBaseFileName>..\..\out\debug10\build\apppsserver_static\Win32\psserver_static.pdb</ProgramDataBaseFileName>
+      <PreprocessorDefinitions>_DEBUG;CS_DEBUG;CS_WIN32_CSCONFIG;__CRYSTAL_SPACE__;CS_SUPPORTS_MMX;_CONSOLE;CS_STATIC_LINKED;WIN32;CS_USE_STATIC_LIBS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalOptions>  %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>.;..\..;..\..\include\msvc;..\..\include;..\..\src\client;..\..\src\server;..\..\src\common;..\..\src\tools\wordnet;..\..\src\tools\breakpad;..\..\src\tools\breakpad\third_party\linux\include;..\..\..\CS\include;..\..\..\CS\winlibs\x86\include;..\..\..\CS\win32libs\include;$(CRYSTAL)\include;$(CRYSTAL)\winlibs\x86\include;$(CRYSTAL)\win32libs\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PrecompiledHeaderOutputFile>..\..\out\debug10\build\apppsserver_static\apppsserver_static.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>..\..\out\debug10\build\apppsserver_static\</AssemblerListingLocation>
+      <ObjectFileName>..\..\out\debug10\build\apppsserver_static\</ObjectFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <ForceConformanceInForLoopScope>true</ForceConformanceInForLoopScope>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <CompileAs>Default</CompileAs>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>LIBC;LIBCD;LIBCMT;LIBCMTD;MSVCRT;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <OutputFile>..\..\psserver_static.exe</OutputFile>
+      <ProgramDatabaseFile>..\..\out\debug10\build\apppsserver_static\Win32\psserver_static.pdb</ProgramDatabaseFile>
+      <SubSystem>Console</SubSystem>
+      <AdditionalOptions>libcrystalspace_opengl_d.lib opengl32.lib cg.lib cgGL.lib libcrystalspace_staticplugins_d.lib libcrystalspace_d.lib zlib.lib  %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>libcrystalspace_d.lib;ws2_32.lib;zlib.lib;libmysql.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <AdditionalLibraryDirectories>..\..\..\CS\out\debug10\libs;..\..\..\CS\winlibs\x86\lib;..\..\..\CS\win32libs\lib;$(CRYSTAL)\out\debug10\libs;$(CRYSTAL)\winlibs\x86\lib;$(CRYSTAL)\win32libs\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <TargetMachine>MachineX86</TargetMachine>
+      <LargeAddressAware>true</LargeAddressAware>
+    </Link>
+    <Lib>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Lib>
+    <PostBuildEvent>
+      <Command>md ..\..\out\debug10\bin 2&gt; nul
+copy /y "$(TargetPath)" ..\..\out\debug10\bin\
+</Command>
+    </PostBuildEvent>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;CS_DEBUG;CS_WIN32_CSCONFIG;__CRYSTAL_SPACE__;CS_SUPPORTS_MMX;_CONSOLE;CS_STATIC_LINKED;PROJECTGEN_VERSION=10;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.;..\..\src\server;..\..;..\..\include\msvc;..\..\include;..\..\src\client;..\..\src\server;..\..\src\common;..\..\src\tools\wordnet;..\..\src\tools\breakpad;..\..\src\tools\breakpad\third_party\linux\include;..\..\..\CS\include;..\..\..\CS\winlibs\x86\include;..\..\..\CS\win32libs\include;$(CRYSTAL)\include;$(CRYSTAL)\winlibs\x86\include;$(CRYSTAL)\win32libs\include</AdditionalIncludeDirectories>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+    <Manifest>
+      <AdditionalManifestFiles>..\..\mk\msvc\apppsserver_static.manifest</AdditionalManifestFiles>
+    </Manifest>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugWithDlls|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <MinimalRebuild>true</MinimalRebuild>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <ProgramDataBaseFileName>..\..\out\debug10\build\apppsserver_static\Win32\psserver_static.pdb</ProgramDataBaseFileName>
+      <PreprocessorDefinitions>_DEBUG;CS_DEBUG;CS_WIN32_CSCONFIG;__CRYSTAL_SPACE__;CS_SUPPORTS_MMX;_CONSOLE;CS_STATIC_LINKED;WIN32;CS_USE_SHARED_LIBS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalOptions>  %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>.;..\..;..\..\include\msvc;..\..\include;..\..\src\client;..\..\src\server;..\..\src\common;..\..\src\tools\wordnet;..\..\src\tools\breakpad;..\..\src\tools\breakpad\third_party\linux\include;..\..\..\CS\include;..\..\..\CS\winlibs\x86\include;..\..\..\CS\win32libs\include;$(CRYSTAL)\include;$(CRYSTAL)\winlibs\x86\include;$(CRYSTAL)\win32libs\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PrecompiledHeaderOutputFile>..\..\out\debug10\build\apppsserver_static\apppsserver_static.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>..\..\out\debug10\build\apppsserver_static\</AssemblerListingLocation>
+      <ObjectFileName>..\..\out\debug10\build\apppsserver_static\</ObjectFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <ForceConformanceInForLoopScope>true</ForceConformanceInForLoopScope>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <CompileAs>Default</CompileAs>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>LIBC;LIBCD;LIBCMT;LIBCMTD;MSVCRT;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <OutputFile>..\..\psserver_static.exe</OutputFile>
+      <ProgramDatabaseFile>..\..\out\debug10\build\apppsserver_static\Win32\psserver_static.pdb</ProgramDatabaseFile>
+      <SubSystem>Console</SubSystem>
+      <AdditionalOptions>libcrystalspace_opengl_d.lib opengl32.lib cg.lib cgGL.lib libcrystalspace_staticplugins_d.lib libcrystalspace_d.lib zlib.lib  %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>libcrystalspace_d.lib;ws2_32.lib;zlib.lib;libmysql.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <AdditionalLibraryDirectories>..\..\..\CS\out\debug10\libs;..\..\..\CS\winlibs\x86\lib;..\..\..\CS\win32libs\lib;$(CRYSTAL)\out\debug10\libs;$(CRYSTAL)\winlibs\x86\lib;$(CRYSTAL)\win32libs\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <TargetMachine>MachineX86</TargetMachine>
+      <LargeAddressAware>true</LargeAddressAware>
+    </Link>
+    <Lib>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Lib>
+    <PostBuildEvent>
+      <Command>md ..\..\out\debug10\bin 2&gt; nul
+copy /y "$(TargetPath)" ..\..\out\debug10\bin\
+</Command>
+    </PostBuildEvent>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;CS_DEBUG;CS_WIN32_CSCONFIG;__CRYSTAL_SPACE__;CS_SUPPORTS_MMX;_CONSOLE;CS_STATIC_LINKED;PROJECTGEN_VERSION=10;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.;..\..\src\server;..\..;..\..\include\msvc;..\..\include;..\..\src\client;..\..\src\server;..\..\src\common;..\..\src\tools\wordnet;..\..\src\tools\breakpad;..\..\src\tools\breakpad\third_party\linux\include;..\..\..\CS\include;..\..\..\CS\winlibs\x86\include;..\..\..\CS\win32libs\include;$(CRYSTAL)\include;$(CRYSTAL)\winlibs\x86\include;$(CRYSTAL)\win32libs\include</AdditionalIncludeDirectories>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+    <Manifest>
+      <AdditionalManifestFiles>..\..\mk\msvc\apppsserver_static.manifest</AdditionalManifestFiles>
+    </Manifest>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MemoryTrackerWithStaticLibs|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <MinimalRebuild>true</MinimalRebuild>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <ProgramDataBaseFileName>..\..\out\debug10\build\apppsserver_static\Win32\psserver_static.pdb</ProgramDataBaseFileName>
+      <PreprocessorDefinitions>_DEBUG;CS_DEBUG;CS_WIN32_CSCONFIG;__CRYSTAL_SPACE__;CS_SUPPORTS_MMX;CS_MEMORY_TRACKER;_CONSOLE;CS_STATIC_LINKED;WIN32;CS_USE_STATIC_LIBS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalOptions>  %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>.;..\..;..\..\include\msvc;..\..\include;..\..\src\client;..\..\src\server;..\..\src\common;..\..\src\tools\wordnet;..\..\src\tools\breakpad;..\..\src\tools\breakpad\third_party\linux\include;..\..\..\CS\include;..\..\..\CS\winlibs\x86\include;..\..\..\CS\win32libs\include;$(CRYSTAL)\include;$(CRYSTAL)\winlibs\x86\include;$(CRYSTAL)\win32libs\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PrecompiledHeaderOutputFile>..\..\out\debug10\build\apppsserver_static\apppsserver_static.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>..\..\out\debug10\build\apppsserver_static\</AssemblerListingLocation>
+      <ObjectFileName>..\..\out\debug10\build\apppsserver_static\</ObjectFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <ForceConformanceInForLoopScope>true</ForceConformanceInForLoopScope>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <CompileAs>Default</CompileAs>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>LIBC;LIBCD;LIBCMT;LIBCMTD;MSVCRT;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <OutputFile>..\..\psserver_static.exe</OutputFile>
+      <ProgramDatabaseFile>..\..\out\debug10\build\apppsserver_static\Win32\psserver_static.pdb</ProgramDatabaseFile>
+      <SubSystem>Console</SubSystem>
+      <AdditionalOptions>libcrystalspace_opengl_d.lib opengl32.lib cg.lib cgGL.lib libcrystalspace_staticplugins_d.lib libcrystalspace_d.lib zlib.lib  %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>libcrystalspace_d.lib;ws2_32.lib;zlib.lib;libmysql.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <AdditionalLibraryDirectories>..\..\..\CS\out\debug10\libs;..\..\..\CS\winlibs\x86\lib;..\..\..\CS\win32libs\lib;$(CRYSTAL)\out\debug10\libs;$(CRYSTAL)\winlibs\x86\lib;$(CRYSTAL)\win32libs\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <TargetMachine>MachineX86</TargetMachine>
+      <LargeAddressAware>true</LargeAddressAware>
+    </Link>
+    <Lib>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Lib>
+    <PostBuildEvent>
+      <Command>md ..\..\out\debug10\bin 2&gt; nul
+copy /y "$(TargetPath)" ..\..\out\debug10\bin\
+</Command>
+    </PostBuildEvent>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;CS_DEBUG;CS_WIN32_CSCONFIG;__CRYSTAL_SPACE__;CS_SUPPORTS_MMX;CS_MEMORY_TRACKER;_CONSOLE;CS_STATIC_LINKED;PROJECTGEN_VERSION=10;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.;..\..\src\server;..\..;..\..\include\msvc;..\..\include;..\..\src\client;..\..\src\server;..\..\src\common;..\..\src\tools\wordnet;..\..\src\tools\breakpad;..\..\src\tools\breakpad\third_party\linux\include;..\..\..\CS\include;..\..\..\CS\winlibs\x86\include;..\..\..\CS\win32libs\include;$(CRYSTAL)\include;$(CRYSTAL)\winlibs\x86\include;$(CRYSTAL)\win32libs\include</AdditionalIncludeDirectories>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+    <Manifest>
+      <AdditionalManifestFiles>..\..\mk\msvc\apppsserver_static.manifest</AdditionalManifestFiles>
+    </Manifest>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MemoryTrackerWithDlls|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <MinimalRebuild>true</MinimalRebuild>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <ProgramDataBaseFileName>..\..\out\debug10\build\apppsserver_static\Win32\psserver_static.pdb</ProgramDataBaseFileName>
+      <PreprocessorDefinitions>_DEBUG;CS_DEBUG;CS_WIN32_CSCONFIG;__CRYSTAL_SPACE__;CS_SUPPORTS_MMX;CS_MEMORY_TRACKER;_CONSOLE;CS_STATIC_LINKED;WIN32;CS_USE_SHARED_LIBS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalOptions>  %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>.;..\..;..\..\include\msvc;..\..\include;..\..\src\client;..\..\src\server;..\..\src\common;..\..\src\tools\wordnet;..\..\src\tools\breakpad;..\..\src\tools\breakpad\third_party\linux\include;..\..\..\CS\include;..\..\..\CS\winlibs\x86\include;..\..\..\CS\win32libs\include;$(CRYSTAL)\include;$(CRYSTAL)\winlibs\x86\include;$(CRYSTAL)\win32libs\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PrecompiledHeaderOutputFile>..\..\out\debug10\build\apppsserver_static\apppsserver_static.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>..\..\out\debug10\build\apppsserver_static\</AssemblerListingLocation>
+      <ObjectFileName>..\..\out\debug10\build\apppsserver_static\</ObjectFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <ForceConformanceInForLoopScope>true</ForceConformanceInForLoopScope>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <CompileAs>Default</CompileAs>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>LIBC;LIBCD;LIBCMT;LIBCMTD;MSVCRT;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <OutputFile>..\..\psserver_static.exe</OutputFile>
+      <ProgramDatabaseFile>..\..\out\debug10\build\apppsserver_static\Win32\psserver_static.pdb</ProgramDatabaseFile>
+      <SubSystem>Console</SubSystem>
+      <AdditionalOptions>libcrystalspace_opengl_d.lib opengl32.lib cg.lib cgGL.lib libcrystalspace_staticplugins_d.lib libcrystalspace_d.lib zlib.lib  %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>libcrystalspace_d.lib;ws2_32.lib;zlib.lib;libmysql.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <AdditionalLibraryDirectories>..\..\..\CS\out\debug10\libs;..\..\..\CS\winlibs\x86\lib;..\..\..\CS\win32libs\lib;$(CRYSTAL)\out\debug10\libs;$(CRYSTAL)\winlibs\x86\lib;$(CRYSTAL)\win32libs\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <TargetMachine>MachineX86</TargetMachine>
+      <LargeAddressAware>true</LargeAddressAware>
+    </Link>
+    <Lib>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Lib>
+    <PostBuildEvent>
+      <Command>md ..\..\out\debug10\bin 2&gt; nul
+copy /y "$(TargetPath)" ..\..\out\debug10\bin\
+</Command>
+    </PostBuildEvent>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;CS_DEBUG;CS_WIN32_CSCONFIG;__CRYSTAL_SPACE__;CS_SUPPORTS_MMX;CS_MEMORY_TRACKER;_CONSOLE;CS_STATIC_LINKED;PROJECTGEN_VERSION=10;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.;..\..\src\server;..\..;..\..\include\msvc;..\..\include;..\..\src\client;..\..\src\server;..\..\src\common;..\..\src\tools\wordnet;..\..\src\tools\breakpad;..\..\src\tools\breakpad\third_party\linux\include;..\..\..\CS\include;..\..\..\CS\winlibs\x86\include;..\..\..\CS\win32libs\include;$(CRYSTAL)\include;$(CRYSTAL)\winlibs\x86\include;$(CRYSTAL)\win32libs\include</AdditionalIncludeDirectories>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+    <Manifest>
+      <AdditionalManifestFiles>..\..\mk\msvc\apppsserver_static.manifest</AdditionalManifestFiles>
+    </Manifest>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RefTrackerWithStaticLibs|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <MinimalRebuild>true</MinimalRebuild>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <ProgramDataBaseFileName>..\..\out\debug10\build\apppsserver_static\Win32\psserver_static.pdb</ProgramDataBaseFileName>
+      <PreprocessorDefinitions>_DEBUG;CS_DEBUG;CS_WIN32_CSCONFIG;__CRYSTAL_SPACE__;CS_SUPPORTS_MMX;CS_REF_TRACKER;_CONSOLE;CS_STATIC_LINKED;WIN32;CS_USE_STATIC_LIBS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalOptions>  %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>.;..\..;..\..\include\msvc;..\..\include;..\..\src\client;..\..\src\server;..\..\src\common;..\..\src\tools\wordnet;..\..\src\tools\breakpad;..\..\src\tools\breakpad\third_party\linux\include;..\..\..\CS\include;..\..\..\CS\winlibs\x86\include;..\..\..\CS\win32libs\include;$(CRYSTAL)\include;$(CRYSTAL)\winlibs\x86\include;$(CRYSTAL)\win32libs\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PrecompiledHeaderOutputFile>..\..\out\debug10\build\apppsserver_static\apppsserver_static.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>..\..\out\debug10\build\apppsserver_static\</AssemblerListingLocation>
+      <ObjectFileName>..\..\out\debug10\build\apppsserver_static\</ObjectFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <ForceConformanceInForLoopScope>true</ForceConformanceInForLoopScope>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <CompileAs>Default</CompileAs>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>LIBC;LIBCD;LIBCMT;LIBCMTD;MSVCRT;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <OutputFile>..\..\psserver_static.exe</OutputFile>
+      <ProgramDatabaseFile>..\..\out\debug10\build\apppsserver_static\Win32\psserver_static.pdb</ProgramDatabaseFile>
+      <SubSystem>Console</SubSystem>
+      <AdditionalOptions>libcrystalspace_opengl_d.lib opengl32.lib cg.lib cgGL.lib libcrystalspace_staticplugins_d.lib libcrystalspace_d.lib zlib.lib  %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>libcrystalspace_d.lib;ws2_32.lib;zlib.lib;libmysql.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <AdditionalLibraryDirectories>..\..\..\CS\out\debug10\libs;..\..\..\CS\winlibs\x86\lib;..\..\..\CS\win32libs\lib;$(CRYSTAL)\out\debug10\libs;$(CRYSTAL)\winlibs\x86\lib;$(CRYSTAL)\win32libs\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <TargetMachine>MachineX86</TargetMachine>
+      <LargeAddressAware>true</LargeAddressAware>
+    </Link>
+    <Lib>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Lib>
+    <PostBuildEvent>
+      <Command>md ..\..\out\debug10\bin 2&gt; nul
+copy /y "$(TargetPath)" ..\..\out\debug10\bin\
+</Command>
+    </PostBuildEvent>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;CS_DEBUG;CS_WIN32_CSCONFIG;__CRYSTAL_SPACE__;CS_SUPPORTS_MMX;CS_REF_TRACKER;_CONSOLE;CS_STATIC_LINKED;PROJECTGEN_VERSION=10;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.;..\..\src\server;..\..;..\..\include\msvc;..\..\include;..\..\src\client;..\..\src\server;..\..\src\common;..\..\src\tools\wordnet;..\..\src\tools\breakpad;..\..\src\tools\breakpad\third_party\linux\include;..\..\..\CS\include;..\..\..\CS\winlibs\x86\include;..\..\..\CS\win32libs\include;$(CRYSTAL)\include;$(CRYSTAL)\winlibs\x86\include;$(CRYSTAL)\win32libs\include</AdditionalIncludeDirectories>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+    <Manifest>
+      <AdditionalManifestFiles>..\..\mk\msvc\apppsserver_static.manifest</AdditionalManifestFiles>
+    </Manifest>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RefTrackerWithDlls|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <MinimalRebuild>true</MinimalRebuild>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <ProgramDataBaseFileName>..\..\out\debug10\build\apppsserver_static\Win32\psserver_static.pdb</ProgramDataBaseFileName>
+      <PreprocessorDefinitions>_DEBUG;CS_DEBUG;CS_WIN32_CSCONFIG;__CRYSTAL_SPACE__;CS_SUPPORTS_MMX;CS_REF_TRACKER;_CONSOLE;CS_STATIC_LINKED;WIN32;CS_USE_SHARED_LIBS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalOptions>  %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>.;..\..;..\..\include\msvc;..\..\include;..\..\src\client;..\..\src\server;..\..\src\common;..\..\src\tools\wordnet;..\..\src\tools\breakpad;..\..\src\tools\breakpad\third_party\linux\include;..\..\..\CS\include;..\..\..\CS\winlibs\x86\include;..\..\..\CS\win32libs\include;$(CRYSTAL)\include;$(CRYSTAL)\winlibs\x86\include;$(CRYSTAL)\win32libs\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PrecompiledHeaderOutputFile>..\..\out\debug10\build\apppsserver_static\apppsserver_static.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>..\..\out\debug10\build\apppsserver_static\</AssemblerListingLocation>
+      <ObjectFileName>..\..\out\debug10\build\apppsserver_static\</ObjectFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <ForceConformanceInForLoopScope>true</ForceConformanceInForLoopScope>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <CompileAs>Default</CompileAs>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>LIBC;LIBCD;LIBCMT;LIBCMTD;MSVCRT;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <OutputFile>..\..\psserver_static.exe</OutputFile>
+      <ProgramDatabaseFile>..\..\out\debug10\build\apppsserver_static\Win32\psserver_static.pdb</ProgramDatabaseFile>
+      <SubSystem>Console</SubSystem>
+      <AdditionalOptions>libcrystalspace_opengl_d.lib opengl32.lib cg.lib cgGL.lib libcrystalspace_staticplugins_d.lib libcrystalspace_d.lib zlib.lib  %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>libcrystalspace_d.lib;ws2_32.lib;zlib.lib;libmysql.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <AdditionalLibraryDirectories>..\..\..\CS\out\debug10\libs;..\..\..\CS\winlibs\x86\lib;..\..\..\CS\win32libs\lib;$(CRYSTAL)\out\debug10\libs;$(CRYSTAL)\winlibs\x86\lib;$(CRYSTAL)\win32libs\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <TargetMachine>MachineX86</TargetMachine>
+      <LargeAddressAware>true</LargeAddressAware>
+    </Link>
+    <Lib>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Lib>
+    <PostBuildEvent>
+      <Command>md ..\..\out\debug10\bin 2&gt; nul
+copy /y "$(TargetPath)" ..\..\out\debug10\bin\
+</Command>
+    </PostBuildEvent>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;CS_DEBUG;CS_WIN32_CSCONFIG;__CRYSTAL_SPACE__;CS_SUPPORTS_MMX;CS_REF_TRACKER;_CONSOLE;CS_STATIC_LINKED;PROJECTGEN_VERSION=10;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.;..\..\src\server;..\..;..\..\include\msvc;..\..\include;..\..\src\client;..\..\src\server;..\..\src\common;..\..\src\tools\wordnet;..\..\src\tools\breakpad;..\..\src\tools\breakpad\third_party\linux\include;..\..\..\CS\include;..\..\..\CS\winlibs\x86\include;..\..\..\CS\win32libs\include;$(CRYSTAL)\include;$(CRYSTAL)\winlibs\x86\include;$(CRYSTAL)\win32libs\include</AdditionalIncludeDirectories>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+    <Manifest>
+      <AdditionalManifestFiles>..\..\mk\msvc\apppsserver_static.manifest</AdditionalManifestFiles>
+    </Manifest>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ThreadCheckerWithStaticLibs|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <MinimalRebuild>true</MinimalRebuild>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <ProgramDataBaseFileName>..\..\out\debug10\build\apppsserver_static\Win32\psserver_static.pdb</ProgramDataBaseFileName>
+      <PreprocessorDefinitions>_DEBUG;CS_DEBUG;CS_WIN32_CSCONFIG;__CRYSTAL_SPACE__;CS_SUPPORTS_MMX;CS_THREAD_CHECKER;_CONSOLE;CS_STATIC_LINKED;WIN32;CS_USE_STATIC_LIBS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalOptions>  %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>.;..\..;..\..\include\msvc;..\..\include;..\..\src\client;..\..\src\server;..\..\src\common;..\..\src\tools\wordnet;..\..\src\tools\breakpad;..\..\src\tools\breakpad\third_party\linux\include;..\..\..\CS\include;..\..\..\CS\winlibs\x86\include;..\..\..\CS\win32libs\include;$(CRYSTAL)\include;$(CRYSTAL)\winlibs\x86\include;$(CRYSTAL)\win32libs\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PrecompiledHeaderOutputFile>..\..\out\debug10\build\apppsserver_static\apppsserver_static.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>..\..\out\debug10\build\apppsserver_static\</AssemblerListingLocation>
+      <ObjectFileName>..\..\out\debug10\build\apppsserver_static\</ObjectFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <ForceConformanceInForLoopScope>true</ForceConformanceInForLoopScope>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <CompileAs>Default</CompileAs>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>LIBC;LIBCD;LIBCMT;LIBCMTD;MSVCRT;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <OutputFile>..\..\psserver_static.exe</OutputFile>
+      <ProgramDatabaseFile>..\..\out\debug10\build\apppsserver_static\Win32\psserver_static.pdb</ProgramDatabaseFile>
+      <SubSystem>Console</SubSystem>
+      <AdditionalOptions>libcrystalspace_opengl_d.lib opengl32.lib cg.lib cgGL.lib libcrystalspace_staticplugins_d.lib libcrystalspace_d.lib zlib.lib  %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>libcrystalspace_d.lib;ws2_32.lib;zlib.lib;libmysql.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <AdditionalLibraryDirectories>..\..\..\CS\out\debug10\libs;..\..\..\CS\winlibs\x86\lib;..\..\..\CS\win32libs\lib;$(CRYSTAL)\out\debug10\libs;$(CRYSTAL)\winlibs\x86\lib;$(CRYSTAL)\win32libs\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <TargetMachine>MachineX86</TargetMachine>
+      <LargeAddressAware>true</LargeAddressAware>
+    </Link>
+    <Lib>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Lib>
+    <PostBuildEvent>
+      <Command>md ..\..\out\debug10\bin 2&gt; nul
+copy /y "$(TargetPath)" ..\..\out\debug10\bin\
+</Command>
+    </PostBuildEvent>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;CS_DEBUG;CS_WIN32_CSCONFIG;__CRYSTAL_SPACE__;CS_SUPPORTS_MMX;CS_THREAD_CHECKER;_CONSOLE;CS_STATIC_LINKED;PROJECTGEN_VERSION=10;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.;..\..\src\server;..\..;..\..\include\msvc;..\..\include;..\..\src\client;..\..\src\server;..\..\src\common;..\..\src\tools\wordnet;..\..\src\tools\breakpad;..\..\src\tools\breakpad\third_party\linux\include;..\..\..\CS\include;..\..\..\CS\winlibs\x86\include;..\..\..\CS\win32libs\include;$(CRYSTAL)\include;$(CRYSTAL)\winlibs\x86\include;$(CRYSTAL)\win32libs\include</AdditionalIncludeDirectories>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+    <Manifest>
+      <AdditionalManifestFiles>..\..\mk\msvc\apppsserver_static.manifest</AdditionalManifestFiles>
+    </Manifest>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ThreadCheckerWithDlls|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <MinimalRebuild>true</MinimalRebuild>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <ProgramDataBaseFileName>..\..\out\debug10\build\apppsserver_static\Win32\psserver_static.pdb</ProgramDataBaseFileName>
+      <PreprocessorDefinitions>_DEBUG;CS_DEBUG;CS_WIN32_CSCONFIG;__CRYSTAL_SPACE__;CS_SUPPORTS_MMX;CS_THREAD_CHECKER;_CONSOLE;CS_STATIC_LINKED;WIN32;CS_USE_SHARED_LIBS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalOptions>  %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>.;..\..;..\..\include\msvc;..\..\include;..\..\src\client;..\..\src\server;..\..\src\common;..\..\src\tools\wordnet;..\..\src\tools\breakpad;..\..\src\tools\breakpad\third_party\linux\include;..\..\..\CS\include;..\..\..\CS\winlibs\x86\include;..\..\..\CS\win32libs\include;$(CRYSTAL)\include;$(CRYSTAL)\winlibs\x86\include;$(CRYSTAL)\win32libs\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PrecompiledHeaderOutputFile>..\..\out\debug10\build\apppsserver_static\apppsserver_static.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>..\..\out\debug10\build\apppsserver_static\</AssemblerListingLocation>
+      <ObjectFileName>..\..\out\debug10\build\apppsserver_static\</ObjectFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <ForceConformanceInForLoopScope>true</ForceConformanceInForLoopScope>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <CompileAs>Default</CompileAs>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>LIBC;LIBCD;LIBCMT;LIBCMTD;MSVCRT;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <OutputFile>..\..\psserver_static.exe</OutputFile>
+      <ProgramDatabaseFile>..\..\out\debug10\build\apppsserver_static\Win32\psserver_static.pdb</ProgramDatabaseFile>
+      <SubSystem>Console</SubSystem>
+      <AdditionalOptions>libcrystalspace_opengl_d.lib opengl32.lib cg.lib cgGL.lib libcrystalspace_staticplugins_d.lib libcrystalspace_d.lib zlib.lib  %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>libcrystalspace_d.lib;ws2_32.lib;zlib.lib;libmysql.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <AdditionalLibraryDirectories>..\..\..\CS\out\debug10\libs;..\..\..\CS\winlibs\x86\lib;..\..\..\CS\win32libs\lib;$(CRYSTAL)\out\debug10\libs;$(CRYSTAL)\winlibs\x86\lib;$(CRYSTAL)\win32libs\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <TargetMachine>MachineX86</TargetMachine>
+      <LargeAddressAware>true</LargeAddressAware>
+    </Link>
+    <Lib>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Lib>
+    <PostBuildEvent>
+      <Command>md ..\..\out\debug10\bin 2&gt; nul
+copy /y "$(TargetPath)" ..\..\out\debug10\bin\
+</Command>
+    </PostBuildEvent>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;CS_DEBUG;CS_WIN32_CSCONFIG;__CRYSTAL_SPACE__;CS_SUPPORTS_MMX;CS_THREAD_CHECKER;_CONSOLE;CS_STATIC_LINKED;PROJECTGEN_VERSION=10;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.;..\..\src\server;..\..;..\..\include\msvc;..\..\include;..\..\src\client;..\..\src\server;..\..\src\common;..\..\src\tools\wordnet;..\..\src\tools\breakpad;..\..\src\tools\breakpad\third_party\linux\include;..\..\..\CS\include;..\..\..\CS\winlibs\x86\include;..\..\..\CS\win32libs\include;$(CRYSTAL)\include;$(CRYSTAL)\winlibs\x86\include;$(CRYSTAL)\win32libs\include</AdditionalIncludeDirectories>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+    <Manifest>
+      <AdditionalManifestFiles>..\..\mk\msvc\apppsserver_static.manifest</AdditionalManifestFiles>
+    </Manifest>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugPSReleaseCSCELWithStaticLibs|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <MinimalRebuild>true</MinimalRebuild>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <ProgramDataBaseFileName>..\..\out\debug10\build\apppsserver_static\Win32\psserver_static.pdb</ProgramDataBaseFileName>
+      <PreprocessorDefinitions>NDEBUG;CS_WIN32_CSCONFIG;__CRYSTAL_SPACE__;CS_SUPPORTS_MMX;_CONSOLE;CS_STATIC_LINKED;WIN32;CS_USE_STATIC_LIBS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalOptions>  %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>.;..\..;..\..\include\msvc;..\..\include;..\..\src\client;..\..\src\server;..\..\src\common;..\..\src\tools\wordnet;..\..\src\tools\breakpad;..\..\src\tools\breakpad\third_party\linux\include;..\..\..\CS\include;..\..\..\CS\winlibs\x86\include;..\..\..\CS\win32libs\include;$(CRYSTAL)\include;$(CRYSTAL)\winlibs\x86\include;$(CRYSTAL)\win32libs\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PrecompiledHeaderOutputFile>..\..\out\debug10\build\apppsserver_static\apppsserver_static.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>..\..\out\debug10\build\apppsserver_static\</AssemblerListingLocation>
+      <ObjectFileName>..\..\out\debug10\build\apppsserver_static\</ObjectFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <ForceConformanceInForLoopScope>true</ForceConformanceInForLoopScope>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <CompileAs>Default</CompileAs>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>LIBC;LIBCD;LIBCMT;LIBCMTD;MSVCRT;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <OutputFile>..\..\psserver_static.exe</OutputFile>
+      <ProgramDatabaseFile>..\..\out\debug10\build\apppsserver_static\Win32\psserver_static.pdb</ProgramDatabaseFile>
+      <SubSystem>Console</SubSystem>
+      <AdditionalOptions>libcrystalspace_opengl_d.lib opengl32.lib cg.lib cgGL.lib libcrystalspace_staticplugins_d.lib libcrystalspace_d.lib zlib.lib  %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>libcrystalspace.lib;ws2_32.lib;zlib.lib;libmysql.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <AdditionalLibraryDirectories>..\..\..\CS\out\release10\libs;..\..\..\CS\winlibs\x86\lib;..\..\..\CS\win32libs\lib;$(CRYSTAL)\out\release10\libs;$(CRYSTAL)\winlibs\x86\lib;$(CRYSTAL)\win32libs\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <TargetMachine>MachineX86</TargetMachine>
+      <LargeAddressAware>true</LargeAddressAware>
+    </Link>
+    <Lib>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Lib>
+    <PostBuildEvent>
+      <Command>md ..\..\out\debug10\bin 2&gt; nul
+copy /y "$(TargetPath)" ..\..\out\debug10\bin\
+</Command>
+    </PostBuildEvent>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;CS_WIN32_CSCONFIG;__CRYSTAL_SPACE__;CS_SUPPORTS_MMX;_CONSOLE;CS_STATIC_LINKED;PROJECTGEN_VERSION=10;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.;..\..\src\server;..\..;..\..\include\msvc;..\..\include;..\..\src\client;..\..\src\server;..\..\src\common;..\..\src\tools\wordnet;..\..\src\tools\breakpad;..\..\src\tools\breakpad\third_party\linux\include;..\..\..\CS\include;..\..\..\CS\winlibs\x86\include;..\..\..\CS\win32libs\include;$(CRYSTAL)\include;$(CRYSTAL)\winlibs\x86\include;$(CRYSTAL)\win32libs\include</AdditionalIncludeDirectories>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+    <Manifest>
+      <AdditionalManifestFiles>..\..\mk\msvc\apppsserver_static.manifest</AdditionalManifestFiles>
+    </Manifest>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugPSReleaseCSCELWithDlls|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <MinimalRebuild>true</MinimalRebuild>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <ProgramDataBaseFileName>..\..\out\debug10\build\apppsserver_static\Win32\psserver_static.pdb</ProgramDataBaseFileName>
+      <PreprocessorDefinitions>NDEBUG;CS_WIN32_CSCONFIG;__CRYSTAL_SPACE__;CS_SUPPORTS_MMX;_CONSOLE;CS_STATIC_LINKED;WIN32;CS_USE_SHARED_LIBS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalOptions>  %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>.;..\..;..\..\include\msvc;..\..\include;..\..\src\client;..\..\src\server;..\..\src\common;..\..\src\tools\wordnet;..\..\src\tools\breakpad;..\..\src\tools\breakpad\third_party\linux\include;..\..\..\CS\include;..\..\..\CS\winlibs\x86\include;..\..\..\CS\win32libs\include;$(CRYSTAL)\include;$(CRYSTAL)\winlibs\x86\include;$(CRYSTAL)\win32libs\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PrecompiledHeaderOutputFile>..\..\out\debug10\build\apppsserver_static\apppsserver_static.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>..\..\out\debug10\build\apppsserver_static\</AssemblerListingLocation>
+      <ObjectFileName>..\..\out\debug10\build\apppsserver_static\</ObjectFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <ForceConformanceInForLoopScope>true</ForceConformanceInForLoopScope>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <CompileAs>Default</CompileAs>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>LIBC;LIBCD;LIBCMT;LIBCMTD;MSVCRT;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <OutputFile>..\..\psserver_static.exe</OutputFile>
+      <ProgramDatabaseFile>..\..\out\debug10\build\apppsserver_static\Win32\psserver_static.pdb</ProgramDatabaseFile>
+      <SubSystem>Console</SubSystem>
+      <AdditionalOptions>libcrystalspace_opengl_d.lib opengl32.lib cg.lib cgGL.lib libcrystalspace_staticplugins_d.lib libcrystalspace_d.lib zlib.lib  %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>libcrystalspace.lib;ws2_32.lib;zlib.lib;libmysql.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <AdditionalLibraryDirectories>..\..\..\CS\out\release10\libs;..\..\..\CS\winlibs\x86\lib;..\..\..\CS\win32libs\lib;$(CRYSTAL)\out\release10\libs;$(CRYSTAL)\winlibs\x86\lib;$(CRYSTAL)\win32libs\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <TargetMachine>MachineX86</TargetMachine>
+      <LargeAddressAware>true</LargeAddressAware>
+    </Link>
+    <Lib>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Lib>
+    <PostBuildEvent>
+      <Command>md ..\..\out\debug10\bin 2&gt; nul
+copy /y "$(TargetPath)" ..\..\out\debug10\bin\
+</Command>
+    </PostBuildEvent>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;CS_WIN32_CSCONFIG;__CRYSTAL_SPACE__;CS_SUPPORTS_MMX;_CONSOLE;CS_STATIC_LINKED;PROJECTGEN_VERSION=10;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.;..\..\src\server;..\..;..\..\include\msvc;..\..\include;..\..\src\client;..\..\src\server;..\..\src\common;..\..\src\tools\wordnet;..\..\src\tools\breakpad;..\..\src\tools\breakpad\third_party\linux\include;..\..\..\CS\include;..\..\..\CS\winlibs\x86\include;..\..\..\CS\win32libs\include;$(CRYSTAL)\include;$(CRYSTAL)\winlibs\x86\include;$(CRYSTAL)\win32libs\include</AdditionalIncludeDirectories>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+    <Manifest>
+      <AdditionalManifestFiles>..\..\mk\msvc\apppsserver_static.manifest</AdditionalManifestFiles>
+    </Manifest>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseWithStaticLibs|x64'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <StringPooling>true</StringPooling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <ProgramDataBaseFileName>..\..\out\release10-x64\build\apppsserver_static\x64\psserver_static.pdb</ProgramDataBaseFileName>
+      <PreprocessorDefinitions>NDEBUG;CS_WIN32_CSCONFIG;__CRYSTAL_SPACE__;CS_SUPPORTS_MMX;_CONSOLE;CS_STATIC_LINKED;WIN32;CS_USE_STATIC_LIBS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalOptions>  %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>.;..\..;..\..\include\msvc;..\..\include;..\..\src\client;..\..\src\server;..\..\src\common;..\..\src\tools\wordnet;..\..\src\tools\breakpad;..\..\src\tools\breakpad\third_party\linux\include;..\..\..\CS\include;..\..\..\CS\winlibs\x64\include;..\..\..\CS\win32libs\include;$(CRYSTAL)\include;$(CRYSTAL)\winlibs\x64\include;$(CRYSTAL)\win32libs\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PrecompiledHeaderOutputFile>..\..\out\release10-x64\build\apppsserver_static\apppsserver_static.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>..\..\out\release10-x64\build\apppsserver_static\</AssemblerListingLocation>
+      <ObjectFileName>..\..\out\release10-x64\build\apppsserver_static\</ObjectFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <ForceConformanceInForLoopScope>true</ForceConformanceInForLoopScope>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <CompileAs>Default</CompileAs>
+    </ClCompile>
+    <Link>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>LIBC;LIBCD;LIBCMT;LIBCMTD;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <OutputFile>..\..\psserver_static.exe</OutputFile>
+      <ProgramDatabaseFile>..\..\out\release10-x64\build\apppsserver_static\x64\psserver_static.pdb</ProgramDatabaseFile>
+      <SubSystem>Console</SubSystem>
+      <AdditionalOptions>libcrystalspace_opengl.lib opengl32.lib cg.lib cgGL.lib libcrystalspace_staticplugins.lib libcrystalspace.lib zlib.lib  %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>libcrystalspace.lib;ws2_32.lib;zlib.lib;libmysql.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <AdditionalLibraryDirectories>..\..\..\CS\out\release10-x64\libs;..\..\..\CS\winlibs\x64\lib;..\..\..\CS\win32libs\lib;$(CRYSTAL)\out\release10-x64\libs;$(CRYSTAL)\winlibs\x64\lib;$(CRYSTAL)\win32libs\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <TargetMachine>MachineX64</TargetMachine>
+      <LargeAddressAware>true</LargeAddressAware>
+    </Link>
+    <Lib>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetMachine>MachineX64</TargetMachine>
+    </Lib>
+    <PostBuildEvent>
+      <Command>md ..\..\out\release10-x64\bin 2&gt; nul
+copy /y "$(TargetPath)" ..\..\out\release10-x64\bin\
+</Command>
+    </PostBuildEvent>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;CS_WIN32_CSCONFIG;__CRYSTAL_SPACE__;CS_SUPPORTS_MMX;_CONSOLE;CS_STATIC_LINKED;_WIN64;PROJECTGEN_VERSION=10;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.;..\..\src\server;..\..;..\..\include\msvc;..\..\include;..\..\src\client;..\..\src\server;..\..\src\common;..\..\src\tools\wordnet;..\..\src\tools\breakpad;..\..\src\tools\breakpad\third_party\linux\include;..\..\..\CS\include;..\..\..\CS\winlibs\x64\include;..\..\..\CS\win32libs\include;$(CRYSTAL)\include;$(CRYSTAL)\winlibs\x64\include;$(CRYSTAL)\win32libs\include</AdditionalIncludeDirectories>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+    <Manifest>
+      <AdditionalManifestFiles>..\..\mk\msvc\apppsserver_static-x64.manifest</AdditionalManifestFiles>
+    </Manifest>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseWithDlls|x64'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <StringPooling>true</StringPooling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <ProgramDataBaseFileName>..\..\out\release10-x64\build\apppsserver_static\x64\psserver_static.pdb</ProgramDataBaseFileName>
+      <PreprocessorDefinitions>NDEBUG;CS_WIN32_CSCONFIG;__CRYSTAL_SPACE__;CS_SUPPORTS_MMX;_CONSOLE;CS_STATIC_LINKED;WIN32;CS_USE_SHARED_LIBS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalOptions>  %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>.;..\..;..\..\include\msvc;..\..\include;..\..\src\client;..\..\src\server;..\..\src\common;..\..\src\tools\wordnet;..\..\src\tools\breakpad;..\..\src\tools\breakpad\third_party\linux\include;..\..\..\CS\include;..\..\..\CS\winlibs\x64\include;..\..\..\CS\win32libs\include;$(CRYSTAL)\include;$(CRYSTAL)\winlibs\x64\include;$(CRYSTAL)\win32libs\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PrecompiledHeaderOutputFile>..\..\out\release10-x64\build\apppsserver_static\apppsserver_static.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>..\..\out\release10-x64\build\apppsserver_static\</AssemblerListingLocation>
+      <ObjectFileName>..\..\out\release10-x64\build\apppsserver_static\</ObjectFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <ForceConformanceInForLoopScope>true</ForceConformanceInForLoopScope>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <CompileAs>Default</CompileAs>
+    </ClCompile>
+    <Link>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>LIBC;LIBCD;LIBCMT;LIBCMTD;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <OutputFile>..\..\psserver_static.exe</OutputFile>
+      <ProgramDatabaseFile>..\..\out\release10-x64\build\apppsserver_static\x64\psserver_static.pdb</ProgramDatabaseFile>
+      <SubSystem>Console</SubSystem>
+      <AdditionalOptions>libcrystalspace_opengl.lib opengl32.lib cg.lib cgGL.lib libcrystalspace_staticplugins.lib libcrystalspace.lib zlib.lib  %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>libcrystalspace.lib;ws2_32.lib;zlib.lib;libmysql.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <AdditionalLibraryDirectories>..\..\..\CS\out\release10-x64\libs;..\..\..\CS\winlibs\x64\lib;..\..\..\CS\win32libs\lib;$(CRYSTAL)\out\release10-x64\libs;$(CRYSTAL)\winlibs\x64\lib;$(CRYSTAL)\win32libs\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <TargetMachine>MachineX64</TargetMachine>
+      <LargeAddressAware>true</LargeAddressAware>
+    </Link>
+    <Lib>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetMachine>MachineX64</TargetMachine>
+    </Lib>
+    <PostBuildEvent>
+      <Command>md ..\..\out\release10-x64\bin 2&gt; nul
+copy /y "$(TargetPath)" ..\..\out\release10-x64\bin\
+</Command>
+    </PostBuildEvent>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;CS_WIN32_CSCONFIG;__CRYSTAL_SPACE__;CS_SUPPORTS_MMX;_CONSOLE;CS_STATIC_LINKED;_WIN64;PROJECTGEN_VERSION=10;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.;..\..\src\server;..\..;..\..\include\msvc;..\..\include;..\..\src\client;..\..\src\server;..\..\src\common;..\..\src\tools\wordnet;..\..\src\tools\breakpad;..\..\src\tools\breakpad\third_party\linux\include;..\..\..\CS\include;..\..\..\CS\winlibs\x64\include;..\..\..\CS\win32libs\include;$(CRYSTAL)\include;$(CRYSTAL)\winlibs\x64\include;$(CRYSTAL)\win32libs\include</AdditionalIncludeDirectories>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+    <Manifest>
+      <AdditionalManifestFiles>..\..\mk\msvc\apppsserver_static-x64.manifest</AdditionalManifestFiles>
+    </Manifest>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugWithStaticLibs|x64'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <MinimalRebuild>true</MinimalRebuild>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <ProgramDataBaseFileName>..\..\out\debug10-x64\build\apppsserver_static\x64\psserver_static.pdb</ProgramDataBaseFileName>
+      <PreprocessorDefinitions>_DEBUG;CS_DEBUG;CS_WIN32_CSCONFIG;__CRYSTAL_SPACE__;CS_SUPPORTS_MMX;_CONSOLE;CS_STATIC_LINKED;WIN32;CS_USE_STATIC_LIBS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalOptions>  %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>.;..\..;..\..\include\msvc;..\..\include;..\..\src\client;..\..\src\server;..\..\src\common;..\..\src\tools\wordnet;..\..\src\tools\breakpad;..\..\src\tools\breakpad\third_party\linux\include;..\..\..\CS\include;..\..\..\CS\winlibs\x64\include;..\..\..\CS\win32libs\include;$(CRYSTAL)\include;$(CRYSTAL)\winlibs\x64\include;$(CRYSTAL)\win32libs\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PrecompiledHeaderOutputFile>..\..\out\debug10-x64\build\apppsserver_static\apppsserver_static.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>..\..\out\debug10-x64\build\apppsserver_static\</AssemblerListingLocation>
+      <ObjectFileName>..\..\out\debug10-x64\build\apppsserver_static\</ObjectFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <ForceConformanceInForLoopScope>true</ForceConformanceInForLoopScope>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <CompileAs>Default</CompileAs>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>LIBC;LIBCD;LIBCMT;LIBCMTD;MSVCRT;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <OutputFile>..\..\psserver_static.exe</OutputFile>
+      <ProgramDatabaseFile>..\..\out\debug10-x64\build\apppsserver_static\x64\psserver_static.pdb</ProgramDatabaseFile>
+      <SubSystem>Console</SubSystem>
+      <AdditionalOptions>libcrystalspace_opengl_d.lib opengl32.lib cg.lib cgGL.lib libcrystalspace_staticplugins_d.lib libcrystalspace_d.lib zlib.lib  %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>libcrystalspace_d.lib;ws2_32.lib;zlib.lib;libmysql.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <AdditionalLibraryDirectories>..\..\..\CS\out\debug10-x64\libs;..\..\..\CS\winlibs\x64\lib;..\..\..\CS\win32libs\lib;$(CRYSTAL)\out\debug10-x64\libs;$(CRYSTAL)\winlibs\x64\lib;$(CRYSTAL)\win32libs\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <TargetMachine>MachineX64</TargetMachine>
+      <LargeAddressAware>true</LargeAddressAware>
+    </Link>
+    <Lib>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetMachine>MachineX64</TargetMachine>
+    </Lib>
+    <PostBuildEvent>
+      <Command>md ..\..\out\debug10-x64\bin 2&gt; nul
+copy /y "$(TargetPath)" ..\..\out\debug10-x64\bin\
+</Command>
+    </PostBuildEvent>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;CS_DEBUG;CS_WIN32_CSCONFIG;__CRYSTAL_SPACE__;CS_SUPPORTS_MMX;_CONSOLE;CS_STATIC_LINKED;_WIN64;PROJECTGEN_VERSION=10;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.;..\..\src\server;..\..;..\..\include\msvc;..\..\include;..\..\src\client;..\..\src\server;..\..\src\common;..\..\src\tools\wordnet;..\..\src\tools\breakpad;..\..\src\tools\breakpad\third_party\linux\include;..\..\..\CS\include;..\..\..\CS\winlibs\x64\include;..\..\..\CS\win32libs\include;$(CRYSTAL)\include;$(CRYSTAL)\winlibs\x64\include;$(CRYSTAL)\win32libs\include</AdditionalIncludeDirectories>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+    <Manifest>
+      <AdditionalManifestFiles>..\..\mk\msvc\apppsserver_static-x64.manifest</AdditionalManifestFiles>
+    </Manifest>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugWithDlls|x64'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <MinimalRebuild>true</MinimalRebuild>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <ProgramDataBaseFileName>..\..\out\debug10-x64\build\apppsserver_static\x64\psserver_static.pdb</ProgramDataBaseFileName>
+      <PreprocessorDefinitions>_DEBUG;CS_DEBUG;CS_WIN32_CSCONFIG;__CRYSTAL_SPACE__;CS_SUPPORTS_MMX;_CONSOLE;CS_STATIC_LINKED;WIN32;CS_USE_SHARED_LIBS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalOptions>  %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>.;..\..;..\..\include\msvc;..\..\include;..\..\src\client;..\..\src\server;..\..\src\common;..\..\src\tools\wordnet;..\..\src\tools\breakpad;..\..\src\tools\breakpad\third_party\linux\include;..\..\..\CS\include;..\..\..\CS\winlibs\x64\include;..\..\..\CS\win32libs\include;$(CRYSTAL)\include;$(CRYSTAL)\winlibs\x64\include;$(CRYSTAL)\win32libs\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PrecompiledHeaderOutputFile>..\..\out\debug10-x64\build\apppsserver_static\apppsserver_static.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>..\..\out\debug10-x64\build\apppsserver_static\</AssemblerListingLocation>
+      <ObjectFileName>..\..\out\debug10-x64\build\apppsserver_static\</ObjectFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <ForceConformanceInForLoopScope>true</ForceConformanceInForLoopScope>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <CompileAs>Default</CompileAs>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>LIBC;LIBCD;LIBCMT;LIBCMTD;MSVCRT;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <OutputFile>..\..\psserver_static.exe</OutputFile>
+      <ProgramDatabaseFile>..\..\out\debug10-x64\build\apppsserver_static\x64\psserver_static.pdb</ProgramDatabaseFile>
+      <SubSystem>Console</SubSystem>
+      <AdditionalOptions>libcrystalspace_opengl_d.lib opengl32.lib cg.lib cgGL.lib libcrystalspace_staticplugins_d.lib libcrystalspace_d.lib zlib.lib  %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>libcrystalspace_d.lib;ws2_32.lib;zlib.lib;libmysql.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <AdditionalLibraryDirectories>..\..\..\CS\out\debug10-x64\libs;..\..\..\CS\winlibs\x64\lib;..\..\..\CS\win32libs\lib;$(CRYSTAL)\out\debug10-x64\libs;$(CRYSTAL)\winlibs\x64\lib;$(CRYSTAL)\win32libs\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <TargetMachine>MachineX64</TargetMachine>
+      <LargeAddressAware>true</LargeAddressAware>
+    </Link>
+    <Lib>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetMachine>MachineX64</TargetMachine>
+    </Lib>
+    <PostBuildEvent>
+      <Command>md ..\..\out\debug10-x64\bin 2&gt; nul
+copy /y "$(TargetPath)" ..\..\out\debug10-x64\bin\
+</Command>
+    </PostBuildEvent>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;CS_DEBUG;CS_WIN32_CSCONFIG;__CRYSTAL_SPACE__;CS_SUPPORTS_MMX;_CONSOLE;CS_STATIC_LINKED;_WIN64;PROJECTGEN_VERSION=10;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.;..\..\src\server;..\..;..\..\include\msvc;..\..\include;..\..\src\client;..\..\src\server;..\..\src\common;..\..\src\tools\wordnet;..\..\src\tools\breakpad;..\..\src\tools\breakpad\third_party\linux\include;..\..\..\CS\include;..\..\..\CS\winlibs\x64\include;..\..\..\CS\win32libs\include;$(CRYSTAL)\include;$(CRYSTAL)\winlibs\x64\include;$(CRYSTAL)\win32libs\include</AdditionalIncludeDirectories>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+    <Manifest>
+      <AdditionalManifestFiles>..\..\mk\msvc\apppsserver_static-x64.manifest</AdditionalManifestFiles>
+    </Manifest>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MemoryTrackerWithStaticLibs|x64'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <MinimalRebuild>true</MinimalRebuild>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <ProgramDataBaseFileName>..\..\out\debug10-x64\build\apppsserver_static\x64\psserver_static.pdb</ProgramDataBaseFileName>
+      <PreprocessorDefinitions>_DEBUG;CS_DEBUG;CS_WIN32_CSCONFIG;__CRYSTAL_SPACE__;CS_SUPPORTS_MMX;CS_MEMORY_TRACKER;_CONSOLE;CS_STATIC_LINKED;WIN32;CS_USE_STATIC_LIBS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalOptions>  %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>.;..\..;..\..\include\msvc;..\..\include;..\..\src\client;..\..\src\server;..\..\src\common;..\..\src\tools\wordnet;..\..\src\tools\breakpad;..\..\src\tools\breakpad\third_party\linux\include;..\..\..\CS\include;..\..\..\CS\winlibs\x64\include;..\..\..\CS\win32libs\include;$(CRYSTAL)\include;$(CRYSTAL)\winlibs\x64\include;$(CRYSTAL)\win32libs\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PrecompiledHeaderOutputFile>..\..\out\debug10-x64\build\apppsserver_static\apppsserver_static.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>..\..\out\debug10-x64\build\apppsserver_static\</AssemblerListingLocation>
+      <ObjectFileName>..\..\out\debug10-x64\build\apppsserver_static\</ObjectFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <ForceConformanceInForLoopScope>true</ForceConformanceInForLoopScope>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <CompileAs>Default</CompileAs>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>LIBC;LIBCD;LIBCMT;LIBCMTD;MSVCRT;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <OutputFile>..\..\psserver_static.exe</OutputFile>
+      <ProgramDatabaseFile>..\..\out\debug10-x64\build\apppsserver_static\x64\psserver_static.pdb</ProgramDatabaseFile>
+      <SubSystem>Console</SubSystem>
+      <AdditionalOptions>libcrystalspace_opengl_d.lib opengl32.lib cg.lib cgGL.lib libcrystalspace_staticplugins_d.lib libcrystalspace_d.lib zlib.lib  %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>libcrystalspace_d.lib;ws2_32.lib;zlib.lib;libmysql.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <AdditionalLibraryDirectories>..\..\..\CS\out\debug10-x64\libs;..\..\..\CS\winlibs\x64\lib;..\..\..\CS\win32libs\lib;$(CRYSTAL)\out\debug10-x64\libs;$(CRYSTAL)\winlibs\x64\lib;$(CRYSTAL)\win32libs\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <TargetMachine>MachineX64</TargetMachine>
+      <LargeAddressAware>true</LargeAddressAware>
+    </Link>
+    <Lib>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetMachine>MachineX64</TargetMachine>
+    </Lib>
+    <PostBuildEvent>
+      <Command>md ..\..\out\debug10-x64\bin 2&gt; nul
+copy /y "$(TargetPath)" ..\..\out\debug10-x64\bin\
+</Command>
+    </PostBuildEvent>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;CS_DEBUG;CS_WIN32_CSCONFIG;__CRYSTAL_SPACE__;CS_SUPPORTS_MMX;CS_MEMORY_TRACKER;_CONSOLE;CS_STATIC_LINKED;_WIN64;PROJECTGEN_VERSION=10;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.;..\..\src\server;..\..;..\..\include\msvc;..\..\include;..\..\src\client;..\..\src\server;..\..\src\common;..\..\src\tools\wordnet;..\..\src\tools\breakpad;..\..\src\tools\breakpad\third_party\linux\include;..\..\..\CS\include;..\..\..\CS\winlibs\x64\include;..\..\..\CS\win32libs\include;$(CRYSTAL)\include;$(CRYSTAL)\winlibs\x64\include;$(CRYSTAL)\win32libs\include</AdditionalIncludeDirectories>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+    <Manifest>
+      <AdditionalManifestFiles>..\..\mk\msvc\apppsserver_static-x64.manifest</AdditionalManifestFiles>
+    </Manifest>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MemoryTrackerWithDlls|x64'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <MinimalRebuild>true</MinimalRebuild>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <ProgramDataBaseFileName>..\..\out\debug10-x64\build\apppsserver_static\x64\psserver_static.pdb</ProgramDataBaseFileName>
+      <PreprocessorDefinitions>_DEBUG;CS_DEBUG;CS_WIN32_CSCONFIG;__CRYSTAL_SPACE__;CS_SUPPORTS_MMX;CS_MEMORY_TRACKER;_CONSOLE;CS_STATIC_LINKED;WIN32;CS_USE_SHARED_LIBS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalOptions>  %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>.;..\..;..\..\include\msvc;..\..\include;..\..\src\client;..\..\src\server;..\..\src\common;..\..\src\tools\wordnet;..\..\src\tools\breakpad;..\..\src\tools\breakpad\third_party\linux\include;..\..\..\CS\include;..\..\..\CS\winlibs\x64\include;..\..\..\CS\win32libs\include;$(CRYSTAL)\include;$(CRYSTAL)\winlibs\x64\include;$(CRYSTAL)\win32libs\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PrecompiledHeaderOutputFile>..\..\out\debug10-x64\build\apppsserver_static\apppsserver_static.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>..\..\out\debug10-x64\build\apppsserver_static\</AssemblerListingLocation>
+      <ObjectFileName>..\..\out\debug10-x64\build\apppsserver_static\</ObjectFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <ForceConformanceInForLoopScope>true</ForceConformanceInForLoopScope>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <CompileAs>Default</CompileAs>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>LIBC;LIBCD;LIBCMT;LIBCMTD;MSVCRT;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <OutputFile>..\..\psserver_static.exe</OutputFile>
+      <ProgramDatabaseFile>..\..\out\debug10-x64\build\apppsserver_static\x64\psserver_static.pdb</ProgramDatabaseFile>
+      <SubSystem>Console</SubSystem>
+      <AdditionalOptions>libcrystalspace_opengl_d.lib opengl32.lib cg.lib cgGL.lib libcrystalspace_staticplugins_d.lib libcrystalspace_d.lib zlib.lib  %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>libcrystalspace_d.lib;ws2_32.lib;zlib.lib;libmysql.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <AdditionalLibraryDirectories>..\..\..\CS\out\debug10-x64\libs;..\..\..\CS\winlibs\x64\lib;..\..\..\CS\win32libs\lib;$(CRYSTAL)\out\debug10-x64\libs;$(CRYSTAL)\winlibs\x64\lib;$(CRYSTAL)\win32libs\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <TargetMachine>MachineX64</TargetMachine>
+      <LargeAddressAware>true</LargeAddressAware>
+    </Link>
+    <Lib>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetMachine>MachineX64</TargetMachine>
+    </Lib>
+    <PostBuildEvent>
+      <Command>md ..\..\out\debug10-x64\bin 2&gt; nul
+copy /y "$(TargetPath)" ..\..\out\debug10-x64\bin\
+</Command>
+    </PostBuildEvent>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;CS_DEBUG;CS_WIN32_CSCONFIG;__CRYSTAL_SPACE__;CS_SUPPORTS_MMX;CS_MEMORY_TRACKER;_CONSOLE;CS_STATIC_LINKED;_WIN64;PROJECTGEN_VERSION=10;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.;..\..\src\server;..\..;..\..\include\msvc;..\..\include;..\..\src\client;..\..\src\server;..\..\src\common;..\..\src\tools\wordnet;..\..\src\tools\breakpad;..\..\src\tools\breakpad\third_party\linux\include;..\..\..\CS\include;..\..\..\CS\winlibs\x64\include;..\..\..\CS\win32libs\include;$(CRYSTAL)\include;$(CRYSTAL)\winlibs\x64\include;$(CRYSTAL)\win32libs\include</AdditionalIncludeDirectories>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+    <Manifest>
+      <AdditionalManifestFiles>..\..\mk\msvc\apppsserver_static-x64.manifest</AdditionalManifestFiles>
+    </Manifest>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RefTrackerWithStaticLibs|x64'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <MinimalRebuild>true</MinimalRebuild>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <ProgramDataBaseFileName>..\..\out\debug10-x64\build\apppsserver_static\x64\psserver_static.pdb</ProgramDataBaseFileName>
+      <PreprocessorDefinitions>_DEBUG;CS_DEBUG;CS_WIN32_CSCONFIG;__CRYSTAL_SPACE__;CS_SUPPORTS_MMX;CS_REF_TRACKER;_CONSOLE;CS_STATIC_LINKED;WIN32;CS_USE_STATIC_LIBS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalOptions>  %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>.;..\..;..\..\include\msvc;..\..\include;..\..\src\client;..\..\src\server;..\..\src\common;..\..\src\tools\wordnet;..\..\src\tools\breakpad;..\..\src\tools\breakpad\third_party\linux\include;..\..\..\CS\include;..\..\..\CS\winlibs\x64\include;..\..\..\CS\win32libs\include;$(CRYSTAL)\include;$(CRYSTAL)\winlibs\x64\include;$(CRYSTAL)\win32libs\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PrecompiledHeaderOutputFile>..\..\out\debug10-x64\build\apppsserver_static\apppsserver_static.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>..\..\out\debug10-x64\build\apppsserver_static\</AssemblerListingLocation>
+      <ObjectFileName>..\..\out\debug10-x64\build\apppsserver_static\</ObjectFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <ForceConformanceInForLoopScope>true</ForceConformanceInForLoopScope>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <CompileAs>Default</CompileAs>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>LIBC;LIBCD;LIBCMT;LIBCMTD;MSVCRT;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <OutputFile>..\..\psserver_static.exe</OutputFile>
+      <ProgramDatabaseFile>..\..\out\debug10-x64\build\apppsserver_static\x64\psserver_static.pdb</ProgramDatabaseFile>
+      <SubSystem>Console</SubSystem>
+      <AdditionalOptions>libcrystalspace_opengl_d.lib opengl32.lib cg.lib cgGL.lib libcrystalspace_staticplugins_d.lib libcrystalspace_d.lib zlib.lib  %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>libcrystalspace_d.lib;ws2_32.lib;zlib.lib;libmysql.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <AdditionalLibraryDirectories>..\..\..\CS\out\debug10-x64\libs;..\..\..\CS\winlibs\x64\lib;..\..\..\CS\win32libs\lib;$(CRYSTAL)\out\debug10-x64\libs;$(CRYSTAL)\winlibs\x64\lib;$(CRYSTAL)\win32libs\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <TargetMachine>MachineX64</TargetMachine>
+      <LargeAddressAware>true</LargeAddressAware>
+    </Link>
+    <Lib>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetMachine>MachineX64</TargetMachine>
+    </Lib>
+    <PostBuildEvent>
+      <Command>md ..\..\out\debug10-x64\bin 2&gt; nul
+copy /y "$(TargetPath)" ..\..\out\debug10-x64\bin\
+</Command>
+    </PostBuildEvent>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;CS_DEBUG;CS_WIN32_CSCONFIG;__CRYSTAL_SPACE__;CS_SUPPORTS_MMX;CS_REF_TRACKER;_CONSOLE;CS_STATIC_LINKED;_WIN64;PROJECTGEN_VERSION=10;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.;..\..\src\server;..\..;..\..\include\msvc;..\..\include;..\..\src\client;..\..\src\server;..\..\src\common;..\..\src\tools\wordnet;..\..\src\tools\breakpad;..\..\src\tools\breakpad\third_party\linux\include;..\..\..\CS\include;..\..\..\CS\winlibs\x64\include;..\..\..\CS\win32libs\include;$(CRYSTAL)\include;$(CRYSTAL)\winlibs\x64\include;$(CRYSTAL)\win32libs\include</AdditionalIncludeDirectories>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+    <Manifest>
+      <AdditionalManifestFiles>..\..\mk\msvc\apppsserver_static-x64.manifest</AdditionalManifestFiles>
+    </Manifest>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RefTrackerWithDlls|x64'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <MinimalRebuild>true</MinimalRebuild>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <ProgramDataBaseFileName>..\..\out\debug10-x64\build\apppsserver_static\x64\psserver_static.pdb</ProgramDataBaseFileName>
+      <PreprocessorDefinitions>_DEBUG;CS_DEBUG;CS_WIN32_CSCONFIG;__CRYSTAL_SPACE__;CS_SUPPORTS_MMX;CS_REF_TRACKER;_CONSOLE;CS_STATIC_LINKED;WIN32;CS_USE_SHARED_LIBS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalOptions>  %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>.;..\..;..\..\include\msvc;..\..\include;..\..\src\client;..\..\src\server;..\..\src\common;..\..\src\tools\wordnet;..\..\src\tools\breakpad;..\..\src\tools\breakpad\third_party\linux\include;..\..\..\CS\include;..\..\..\CS\winlibs\x64\include;..\..\..\CS\win32libs\include;$(CRYSTAL)\include;$(CRYSTAL)\winlibs\x64\include;$(CRYSTAL)\win32libs\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PrecompiledHeaderOutputFile>..\..\out\debug10-x64\build\apppsserver_static\apppsserver_static.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>..\..\out\debug10-x64\build\apppsserver_static\</AssemblerListingLocation>
+      <ObjectFileName>..\..\out\debug10-x64\build\apppsserver_static\</ObjectFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <ForceConformanceInForLoopScope>true</ForceConformanceInForLoopScope>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <CompileAs>Default</CompileAs>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>LIBC;LIBCD;LIBCMT;LIBCMTD;MSVCRT;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <OutputFile>..\..\psserver_static.exe</OutputFile>
+      <ProgramDatabaseFile>..\..\out\debug10-x64\build\apppsserver_static\x64\psserver_static.pdb</ProgramDatabaseFile>
+      <SubSystem>Console</SubSystem>
+      <AdditionalOptions>libcrystalspace_opengl_d.lib opengl32.lib cg.lib cgGL.lib libcrystalspace_staticplugins_d.lib libcrystalspace_d.lib zlib.lib  %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>libcrystalspace_d.lib;ws2_32.lib;zlib.lib;libmysql.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <AdditionalLibraryDirectories>..\..\..\CS\out\debug10-x64\libs;..\..\..\CS\winlibs\x64\lib;..\..\..\CS\win32libs\lib;$(CRYSTAL)\out\debug10-x64\libs;$(CRYSTAL)\winlibs\x64\lib;$(CRYSTAL)\win32libs\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <TargetMachine>MachineX64</TargetMachine>
+      <LargeAddressAware>true</LargeAddressAware>
+    </Link>
+    <Lib>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetMachine>MachineX64</TargetMachine>
+    </Lib>
+    <PostBuildEvent>
+      <Command>md ..\..\out\debug10-x64\bin 2&gt; nul
+copy /y "$(TargetPath)" ..\..\out\debug10-x64\bin\
+</Command>
+    </PostBuildEvent>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;CS_DEBUG;CS_WIN32_CSCONFIG;__CRYSTAL_SPACE__;CS_SUPPORTS_MMX;CS_REF_TRACKER;_CONSOLE;CS_STATIC_LINKED;_WIN64;PROJECTGEN_VERSION=10;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.;..\..\src\server;..\..;..\..\include\msvc;..\..\include;..\..\src\client;..\..\src\server;..\..\src\common;..\..\src\tools\wordnet;..\..\src\tools\breakpad;..\..\src\tools\breakpad\third_party\linux\include;..\..\..\CS\include;..\..\..\CS\winlibs\x64\include;..\..\..\CS\win32libs\include;$(CRYSTAL)\include;$(CRYSTAL)\winlibs\x64\include;$(CRYSTAL)\win32libs\include</AdditionalIncludeDirectories>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+    <Manifest>
+      <AdditionalManifestFiles>..\..\mk\msvc\apppsserver_static-x64.manifest</AdditionalManifestFiles>
+    </Manifest>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ThreadCheckerWithStaticLibs|x64'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <MinimalRebuild>true</MinimalRebuild>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <ProgramDataBaseFileName>..\..\out\debug10-x64\build\apppsserver_static\x64\psserver_static.pdb</ProgramDataBaseFileName>
+      <PreprocessorDefinitions>_DEBUG;CS_DEBUG;CS_WIN32_CSCONFIG;__CRYSTAL_SPACE__;CS_SUPPORTS_MMX;CS_THREAD_CHECKER;_CONSOLE;CS_STATIC_LINKED;WIN32;CS_USE_STATIC_LIBS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalOptions>  %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>.;..\..;..\..\include\msvc;..\..\include;..\..\src\client;..\..\src\server;..\..\src\common;..\..\src\tools\wordnet;..\..\src\tools\breakpad;..\..\src\tools\breakpad\third_party\linux\include;..\..\..\CS\include;..\..\..\CS\winlibs\x64\include;..\..\..\CS\win32libs\include;$(CRYSTAL)\include;$(CRYSTAL)\winlibs\x64\include;$(CRYSTAL)\win32libs\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PrecompiledHeaderOutputFile>..\..\out\debug10-x64\build\apppsserver_static\apppsserver_static.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>..\..\out\debug10-x64\build\apppsserver_static\</AssemblerListingLocation>
+      <ObjectFileName>..\..\out\debug10-x64\build\apppsserver_static\</ObjectFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <ForceConformanceInForLoopScope>true</ForceConformanceInForLoopScope>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <CompileAs>Default</CompileAs>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>LIBC;LIBCD;LIBCMT;LIBCMTD;MSVCRT;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <OutputFile>..\..\psserver_static.exe</OutputFile>
+      <ProgramDatabaseFile>..\..\out\debug10-x64\build\apppsserver_static\x64\psserver_static.pdb</ProgramDatabaseFile>
+      <SubSystem>Console</SubSystem>
+      <AdditionalOptions>libcrystalspace_opengl_d.lib opengl32.lib cg.lib cgGL.lib libcrystalspace_staticplugins_d.lib libcrystalspace_d.lib zlib.lib  %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>libcrystalspace_d.lib;ws2_32.lib;zlib.lib;libmysql.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <AdditionalLibraryDirectories>..\..\..\CS\out\debug10-x64\libs;..\..\..\CS\winlibs\x64\lib;..\..\..\CS\win32libs\lib;$(CRYSTAL)\out\debug10-x64\libs;$(CRYSTAL)\winlibs\x64\lib;$(CRYSTAL)\win32libs\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <TargetMachine>MachineX64</TargetMachine>
+      <LargeAddressAware>true</LargeAddressAware>
+    </Link>
+    <Lib>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetMachine>MachineX64</TargetMachine>
+    </Lib>
+    <PostBuildEvent>
+      <Command>md ..\..\out\debug10-x64\bin 2&gt; nul
+copy /y "$(TargetPath)" ..\..\out\debug10-x64\bin\
+</Command>
+    </PostBuildEvent>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;CS_DEBUG;CS_WIN32_CSCONFIG;__CRYSTAL_SPACE__;CS_SUPPORTS_MMX;CS_THREAD_CHECKER;_CONSOLE;CS_STATIC_LINKED;_WIN64;PROJECTGEN_VERSION=10;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.;..\..\src\server;..\..;..\..\include\msvc;..\..\include;..\..\src\client;..\..\src\server;..\..\src\common;..\..\src\tools\wordnet;..\..\src\tools\breakpad;..\..\src\tools\breakpad\third_party\linux\include;..\..\..\CS\include;..\..\..\CS\winlibs\x64\include;..\..\..\CS\win32libs\include;$(CRYSTAL)\include;$(CRYSTAL)\winlibs\x64\include;$(CRYSTAL)\win32libs\include</AdditionalIncludeDirectories>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+    <Manifest>
+      <AdditionalManifestFiles>..\..\mk\msvc\apppsserver_static-x64.manifest</AdditionalManifestFiles>
+    </Manifest>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ThreadCheckerWithDlls|x64'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <MinimalRebuild>true</MinimalRebuild>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <ProgramDataBaseFileName>..\..\out\debug10-x64\build\apppsserver_static\x64\psserver_static.pdb</ProgramDataBaseFileName>
+      <PreprocessorDefinitions>_DEBUG;CS_DEBUG;CS_WIN32_CSCONFIG;__CRYSTAL_SPACE__;CS_SUPPORTS_MMX;CS_THREAD_CHECKER;_CONSOLE;CS_STATIC_LINKED;WIN32;CS_USE_SHARED_LIBS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalOptions>  %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>.;..\..;..\..\include\msvc;..\..\include;..\..\src\client;..\..\src\server;..\..\src\common;..\..\src\tools\wordnet;..\..\src\tools\breakpad;..\..\src\tools\breakpad\third_party\linux\include;..\..\..\CS\include;..\..\..\CS\winlibs\x64\include;..\..\..\CS\win32libs\include;$(CRYSTAL)\include;$(CRYSTAL)\winlibs\x64\include;$(CRYSTAL)\win32libs\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PrecompiledHeaderOutputFile>..\..\out\debug10-x64\build\apppsserver_static\apppsserver_static.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>..\..\out\debug10-x64\build\apppsserver_static\</AssemblerListingLocation>
+      <ObjectFileName>..\..\out\debug10-x64\build\apppsserver_static\</ObjectFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <ForceConformanceInForLoopScope>true</ForceConformanceInForLoopScope>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <CompileAs>Default</CompileAs>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>LIBC;LIBCD;LIBCMT;LIBCMTD;MSVCRT;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <OutputFile>..\..\psserver_static.exe</OutputFile>
+      <ProgramDatabaseFile>..\..\out\debug10-x64\build\apppsserver_static\x64\psserver_static.pdb</ProgramDatabaseFile>
+      <SubSystem>Console</SubSystem>
+      <AdditionalOptions>libcrystalspace_opengl_d.lib opengl32.lib cg.lib cgGL.lib libcrystalspace_staticplugins_d.lib libcrystalspace_d.lib zlib.lib  %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>libcrystalspace_d.lib;ws2_32.lib;zlib.lib;libmysql.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <AdditionalLibraryDirectories>..\..\..\CS\out\debug10-x64\libs;..\..\..\CS\winlibs\x64\lib;..\..\..\CS\win32libs\lib;$(CRYSTAL)\out\debug10-x64\libs;$(CRYSTAL)\winlibs\x64\lib;$(CRYSTAL)\win32libs\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <TargetMachine>MachineX64</TargetMachine>
+      <LargeAddressAware>true</LargeAddressAware>
+    </Link>
+    <Lib>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetMachine>MachineX64</TargetMachine>
+    </Lib>
+    <PostBuildEvent>
+      <Command>md ..\..\out\debug10-x64\bin 2&gt; nul
+copy /y "$(TargetPath)" ..\..\out\debug10-x64\bin\
+</Command>
+    </PostBuildEvent>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;CS_DEBUG;CS_WIN32_CSCONFIG;__CRYSTAL_SPACE__;CS_SUPPORTS_MMX;CS_THREAD_CHECKER;_CONSOLE;CS_STATIC_LINKED;_WIN64;PROJECTGEN_VERSION=10;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.;..\..\src\server;..\..;..\..\include\msvc;..\..\include;..\..\src\client;..\..\src\server;..\..\src\common;..\..\src\tools\wordnet;..\..\src\tools\breakpad;..\..\src\tools\breakpad\third_party\linux\include;..\..\..\CS\include;..\..\..\CS\winlibs\x64\include;..\..\..\CS\win32libs\include;$(CRYSTAL)\include;$(CRYSTAL)\winlibs\x64\include;$(CRYSTAL)\win32libs\include</AdditionalIncludeDirectories>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+    <Manifest>
+      <AdditionalManifestFiles>..\..\mk\msvc\apppsserver_static-x64.manifest</AdditionalManifestFiles>
+    </Manifest>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugPSReleaseCSCELWithStaticLibs|x64'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <MinimalRebuild>true</MinimalRebuild>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <ProgramDataBaseFileName>..\..\out\debug10-x64\build\apppsserver_static\x64\psserver_static.pdb</ProgramDataBaseFileName>
+      <PreprocessorDefinitions>NDEBUG;CS_WIN32_CSCONFIG;__CRYSTAL_SPACE__;CS_SUPPORTS_MMX;_CONSOLE;CS_STATIC_LINKED;WIN32;CS_USE_STATIC_LIBS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalOptions>  %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>.;..\..;..\..\include\msvc;..\..\include;..\..\src\client;..\..\src\server;..\..\src\common;..\..\src\tools\wordnet;..\..\src\tools\breakpad;..\..\src\tools\breakpad\third_party\linux\include;..\..\..\CS\include;..\..\..\CS\winlibs\x64\include;..\..\..\CS\win32libs\include;$(CRYSTAL)\include;$(CRYSTAL)\winlibs\x64\include;$(CRYSTAL)\win32libs\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PrecompiledHeaderOutputFile>..\..\out\debug10-x64\build\apppsserver_static\apppsserver_static.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>..\..\out\debug10-x64\build\apppsserver_static\</AssemblerListingLocation>
+      <ObjectFileName>..\..\out\debug10-x64\build\apppsserver_static\</ObjectFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <ForceConformanceInForLoopScope>true</ForceConformanceInForLoopScope>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <CompileAs>Default</CompileAs>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>LIBC;LIBCD;LIBCMT;LIBCMTD;MSVCRT;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <OutputFile>..\..\psserver_static.exe</OutputFile>
+      <ProgramDatabaseFile>..\..\out\debug10-x64\build\apppsserver_static\x64\psserver_static.pdb</ProgramDatabaseFile>
+      <SubSystem>Console</SubSystem>
+      <AdditionalOptions>libcrystalspace_opengl_d.lib opengl32.lib cg.lib cgGL.lib libcrystalspace_staticplugins_d.lib libcrystalspace_d.lib zlib.lib  %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>libcrystalspace.lib;ws2_32.lib;zlib.lib;libmysql.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <AdditionalLibraryDirectories>..\..\..\CS\out\release10-x64\libs;..\..\..\CS\winlibs\x64\lib;..\..\..\CS\win32libs\lib;$(CRYSTAL)\out\release10-x64\libs;$(CRYSTAL)\winlibs\x64\lib;$(CRYSTAL)\win32libs\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <TargetMachine>MachineX64</TargetMachine>
+      <LargeAddressAware>true</LargeAddressAware>
+    </Link>
+    <Lib>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetMachine>MachineX64</TargetMachine>
+    </Lib>
+    <PostBuildEvent>
+      <Command>md ..\..\out\debug10-x64\bin 2&gt; nul
+copy /y "$(TargetPath)" ..\..\out\debug10-x64\bin\
+</Command>
+    </PostBuildEvent>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;CS_WIN32_CSCONFIG;__CRYSTAL_SPACE__;CS_SUPPORTS_MMX;_CONSOLE;CS_STATIC_LINKED;_WIN64;PROJECTGEN_VERSION=10;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.;..\..\src\server;..\..;..\..\include\msvc;..\..\include;..\..\src\client;..\..\src\server;..\..\src\common;..\..\src\tools\wordnet;..\..\src\tools\breakpad;..\..\src\tools\breakpad\third_party\linux\include;..\..\..\CS\include;..\..\..\CS\winlibs\x64\include;..\..\..\CS\win32libs\include;$(CRYSTAL)\include;$(CRYSTAL)\winlibs\x64\include;$(CRYSTAL)\win32libs\include</AdditionalIncludeDirectories>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+    <Manifest>
+      <AdditionalManifestFiles>..\..\mk\msvc\apppsserver_static-x64.manifest</AdditionalManifestFiles>
+    </Manifest>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugPSReleaseCSCELWithDlls|x64'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <MinimalRebuild>true</MinimalRebuild>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <ProgramDataBaseFileName>..\..\out\debug10-x64\build\apppsserver_static\x64\psserver_static.pdb</ProgramDataBaseFileName>
+      <PreprocessorDefinitions>NDEBUG;CS_WIN32_CSCONFIG;__CRYSTAL_SPACE__;CS_SUPPORTS_MMX;_CONSOLE;CS_STATIC_LINKED;WIN32;CS_USE_SHARED_LIBS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalOptions>  %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>.;..\..;..\..\include\msvc;..\..\include;..\..\src\client;..\..\src\server;..\..\src\common;..\..\src\tools\wordnet;..\..\src\tools\breakpad;..\..\src\tools\breakpad\third_party\linux\include;..\..\..\CS\include;..\..\..\CS\winlibs\x64\include;..\..\..\CS\win32libs\include;$(CRYSTAL)\include;$(CRYSTAL)\winlibs\x64\include;$(CRYSTAL)\win32libs\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PrecompiledHeaderOutputFile>..\..\out\debug10-x64\build\apppsserver_static\apppsserver_static.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>..\..\out\debug10-x64\build\apppsserver_static\</AssemblerListingLocation>
+      <ObjectFileName>..\..\out\debug10-x64\build\apppsserver_static\</ObjectFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <ForceConformanceInForLoopScope>true</ForceConformanceInForLoopScope>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <CompileAs>Default</CompileAs>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>LIBC;LIBCD;LIBCMT;LIBCMTD;MSVCRT;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <OutputFile>..\..\psserver_static.exe</OutputFile>
+      <ProgramDatabaseFile>..\..\out\debug10-x64\build\apppsserver_static\x64\psserver_static.pdb</ProgramDatabaseFile>
+      <SubSystem>Console</SubSystem>
+      <AdditionalOptions>libcrystalspace_opengl_d.lib opengl32.lib cg.lib cgGL.lib libcrystalspace_staticplugins_d.lib libcrystalspace_d.lib zlib.lib  %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>libcrystalspace.lib;ws2_32.lib;zlib.lib;libmysql.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <AdditionalLibraryDirectories>..\..\..\CS\out\release10-x64\libs;..\..\..\CS\winlibs\x64\lib;..\..\..\CS\win32libs\lib;$(CRYSTAL)\out\release10-x64\libs;$(CRYSTAL)\winlibs\x64\lib;$(CRYSTAL)\win32libs\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <TargetMachine>MachineX64</TargetMachine>
+      <LargeAddressAware>true</LargeAddressAware>
+    </Link>
+    <Lib>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetMachine>MachineX64</TargetMachine>
+    </Lib>
+    <PostBuildEvent>
+      <Command>md ..\..\out\debug10-x64\bin 2&gt; nul
+copy /y "$(TargetPath)" ..\..\out\debug10-x64\bin\
+</Command>
+    </PostBuildEvent>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;CS_WIN32_CSCONFIG;__CRYSTAL_SPACE__;CS_SUPPORTS_MMX;_CONSOLE;CS_STATIC_LINKED;_WIN64;PROJECTGEN_VERSION=10;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.;..\..\src\server;..\..;..\..\include\msvc;..\..\include;..\..\src\client;..\..\src\server;..\..\src\common;..\..\src\tools\wordnet;..\..\src\tools\breakpad;..\..\src\tools\breakpad\third_party\linux\include;..\..\..\CS\include;..\..\..\CS\winlibs\x64\include;..\..\..\CS\win32libs\include;$(CRYSTAL)\include;$(CRYSTAL)\winlibs\x64\include;$(CRYSTAL)\win32libs\include</AdditionalIncludeDirectories>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+    <Manifest>
+      <AdditionalManifestFiles>..\..\mk\msvc\apppsserver_static-x64.manifest</AdditionalManifestFiles>
+    </Manifest>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\mk\msvc\apppsserver_static_static_glue_app.cpp" />
+    <ClCompile Include="..\..\mk\msvc\apppsserver_static_static_glue_app_CRYSTAL.cpp" />
+    <ClCompile Include="..\..\src\server\actionmanager.cpp" />
+    <ClCompile Include="..\..\src\server\adminmanager.cpp" />
+    <ClCompile Include="..\..\src\server\advicemanager.cpp" />
+    <ClCompile Include="..\..\src\server\authentserver.cpp" />
+    <ClCompile Include="..\..\src\server\bankmanager.cpp" />
+    <ClCompile Include="..\..\src\server\cachemanager.cpp" />
+    <ClCompile Include="..\..\src\server\chatmanager.cpp" />
+    <ClCompile Include="..\..\src\server\client.cpp" />
+    <ClCompile Include="..\..\src\server\clients.cpp" />
+    <ClCompile Include="..\..\src\server\clientstatuslogger.cpp" />
+    <ClCompile Include="..\..\src\server\combatmanager.cpp" />
+    <ClCompile Include="..\..\src\server\command.cpp" />
+    <ClCompile Include="..\..\src\server\commandmanager.cpp" />
+    <ClCompile Include="..\..\src\server\creationmanager.cpp" />
+    <ClCompile Include="..\..\src\server\economymanager.cpp" />
+    <ClCompile Include="..\..\src\server\entitymanager.cpp" />
+    <ClCompile Include="..\..\src\server\events.cpp" />
+    <ClCompile Include="..\..\src\server\exchangemanager.cpp" />
+    <ClCompile Include="..\..\src\server\gem.cpp" />
+    <ClCompile Include="..\..\src\server\gemmesh.cpp" />
+    <ClCompile Include="..\..\src\server\gmeventmanager.cpp" />
+    <ClCompile Include="..\..\src\server\groupmanager.cpp" />
+    <ClCompile Include="..\..\src\server\guildmanager.cpp" />
+    <ClCompile Include="..\..\src\server\hiremanager.cpp" />
+    <ClCompile Include="..\..\src\server\hiresession.cpp" />
+    <ClCompile Include="..\..\src\server\introductionmanager.cpp" />
+    <ClCompile Include="..\..\src\server\invitemanager.cpp" />
+    <ClCompile Include="..\..\src\server\lootrandomizer.cpp" />
+    <ClCompile Include="..\..\src\server\main.cpp" />
+    <ClCompile Include="..\..\src\server\marriagemanager.cpp" />
+    <ClCompile Include="..\..\src\server\minigamemanager.cpp" />
+    <ClCompile Include="..\..\src\server\msgmanager.cpp" />
+    <ClCompile Include="..\..\src\server\netmanager.cpp" />
+    <ClCompile Include="..\..\src\server\npcmanager.cpp" />
+    <ClCompile Include="..\..\src\server\paladinjr.cpp" />
+    <ClCompile Include="..\..\src\server\progressionmanager.cpp" />
+    <ClCompile Include="..\..\src\server\psproxlist.cpp" />
+    <ClCompile Include="..\..\src\server\psserver.cpp" />
+    <ClCompile Include="..\..\src\server\psserverchar.cpp" />
+    <ClCompile Include="..\..\src\server\psserverdr.cpp" />
+    <ClCompile Include="..\..\src\server\questionmanager.cpp" />
+    <ClCompile Include="..\..\src\server\questmanager.cpp" />
+    <ClCompile Include="..\..\src\server\scripting.cpp" />
+    <ClCompile Include="..\..\src\server\serversongmngr.cpp" />
+    <ClCompile Include="..\..\src\server\serverstatus.cpp" />
+    <ClCompile Include="..\..\src\server\slotmanager.cpp" />
+    <ClCompile Include="..\..\src\server\spawnmanager.cpp" />
+    <ClCompile Include="..\..\src\server\spellmanager.cpp" />
+    <ClCompile Include="..\..\src\server\tutorialmanager.cpp" />
+    <ClCompile Include="..\..\src\server\usermanager.cpp" />
+    <ClCompile Include="..\..\src\server\weathermanager.cpp" />
+    <ClCompile Include="..\..\src\server\workmanager.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\src\server\actionmanager.h" />
+    <ClInclude Include="..\..\src\server\adminmanager.h" />
+    <ClInclude Include="..\..\src\server\advicemanager.h" />
+    <ClInclude Include="..\..\src\server\authentserver.h" />
+    <ClInclude Include="..\..\src\server\bankmanager.h" />
+    <ClInclude Include="..\..\src\server\cachemanager.h" />
+    <ClInclude Include="..\..\src\server\chatmanager.h" />
+    <ClInclude Include="..\..\src\server\client.h" />
+    <ClInclude Include="..\..\src\server\clients.h" />
+    <ClInclude Include="..\..\src\server\clientstatuslogger.h" />
+    <ClInclude Include="..\..\src\server\combatmanager.h" />
+    <ClInclude Include="..\..\src\server\commandmanager.h" />
+    <ClInclude Include="..\..\src\server\creationmanager.h" />
+    <ClInclude Include="..\..\src\server\deathcallback.h" />
+    <ClInclude Include="..\..\src\server\deleteobjcallback.h" />
+    <ClInclude Include="..\..\src\server\economymanager.h" />
+    <ClInclude Include="..\..\src\server\entitymanager.h" />
+    <ClInclude Include="..\..\src\server\events.h" />
+    <ClInclude Include="..\..\src\server\exchangemanager.h" />
+    <ClInclude Include="..\..\src\server\gem.h" />
+    <ClInclude Include="..\..\src\server\gemmesh.h" />
+    <ClInclude Include="..\..\src\server\globals.h" />
+    <ClInclude Include="..\..\src\server\gmeventmanager.h" />
+    <ClInclude Include="..\..\src\server\groupmanager.h" />
+    <ClInclude Include="..\..\src\server\guildmanager.h" />
+    <ClInclude Include="..\..\src\server\hiremanager.h" />
+    <ClInclude Include="..\..\src\server\hiresession.h" />
+    <ClInclude Include="..\..\src\server\icachedobject.h" />
+    <ClInclude Include="..\..\src\server\introductionmanager.h" />
+    <ClInclude Include="..\..\src\server\invitemanager.h" />
+    <ClInclude Include="..\..\src\server\lootrandomizer.h" />
+    <ClInclude Include="..\..\src\server\marriagemanager.h" />
+    <ClInclude Include="..\..\src\server\minigamemanager.h" />
+    <ClInclude Include="..\..\src\server\msgmanager.h" />
+    <ClInclude Include="..\..\src\server\netmanager.h" />
+    <ClInclude Include="..\..\src\server\npcmanager.h" />
+    <ClInclude Include="..\..\src\server\paladinjr.h" />
+    <ClInclude Include="..\..\src\server\playergroup.h" />
+    <ClInclude Include="..\..\src\server\progressionmanager.h" />
+    <ClInclude Include="..\..\src\server\psproxlist.h" />
+    <ClInclude Include="..\..\src\server\psserver.h" />
+    <ClInclude Include="..\..\src\server\psserverchar.h" />
+    <ClInclude Include="..\..\src\server\psserverdr.h" />
+    <ClInclude Include="..\..\src\server\questionmanager.h" />
+    <ClInclude Include="..\..\src\server\questmanager.h" />
+    <ClInclude Include="..\..\src\server\scripting.h" />
+    <ClInclude Include="..\..\src\server\serversongmngr.h" />
+    <ClInclude Include="..\..\src\server\serverstatus.h" />
+    <ClInclude Include="..\..\src\server\slotmanager.h" />
+    <ClInclude Include="..\..\src\server\spawnmanager.h" />
+    <ClInclude Include="..\..\src\server\spellmanager.h" />
+    <ClInclude Include="..\..\src\server\tutorialmanager.h" />
+    <ClInclude Include="..\..\src\server\usermanager.h" />
+    <ClInclude Include="..\..\src\server\weathermanager.h" />
+    <ClInclude Include="..\..\src\server\workmanager.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="..\..\mk\msvc\apppsserver_static.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="libplaneshift_staticplugins.vcxproj">
+      <Project>{DA886D16-6C20-BDA5-D8CC-0E06ABE8B5C7}</Project>
+    </ProjectReference>
+    <ProjectReference Include="libplaneshift_database_staticplugins.vcxproj">
+      <Project>{5DFC8F2F-79FD-89B5-6EEC-FDEEB1E3225D}</Project>
+    </ProjectReference>
+    <ProjectReference Include="libbulkobjects.vcxproj">
+      <Project>{44689D68-F60B-F78C-02E4-1659987614BD}</Project>
+    </ProjectReference>
+    <ProjectReference Include="libpsnet.vcxproj">
+      <Project>{DCD16C71-CB69-046C-3AF4-8BBDA8CD0361}</Project>
+    </ProjectReference>
+    <ProjectReference Include="libpsengine.vcxproj">
+      <Project>{8B42FE9F-3E16-6CD1-D6C2-A04C37417888}</Project>
+    </ProjectReference>
+    <ProjectReference Include="libpsutil.vcxproj">
+      <Project>{D9DEA6DD-ED82-1526-6BBF-851FF399854C}</Project>
+    </ProjectReference>
+    <ProjectReference Include="libpsrpgrules.vcxproj">
+      <Project>{4B7B2CDB-4DE7-2E3D-0FF6-EA8AC90E4A27}</Project>
+    </ProjectReference>
+    <ProjectReference Include="libpsmusic.vcxproj">
+      <Project>{ACECF49B-03F9-65EC-B7B0-27B65393FFE7}</Project>
+    </ProjectReference>
+    <ProjectReference Include="libwordnet.vcxproj">
+      <Project>{A4D92586-089F-D6D3-52C4-F11AA71CA951}</Project>
+    </ProjectReference>
+    <ProjectReference Include="libfparser.vcxproj">
+      <Project>{56CFA369-1F2F-7609-9E86-069C1B5F5651}</Project>
+    </ProjectReference>
+    <ProjectReference Include="libpsserver_static_plugins_CRYSTAL.vcxproj">
+      <Project>{C6A111B5-0819-3FE0-66F9-4A5FAA654C54}</Project>
+    </ProjectReference>
+    <ProjectReference Include="libpsserver_static_plugins.vcxproj">
+      <Project>{775D7AA8-0CCB-D58D-740B-23CF5FB52417}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,81 @@
+Directory structure:
+
+
++ http://planeshift.svn.sf.net/svnroot/planeshift
+ |--+ art
+ |--+ personal
+     |--+  aarobber
+     |--+  ...
+     |--+  Xordan
+ |--+ stable
+ |--+ trunk
+ |--+ www
+
+
+art:
+Contains all cvs art. Kept seperate for convenience.
+
+personal:
+Contains a branch for each developer who wishes one. Any code may be committed here, and is treated like a local workspace.. but online.
+
+stable:
+Contains our current stable version. This is synched entirely with the current development branch at the end of a release cycle.
+Merging into this branch is restricted (passively, not actively) to a few people, mainly to be 100% sure that only what's supposed to go in gets in.
+Read the following even if you're not a merge monkey, but you probably won't need to use it.
+ 
+       Two types of code are allowed to be committed here:
+       1) Bug fixes which have been tested well for regressions.
+       2) Minor feature (server side) improvements which don't bump CS, CEL, DB or Net versions, and which have been well tested.
+
+Testing before a merge to stable should be done a) By testers in the dev branch. b) By yourself in the stable branch before commit. c) By testers in the stable branch after commit.
+
+
+trunk:
+Contains the latest development version.
+CS and CEL revisions may be pushed a) When decided by the team in a meeting. b) When required by new code in PS (please check with engine leader before pushing).
+DB and Net versions may be pushed at will.
+
+Try not to break trunk. **********It should always compile at the very least.**********
+
+www:
+Contains our www scripts and webpages. Can be moved to stable and trunk if wanted, it's here to reduce duplication for now.
+
+
+
+
+Committing and merging:
+
+
+There are a few guidelines we need to follow when making a commit and when merging code between branches.
+
+1) Commit fixes seperate to features.
+   - If you have a fix for something in combat and have also implemented the blackjack minigame, make two commits. One for the fix, one for the blackjack.
+
+2) Commit fixes which are specific to the dev branch seperate to those which also apply to current stable.
+   - If you have a fix for something in combat and a fix for the new blackjack minigame, make two commits. 
+
+3) Try to merge between branches instead of patching manually and committing. This reduces the chances of making a mistake!
+   - Applies to the merge monkeys and to every dev with a personal branch. If there's code in one branch that is to be merged into another, use 'svn merge'. 
+
+4) When merging between branches, -test- before committing.
+
+5) When merging, merge in order of revision. Don't merge r123 from personal branch to trunk and then merge r121 from personal branch to trunk.
+   It makes life easier for you because it lowers the chance of conflicts.
+
+
+
+
+Local folders:
+
+
+Obviously you can structure your local workspace however you like, but we recommend something like the following:
+
++ projects
+ |--+ planeshift
+     |--+ current
+     |--+ stable
+     |--+ personal
+     |--+ www
+
+If you wish to have a checkout of the www branch, for things like the webconsole, then have a seperate www folder too.
+If you wish to use cvs art, then checkout the art branch into the folder you wish to have it in.

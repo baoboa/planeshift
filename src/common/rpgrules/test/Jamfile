@@ -1,0 +1,9 @@
+SubDir TOP src common rpgrules test ;
+
+Application testrpgrules :
+	[ Wildcard *.cpp *.h ] : console ;
+
+LinkWith testrpgrules : psrpgrules psutil ;
+CompileGroups testrpgrules : tests ;
+ExternalLibs testrpgrules : CRYSTAL ;
+

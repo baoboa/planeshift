@@ -1,0 +1,44 @@
+This file contains detailed To Do's for the engine team or prospects looking to help.
+Put an X in between the brackets as you commit one of these items or a patch for one of these items.
+
+
+PAWS enhancements / Fixes
+-------------------------
+[X] Add support for pawsImage to buttons and other widgets
+[X] Make a new type of pawsBorder which has only left->middle tiled->right images (3 images)
+[ ] Make buttons support Up, Down, Up with mouseover, Down with mouseover, Disabled Up and Disabled Down in 6 border references
+[X] Make the font definition hierarchical, so that each child inherits the font from the parent without needing it specified over and over.
+[X] Extend an image resource to be a subrectangle from an image file, so that a single image file can contain many resources
+[ ] Fix multiline edit textboxes to wordwrap correctly long lines without spaces
+[ ] Fix font scaling global modifier
+[ ] Make window titles multi-lingual
+
+
+Paladin Fixes
+-------------
+The following give false positives in PaladinJr when performed by a player validly.  Fix:
+[X] Move then teleport
+[X] Teleport then move
+[X] Move then slide
+[X] Slide then move
+[ ] Move and use an AL that teleports you to the same sector
+[ ] Fall off a map
+[ ] Increase threshold to reduce false positives while jumping
+
+NPC Interaction
+---------------
+[X] Fix npc chat bubbles displaying
+[X] Do the question popup widget
+[ ] Make the camera look from person to person when talking and fixate on the player when NPC response is complete
+[X] Make Option GUI for enabling/disabling voice audio
+[ ] Make Option GUI for making bubbles disappear slower/faster
+[ ] Make a way for players to skip a bubble and cut off audio by clicking the bubble.
+
+[X] Menu popup appears too fast and allows responses to step on each other
+[X] Giving NPC's money doesn't work from menus
+[X] Quest autogive should make change when giving money
+[ ] Text is truncated in menu popup if too long
+[ ] Menu trigger prereq checking doesn't take into account quest lockouts
+[ ] Untargeting the npc while the popup menu is open makes it appear there is no response
+
+

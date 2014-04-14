@@ -1,0 +1,5 @@
+SubDir TOP src tools xdelta3 ;
+
+Library xdelta3 :
+	[ Wildcard *.c *.h ]
+;

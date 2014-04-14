@@ -1,0 +1,4182 @@
+<?xml version="1.0"?>
+<!-- Credits for this help file: acraig, aiwendil, magodra, talad, weltall, Venalan, Taya and Eredin. -->
+<help>
+ <branch name="START HERE">
+  <Contents>
+   <content type="text">Welcome to the PlaneShift help guide!
+
+In this section you may find all the tips provided in the first tutorial area, teaching you how to move, change the camera settings, sounds, and other basic functions of the game.
+   </content>
+ </Contents>
+ <topic name="Movement">
+  <Contents>
+   <content type="text">
+MOVEMENT
+
+You can move around by pressing the keys W (forward), S (backward), A (rotate left), D (rotate right), Q (strafe left), E (strafe right), R (run).
+
+If you are left handed and find these options dificult to use you can change them by opening the 'OPTIONS' window in the tool bar and chosing 'CONTROLS' and then 'KEYS'.
+
+Move this window a bit to the side of the screen, so you will be able to better see your character. Without closing this window, practice moving by using AWSD keys.
+
+You have now practiced basic movements. Here are a few more: press the space bar and you will see your character JUMPING. Now hold down the left shift key while moving and you will see your character RUNNING forward or backward.
+
+If you want to LOOK AROUND press the middle mouse button (or alternatively press the TAB key. Press Tab again to exit mouse look mode). In this mode you can move your mouse to have your character rotate left or right.
+
+You can change the POINT OF VIEW by pressing 'm'. Try to press it a few times and move your character, then go back to 'third person follow' mode. This is probably the best one to use for the tutorial.
+
+   </content>
+  </Contents>
+ </topic>
+ <topic name="Interacting and Speaking with NPCs">
+  <Contents>
+   <content type="text">
+INTERACTING AND SPEAKING WITH NPCs
+
+You can interact with both players and NPCs
+
+When you right-click or left-click an NPC or player this is called 'targeting' and a red marker will appear under the selected person/NPC/object. Left-clicking just selects the character, while right-clicking opens up a new menu with actions you can choose.
+
+Without closing this window, try to right-click the character you just approached. A set of icons will appear, such as Attack, Trade/Give, Examine, Buy/Sell, and Talk. The red X icon just cancels your right-click selection without performing an action on the character. You can also select yourself and choose Examine.
+
+To talk to any NPC, target them, and then right click and select the TALK/LIPS icon. This will open the 'Quest menu window'. Any possible quest options are shown in individual bubbles. You can select those options by CLICKING ON them. Be on the lookout for an arrow on the right and left of the screen which you can click to go to the next page of options. The 'free text' input will be visible on every page you go to.
+
+
+TALK/LIPS Button.</content>
+<content type="pic" src="ButtonSpeak;" width="64" height="64"/>
+
+<content type="text">
+To leave the Quest menu at any time you can click on the 'BYE' button.
+
+USING FREE TEXT (manually typed words): The free text input bubble is used to write/say text of your choice to an NPC to either answer a specific question asked of you in a Quest, or to ask the NPC a personal question. You can ask any NPC in the game things such as 'Hello.' 'How are you?' or 'Who are you?' and they should give you a personal response. The response will appear on screen in speech bubbles, and once the NPC is finished the quest options and free text option will reappear.
+
+There might be cases when a quest bubble says something like "I know the answer to: Type in the name of the weapon you want." This means that the NPC requires a free text answer to progress the quest.
+
+At this point you can just type your answer into the text entry box wich appears each time you open the quest menus. Or, you can click the bubble with the quest which will remove all other menu bubbles and leave you with just the free text bubble for you to give your answer. In the tutorial, Ibhaar will want you to type in the name of a weapon you see behind him as your choice of a weapon to have.
+
+You can also talk to an NPC without using the Quest bubbles. To do this, target an NPC, select the NPC tab in the chat window, and then type what you want to say in the chat window. When you use this method the responses will only appear in the chat window, not in speech bubbles.
+
+   </content>
+  </Contents>
+ </topic>
+ <topic name="Menu and Windows">
+  <Contents>
+   <content type="text">
+MENUS AND WINDOWS
+
+At the top of the screen you have a tool bar with a series of 9 icons you can use to access various functions of the game. There are a total of 15 possible icons; the others you can make visible by right clicking on the blue crystal in the corner of the game window. This will also change the layout of the window.
+</content>
+<content type="pic" src="MiniUp;" width="50" height="50"/>
+<content type="text">
+All Windows/icons can be 'active' or 'inactive'. Clicking on one icon will make it active. Clicking on it again will deactivate it.
+
+1) - Communications.</content>
+<content type="pic" src="ChatButton;" width="64" height="64"/><content type="text">
+This will open the chat window to allow you to interact with other players and with computer controlled characters (NPCs). When it's active the chat window is already displayed on screen. The initial chat window is divided into 4 tabs out of a possible 10. The others can be displayed by changing the Chat Tabs options (Options menu-&gt;Interface-&gt; Chat - tabs). If you want your character to speak to other characters, just select the Main tab, click in the middle of the window, type 'Hello' and hit the enter key. If you want to speak with an NPC, you use the NPC tab the same way. If you need help from our staff or volunteers, use the Help tab.
+</content>
+<content type="text">
+
+
+2) - Skills and Stats.</content>
+<content type="pic" src="SkillsButton;" width="64" height="64"/><content type="text">
+Here you can find detailed lists of all of the traits for your character. These include HP (Health Points), Mana (Magic Points), your values for agility, strength, and other stats, and all the levels for all your skills you have built up. Please open the skill window, review your skills, then close it by clicking on the small red x on the top right of the skill window.
+</content>
+<content type="text">
+
+
+3) - Inventory.</content>
+<content type="pic" src="InventoryButton;" width="64" height="64"/><content type="text">
+This window lets you see all the objects you own, hold, wear, and carry. At the moment you don't have many, but will have by the time you finish the tutorial. The money (Tria) you own is displayed in the same window, on the right, where the coin icons are. There are four different types of coins and you should already have some of them to get you started. Be sure to check it often, the NPCs in this tutorial will give you items.
+</content>
+
+<content type="text">
+
+
+4) - Quests.</content>
+<content type="pic" src="QuestButton;" width="64" height="64"/><content type="text">
+This window shows you completed and uncompleted (active) quests. When you click on a quest in the description window you will see auto generated Quest Notes which can help you if you get stuck with a quest.
+</content>
+<content type="text">
+
+
+5) - Spell Book.</content>
+<content type="pic" src="MagicButton;" width="64" height="64"/><content type="text">
+This window is where you can see all your collected glyphs, and all the spells you have learned. The active spells window shows all 'buffs' and 'debuffs' which are currently active on your character. Research magic lets you purify glyphs by picking one up and dropping it on the purify button. Once the glyphs are purified putting them in the assemble slot(s) and clicking 'Research' will let you find spells.
+</content>
+<content type="text">
+
+
+6) - Information.</content>
+<content type="pic" src="InfoButton;" width="64" height="64"/><content type="text">
+This opens a small window which shows compact player data. Your HP and Mana, your target's HP, a selection of attacking stances, and a sliding bar to chose 'spell power' when you use magic.
+</content>
+<content type="text">
+
+
+7) - Options.</content>
+<content type="pic" src="OptionsButton;" width="64" height="64"/><content type="text">
+This opens up the options window which will let you see, set, and change all the game options. For details on all these options navigate to 'User interface' and then 'Options Window' within this help file for a much more detailed explanation.
+</content>
+<content type="text">
+
+
+8) - Help.</content>
+<content type="pic" src="HelpButton;" width="64" height="64"/><content type="text">
+This opens up the help window you are currently reading.
+</content>
+<content type="text">
+
+
+9) - Exit.</content>
+<content type="pic" src="QuitButton;" width="64" height="64"/><content type="text">
+This will open an option box asking if you want to exit the game.
+
+
+The other 6 tool bar icons can be made visible by right clicking on the Blue Crystal in the top corner of the game window. These are explained further down in the help file.
+
+   </content>
+  </Contents>
+ </topic>
+ <topic name="Giving Items To NPCs">
+  <Contents>
+   <content type="text">
+GIVING ITEMS TO NPCS
+
+There are two main ways to give items to NPCs.
+
+First; via the quest menu. You open this by right clicking on an NPC and clicking the 'TALK/LIPS' icon. If you have an option to give an NPC an item it will appear here, like all quest options. The first example you will find is in the second tutorial quest with Neave. The menu option will say "That's right. Here's the lunch pack she made for you." and when you click this quest option you will automatically give the item to Neave, the NPC.
+
+Second; is manually via the 'GIVE' option which you can find by right clicking an NPC. If you need to give an item to an NPC in a quest, instead of using the option above you can click 'GIVE' which will open a trade window. You can then move the item(s) you want to give to the NPC into that window and click 'ACCEPT TRADE' to give that item to the NPC. This option will likely be used if you try to use the menu option above, but it does not work. An example of this would be if you have a stack of 4 apples, but need to give an NPC 2. The server cannot take 2 items from a stack of 4 and give them to the NPC for you. So you would have to take 2 items and give them to the NPC manually using this method.
+
+   </content>
+   <content type="pic" src="GiveButton;" width="64" height="64"/>
+  </Contents>
+ </topic>
+ <topic name="Crafting Containers">
+  <Contents>
+   <content type="text">
+CRAFTING CONTAINERS
+
+Containers and crafting containers come in all sorts of shapes and sizes. To work with iron ore for Neave you will need to locate the furnace behind her and approach it. Once you get close enough right click anywhere on it. Four icons will appear, two of which 'combine' and 'use' are options you will frequently use if you learn to craft. The option you need to chose is 'EXAMINE'.
+
+This is the EXAMINE button;</content>
+<content type="pic" src="ButtonLook;" width="64" height="64"/>
+<content type="text">
+When you click 'EXAMINE' the container window will open. To place items in the container you will need to move the iron ore from your inventory window into the container window. There are two ways to do this, 1 - click the 'Open Inventory' button or, 2 - click the 'Inventory' button in the tool bar. Then you need to find the item you want to move, click it once to pick it up, then move it to the container and click again to drop it in an empty slot.
+
+You will now need to wait awhile (about 90 seconds) until the iron ore has changed into molten iron. Once you have done this you can then move all the items back into your inventory by either clicking the 'TAKE AND STACK ALL' button, the 'TAKE ALL' button, or by picking up and moving the item into an open slot in an inventory window.
+
+Once you have done this, you can return to Neave and give her the molten iron.
+
+This is the TAKE ALL, and TAKE AND STACK ALL button;</content>
+    <content type="pic" src="ButtonPickup;" width="64" height="64"/>
+  </Contents>
+ </topic>
+ <topic name="Quests">
+  <Contents>
+   <content type="text">
+QUESTS
+
+Quests are of vital importance for progression in the PlaneShift world. You can see the status of the quests you have started and the ones you have completed by looking in the 'quest window'. To access the quest window click the icon in the top toolbar called "Quests".
+
+The quest window is divided in 3 main sections. The top left area of the quest window displays all of your quests. You can use the 'Uncompleted' and 'Completed' buttons to show only your uncompleted and completed quests respectively. If you click on a quest, you will see the full description of that quest appear in the top right area. As you move deeper into quests this section will also display 'Automatic Quest Notes' which are pre-generated to help you keep track of where you are in a quest.
+
+In addition, you are free to record your own notes on each quest. To do this, select the quest you want to make some notes for, then enter some text in the 'notes' section at the bottom of the window and press Save to save it. These can be useful if you want to keep detailed notes about quest(s) yourself. Please remember notes are saved locally on YOUR computer, see the "File Locations" section of this help to find the file if you want to make a backup copy.
+
+Quests may require you to find certain items, bring information from one place to another, fight or speak to many different NPCs. The reward for quest completion is always some *experience* and possibly money or items. Gaining experience makes your character progress and allows him to learn new skills. Please remember that to learn a skill fully, you need a trainer and also some practice.
+
+Some quests you can give up on, these are ones which you are able to repeat. To discard a quest click on the quest and then click the discard button.
+   </content>
+  </Contents>
+ </topic>
+ <topic name="Health and combat styles">
+  <Contents>
+   <content type="text">
+HEALTH AND COMBAT STYLES
+
+To check your health or the health of your opponent you should enable the 'Information window', by clicking its icon in the top toolbar. The name and health of the creature you have selected will appear at top of this window. Your health is the largest red bar in the lower part of the window.
+
+When you have 0.00% health, you die. When attacking an opponent you have many different options, in the Info Window there are 6 buttons which make up the 6 different 'stances'. Those determine the level of aggression you use in combat.
+
+The rightmost is the most aggressive, this means that you will attack without caring about defence, use this one only when the opponent you are facing is weaker than you, or it's already injured. The leftmost button is the 'stop attack' button for when you have had enough and want to stop fighting. BE CARFUL, this does not stop a creature from continuing to fight you. The button next to this is the most defensive stance, your attack style will be completely focused on avoiding incoming melee hits; it will lower the ability to attack a lot. If you are in danger, running away is always a possible option! Be sure to attack bigger monsters with other friends to make it easier and share the spoils.
+
+   </content>
+    <content type="text">This is the Stop Attack button.</content>
+    <content type="pic" src="ButtonStopAttack;" width="64" height="64"/>
+    <content type="text">This is the Full Defensive Attack button.</content>
+    <content type="pic" src="ButtonAttackFullDef;" width="64" height="64"/>
+    <content type="text">This is the Defensive Attack button.</content>
+    <content type="pic" src="ButtonAttackDefensive;" width="64" height="64"/>
+    <content type="text">This is the Attack Normal button.</content>
+    <content type="pic" src="ButtonAttackNormal;" width="64" height="64"/>
+    <content type="text">This is the Attack Aggressively button.</content>
+    <content type="pic" src="ButtonAttackAggressive;" width="64" height="64"/>
+    <content type="text">This is the Bloody Attack button.</content>
+    <content type="pic" src="ButtonAttackBloody;" width="64" height="64"/>
+  </Contents>
+ </topic>
+ <topic name="Stats and Skills">
+  <Contents>
+   <content type="text">
+STATS AND SKILLS
+
+To see your stats and skills click on the "SKILLS" icon on the top toolbar. Here you can see your health and mana (casting energy), along with two stamina indicators. Stamina represents how much energy you have physically and mentally. It goes down when you are performing actions like running or casting spells and it recovers automatically.
+
+Strength (STR): Measures the muscular power of your body. It's useful when increased as it helps to increase damage dealt in combat, to lift heavy objects, and to break things.
+
+Endurance (END): Expresses the general health of your body. Resistance to cold, heat and illness. Affects the speed of regeneration of wounds.
+
+Agility (AGI): This represents your ability to control your body movement: it's a mix of balance and precision. It's used to perform complex tasks such as climbing walls, walking on ropes, dodging and landing hits in combat, etc.
+
+Intelligence (INT): Indicates how quickly you can solve a riddle, make complex calculations and make logical connections between your past experience and the current situation to find a solution. It's used in casting spells of the Blue and Brown Ways.
+
+Will (WIL): Will expresses your skill on all non-rational mental abilities like intuition and wisdom. This also represents your determination in completing tasks and reaching your goals. It's used in casting spells of the Azure and Red Ways.
+
+Charisma (CHA): Represents the ability to convince an audience of your ideas, to lead your soldiers in battle or to attract followers. It's used in casting spells of the Crystal and Dark Ways.
+
+In the same window you can find the knowledge you have in the various Professions, like magic, sword, metallurgy, etc...
+   </content>
+  </Contents>
+ </topic>
+ <topic name="Skill Training">
+  <Contents>
+   <content type="text">
+SKILL TRAINING
+
+There are three important parts to training a skill and improving the skill level.
+
+1 - You need to gain Progression Points. One progression point is awarded for every 200 experience you earn. Experience is earned for almost everything you do, completing quests, hunting, harvesting or mining, crafting, enchanting, etc.
+
+2 - You'll then need to find an NPC which is able to train you in the skill you want to learn, at your current level. NPCs train from a fixed start level to a fixed max level, once you find the right NPC for your level the NPC will then 'sell' you practical training in the skill. To buy this you need both enough Progression Points and Tria to cover the cost.
+
+3 - You then need to practice the skill. Using a sword while fighting to train sword skill, making weapons to train blade making etc... Each time you do an action for which you can earn practice points you will get a message in the system tab saying so. Then, once you have gained enough practice you will complete the level. At which point you need to return to a trainer and buy some more theoretical training.
+
+If you open the 'STATS AND SKILLS' window next to each skill you will see one of 4 different coloured bars.
+
+YELLOW/GREEN - This is the 'theoretical training' potion of that level which you need to buy from an NPC. Before you have bought the training the colour is Yellow, after you have the training this bar turns Green.
+
+BLUE - This shows you how many 'Progression Points' you have. If the blue bar is beyond the end of the yellow bar then you have enough points to spend on buying that level of training.
+
+RED - This is the amount of a skill level which much be gained by practicing that skill. Once you have bought theoretical training, every time you perform an action for which you earn 'practice points' the green bar will slowly get larger. When the Green bar fills up the Red bar you will complete the level and your skill rank will increase by one.
+
+   </content>
+  </Contents>
+ </topic>
+ <topic name="Magic, Glyphs, and Spells">
+  <Contents>
+   <content type="text">
+Magic in PlaneShift is divided into Six different ways. To find and cast spells there are three things you need to do.
+
+First, you need to obtain and purify glyphs. A small number of glyphs can be purchased from NPCs, many players sell the more common glyphs, and the best way to get glyphs is to do quests where they are given out as rewards. To purify a glyph you need to open the 'SPELL BOOK' from the main tool bar. Then click on the icon in the bottom right hand corner of the window, 'RESEARCH MAGIC', to open the glyph window. In this window all the glyphs are divided by Way and you will be able to purify glyphs and research spells.
+
+Research Magic window Button.</content>
+    <content type="pic" src="Glyph Magic;" width="64" height="64"/><content type="text">
+To purify a glyph you need to left click a glyph to pick it up and then drop it onto the 'PURIFY' Icon in the bottom left of the window. You can purify as many glyphs as you want as quickly as you can move them. If you give a glyph to another player, drop it, or give it to an NPC, you will have to re-purify it before you can use it again.
+
+Purify Glyph Button.</content>
+    <content type="pic" src="PurifyGlyphButton;" width="64" height="64"/><content type="text">
+Second, to discover spells you need to research them. To do this you need to place one or more purified glyph(s) into the 'ASSEMBLE SLOTS'. Once you have placed one or more glyphs into the slots, starting with the one on the far left, you need to click on 'RESEARCH BUTTON'. When using two, three, or four glyphs, the order of the glyphs is important so try different orders as well as different glyphs. If you succeed you will see a new spell appear in the SPELL BOOK, if you 'fail' this will hurt your character and you will lose some HP and Mana, but don't worry YOU CAN NOT die from failing research so you can click as many times as you want.
+
+Research Spell Button.</content>
+    <content type="pic" src="ResearchSpellButton;" width="64" height="64"/><content type="text">
+Third, you need to cast the spell. To do this you can go to the SPELL BOOK window, this will list the name of the spells and the glyphs used to cast them. You need to select the spell you want to cast by left clicking the name, this will show an icon for the spell and a description for it. If the spell can be cast on yourself then you can immediately cast it by clicking the 'CAST' button. If it is an attack spell then you need to select the target of the spell, once you have done than you then click 'CAST' to cast it.
+
+Cast Spell Button.</content>
+    <content type="pic" src="Cast Magic;" width="64" height="64"/>
+   </Contents>
+ </topic>
+ <topic name="More tips">
+  <Contents>
+   <content type="text">
+Here are a few tips and tricks to help you enjoy the world of PlaneShift.
+
+PlaneShift is a rich, varied and complex game, while this is a great thing as it allows you to fully immerse yourself in the fantastic world of Yliakum, on the other hand it will also require some time and just a little effort to get used to the client and the game play.
+You will learn how to talk with NPC's (Non Player Characters), how to use the various functions of the client and how to interact with the world itself.
+
+We have a great group of players and GMs (Game Masters) ready to help you whenever you have difficulties.
+First of all look at the chat window, if you write /help [question] and then press enter the players or GMs playing in game may be able to answer your questions. Don't be afraid to use it! Players volunteer for it so please be as clear as possible and wait patiently for an answer.
+
+Another tool you have at your disposal is directly contacting the Game Masters, you can see if any of them are on-line by writing ' /who game master ' in the same chat window and pressing enter. You will get a list of Game Masters online in the 'system tab' and you will be able to contact them by writing /tell [name of the Game Master] [your question] and pressing enter again.
+
+The last tool you might find useful is called petitions. It's a way to leave offline messages for the Game Masters which then they will be able to review and answer back to you later. To use this click on the appropriate icon in the tool-bar (TIP: you can leave the mouse over an icon in order to see what it does) and click new. Then you will be able to write a message for Game Masters, as soon as one sees it he will claim it and you will see the name of the GM handling your petition appear in the Petition Window. When they have had the time to find an answer to your question, the status of your petition will change to closed and by clicking on the petition you will be able to read the Game Master's answer.
+   </content>
+  </Contents>
+ </topic>
+</branch>
+<branch name="Roleplay">
+ <Contents>
+  <content type="text">
+Let's make a pact before starting: I will make it short, but you will read it completely. If you want to have a good experience inside our virtual world, it's important that you grasp all the concepts behind Roleplay.
+
+The beauty of a virtual world is similar to the beauty of a book, where you imagine the places that are described and, during the time you read it, you start to believe it's real, you participate in the story, you become immersed into the descriptions and into the plot. Imagination is what makes the difference, and if you start picturing certain characters, you will enjoy the book more.
+
+In an online world, many things are similar to a book: the world is fantasy and filled with places, characters, monsters, evil and good creatures, a story and many small plots, events and much more. Most important of all we give you the chance to create a character, giving you much more freedom to interact and participate. To achieve that in a book you would have to write a few additional chapters of your favourite book that describe the adventures of an additional character, you could describe his past, give certain spikes to his attitudes to make it interesting, invent his clothing style, his behaviours and attitudes.
+
+In PlaneShift you can create a new character and have him participate to the virtual world, and have the world interact back.
+
+What's of critical importance is that the character you will create in game should NOT be yourself. He is another being with his own wills, life aims, friends, fears and joys. You have to keep this separation as strong as possible as it can greatly increase the depth and enjoyment of roleplay.
+
+Let's check what the dictionary says about roleplay:
+
+Role play: To assume or represent in a drama; act out
+
+That's exactly the point. You are asked to create a character, to think about his personality and goals, and then to act them out, like if you were on a stage performing in a theatre. The more you are able to make it real for yourself and for others, the more you are achieving the purposes of roleplay.
+
+Ok, now you may ask what the beauty of it is. In my opinion the beauty is to re-recreate a much as possible a fantasy medieval world that's full of life thanks to the people acting in it. Making it seem like its real, to be the most immersive experience ever, something a movie or a book can never give you.
+
+As you may imagine it's not easy, because many people will not collaborate to this task, and "reality" in the virtual world can easily be disrupted by someone saying: "Is this a good game?".
+
+You may be interested in what's allowed and what's not in terms of behaviour and speech for a good roleplay. The answer is very simple: everything that your character will do is allowed, with his knowledge, his intelligence, his attitudes. When you have him speak, think to what he knows, not what YOU know. He can make jokes, but medieval or fantasy jokes. He should not be a hero at all costs, he can be lazy or chat all day, just have him do this with his brain.
+
+If you start looking at the PlaneShift world this way, things will be a lot more enjoyable, and there will be a lot more to do than just going for monsters hunting or getting rich in game.
+
+************
+
+The kran looks at the written page, tilting his head a bit and scratching the top with his left hand. - "Well, I've never been a novelist, but that should do it, I guess." He stands up from the giant crystal table, picks up a thick cloak and looks out of the window laid into the wall of his sculptured stone house. He concentrates a bit and thanks to his magic vision, appears in the Hydlaa plaza.
+- "mmmm... there is still much more to do, but things are surely getting better. Time for some magic!"
+  </content>
+ </Contents>
+</branch>
+<branch name="User interface">
+ <Contents>
+  <content type="text">Descriptions of the PlaneShift windows.</content>
+   </Contents>
+    <topic name="Buddy list window">
+     <Contents>
+      <content type="text">
+Buddy list window
+
+With this list you can manage your "friends" in PlaneShift. A red name in the list indicates that the character isn't online at the moment while a green name means the character is in game. By clicking on one of the names you can send that character a tell (same as /tell &lt;character-name&gt; &lt;message&gt; for example /tell Smith hello, how are you?).
+
+With the "Add" button you can add new characters to your buddy list.
+
+The "Remove" button allows you to remove the currently selected character from your buddy list again.
+
+With the "Edit" button you can rename an entry in the buddy list. This can be used for example to add information about which guild that character belongs too. These aliases are not saved on the server but your own computer so they won't be available if you login from a different computer.
+
+Additional Info: All names on your buddy list will be available for the tab-completion of the chat window right from the start.
+      </content>
+     <content type="text">Icon for the Buddy List window.</content>
+     <content type="pic" src="BuddyButton;" width="64" height="64"/>
+    </Contents>
+   </topic>
+  <branch name="Chat Window">
+  <Contents>
+   <content type="text">The chat windows is probably the most important window in PlaneShift.
+
+Good part of the interaction between players is done with this window. Commands can be executed by typing them in this window.
+
+You can configure which tabs are shown in the in-game options: Options-&gt;Interface-&gt;Chat Tabs. You can also configure which messages are sent in the main tab. The currently selected chat tab is highlighted, and the tab will "flash" in case of a new, unread message arrives.</content>
+        </Contents>
+         <topic name="Adding and Removing Chat Tabs">
+          <Contents>
+           <Content type="text">There are a total of 10 different chat tabs.
+
+To add or remove additional tabs open the "OPTIONS" window from the main tool bar. Then open "INTERFACE" and then "Chat - Tabs".
+
+Here you can chose which tabs are shown in the chat window. You can also pick options from under "Main Tab" to show which additional channels you want to have shown in the main tab, for example you could have 'Main' 'Tell' and 'Auction' all show in the main chat tab if you wanted.
+           </Content>
+          </Contents>
+         </topic>
+        <topic name="Tab Completion">
+         <Contents>
+          <content type="text">The chat windows supports tab-completion for names, commands, and some words. To make use of this just start writing the first letters of a name, command, or specified word then press the tab-key on your keyboard. In case there are more than one possible words that could be completed all of them will be written to the system chat tab. You can specify in the in-game options additional words you want to include in tab-completion. All names on your buddy list, names of characters that said something in chat, and all chat commands are automatically included in the completion. Tab-completion is independent of your current selected chat tab.</content>
+         </Contents>
+        </topic>
+        <topic name="Spellchecker">
+         <Contents>
+          <content type="text">On linux and MacOSX there are some basic spellchecking support for the chat window which colours unknown words. This can be enabled and disabled in the in-game options. For further information about installing a dictionary for the spellchecker please refer to the help section about the spellchecker in the options-window</content>
+         </Contents>
+        </topic>
+         <branch name="Chat tabs">
+          <Contents>
+           <content type="text">Descriptions of the chat tabs and their uses.</content>
+          </Contents>
+           <topic name="Main">
+            <Contents>
+             <content type="text">As the name already says this is the main chat tab. It's intended for interaction between characters. Everything typed here has a limited saying-range and only people within that range can see what you typed. This tab is In-Character (IC), meaning this is the voice of your character, not you. Your character has no clue about what music you listen to at the moment or even that PlaneShift is just a game. For short Out-of-character (OOC) announcements like "afk" please use brackets: "[afk]" or "[brb, phone]". You can filter the information displayed in this tab by going to Options-&gt;Interface-&gt;Chat Tabs and check/uncheck the "Main Tab" options.</content>
+            </Contents>
+           </topic>
+           <topic name="Chat">
+            <Contents>
+             <content type="text">This chat tab is used primarily for the "gossip" channel, which is meant for Out-of-character chatting. This chat tab has no range limit and people all over the server can see your message.
+
+You can also join and leave additional using the commands "/join" and "/leave". For example "/join gossip" once you have joined a new channel the server will assign a number to it. By default gossip is '1' the next channel you join will be '2' then '3' etc... To leave a channel you need to use that number and not the channel name for example "/leave 1"
+
+If you are only in one channel when you send some text it will be sent to the channel upon pressing return. In case you are in more than one channel you have to start your line with /1 or /2 or /3 etc... this is the same number that you were given when you created/joined the channel and is the same number you have to use when you send messages into that channel.
+             </content>
+            </Contents>
+           </topic>
+           <topic name="NPC">
+            <Contents>
+             <content type="text">This chat tab is for the interaction with NPCs (Non-Player-Characters). Though most quests are done with the new interface, it's still possible to communicate with NPCs by writing in this chat tab. Also you can always read back here what a NPC told you during a quest. Other players can not see what you type in this tab. You need to have a NPC selected to talk to them.</content>
+            </Contents>
+           </topic>
+           <topic name="Whisper">
+            <Contents>
+             <content type="text">This tab is for private one to one communications. Whatever you type in this tab will be heard only by the player you send a tell to. There is no range limit so you can talk to all players on the server. Normally all chat in this tab is OOC but it's accepted to roleplay whispering to other characters with this tab after making clear in the main chat that your character whispers to another one (What is visible for all people nearby). Be careful when using this tab.
+
+Your messages will always be sent to the last person that sent a tell to you, unless you specifically give a target. So if you get a tell from another person just before pressing enter it's most likely the wrong person will get your message. To prevent this you can always send your tells with "/tell CHARNAME" or by pressing the f-key which will start a tell to the person who just sent you one.
+
+You can also double click a name in your buddy list which will open a message box you can use to send messages to one character.
+             </content>
+            </Contents>
+           </topic>
+           <topic name="Guild">
+            <Contents>
+             <content type="text">If you are in a guild you can use this chat tab to communicate with your guild mates. In-Character chat is preferred but not enforced. There is no range limit and all people in your guild can read your messages. If you don't see this tab, enable it from Options-&gt;Interface-&gt;Chat Tabs</content>
+            </Contents>
+           </topic>
+           <topic name="Group">
+            <Contents>
+             <content type="text">This chat tab is for chatting with people in your current group. There is no range limit so you can talk to all people in the same group as you everywhere on the server. In-Character chat is preferred but not enforced. For example it can be used to Roleplay in a closed room when nobody outside should be able to hear what is said.</content>
+            </Contents>
+           </topic>
+           <topic name="Alliance">
+            <Contents>
+             <content type="text">If you are in a guild and your guild is part of an alliance you can use this chat tab to talk to all allies. In-Character chat is preferred but not enforced.</content>
+            </Contents>
+           </topic>
+           <topic name="Auction">
+            <Contents>
+             <content type="text">This chat tab is used for selling and buying goods. This is an In-character chat tab (enforced) so please avoid Out-of-character text here or if really needed mark it with [brackets]. No character has a clue about weapon statistics and qualities so if you absolutely need them put them in [brackets] as well. The Range limit of the auction tab is about the same as the /shout range of the main tab.</content>
+            </Contents>
+           </topic>
+           <topic name="System">
+            <Contents>
+             <content type="text">The system tab it's for system messages like combat damage, crafting progress or the output of some chat commands like /who. Through Options menu you can redirect some of this messages to Main tab if you want.</content>
+            </Contents>
+           </topic>
+           <topic name="Help">
+            <Contents>
+             <content type="text">The Help chat tab is where you can get help if you are having issues with the game. Everything you type here will be visible for any "advisor" online and GMs. Remember advisors can also be other players, and may not have GM powers. Once an advisor answers, everything you type in the chat is only visible for you and the advisor until the help-session times out. This chat tab is for question about the game mechanics and how to play the game. No advisor is allowed to give out spoilers like where to find a specific trainer or how to solve a quest. For further information about becoming an advisor yourself check the documentation of the /advisor chat command.</content>
+            </Contents>
+           </topic>
+         </branch>
+        </branch>
+        <branch name="Guild info window">
+         <Contents>
+          <content type="text">Guild info window
+
+The main window displays and with proper permissions allows you to change some basic information about the guild.
+
+The "Guild message of the day" is displayed during loading screens for every guild member. With the "Refresh MOTD" Button you can reload the current message in case someone else in your guild changed it while you had the Guild window open. "Save MOTD" allows you to save your changes to the message and makes them visible for everyone else in the guild.
+
+With the "Change" button next to the guilds name you can rename the guild.
+
+By checking the "Secret Guild" option the guild will become secret. This means only guild members will be able to see the guild tags above characters and the name of the guild won't be displayed next to the character name for a /who.
+
+With the "Change" button next to the website you can change web address of the guild's web presence.
+
+The buttons at the top allow you to change to the other tabs with more specific information about the guild.
+          </content>
+         </Contents>
+        <topic name="Members">
+         <Contents>
+          <content type="text">This is the member list of the guild.
+
+Name: The name of the character.
+Level: The guild level this character has.
+Online: If the character is currently online.
+Sector: The name of the map the character is currently in.
+Last Online: The last time that character logged in PlaneShift.
+Point: The amount of Guildpoints this character has.
+
+With the "Online only" option you can filter the list to show only characters that are currently in game.
+
+The "Invite" Button allows you to invite new characters to the guild.
+
+The "Leave" Button allows you to leave the guild.
+
+If the "Notify when members login/logout" option is enabled you will get a message in the guild chat tab each time a member logs in or out.
+
+The "Remove" button allows you to remove the currently selected member from the guild.
+
+The "Edit level" button allows you to change the guild level of the currently selected member. You can only change set a new level which is at least one level below your own guild level.
+
+The "Edit points" button allows you to edit the guild points of the selected member.
+
+The "Public notes" button allows you to edit the public notes for the selected member.
+
+The "Private notes" button allows you to edit the private notes for the selected member.
+
+The "Edit Max GP" button allows you to change the maximum amount of guild points each character can achieve.
+          </content>
+         </Contents>
+        </topic>
+        <topic name="Permissions">
+         <Contents>
+          <content type="text">Here you can change the permissions of the different guild levels in the guild as well as change the names of the guild levels. To change the name just click on the Guild level at the left and give it a new name.
+
+Permissions:
+- View Chat: If this is enabled members of this guild level can read the guild chat.
+- Chat: If this is enabled members of this guild level can write in the guild chat.
+- Invite: If this is enabled members of this guild level can invite new characters to the guild.
+- Remove: If this is enable members of this guild level can remove characters from the guild. But they can only remove character with a lower guild level than their own.
+- Promote: If this is enabled members of this level can promote or demote other characters. They can only change to level of members with a lower level than themselves and only promote them to at least one level lower than themselves.
+- Privileges: If this is enabled members of this guild level can edit the permissions for all guild levels lower than their own.
+- Points: If this is enabled members of this level can edit the guild points of all characters with a lower guild level than their own.
+- Edit: If this is enabled members of this guild level can edit the general information of the guild like the MOTD or the name of the guild.
+- Public notes: If this is enabled members of this level can edit the public notes of other characters.
+- Private notes: If this is enabled members of this level can edit the private notes of other characters.
+- View Alliance chat: If this is enabled members of this level can read the alliance chat.
+- Alliance Chat: If this is enabled members of this level can write in the alliance chat.
+- Guild Bank. If this is enabled members of this level have access to the guild banking account at a banking NPC.
+          </content>
+         </Contents>
+        </topic>
+        <topic name="Alliance">
+         <Contents>
+          <content type="text">Here you can get information about the current guild's alliance and manage it.
+
+Name: Name of the guild which is part of the alliance
+Status: The status of the alliance.
+Leader: The name of the leader of this guild.
+Online: If the leader of the guild is online at the moment
+
+If the  "Notify when alliance members login/logout" option is enabled you get a message in the alliance chat each time a member of one of the alliances' guilds logs in or out.
+
+With the "Create alliance" button you can create a new alliance.
+          </content>
+         </Contents>
+        </topic>
+       </branch>
+        <topic name="Group stats window">
+         <Contents>
+          <content type="text">Group stats Window
+
+The names and a representative image of the chars in your current group are shown in this window.
+
+Group leaders can invite or dismiss people or disband the whole group by right-clicking the window. The group leader is always shown as the topmost character in the list. If this player logs out the next one in the list will become group leader.
+          </content>
+         </Contents>
+        </topic>
+        <topic name="Help window">
+         <Contents>
+          <content type="text">This help window.</content>
+         </Contents>
+        </topic>
+        <topic name="Information window">
+         <Contents>
+          <content type="text">Information window
+
+The info window gives you an overview about your own character and your current target as well as some other important information about Yliakum. It also allows you to influence some of your characters behaviours.
+
+The first line shows the name of your current target.
+The bar just below show the health of your current target.
+
+The next line tells you what's the current time in Yliakum.
+
+Below the time are several icons for the different stances you can take during combat. Stances represent the combat style of your character in melee. If you are in combat you can click on any of the icons to change to that stance. The first icon stops the attack. Stances from left to right: Full Defensive, Defensive, Normal, Aggressive, and Bloody.
+
+Below the stances is a slider that allows you to specify how much power you want to channel in the next magic spell you cast. The more power you channel, the more chances there are for it being unpredictable or fizzling, but its effects will be stronger and duration longer.
+
+The large red bar below shows your current health.
+The smaller red bar shows your current Physical stamina.
+
+The large blue bar shows your current Mana.
+The smaller blue bar bellow shows your current mental stamina.
+          </content>
+         </Contents>
+        </topic>
+        <topic name="Inventory window">
+         <Contents>
+          <content type="text">Inventory window
+
+The inventory windows allows you to manage the belongings of your character and to use, equip, and unequip items.
+
+Arround the small display of your character you can see what items are currently equipped and what they look like. You can also change the equipment here by dragging items to or from the equipment-slots. Each equipment slot can hold a specific kind of item. To get the name of the different slots just move your mouse above them.
+
+Hand; Left, and Right: For equipping tools, shields, weapons and all other items you want to hold. Please note many crafting techniques require you to hold the tool in your right hand.
+Helm: For caps and helms.
+Mind: This is for equipping crafting books. You need to have the book for your current crafting task equipped in this slot to be able to perform the task.
+Right, Left Finger: For rings.
+Neck: For necklaces and amulets.
+Gloves: For gloves.
+Torso: For torso armor.
+Bracers: For bracers.
+Back: For robes.
+Arms: For arms armor.
+Boots: For boots.
+Legs: For pants.
+Belt: For belts.
+
+Below the equipment area you can see all the others items your character is currently carrying. Each stack of item needs one inventory slot. You can stack up to 65 items in one slot. Not all items are stack-able, books or containers can't be put in stacks for example. If the available slots are not enough, you can extend your inventory with containers (example a chest or a pouch). If you right-click a container a new window with a few more slots will show up. Each container also has a limited capacity.
+
+On the right hand side you can see how much weight you carry at the moment and how much you can carry at maximum. Next there is Capacity. Each item also has a size value in addition to its weight. This represents how much space the item takes. And last but not least you can see how much money you are currently carrying, and how many of each of the four coin types you have.
+
+The inventory also allows dropping of items. If you want to drop an item click to pick it up from the inventory and move the icon to the place you want to drop it in the world. Once you click on the world you will be able to chose exactly where you want to place it. To pick a place you can left click once. Once this is done you enter 'edit mode' where you can rotate the object to change the angle before it is finally placed. To do this hold right click and move the mouse, you can also hold shift and move the mouse to change the axis the item is rotated around. To finally place the item left click one final time..
+
+To use a items like potions, food, herbal and alchemical items you can drag/pick them up and move the item over to the character displayed in the center and release/left click the mouse over your character.
+
+And last, it's worth mentioning that there are shortkeys for taking one item of a stack or taking the whole stack. If you click on a stack of items while holding the shift-key one of the items is taken. If you hold the ctrl-key the whole stack is taken.
+          </content>
+         </Contents>
+        </topic>
+       <branch name="Options window">
+        <Contents>
+         <content type="text">Options Window
+
+Here you can change many options in game. In general the options are only changed once you pressed the "Save" button. The "Reset" button will set everything back to the defaults. If you don't want to make a change but also don't want to go back to the defaults just close the window with the "X" icon on top.
+         </content>
+        </Contents>
+       <topic name="Controls/Keys">
+        <Contents>
+         <content type="text">
+
+Here you can change the keys (and mouse buttons) used to play the game. Just use the "Set" button next to the action you want to change to assign a new key or button.
+
+Movements:
+"MouseMove" - Move your character to the position your mouse currently points to.
+"Forward" - Makes your character move forwards (available two times to be able to set up two alternative keys for this)
+"Backward" - Makes your character move backward (available two times to be able to set up two alternative keys for this)
+"Rotate left" - Makes your character rotate to the left (available two times to be able to set up two alternative keys for this)
+"Rotate right" - Makes your character rotate to the right (available two times to be able to set up two alternative keys for this)
+"Strafe right" - Makes your character step to the right (available two times to be able to set up two alternative keys for this)
+"Strafe left" - Makes your character step to the left (available two times to be able to set up two alternative keys for this)
+
+Modifiers:
+"Run" - Depending on your current movement default makes you character either run or walk while moving together with this key pressed. If your character runs without this key, holding it down while moving will make your character walk.
+"ToggleRun" - Changes your default moving behaviour between run and walk.
+"AutoMove" - Will make your character walk forward until the key is pressed again.
+"Sneak" - As long as this key is held down your character will sneak.
+
+Actions:
+"Jump" - Makes your character jump.
+"Sit" - This will toggle between your character sitting down and standing up again.
+
+Camera:
+"Camera mode" - Cycles between the different camera modes available in PlaneShift.
+"Look up" - Makes the camera look up.
+"Look down" - Makes the camera look down.
+"Zoom in" - Makes the camera zoom in on your character.
+"Zoom out" - Makes the camera zoom out from your character.
+"Center camera" - Makes the camera move back to its default position. Makes sense only in some camera modes.
+"MouseLook" - As long as this key is held down the camera will follow your mouse movements.
+"Toggle MouseLook" - Pressed once the camera will follow all you mouse movements until the key is pressed again.
+"CameraForward/Back" - I -think- this is to make the camera look behind you but I couldn't get it to work at all. Probably broken at the moment.
+
+Game Control:
+"Close" - Closes windows.
+"Toggle Chat" - Activates the chat window and allows you to start typing.
+"Reply tell" - Allows you to answer a tell. Will take you to the "Whisper" chat tab and immediately start writing your answer with the name of the last person to send you a tell.
+"Communications" - Opens and closes the chat window.
+"Options" - Opens and closes the options window.
+"Spell book" - Opens and closes the spell book.
+"Stats" - Opens and closes the Stats and skills window.
+"Inventory" - Opens and closes the Inventory window.
+"Spell book" - Opens and closes the spell book.
+"Bag" - Opens and closes a smaller version of the inventory window that doesn't allow equipping and dequipping of items. Useful during trades.
+"Help" - Opens and closes the Help window.
+"Buddy" - Opens and closes the Buddy list.
+"Buy" - Opens and closes the trade window for the selected NPC or player.
+"Quit" - Quits PlaneShift.
+"Brightness up" - Increases the general brightness of the graphics in PlaneShift.
+"Brightness down" - Decreases the general brightness of the graphics in PlaneShift.
+"Brightness Reset" - Resets the general brightness of the graphics in PlaneShift.
+
+Shortcuts:
+Here you can reassign keys for your own shortcuts. Only shortcuts which already have a key assigned to them are shown here.
+         </content>
+        </Contents>
+       </topic>
+       <topic name="Controls/Mouse">
+        <Contents>
+         <content type="text">
+
+Here you can change some general mouse settings.
+
+"ContextMenu" - Which mouse button brings up the context menu for game entities.
+"EntitySelect" - Which mouse button selects game entities.
+"EntityDragDrop" - The mouse button that allows you dragging and dropping of items.
+"EntityDragDropOne" - The mouse button that allows you dragging and dropping of one item from a stack of items.
+"EntityDragDropAll" - The mouse button that allows you dragging and dropping of a whole stack of items
+"InvertMouse" - Inverts the up and down direction of the mouse during camera movement.
+"HorzSensitivity" - The sensitivity of the mouse in horizontal direction during camera movement. A lower value means the mouse will be less sensitive.
+"VertSensitivity" - The sensitivity of the mouse in vertical direction during camera movement. A lower value means the mouse will be less sensitive.
+         </content>
+        </Contents>
+       </topic>
+       <topic name="Controls/Entities">
+        <Contents>
+         <content type="text">
+
+Here you can specify what happens for a double-click on different game entities.
+
+"Items" - Action if an item is double-clicked.
+"Players" - Action if a player is double-clicked.
+"Merchants" - Action if a NPC merchant is double-clicked.
+"Alice NPCs" - Action if an alive NPC is double-clicked (usually an enemy or moster).
+"Dead NPCs" - Action if a dead NPC is double-clicked.
+"Impervious NPCs" - Action if an impervious NPC is double-clicked (usually story NPCs).
+"Pet NPCs" - Action if a pet NPC is double-clicked.
+         </content>
+        </Contents>
+       </topic>
+       <topic name="Graphics/Camera">
+        <Contents>
+         <content type="text">
+
+Here you can change several options of the differnt camera modes. Not all options are available for the different modes but if they are available they usually have the same meaning.
+
+"Use NPC Chat Camera" - Have the camera focus on the NPCs while talking with them
+"Spring Length" - Kind of how long the camera still moves after stopping the motion. Higher values mean the camera keeps on moving more after the motion stopped.
+"Spring Coefficient" - The speed the camera swings when encountering an obstacle.
+"Dampening Coefficient" - The speed the camera swings when encountering an obstacle.
+"Min Camera Distance" - How far you can zoom the camera in
+"Max Camera Distance" - How far you can zoom the camera out
+"Camera Distance" - How far the camera is away.
+"Starting pitch" - At what speed the camera starts to move
+         </content>
+        </Contents>
+       </topic>
+       <topic name="Graphics/Details">
+        <Contents>
+         <content type="text">
+
+This window comes in two slightly different views depending if "Adaptive distance" is enabled or not.
+
+If it's disabled "Distance" means how you can see in PlaneShift.
+
+If it's enabled "Min. distance" means the minimum distance you always want to be able to see. The closer your current frames per second rate gets to "Min. FPS" the less you will be able to see while if your frames per second rate gets closer to "Max. FPS" PlaneShift will automatically show more of the surroundings.
+
+"FPS cap" will set an maximum for the frames per second rate PlaneShift will never exceed. There isn't usually any sense in having PlaneShift display more frames per second than the refresh rate of your monitor so setting this to a reasonable number will make PlaneShift use less resources.
+         </content>
+        </Contents>
+       </topic>
+       <topic name="Graphics/Labels">
+        <Contents>
+         <content type="text">
+Here you can set which labels you want to see and what color they should be.
+
+"Always" will always show the labels. "On Mouse" will show labels when you hover your mouse above the entity. "On Target" will show labels when you have the entity selected. And "Never" will never show the label at all.
+
+"Show guild" will include the name of the guild for players in the label (Only if the guild is public. Secret guilds won't be shown this way except if you are a member of the guild).
+
+To change the color of a label just click the "set" button and choose the color you want. With "Default" you can set it back to the default color.
+
+"Items"  Well...all items in PlaneShift. (This does not apply to the map geometry. In some cases useable items are actually part of the map and not some dropped item. Examples are some preparation tables and furnaces. For those a label will never be shown).
+"Players" - Other players.
+"NPC" - All NPCs.
+"Dead bodies" - recently deceased people or monsters.
+"Testers" - Members of the testing team of PlaneShift. I didn't even know they have their own group.
+"GM1" - The Game Master assistants.
+"GM2-5" - The Game Masters.
+"Developers" - For people part of the official PlaneShift team. In general they do not show up in game as visible entities.
+"Grouped with you" - Players that are in the same group as you.
+"Grouped with you and in the same guild" - Exactly what it says.
+         </content>
+        </Contents>
+       </topic>
+       <topic name="Graphics/Shadows">
+        <Contents>
+         <content type="text">Only one option: "Enable Shadows". This will enable or disable the mud pools below characters that can be seen as shadows only with very much goodwill.
+         </content>
+        </Contents>
+       </topic>
+       <topic name="Sound/General">
+        <Contents>
+         <content type="text">
+Here you can enable specific sound sources in PlaneShift and control their volume.
+
+"Background Music" - All the music of PlaneShift.
+"Ambient sounds" - Sounds like birds or water fountains.
+"Action sounds" - Hammering at the anvil, attacking...
+"Effect Sounds" - Mainly the sounds of magic spells.
+"Interface Sounds" - Every sound of the PlaneShift interface like for example the "click" if you press a button.
+"Voices" - NPC voices.
+"Instruments" - Sounds of the music mechanics of PlaneShift.
+"Sound location" - This defines if the sounds are played as if heard by your character or by your camera.
+"Combat Music" - If enabled special music will be played during combats.
+"Mute of focus loss" - If sounds should stop when PlaneShift loses the focus (for example by &lt;alt&gt;&lt;tab&gt;
+"Loop background music" - Should the music start immediately again if a song is finished.
+"Sound on private tells" - Should there we a notification if you receive a tell.
+         </content>
+        </Contents>
+       </topic>
+       <topic name="Confirmations/PvP">
+        <Contents>
+         <content type="text">
+
+Here you can set the default behaviour if another player challenges you to a duel.
+
+"Never accept" - Reject the duel right away.
+"Confirm each time"- Brings up a message box asking if the duel should be accepted or not.
+"Always accept" - Accept the duel every time automatically. (Be careful in using this setting!!, the only way to notice you are in a duel is by checking the system chat tab in this case).
+         </content>
+        </Contents>
+       </topic>
+       <topic name="Confirmations/Marriage">
+        <Contents>
+         <content type="text">
+Here you can set the default behaviour if another player proposes to you.
+
+"Never accept" - Always rejects the proposal.
+"Confirm each time" - Brings up a message box asking if you want to accept the proposal.
+         </content>
+        </Contents>
+       </topic>
+       <topic name="Interface/Pop-ups">
+        <Contents>
+         <content type="text">
+
+Here you can setup the behaviour of some pop-up windows and on-screen text.
+
+"Show Active Magic window" - Display the windows with the buffs/debuffs each time if a new magic effect affects your character.
+"Show Error Messages on screen" - Display error messages on the screen (Like if you are out of range to use an item).
+"Show Info Messages on screen" - Display information messages on the screen (Like if you started working on something).
+"Show Result Messages on screen" - Display result messages on the screen (Like the outcome of your latest crafting task).
+"Show OK Messages on screen" -
+"Show ACK Messages on screen" -
+"Use NPC Dialog" - Uses new interface for communicating with NPCs. Default setting is on and we strongly recommend to keep this on.
+         </content>
+        </Contents>
+       </topic>
+       <topic name="Interface/Tooltips">
+        <Contents>
+         <content type="text">
+
+Here you can enable the tooltips and change the font and color.
+
+The colors can be set via the "Set" buttons and reset to the default via the "Default" buttons.
+
+"Enable Tooltips" - Should tooltips be displayed at all.
+"Enable background color" - If tooltips should be displayed on a background.
+"Font color" - The color of the text.
+"Shadow color" - The color of the shadow of the text.
+         </content>
+        </Contents>
+       </topic>
+       <topic name="Interface/Chat">
+        <Contents>
+         <content type="text">
+
+Here you can change some general settings of the chat window as well as the color of different actions in the chat.
+
+The colors are set by specifying the Red, green and blue component of the color. Each component can be from 0 to 255.
+
+"Auto Tab selection" - ?
+"Join default channel" - Joins the "gossip" channel at startup.
+"Echo screen text" - If messages that are displayed on screen should be also written to the chat window (usually system tab).
+"Main chat brackets" - ?
+"Mix your text color" - This defines how the colors you set behave. If this is selected and two or more colors apply for a chat action they get mixed.
+"Lose focus on send" - If the chat window should keep the focus and allow you to type immediately again or lose the focus after you send a chat line.
+"Default last chat" - Automatically starts each new line with an command that will put it in the same chat tab. Very annoying...so better always keep it turned off.
+
+"Filter incoming bad words" - Applies the bad-words filter to all incoming chat lines from others.
+"Filter outgoing bad words" - Applies the bad words filter to all your lines before sending them.
+
+Additional information: The bad words filter is a great tool. Less to censor your lines but more to correct typos for example. You can define a badword "teh" and have it always replaced with "the".
+         </content>
+        </Contents>
+       </topic>
+       <topic name="Interface/Chat - Logs">
+        <Contents>
+         <content type="text">
+
+Here you can setup how PlaneShift logs all your chat.
+
+"Enable Logging" - Should the chat be logged at all?
+
+On the left side you can select a specific chat type and then define on the right side how it will be logged.
+The "Log Filename" will be appended to your character name and then used as the filename to save in. Several sources can be logged in the same filename. If a "Log Bracket" is specified it will be added to the start of every line of that type in the file. This can be useful to tell later on if a line was in main chat or in guild chat for example.
+         </content>
+        </Contents>
+       </topic>
+       <topic name="Interface/Chat - Filters">
+        <Contents>
+         <content type="text">
+
+Here you can filter several combat actions from your chat. I think the options are pretty self-explanatory.
+         </content>
+        </Contents>
+       </topic>
+       <topic name="Interface/Chat - Tabs">
+        <Contents>
+         <content type="text">
+
+Here you can enable which chat tabs should be shown for you and what should be displayed in the main chat tab.
+
+The left column allows you to specify what text should be shown in the main chat tab as well as in it's specific tab.
+With the right column you can define which chant tabs should be shown.
+         </content>
+        </Contents>
+       </topic>
+       <topic name="Interface/Chat - Bubbles">
+        <Contents>
+         <content type="text">
+
+Here you can setup the chat bubbles behaviour and their colors.
+
+Colors are specified by their Red, Green and Blue component. Each can range from 0 to 255. With "Alignment" you can specify how the text should be aligned inside the bubbles. Each chat bubble type can be enabled or disabled individually with the "Enable" checkbox next to it.
+
+"Enable Chat Bubbles"- Enables or disabled all chat bubbles.
+"Max Line Length" - "How long a line in the chat bubble can be before it's broken down to two lines".
+"Short Phrase Char Count". - The amount of letters up to which the phrase is still counted as short. used for text display.
+"Long Phrase count" - As above used for text display.
+"Mix Action colours" - Mix the text colors if necessary.
+         </content>
+        </Contents>
+       </topic>
+       <topic name="Interface/Chat - TabCompletion">
+        <Contents>
+         <content type="text">
+
+Here you can add your own list of words for the tab completion in the chat window. Each phrase you add must be on its own line.
+         </content>
+        </Contents>
+       </topic>
+       <topic name="Interface/Spellchecker">
+        <Contents>
+         <content type="text">
+
+Here you can enable the spellchecker for the chat window as well as add your own words to it and set the color of typos. The color is specified by a red, green and blue component each ranging from 0 to 255.
+
+New words are added on the left side. Each word must have it's own line.
+         </content>
+        </Contents>
+       </topic>
+       <topic name="Interface/Autoexec">
+        <Contents>
+         <content type="text">
+
+Here you can specify commands that are executed each time you login. The commands given in the upper half are executed for every character you login while the ones in the lower half are only executed for your current character.
+
+"Enable execution of start-up scripts" - Enables or disables the execution of these commands at a login.
+         </content>
+        </Contents>
+       </topic>
+      </branch>
+       <topic name="Petition window">
+        <Contents>
+         <content type="text">Petitions window
+
+This window allows you to contact GMs about problems you have. At the top you can see a list of all your current petitions and their status. GMs will usually add their answer to your petition so make sure to check them now and then again to see if they were already processed. Once you read the answer of GMs you can remove the petitions with the "Delete" button.
+
+The "New" button allows you to create a new petition while the "Save" button allows you to modify existing petitions.
+
+Petitions are a great way to get in contact with GMs if no GM is currently online. For example if one of your characters is unable to login it might help to login another character from the same account and make a petition about your issue. A GM will read that petition and move your character to the original spawn position. This often helps in case of login problems. By using the same account you verify also that this is actually one of your character.
+         </content>
+        </Contents>
+       </topic>
+       <topic name="Quest window">
+        <Contents>
+         <content type="text">Quests window
+
+This windows allows you to keep track of your open and completed quests as well as current and completed GM events you taken part in. The "Quests" and "Events" buttons on top allow you to choose if you want to see information on quests or on events, this area will show all the 'automatic quest notes' which are generated by the server as you progress through a quest. In the list on the left you can select a specific quest or event, when you do more information will be displayed on it on the right side. With the "Uncompleted" and "Completed" buttons bellow the list you can switch between finished quests/events and those you are still working on.
+
+The "Discard" buttons allows you to drop specific quests. Of course this works only on quests you haven't finished yet and even then only on quests that are repeatable. (Means on almost no quests at all. Most quests in PS can be done only a single time and those you can't discard).
+
+The Quest notes at the bottom of the window allow you to write down your own thoughts about quests. You can use them to keep track of the hints NPCs gave you for example. These notes are saved on your computer and not on the server. So if you play PlaneShift on a different computer they won't show up there.
+The "Save" saves your notes while "Reload" loads them again and overwrites all changes you made since the last "Save".
+         </content>
+        </Contents>
+       </topic>
+       <topic name="Quit window">
+        <Contents>
+         <content type="text">Quit window
+
+Asks you to confirm if you wish to exit PlaneShift.
+         </content>
+        </Contents>
+       </topic>
+      <branch name="Shortcuts Window">
+       <Contents>
+        <content type="text">Shortcuts
+
+This window allows you to define shortcuts for often used actions. Shortcuts can be executed by simply clicking the corresponding button or you can assign keyboard keys to them. You can create upto 200 different shortcuts.
+        </content>
+       </Contents>
+      <topic name="Creating new shortcuts">
+       <Contents>
+        <content type="text">To create or change a shortcut just right-click the shortcut button you want to assign to your defined shortcut.
+
+Each shortcut must have a "Name". Put this in first as if you forget it your shortcut won't be saved.
+
+In the middle you can put one or more commands that should be executed for the shortcut. If you have more than one command you must put each command in a new line. All available commands for the chat window are possible here. In case you want the shortcut to display some text in main chat you have to add an explicit "/say" infront of your text (Though that's not needed for emotes in the main chat, just starting with "/me" will do).
+
+The "Clear" button will empty all fields of the shortcut.
+
+With the "Set" button you can assign a key to your shortcut. This can also be done in the in-game-options but is usually easier here.
+
+With "Done" your changes will be saved while "Cancel" will discard them.
+        </content>
+       </Contents>
+      </topic>
+     </branch>
+     <branch name="Spell Book Window">
+      <Contents>
+       <content type="text">Spell Book Window
+
+The spell book lists all your currently known spells. You can select a spell on the left side to get more information about it which will show on the right side.
+
+       </content>
+       <content type="pic" src="Cast Magic;" padding="0" width="64" height="64"/>
+       <content type="text">With the "Cast" button you can cast the currently selected spell. If the spell can be cast on yourself a target does not need to be selected. If it is an attack spell then you must have a target selected for you to be able to cast the spell.
+
+       </content>
+       <content type="pic" src="Defensive Magic;" padding="0" width="64" height="64"/>
+       <content type="text">The "Active Spells" button opens a window which shows all magic effects currently influencing your char (This includes effects of magic items or Dakkru's curse as well as spells).
+
+       </content>
+       <content type="pic" src="Glyph Magic;" padding="0" width="64" height="64"/>
+       <content type="text">The "Research Magic" Buttons opens the window for purifying glyphs or researching new spells.
+
+       </content>
+      </Contents>
+     <topic name="Research Magic">
+      <Contents>
+       <content type="text">Research Magic
+
+You can access this window from the spell book window, by clicking the "Research" button. It allows you to research new spells and to purify glyphs.
+        </content>
+        <content type="pic" src="Cast Magic;" padding="0" width="64" height="64"/>
+        <content type="text">With the "Cast" button you can cast the currently created spell.
+
+        </content>
+        <content type="pic" src="PurifyGlyphButton;" padding="0" width="64" height="64"/>
+        <content type="text">The Purify button allows you to purify glyphs. To use it you have to drag and drop a glyph on top of it. You will see the glyph changing his background after few seconds and a message in the chat window telling you the glyph is purified. Before researching a new spell you need to have your glyphs purified.
+
+        </content>
+        <content type="pic" src="ResearchSpellButton;" padding="0" width="64" height="64"/>
+        <content type="text">The "Research" Button allows you to try the current glyph sequence and weave it into a spell. The glyphs should be placed in the four empty slots just below the purify button. If the sequence of glyphs corresponds to a spell and your research is successful, the new spell will be added to your spell book.
+
+        </content>
+       </Contents>
+      </topic>
+     </branch>
+      <topic name="Stats and skills window">
+       <Contents>
+        <content type="text">Stats and skills window
+
+This windows shows all stats and skills of your character.
+
+At the top you can see the current Health, Physical Stamina, Mana and Mental Stamina values of your character.
+
+Next you can see all the stats, skills and factions of your character. You can switch between the different tabs to see the values of a specific category. If you see a number in brackets mean this stats is affected by magic means (Items, spells...) and the value in brackets is the current modified one. If you select one of the skills you can see its description in the text window below.
+
+At the bottom you can see the amount of Progress Points (PPs) your character currently possess, and how much more experience you need to get a new Progress Point. These are important to understand the progression of your character. Next you have the amount of tria (coins) you own, and two buttons for training.
+
+Training only works if you have a NPC selected that actually is capable to train your char. To train with that NPC select the skill you want to train and click "Buy Skill" to spend a single Progress Point for training (and the necessary tria for the training of course) of "Buy Skill Rank" to spend as many Progress Points are needed to train the current skill rank completely.</content>
+        </Contents>
+       </topic>
+      </branch>
+      <branch name="Commands">
+       <Contents>
+        <content type="text">This section explains all commands which can be typed into the chat window.
+        </content>
+       </Contents>
+      <branch name="Alliance commands">
+       <topic name="/allianceinvite">
+        <Contents>
+         <content type="text">With this command you can invite other guilds to your alliance. Only the leader of the guild that leads the alliance is able to do this.
+
+Usage:
+/allianceinvite [guild-leader]
+(Invites the guild of [guild-leader] to the alliance.)
+         </content>
+        </Contents>
+       </topic>
+       <topic name="/allianceleader">
+        <Contents>
+         <content type="text">With this command you can hand over the lead of the alliance to another guild. Only the current leader of the alliance is able to do this.
+
+Usage:
+/allianceleader [guild-name]
+(Makes the guild with the name [guild-name] the leader of the alliance.)
+         </content>
+        </Contents>
+       </topic>
+       <topic name="/allianceleave">
+        <Contents>
+         <content type="text">This command allows your guild to leave an alliance. Only the guild leader is able to do this.
+
+Usage:
+/allianceleave
+(Your guild leaves the alliance.)
+         </content>
+        </Contents>
+       </topic>
+       <topic name="/allianceremove">
+        <Contents>
+         <content type="text">With this command you can remove guilds from your alliance. Only the leader of the alliance is able to do this.
+
+Usage:
+/allianceremove [guild-name]
+(Removes the guild with the name [guild-name] from the alliance.)
+         </content>
+        </Contents>
+       </topic>
+       <topic name="/endalliance">
+        <Contents>
+         <content type="text">With this command you can disband the current alliance. Only the leader of the alliance is able to do this.
+
+Usage:
+/endalliance
+(Disbands the current alliance.)
+         </content>
+        </Contents>
+       </topic>
+       <topic name="/newalliance">
+        <Contents>
+         <content type="text">With this command you can create a new alliance.
+
+Usage:
+/newalliance [alliance_name]
+(Creates an alliance with the name [alliance_name].)
+         </content>
+        </Contents>
+       </topic>
+      </branch>
+      <branch name="Chat related commands">
+       <topic name="/alliance">
+        <Contents>
+         <content type="text">With this command you can send messages to the alliance chat channel. Your current guild must be member of an alliance to use this command.
+
+  Usage;
+  /alliance [message]
+  (Sends {message] to the alliance chat channel. Can be combined with /me or /my.)
+         </content>
+        </Contents>
+       </topic>
+       <topic name="/away">
+        <Contents>
+         <content type="text">Allows you to specify a reply message for every tell you get.
+
+Usage: /away [message]
+(Specifies the message send to every players sending you a tell. This can be useful in case you have to leave your computer for a while and want others to know you can't response right now.)
+
+/away off
+(With this you can turn the away-message off again. Afterwards no automatic reply will be send anymore.)
+         </content>
+        </Contents>
+       </topic>
+       <topic name="/auction">
+        <Contents>
+         <content type="text">With this command you can write messages to the auction chat tab
+
+Usage:
+/auction [message]
+(Writes [message] to the auction chat tab. Can be combined with /me and /my.)
+         </content>
+        </Contents>
+       </topic>
+       <topic name="/clear">
+        <Contents>
+         <content type="text">Use this command to clear the history of the chat window. This will clear the history of all chat tabs.
+
+  Usage: /clear
+         </content>
+        </Contents>
+       </topic>
+      <branch name="/emote">
+       <Contents>
+        <content type="text">With this command you can have your character do some emotes
+
+Usage:
+/emote
+(writes a list of all possible emotes in the system chat tab)
+
+/emote [emote-name]
+(Has your character do the emote. Please notice that the emote text differs if you currently have a target selected. With a selected target the emote is usually directed at that target. Possible emote: agree, angry, beckon, beg, blush, bored, bow, catchbreath, charge, cheer, clap, cold, confused, cough, cry, curious, curse, dance, disappointed, drink, drunk, duck, excited, fear, flee, followme, glare, greet, grin, hungry, impatient, kiss, kneel, laugh, listen, nod, panic, point, poke, ponder, pounce, pout, pray, ready, roar, shrug, shy, sigh, sleep, smile, salute, sorry, surprised, stare, taunt, thank, volunteer, wave wink, yawn, flee, divide, work.
+Most of these emotes have no animation assigned to them yet and will just result in a message in the char window. But some, like greet, will also play an animation.)
+
+Additional info:
+Two of these emotes don't seem to have an own command so I explain them here:
+
+/emote work
+(Your character starts to work.)
+
+/emote divide
+?
+         </content>
+        </Contents>
+       <topic name="/agree">
+        <Contents>
+         <content type="text">This command is the same as "/emote agree".
+
+Usage;
+/agree
+(Your character agrees to something. If you have a target selected the emote is directed at that target.)
+         </content>
+        </Contents>
+       </topic>
+       <topic name="/angry">
+        <Contents>
+         <content type="text">This command is the same as "/emote angry".
+
+Usage;
+/angry
+(Your character expresses his/her/kras anger about something. If you have a target selected the emote is directed at that target.)
+         </content>
+        </Contents>
+       </topic>
+       <topic name="/beckon">
+        <Contents>
+         <content type="text">This command is the same as "/emote beckon".
+
+Usage;
+/beckon
+(Your character does a beckoning emote. If you have a target selected the emote is directed at that target.)
+         </content>
+        </Contents>
+       </topic>
+       <topic name="/beg">
+        <Contents>
+         <content type="text">This command is the same as "/emote beg".
+
+Usage;
+/beg
+(Your character begs for something. If you have a target selected the emote is directed at that target.)
+         </content>
+        </Contents>
+       </topic>
+       <topic name="/blush">
+        <Contents>
+         <content type="text">This command is the same as "/emote blush".
+
+Usage;
+/blush
+(Your character blushes at something. If you have a target selected the emote is directed at that target.)
+         </content>
+        </Contents>
+       </topic>
+       <topic name="/bored">
+        <Contents>
+         <content type="text">This command is the same as "/emote bored".
+
+Usage;
+/bored
+(Your character expresses his boredom. If you have a target selected the emote is directed at that target.)
+         </content>
+        </Contents>
+       </topic>
+       <topic name="/bow">
+        <Contents>
+         <content type="text">This command is the same as "/emote bow".
+
+Usage;
+/bow
+(Your character bows to something. If you have a target selected the emote is directed at that target.)
+         </content>
+        </Contents>
+       </topic>
+       <topic name="/catchbreath">
+        <Contents>
+         <content type="text">This command is the same as "/emote catchbreath".
+
+Usage;
+/catchbreath
+(Your character catches a breath. If you have a target selected the emote is directed at that target.)
+         </content>
+        </Contents>
+       </topic>
+       <topic name="/charge">
+        <Contents>
+         <content type="text">This command is the same as "/emote charge".
+
+Usage;
+/charge
+(Your character charges at something. If you have a target selected the emote is directed at that target.)
+         </content>
+        </Contents>
+       </topic>
+       <topic name="/cheer">
+        <Contents>
+         <content type="text">This command is the same as "/emote cheer".
+
+Usage;
+/cheer
+         </content>
+        </Contents>
+       </topic>
+       <topic name="/clap">
+        <Contents>
+         <content type="text">This command is the same as "/emote clap".
+
+Usage;
+/clap
+(Your character claps for something. If you have a target selected the emote is directed at that target.)
+         </content>
+        </Contents>
+       </topic>
+       <topic name="/cold">
+        <Contents>
+         <content type="text">This command is the same as "/emote cold".
+
+Usage;
+/cold
+(Your character shivers from the cold. If you have a target selected the emote is directed at that target.)
+         </content>
+        </Contents>
+       </topic>
+       <topic name="/confused">
+        <Contents>
+         <content type="text">This command is the same as "/emote confused".
+
+Usage;
+/confused
+(Your character appears to be confused. If you have a target selected the emote is directed at that target.)
+         </content>
+        </Contents>
+       </topic>
+       <topic name="/cough">
+        <Contents>
+         <content type="text">This command is the same as "/emote cough".
+
+Usage;
+/cough
+(Your character coughs. If you have a target selected the emote is directed at that target.)
+         </content>
+        </Contents>
+       </topic>
+       <topic name="/cry">
+        <Contents>
+         <content type="text">This command is the same as "/emote cry".
+
+Usage;
+/cry
+(Your character cries about something. If you have a target selected the emote is directed at that target.)
+         </content>
+        </Contents>
+       </topic>
+       <topic name="/curious">
+        <Contents>
+         <content type="text">This command is the same as "/emote curious".
+
+Usage;
+/curious
+(Your character looks curious. If you have a target selected the emote is directed at that target.)
+         </content>
+        </Contents>
+       </topic>
+       <topic name="/curse">
+        <Contents>
+         <content type="text">This command is the same as "/emote curse".
+
+Usage;
+/curse
+(Your character curses. If you have a target selected the emote is directed at that target.)
+         </content>
+        </Contents>
+       </topic>
+       <topic name="/dance">
+        <Contents>
+         <content type="text">This command is the same as "/emote dance".
+
+Usage;
+/dance
+(Your character dances with something. If you have a target selected the emote is directed at that target.)
+         </content>
+        </Contents>
+       </topic>
+       <topic name="/disappointed">
+        <Contents>
+         <content type="text">This command is the same as "/emote disappointed".
+
+Usage;
+/disappointed
+(Your character expresses his/her/kras disappointment about something. If you have a target selected the emote is directed at that target.)
+         </content>
+        </Contents>
+       </topic>
+       <topic name="/drink">
+        <Contents>
+         <content type="text">This command is the same as "/emote drink".
+
+Usage;
+/drink
+(Your character drinks. If you have a target selected the emote is directed at that target.)
+         </content>
+        </Contents>
+       </topic>
+       <topic name="/drunk">
+        <Contents>
+         <content type="text">This command is the same as "/emote drunk".
+
+Usage;
+/drunk
+(Your character is drunk. If you have a target selected the emote is directed at that target.)
+         </content>
+        </Contents>
+       </topic>
+       <topic name="/excited">
+        <Contents>
+         <content type="text">This command is the same as "/emote excited".
+
+Usage;
+/excited
+(Your character is excited about something. If you have a target selected the emote is directed at that target.)
+         </content>
+        </Contents>
+       </topic>
+       <topic name="/fear">
+        <Contents>
+         <content type="text">This command is the same as "/emote fear".
+
+Usage;
+/fear
+(Your character trembles in fear about something. If you have a target selected the emote is directed at that target.)
+         </content>
+        </Contents>
+       </topic>
+       <topic name="/flee">
+        <Contents>
+         <content type="text">This command is the same as "/emote flee".
+
+Usage;
+/agree
+(Your character flees from something. If you have a target selected the emote is directed at that target.)
+         </content>
+        </Contents>
+       </topic>
+       <topic name="/followme">
+        <Contents>
+         <content type="text">This command is the same as "/emote followme".
+
+Usage;
+/followme
+(Your character motions to follow him/her/kra. If you have a target selected the emote is directed at that target.)
+         </content>
+        </Contents>
+       </topic>
+       <topic name="/glare">
+        <Contents>
+         <content type="text">This command is the same as "/emote glare".
+
+Usage;
+/glare
+(Your character glares at something. If you have a target selected the emote is directed at that target.)
+         </content>
+        </Contents>
+       </topic>
+       <topic name="/greet">
+        <Contents>
+         <content type="text">This command is the same as "/emote greet".
+
+Usage;
+/greet
+(Your character greets something. If you have a target selected the emote is directed at that target.)
+         </content>
+        </Contents>
+       </topic>
+       <topic name="/grin">
+        <Contents>
+         <content type="text">This command is the same as "/emote grin".
+
+Usage;
+/grin
+(Your character grins at something. If you have a target selected the emote is directed at that target.)
+         </content>
+        </Contents>
+       </topic>
+       <topic name="/hungry">
+        <Contents>
+         <content type="text">This command is the same as "/emote hungry".
+
+Usage;
+/hungry
+(Your character is obviously hungry at the moment. If you have a target selected the emote is directed at that target.)
+         </content>
+        </Contents>
+       </topic>
+       <topic name="/impatient">
+        <Contents>
+         <content type="text">This command is the same as "/emote impatient".
+
+Usage;
+/impatient
+(Your character starts to get impatient. If you have a target selected the emote is directed at that target.)
+         </content>
+        </Contents>
+       </topic>
+       <topic name="/kiss">
+        <Contents>
+         <content type="text">This command is the same as "/emote kiss".
+
+Usage;
+/kiss
+(Your character does a kissing emote. If you have a target selected the emote is directed at that target.)
+         </content>
+        </Contents>
+       </topic>
+       <topic name="/kneel">
+        <Contents>
+         <content type="text">This command is the same as "/emote kneel".
+
+Usage;
+/kiss
+(Your character does a kneeling emote. If you have a target selected the emote is directed at that target.)
+         </content>
+        </Contents>
+       </topic>
+       <topic name="/laugh">
+        <Contents>
+         <content type="text">This command is the same as "/emote laugh".
+
+Usage;
+/laugh
+(Your character laugh about something. If you have a target selected the emote is directed at that target.)
+         </content>
+        </Contents>
+       </topic>
+       <topic name="/listen">
+        <Contents>
+         <content type="text">This command is the same as "/emote listen".
+
+Usage;
+/listen
+(Your character listens to something. If you have a target selected the emote is directed at that target.)
+         </content>
+        </Contents>
+       </topic>
+       <topic name="/nod">
+        <Contents>
+         <content type="text">This command is the same as "/emote nod".
+
+Usage;
+/nod
+(Your character nods to agree with something. If you have a target selected the emote is directed at that target.)
+         </content>
+        </Contents>
+       </topic>
+       <topic name="/panic">
+        <Contents>
+         <content type="text">This command is the same as "/emote panic".
+
+Usage;
+/panic
+(Your character panics. If you have a target selected the emote is directed at that target.)
+         </content>
+        </Contents>
+       </topic>
+       <topic name="/point">
+        <Contents>
+         <content type="text">This command is the same as "/emote point".
+
+Usage;
+/point
+(Your character points to something. If you have a target selected the emote is directed at that target.)
+         </content>
+        </Contents>
+       </topic>
+       <topic name="/poke">
+        <Contents>
+         <content type="text">This command is the same as "/emote poke".
+
+Usage;
+/poke
+(Your character pokes something. If you have a target selected the emote is directed at that target.)
+         </content>
+        </Contents>
+       </topic>
+       <topic name="/ponder">
+        <Contents>
+         <content type="text">This command is the same as "/emote ponder".
+
+Usage;
+/ponder
+(Your character ponders something. If you have a target selected the emote is directed at that target.)
+         </content>
+        </Contents>
+       </topic>
+       <topic name="/pout">
+        <Contents>
+         <content type="text">This command is the same as "/emote pout".
+
+Usage;
+/pout
+(Your character pouts. If you have a target selected the emote is directed at that target.)
+         </content>
+        </Contents>
+       </topic>
+       <topic name="/pray">
+        <Contents>
+         <content type="text">This command is the same as "/emote pray".
+
+Usage;
+/pray
+(Your character prays. If you have a target selected the emote is directed at that target.)
+         </content>
+        </Contents>
+       </topic>
+       <topic name="/ready">
+        <Contents>
+         <content type="text">This command is the same as "/emote ready".
+
+Usage;
+/ready
+(Your character stands ready. If you have a target selected the emote is directed at that target.)
+         </content>
+        </Contents>
+       </topic>
+       <topic name="/roar">
+        <Contents>
+         <content type="text">This command is the same as "/emote roar".
+
+Usage;
+/roar
+(Your character roars at something. If you have a target selected the emote is directed at that target.)
+         </content>
+        </Contents>
+       </topic>
+       <topic name="/shrug">
+        <Contents>
+         <content type="text">This command is the same as "/emote shrug".
+
+Usage;
+/shrug
+(Your character shrugs. If you have a target selected the emote is directed at that target.)
+         </content>
+        </Contents>
+       </topic>
+       <topic name="/shy">
+        <Contents>
+         <content type="text">This command is the same as "/emote shy".
+
+Usage;
+/shy
+(Your character smiles shyly. If you have a target selected the emote is directed at that target.)
+         </content>
+        </Contents>
+       </topic>
+       <topic name="/sigh">
+        <Contents>
+         <content type="text">This command is the same as "/emote sigh".
+
+Usage;
+/sigh
+(Your character sighs. If you have a target selected the emote is directed at that target.)
+         </content>
+        </Contents>
+       </topic>
+       <topic name="/sleep">
+        <Contents>
+         <content type="text">This command is the same as "/emote sleep".
+
+Usage;
+/sleep
+(Your character falls asleep. If you have a target selected the emote is directed at that target.)
+         </content>
+        </Contents>
+       </topic>
+       <topic name="/smile">
+        <Contents>
+         <content type="text">This command is the same as "/emote smile".
+
+Usage;
+/smile
+(Your character smiles at something. If you have a target selected the emote is directed at that target.)
+         </content>
+        </Contents>
+       </topic>
+       <topic name="/salute">
+        <Contents>
+         <content type="text">This command is the same as "/emote salute".
+
+Usage;
+/salute
+(Your character salutes to something. If you have a target selected the emote is directed at that target.)
+         </content>
+        </Contents>
+       </topic>
+       <topic name="/sorry">
+        <Contents>
+         <content type="text">This command is the same as "/emote sorry".
+
+Usage;
+/sorry
+(Your character apologizes. If you have a target selected the emote is directed at that target.)
+         </content>
+        </Contents>
+       </topic>
+       <topic name="/surprised">
+        <Contents>
+         <content type="text">This command is the same as "/emote surprised".
+
+Usage;
+/surprised
+(Your character appears to me surprised. If you have a target selected the emote is directed at that target.)
+         </content>
+        </Contents>
+       </topic>
+       <topic name="/stare">
+        <Contents>
+         <content type="text">This command is the same as "/emote stare".
+
+Usage;
+/stare
+(Your character stares at something. If you have a target selected the emote is directed at that target.)
+         </content>
+        </Contents>
+       </topic>
+       <topic name="/taunt">
+        <Contents>
+         <content type="text">This command is the same as "/emote taunt".
+
+Usage;
+/taunt
+(Your character taunts to someone. If you have a target selected the emote is directed at that target.)
+         </content>
+        </Contents>
+       </topic>
+       <topic name="/thank">
+        <Contents>
+         <content type="text">This command is the same as "/emote thank".
+
+Usage;
+/thank
+(Your character thanks someone. If you have a target selected the emote is directed at that target.)
+         </content>
+        </Contents>
+       </topic>
+       <topic name="/volunteer">
+        <Contents>
+         <content type="text">This command is the same as "/emote volunteer".
+
+Usage:
+/volunteer
+(Your character volunteers for something. If you have a target selected the emote is directed at that target.)
+         </content>
+        </Contents>
+       </topic>
+       <topic name="/wave">
+        <Contents>
+         <content type="text">This command is the same as "/emote wave".
+
+Usage;
+/wave
+(Your character waves at something. If you have a target selected the emote is directed at that target.)
+         </content>
+        </Contents>
+       </topic>
+       <topic name="/wink">
+        <Contents>
+         <content type="text">This command is the same as "/emote wink".
+
+Usage;
+/wink
+(Your character winks to something. If you have a target selected the emote is directed at that target.)
+         </content>
+        </Contents>
+       </topic>
+       <topic name="/salute">
+        <Contents>
+         <content type="text">This command is the same as "/emote yawn".
+
+Usage;
+/yawn
+(Your character yawns. If you have a target selected the emote is directed at that target.)
+         </content>
+        </Contents>
+       </topic>
+      </branch>
+       <topic name="/group">
+        <Contents>
+         <content type="text">This command allows you to write messages to the group-chat tab if you are member of a group currently.
+
+Usage:
+/group [message]
+(Writes [message] to the group chat tab. Can be combined with /me or /my.)
+         </content>
+        </Contents>
+       </topic>
+       <topic name="/guild">
+        <Contents>
+         <content type="text">With this command you can send messages to your guild mates in the guild chat.
+
+Usage:
+/guild [message]
+(Writes [message] to the guild chat tab. Can be combined with /me or /my.)
+         </content>
+        </Contents>
+       </topic>
+       <topic name="/ignore">
+        <Contents>
+         <content type="text">This command allows you to manage your ignore list. If you put someone on your ignore list you won't see any chat text from them.
+
+Usage:
+/ignore [character-name] add
+(Adds the character [character-name] to your ignore list.)
+
+/ignore [character-name] remove
+(Removes the character [character-name] from your ignore list.)
+
+/ignore [character-name]
+(Adds the character [character-name] to your ignore list if he/she/kra isn't on it already otherwise removes him/her/kra from the list again.)
+         </content>
+        </Contents>
+       </topic>
+       <topic name="/introduce">
+        <Contents>
+         <content type="text">This command allows you to introduce your character to others.
+
+Usage:
+/introduce
+(Introduces your character to the selected target or everyone around if no target is selected.)
+
+Additional Info:
+At the moment this command is not really useful for anything. But in the past the was an introduction system in place that allowed you to see only the names of people you were see only the names of people you were acquainted with already. Due to some flaws this system was given up again but it might be reintroduced (?) again at some point.
+         </content>
+        </Contents>
+       </topic>
+       <topic name="/join">
+        <Contents>
+         <content type="text">With this command you can join different chat channels. The text of these channels is displayed in the Chat-tab of your chat-window.
+
+Usage:
+/join [channel-name]
+(Joins the channel with the name [channel-name]. If there isn't a channel with this name already it is created. If you are in more than one chat-channel you have to specify the number of the channel with /1, /2../[Chat-Channel-number] at the start of your text to send it to the corresponding channel.)
+         </content>
+        </Contents>
+       </topic>
+       <topic name="/leave">
+        <Contents>
+         <content type="text">With this command you can leave chat-channels again.
+
+Usage:
+/leave [channel-number]
+(Leaves the channel specified by the number [channel-number].)
+         </content>
+        </Contents>
+       </topic>
+       <topic name="/me">
+        <Contents>
+         <content type="text">This command allows you to write self-defined emotes for your character. The starting /me will be replaced with your character's forename. The message is send to the currently selected chat tab. This command can be combined with all commands that specify a chat tab, like /shout, /say, /auction...
+
+Usage:
+/me [message]
+(Writes out an emotes defined by [message] starting with your character's forename to the currently selected chat tab.)
+         </content>
+        </Contents>
+       </topic>
+       <topic name="/my">
+        <Contents>
+         <content type="text">With this command you can construct possessive emotes. The /my is replaced with "[charname]'s". The message is sent to the currently selected chat tab. This command can be combines with all commands that specify a chat tab, like /shout, /say, /auction...
+
+Usage:
+/my [message]
+(Writes out an emote starting with "[charname]'s")
+         </content>
+        </Contents>
+       </topic>
+       <topic name="/mypet">
+        <Contents>
+         <content type="text">With this command you can describe actions of your pet. The /mypet is replaced with the name of your pet.
+
+Usage:/mypet [message]
+(Sends a message to the main chat tab starting with the name of your pet.)
+         </content>
+        </Contents>
+       </topic>
+       <topic name="/say">
+        <Contents>
+         <content type="text">This command allows you to write text to the main chat tab with the normal hearing-range.
+
+Usage:/say [message]
+(Writes [message] to the main chat tab. Can be combined with /me or /my.)
+         </content>
+        </Contents>
+       </topic>
+       <topic name="/shout">
+        <Contents>
+         <content type="text">This command allows you to shout in the main chat tab making it possible to others further away still hearing you. The use of /shout should be kept to a minimum and the command is for sure not meant for normal conversations.
+
+Usage:/shout [message]
+(Shouts [message] in the main chat tab. Can be combined with /me or /my.)
+         </content>
+        </Contents>
+       </topic>
+       <topic name="/tell">
+        <Contents>
+         <content type="text">This command allows you to send tells to another player in the whisper chat tab.
+
+Usage:
+/tell [char-name] [message]
+(Sends [char-name] the text [message]. Can be combines with /me or /my.)
+         </content>
+        </Contents>
+       </topic>
+       <topic name="/tellnpc">
+        <Contents>
+         <content type="text">With this command you can communicate with NPCs in the NPC chat tab.
+
+Usage:
+/tellnpc [message]
+(Sends the currently selected NPC the text [message] in the NPC chat tab.)
+         </content>
+        </Contents>
+       </topic>
+      </branch>
+      <branch name="Combat commands">
+       <topic name="/assist">
+        <Contents>
+         <content type="text">Target the same target as another player.
+
+Usage: /assist [Char-name]
+(Makes the target of the specified character your own target. If no name was specified the currently targeted player is used. This work only for characters either in your guild or your current group.)
+         </content>
+        </Contents>
+       </topic>
+       <topic name="/attack">
+        <Contents>
+         <content type="text">Attacks a target.
+
+Usage: /attack [Attack-stance]
+(Attacks your current target. Possible stances are: bloody, aggressive, normal, defensive and fully defensive. If no stance is given normal is used for the attack.)
+         </content>
+        </Contents>
+       </topic>
+       <topic name="/cast">
+        <Contents>
+         <content type="text">Command for casting magic spells.
+
+Usage: /cast [power] [spellname]
+(Casts the spell specified by [spellname]. [power] is a value between 1 and 100 which defines the strength of the spell. If [power] is not given the value of the slider of the info window is used.
+         </content>
+        </Contents>
+       </topic>
+       <topic name="/challenge">
+        <Contents>
+         <content type="text">Command to send a challenge request to another player.
+
+Usage: /challenge
+(Challenges the currently targeted character to a duel. The system chat tab will show you if the other player accepted or rejected the challenge.)
+         </content>
+        </Contents>
+       </topic>
+       <topic name="/loot">
+        <Contents>
+         <content type="text">With this command you can loot corpses of NPCs. You can't loot other players after a duel.
+
+Usage:
+/loot [roll] [all|money|items [categories]]
+(Attempts to loot targeted NPC, taking specified goods. If no arguments are provided, a loot window will show up.)
+
+/loot
+(Opens the loot window of the current target. You can loot items by clicking on them and then clicking the 'take item' button.)
+
+/loot money
+(Loots all the tria. If you're in a group, the tria will be shared.)
+
+/loot [roll] items [categories]
+(Loots money and items with specified categories (e.g. "weapons - axe, gems"). If categories are left out, all items will be looted. If you add the optional "roll" before "items", all specified items will be rolled. You can get a list of current categories by looking at the names when you buy/sell items from a merchant. You can also use part of a category name, 'weapon' will loot any category beginning with 'weapon' and 'armor' will loot any category beginning with 'armor')
+
+/loot [roll] all
+(Loots money and all items. If you're in a group, money will be shared and items are either attempted to be taken or rolled, if you add the optional "roll" before "all".)
+         </content>
+        </Contents>
+       </topic>
+       <topic name="/stopattack">
+        <Contents>
+         <content type="text">With this command you can stop your current attack.
+
+Usage:
+/stopattack
+(Stops the current attack.)
+         </content>
+        </Contents>
+       </topic>
+       <topic name="/target">
+        <Contents>
+         <content type="text">This command allows you to specify your current target.
+
+Usage:
+/target [Player-name]
+(Targets the player with the name [Player-name]. If no name is given you target your own character.
+
+/target next [category]
+(Makes the next target of type [category] your current target. Possible values for [category] are: npc, pc (Player Character), item, any.
+
+/target prev [category]
+(Makes the previous target of type [category] your current target. Possible values for [category] are: npc, pc (Player Character), item, any.
+
+/target clear
+(Clears your current target and leaves you with nothing targeted at all.)
+         </content>
+        </Contents>
+       </topic>
+       <topic name="/yield">
+        <Contents>
+         <content type="text">This command allows you to yield from a duel.
+
+Usage:
+/yield
+(Surrenders from a duel you previously got challenged to.)
+         </content>
+        </Contents>
+       </topic>
+      </branch>
+      <branch name="Crafting commands">
+       <topic name="/combine">
+        <Contents>
+         <content type="text">This command allows you to combine items in an container. The items must be already places in the container and the container must be targeted. Depending on what you want to combine it might be necessary to have an appropriate tool equipped.
+
+Usage:
+/combine
+         </content>
+        </Contents>
+       </topic>
+       <topic name="/construct">
+        <Contents>
+          <content type="text">[to be described]
+          </content>
+         </Contents>
+        </topic>
+        <topic name="/dig">
+         <Contents>
+          <content type="text">With this command you can dig for ores and other resources. You need a rockpick equipped in your right hand to be able to dig. You can't just dig everywhere for resources, you need to find a suitable spot for your desired resource. Some NPCs can reveal locations of mining sites to you but in general it's easiest to just ask some other characters where to find what resource.
+
+Usage;
+/dig
+(Digs at your current position for resources. If you successfully dig for a resource will then have to move a bit to be able to use the command again.)
+          </content>
+         </Contents>
+        </topic>
+        <topic name="/fish">
+         <Contents>
+          <content type="text">With this command you can fish in rivers and lakes.
+
+Usage:
+/fish
+(This fishes at your current position. After a successful try you have to move a bit to be able to use the command again.)
+          </content>
+         </Contents>
+        </topic>
+        <topic name="/harvest">
+         <Contents>
+          <content type="text">This command allows you to harvest plants.
+
+Usage:
+/harvest
+(Harvests plants at the current position of your character. After a successful harvest you need to move a bit to try it again.)
+          </content>
+         </Contents>
+        </topic>
+        <topic name="/repair">
+         <Contents>
+          <content type="text">With this command you can repair damaged weapons and armor. In order to repair weapons a weapon repair kit is needed, for armor your need an armor repair kit. One of those kits is used up upon every execution of /repair.
+
+Usage:
+/repair [slot-name]
+(repairs the item in the specified slot. If not slot if given the item in your right hand will be repairs. Possible values for [slot-name]: righthand, lefthand, helm, legs, boots, bracers, torso, gloves, neck, rightfinger, leftfinger, belt, arms, back.)
+          </content>
+         </Contents>
+        </topic>
+        <topic name="/uncombine">
+         <Contents>
+          <content type="text">[I don't have the slightest idea]
+          </content>
+         </Contents>
+        </topic>
+        <topic name="/use">
+         <Contents>
+          <content type="text">With this command you can use an item.
+
+Usage:
+/use [item-name]
+(Uses an item from your inventory with the name [item-name]. If [item-name] is not specified the currently selected item will be used. /use Minor Potion of Healing.)
+          </content>
+         </Contents>
+        </topic>
+       </branch>
+       <branch name="Group commands">
+        <topic name="/disband">
+         <Contents>
+          <content type="text">This command allows you to disband a group. Only the leader of a group is able to do this.
+
+Usage:
+/disband
+(Disbands the current group.)
+          </content>
+         </Contents>
+        </topic>
+        <topic name="/groupremove">
+         <Contents>
+          <content type="text">With this command you can remove characters from a group. Only the leader is a group is able to do this.
+
+Usage:
+/groupremove [char-name]
+(Removes the character with the name [char-name] from the group.)
+          </content>
+         </Contents>
+        </topic>
+        <topic name="/groupmembers">
+         <Contents>
+          <content type="text">With this command you can list all members of your current group.
+
+Usage:
+/groupmembers
+(Prints the name of all members of your current group to the system chat tab.)
+          </content>
+         </Contents>
+        </topic>
+        <topic name="/invite">
+         <Contents>
+          <content type="text">With this command you can invite other characters to your group. Only the group leader is able to invite new people.
+
+Usage:
+/invite [char-name]
+(Invites the character with the name [char-name] to the group.)
+          </content>
+         </Contents>
+        </topic>
+        <topic name="/leavegroup">
+         <Contents>
+          <content type="text">With this command you can leave a group.
+
+Usage:
+/leavegroup
+(Leaves your current group.)
+          </content>
+         </Contents>
+        </topic>
+       </branch>
+       <branch name="Guild commands">
+        <topic name="/endguild">
+         <Contents>
+          <content type="text">With this command you can disband your current guild. Only the guild leader is able to do this.
+
+Usage:
+/endguild
+(Disbands the current guild.)
+          </content>
+         </Contents>
+        </topic>
+        <topic name="/guildinfo">
+         <Contents>
+          <content type="text">This command opens the guild window.
+
+Usage:
+/guildinfo
+(Opens the guild window for your current guild. Only possible of you are in a guild currently.)
+          </content>
+         </Contents>
+        </topic>
+        <topic name="/guildinvite">
+         <Contents>
+          <content type="text">This command allows you to invite new members to your guild. Your guild rank must be allowed to invite members to use this command.
+
+Usage:
+/guildinvite [char-name]
+(Invites the character with the name [char-name] to your guild.)
+          </content>
+         </Contents>
+        </topic>
+        <topic name="/guildlevel">
+         <Contents>
+          <content type="text">This command allows you to rename the different guild ranks.
+
+Usage:
+/guildlevel [rank] [new-name]
+(Gives [rank] the new name [new-name]. [Rank] is a number from 1 to 9.)
+          </content>
+         </Contents>
+        </topic>
+        <topic name="/guildmembers">
+         <Contents>
+          <content type="text">With this command you can list all members of your guild.
+
+Usage:
+/guildmembers [rank]
+(List all members of your guild with the rank [rank] in the system chat tab. [rank] is a number from 1 to 9. If [rank] is not specified all members will be listed.)
+          </content>
+         </Contents>
+        </topic>
+        <topic name="/guildmotd">
+         <Contents>
+          <content type="text">With this command you can view or change the current MOTD of your guild. Only possible if the rights of your current guild rank allow it.
+
+Usage:
+/guildmotd [new-motd]
+(Sets the MOTD of your guild to [new-motd]. If no [net-motd] is given the old MOTD will be printed to the system chat tab.)
+          </content>
+         </Contents>
+        </topic>
+        <topic name="/guildname">
+         <Contents>
+          <content type="text">This command allows you to change the guildname. Only possible if the rights of you current guild rank allows it.
+
+Usage:
+/guildname [new-name]
+(Changes the name of your guild to [new-name].)
+          </content>
+         </Contents>
+        </topic>
+        <topic name="/guildpoints">
+         <Contents>
+          <content type="text">This command shows the karma points of your guild. Guild karma increases if an enemy guild surrenders to your guild (Though it's not clear if this already works properly in game.)
+
+Usage:
+/guildpoints
+(Prints your guild's karma points to the system chat tab.)
+          </content>
+         </Contents>
+        </topic>
+        <topic name="/guildpromote">
+         <Contents>
+          <content type="text">With this command you can promote guiild members. Your guild rank must allow you to promote others for this to work and you can only promote others to a rank lower than yours.
+
+Usage:
+/guildpromote [char-name] [rank]
+(Promotes the character [char-name] to the rank [rank]. [rank] is a number from 1 to 9.)
+          </content>
+         </Contents>
+        </topic>
+        <topic name="/guildremove">
+         <Contents>
+          <content type="text">This command allows you to remove characters from your guild. Your guild rank must allow you to remove members for this to work.
+
+Usage:
+/guildremove [char-name]
+(Removes the character with the name [char-name] from the guild.)
+          </content>
+         </Contents>
+        </topic>
+        <topic name="/guildsecret">
+         <Contents>
+          <content type="text">With this command you can toggle if your guild is set as secret or not. Your rank must allow you to edit the guild for this to work.
+
+Usage:
+/guildsecret
+(Without any arguments the current status is printed to the system chat tab.)
+
+/guildsecret on
+(Makes your guild a secret guild.)
+
+/guildsecret off
+(Makes your guild a public guild.)
+          </content>
+         </Contents>
+        </topic>
+        <topic name="/guildwar">
+         <Contents>
+          <content type="text">This command allows you to ask another guild for a guild war. Only the leader of a guild is able to do this and only the leader of the other guild is able to accept.
+
+Usage:
+/guildwar [guild-name]
+(Challenges the guild [guild-name] to a guild war.)
+          </content>
+         </Contents>
+        </topic>
+        <topic name="/guildweb">
+         <Contents>
+          <content type="text">With this command you can set the URL for your guild's webpage. Your current rank must allow you to edit the guild for this to work.
+
+Usage:
+/guildweb [URL]
+(Sets the guild webpage to [URL].)
+          </content>
+         </Contents>
+        </topic>
+        <topic name="/guildyield">
+         <Contents>
+          <content type="text">With this command your guild can yield to another guild in a guild war.
+
+Usage:
+/guildyield [guild-name]
+(Surrenders to the guild [guild-name].)
+          </content>
+         </Contents>
+        </topic>
+        <topic name="/newguild">
+         <Contents>
+          <content type="text">With this command you can create a new guild. Creating a Guild will cost you tria, and there you must also have at least 5 characters join in the first few minutes or it will disband.
+
+Usage:
+/newguild [guild-name]
+(Creates a new guild with the name [guild-name].)
+          </content>
+         </Contents>
+        </topic>
+       </branch>
+       <branch name="Help channel commands">
+        <topic name="/advice">
+         <Contents>
+          <content type="text">With this command advisors can answer in the help channel.
+
+Usage:
+/advice [charname] [message]
+
+Once you advice a player he/she is assigned to you and only you can reply to follow-up questions. Such a help-session ends either if one of the participants quits the game or some minutes after the last typed text. Once you "claim" a help-session you will be reminded in your system chat if there is still a question you didn't reply to.
+
+There is a invisible advisor point system. Not sure how this works exactly but the more questions you answer in the help channel the more advisor-points you get. These points can be of interest if you plan to apply for the GM team. GMs and Devs can always check the amount of advisor-points you have.
+          </content>
+         </Contents>
+        </topic>
+        <topic name="/advisor">
+         <Contents>
+          <content type="text">This command allows you to check the current status of the help channel as well as to change your own advisor settings.
+
+Usage:
+/advisor list
+(Lists the amount of current advisors in the help channel. You don't have to be an advisor yourself to see how many there are)
+
+/advisor requests
+(Repeats the last question in the help channel. This can be useful to not miss any help request or right after becoming an advisor to see if there was a help request before. Only usable if you are an advisor.)
+
+/advisor sessions
+(Lists all help-sessions currently assigned to you. You need to be an advisor to be able to use this.)
+
+/advisor on
+(Makes you an advisor for the help channel. You can only become an advisor if you played at least 20 hours on this account. Also make sure you understand the rules of the help channel before becoming an advisor)
+
+/advisor off
+(With this you can lay down your role as advisor for the help channel again. There is no point in staying in the help channel if you are currently busy in game or afk. This will only lead to players looking for help but not getting an answer in the help channel.)
+          </content>
+         </Contents>
+        </topic>
+        <topic name="/help">
+         <Contents>
+          <content type="text">With this command you can ask questions in the help channel.
+
+Usage:
+/help [question]
+(Asks [question] in the help channel. In case no advisor is currently available you are notified in the system chat tab.)
+          </content>
+         </Contents>
+        </topic>
+        <topic name="/petition">
+         <Contents>
+          <content type="text">This command creates a petition.
+
+Usage;
+/petition [message]
+(submits a petition with the text [message].)
+          </content>
+         </Contents>
+        </topic>
+       </branch>
+       <branch name="Interaction commands">
+        <topic name="/bank">
+         <Contents>
+          <content type="text">This command allows you to open the banking window at specific NPCs. A banker NPC must be targeted for this to work.
+
+Usage: /bank personal
+(Opens the personal banking window of your character. Here you can deposit and withdraw money belonging to your character as well as exchange coins.)
+
+/bank guild
+(This opens the banking window for your guild. Your guild must have granted you the rights to use their bank account in order for this to work.)
+          </content>
+         </Contents>
+        </topic>
+        <topic name="/buy">
+         <Contents>
+          <content type="text">This command allows you to open the merchant windows for a specific NPC. A NPC selling items must be selected in order for this to work.
+
+Usage: /buy
+(Opens the merchant window for the selected NPC in buy-mode.)
+          </content>
+         </Contents>
+        </topic>
+        <topic name="/give">
+         <Contents>
+          <content type="text">With this command you can give items to other players or NPCs. Containers (like sacks) cannot be traded at the moment.
+
+Usage:
+/give
+(Opens the trading window for the selected player or NPC.)
+          </content>
+         </Contents>
+        </topic>
+        <topic name="/marriage">
+         <Contents>
+          <content type="text">This command allows your character to marry or divorce other characters. It's only possible to marry someone with a different gender than the on of your character.
+
+Usage:
+/marriage propose
+(Proposes your currently selected target.)
+
+/marrriage divorce
+(Divorces from your currently selected target. Of course you must be married to the target for this to work.)
+          </content>
+         </Contents>
+        </topic>
+        <topic name="/npcmenu">
+         <Contents>
+          <content type="text">This command opens the menu to talk with NPCs. Not all NPCs have this menu available all the time. For some it's necessary to do some other steps before to get the menu.
+
+Usage:
+/npcmenu
+(Opens the talk-menu for the currently selected NPC.)
+          </content>
+         </Contents>
+        </topic>
+        <topic name="/sell">
+         <Contents>
+          <content type="text">This command allows you to open the merchant windows for a specific NPC. A NPC buying items must be selected in order for this to work.
+
+Usage: /sell
+(Opens the merchant window for the selected NPC in sell-mode.)
+          </content>
+         </Contents>
+        </topic>
+        <topic name="/storage">
+         <Contents>
+          <content type="text">Opens the storage window for the currently targeted NPC. Works only with NPCs that act as storage managers.
+
+Usage:
+/storage
+(Opens the storage window for the selected NPC which you can use to 'store' items in. All items in storage can be accessed at any suitable NPC.)
+          </content>
+         </Contents>
+        </topic>
+        <topic name="/trade">
+         <Contents>
+          <content type="text">This command allows you to start a trade with another player.
+
+Usage:
+/trade
+(Asks the currently selected players for a trade and opens the trading window if the other player accepts.)
+          </content>
+         </Contents>
+        </topic>
+        <topic name="/train">
+         <Contents>
+          <content type="text">With this command you can open the training window with a trainer.
+
+Usage:
+/train
+(Opens the training window for the currently selected NPC. Only works if the NPC offers some training.)
+          </content>
+         </Contents>
+        </topic>
+       </branch>
+       <branch name="Item commands">
+        <topic name="/dequip">
+         <Contents>
+          <content type="text">This command allows you to unequip items.
+
+Usage:/dequip [item-name]
+(Unequips the specified item. The item will be places back in your inventory. I there are more than one item with this name equipped the first found will be unequiped.)
+
+/dequip [slot]
+(Unequips and items for the specified slot. Possible values for [slot] are: righthand, lefthand, helm, legs, boots, bracers, torso, gloves, neck, rightfinger, leftfinger, belt, arms, back. The items will be places back in your inventory.
+          </content>
+         </Contents>
+        </topic>
+        <topic name="/drop">
+         <Contents>
+          <content type="text">This command allows you to drop an item (or a stack of items of the same kind)
+
+Usage: /drop [quantity] any noguard inplace [item-name]
+(This drops [quantity] amounts of the specified item. If no [quantity] is gives one item will be dropped. If [quantity] is "any" as many items as possible, up to a max of 65, are dropped. If "any" is added after the [quantity] items from containers like sacks are dropped also. By adding "noguard" everyone around can pickup the item again (otherwise only you are able to take them again). With "inplace" the items are dropped at your character position. Without "inplace" you must specify the position with the mouse.
+          </content>
+         </Contents>
+        </topic>
+        <topic name="/equip">
+         <Contents>
+          <content type="text">This command allows you to equip items from your inventory.
+
+Usage:
+/equip [quantity] [location] [item-name]
+(Equips [quantity] amounts of an item with the name [item-name] to the inventory slot [location]. If no [quantity] is given, one item will be equipped. If no [location] is given, the central "doll figure" is used. If you have several items with the name [item-name] in your inventory, the first found with the matching quantity will be equipped. Otherwise, the last item with a matching name is used. Possible [location] names are: lefthand, righthand, leftfinger, rightfinger, helm, neck, back, arms, gloves, boots, legs, belt, bracers, torso, mind.)
+          </content>
+         </Contents>
+        </topic>
+        <topic name="/guard">
+         <Contents>
+          <content type="text">With this command you can unguard items dropped by you. Once an item is unguarded it's not possible anymore to guard it without taking the item again so be careful with this command.
+
+Usage:
+/guard
+(Unguards the selected item)
+
+Additional info:
+Even if the name of the command implies it's possible to guard items with it this it's not possible for ordinary players to do this. The GM/dev version of this command has some extended functionality with which the name of the command actually makes sense.
+          </content>
+         </Contents>
+        </topic>
+        <topic name="/pickup">
+         <Contents>
+          <content type="text">With this command you can pickup items. You can only take items which are not guarded by others at the moment.
+
+Usage:
+/pickup
+(Takes the currently selected item.)
+          </content>
+         </Contents>
+        </topic>
+        <topic name="/rotate">
+         <Contents>
+          <content type="text">This command allows you to rotate objects.
+
+Usage:
+/rotate [target] [x] [y] [z]
+(Rotates the specified target along the x, y and z axis. The angles must be given in degree. If no target is specified the currently targeted object will be used)
+
+/rotate [target] [axis] [angle]
+(Rotates the specified target along one axis. Possible values for [axis] are: x, y, z. The angle must be given in degree. If no target is specified the currently targeted object will be used.)
+          </content>
+         </Contents>
+        </topic>
+        <topic name="/write">
+         <Contents>
+          <content type="text">With this command you can open the bookswriting-window for a book.
+
+Usage:
+/write [item-name]
+(Opens the bookswriting window for the book with the name [item-name].
+
+/write [slot-name]
+(Opens the bookswriting window for the items equipped in [slot-name]. Possible slot names are: righthand, lefthand, helm, legs, boots, bracers, torso, gloves, neck, rightfinger, leftfinger, belt, arms, back. But as books can only be equipped in the hand-slots only righthand and lefthand makes senses here.)
+          </content>
+         </Contents>
+        </topic>
+       </branch>
+       <branch name="Miscellaneous commands">
+        <topic name="/admin">
+         <Contents>
+          <content type="text">This command lists the available admin commands for your account. As I assume your are no GM or Dev this won't do anything for you.</content>
+         </Contents>
+        </topic>
+        <topic name="/brightness">
+         <Contents>
+          <content type="text">This command allow you to change the brightness level.
+
+Usage: /brightness [&lt;value&gt;|increase|decrease|reset]
+
+Setting a brightness value between -1.0 and 3.0. You can do /brightness increase or decrease to change by 0.1 or reset to set back to 0.0. By default F10 will reset, F11 decrease and F12 increase brightness as well.
+          </content>
+         </Contents>
+        </topic>
+        <topic name="/buddy">
+         <Contents>
+          <content type="text">This command allows you to manage your buddy-list.
+
+Usage: /buddy [char-name] add
+Adds the specified character to your buddy list.
+
+/buddy [char-name] remove
+Removes the specified character from your buddy list.
+
+/buddy [char-name]
+Adds the specified character if he/she/kra isn't on your list already otherwise removes him/her/kra.
+          </content>
+         </Contents>
+        </topic>
+        <topic name="/comfirm">
+         <Contents>
+          <content type="text">This command allows you to display a confirmation window and execute commands depending on the choice in that window.
+
+Usage:
+/confirm [message] [yes-command] [no-command]
+(Displays a confirmation window with the text [message] and a "yes" and "no" button. [yes-command] is executed if yes is clicked otherwise [no-command] gets executed.)
+          </content>
+         </Contents>
+        </topic>
+        <topic name="/die">
+         <Contents>
+          <content type="text">This command will make your character die. This is mainly for debugging and in cases your character is stuck and you can't get hold of a GM to help you out.
+
+Usage: /die
+
+          </content>
+         </Contents>
+        </topic>
+        <topic name="/echo">
+         <Contents>
+          <content type="text">This command does nothing but writing to the system chat tab.
+
+Usage:
+/echo [message]
+(Writes message to the system chat tab.)
+          </content>
+         </Contents>
+        </topic>
+        <topic name="/game">
+         <Contents>
+          <content type="text">This command allows you to play on the gameboards in PS. You need to have the gameboard selected you want to play on.
+
+Usage:
+/game
+(Starts a game session on the selected gameboard. Two players can use one board at the same time.)
+          </content>
+         </Contents>
+        </topic>
+        <topic name="/graphicbug">
+         <Contents>
+          <content type="text">With this command you can write a bug-report for graphic errors which makes it easier for developers to identify your problem.
+
+Usage:
+/graphicbug
+(Writes a bug report to your harddisk.)
+          </content>
+         </Contents>
+        </topic>
+        <topic name="/loadDesc">
+         <Contents>
+          <content type="text">With this command you can load a new description for your character from a file. The text files for the descriptions must be in the [config-directory]/descriptions folder but don't have to follow the [char-name]_description.txt format. Any filename will do here.
+
+Usage:
+/loadDesc [filename]
+(Loads the description from the file [filename] and sets it as your current description.)
+          </content>
+         </Contents>
+        </topic>
+        <topic name="/loadOOCDesc">
+         <Contents>
+          <content type="text">With this command you can load a new OOC description for your character from a file. The text files for the descriptions must be in the [config-directory]/descriptions folder but don't have to follow the [char-name]_description.txt format. Any filename will do here.
+
+Usage:
+/loadOOCDesc [filename]
+(Loads the description from the file [filename] and sets it as your current OOC description.)
+          </content>
+         </Contents>
+        </topic>
+        <topic name="/loadShortcuts">
+            <Contents>
+                <content type="text">With this command you can load a new set of shortcuts into your shortcut bar from a specified file. Subsequent changes to shortcut buttons will be written to the specified file as well so be careful. The specified file must be in the [config-directory]/options folder and can be named anything as long as the contents are in the correct format. 
+
+- Errors in the format of the file contents can have unexpected results including crashing your client.
+- If you use the command in a Shortcut, it must be the last command.
+
+The next time your client is started it will point to the default shortcuts file [config-directory]/options/shortcutcommands_[CharFirstname].xml
+
+Usage:
+/loadShortcuts [filename]
+                </content>
+            </Contents>
+        </topic>
+        <topic name="/saveShortcuts">
+            <Contents>
+                <content type="text">This command you will save the current shortcuts from your shortcut bar to a specified file. Subsequent changes to shortcut buttons will be written to the specified file as well so be careful. The specified file will be created in the [config-directory]/options folder and can be named anything as long as the contents are in the correct format. This command will not overwrite existing files.
+
+The next time your client is started it will point to the default shortcuts file [config-directory]/options/shortcutcommands_[CharFirstname].xml
+
+Usage:
+/saveShortcuts [filename]
+                </content>
+            </Contents>
+        </topic>
+        <topic name="/motd">
+         <Contents>
+          <content type="text">Get the MOTD of the server.
+
+Usage:
+/motd
+(This will request the server's MOTD and write it to the system chat tab.)
+          </content>
+         </Contents>
+        </topic>
+        <topic name="/picklock">
+         <Contents>
+          <content type="text">This command allows you to pick locks of doors and chests. At the moment there are no pickable locks in PS at all so this command is pretty useless for now.
+
+Usage:
+/picklock
+(Picks the lock of your current target.)
+
+Additional Info:
+Okay, it's not true that there are no pickable locks in PS. There is one in the NPCroom map which is only available to GMs and devs. So for players this command is in fact pretty useless.
+          </content>
+         </Contents>
+        </topic>
+        <topic name="/ping">
+         <Contents>
+          <content type="text">With this command you can get the current ping rate of your connection.
+
+Usage:
+/ping
+(Writes the ping rate to the system chat tab.)
+          </content>
+         </Contents>
+        </topic>
+        <topic name="/pos">
+         <Contents>
+          <content type="text">This command prints your current position and the map you are in at the moment. This is mainly useful for debugging and bug reports. If you report a graphic bug for example it's usually a good idea to include the output of /pos in your report so that the developers can easily find the place you talk about.
+
+Usage:
+/pos
+(Prints the position and the map to the system chat tab.)
+          </content>
+         </Contents>
+        </topic>
+        <topic name="/quit">
+         <Contents>
+          <content type="text">With this command you can leave PlaneShift.
+
+Usage:
+/quit
+(Brings up a confirmation dialog if you want to end the game and quits PlaneShift in you say "yes" there.)
+          </content>
+         </Contents>
+        </topic>
+        <topic name="/report">
+         <Contents>
+          <content type="text">With this command you can report players who don't follow the rules. The server will logs of all actions done by this player starting already a few minutes before you executed the command and lasting until some minutes after that. This is meant to have proof for GMs of rude behaviour, cheating, or other misbehaviour of a player.
+
+Usage: /report [playername]
+(Keeps log of the specified player. No notice is given to the player that his actions are going to be logged.)
+          </content>
+         </Contents>
+        </topic>
+        <topic name="/roll">
+         <Contents>
+          <content type="text">With this command you can roll dice with everyone near seeing the outcome.
+
+Usage:
+/roll [times] [sides] [minvalue]
+(This will roll a die/some dice and print the outcome in base-system, visible for everyone near you. Using /roll without any parameter will lead to rolling one six-sided die. If you specify one number after /roll you will roll one die with as many sides as specified by that number. By giving two numbers after /roll your will roll as many dice as specified by the first number with as many sides as specified by the second number. By addend a third number to the command you will get also told how often you scored an result equal or larger to the last number.
+          </content>
+         </Contents>
+        </topic>
+        <topic name="/screenshot">
+         <Contents>
+          <content type="text">With this command you can take screenshots.
+
+Usage:
+/screenshot lossless nogui
+(takes a screenshot of your current screen. If "lossless" is used the image gets saved as a PNG file otherwise as a JPEG file. If "nogui" is given then the screenshot will be without the Graphical User Interface (like the chat window or the menu-bar) otherwise it is contained in the screenshot.)
+          </content>
+         </Contents>
+        </topic>
+        <topic name="/setDesc">
+         <Contents>
+          <content type="text">With this command you can change the description of your character.
+
+Usage:
+/setDesc [new-desc]
+(Overwrites your old description and sets it to [new-desc]. Every "\n" in [new-desc] is replaced with a newline.)
+          </content>
+         </Contents>
+        </topic>
+        <topic name="/setOOCDesc">
+         <Contents>
+          <content type="text">With this command you can change the OOC description of your character.
+
+Usage:
+/setOOCDec [new-desc]
+(Overwrites your old OOC description and sets it to [new-desc]. Every "\n" in [new-desc] is replaced with a newline.)
+          </content>
+         </Contents>
+        </topic>
+        <topic name="/show">
+         <Contents>
+          <content type="text">With this command you can open and close specific windows.
+
+  Usage:
+  /show [windowname]
+  (Opens the window with the name [windowname]. If the window was already opened it is closed again. Possible names are: activemagic, bag, buddy, chat, glyph, group, guild, help, info, inv, options, petition, quest, shortcut, skills, spells.)
+          </content>
+         </Contents>
+        </topic>
+        <topic name="/sit">
+         <Contents>
+          <content type="text">This command allows your character to sit down.
+
+  Usage:
+  /sit
+  (Your character sits at his current position.)
+          </content>
+         </Contents>
+        </topic>
+        <topic name="/stand">
+         <Contents>
+          <content type="text">This command allows your character to stand up again. (Not possible if your character if overloaded)
+
+  Usage:
+  /stand
+  (Your character stands up again.)
+          </content>
+         </Contents>
+        </topic>
+        <topic name="/starttrading">
+         <Contents>
+          <content type="text">With this command you can allow trades after a previous /stoptrading again.
+
+Usage:
+/starttrading
+(Allows others to trade with you.)
+          </content>
+         </Contents>
+        </topic>
+        <topic name="/stoptrading">
+         <Contents>
+          <content type="text">With this command you can prevent all other players to start a trade with you.
+
+Usage:
+/stoptrading
+(Blocks all incoming trades from other players.)
+          </content>
+         </Contents>
+        </topic>
+        <topic name="/targetcontext">
+         <Contents>
+          <content type="text">This command opens the context-menu for the selected target.
+
+  Usage:
+  /targetcontext
+  (Opens the context menu for the selected target. This is the same menu you would get if your right-click the target)
+          </content>
+         </Contents>
+        </topic>
+        <topic name="/targetinfo">
+         <Contents>
+          <content type="text">This command opens the details-window for the selected target.
+
+  Usage:
+  /targetinfo
+  (Opens the details-window with information about the selected player or NPC.)
+          </content>
+         </Contents>
+        </topic>
+        <topic name="/testanim">
+         <Contents>
+          <content type="text">This command allows you to test animation. No other player will see the animation.
+
+Usage:
+/testanim [name] [fade-in] [fade-out]
+(Plays the animation [name]. [fade-in] is the amount of seconds it should take to morph from your current animation to the animation you want to test. [fade-out] is the time it should take to go back to your original animation after the test animation finished.)
+          </content>
+         </Contents>
+        </topic>
+        <topic name="/tip">
+         <Contents>
+          <content type="text">This command requests a tip from the server.
+
+Usage:
+/tip
+(Gets a tip from the server and writes it to the system chat tab.)
+          </content>
+         </Contents>
+        </topic>
+        <topic name="/togglerun">
+         <Contents>
+          <content type="text">This command allows you to change the current movement state of your character between running and walking.
+
+Usage:
+/togglerun
+(Toggle between moving and running. If your character was walking the character will no be running and if your character was running the character will now be walking.)
+
+/togglerun walk
+(Put the character in the walk state. If your character was already walking nothing happens.)
+
+/togglerun run
+(Put the character in the run state. If your character was already running nothing happens.)
+          </content>
+         </Contents>
+        </topic>
+        <topic name="/unstick">
+         <Contents>
+          <content type="text">This command might help you in case your character is stuck in the 3d environment. In some cases it can move your character back to a valid location.
+
+Usage:
+/unstick
+(If possible moves your character back to a valid location. To use this command your character must be really stuck and not able to move anymore. Also this command needs you to not move at all for some seconds before you can use it.)
+          </content>
+         </Contents>
+        </topic>
+        <topic name="/version">
+         <Contents>
+          <content type="text">This command prints out the current version of the PlaneShift client.
+
+Usage:
+/version
+(Writes the current version to the system chat tab.)
+          </content>
+         </Contents>
+        </topic>
+        <topic name="/who">
+         <Contents>
+          <content type="text">This command allows you to list characters that are currently online.
+
+Usage:
+/who [filter]
+(Lists characters whose name or whose guild contain the expression specified by [filter]. If no [filter] is given all online characters are listed up to a limit of 40 names.
+          </content>
+         </Contents>
+        </topic>
+       </branch>
+       <branch name="Pet commands">
+        <topic name="/mount">
+         <Contents>
+          <content type="text">This command allows you to mount an animal. Not all available pets can be mounted...Sitting on a Yulbar is more likely to kill the poor little Yulbar than helping you to travel faster.
+
+Usage:
+/mount
+(Mounts the currently selected pet. You must be the owner of the pet for this to work.)
+          </content>
+         </Contents>
+        </topic>
+        <topic name="/pet">
+         <Contents>
+          <content type="text">This is the main command to interact with your pets.
+
+  All of the following commands affect the currently summoned pet. The summon command takes one addition argument where [pet-name] is either the first name of your pet or it's number. If no [pet-name] is given, the first pet of the ones you own is summoned.
+
+Usage:
+/pet assist
+(This makes your pet assist you in combat by attacking your current target.)
+
+/pet attack
+(Your pet will attack your current target.)
+
+/pet dismiss
+(This dismisses your pet.)
+
+/pet follow
+(Your pet will follow you wherever you go)
+
+/pet guard
+(Your pet guards its current position.)
+
+/pet name [new-name]
+(Renames your pet to [new-name].)
+
+/pet run
+(Commands your pet to run instead of walking.)
+
+/pet stay
+(Your pet will stay at its current position and not follow you anymore.)
+
+/pet stopattack
+(Stop attacking)
+
+/pet summon [pet-name]
+(Summons your pet. You need to have the necessary item equipped for this to work.)
+
+/pet target [target]
+(Sets the target of your pet. If no target is given, the target of your character will be used. If [target] is "me", your pet will target your character. Otherwise, [target] is interpreted as the name of the target you want to set.
+
+/pet walk
+(Commands your pet to walk instead of running.)
+
+          </content>
+         </Contents>
+        </topic>
+        <topic name="/unmount">
+         <Contents>
+          <content type="text">This command allows you to unmount an animal.
+
+Usage:
+/unmount
+(Unmounts from the currently mounted mount. You must be mounted for this to work.)
+          </content>
+         </Contents>
+        </topic>
+       </branch>
+      </branch>
+      <branch name="Files">
+       <Contents>
+        <content type="text">Interesting files
+
+[Note for windows users: I'm going to use / for separating directories in most cases. Windows usually uses \ for this so please replace the / if necessary.]
+        </content>
+       </Contents>
+      <branch name="Configuration Files">
+       <Contents>
+        <content type="text">Depending on your system the configuration files of PlaneShift can be found here:
+
+Windows: %AppData%\PlaneShift
+(%AppData% is a shortcut to the user files of windows, just type it in the address bar of the windows explorer)
+
+Mac: ~/Library/Application Support/PlaneShift
+(~ is your home directory)
+
+Linux: ~/.PlaneShift
+(~ is your home directory)
+        </content>
+       </Contents>
+      <topic name="options.cfg">
+       <Contents>
+        <content type="text">[to be described]
+Looks like some basic camera related options.
+        </content>
+       </Contents>
+      </topic>
+      <topic name="planeshift.cfg">
+       <Contents>
+        <content type="text">The basic configuration file for PlaneShift.
+
+Most of these settings can be changed in the pslaunch application. This file also contains the saved username and password for the login. The positions of the in-game windows are saved in this file as well, so if you managed to move a window off the screen somehow and can't get it back just delete this file and all positions will be set to default again.
+
+Additional Info:
+By adding a "PlaneShift.Loading.ForceCuller = default" line to this file the hardware culler can be enabled. At the moment this still causes some minor graphic errors but in general increases the performance a lot. So might be worth to try out if you experience very bad performance.
+
+For self compiled clients: With a "System.Plugins.iMovieRecorder = crystalspace.utilities.movierecorder" you can enable the movie recorder plugin from CrystalSpace. Check the CrystalSpace webpage for instructions how to use it.
+        </content>
+       </Contents>
+      </topic>
+      <topic name="shadercache">
+       <Contents>
+        <content type="text">This file keeps pre-compiled versions of the shaders used by PlaneShift.
+
+Usually there is no reason to touch this file but if you experience crashes (especially after an update) it might be worth trying to delete this file and get PlaneShift to recompile all shaders again.
+        </content>
+       </Contents>
+      </topic>
+      <topic name="updaterinfo.xml">
+       <Contents>
+        <content type="text">This file contains infos about the updates you performed with this version of PlaneShift already. DO NOT TOUCH!
+        </content>
+       </Contents>
+      </topic>
+      <topic name="updateservers.xml">
+       <Contents>
+        <content type="text">This file contains the addresses of the update server(s). DO NOT TOUCH!
+        </content>
+       </Contents>
+      </topic>
+     </branch>
+     <branch name="User files">
+      <Contents>
+       <content type="text">Depending on your system the user files of PlaneShift can be found here:
+
+Windows: %AppData%\PlaneShift
+(%AppData% is a shortcut to the user files of windows, just type it in the address bar of the windows explorer)
+
+Mac: ~/Library/Application Support/PlaneShift
+(~ is your home directory)
+
+Linux: ~/.PlaneShift
+(~ is your home directory)
+       </content>
+      </Contents>
+     <topic name="Books">
+      <Contents>
+       <content type="text">The "books" subdirectory of your PlaneShift configuration directory contains all the text files of books you saved in game. In case you want to write a book with an editor outside of PlaneShift just save the book to this directory with a .txt extension. In game you only have to type the name of the file (including the .txt) to load it.
+       </content>
+      </Contents>
+     </topic>
+     <topic name="Character descriptions">
+      <Contents>
+       <content type="text">The "descriptions" subdirectory of your PlaneShift configuration directory contains your saved Character descriptions. The Character window in gave saves and loads files in the form FORENAME_LASTNAME_description.txt. The /loadDesc and /loadOOCDesc commands take a filename as argument and enable you to load different description files.
+       </content>
+      </Contents>
+     </topic>
+     <topic name="Chat logs">
+      <Contents>
+       <content type="text">The "logs" subdirectory of your PlaneShift configuration directory contains the chat logs of your characters. The default filename is "FORENAME_LASTNAME_chat.txt". You can change in the in-game options what chat channels get logged and in what file they should be written.
+       </content>
+      </Contents>
+     </topic>
+     <topic name="Screenshots">
+      <Contents>
+       <content type="text">The "screenshots" subdirectory of your PlaneShift configuration directory contains all the screenshots you made in game with the /screenshot command.
+       </content>
+      </Contents>
+     </topic>
+     <topic name="Sketches">
+      <Contents>
+       <content type="text">The "sketches" subdirectory of your PlaneShift configuration directory contains all map-sketches you save in game.
+       </content>
+      </Contents>
+     </topic>
+    </branch>
+   </branch>
+   <branch name="Using The Updater">
+    <Contents>
+     <content type="text">Using The Updater
+
+The Updater is a utility to get your installed client files in sync with the latest version available on the server.
+     </content>
+    </Contents>
+   <topic name="Updating">
+    <Contents>
+     <content type="text">Updating
+
+To update PlaneShift you just need to launch PSlaunch and it will tell you if you need to update the game or not.
+     </content>
+    </Contents>
+   </topic>
+   <topic name="Repair">
+    <Contents>
+     <content type="text">Repairing PlaneShift
+If your client is not working as well as it could, you can run the repair updater in PSlaunch. To do this just click "repair" in the launcher and it will tell you if there are any files that are not updated or don't match what it has to offer, then allow you the choice of updating those files or not.
+     </content>
+    </Contents>
+   </topic>
+  </branch>
+  <branch name="GM Commands" level="1">
+   <Contents>
+    <content type="text">
+Commands available to game master level characters.  Note that this is a full list of abilities, and not all access groups have everything listed here.
+    </content>
+   </Contents>
+  <branch name="General Syntax">
+   <Contents>
+    <content type="text">
+Commands which act on a target all use the same system.  A number of keywords and features are available to make specifying the target easier and more flexible.
+    </content>
+   </Contents>
+  <topic name="area">
+   <Contents>
+    <content type="text">area syntax: 'area:[type]:range'
+
+Used to run a command on all entities of a specific type within a range. (crosses portals; range doesn't include yourself)
+Available types are players (default), actors, npcs, items, and entities. (no spaces before/after colons) Note that this is a very powerful feature; be careful!
+Examples: "/info area:entities:30" lists info on everything within 30m,
+"/modify area:items:10 remove" deletes all litter within 10m,
+"/teleport area:players:5 hydlaa_plaza" teleports you and all players within 5m to the plaza.
+    </content>
+   </Contents>
+  </topic>
+  <topic name="here">
+   <Contents>
+    <content type="text">keyword 'here'
+
+Used to specify your current sector for sector based commands. Also may be used as a destination for /teleport to indicate your exact location. Examples: "/thunder here", "/teleport target here".
+    </content>
+   </Contents>
+  </topic>
+  <topic name="IDs">
+   <Contents>
+    <content type="text">ID syntax: 'pid:#' and 'eid:#'
+
+Targets and destinations may be specified by either player/character ID (PID) or entity ID (EID). (no spaces before/after colon) IDs may be obtained via the /info command. Note that while PIDs do not change, EIDs do. Example: "/teleport eid:42 here".
+    </content>
+   </Contents>
+  </topic>
+  <topic name="names">
+   <Contents>
+    <content type="text">
+
+Targets and destinations with more than one word in them must be specified using quotes, for most commands. Full names must be used for NPCs and items; only first names are needed for players. In the case of non-unique names, it will simply use the first it finds. Example: /teleport me "Grok Idon".
+    </content>
+   </Contents>
+  </topic>
+  <topic name="me">
+   <Contents>
+    <content type="text">keyword 'me'
+
+Used to target yourself for a command. Example:  "/slide me F".
+    </content>
+   </Contents>
+  </topic>
+  <topic name="target">
+   <Contents>
+    <content type="text">keyword 'target'
+
+Used to act on your currently selected entity with a command. In commands that only need one parameter, this keyword is implicit. Also supported as a destination for /teleport. Example: "/mute target" or simply "/mute".
+    </content>
+   </Contents>
+  </topic>
+ </branch>
+  <topic name="/action">
+   <Contents>
+    <content type="text">Action location commands.
+To create a new action location entrance:
+/action create_entrance [sector_name] [description]
+    </content>
+   </Contents>
+  </topic>
+  <topic name="/admin">
+   <Contents>
+    <content type="text">/admin
+
+Resets your admin level.  Lists and allows you to use various GM/admin commands.
+    </content>
+   </Contents>
+  </topic>
+  <topic name="/assignfaction">
+   <Contents>
+    <content type="text">/assignfaction [me/target/eid/pid/area/name] [factionname] [points]
+
+Awards the player of a positive or negative faction points for a particular faction.
+factionname is the name of the faction of which the player is being changed
+points can be negative or positive and it's relative to the current player faction points.
+    </content>
+   </Contents>
+  </topic>
+  <topic name="/awardexp">
+   <Contents>
+    <content type="text">/awardexp target value
+
+Awards progression points to a player for the completion of a GM run event. (enter a negative value to take away PP).
+    </content>
+   </Contents>
+  </topic>
+  <topic name="/badtext">
+   <Contents>
+    <content type="text">/badtext [first entry] [last entry]
+
+Shows what was told to the targeted npc and couldn't be understand by it.
+First and last entry must be defined and last entry must be greater than first entry.
+Example: /badtext 1 10 shows the latest 10 entries
+    </content>
+   </Contents>
+  </topic>
+  <topic name="/ban">
+   <Contents>
+    <content type="text">/ban name minutes hours days [IP] reason
+OR /ban name [IP] reason
+
+Bans a player from logging into the game for a specified amount of time.  (default is 2 days)  'Name' may be a character name, an account name, or an account number.  A reason must be specified. If IP is specified the ip will be banned as well. Note that the optional switch [IP] above indicates optional inclusion of the letters "ip" in the command to have the IP address also banned.  Do NOT type a full IP Address in the command.
+    </content>
+   </Contents>
+  </topic>
+  <topic name="/banadvisor">
+   <Contents>
+    <content type="text">/banadvisor name
+
+Bans a player from advising until /unbanadvisor is used.
+    </content>
+   </Contents>
+  </topic>
+  <topic name="/banname">
+   <Contents>
+    <content type="text">/banname name
+
+Bans a name from use in character creation.
+    </content>
+   </Contents>
+  </topic>
+  <topic name="/changeguildleader">
+   <Contents>
+    <content type="text">/changeguildleader [new leader] [guildname]
+
+Change the guilds leader.
+    </content>
+   </Contents>
+  </topic>
+  <topic name="/changeguildname">
+   <Contents>
+    <content type="text">/changeguildname
+
+Change the selected guilds name.
+    </content>
+   </Contents>
+  </topic>
+  <topic name="/changename">
+   <Contents>
+    <content type="text">/changename [me/target/eid/pid/area/old name] [force|forceall] new name [new lastname]
+
+Changes the player's name. If force is given, the last name doesn't have to be unique. If forceall is given the first name and last name don't have to be unique. If the lastname is not given the lastname will be preseved. If 'no' is given as lastname, the lastname will be removed.
+    </content>
+   </Contents>
+  </topic>
+  <topic name="/changenpctype">
+   <Contents>
+    <content type="text">/changenpctype [me/target/eid/pid/area/old name] [&lt;brain&gt;|reload]
+
+Changes the brain of the selected npcs. Use reload to reload the npctype db and set the new brain for the npc. Only the selected npc will have the reloaded brain set.
+    </content>
+   </Contents>
+  </topic>
+  <topic name="/charlist">
+   <Contents>
+    <content type="text">/charlist [me/target/eid/pid/area/name]
+
+Informs the GM of the IDs and names of all characters on the same account as the account of the given character.
+    </content>
+   </Contents>
+  </topic>
+  <topic name="/checkitem">
+   <Contents>
+    <content type="text">/checkitem [target] [quantity|''] [item|tria]
+
+Commands used to check the presence of an item in another character.  Example: "/checkitem Bob 42 tria".
+    </content>
+   </Contents>
+  </topic>
+  <topic name="/death">
+   <Contents>
+    <content type="text">/death name
+
+Kills something.
+    </content>
+   </Contents>
+  </topic>
+  <topic name="/debugnpc">
+   <Contents>
+    <content type="text">/debugnpc [target/eid/pid/area/name] [&lt;debug level&gt;]
+
+Changes the debug level of the selected npcs.
+    </content>
+   </Contents>
+  </topic>
+  <topic name="/debugtribe">
+   <Contents>
+    <content type="text">/debugtribe [target/eid/pid/area/name] [&lt;debug level&gt;]
+
+Changes the debug level of the tribe for the selected npcs.
+    </content>
+   </Contents>
+  </topic>
+  <topic name="/deletechar">
+   <Contents>
+    <content type="text">/deletechar [character name] [petitioner name]
+OR /deletechar pid:#
+
+Deletes a character on the same account as the specified petitioner's.  (petition fraud check)  A player or NPC may also be specified by player ID.  (no checks done for players; unique/master NPCs may not be deleted by this method).
+    </content>
+   </Contents>
+  </topic>
+  <topic name="/deputize">
+   <Contents>
+    <content type="text">/deputize player level
+
+Temporarily changes a character's access level to player, tester, GM, GM1-GM5, or developer.  Used to give GMs abilities needed for special instances, or to temporarily add a player to a testers group.  May also be used to demote yourself to a player's status for testing.  (temp level expires on logout, and may be reset by anyone via "/deputize me reset").
+    </content>
+   </Contents>
+  </topic>
+  <topic name="/divorce">
+   <Contents>
+    <content type="text">/divorce name
+
+Divorce a character from another one if they are married.
+    </content>
+   </Contents>
+  </topic>
+  <topic name="/disablequest">
+   <Contents>
+    <content type="text">/disablequest questname [save]
+
+This function will toggle the quest from enabled to disabled status and viceversa, if the save flag is used the new status will also be saved in the database.
+    </content>
+   </Contents>
+  </topic>
+  <topic name="/event">
+   <Contents>
+    <content type="text">Administer events.
+To create a new event, a GM should enter:
+/event create [name] [description]
+
+To register all players in range, or a player by name, the GM should enter (note, [player] can be by name, or by target):
+/event register [range 0-100 | player]
+
+The GM can remove a player from a current event by (note, [player] can be by name, or by target):
+/event remove [player]
+
+When an event is complete, the GM should enter:
+/event complete
+
+To reward the participants (all of them, those within a specified range or an individual - by name or by target) of a current event:
+/event reward [range 0-100 | all | player] # [item name]
+[item name] can be "exp" (experience) where # Progression Points are awarded.
+[item name] can be "faction [faction name]" to adjust the faction standing.
+NOTE: Exp is in PP not in experience, differently from awardexp and givekillexp
+
+If a GM wants to assume control of an ongoing event, because the original GM character has been deleted, or has abandoned it and is offline, the GM can enter:
+/event control [name]
+
+A completed event can be totally discarded by a GM; either by using the 'Discard' button in the Quest/Event Notebook, or by the following command. A GM can discard a completed event of another GM as long as that GM is offline at the time. NOTE: the event will be totally erased from the game and cannot be undone.
+/event discard [name]
+    </content>
+   </Contents>
+  </topic>
+  <topic name="/freeze">
+   <Contents>
+    <content type="text">/freeze player
+
+Prevents a player from moving or using any commands until they quit/relog.
+    </content>
+   </Contents>
+  </topic>
+  <topic name="/fog">
+   <Contents>
+    <content type="text">/fog sector [density [[r g b] length fade]|stop]
+
+It creates fog effect in a specific sector, with a specific density (0-255), the rgb values of the effect (0-255), its fading
+value (in milliseconds) used for fading in and fading out, and the overall length of the effect in msec. If length is 0, the effect is permanent.
+With specified sector, it starts fog with default values: density 200, fade 10000 msec, length 0, soft white color(r 200, g 200, w 200).
+Use /fog sector off or /fog sector -1 for resetting.
+    </content>
+   </Contents>
+  </topic>
+  <topic name="/giveitem">
+   <Contents>
+    <content type="text">/giveitem [target] [quantity|'all'|''] [item|tria]
+
+Commands used to transfer an item from you to another character.  Example: "/giveitem Bob Apple".
+    </content>
+   </Contents>
+  </topic>
+  <topic name="/guard">
+   <Contents>
+    <content type="text">/guard [target] [off]
+
+This command allows you to guard or unguard any item in the world. You just have to provide a target (which can be an area, an eid of the currently selected target. If no other parameter is provided it will toggle guard status on the item.
+NOTE: If you make an item guarded you will be the one guarding it.
+    </content>
+   </Contents>
+  </topic>
+  <topic name="/hunt_location">
+   <Contents>
+    <content type="text">/hunt_location [interval] [max random interval modifier] [amount] [range] [item]
+
+Create a new hunt location which spawns an item in interval + random secs up to a max of amount within the range.
+Notice: The intervals are in seconds, not milliseconds.
+    </content>
+   </Contents>
+  </topic>
+  <topic name="/impersonate">
+   <Contents>
+    <content type="text">/impersonate name command message
+
+Talk as if you are 'name'. Command can be say, shout, or worldshout. If you use the keyword 'text' for name it will produce a message similar to /me within the command's range.
+    </content>
+   </Contents>
+  </topic>
+  <topic name="/info">
+   <Contents>
+    <content type="text">/info target [summary|all|help]
+
+Reports available information on an object/NPC/player (may be offline):  player ID from the database, account ID, IP address, total time connected, and item flags/spawn info.  Use this for bug reports about any stuck/glitched item/NPC/player.
+
+Summary and All give GMs possibility to extract different information about NPCs.
+    </content>
+   </Contents>
+  </topic>
+  <topic name="/inspect">
+   <Contents>
+    <content type="text">/inspect target
+
+Prints the inventory of the specified NPC or player.
+    </content>
+   </Contents>
+  </topic>
+  <topic name="/item">
+   <Contents>
+    <content type="text">/item name [random|quality value]
+
+Creates a new object from the named item at your current location.  With no name specified, it opens the item spawn GUI.
+    </content>
+   </Contents>
+  </topic>
+  <topic name="/key">
+   <Contents>
+    <content type="text">Administrator key commands.
+To change the lock on a the targeted item.  This removes ability to unlock target from all keys:
+/key changelock
+
+Make a key out of item in right hand:
+/key make
+
+Make a master key out of item in right hand:
+/key makemaster
+
+Copy key item in hand:
+/key copy
+
+Clear all locks the key in hand can open:
+/key clearlocks
+
+Add to the key in hand the ability to lock targeted item:
+/key addlock
+
+Remove from the key in hand the ability to lock targeted item:
+/key removelock
+
+Take the key in hand and make or unmake it into a skeleton key that will open any lock, if you have a security level greater than 'player':
+/key skel
+    </content>
+   </Contents>
+  </topic>
+  <topic name="/kick">
+   <Contents>
+    <content type="text">/kick name reason
+
+Kicks the named player off of the server.
+    </content>
+   </Contents>
+  </topic>
+  <topic name="/killnpc">
+   <Contents>
+    <content type="text">/killnpc [me/target/eid/pid/area/name] [&lt;damge&gt;|reload]
+
+Kills the targeted NPC, using the current target if no name is given. The reload option recreates the NPC with stats and triggers from the DB.
+    </content>
+   </Contents>
+  </topic>
+  <topic name="/listwarnings">
+   <Contents>
+    <content type="text">/listwarnings [me/target/eid/pid/area/name]
+List all warnings given to the targeted account.
+    </content>
+   </Contents>
+  </topic>
+  <topic name="/loadquest">
+   <Contents>
+    <content type="text">/loadquest questname
+
+Reloads the given quest.
+Note that you might need to wrap it like this \"quest name\" in case the quest name has spaces.
+    </content>
+   </Contents>
+  </topic>
+ <branch name="/location">
+  <Contents>
+   <content type="text">Online edit of locations. Location is used by the NPCClient to locate areas needed for their behaviors.
+
+/location add
+/location adjust
+/location display
+/location hide
+/location info
+/location insert
+/location list
+/location radius
+/location show
+   </content>
+  </Contents>
+ <topic name="/location add">
+  <Contents>
+   <content type="text">/location add &lt;type&gt; &lt;name&gt; &lt;radius&gt; [&lt;rotation angle&gt;]
+
+Add a new location. For a list of types use the /location list command.
+   </content>
+  </Contents>
+ </topic>
+ <topic name="/location adjust">
+  <Contents>
+   <content type="text">/location adjust
+
+Adjust the position of the nearest location to your position.
+   </content>
+  </Contents>
+ </topic>
+ <topic name="/location display|show">
+  <Contents>
+   <content type="text">/location display|show
+
+Display all locations in current sector.
+   </content>
+  </Contents>
+ </topic>
+ <topic name="/location hide">
+  <Contents>
+   <content type="text">/location hide
+
+Hide all locations in current sector.
+   </content>
+  </Contents>
+ </topic>
+ <topic name="/location info">
+  <Contents>
+   <content type="text">/location info
+
+Display info about nearest location in current sector.
+   </content>
+  </Contents>
+ </topic>
+ <topic name="/location insert">
+  <Contents>
+   <content type="text">/location insert
+
+Insert a new point after current selected point region.
+   </content>
+  </Contents>
+ </topic>
+ <topic name="/location list">
+  <Contents>
+   <content type="text">/location list
+
+List all location types.
+   </content>
+  </Contents>
+ </topic>
+ <topic name="/location radius">
+  <Contents>
+   <content type="text">/location radius &lt;radius&gt; &lt;search radius&gt;
+
+Adjust the radius of the location nearest current position.
+   </content>
+  </Contents>
+ </topic>
+ <topic name="/location select">
+  <Contents>
+   <content type="text">/location select &lt;search radius&gt;
+
+Select a point in a region.
+   </content>
+  </Contents>
+ </topic>
+</branch>
+ <topic name="/managepetitions">
+  <Contents>
+        <content type="text">/managepetitions
+
+Manage petitions to help users.</content>
+      </Contents>
+    </topic>
+    <topic name="/marriageinfo">
+      <Contents>
+        <content type="text">/marriageinfo [me/target/eid/pid/area/name]
+
+View the details of a characters marriage.</content>
+      </Contents>
+    </topic>
+    <topic name="/modify">
+      <Contents>
+        <content type="text">/modify [target OR eid:#] [action] [setting(s)]
+
+Alters the settings for an item.  Allowed actions:
+
+'intervals' followed by 2 integer values for the interval and max modifier for spawning this item (must already spawn)
+
+'amount' followed by an integer for the amount of items to spawned (must already spawn)
+
+'range' followed by the range in which the items should spawn (must already spawn)
+
+'remove' deletes this item and its spawn if it has one
+
+'pickskill' followed by the name of a skill allows to change the skill required to pick the lock of the item. Use none to remove it.
+
+'picklevel' followed by the level required of the currently set skill in order to be able to pick the lock of the item
+
+'pickupable' followed by 'true' or 'false' sets the pickupable flag
+
+'unpickable' followed by 'true' or 'false' sets the unpickable flag
+
+'transient' followed by 'true or 'false' sets the transient flag (transient items auto-delete in ~3 hours)
+
+'npcowned' followed by 'true' or 'false' sets the npcowned flag
+
+'move' followed by x, y, z and optionally y-rotation coordinates
+
+'collide' - enable/disable collision detection for that item.</content>
+      </Contents>
+    </topic>
+    <topic name="/money">
+      <Contents>
+        <content type="text">/money [circles|hexas|octas|trias] [random|quantity value]
+
+Will spawn the specified amount of money items to your inventory. Use random to spawn a random amount of money.
+Example: "/money trias 10" will spawn 10 trias to your inventory.</content>
+      </Contents>
+    </topic>
+    <topic name="/morph">
+      <Contents>
+        <content type="text">/morph [player] [mesh name]
+
+Changes the model used for a player until logout.  Use 'reset' in place of the mesh name to reset the mesh.  Do "/morph list" to see the full list of available meshes.</content>
+      </Contents>
+    </topic>
+    <topic name="/mute">
+      <Contents>
+        <content type="text">/mute player
+
+Mutes the named player until they log back in to this server.</content>
+      </Contents>
+    </topic>
+    <topic name="/npc">
+      <Contents>
+        <content type="text">/npc [master npc name]
+
+Creates a clone of the named NPC at your current location.</content>
+      </Contents>
+    </topic>
+    <branch name="/path">
+      <Contents>
+        <content type="text">Online edit of paths
+
+/path adjust
+/path alias
+/path display|show
+/path flagclear
+/path flagset
+/path format
+/path hide
+/path help
+/path info
+/path move
+/path point
+/path remove
+/path rename
+/path select
+/path split
+/path start
+/path stop|end
+
+To create a path you need to do the following commands:
+1) /path format &lt;format&gt;
+2) /path start &lt;radius&gt;
+3) /path point add (Any number of times)
+4) /path stop &lt;radius&gt;</content>
+      </Contents>
+      <topic name="/path adjust">
+        <Contents>
+          <content type="text">/path adjust [&lt;search radius&gt;]
+
+Adjust the position of the nearest path point to your current position.</content>
+        </Contents>
+      </topic>
+      <topic name="/path alias">
+        <Contents>
+          <content type="text">/path alias [add|remove|rotation] &lt;alias&gt; [&lt;rotation angle&gt;]
+
+Add or remove a alias to/from the nearest waypoint. When adding you can specify a rotation angle in degrees for the alias. NPC client can use that to direct the NPC in the given direction when a NPC stop at the Waypoint.
+
+Examples: /path alias remove "my alias"
+          /path alias add "my new alias" 90</content>
+        </Contents>
+      </topic>
+      <topic name="/path display|show">
+        <Contents>
+          <content type="text">/path display|show [Points|Waypoints]
+
+Display all waypoints and points unless either points or waypoints is specified. In that case only points or waypoints are displayed.</content>
+        </Contents>
+      </topic>
+      <topic name="/path flagclear">
+        <Contents>
+          <content type="text">/path flagclear &lt;flag&gt; [&lt;search radius&gt;]
+
+Clear flags on the nearest waypoint.
+
+Supported flags are:
+ALLOW_RETURN
+UNDERGROUND
+UNDERWATER
+PRIVATE
+PUBLIC
+CITY
+INDOOR
+PATH
+ROAD
+GROUND
+
+Use radius to narrow or widen the search for the waypoint. Use /path info to view current set flags.</content>
+        </Contents>
+      </topic>
+      <topic name="/path flagset">
+        <Contents>
+          <content type="text">/path flagset [wp|path] &lt;flag&gt; [&lt;search radius&gt;]
+
+Set flags on the nearest waypoint(wp) or path(path).
+
+Supported flags are:
+ALLOW_RETURN
+UNDERGROUND
+UNDERWATER
+PRIVATE
+PUBLIC
+CITY
+INDOOR
+
+Use radius to narrow or widen the search for the waypoint. Use /path info to view current set flags.</content>
+        </Contents>
+      </topic>
+      <topic name="/path format">
+        <Contents>
+          <content type="text">/path format &lt;format&gt; [first]
+
+Set up the format to be used for waypoint name when creating new waypoints. Use /path format wp%03d 10 to create waypoints with name wp010, wp011,... First waypoint will be added when /path start is used in an location where there are no waypoint from before.</content>
+        </Contents>
+      </topic>
+      <topic name="/path help">
+        <Contents>
+          <content type="text">/path help [sub command]
+
+Display a short summary of commands or detailed syntax for a sub command if given.</content>
+        </Contents>
+      </topic>
+      <topic name="/path hide">
+        <Contents>
+          <content type="text">/path hide [Points|Waypoints]
+
+Hide all points. If waypoints or points are specified only either points or waypoints are hidden.</content>
+        </Contents>
+      </topic>
+      <topic name="/path info">
+        <Contents>
+          <content type="text">/path info [&lt;search radius&gt;]
+
+Show info about the nearest path or waypoint.</content>
+        </Contents>
+      </topic>
+      <topic name="/path move">
+        <Contents>
+          <content type="text">/path move [wp|point] &lt;id&gt;|&lt;name&gt;
+
+Move the waypoint or path point to your current position.</content>
+        </Contents>
+      </topic>
+      <topic name="/path point">
+        <Contents>
+          <content type="text">/path point [add|insert|remove]
+
+Add, insert or remove a point to or from the current selected path at your position.
+
+A path will be automatically be selected on the /path start command. You could use the /path select command as well to select a new path.</content>
+        </Contents>
+      </topic>
+      <topic name="/path remove">
+        <Contents>
+          <content type="text">/path remove [&lt;search radius&gt;]
+
+Remove the nearest path. Use /path info to view information about the path that will be deleted.</content>
+        </Contents>
+      </topic>
+      <topic name="/path rename">
+        <Contents>
+          <content type="text">/path rename &lt;name&gt; [&lt;search radius&gt;]
+
+Rename the nearest waypoint or path. Use /path info to view information about the path that will be renamed. If both a path and a waypoint is inn range the waypoint will be the target.</content>
+        </Contents>
+      </topic>
+      <topic name="/path select">
+        <Contents>
+          <content type="text">/path select &lt;search radius&gt;
+
+Select the nearest path to be your current path. You need a select path to use /path point.</content>
+        </Contents>
+      </topic>
+      <topic name="/path split">
+        <Contents>
+          <content type="text">/path split &lt;radius&gt; [WP flags]
+
+Split a path into two paths inserting a new waypoint with name according to whats set with /path format.</content>
+        </Contents>
+      </topic>
+      <topic name="/path start">
+        <Contents>
+          <content type="text">/path start &lt;radius&gt; [WP flags] [Path flags]
+
+Start a new path. If there are a waypoint nearby the waypoint is used to start the path. Otherwise a new waypoint is created.
+
+Supported WP flags are:
+ALLOW_RETURN
+UNDERGROUND
+UNDERWATER
+PRIVATE
+PUBLIC
+CITY
+INDOOR
+PATH
+ROAD
+GROUND
+
+Supported Path flags are:
+ONEWAY
+NO_WANDER
+TELEPORT
+</content>
+        </Contents>
+      </topic>
+      <topic name="/path stop|end">
+        <Contents>
+          <content type="text">/path stop|end &lt;radius&gt; [WP flags]
+
+Stop the current path. If there are a waypoint nearby the waypoint is used to end the path. Otherwise a new waypoint is created.</content>
+        </Contents>
+      </topic>
+    </branch>
+    <topic name="/percept">
+      <Contents>
+        <content type="text">/percept [target|pid:&lt;PID&gt;|&lt;npc name&gt;|eid:&lt;EID&gt;] [perception] [type]
+
+Send a perception to the selected NPC. Use /info to gain information about available reactions.</content>
+      </Contents>
+    </topic>
+    <topic name="/pickup">
+      <Contents>
+        <content type="text">/pickup [eid/area]
+
+GM have an enhanced version of /pickup which supports also eid and area arguments.</content>
+      </Contents>
+    </topic>
+    <topic name="/pos">
+      <Contents>
+        <content type="text">/pos target
+
+GMs have an enhanced version of the /pos command which shows your current region and the direction you are facing.  It also has an optional parameter to get the position of another entity.  (may specify by name or an ID)</content>
+      </Contents>
+    </topic>
+    <topic name="/quest">
+      <Contents>
+        <content type="text">/quest [me/target/eid/pid/area/name] [list|discard|complete|assign]
+
+Manage completion of quests for the targeted player, or your own if you aren't targeting anyone.
+
+/quest list [target]
+/quest list [target] [quest name]
+lists quest completion status for all quests and quest steps, or specific quests.
+
+/quest discard [target] [quest name]
+/quest discard [target] [quest name step x]
+This will discard a quest or quest or quest step.
+
+/quest assign [target] [quest name]
+/quest assign [target] [quest name step x]
+This will assign a quest or quest or quest step.
+
+/quest complete [target] [quest name]
+/quest compelte [target] [quest name step x]
+This will complete a quest or quest or quest step.</content>
+      </Contents>
+    </topic>
+    <topic name="/rain">
+      <Contents>
+        <content type="text">/rain sector [drops [length [fade]]|stop]
+
+It creates rain effect in a specific sector, with a specific number of drops, the length of the effect (in milliseconds) and its fading
+value (in milliseconds).
+With specified sector, it starts rain with default values: density 4000 drops, length 10 minutes and 10 seconds of fade.
+The maximum number of drops allowed is 8000.
+Use /rain sector 0 0 0 or /rain sector off for ending the event. </content>
+      </Contents>
+    </topic>
+    <topic name="/reload">
+      <Contents>
+        <content type="text">/reload [item|serveroptions|mathscript|path|locations]
+
+Reloads entities from the database. Item reload the currently targeted item from the database. For serveroptions, mathscript, path, and locations
+all data is reloaded.</content>
+      </Contents>
+    </topic>
+    <topic name="/runscript">
+      <Contents>
+        <content type="text">/runscript [script_name] [me/target/eid/pid/area/name]
+
+Runs a progression script on the target.</content>
+      </Contents>
+    </topic>
+    <topic name="/set">
+      <Contents>
+        <content type="text">/set target gm|player|attribute [on|off]
+
+Many of these attribute are enabled by default for GMs.
+If you do not specify on or off the current mode will be toggled.
+You can also do "/set me list" to view your current attributes.
+
+Available attributes are:
+- invincible
+- invisible
+- viewall (see invisibles)
+- nevertired
+- nofalldamage
+- infiniteinventory
+- questtester (bypass quest lockouts and prerequisites).
+- instantcast (bypasses spell casting time)
+- givekillexp (awards experience when a GM is killed, as in an event)
+- buddyhide (hides you from player (not GM/Dev) buddy lists)
+
+To set the default used for players do "/set me player". For the default for GMs do "/set me gm".</content>
+      </Contents>
+    </topic>
+    <topic name="/setlabelcolor">
+      <Contents>
+        <content type="text">/setlabelcolor [target] [npc|player|tester|gm|gm1|dead|alive|normal]
+
+Set the color of the label of target to the given value. The normal setting will again display the targets normal label color.</content>
+      </Contents>
+    </topic>
+    <topic name="/setitemname">
+      <Contents>
+        <content type="text">/setitemname [target/eid/area/original name] [name] [description]
+
+Allows changing the name and description of the targeted item. Description is optional.</content>
+      </Contents>
+    </topic>
+    <topic name="/setkillexp">
+      <Contents>
+        <content type="text">/setkillexp [target] [exp amount]
+
+Allows to set the experience (not measured in PP) the target will give to who kills him.
+This command is temporary. Target is optional.</content>
+      </Contents>
+    </topic>
+    <topic name="/setquality">
+      <Contents>
+        <content type="text">/setquality [target/eid/area/name] [quality] [max quality]
+
+Allows changing the quality of the targeted item. Max quality is optional.</content>
+      </Contents>
+    </topic>
+    <topic name="/setskill">
+      <Contents>
+        <content type="text">/setskill [target] [skill|'all'] [value|-1]
+
+Set one of your or target's skills or stats to a specific value.  Use 'all' as the name to set all skills and stats to the given value. Use -1 for value if you would like to view the current value of a skill or stat. If no value is given 100 will be used as default.</content>
+      </Contents>
+    </topic>
+    <topic name="/setstackable">
+      <Contents>
+        <content type="text">/setstackable [on|off|reset|info]
+
+Enables or disables the ability to stack the targeted item. Info will give the current status of this flag. Reset returns the item to the default stack mode for the item.</content>
+      </Contents>
+    </topic>
+    <topic name="/settrait">
+      <Contents>
+        <content type="text">/settrait [[target] [trait] | list [race] [gender]]
+
+Allows changing the traits of a character.
+Use "/settrait list [race] [gender]" to list all available traits for given race and gender.
+Note: The adequate gender for Krans is "none".</content>
+      </Contents>
+    </topic>
+    <topic name="/show gm">
+      <Contents>
+        <content type="text">/show gm
+
+Shows the GM GUI, a window with a player list and quick access to many commands.</content>
+      </Contents>
+    </topic>
+    <topic name="/slide">
+      <Contents>
+        <content type="text">/slide target direction distance
+
+Slides the target object/NPC/player in the direction specified (L,R,F,B,U,D,T,I). Moves one space or the distance specified.
+The "direction" 'T' turns the target.  (in degrees; default is 90)
+The "direction" 'I' changes target instance. (it's relative to current instance)</content>
+      </Contents>
+    </topic>
+    <topic name="/snow">
+      <Contents>
+        <content type="text">/snow sector [flakes [length [fade]]|stop]
+
+It creates snow effect in a specific sector, with a specific number of flakes, the length of the effect (in milliseconds) and its fading
+value (in milliseconds).
+With specified sector, it starts snow with default values: density 4000 flakes, length 10 minutes and 10 seconds of fade.
+The maximum number of flakes allowed is 8000.
+Use /snow sector 0 or /snow sector off for ending the event.</content>
+      </Contents>
+    </topic>
+    <topic name="/takeitem">
+      <Contents>
+        <content type="text">/takeitem [target] [quantity|'all'|''] [item|tria]
+
+Command used to transfer an item to you from another character.  Example: "/takeitem target 3 Sabre"</content>
+      </Contents>
+    </topic>
+    <topic name="/teleport">
+      <Contents>
+        <content type="text">/teleport &lt;subject&gt; &lt;destination&gt;
+
+Move the subject to the given destination.
+
+Subject might be one of the following:
+me - Subject is you
+target - Subject is your current target
+&lt;object name&gt; - Subject is a named object
+&lt;NPC name&gt; - Subject is the named NPC
+&lt;player name&gt; - Subject is the named player
+pid:&lt;PID&gt; - Subject is the player/npc with the given pid
+eid:&lt;EID&gt; - Subject is the entity with the given eid.
+
+Destination might be one of the following:
+here [&lt;instance&gt;] - Your current position possible in another instance.
+there &lt;instance&gt; - Their current position in another instance.
+last - Last position
+spawn - Spawn position
+restore - Teleport offline character here
+map [&lt;map name&gt;|here &lt;x&gt; &lt;y&gt; &lt;z&gt; [&lt;instance&gt;] - Map coordinates.
+
+Examples:
+   "/teleport target here"
+   "/teleport me Bob"
+   "/teleport me map npcroom"
+   "/teleport me map hydlaa_plaza 3 -42 10"
+   "/teleport "Ink and Paper" map here -234.11 2.23 832"</content>
+      </Contents>
+    </topic>
+    <topic name="/thaw">
+      <Contents>
+        <content type="text">/thaw player
+
+Disable the effect of the /freeze command on a player.</content>
+      </Contents>
+    </topic>
+    <topic name="/thunder">
+      <Contents>
+        <content type="text">/thunder [sector]
+
+It creates a thunder and a lightning in the specified sector. If you don't specify the sector, it will try to create it in the
+sector where you are, if it supports lightning.</content>
+      </Contents>
+    </topic>
+    <topic name="/unban">
+      <Contents>
+        <content type="text">/unban name
+
+Remove the ban on a player, allowing them to log in again.</content>
+      </Contents>
+    </topic>
+    <topic name="/unbanadvisor">
+      <Contents>
+        <content type="text">/unbanadvisor name
+
+Remove the advisor ban on a player, allowing them to advise again.</content>
+      </Contents>
+    </topic>
+    <topic name="/unbanname">
+      <Contents>
+        <content type="text">/unbanname name
+
+Unban a name and makes it available for use again in character creation</content>
+      </Contents>
+    </topic>
+    <topic name="/unmute">
+      <Contents>
+        <content type="text">/unmute player
+
+Unmute the named player.</content>
+      </Contents>
+    </topic>
+    <topic name="/updaterespawn">
+      <Contents>
+        <content type="text">/updaterespawn [me/target/eid/pid/area/name] [here]
+
+Set the targeted actor's respawn point to their current location. If 'here' is specified then the GM's current location will be used instead of the NPC's.</content>
+      </Contents>
+    </topic>
+    <topic name="/warn">
+      <Contents>
+        <content type="text">/warn target message
+
+Send a warning message to a player in big, red, un-ignorable text on their screen and in all chat tabs.</content>
+      </Contents>
+    </topic>
+    <topic name="/weather">
+      <Contents>
+        <content type="text">/weather sector [on|off]
+
+Turn on or off automatic weather for a sector. </content>
+      </Contents>
+    </topic>
+    <topic name="/targetname">
+      <Contents>
+        <content type="text">/targetname [me/target/eid/pid/area/name]
+
+Get the name of all the targeted objects. </content>
+      </Contents>
+    </topic>
+  </branch>
+  <branch name="Icons">
+    <Contents>
+      <content type="text">A list of icons used in PlaneShift and their meaning.</content>
+    </Contents>
+    <topic name="Context Menu Icons">
+      <Contents>
+        <content type="pic" src="ButtonLook;" padding="100" width="64" height="64"/>
+        <content type="text">Use this button to examine objects or characters more closely.</content>
+        <content type="pic" src="ButtonOpen;" padding="100" width="64" height="64"/>
+        <content type="text">Use this button to open chest or doors (In case of doors you also enter the buildings with it).</content>
+        <content type="pic" src="ButtonPickup;" padding="100" width="64" height="64"/>
+        <content type="text">Use this button to pickup objects.</content>
+        <content type="pic" src="ButtonLoot;" padding="100" width="64" height="64"/>
+        <content type="text">Use this button to loot items from fallen enemies.</content>
+        <content type="pic" src="ButtonAttack;" padding="100" width="64" height="64"/>
+        <content type="text">Use this button to attack your enemies.</content>
+      </Contents>
+    </topic>
+   </branch>
+</help>
+<!-- These commands are missing a topic (updated r2512):
+     study
+     tellnpcinternal
+     write -->
+
+<!--- example to use for icons: <content type="pic" src="ButtonLook;ButtonOpen;ButtonPush" align="0" width="200" height="200" padding="20"/> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

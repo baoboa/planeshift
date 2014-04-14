@@ -1,0 +1,36 @@
+Compile psupdater, copy updaterinfo.xml and pslaunch.cfg to your root dir.
+
+Now you'll need to create a zip containing psupdater or pslaunch. Naming is important, it must be called appName + platform + .zip
+So for 'psupdater' on win32 it would be called: psupdaterwin32.zip
+
+Possible names are: win32, linux32, linux64, macosx.
+
+Get the md5sum of that zip and in a different updaterinfo.xml change the <version> to a number higher than the number in your current UPDATER_VERSION_MAJOR and UPDATER_VERSION_MINOR in psupdaterengine.h
+and place the md5sum in the correct platform "".
+
+Also change the mirror in both .xml to be the full path to the folder you're going to upload to.
+
+Upload the zip and the second .xml to that location.
+
+Now when you run the updater it should self-update. It will self-update every time you run the updater, unless you set UPDATER_VERSION_MAJOR and UPDATER_VERSION_MINOR in the 'new' updater to be the same as or higher
+than the number specified in the updaterinfo.xml on the mirror.
+
+
+For 'general' updating:
+
+For each platform there is a .zip file containing all the files in the update.
+This zip contains:
+changedfiles.xml - A list of all files that are 'changed' and will be patched. These files are shipped in .vcdiff format.
+deletedfiles.xml - A list of all files which are due to be deleted in the update.
+newfiles.xml - A list of all files which are new and shipped in their entire form. These will be copied to their correct location.
+The files :)
+
+Your zip file will be called platform + name (specified in updaterinfo.xml) .zip (e.g. win320.4.00-0.4.01.zip)
+In updaterinfo.xml (server side) set the name of your zip and the mdsum.
+Note that your local updaterinfo.xml *must not* contain this line, (or any line if this is the first update). The general checking works by comparing
+the updaterinfo.xml files, so the server updaterinfo.xml file must be different.
+
+Each .xml has example lines in, so you can see how it works. To create the .vcdiff files you need to use an app called xDelta3, which can be found here: http://xdelta.org/
+You need to compile the cli utility and then to create the .vcdiff use these arguments:
+
+xdelta3(.exe) -e -9 -s old_file new_file output

@@ -1,0 +1,12 @@
+<keys>
+    <KeySet>
+        <Keys key="w" value="forward1"/>
+        <Keys key="s" value="backward1"/>
+        <Keys key="Up" value="forward2"/>
+        <Keys key="Down" value="backward2"/>
+        <Keys key="Left" value="rotateleft"/>
+        <Keys key="Right" value="rotateright"/>
+        <Keys key="PgUp" value="lookup"/>
+        <Keys key="PgDn" value="lookdown"/>
+    </KeySet>
+</keys>

@@ -1,0 +1,20 @@
+SubDir TOP src common util ;
+
+Library psutil 
+    : [ Filter [ Wildcard *.cpp *.h ] : [ Wildcard *_unittest.cpp ] ]
+	#: [ Wildcard *.cpp *.h ]
+	: noinstall
+;
+ExternalLibs psutil : CRYSTAL MYSQLCLIENT ;
+LinkWith psutil : fparser ;
+
+if $(GTEST.AVAILABLE) = "yes"
+{
+Application psutil_test :
+        [ Wildcard *_unittest.cpp ] ../../npcclient/gtest_main.cpp : console
+;
+
+ExternalLibs psutil_test : CRYSTAL GTEST ;
+LinkWith psutil_test : psutil ;
+}
+

@@ -1,0 +1,8 @@
+SubDir TOP src plugins database ;
+
+SubInclude TOP src plugins database mysql ;
+SubInclude TOP src plugins database sqlite3 ;
+SubInclude TOP src plugins database postgresql ;
+
+StaticPluginLibrary planeshift_database_staticplugins ;
+

@@ -1,0 +1,145 @@
+<widget_description>
+
+    <widget name="Paths" factory="pawsPathWindow"
+            visible="no" movable="no" resizable="no" resizetoscreen="yes" >
+        <frame x="0" y="0" width="800" height="600" border="no" />
+        <bgimage resource="login_background" />
+        <font name="cupandtalon.ttf" r="255" g="255" b="255" sr="0" sg="0" sb="0" shadow="yes" size="15" />
+
+        <!-- Title -->
+        <widget name="label_paths" factory="pawsTextBox">
+            <frame x="200" y="40" width="400" height="35" />
+            <font name="scurlock.ttf" r="255" g="255" b="255" sr="0" sg="0" sb="0" shadow="yes" size="24" resizetoscreen="yes" />
+            <text string="PATHS" horizAdjust="CENTRE" />
+        </widget>
+
+        <!-- Path Buttons -->
+        <widget name="Path 1" factory="pawsButton" id="1001" toggle="true">
+            <frame x="65" y="125" width="150" height="50" />
+            <bgimage resource="buttonSmallLong" />
+        </widget>
+        <widget name="Path 2" factory="pawsButton" id="1002" toggle="true">
+            <frame x="215" y="125" width="110" height="50" />
+            <bgimage resource="buttonSmallLong" />
+        </widget>
+        <widget name="Path 3" factory="pawsButton" id="1003" toggle="true">
+            <frame x="325" y="125" width="140" height="50" />
+            <bgimage resource="buttonSmallLong" />
+        </widget>
+        <widget name="Path 4" factory="pawsButton" id="1004" toggle="true">
+            <frame x="465" y="125" width="90" height="50" />
+            <bgimage resource="buttonSmallLong" />
+        </widget>
+        <widget name="Path 5" factory="pawsButton" id="1005" toggle="true">
+            <frame x="555" y="125" width="90" height="50" />
+            <bgimage resource="buttonSmallLong" />
+        </widget>
+        <widget name="Path 6" factory="pawsButton" id="1006" toggle="true">
+            <frame x="645" y="125" width="90" height="50" />
+            <bgimage resource="buttonSmallLong" />
+        </widget>
+
+        <!-- Path symbol -->
+        <widget name="PathSymbol" factory="pawsWidget">
+            <frame x="75" y="190" width="130" height="120" />
+        </widget>
+
+        <!--
+        <widget name="label_description_header" factory="pawsTextBox">
+            <frame x="216" y="511" width="92" height="18" border="no" />
+        <font name="cupandtalon.ttf" r="255" g="255" b="255" sr="0" sg="0" sb="0" shadow="yes" size="14" resizetoscreen="yes" />
+            <text string="Description:" />
+        </widget>
+        -->
+
+        <widget name="label_description" factory="pawsMultiLineTextBox">
+            <frame x="216" y="190" width="500" height="100" border="no"/>
+            <font name="LiberationSans-Regular.ttf" r="255" g="255" b="255" sr="0" sg="0" sb="0" shadow="yes" size="10" resizetoscreen="yes" />
+            <text string="Please select a path" />
+        </widget>
+
+        <widget name="label_parents_header" factory="pawsTextBox" visible="no">
+            <frame x="216" y="290" width="100" height="17" border="no" />
+        <font name="cupandtalon.ttf" r="255" g="255" b="255" sr="0" sg="0" sb="0" shadow="yes" size="14"  resizetoscreen="yes" />
+            <text string="Parents" />
+        </widget>
+        <widget name="label_parents" factory="pawsMultiLineTextBox">
+            <frame x="316" y="290" width="400" height="153" border="no" />
+        <font name="LiberationSans-Regular.ttf" r="255" g="255" b="255" sr="0" sg="0" sb="0" shadow="yes" size="10"  resizetoscreen="yes" />
+        </widget>
+
+        <widget name="label_life_header" factory="pawsTextBox" visible="no">
+            <frame x="216" y="340" width="100" height="17" border="no" />
+        <font name="cupandtalon.ttf" r="255" g="255" b="255" sr="0" sg="0" sb="0" shadow="yes" size="14" resizetoscreen="yes" />
+            <text string="Life" />
+        </widget>
+        <widget name="label_life" factory="pawsMultiLineTextBox">
+            <frame x="316" y="340" width="400" height="153" border="no" />
+        <font name="LiberationSans-Regular.ttf" r="255" g="255" b="255" sr="0" sg="0" sb="0" shadow="yes" size="10" resizetoscreen="yes" />
+        </widget>
+
+        <widget name="label_stat_header" factory="pawsTextBox" visible="no">
+            <frame x="198" y="404" width="40" height="16" border="no" />
+        <font name="cupandtalon.ttf" r="255" g="255" b="255" sr="0" sg="0" sb="0" shadow="yes" size="14" resizetoscreen="yes" />
+            <text string="Stat" />
+        </widget>
+        <widget name="label_stat" factory="pawsMultiLineTextBox">
+            <frame x="198" y="429" width="110" height="110" border="no" />
+        <font name="LiberationSans-Regular.ttf" r="255" g="255" b="255" sr="0" sg="0" sb="0" shadow="yes" size="10" resizetoscreen="yes" />
+        </widget>
+        <widget name="values_stat_header" factory="pawsTextBox" visible="no">
+            <frame x="298" y="404" width="40" height="16" border="no" />
+        <font name="cupandtalon.ttf" r="255" g="255" b="255" sr="0" sg="0" sb="0" shadow="yes" size="14"  resizetoscreen="yes" />
+            <text string="Path" />
+        </widget>
+        <widget name="values_stat" factory="pawsMultiLineTextBox">
+            <frame x="308" y="429" width="50" height="110" border="no" />
+        <font name="LiberationSans-Regular.ttf" r="255" g="255" b="255" sr="0" sg="0" sb="0" shadow="yes" size="10" resizetoscreen="yes" />
+        </widget>
+        <widget name="label_skill_header" factory="pawsTextBox" visible="no">
+            <frame x="455" y="404" width="40" height="16" border="no" />
+        <font name="cupandtalon.ttf" r="255" g="255" b="255" sr="0" sg="0" sb="0" shadow="yes" size="14" resizetoscreen="yes" />
+            <text string="Skill" />
+        </widget>
+        <widget name="label_skill" factory="pawsMultiLineTextBox">
+            <frame x="455" y="429" width="130" height="110" border="no" />
+        <font name="LiberationSans-Regular.ttf" r="255" g="255" b="255" sr="0" sg="0" sb="0" shadow="yes" size="10" resizetoscreen="yes" />
+        </widget>
+        <widget name="values_skill_header" factory="pawsTextBox" visible="no" >
+            <frame x="555" y="404" width="40" height="16" border="no"/>
+        <font name="cupandtalon.ttf" r="255" g="255" b="255" sr="0" sg="0" sb="0" shadow="yes" size="14" resizetoscreen="yes" />
+            <text string="Rank" />
+        </widget>
+        <widget name="values_skill" factory="pawsMultiLineTextBox">
+            <frame x="575" y="429" width="20" height="110" border="no" />
+        <font name="LiberationSans-Regular.ttf" r="255" g="255" b="255" sr="0" sg="0" sb="0" shadow="yes" size="10" resizetoscreen="yes" />
+        </widget>
+
+
+        <!-- Navigation Buttons -->
+        <widget name="navBar" factory="pawsWidget">
+            <frame x="30" y="550" width="740" height="40" />
+            <font name="scurlock.ttf" r="255" g="255" b="255" sr="0" sg="0" sb="0" shadow="no" size="16" resizetoscreen="yes" />
+
+            <widget name="BackButton" factory="pawsButton" id="6000">
+                <frame x="110" y="0" width="100" height="40" />
+                <label text="Prev"/>
+                <bgimage resource="buttonDefault" />
+            </widget>
+
+            <widget name="RandomButton" factory="pawsButton" id="4000">
+                <frame x="306" y="0" width="130" height="40" />
+                <label text="Random" />
+                <bgimage resource="buttonBrown" />
+            </widget>
+
+            <widget name="UploadButton" factory="pawsButton" id="5000">
+                <frame x="520" y="0" width="100" height="40" />
+                <label text="Upload" />
+                <bgimage resource="buttonDefault" />
+            </widget>
+
+        </widget>
+        <!-- End of Navigation Buttons -->
+    </widget>
+</widget_description>

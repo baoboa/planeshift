@@ -1,0 +1,39 @@
+<widget_description>
+
+<widget name="NewOptionsWindow" factory="pawsSimpleWindow"
+        visible="no" savepositions="no" movable="yes" configurable="yes"
+        resizable="yes" style="New Standard GUI">
+
+    <frame x="0" y="100" width="400" height="290" border="yes" />
+    <minframe width="120" height="160" />
+    <title resource="Scaling Title Bar" text="Options Window" align="left" close_button="yes" />
+    <bgimage resource="Scaling Widget Background" alpha="128" />
+
+    <eventShow>Options:RefreshOptions();</eventShow>
+
+    <widget name="CameraUseCD" factory="pawsCheckBox" shadows="yes" >
+        <frame x="5" y="5" width="220" height="20" />
+        <text string="Use Collision Detection" position="right" />
+        <subscriptions>
+            <subscribe data="camera.usecd" />
+        </subscriptions>
+        <publish data="camera.usecd" />
+    </widget>
+
+    <widget name="Save" factory="pawsButton" toggle="no" shadows="yes">
+        <frame x="5" y="263" width="40" height="20" border="yes" />
+        <label text="Save" />
+
+    <eventMouseDown>Options:Save();</eventMouseDown>
+    </widget>
+
+    <widget name="Springyness" factory="pawsScrollBar" direction="horizontal" minValue="0" maxValue="5.0" tickValue="0.1">
+        <frame x="6" y="61" width="150" height="11" border="no" />
+        <subscriptions>
+            <subscribe data="camera.springyness" />
+        </subscriptions>
+        <publish data="camera.springyness" />
+    </widget>
+
+</widget>
+</widget_description>

@@ -1,0 +1,14 @@
+<widget_description>
+
+    <widget name="SplashWindow" factory="pawsSplashWindow"
+            visible="yes" movable="no" resizable="no" resizetoscreen="yes">
+        <frame x="0" y="0" width="800" height="600" border="no" />
+        <bgimage resource="Splash Background" />
+
+        <widget name="SplashProgress" factory="pawsProgressBar" style="Scaling Progressbar">
+            <frame x="25" y="570" height="20" width="750" />
+            <color r="131" g="74" b="33" />
+        </widget>
+    </widget>
+
+</widget_description>

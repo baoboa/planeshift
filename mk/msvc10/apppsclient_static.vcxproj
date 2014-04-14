@@ -1,0 +1,1614 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="ReleaseWithStaticLibs|Win32">
+      <Configuration>ReleaseWithStaticLibs</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ReleaseWithDlls|Win32">
+      <Configuration>ReleaseWithDlls</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="DebugWithStaticLibs|Win32">
+      <Configuration>DebugWithStaticLibs</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="DebugWithDlls|Win32">
+      <Configuration>DebugWithDlls</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MemoryTrackerWithStaticLibs|Win32">
+      <Configuration>MemoryTrackerWithStaticLibs</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MemoryTrackerWithDlls|Win32">
+      <Configuration>MemoryTrackerWithDlls</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RefTrackerWithStaticLibs|Win32">
+      <Configuration>RefTrackerWithStaticLibs</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RefTrackerWithDlls|Win32">
+      <Configuration>RefTrackerWithDlls</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ThreadCheckerWithStaticLibs|Win32">
+      <Configuration>ThreadCheckerWithStaticLibs</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ThreadCheckerWithDlls|Win32">
+      <Configuration>ThreadCheckerWithDlls</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="DebugPSReleaseCSCELWithStaticLibs|Win32">
+      <Configuration>DebugPSReleaseCSCELWithStaticLibs</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="DebugPSReleaseCSCELWithDlls|Win32">
+      <Configuration>DebugPSReleaseCSCELWithDlls</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ReleaseWithStaticLibs|x64">
+      <Configuration>ReleaseWithStaticLibs</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ReleaseWithDlls|x64">
+      <Configuration>ReleaseWithDlls</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="DebugWithStaticLibs|x64">
+      <Configuration>DebugWithStaticLibs</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="DebugWithDlls|x64">
+      <Configuration>DebugWithDlls</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MemoryTrackerWithStaticLibs|x64">
+      <Configuration>MemoryTrackerWithStaticLibs</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MemoryTrackerWithDlls|x64">
+      <Configuration>MemoryTrackerWithDlls</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RefTrackerWithStaticLibs|x64">
+      <Configuration>RefTrackerWithStaticLibs</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RefTrackerWithDlls|x64">
+      <Configuration>RefTrackerWithDlls</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ThreadCheckerWithStaticLibs|x64">
+      <Configuration>ThreadCheckerWithStaticLibs</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ThreadCheckerWithDlls|x64">
+      <Configuration>ThreadCheckerWithDlls</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="DebugPSReleaseCSCELWithStaticLibs|x64">
+      <Configuration>DebugPSReleaseCSCELWithStaticLibs</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="DebugPSReleaseCSCELWithDlls|x64">
+      <Configuration>DebugPSReleaseCSCELWithDlls</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{F22FDC61-1EC4-D42A-7FE6-7FE45D86D417}</ProjectGuid>
+    <SccProjectName />
+    <SccLocalPath />
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)'=='ReleaseWithStaticLibs'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <UseOfMfc>false</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)'=='ReleaseWithDlls'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <UseOfMfc>false</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)'=='DebugWithStaticLibs'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <UseOfMfc>false</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)'=='DebugWithDlls'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <UseOfMfc>false</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)'=='MemoryTrackerWithStaticLibs'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <UseOfMfc>false</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)'=='MemoryTrackerWithDlls'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <UseOfMfc>false</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)'=='RefTrackerWithStaticLibs'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <UseOfMfc>false</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)'=='RefTrackerWithDlls'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <UseOfMfc>false</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)'=='ThreadCheckerWithStaticLibs'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <UseOfMfc>false</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)'=='ThreadCheckerWithDlls'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <UseOfMfc>false</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)'=='DebugPSReleaseCSCELWithStaticLibs'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <UseOfMfc>false</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)'=='DebugPSReleaseCSCELWithDlls'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <UseOfMfc>false</UseOfMfc>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Platform)'=='Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Platform)'=='x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='ReleaseWithStaticLibs|Win32'">false</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='ReleaseWithStaticLibs|Win32'">..\..\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='ReleaseWithStaticLibs|Win32'">..\..\out\release10\build\apppsclient_static\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='ReleaseWithStaticLibs|Win32'">psclient_static</TargetName>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='ReleaseWithDlls|Win32'">false</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='ReleaseWithDlls|Win32'">..\..\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='ReleaseWithDlls|Win32'">..\..\out\release10\build\apppsclient_static\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='ReleaseWithDlls|Win32'">psclient_static</TargetName>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='DebugWithStaticLibs|Win32'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='DebugWithStaticLibs|Win32'">..\..\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='DebugWithStaticLibs|Win32'">..\..\out\debug10\build\apppsclient_static\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='DebugWithStaticLibs|Win32'">psclient_static</TargetName>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='DebugWithDlls|Win32'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='DebugWithDlls|Win32'">..\..\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='DebugWithDlls|Win32'">..\..\out\debug10\build\apppsclient_static\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='DebugWithDlls|Win32'">psclient_static</TargetName>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MemoryTrackerWithStaticLibs|Win32'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MemoryTrackerWithStaticLibs|Win32'">..\..\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MemoryTrackerWithStaticLibs|Win32'">..\..\out\debug10\build\apppsclient_static\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MemoryTrackerWithStaticLibs|Win32'">psclient_static</TargetName>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MemoryTrackerWithDlls|Win32'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MemoryTrackerWithDlls|Win32'">..\..\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MemoryTrackerWithDlls|Win32'">..\..\out\debug10\build\apppsclient_static\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MemoryTrackerWithDlls|Win32'">psclient_static</TargetName>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RefTrackerWithStaticLibs|Win32'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RefTrackerWithStaticLibs|Win32'">..\..\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RefTrackerWithStaticLibs|Win32'">..\..\out\debug10\build\apppsclient_static\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RefTrackerWithStaticLibs|Win32'">psclient_static</TargetName>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RefTrackerWithDlls|Win32'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RefTrackerWithDlls|Win32'">..\..\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RefTrackerWithDlls|Win32'">..\..\out\debug10\build\apppsclient_static\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RefTrackerWithDlls|Win32'">psclient_static</TargetName>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='ThreadCheckerWithStaticLibs|Win32'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='ThreadCheckerWithStaticLibs|Win32'">..\..\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='ThreadCheckerWithStaticLibs|Win32'">..\..\out\debug10\build\apppsclient_static\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='ThreadCheckerWithStaticLibs|Win32'">psclient_static</TargetName>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='ThreadCheckerWithDlls|Win32'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='ThreadCheckerWithDlls|Win32'">..\..\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='ThreadCheckerWithDlls|Win32'">..\..\out\debug10\build\apppsclient_static\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='ThreadCheckerWithDlls|Win32'">psclient_static</TargetName>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='DebugPSReleaseCSCELWithStaticLibs|Win32'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='DebugPSReleaseCSCELWithStaticLibs|Win32'">..\..\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='DebugPSReleaseCSCELWithStaticLibs|Win32'">..\..\out\debug10\build\apppsclient_static\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='DebugPSReleaseCSCELWithStaticLibs|Win32'">psclient_static</TargetName>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='DebugPSReleaseCSCELWithDlls|Win32'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='DebugPSReleaseCSCELWithDlls|Win32'">..\..\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='DebugPSReleaseCSCELWithDlls|Win32'">..\..\out\debug10\build\apppsclient_static\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='DebugPSReleaseCSCELWithDlls|Win32'">psclient_static</TargetName>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='ReleaseWithStaticLibs|x64'">false</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='ReleaseWithStaticLibs|x64'">..\..\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='ReleaseWithStaticLibs|x64'">..\..\out\release10-x64\build\apppsclient_static\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='ReleaseWithStaticLibs|x64'">psclient_static</TargetName>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='ReleaseWithDlls|x64'">false</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='ReleaseWithDlls|x64'">..\..\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='ReleaseWithDlls|x64'">..\..\out\release10-x64\build\apppsclient_static\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='ReleaseWithDlls|x64'">psclient_static</TargetName>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='DebugWithStaticLibs|x64'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='DebugWithStaticLibs|x64'">..\..\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='DebugWithStaticLibs|x64'">..\..\out\debug10-x64\build\apppsclient_static\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='DebugWithStaticLibs|x64'">psclient_static</TargetName>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='DebugWithDlls|x64'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='DebugWithDlls|x64'">..\..\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='DebugWithDlls|x64'">..\..\out\debug10-x64\build\apppsclient_static\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='DebugWithDlls|x64'">psclient_static</TargetName>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MemoryTrackerWithStaticLibs|x64'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MemoryTrackerWithStaticLibs|x64'">..\..\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MemoryTrackerWithStaticLibs|x64'">..\..\out\debug10-x64\build\apppsclient_static\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MemoryTrackerWithStaticLibs|x64'">psclient_static</TargetName>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MemoryTrackerWithDlls|x64'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MemoryTrackerWithDlls|x64'">..\..\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MemoryTrackerWithDlls|x64'">..\..\out\debug10-x64\build\apppsclient_static\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MemoryTrackerWithDlls|x64'">psclient_static</TargetName>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RefTrackerWithStaticLibs|x64'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RefTrackerWithStaticLibs|x64'">..\..\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RefTrackerWithStaticLibs|x64'">..\..\out\debug10-x64\build\apppsclient_static\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RefTrackerWithStaticLibs|x64'">psclient_static</TargetName>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RefTrackerWithDlls|x64'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RefTrackerWithDlls|x64'">..\..\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RefTrackerWithDlls|x64'">..\..\out\debug10-x64\build\apppsclient_static\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RefTrackerWithDlls|x64'">psclient_static</TargetName>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='ThreadCheckerWithStaticLibs|x64'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='ThreadCheckerWithStaticLibs|x64'">..\..\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='ThreadCheckerWithStaticLibs|x64'">..\..\out\debug10-x64\build\apppsclient_static\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='ThreadCheckerWithStaticLibs|x64'">psclient_static</TargetName>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='ThreadCheckerWithDlls|x64'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='ThreadCheckerWithDlls|x64'">..\..\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='ThreadCheckerWithDlls|x64'">..\..\out\debug10-x64\build\apppsclient_static\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='ThreadCheckerWithDlls|x64'">psclient_static</TargetName>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='DebugPSReleaseCSCELWithStaticLibs|x64'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='DebugPSReleaseCSCELWithStaticLibs|x64'">..\..\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='DebugPSReleaseCSCELWithStaticLibs|x64'">..\..\out\debug10-x64\build\apppsclient_static\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='DebugPSReleaseCSCELWithStaticLibs|x64'">psclient_static</TargetName>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='DebugPSReleaseCSCELWithDlls|x64'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='DebugPSReleaseCSCELWithDlls|x64'">..\..\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='DebugPSReleaseCSCELWithDlls|x64'">..\..\out\debug10-x64\build\apppsclient_static\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='DebugPSReleaseCSCELWithDlls|x64'">psclient_static</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseWithStaticLibs|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <StringPooling>true</StringPooling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <ProgramDataBaseFileName>..\..\out\release10\build\apppsclient_static\Win32\psclient_static.pdb</ProgramDataBaseFileName>
+      <PreprocessorDefinitions>NDEBUG;CS_WIN32_CSCONFIG;__CRYSTAL_SPACE__;CS_SUPPORTS_MMX;_WINDOWS;CS_STATIC_LINKED;WIN32;CS_USE_STATIC_LIBS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalOptions>/D CS_HAVE_CAL3D  %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>.;..\..;..\..\include\msvc;..\..\include;..\..\src\client;..\..\src\server;..\..\src\common;..\..\src\tools\wordnet;..\..\src\tools\breakpad;..\..\src\tools\breakpad\third_party\linux\include;..\..\..\CS\include;..\..\..\CS\winlibs\x86\include;..\..\..\CS\win32libs\include;$(CRYSTAL)\include;$(CRYSTAL)\winlibs\x86\include;$(CRYSTAL)\win32libs\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PrecompiledHeaderOutputFile>..\..\out\release10\build\apppsclient_static\apppsclient_static.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>..\..\out\release10\build\apppsclient_static\</AssemblerListingLocation>
+      <ObjectFileName>..\..\out\release10\build\apppsclient_static\</ObjectFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <ForceConformanceInForLoopScope>true</ForceConformanceInForLoopScope>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <CompileAs>Default</CompileAs>
+    </ClCompile>
+    <Link>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>LIBC;LIBCD;LIBCMT;LIBCMTD;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <OutputFile>..\..\psclient_static.exe</OutputFile>
+      <ProgramDatabaseFile>..\..\out\release10\build\apppsclient_static\Win32\psclient_static.pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <AdditionalOptions>libmng.lib libjpeg.lib libpng.lib freetype2.lib cg.lib cgGL.lib vorbisfile.lib vorbis.lib openal32.lib speex.lib ogg.lib cal3d-vc10.lib libcrystalspace_windows.lib libcrystalspace_opengl.lib opengl32.lib version.lib libcrystalspace_staticplugins.lib libcrystalspace.lib libcrystalspace_directx.lib zlib.lib dsound.lib dinput8.lib  %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>libcrystalspace.lib;ws2_32.lib;zlib.lib;cal3d-vc10.lib;wininet.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <AdditionalLibraryDirectories>..\..\..\CS\out\release10\libs;..\..\..\CS\winlibs\x86\lib;..\..\..\CS\win32libs\lib;$(CRYSTAL)\out\release10\libs;$(CRYSTAL)\winlibs\x86\lib;$(CRYSTAL)\win32libs\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <TargetMachine>MachineX86</TargetMachine>
+      <LargeAddressAware>true</LargeAddressAware>
+    </Link>
+    <Lib>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Lib>
+    <PostBuildEvent>
+      <Command>md ..\..\out\release10\bin 2&gt; nul
+copy /y "$(TargetPath)" ..\..\out\release10\bin\
+</Command>
+    </PostBuildEvent>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;CS_WIN32_CSCONFIG;__CRYSTAL_SPACE__;CS_SUPPORTS_MMX;_WINDOWS;CS_STATIC_LINKED;PROJECTGEN_VERSION=10;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.;..\..\src\client;..\..;..\..\include\msvc;..\..\include;..\..\src\client;..\..\src\server;..\..\src\common;..\..\src\tools\wordnet;..\..\src\tools\breakpad;..\..\src\tools\breakpad\third_party\linux\include;..\..\..\CS\include;..\..\..\CS\winlibs\x86\include;..\..\..\CS\win32libs\include;$(CRYSTAL)\include;$(CRYSTAL)\winlibs\x86\include;$(CRYSTAL)\win32libs\include</AdditionalIncludeDirectories>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+    <Manifest>
+      <AdditionalManifestFiles>..\..\mk\msvc\apppsclient_static.manifest</AdditionalManifestFiles>
+    </Manifest>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseWithDlls|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <StringPooling>true</StringPooling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <ProgramDataBaseFileName>..\..\out\release10\build\apppsclient_static\Win32\psclient_static.pdb</ProgramDataBaseFileName>
+      <PreprocessorDefinitions>NDEBUG;CS_WIN32_CSCONFIG;__CRYSTAL_SPACE__;CS_SUPPORTS_MMX;_WINDOWS;CS_STATIC_LINKED;WIN32;CS_USE_SHARED_LIBS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalOptions>/D CS_HAVE_CAL3D  %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>.;..\..;..\..\include\msvc;..\..\include;..\..\src\client;..\..\src\server;..\..\src\common;..\..\src\tools\wordnet;..\..\src\tools\breakpad;..\..\src\tools\breakpad\third_party\linux\include;..\..\..\CS\include;..\..\..\CS\winlibs\x86\include;..\..\..\CS\win32libs\include;$(CRYSTAL)\include;$(CRYSTAL)\winlibs\x86\include;$(CRYSTAL)\win32libs\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PrecompiledHeaderOutputFile>..\..\out\release10\build\apppsclient_static\apppsclient_static.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>..\..\out\release10\build\apppsclient_static\</AssemblerListingLocation>
+      <ObjectFileName>..\..\out\release10\build\apppsclient_static\</ObjectFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <ForceConformanceInForLoopScope>true</ForceConformanceInForLoopScope>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <CompileAs>Default</CompileAs>
+    </ClCompile>
+    <Link>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>LIBC;LIBCD;LIBCMT;LIBCMTD;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <OutputFile>..\..\psclient_static.exe</OutputFile>
+      <ProgramDatabaseFile>..\..\out\release10\build\apppsclient_static\Win32\psclient_static.pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <AdditionalOptions>libmng.lib libjpeg.lib libpng.lib freetype2.lib cg.lib cgGL.lib vorbisfile.lib vorbis.lib openal32.lib speex.lib ogg.lib cal3d-vc10.lib libcrystalspace_windows.lib libcrystalspace_opengl.lib opengl32.lib version.lib libcrystalspace_staticplugins.lib libcrystalspace.lib libcrystalspace_directx.lib zlib.lib dsound.lib dinput8.lib  %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>libcrystalspace.lib;ws2_32.lib;zlib.lib;cal3d-vc10.lib;wininet.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <AdditionalLibraryDirectories>..\..\..\CS\out\release10\libs;..\..\..\CS\winlibs\x86\lib;..\..\..\CS\win32libs\lib;$(CRYSTAL)\out\release10\libs;$(CRYSTAL)\winlibs\x86\lib;$(CRYSTAL)\win32libs\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <TargetMachine>MachineX86</TargetMachine>
+      <LargeAddressAware>true</LargeAddressAware>
+    </Link>
+    <Lib>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Lib>
+    <PostBuildEvent>
+      <Command>md ..\..\out\release10\bin 2&gt; nul
+copy /y "$(TargetPath)" ..\..\out\release10\bin\
+</Command>
+    </PostBuildEvent>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;CS_WIN32_CSCONFIG;__CRYSTAL_SPACE__;CS_SUPPORTS_MMX;_WINDOWS;CS_STATIC_LINKED;PROJECTGEN_VERSION=10;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.;..\..\src\client;..\..;..\..\include\msvc;..\..\include;..\..\src\client;..\..\src\server;..\..\src\common;..\..\src\tools\wordnet;..\..\src\tools\breakpad;..\..\src\tools\breakpad\third_party\linux\include;..\..\..\CS\include;..\..\..\CS\winlibs\x86\include;..\..\..\CS\win32libs\include;$(CRYSTAL)\include;$(CRYSTAL)\winlibs\x86\include;$(CRYSTAL)\win32libs\include</AdditionalIncludeDirectories>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+    <Manifest>
+      <AdditionalManifestFiles>..\..\mk\msvc\apppsclient_static.manifest</AdditionalManifestFiles>
+    </Manifest>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugWithStaticLibs|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <MinimalRebuild>true</MinimalRebuild>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <ProgramDataBaseFileName>..\..\out\debug10\build\apppsclient_static\Win32\psclient_static.pdb</ProgramDataBaseFileName>
+      <PreprocessorDefinitions>_DEBUG;CS_DEBUG;CS_WIN32_CSCONFIG;__CRYSTAL_SPACE__;CS_SUPPORTS_MMX;_WINDOWS;CS_STATIC_LINKED;WIN32;CS_USE_STATIC_LIBS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalOptions>/D CS_HAVE_CAL3D  %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>.;..\..;..\..\include\msvc;..\..\include;..\..\src\client;..\..\src\server;..\..\src\common;..\..\src\tools\wordnet;..\..\src\tools\breakpad;..\..\src\tools\breakpad\third_party\linux\include;..\..\..\CS\include;..\..\..\CS\winlibs\x86\include;..\..\..\CS\win32libs\include;$(CRYSTAL)\include;$(CRYSTAL)\winlibs\x86\include;$(CRYSTAL)\win32libs\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PrecompiledHeaderOutputFile>..\..\out\debug10\build\apppsclient_static\apppsclient_static.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>..\..\out\debug10\build\apppsclient_static\</AssemblerListingLocation>
+      <ObjectFileName>..\..\out\debug10\build\apppsclient_static\</ObjectFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <ForceConformanceInForLoopScope>true</ForceConformanceInForLoopScope>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <CompileAs>Default</CompileAs>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>LIBC;LIBCD;LIBCMT;LIBCMTD;MSVCRT;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <OutputFile>..\..\psclient_static.exe</OutputFile>
+      <ProgramDatabaseFile>..\..\out\debug10\build\apppsclient_static\Win32\psclient_static.pdb</ProgramDatabaseFile>
+      <SubSystem>Console</SubSystem>
+      <AdditionalOptions>libmng.lib libjpeg.lib libpng.lib freetype2.lib cg.lib cgGL.lib vorbisfile.lib vorbis.lib openal32.lib speex.lib ogg.lib cal3d-vc10_d.lib libcrystalspace_windows_d.lib libcrystalspace_opengl_d.lib opengl32.lib version.lib libcrystalspace_staticplugins_d.lib libcrystalspace_d.lib libcrystalspace_directx_d.lib zlib.lib dsound.lib dinput8.lib  %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>libcrystalspace_d.lib;ws2_32.lib;zlib.lib;cal3d-vc10_d.lib;wininet.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <AdditionalLibraryDirectories>..\..\..\CS\out\debug10\libs;..\..\..\CS\winlibs\x86\lib;..\..\..\CS\win32libs\lib;$(CRYSTAL)\out\debug10\libs;$(CRYSTAL)\winlibs\x86\lib;$(CRYSTAL)\win32libs\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <TargetMachine>MachineX86</TargetMachine>
+      <LargeAddressAware>true</LargeAddressAware>
+    </Link>
+    <Lib>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Lib>
+    <PostBuildEvent>
+      <Command>md ..\..\out\debug10\bin 2&gt; nul
+copy /y "$(TargetPath)" ..\..\out\debug10\bin\
+</Command>
+    </PostBuildEvent>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;CS_DEBUG;CS_WIN32_CSCONFIG;__CRYSTAL_SPACE__;CS_SUPPORTS_MMX;_WINDOWS;CS_STATIC_LINKED;PROJECTGEN_VERSION=10;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.;..\..\src\client;..\..;..\..\include\msvc;..\..\include;..\..\src\client;..\..\src\server;..\..\src\common;..\..\src\tools\wordnet;..\..\src\tools\breakpad;..\..\src\tools\breakpad\third_party\linux\include;..\..\..\CS\include;..\..\..\CS\winlibs\x86\include;..\..\..\CS\win32libs\include;$(CRYSTAL)\include;$(CRYSTAL)\winlibs\x86\include;$(CRYSTAL)\win32libs\include</AdditionalIncludeDirectories>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+    <Manifest>
+      <AdditionalManifestFiles>..\..\mk\msvc\apppsclient_static.manifest</AdditionalManifestFiles>
+    </Manifest>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugWithDlls|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <MinimalRebuild>true</MinimalRebuild>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <ProgramDataBaseFileName>..\..\out\debug10\build\apppsclient_static\Win32\psclient_static.pdb</ProgramDataBaseFileName>
+      <PreprocessorDefinitions>_DEBUG;CS_DEBUG;CS_WIN32_CSCONFIG;__CRYSTAL_SPACE__;CS_SUPPORTS_MMX;_WINDOWS;CS_STATIC_LINKED;WIN32;CS_USE_SHARED_LIBS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalOptions>/D CS_HAVE_CAL3D  %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>.;..\..;..\..\include\msvc;..\..\include;..\..\src\client;..\..\src\server;..\..\src\common;..\..\src\tools\wordnet;..\..\src\tools\breakpad;..\..\src\tools\breakpad\third_party\linux\include;..\..\..\CS\include;..\..\..\CS\winlibs\x86\include;..\..\..\CS\win32libs\include;$(CRYSTAL)\include;$(CRYSTAL)\winlibs\x86\include;$(CRYSTAL)\win32libs\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PrecompiledHeaderOutputFile>..\..\out\debug10\build\apppsclient_static\apppsclient_static.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>..\..\out\debug10\build\apppsclient_static\</AssemblerListingLocation>
+      <ObjectFileName>..\..\out\debug10\build\apppsclient_static\</ObjectFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <ForceConformanceInForLoopScope>true</ForceConformanceInForLoopScope>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <CompileAs>Default</CompileAs>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>LIBC;LIBCD;LIBCMT;LIBCMTD;MSVCRT;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <OutputFile>..\..\psclient_static.exe</OutputFile>
+      <ProgramDatabaseFile>..\..\out\debug10\build\apppsclient_static\Win32\psclient_static.pdb</ProgramDatabaseFile>
+      <SubSystem>Console</SubSystem>
+      <AdditionalOptions>libmng.lib libjpeg.lib libpng.lib freetype2.lib cg.lib cgGL.lib vorbisfile.lib vorbis.lib openal32.lib speex.lib ogg.lib cal3d-vc10_d.lib libcrystalspace_windows_d.lib libcrystalspace_opengl_d.lib opengl32.lib version.lib libcrystalspace_staticplugins_d.lib libcrystalspace_d.lib libcrystalspace_directx_d.lib zlib.lib dsound.lib dinput8.lib  %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>libcrystalspace_d.lib;ws2_32.lib;zlib.lib;cal3d-vc10_d.lib;wininet.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <AdditionalLibraryDirectories>..\..\..\CS\out\debug10\libs;..\..\..\CS\winlibs\x86\lib;..\..\..\CS\win32libs\lib;$(CRYSTAL)\out\debug10\libs;$(CRYSTAL)\winlibs\x86\lib;$(CRYSTAL)\win32libs\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <TargetMachine>MachineX86</TargetMachine>
+      <LargeAddressAware>true</LargeAddressAware>
+    </Link>
+    <Lib>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Lib>
+    <PostBuildEvent>
+      <Command>md ..\..\out\debug10\bin 2&gt; nul
+copy /y "$(TargetPath)" ..\..\out\debug10\bin\
+</Command>
+    </PostBuildEvent>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;CS_DEBUG;CS_WIN32_CSCONFIG;__CRYSTAL_SPACE__;CS_SUPPORTS_MMX;_WINDOWS;CS_STATIC_LINKED;PROJECTGEN_VERSION=10;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.;..\..\src\client;..\..;..\..\include\msvc;..\..\include;..\..\src\client;..\..\src\server;..\..\src\common;..\..\src\tools\wordnet;..\..\src\tools\breakpad;..\..\src\tools\breakpad\third_party\linux\include;..\..\..\CS\include;..\..\..\CS\winlibs\x86\include;..\..\..\CS\win32libs\include;$(CRYSTAL)\include;$(CRYSTAL)\winlibs\x86\include;$(CRYSTAL)\win32libs\include</AdditionalIncludeDirectories>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+    <Manifest>
+      <AdditionalManifestFiles>..\..\mk\msvc\apppsclient_static.manifest</AdditionalManifestFiles>
+    </Manifest>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MemoryTrackerWithStaticLibs|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <MinimalRebuild>true</MinimalRebuild>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <ProgramDataBaseFileName>..\..\out\debug10\build\apppsclient_static\Win32\psclient_static.pdb</ProgramDataBaseFileName>
+      <PreprocessorDefinitions>_DEBUG;CS_DEBUG;CS_WIN32_CSCONFIG;__CRYSTAL_SPACE__;CS_SUPPORTS_MMX;CS_MEMORY_TRACKER;_WINDOWS;CS_STATIC_LINKED;WIN32;CS_USE_STATIC_LIBS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalOptions>/D CS_HAVE_CAL3D  %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>.;..\..;..\..\include\msvc;..\..\include;..\..\src\client;..\..\src\server;..\..\src\common;..\..\src\tools\wordnet;..\..\src\tools\breakpad;..\..\src\tools\breakpad\third_party\linux\include;..\..\..\CS\include;..\..\..\CS\winlibs\x86\include;..\..\..\CS\win32libs\include;$(CRYSTAL)\include;$(CRYSTAL)\winlibs\x86\include;$(CRYSTAL)\win32libs\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PrecompiledHeaderOutputFile>..\..\out\debug10\build\apppsclient_static\apppsclient_static.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>..\..\out\debug10\build\apppsclient_static\</AssemblerListingLocation>
+      <ObjectFileName>..\..\out\debug10\build\apppsclient_static\</ObjectFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <ForceConformanceInForLoopScope>true</ForceConformanceInForLoopScope>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <CompileAs>Default</CompileAs>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>LIBC;LIBCD;LIBCMT;LIBCMTD;MSVCRT;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <OutputFile>..\..\psclient_static.exe</OutputFile>
+      <ProgramDatabaseFile>..\..\out\debug10\build\apppsclient_static\Win32\psclient_static.pdb</ProgramDatabaseFile>
+      <SubSystem>Console</SubSystem>
+      <AdditionalOptions>libmng.lib libjpeg.lib libpng.lib freetype2.lib cg.lib cgGL.lib vorbisfile.lib vorbis.lib openal32.lib speex.lib ogg.lib cal3d-vc10_d.lib libcrystalspace_windows_d.lib libcrystalspace_opengl_d.lib opengl32.lib version.lib libcrystalspace_staticplugins_d.lib libcrystalspace_d.lib libcrystalspace_directx_d.lib zlib.lib dsound.lib dinput8.lib  %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>libcrystalspace_d.lib;ws2_32.lib;zlib.lib;cal3d-vc10_d.lib;wininet.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <AdditionalLibraryDirectories>..\..\..\CS\out\debug10\libs;..\..\..\CS\winlibs\x86\lib;..\..\..\CS\win32libs\lib;$(CRYSTAL)\out\debug10\libs;$(CRYSTAL)\winlibs\x86\lib;$(CRYSTAL)\win32libs\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <TargetMachine>MachineX86</TargetMachine>
+      <LargeAddressAware>true</LargeAddressAware>
+    </Link>
+    <Lib>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Lib>
+    <PostBuildEvent>
+      <Command>md ..\..\out\debug10\bin 2&gt; nul
+copy /y "$(TargetPath)" ..\..\out\debug10\bin\
+</Command>
+    </PostBuildEvent>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;CS_DEBUG;CS_WIN32_CSCONFIG;__CRYSTAL_SPACE__;CS_SUPPORTS_MMX;CS_MEMORY_TRACKER;_WINDOWS;CS_STATIC_LINKED;PROJECTGEN_VERSION=10;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.;..\..\src\client;..\..;..\..\include\msvc;..\..\include;..\..\src\client;..\..\src\server;..\..\src\common;..\..\src\tools\wordnet;..\..\src\tools\breakpad;..\..\src\tools\breakpad\third_party\linux\include;..\..\..\CS\include;..\..\..\CS\winlibs\x86\include;..\..\..\CS\win32libs\include;$(CRYSTAL)\include;$(CRYSTAL)\winlibs\x86\include;$(CRYSTAL)\win32libs\include</AdditionalIncludeDirectories>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+    <Manifest>
+      <AdditionalManifestFiles>..\..\mk\msvc\apppsclient_static.manifest</AdditionalManifestFiles>
+    </Manifest>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MemoryTrackerWithDlls|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <MinimalRebuild>true</MinimalRebuild>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <ProgramDataBaseFileName>..\..\out\debug10\build\apppsclient_static\Win32\psclient_static.pdb</ProgramDataBaseFileName>
+      <PreprocessorDefinitions>_DEBUG;CS_DEBUG;CS_WIN32_CSCONFIG;__CRYSTAL_SPACE__;CS_SUPPORTS_MMX;CS_MEMORY_TRACKER;_WINDOWS;CS_STATIC_LINKED;WIN32;CS_USE_SHARED_LIBS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalOptions>/D CS_HAVE_CAL3D  %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>.;..\..;..\..\include\msvc;..\..\include;..\..\src\client;..\..\src\server;..\..\src\common;..\..\src\tools\wordnet;..\..\src\tools\breakpad;..\..\src\tools\breakpad\third_party\linux\include;..\..\..\CS\include;..\..\..\CS\winlibs\x86\include;..\..\..\CS\win32libs\include;$(CRYSTAL)\include;$(CRYSTAL)\winlibs\x86\include;$(CRYSTAL)\win32libs\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PrecompiledHeaderOutputFile>..\..\out\debug10\build\apppsclient_static\apppsclient_static.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>..\..\out\debug10\build\apppsclient_static\</AssemblerListingLocation>
+      <ObjectFileName>..\..\out\debug10\build\apppsclient_static\</ObjectFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <ForceConformanceInForLoopScope>true</ForceConformanceInForLoopScope>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <CompileAs>Default</CompileAs>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>LIBC;LIBCD;LIBCMT;LIBCMTD;MSVCRT;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <OutputFile>..\..\psclient_static.exe</OutputFile>
+      <ProgramDatabaseFile>..\..\out\debug10\build\apppsclient_static\Win32\psclient_static.pdb</ProgramDatabaseFile>
+      <SubSystem>Console</SubSystem>
+      <AdditionalOptions>libmng.lib libjpeg.lib libpng.lib freetype2.lib cg.lib cgGL.lib vorbisfile.lib vorbis.lib openal32.lib speex.lib ogg.lib cal3d-vc10_d.lib libcrystalspace_windows_d.lib libcrystalspace_opengl_d.lib opengl32.lib version.lib libcrystalspace_staticplugins_d.lib libcrystalspace_d.lib libcrystalspace_directx_d.lib zlib.lib dsound.lib dinput8.lib  %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>libcrystalspace_d.lib;ws2_32.lib;zlib.lib;cal3d-vc10_d.lib;wininet.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <AdditionalLibraryDirectories>..\..\..\CS\out\debug10\libs;..\..\..\CS\winlibs\x86\lib;..\..\..\CS\win32libs\lib;$(CRYSTAL)\out\debug10\libs;$(CRYSTAL)\winlibs\x86\lib;$(CRYSTAL)\win32libs\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <TargetMachine>MachineX86</TargetMachine>
+      <LargeAddressAware>true</LargeAddressAware>
+    </Link>
+    <Lib>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Lib>
+    <PostBuildEvent>
+      <Command>md ..\..\out\debug10\bin 2&gt; nul
+copy /y "$(TargetPath)" ..\..\out\debug10\bin\
+</Command>
+    </PostBuildEvent>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;CS_DEBUG;CS_WIN32_CSCONFIG;__CRYSTAL_SPACE__;CS_SUPPORTS_MMX;CS_MEMORY_TRACKER;_WINDOWS;CS_STATIC_LINKED;PROJECTGEN_VERSION=10;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.;..\..\src\client;..\..;..\..\include\msvc;..\..\include;..\..\src\client;..\..\src\server;..\..\src\common;..\..\src\tools\wordnet;..\..\src\tools\breakpad;..\..\src\tools\breakpad\third_party\linux\include;..\..\..\CS\include;..\..\..\CS\winlibs\x86\include;..\..\..\CS\win32libs\include;$(CRYSTAL)\include;$(CRYSTAL)\winlibs\x86\include;$(CRYSTAL)\win32libs\include</AdditionalIncludeDirectories>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+    <Manifest>
+      <AdditionalManifestFiles>..\..\mk\msvc\apppsclient_static.manifest</AdditionalManifestFiles>
+    </Manifest>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RefTrackerWithStaticLibs|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <MinimalRebuild>true</MinimalRebuild>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <ProgramDataBaseFileName>..\..\out\debug10\build\apppsclient_static\Win32\psclient_static.pdb</ProgramDataBaseFileName>
+      <PreprocessorDefinitions>_DEBUG;CS_DEBUG;CS_WIN32_CSCONFIG;__CRYSTAL_SPACE__;CS_SUPPORTS_MMX;CS_REF_TRACKER;_WINDOWS;CS_STATIC_LINKED;WIN32;CS_USE_STATIC_LIBS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalOptions>/D CS_HAVE_CAL3D  %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>.;..\..;..\..\include\msvc;..\..\include;..\..\src\client;..\..\src\server;..\..\src\common;..\..\src\tools\wordnet;..\..\src\tools\breakpad;..\..\src\tools\breakpad\third_party\linux\include;..\..\..\CS\include;..\..\..\CS\winlibs\x86\include;..\..\..\CS\win32libs\include;$(CRYSTAL)\include;$(CRYSTAL)\winlibs\x86\include;$(CRYSTAL)\win32libs\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PrecompiledHeaderOutputFile>..\..\out\debug10\build\apppsclient_static\apppsclient_static.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>..\..\out\debug10\build\apppsclient_static\</AssemblerListingLocation>
+      <ObjectFileName>..\..\out\debug10\build\apppsclient_static\</ObjectFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <ForceConformanceInForLoopScope>true</ForceConformanceInForLoopScope>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <CompileAs>Default</CompileAs>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>LIBC;LIBCD;LIBCMT;LIBCMTD;MSVCRT;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <OutputFile>..\..\psclient_static.exe</OutputFile>
+      <ProgramDatabaseFile>..\..\out\debug10\build\apppsclient_static\Win32\psclient_static.pdb</ProgramDatabaseFile>
+      <SubSystem>Console</SubSystem>
+      <AdditionalOptions>libmng.lib libjpeg.lib libpng.lib freetype2.lib cg.lib cgGL.lib vorbisfile.lib vorbis.lib openal32.lib speex.lib ogg.lib cal3d-vc10_d.lib libcrystalspace_windows_d.lib libcrystalspace_opengl_d.lib opengl32.lib version.lib libcrystalspace_staticplugins_d.lib libcrystalspace_d.lib libcrystalspace_directx_d.lib zlib.lib dsound.lib dinput8.lib  %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>libcrystalspace_d.lib;ws2_32.lib;zlib.lib;cal3d-vc10_d.lib;wininet.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <AdditionalLibraryDirectories>..\..\..\CS\out\debug10\libs;..\..\..\CS\winlibs\x86\lib;..\..\..\CS\win32libs\lib;$(CRYSTAL)\out\debug10\libs;$(CRYSTAL)\winlibs\x86\lib;$(CRYSTAL)\win32libs\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <TargetMachine>MachineX86</TargetMachine>
+      <LargeAddressAware>true</LargeAddressAware>
+    </Link>
+    <Lib>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Lib>
+    <PostBuildEvent>
+      <Command>md ..\..\out\debug10\bin 2&gt; nul
+copy /y "$(TargetPath)" ..\..\out\debug10\bin\
+</Command>
+    </PostBuildEvent>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;CS_DEBUG;CS_WIN32_CSCONFIG;__CRYSTAL_SPACE__;CS_SUPPORTS_MMX;CS_REF_TRACKER;_WINDOWS;CS_STATIC_LINKED;PROJECTGEN_VERSION=10;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.;..\..\src\client;..\..;..\..\include\msvc;..\..\include;..\..\src\client;..\..\src\server;..\..\src\common;..\..\src\tools\wordnet;..\..\src\tools\breakpad;..\..\src\tools\breakpad\third_party\linux\include;..\..\..\CS\include;..\..\..\CS\winlibs\x86\include;..\..\..\CS\win32libs\include;$(CRYSTAL)\include;$(CRYSTAL)\winlibs\x86\include;$(CRYSTAL)\win32libs\include</AdditionalIncludeDirectories>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+    <Manifest>
+      <AdditionalManifestFiles>..\..\mk\msvc\apppsclient_static.manifest</AdditionalManifestFiles>
+    </Manifest>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RefTrackerWithDlls|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <MinimalRebuild>true</MinimalRebuild>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <ProgramDataBaseFileName>..\..\out\debug10\build\apppsclient_static\Win32\psclient_static.pdb</ProgramDataBaseFileName>
+      <PreprocessorDefinitions>_DEBUG;CS_DEBUG;CS_WIN32_CSCONFIG;__CRYSTAL_SPACE__;CS_SUPPORTS_MMX;CS_REF_TRACKER;_WINDOWS;CS_STATIC_LINKED;WIN32;CS_USE_SHARED_LIBS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalOptions>/D CS_HAVE_CAL3D  %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>.;..\..;..\..\include\msvc;..\..\include;..\..\src\client;..\..\src\server;..\..\src\common;..\..\src\tools\wordnet;..\..\src\tools\breakpad;..\..\src\tools\breakpad\third_party\linux\include;..\..\..\CS\include;..\..\..\CS\winlibs\x86\include;..\..\..\CS\win32libs\include;$(CRYSTAL)\include;$(CRYSTAL)\winlibs\x86\include;$(CRYSTAL)\win32libs\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PrecompiledHeaderOutputFile>..\..\out\debug10\build\apppsclient_static\apppsclient_static.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>..\..\out\debug10\build\apppsclient_static\</AssemblerListingLocation>
+      <ObjectFileName>..\..\out\debug10\build\apppsclient_static\</ObjectFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <ForceConformanceInForLoopScope>true</ForceConformanceInForLoopScope>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <CompileAs>Default</CompileAs>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>LIBC;LIBCD;LIBCMT;LIBCMTD;MSVCRT;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <OutputFile>..\..\psclient_static.exe</OutputFile>
+      <ProgramDatabaseFile>..\..\out\debug10\build\apppsclient_static\Win32\psclient_static.pdb</ProgramDatabaseFile>
+      <SubSystem>Console</SubSystem>
+      <AdditionalOptions>libmng.lib libjpeg.lib libpng.lib freetype2.lib cg.lib cgGL.lib vorbisfile.lib vorbis.lib openal32.lib speex.lib ogg.lib cal3d-vc10_d.lib libcrystalspace_windows_d.lib libcrystalspace_opengl_d.lib opengl32.lib version.lib libcrystalspace_staticplugins_d.lib libcrystalspace_d.lib libcrystalspace_directx_d.lib zlib.lib dsound.lib dinput8.lib  %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>libcrystalspace_d.lib;ws2_32.lib;zlib.lib;cal3d-vc10_d.lib;wininet.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <AdditionalLibraryDirectories>..\..\..\CS\out\debug10\libs;..\..\..\CS\winlibs\x86\lib;..\..\..\CS\win32libs\lib;$(CRYSTAL)\out\debug10\libs;$(CRYSTAL)\winlibs\x86\lib;$(CRYSTAL)\win32libs\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <TargetMachine>MachineX86</TargetMachine>
+      <LargeAddressAware>true</LargeAddressAware>
+    </Link>
+    <Lib>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Lib>
+    <PostBuildEvent>
+      <Command>md ..\..\out\debug10\bin 2&gt; nul
+copy /y "$(TargetPath)" ..\..\out\debug10\bin\
+</Command>
+    </PostBuildEvent>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;CS_DEBUG;CS_WIN32_CSCONFIG;__CRYSTAL_SPACE__;CS_SUPPORTS_MMX;CS_REF_TRACKER;_WINDOWS;CS_STATIC_LINKED;PROJECTGEN_VERSION=10;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.;..\..\src\client;..\..;..\..\include\msvc;..\..\include;..\..\src\client;..\..\src\server;..\..\src\common;..\..\src\tools\wordnet;..\..\src\tools\breakpad;..\..\src\tools\breakpad\third_party\linux\include;..\..\..\CS\include;..\..\..\CS\winlibs\x86\include;..\..\..\CS\win32libs\include;$(CRYSTAL)\include;$(CRYSTAL)\winlibs\x86\include;$(CRYSTAL)\win32libs\include</AdditionalIncludeDirectories>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+    <Manifest>
+      <AdditionalManifestFiles>..\..\mk\msvc\apppsclient_static.manifest</AdditionalManifestFiles>
+    </Manifest>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ThreadCheckerWithStaticLibs|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <MinimalRebuild>true</MinimalRebuild>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <ProgramDataBaseFileName>..\..\out\debug10\build\apppsclient_static\Win32\psclient_static.pdb</ProgramDataBaseFileName>
+      <PreprocessorDefinitions>_DEBUG;CS_DEBUG;CS_WIN32_CSCONFIG;__CRYSTAL_SPACE__;CS_SUPPORTS_MMX;CS_THREAD_CHECKER;_WINDOWS;CS_STATIC_LINKED;WIN32;CS_USE_STATIC_LIBS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalOptions>/D CS_HAVE_CAL3D  %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>.;..\..;..\..\include\msvc;..\..\include;..\..\src\client;..\..\src\server;..\..\src\common;..\..\src\tools\wordnet;..\..\src\tools\breakpad;..\..\src\tools\breakpad\third_party\linux\include;..\..\..\CS\include;..\..\..\CS\winlibs\x86\include;..\..\..\CS\win32libs\include;$(CRYSTAL)\include;$(CRYSTAL)\winlibs\x86\include;$(CRYSTAL)\win32libs\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PrecompiledHeaderOutputFile>..\..\out\debug10\build\apppsclient_static\apppsclient_static.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>..\..\out\debug10\build\apppsclient_static\</AssemblerListingLocation>
+      <ObjectFileName>..\..\out\debug10\build\apppsclient_static\</ObjectFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <ForceConformanceInForLoopScope>true</ForceConformanceInForLoopScope>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <CompileAs>Default</CompileAs>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>LIBC;LIBCD;LIBCMT;LIBCMTD;MSVCRT;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <OutputFile>..\..\psclient_static.exe</OutputFile>
+      <ProgramDatabaseFile>..\..\out\debug10\build\apppsclient_static\Win32\psclient_static.pdb</ProgramDatabaseFile>
+      <SubSystem>Console</SubSystem>
+      <AdditionalOptions>libmng.lib libjpeg.lib libpng.lib freetype2.lib cg.lib cgGL.lib vorbisfile.lib vorbis.lib openal32.lib speex.lib ogg.lib cal3d-vc10_d.lib libcrystalspace_windows_d.lib libcrystalspace_opengl_d.lib opengl32.lib version.lib libcrystalspace_staticplugins_d.lib libcrystalspace_d.lib libcrystalspace_directx_d.lib zlib.lib dsound.lib dinput8.lib  %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>libcrystalspace_d.lib;ws2_32.lib;zlib.lib;cal3d-vc10_d.lib;wininet.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <AdditionalLibraryDirectories>..\..\..\CS\out\debug10\libs;..\..\..\CS\winlibs\x86\lib;..\..\..\CS\win32libs\lib;$(CRYSTAL)\out\debug10\libs;$(CRYSTAL)\winlibs\x86\lib;$(CRYSTAL)\win32libs\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <TargetMachine>MachineX86</TargetMachine>
+      <LargeAddressAware>true</LargeAddressAware>
+    </Link>
+    <Lib>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Lib>
+    <PostBuildEvent>
+      <Command>md ..\..\out\debug10\bin 2&gt; nul
+copy /y "$(TargetPath)" ..\..\out\debug10\bin\
+</Command>
+    </PostBuildEvent>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;CS_DEBUG;CS_WIN32_CSCONFIG;__CRYSTAL_SPACE__;CS_SUPPORTS_MMX;CS_THREAD_CHECKER;_WINDOWS;CS_STATIC_LINKED;PROJECTGEN_VERSION=10;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.;..\..\src\client;..\..;..\..\include\msvc;..\..\include;..\..\src\client;..\..\src\server;..\..\src\common;..\..\src\tools\wordnet;..\..\src\tools\breakpad;..\..\src\tools\breakpad\third_party\linux\include;..\..\..\CS\include;..\..\..\CS\winlibs\x86\include;..\..\..\CS\win32libs\include;$(CRYSTAL)\include;$(CRYSTAL)\winlibs\x86\include;$(CRYSTAL)\win32libs\include</AdditionalIncludeDirectories>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+    <Manifest>
+      <AdditionalManifestFiles>..\..\mk\msvc\apppsclient_static.manifest</AdditionalManifestFiles>
+    </Manifest>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ThreadCheckerWithDlls|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <MinimalRebuild>true</MinimalRebuild>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <ProgramDataBaseFileName>..\..\out\debug10\build\apppsclient_static\Win32\psclient_static.pdb</ProgramDataBaseFileName>
+      <PreprocessorDefinitions>_DEBUG;CS_DEBUG;CS_WIN32_CSCONFIG;__CRYSTAL_SPACE__;CS_SUPPORTS_MMX;CS_THREAD_CHECKER;_WINDOWS;CS_STATIC_LINKED;WIN32;CS_USE_SHARED_LIBS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalOptions>/D CS_HAVE_CAL3D  %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>.;..\..;..\..\include\msvc;..\..\include;..\..\src\client;..\..\src\server;..\..\src\common;..\..\src\tools\wordnet;..\..\src\tools\breakpad;..\..\src\tools\breakpad\third_party\linux\include;..\..\..\CS\include;..\..\..\CS\winlibs\x86\include;..\..\..\CS\win32libs\include;$(CRYSTAL)\include;$(CRYSTAL)\winlibs\x86\include;$(CRYSTAL)\win32libs\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PrecompiledHeaderOutputFile>..\..\out\debug10\build\apppsclient_static\apppsclient_static.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>..\..\out\debug10\build\apppsclient_static\</AssemblerListingLocation>
+      <ObjectFileName>..\..\out\debug10\build\apppsclient_static\</ObjectFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <ForceConformanceInForLoopScope>true</ForceConformanceInForLoopScope>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <CompileAs>Default</CompileAs>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>LIBC;LIBCD;LIBCMT;LIBCMTD;MSVCRT;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <OutputFile>..\..\psclient_static.exe</OutputFile>
+      <ProgramDatabaseFile>..\..\out\debug10\build\apppsclient_static\Win32\psclient_static.pdb</ProgramDatabaseFile>
+      <SubSystem>Console</SubSystem>
+      <AdditionalOptions>libmng.lib libjpeg.lib libpng.lib freetype2.lib cg.lib cgGL.lib vorbisfile.lib vorbis.lib openal32.lib speex.lib ogg.lib cal3d-vc10_d.lib libcrystalspace_windows_d.lib libcrystalspace_opengl_d.lib opengl32.lib version.lib libcrystalspace_staticplugins_d.lib libcrystalspace_d.lib libcrystalspace_directx_d.lib zlib.lib dsound.lib dinput8.lib  %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>libcrystalspace_d.lib;ws2_32.lib;zlib.lib;cal3d-vc10_d.lib;wininet.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <AdditionalLibraryDirectories>..\..\..\CS\out\debug10\libs;..\..\..\CS\winlibs\x86\lib;..\..\..\CS\win32libs\lib;$(CRYSTAL)\out\debug10\libs;$(CRYSTAL)\winlibs\x86\lib;$(CRYSTAL)\win32libs\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <TargetMachine>MachineX86</TargetMachine>
+      <LargeAddressAware>true</LargeAddressAware>
+    </Link>
+    <Lib>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Lib>
+    <PostBuildEvent>
+      <Command>md ..\..\out\debug10\bin 2&gt; nul
+copy /y "$(TargetPath)" ..\..\out\debug10\bin\
+</Command>
+    </PostBuildEvent>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;CS_DEBUG;CS_WIN32_CSCONFIG;__CRYSTAL_SPACE__;CS_SUPPORTS_MMX;CS_THREAD_CHECKER;_WINDOWS;CS_STATIC_LINKED;PROJECTGEN_VERSION=10;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.;..\..\src\client;..\..;..\..\include\msvc;..\..\include;..\..\src\client;..\..\src\server;..\..\src\common;..\..\src\tools\wordnet;..\..\src\tools\breakpad;..\..\src\tools\breakpad\third_party\linux\include;..\..\..\CS\include;..\..\..\CS\winlibs\x86\include;..\..\..\CS\win32libs\include;$(CRYSTAL)\include;$(CRYSTAL)\winlibs\x86\include;$(CRYSTAL)\win32libs\include</AdditionalIncludeDirectories>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+    <Manifest>
+      <AdditionalManifestFiles>..\..\mk\msvc\apppsclient_static.manifest</AdditionalManifestFiles>
+    </Manifest>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugPSReleaseCSCELWithStaticLibs|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <MinimalRebuild>true</MinimalRebuild>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <ProgramDataBaseFileName>..\..\out\debug10\build\apppsclient_static\Win32\psclient_static.pdb</ProgramDataBaseFileName>
+      <PreprocessorDefinitions>NDEBUG;CS_WIN32_CSCONFIG;__CRYSTAL_SPACE__;CS_SUPPORTS_MMX;_WINDOWS;CS_STATIC_LINKED;WIN32;CS_USE_STATIC_LIBS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalOptions>/D CS_HAVE_CAL3D  %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>.;..\..;..\..\include\msvc;..\..\include;..\..\src\client;..\..\src\server;..\..\src\common;..\..\src\tools\wordnet;..\..\src\tools\breakpad;..\..\src\tools\breakpad\third_party\linux\include;..\..\..\CS\include;..\..\..\CS\winlibs\x86\include;..\..\..\CS\win32libs\include;$(CRYSTAL)\include;$(CRYSTAL)\winlibs\x86\include;$(CRYSTAL)\win32libs\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PrecompiledHeaderOutputFile>..\..\out\debug10\build\apppsclient_static\apppsclient_static.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>..\..\out\debug10\build\apppsclient_static\</AssemblerListingLocation>
+      <ObjectFileName>..\..\out\debug10\build\apppsclient_static\</ObjectFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <ForceConformanceInForLoopScope>true</ForceConformanceInForLoopScope>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <CompileAs>Default</CompileAs>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>LIBC;LIBCD;LIBCMT;LIBCMTD;MSVCRT;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <OutputFile>..\..\psclient_static.exe</OutputFile>
+      <ProgramDatabaseFile>..\..\out\debug10\build\apppsclient_static\Win32\psclient_static.pdb</ProgramDatabaseFile>
+      <SubSystem>Console</SubSystem>
+      <AdditionalOptions>libmng.lib libjpeg.lib libpng.lib freetype2.lib cg.lib cgGL.lib vorbisfile.lib vorbis.lib openal32.lib speex.lib ogg.lib cal3d-vc10_d.lib libcrystalspace_windows_d.lib libcrystalspace_opengl_d.lib opengl32.lib version.lib libcrystalspace_staticplugins_d.lib libcrystalspace_d.lib libcrystalspace_directx_d.lib zlib.lib dsound.lib dinput8.lib  %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>libcrystalspace.lib;ws2_32.lib;zlib.lib;cal3d-vc10.lib;wininet.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <AdditionalLibraryDirectories>..\..\..\CS\out\release10\libs;..\..\..\CS\winlibs\x86\lib;..\..\..\CS\win32libs\lib;$(CRYSTAL)\out\release10\libs;$(CRYSTAL)\winlibs\x86\lib;$(CRYSTAL)\win32libs\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <TargetMachine>MachineX86</TargetMachine>
+      <LargeAddressAware>true</LargeAddressAware>
+    </Link>
+    <Lib>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Lib>
+    <PostBuildEvent>
+      <Command>md ..\..\out\debug10\bin 2&gt; nul
+copy /y "$(TargetPath)" ..\..\out\debug10\bin\
+</Command>
+    </PostBuildEvent>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;CS_WIN32_CSCONFIG;__CRYSTAL_SPACE__;CS_SUPPORTS_MMX;_WINDOWS;CS_STATIC_LINKED;PROJECTGEN_VERSION=10;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.;..\..\src\client;..\..;..\..\include\msvc;..\..\include;..\..\src\client;..\..\src\server;..\..\src\common;..\..\src\tools\wordnet;..\..\src\tools\breakpad;..\..\src\tools\breakpad\third_party\linux\include;..\..\..\CS\include;..\..\..\CS\winlibs\x86\include;..\..\..\CS\win32libs\include;$(CRYSTAL)\include;$(CRYSTAL)\winlibs\x86\include;$(CRYSTAL)\win32libs\include</AdditionalIncludeDirectories>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+    <Manifest>
+      <AdditionalManifestFiles>..\..\mk\msvc\apppsclient_static.manifest</AdditionalManifestFiles>
+    </Manifest>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugPSReleaseCSCELWithDlls|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <MinimalRebuild>true</MinimalRebuild>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <ProgramDataBaseFileName>..\..\out\debug10\build\apppsclient_static\Win32\psclient_static.pdb</ProgramDataBaseFileName>
+      <PreprocessorDefinitions>NDEBUG;CS_WIN32_CSCONFIG;__CRYSTAL_SPACE__;CS_SUPPORTS_MMX;_WINDOWS;CS_STATIC_LINKED;WIN32;CS_USE_SHARED_LIBS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalOptions>/D CS_HAVE_CAL3D  %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>.;..\..;..\..\include\msvc;..\..\include;..\..\src\client;..\..\src\server;..\..\src\common;..\..\src\tools\wordnet;..\..\src\tools\breakpad;..\..\src\tools\breakpad\third_party\linux\include;..\..\..\CS\include;..\..\..\CS\winlibs\x86\include;..\..\..\CS\win32libs\include;$(CRYSTAL)\include;$(CRYSTAL)\winlibs\x86\include;$(CRYSTAL)\win32libs\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PrecompiledHeaderOutputFile>..\..\out\debug10\build\apppsclient_static\apppsclient_static.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>..\..\out\debug10\build\apppsclient_static\</AssemblerListingLocation>
+      <ObjectFileName>..\..\out\debug10\build\apppsclient_static\</ObjectFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <ForceConformanceInForLoopScope>true</ForceConformanceInForLoopScope>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <CompileAs>Default</CompileAs>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>LIBC;LIBCD;LIBCMT;LIBCMTD;MSVCRT;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <OutputFile>..\..\psclient_static.exe</OutputFile>
+      <ProgramDatabaseFile>..\..\out\debug10\build\apppsclient_static\Win32\psclient_static.pdb</ProgramDatabaseFile>
+      <SubSystem>Console</SubSystem>
+      <AdditionalOptions>libmng.lib libjpeg.lib libpng.lib freetype2.lib cg.lib cgGL.lib vorbisfile.lib vorbis.lib openal32.lib speex.lib ogg.lib cal3d-vc10_d.lib libcrystalspace_windows_d.lib libcrystalspace_opengl_d.lib opengl32.lib version.lib libcrystalspace_staticplugins_d.lib libcrystalspace_d.lib libcrystalspace_directx_d.lib zlib.lib dsound.lib dinput8.lib  %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>libcrystalspace.lib;ws2_32.lib;zlib.lib;cal3d-vc10.lib;wininet.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <AdditionalLibraryDirectories>..\..\..\CS\out\release10\libs;..\..\..\CS\winlibs\x86\lib;..\..\..\CS\win32libs\lib;$(CRYSTAL)\out\release10\libs;$(CRYSTAL)\winlibs\x86\lib;$(CRYSTAL)\win32libs\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <TargetMachine>MachineX86</TargetMachine>
+      <LargeAddressAware>true</LargeAddressAware>
+    </Link>
+    <Lib>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Lib>
+    <PostBuildEvent>
+      <Command>md ..\..\out\debug10\bin 2&gt; nul
+copy /y "$(TargetPath)" ..\..\out\debug10\bin\
+</Command>
+    </PostBuildEvent>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;CS_WIN32_CSCONFIG;__CRYSTAL_SPACE__;CS_SUPPORTS_MMX;_WINDOWS;CS_STATIC_LINKED;PROJECTGEN_VERSION=10;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.;..\..\src\client;..\..;..\..\include\msvc;..\..\include;..\..\src\client;..\..\src\server;..\..\src\common;..\..\src\tools\wordnet;..\..\src\tools\breakpad;..\..\src\tools\breakpad\third_party\linux\include;..\..\..\CS\include;..\..\..\CS\winlibs\x86\include;..\..\..\CS\win32libs\include;$(CRYSTAL)\include;$(CRYSTAL)\winlibs\x86\include;$(CRYSTAL)\win32libs\include</AdditionalIncludeDirectories>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+    <Manifest>
+      <AdditionalManifestFiles>..\..\mk\msvc\apppsclient_static.manifest</AdditionalManifestFiles>
+    </Manifest>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseWithStaticLibs|x64'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <StringPooling>true</StringPooling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <ProgramDataBaseFileName>..\..\out\release10-x64\build\apppsclient_static\x64\psclient_static.pdb</ProgramDataBaseFileName>
+      <PreprocessorDefinitions>NDEBUG;CS_WIN32_CSCONFIG;__CRYSTAL_SPACE__;CS_SUPPORTS_MMX;_WINDOWS;CS_STATIC_LINKED;WIN32;CS_USE_STATIC_LIBS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalOptions>/D CS_HAVE_CAL3D  %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>.;..\..;..\..\include\msvc;..\..\include;..\..\src\client;..\..\src\server;..\..\src\common;..\..\src\tools\wordnet;..\..\src\tools\breakpad;..\..\src\tools\breakpad\third_party\linux\include;..\..\..\CS\include;..\..\..\CS\winlibs\x64\include;..\..\..\CS\win32libs\include;$(CRYSTAL)\include;$(CRYSTAL)\winlibs\x64\include;$(CRYSTAL)\win32libs\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PrecompiledHeaderOutputFile>..\..\out\release10-x64\build\apppsclient_static\apppsclient_static.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>..\..\out\release10-x64\build\apppsclient_static\</AssemblerListingLocation>
+      <ObjectFileName>..\..\out\release10-x64\build\apppsclient_static\</ObjectFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <ForceConformanceInForLoopScope>true</ForceConformanceInForLoopScope>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <CompileAs>Default</CompileAs>
+    </ClCompile>
+    <Link>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>LIBC;LIBCD;LIBCMT;LIBCMTD;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <OutputFile>..\..\psclient_static.exe</OutputFile>
+      <ProgramDatabaseFile>..\..\out\release10-x64\build\apppsclient_static\x64\psclient_static.pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <AdditionalOptions>libmng.lib libjpeg.lib libpng.lib freetype2.lib cg.lib cgGL.lib vorbisfile.lib vorbis.lib openal32.lib speex.lib ogg.lib cal3d-vc10.lib libcrystalspace_windows.lib libcrystalspace_opengl.lib opengl32.lib version.lib libcrystalspace_staticplugins.lib libcrystalspace.lib libcrystalspace_directx.lib zlib.lib dsound.lib dinput8.lib  %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>libcrystalspace.lib;ws2_32.lib;zlib.lib;cal3d-vc10.lib;wininet.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <AdditionalLibraryDirectories>..\..\..\CS\out\release10-x64\libs;..\..\..\CS\winlibs\x64\lib;..\..\..\CS\win32libs\lib;$(CRYSTAL)\out\release10-x64\libs;$(CRYSTAL)\winlibs\x64\lib;$(CRYSTAL)\win32libs\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <TargetMachine>MachineX64</TargetMachine>
+      <LargeAddressAware>true</LargeAddressAware>
+    </Link>
+    <Lib>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetMachine>MachineX64</TargetMachine>
+    </Lib>
+    <PostBuildEvent>
+      <Command>md ..\..\out\release10-x64\bin 2&gt; nul
+copy /y "$(TargetPath)" ..\..\out\release10-x64\bin\
+</Command>
+    </PostBuildEvent>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;CS_WIN32_CSCONFIG;__CRYSTAL_SPACE__;CS_SUPPORTS_MMX;_WINDOWS;CS_STATIC_LINKED;_WIN64;PROJECTGEN_VERSION=10;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.;..\..\src\client;..\..;..\..\include\msvc;..\..\include;..\..\src\client;..\..\src\server;..\..\src\common;..\..\src\tools\wordnet;..\..\src\tools\breakpad;..\..\src\tools\breakpad\third_party\linux\include;..\..\..\CS\include;..\..\..\CS\winlibs\x64\include;..\..\..\CS\win32libs\include;$(CRYSTAL)\include;$(CRYSTAL)\winlibs\x64\include;$(CRYSTAL)\win32libs\include</AdditionalIncludeDirectories>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+    <Manifest>
+      <AdditionalManifestFiles>..\..\mk\msvc\apppsclient_static-x64.manifest</AdditionalManifestFiles>
+    </Manifest>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseWithDlls|x64'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <StringPooling>true</StringPooling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <ProgramDataBaseFileName>..\..\out\release10-x64\build\apppsclient_static\x64\psclient_static.pdb</ProgramDataBaseFileName>
+      <PreprocessorDefinitions>NDEBUG;CS_WIN32_CSCONFIG;__CRYSTAL_SPACE__;CS_SUPPORTS_MMX;_WINDOWS;CS_STATIC_LINKED;WIN32;CS_USE_SHARED_LIBS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalOptions>/D CS_HAVE_CAL3D  %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>.;..\..;..\..\include\msvc;..\..\include;..\..\src\client;..\..\src\server;..\..\src\common;..\..\src\tools\wordnet;..\..\src\tools\breakpad;..\..\src\tools\breakpad\third_party\linux\include;..\..\..\CS\include;..\..\..\CS\winlibs\x64\include;..\..\..\CS\win32libs\include;$(CRYSTAL)\include;$(CRYSTAL)\winlibs\x64\include;$(CRYSTAL)\win32libs\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PrecompiledHeaderOutputFile>..\..\out\release10-x64\build\apppsclient_static\apppsclient_static.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>..\..\out\release10-x64\build\apppsclient_static\</AssemblerListingLocation>
+      <ObjectFileName>..\..\out\release10-x64\build\apppsclient_static\</ObjectFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <ForceConformanceInForLoopScope>true</ForceConformanceInForLoopScope>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <CompileAs>Default</CompileAs>
+    </ClCompile>
+    <Link>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>LIBC;LIBCD;LIBCMT;LIBCMTD;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <OutputFile>..\..\psclient_static.exe</OutputFile>
+      <ProgramDatabaseFile>..\..\out\release10-x64\build\apppsclient_static\x64\psclient_static.pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <AdditionalOptions>libmng.lib libjpeg.lib libpng.lib freetype2.lib cg.lib cgGL.lib vorbisfile.lib vorbis.lib openal32.lib speex.lib ogg.lib cal3d-vc10.lib libcrystalspace_windows.lib libcrystalspace_opengl.lib opengl32.lib version.lib libcrystalspace_staticplugins.lib libcrystalspace.lib libcrystalspace_directx.lib zlib.lib dsound.lib dinput8.lib  %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>libcrystalspace.lib;ws2_32.lib;zlib.lib;cal3d-vc10.lib;wininet.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <AdditionalLibraryDirectories>..\..\..\CS\out\release10-x64\libs;..\..\..\CS\winlibs\x64\lib;..\..\..\CS\win32libs\lib;$(CRYSTAL)\out\release10-x64\libs;$(CRYSTAL)\winlibs\x64\lib;$(CRYSTAL)\win32libs\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <TargetMachine>MachineX64</TargetMachine>
+      <LargeAddressAware>true</LargeAddressAware>
+    </Link>
+    <Lib>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetMachine>MachineX64</TargetMachine>
+    </Lib>
+    <PostBuildEvent>
+      <Command>md ..\..\out\release10-x64\bin 2&gt; nul
+copy /y "$(TargetPath)" ..\..\out\release10-x64\bin\
+</Command>
+    </PostBuildEvent>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;CS_WIN32_CSCONFIG;__CRYSTAL_SPACE__;CS_SUPPORTS_MMX;_WINDOWS;CS_STATIC_LINKED;_WIN64;PROJECTGEN_VERSION=10;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.;..\..\src\client;..\..;..\..\include\msvc;..\..\include;..\..\src\client;..\..\src\server;..\..\src\common;..\..\src\tools\wordnet;..\..\src\tools\breakpad;..\..\src\tools\breakpad\third_party\linux\include;..\..\..\CS\include;..\..\..\CS\winlibs\x64\include;..\..\..\CS\win32libs\include;$(CRYSTAL)\include;$(CRYSTAL)\winlibs\x64\include;$(CRYSTAL)\win32libs\include</AdditionalIncludeDirectories>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+    <Manifest>
+      <AdditionalManifestFiles>..\..\mk\msvc\apppsclient_static-x64.manifest</AdditionalManifestFiles>
+    </Manifest>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugWithStaticLibs|x64'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <MinimalRebuild>true</MinimalRebuild>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <ProgramDataBaseFileName>..\..\out\debug10-x64\build\apppsclient_static\x64\psclient_static.pdb</ProgramDataBaseFileName>
+      <PreprocessorDefinitions>_DEBUG;CS_DEBUG;CS_WIN32_CSCONFIG;__CRYSTAL_SPACE__;CS_SUPPORTS_MMX;_WINDOWS;CS_STATIC_LINKED;WIN32;CS_USE_STATIC_LIBS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalOptions>/D CS_HAVE_CAL3D  %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>.;..\..;..\..\include\msvc;..\..\include;..\..\src\client;..\..\src\server;..\..\src\common;..\..\src\tools\wordnet;..\..\src\tools\breakpad;..\..\src\tools\breakpad\third_party\linux\include;..\..\..\CS\include;..\..\..\CS\winlibs\x64\include;..\..\..\CS\win32libs\include;$(CRYSTAL)\include;$(CRYSTAL)\winlibs\x64\include;$(CRYSTAL)\win32libs\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PrecompiledHeaderOutputFile>..\..\out\debug10-x64\build\apppsclient_static\apppsclient_static.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>..\..\out\debug10-x64\build\apppsclient_static\</AssemblerListingLocation>
+      <ObjectFileName>..\..\out\debug10-x64\build\apppsclient_static\</ObjectFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <ForceConformanceInForLoopScope>true</ForceConformanceInForLoopScope>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <CompileAs>Default</CompileAs>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>LIBC;LIBCD;LIBCMT;LIBCMTD;MSVCRT;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <OutputFile>..\..\psclient_static.exe</OutputFile>
+      <ProgramDatabaseFile>..\..\out\debug10-x64\build\apppsclient_static\x64\psclient_static.pdb</ProgramDatabaseFile>
+      <SubSystem>Console</SubSystem>
+      <AdditionalOptions>libmng.lib libjpeg.lib libpng.lib freetype2.lib cg.lib cgGL.lib vorbisfile.lib vorbis.lib openal32.lib speex.lib ogg.lib cal3d-vc10_d.lib libcrystalspace_windows_d.lib libcrystalspace_opengl_d.lib opengl32.lib version.lib libcrystalspace_staticplugins_d.lib libcrystalspace_d.lib libcrystalspace_directx_d.lib zlib.lib dsound.lib dinput8.lib  %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>libcrystalspace_d.lib;ws2_32.lib;zlib.lib;cal3d-vc10_d.lib;wininet.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <AdditionalLibraryDirectories>..\..\..\CS\out\debug10-x64\libs;..\..\..\CS\winlibs\x64\lib;..\..\..\CS\win32libs\lib;$(CRYSTAL)\out\debug10-x64\libs;$(CRYSTAL)\winlibs\x64\lib;$(CRYSTAL)\win32libs\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <TargetMachine>MachineX64</TargetMachine>
+      <LargeAddressAware>true</LargeAddressAware>
+    </Link>
+    <Lib>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetMachine>MachineX64</TargetMachine>
+    </Lib>
+    <PostBuildEvent>
+      <Command>md ..\..\out\debug10-x64\bin 2&gt; nul
+copy /y "$(TargetPath)" ..\..\out\debug10-x64\bin\
+</Command>
+    </PostBuildEvent>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;CS_DEBUG;CS_WIN32_CSCONFIG;__CRYSTAL_SPACE__;CS_SUPPORTS_MMX;_WINDOWS;CS_STATIC_LINKED;_WIN64;PROJECTGEN_VERSION=10;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.;..\..\src\client;..\..;..\..\include\msvc;..\..\include;..\..\src\client;..\..\src\server;..\..\src\common;..\..\src\tools\wordnet;..\..\src\tools\breakpad;..\..\src\tools\breakpad\third_party\linux\include;..\..\..\CS\include;..\..\..\CS\winlibs\x64\include;..\..\..\CS\win32libs\include;$(CRYSTAL)\include;$(CRYSTAL)\winlibs\x64\include;$(CRYSTAL)\win32libs\include</AdditionalIncludeDirectories>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+    <Manifest>
+      <AdditionalManifestFiles>..\..\mk\msvc\apppsclient_static-x64.manifest</AdditionalManifestFiles>
+    </Manifest>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugWithDlls|x64'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <MinimalRebuild>true</MinimalRebuild>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <ProgramDataBaseFileName>..\..\out\debug10-x64\build\apppsclient_static\x64\psclient_static.pdb</ProgramDataBaseFileName>
+      <PreprocessorDefinitions>_DEBUG;CS_DEBUG;CS_WIN32_CSCONFIG;__CRYSTAL_SPACE__;CS_SUPPORTS_MMX;_WINDOWS;CS_STATIC_LINKED;WIN32;CS_USE_SHARED_LIBS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalOptions>/D CS_HAVE_CAL3D  %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>.;..\..;..\..\include\msvc;..\..\include;..\..\src\client;..\..\src\server;..\..\src\common;..\..\src\tools\wordnet;..\..\src\tools\breakpad;..\..\src\tools\breakpad\third_party\linux\include;..\..\..\CS\include;..\..\..\CS\winlibs\x64\include;..\..\..\CS\win32libs\include;$(CRYSTAL)\include;$(CRYSTAL)\winlibs\x64\include;$(CRYSTAL)\win32libs\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PrecompiledHeaderOutputFile>..\..\out\debug10-x64\build\apppsclient_static\apppsclient_static.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>..\..\out\debug10-x64\build\apppsclient_static\</AssemblerListingLocation>
+      <ObjectFileName>..\..\out\debug10-x64\build\apppsclient_static\</ObjectFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <ForceConformanceInForLoopScope>true</ForceConformanceInForLoopScope>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <CompileAs>Default</CompileAs>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>LIBC;LIBCD;LIBCMT;LIBCMTD;MSVCRT;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <OutputFile>..\..\psclient_static.exe</OutputFile>
+      <ProgramDatabaseFile>..\..\out\debug10-x64\build\apppsclient_static\x64\psclient_static.pdb</ProgramDatabaseFile>
+      <SubSystem>Console</SubSystem>
+      <AdditionalOptions>libmng.lib libjpeg.lib libpng.lib freetype2.lib cg.lib cgGL.lib vorbisfile.lib vorbis.lib openal32.lib speex.lib ogg.lib cal3d-vc10_d.lib libcrystalspace_windows_d.lib libcrystalspace_opengl_d.lib opengl32.lib version.lib libcrystalspace_staticplugins_d.lib libcrystalspace_d.lib libcrystalspace_directx_d.lib zlib.lib dsound.lib dinput8.lib  %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>libcrystalspace_d.lib;ws2_32.lib;zlib.lib;cal3d-vc10_d.lib;wininet.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <AdditionalLibraryDirectories>..\..\..\CS\out\debug10-x64\libs;..\..\..\CS\winlibs\x64\lib;..\..\..\CS\win32libs\lib;$(CRYSTAL)\out\debug10-x64\libs;$(CRYSTAL)\winlibs\x64\lib;$(CRYSTAL)\win32libs\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <TargetMachine>MachineX64</TargetMachine>
+      <LargeAddressAware>true</LargeAddressAware>
+    </Link>
+    <Lib>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetMachine>MachineX64</TargetMachine>
+    </Lib>
+    <PostBuildEvent>
+      <Command>md ..\..\out\debug10-x64\bin 2&gt; nul
+copy /y "$(TargetPath)" ..\..\out\debug10-x64\bin\
+</Command>
+    </PostBuildEvent>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;CS_DEBUG;CS_WIN32_CSCONFIG;__CRYSTAL_SPACE__;CS_SUPPORTS_MMX;_WINDOWS;CS_STATIC_LINKED;_WIN64;PROJECTGEN_VERSION=10;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.;..\..\src\client;..\..;..\..\include\msvc;..\..\include;..\..\src\client;..\..\src\server;..\..\src\common;..\..\src\tools\wordnet;..\..\src\tools\breakpad;..\..\src\tools\breakpad\third_party\linux\include;..\..\..\CS\include;..\..\..\CS\winlibs\x64\include;..\..\..\CS\win32libs\include;$(CRYSTAL)\include;$(CRYSTAL)\winlibs\x64\include;$(CRYSTAL)\win32libs\include</AdditionalIncludeDirectories>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+    <Manifest>
+      <AdditionalManifestFiles>..\..\mk\msvc\apppsclient_static-x64.manifest</AdditionalManifestFiles>
+    </Manifest>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MemoryTrackerWithStaticLibs|x64'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <MinimalRebuild>true</MinimalRebuild>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <ProgramDataBaseFileName>..\..\out\debug10-x64\build\apppsclient_static\x64\psclient_static.pdb</ProgramDataBaseFileName>
+      <PreprocessorDefinitions>_DEBUG;CS_DEBUG;CS_WIN32_CSCONFIG;__CRYSTAL_SPACE__;CS_SUPPORTS_MMX;CS_MEMORY_TRACKER;_WINDOWS;CS_STATIC_LINKED;WIN32;CS_USE_STATIC_LIBS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalOptions>/D CS_HAVE_CAL3D  %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>.;..\..;..\..\include\msvc;..\..\include;..\..\src\client;..\..\src\server;..\..\src\common;..\..\src\tools\wordnet;..\..\src\tools\breakpad;..\..\src\tools\breakpad\third_party\linux\include;..\..\..\CS\include;..\..\..\CS\winlibs\x64\include;..\..\..\CS\win32libs\include;$(CRYSTAL)\include;$(CRYSTAL)\winlibs\x64\include;$(CRYSTAL)\win32libs\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PrecompiledHeaderOutputFile>..\..\out\debug10-x64\build\apppsclient_static\apppsclient_static.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>..\..\out\debug10-x64\build\apppsclient_static\</AssemblerListingLocation>
+      <ObjectFileName>..\..\out\debug10-x64\build\apppsclient_static\</ObjectFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <ForceConformanceInForLoopScope>true</ForceConformanceInForLoopScope>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <CompileAs>Default</CompileAs>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>LIBC;LIBCD;LIBCMT;LIBCMTD;MSVCRT;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <OutputFile>..\..\psclient_static.exe</OutputFile>
+      <ProgramDatabaseFile>..\..\out\debug10-x64\build\apppsclient_static\x64\psclient_static.pdb</ProgramDatabaseFile>
+      <SubSystem>Console</SubSystem>
+      <AdditionalOptions>libmng.lib libjpeg.lib libpng.lib freetype2.lib cg.lib cgGL.lib vorbisfile.lib vorbis.lib openal32.lib speex.lib ogg.lib cal3d-vc10_d.lib libcrystalspace_windows_d.lib libcrystalspace_opengl_d.lib opengl32.lib version.lib libcrystalspace_staticplugins_d.lib libcrystalspace_d.lib libcrystalspace_directx_d.lib zlib.lib dsound.lib dinput8.lib  %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>libcrystalspace_d.lib;ws2_32.lib;zlib.lib;cal3d-vc10_d.lib;wininet.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <AdditionalLibraryDirectories>..\..\..\CS\out\debug10-x64\libs;..\..\..\CS\winlibs\x64\lib;..\..\..\CS\win32libs\lib;$(CRYSTAL)\out\debug10-x64\libs;$(CRYSTAL)\winlibs\x64\lib;$(CRYSTAL)\win32libs\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <TargetMachine>MachineX64</TargetMachine>
+      <LargeAddressAware>true</LargeAddressAware>
+    </Link>
+    <Lib>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetMachine>MachineX64</TargetMachine>
+    </Lib>
+    <PostBuildEvent>
+      <Command>md ..\..\out\debug10-x64\bin 2&gt; nul
+copy /y "$(TargetPath)" ..\..\out\debug10-x64\bin\
+</Command>
+    </PostBuildEvent>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;CS_DEBUG;CS_WIN32_CSCONFIG;__CRYSTAL_SPACE__;CS_SUPPORTS_MMX;CS_MEMORY_TRACKER;_WINDOWS;CS_STATIC_LINKED;_WIN64;PROJECTGEN_VERSION=10;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.;..\..\src\client;..\..;..\..\include\msvc;..\..\include;..\..\src\client;..\..\src\server;..\..\src\common;..\..\src\tools\wordnet;..\..\src\tools\breakpad;..\..\src\tools\breakpad\third_party\linux\include;..\..\..\CS\include;..\..\..\CS\winlibs\x64\include;..\..\..\CS\win32libs\include;$(CRYSTAL)\include;$(CRYSTAL)\winlibs\x64\include;$(CRYSTAL)\win32libs\include</AdditionalIncludeDirectories>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+    <Manifest>
+      <AdditionalManifestFiles>..\..\mk\msvc\apppsclient_static-x64.manifest</AdditionalManifestFiles>
+    </Manifest>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MemoryTrackerWithDlls|x64'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <MinimalRebuild>true</MinimalRebuild>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <ProgramDataBaseFileName>..\..\out\debug10-x64\build\apppsclient_static\x64\psclient_static.pdb</ProgramDataBaseFileName>
+      <PreprocessorDefinitions>_DEBUG;CS_DEBUG;CS_WIN32_CSCONFIG;__CRYSTAL_SPACE__;CS_SUPPORTS_MMX;CS_MEMORY_TRACKER;_WINDOWS;CS_STATIC_LINKED;WIN32;CS_USE_SHARED_LIBS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalOptions>/D CS_HAVE_CAL3D  %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>.;..\..;..\..\include\msvc;..\..\include;..\..\src\client;..\..\src\server;..\..\src\common;..\..\src\tools\wordnet;..\..\src\tools\breakpad;..\..\src\tools\breakpad\third_party\linux\include;..\..\..\CS\include;..\..\..\CS\winlibs\x64\include;..\..\..\CS\win32libs\include;$(CRYSTAL)\include;$(CRYSTAL)\winlibs\x64\include;$(CRYSTAL)\win32libs\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PrecompiledHeaderOutputFile>..\..\out\debug10-x64\build\apppsclient_static\apppsclient_static.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>..\..\out\debug10-x64\build\apppsclient_static\</AssemblerListingLocation>
+      <ObjectFileName>..\..\out\debug10-x64\build\apppsclient_static\</ObjectFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <ForceConformanceInForLoopScope>true</ForceConformanceInForLoopScope>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <CompileAs>Default</CompileAs>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>LIBC;LIBCD;LIBCMT;LIBCMTD;MSVCRT;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <OutputFile>..\..\psclient_static.exe</OutputFile>
+      <ProgramDatabaseFile>..\..\out\debug10-x64\build\apppsclient_static\x64\psclient_static.pdb</ProgramDatabaseFile>
+      <SubSystem>Console</SubSystem>
+      <AdditionalOptions>libmng.lib libjpeg.lib libpng.lib freetype2.lib cg.lib cgGL.lib vorbisfile.lib vorbis.lib openal32.lib speex.lib ogg.lib cal3d-vc10_d.lib libcrystalspace_windows_d.lib libcrystalspace_opengl_d.lib opengl32.lib version.lib libcrystalspace_staticplugins_d.lib libcrystalspace_d.lib libcrystalspace_directx_d.lib zlib.lib dsound.lib dinput8.lib  %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>libcrystalspace_d.lib;ws2_32.lib;zlib.lib;cal3d-vc10_d.lib;wininet.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <AdditionalLibraryDirectories>..\..\..\CS\out\debug10-x64\libs;..\..\..\CS\winlibs\x64\lib;..\..\..\CS\win32libs\lib;$(CRYSTAL)\out\debug10-x64\libs;$(CRYSTAL)\winlibs\x64\lib;$(CRYSTAL)\win32libs\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <TargetMachine>MachineX64</TargetMachine>
+      <LargeAddressAware>true</LargeAddressAware>
+    </Link>
+    <Lib>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetMachine>MachineX64</TargetMachine>
+    </Lib>
+    <PostBuildEvent>
+      <Command>md ..\..\out\debug10-x64\bin 2&gt; nul
+copy /y "$(TargetPath)" ..\..\out\debug10-x64\bin\
+</Command>
+    </PostBuildEvent>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;CS_DEBUG;CS_WIN32_CSCONFIG;__CRYSTAL_SPACE__;CS_SUPPORTS_MMX;CS_MEMORY_TRACKER;_WINDOWS;CS_STATIC_LINKED;_WIN64;PROJECTGEN_VERSION=10;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.;..\..\src\client;..\..;..\..\include\msvc;..\..\include;..\..\src\client;..\..\src\server;..\..\src\common;..\..\src\tools\wordnet;..\..\src\tools\breakpad;..\..\src\tools\breakpad\third_party\linux\include;..\..\..\CS\include;..\..\..\CS\winlibs\x64\include;..\..\..\CS\win32libs\include;$(CRYSTAL)\include;$(CRYSTAL)\winlibs\x64\include;$(CRYSTAL)\win32libs\include</AdditionalIncludeDirectories>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+    <Manifest>
+      <AdditionalManifestFiles>..\..\mk\msvc\apppsclient_static-x64.manifest</AdditionalManifestFiles>
+    </Manifest>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RefTrackerWithStaticLibs|x64'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <MinimalRebuild>true</MinimalRebuild>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <ProgramDataBaseFileName>..\..\out\debug10-x64\build\apppsclient_static\x64\psclient_static.pdb</ProgramDataBaseFileName>
+      <PreprocessorDefinitions>_DEBUG;CS_DEBUG;CS_WIN32_CSCONFIG;__CRYSTAL_SPACE__;CS_SUPPORTS_MMX;CS_REF_TRACKER;_WINDOWS;CS_STATIC_LINKED;WIN32;CS_USE_STATIC_LIBS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalOptions>/D CS_HAVE_CAL3D  %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>.;..\..;..\..\include\msvc;..\..\include;..\..\src\client;..\..\src\server;..\..\src\common;..\..\src\tools\wordnet;..\..\src\tools\breakpad;..\..\src\tools\breakpad\third_party\linux\include;..\..\..\CS\include;..\..\..\CS\winlibs\x64\include;..\..\..\CS\win32libs\include;$(CRYSTAL)\include;$(CRYSTAL)\winlibs\x64\include;$(CRYSTAL)\win32libs\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PrecompiledHeaderOutputFile>..\..\out\debug10-x64\build\apppsclient_static\apppsclient_static.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>..\..\out\debug10-x64\build\apppsclient_static\</AssemblerListingLocation>
+      <ObjectFileName>..\..\out\debug10-x64\build\apppsclient_static\</ObjectFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <ForceConformanceInForLoopScope>true</ForceConformanceInForLoopScope>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <CompileAs>Default</CompileAs>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>LIBC;LIBCD;LIBCMT;LIBCMTD;MSVCRT;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <OutputFile>..\..\psclient_static.exe</OutputFile>
+      <ProgramDatabaseFile>..\..\out\debug10-x64\build\apppsclient_static\x64\psclient_static.pdb</ProgramDatabaseFile>
+      <SubSystem>Console</SubSystem>
+      <AdditionalOptions>libmng.lib libjpeg.lib libpng.lib freetype2.lib cg.lib cgGL.lib vorbisfile.lib vorbis.lib openal32.lib speex.lib ogg.lib cal3d-vc10_d.lib libcrystalspace_windows_d.lib libcrystalspace_opengl_d.lib opengl32.lib version.lib libcrystalspace_staticplugins_d.lib libcrystalspace_d.lib libcrystalspace_directx_d.lib zlib.lib dsound.lib dinput8.lib  %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>libcrystalspace_d.lib;ws2_32.lib;zlib.lib;cal3d-vc10_d.lib;wininet.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <AdditionalLibraryDirectories>..\..\..\CS\out\debug10-x64\libs;..\..\..\CS\winlibs\x64\lib;..\..\..\CS\win32libs\lib;$(CRYSTAL)\out\debug10-x64\libs;$(CRYSTAL)\winlibs\x64\lib;$(CRYSTAL)\win32libs\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <TargetMachine>MachineX64</TargetMachine>
+      <LargeAddressAware>true</LargeAddressAware>
+    </Link>
+    <Lib>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetMachine>MachineX64</TargetMachine>
+    </Lib>
+    <PostBuildEvent>
+      <Command>md ..\..\out\debug10-x64\bin 2&gt; nul
+copy /y "$(TargetPath)" ..\..\out\debug10-x64\bin\
+</Command>
+    </PostBuildEvent>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;CS_DEBUG;CS_WIN32_CSCONFIG;__CRYSTAL_SPACE__;CS_SUPPORTS_MMX;CS_REF_TRACKER;_WINDOWS;CS_STATIC_LINKED;_WIN64;PROJECTGEN_VERSION=10;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.;..\..\src\client;..\..;..\..\include\msvc;..\..\include;..\..\src\client;..\..\src\server;..\..\src\common;..\..\src\tools\wordnet;..\..\src\tools\breakpad;..\..\src\tools\breakpad\third_party\linux\include;..\..\..\CS\include;..\..\..\CS\winlibs\x64\include;..\..\..\CS\win32libs\include;$(CRYSTAL)\include;$(CRYSTAL)\winlibs\x64\include;$(CRYSTAL)\win32libs\include</AdditionalIncludeDirectories>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+    <Manifest>
+      <AdditionalManifestFiles>..\..\mk\msvc\apppsclient_static-x64.manifest</AdditionalManifestFiles>
+    </Manifest>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RefTrackerWithDlls|x64'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <MinimalRebuild>true</MinimalRebuild>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <ProgramDataBaseFileName>..\..\out\debug10-x64\build\apppsclient_static\x64\psclient_static.pdb</ProgramDataBaseFileName>
+      <PreprocessorDefinitions>_DEBUG;CS_DEBUG;CS_WIN32_CSCONFIG;__CRYSTAL_SPACE__;CS_SUPPORTS_MMX;CS_REF_TRACKER;_WINDOWS;CS_STATIC_LINKED;WIN32;CS_USE_SHARED_LIBS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalOptions>/D CS_HAVE_CAL3D  %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>.;..\..;..\..\include\msvc;..\..\include;..\..\src\client;..\..\src\server;..\..\src\common;..\..\src\tools\wordnet;..\..\src\tools\breakpad;..\..\src\tools\breakpad\third_party\linux\include;..\..\..\CS\include;..\..\..\CS\winlibs\x64\include;..\..\..\CS\win32libs\include;$(CRYSTAL)\include;$(CRYSTAL)\winlibs\x64\include;$(CRYSTAL)\win32libs\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PrecompiledHeaderOutputFile>..\..\out\debug10-x64\build\apppsclient_static\apppsclient_static.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>..\..\out\debug10-x64\build\apppsclient_static\</AssemblerListingLocation>
+      <ObjectFileName>..\..\out\debug10-x64\build\apppsclient_static\</ObjectFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <ForceConformanceInForLoopScope>true</ForceConformanceInForLoopScope>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <CompileAs>Default</CompileAs>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>LIBC;LIBCD;LIBCMT;LIBCMTD;MSVCRT;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <OutputFile>..\..\psclient_static.exe</OutputFile>
+      <ProgramDatabaseFile>..\..\out\debug10-x64\build\apppsclient_static\x64\psclient_static.pdb</ProgramDatabaseFile>
+      <SubSystem>Console</SubSystem>
+      <AdditionalOptions>libmng.lib libjpeg.lib libpng.lib freetype2.lib cg.lib cgGL.lib vorbisfile.lib vorbis.lib openal32.lib speex.lib ogg.lib cal3d-vc10_d.lib libcrystalspace_windows_d.lib libcrystalspace_opengl_d.lib opengl32.lib version.lib libcrystalspace_staticplugins_d.lib libcrystalspace_d.lib libcrystalspace_directx_d.lib zlib.lib dsound.lib dinput8.lib  %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>libcrystalspace_d.lib;ws2_32.lib;zlib.lib;cal3d-vc10_d.lib;wininet.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <AdditionalLibraryDirectories>..\..\..\CS\out\debug10-x64\libs;..\..\..\CS\winlibs\x64\lib;..\..\..\CS\win32libs\lib;$(CRYSTAL)\out\debug10-x64\libs;$(CRYSTAL)\winlibs\x64\lib;$(CRYSTAL)\win32libs\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <TargetMachine>MachineX64</TargetMachine>
+      <LargeAddressAware>true</LargeAddressAware>
+    </Link>
+    <Lib>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetMachine>MachineX64</TargetMachine>
+    </Lib>
+    <PostBuildEvent>
+      <Command>md ..\..\out\debug10-x64\bin 2&gt; nul
+copy /y "$(TargetPath)" ..\..\out\debug10-x64\bin\
+</Command>
+    </PostBuildEvent>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;CS_DEBUG;CS_WIN32_CSCONFIG;__CRYSTAL_SPACE__;CS_SUPPORTS_MMX;CS_REF_TRACKER;_WINDOWS;CS_STATIC_LINKED;_WIN64;PROJECTGEN_VERSION=10;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.;..\..\src\client;..\..;..\..\include\msvc;..\..\include;..\..\src\client;..\..\src\server;..\..\src\common;..\..\src\tools\wordnet;..\..\src\tools\breakpad;..\..\src\tools\breakpad\third_party\linux\include;..\..\..\CS\include;..\..\..\CS\winlibs\x64\include;..\..\..\CS\win32libs\include;$(CRYSTAL)\include;$(CRYSTAL)\winlibs\x64\include;$(CRYSTAL)\win32libs\include</AdditionalIncludeDirectories>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+    <Manifest>
+      <AdditionalManifestFiles>..\..\mk\msvc\apppsclient_static-x64.manifest</AdditionalManifestFiles>
+    </Manifest>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ThreadCheckerWithStaticLibs|x64'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <MinimalRebuild>true</MinimalRebuild>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <ProgramDataBaseFileName>..\..\out\debug10-x64\build\apppsclient_static\x64\psclient_static.pdb</ProgramDataBaseFileName>
+      <PreprocessorDefinitions>_DEBUG;CS_DEBUG;CS_WIN32_CSCONFIG;__CRYSTAL_SPACE__;CS_SUPPORTS_MMX;CS_THREAD_CHECKER;_WINDOWS;CS_STATIC_LINKED;WIN32;CS_USE_STATIC_LIBS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalOptions>/D CS_HAVE_CAL3D  %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>.;..\..;..\..\include\msvc;..\..\include;..\..\src\client;..\..\src\server;..\..\src\common;..\..\src\tools\wordnet;..\..\src\tools\breakpad;..\..\src\tools\breakpad\third_party\linux\include;..\..\..\CS\include;..\..\..\CS\winlibs\x64\include;..\..\..\CS\win32libs\include;$(CRYSTAL)\include;$(CRYSTAL)\winlibs\x64\include;$(CRYSTAL)\win32libs\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PrecompiledHeaderOutputFile>..\..\out\debug10-x64\build\apppsclient_static\apppsclient_static.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>..\..\out\debug10-x64\build\apppsclient_static\</AssemblerListingLocation>
+      <ObjectFileName>..\..\out\debug10-x64\build\apppsclient_static\</ObjectFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <ForceConformanceInForLoopScope>true</ForceConformanceInForLoopScope>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <CompileAs>Default</CompileAs>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>LIBC;LIBCD;LIBCMT;LIBCMTD;MSVCRT;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <OutputFile>..\..\psclient_static.exe</OutputFile>
+      <ProgramDatabaseFile>..\..\out\debug10-x64\build\apppsclient_static\x64\psclient_static.pdb</ProgramDatabaseFile>
+      <SubSystem>Console</SubSystem>
+      <AdditionalOptions>libmng.lib libjpeg.lib libpng.lib freetype2.lib cg.lib cgGL.lib vorbisfile.lib vorbis.lib openal32.lib speex.lib ogg.lib cal3d-vc10_d.lib libcrystalspace_windows_d.lib libcrystalspace_opengl_d.lib opengl32.lib version.lib libcrystalspace_staticplugins_d.lib libcrystalspace_d.lib libcrystalspace_directx_d.lib zlib.lib dsound.lib dinput8.lib  %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>libcrystalspace_d.lib;ws2_32.lib;zlib.lib;cal3d-vc10_d.lib;wininet.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <AdditionalLibraryDirectories>..\..\..\CS\out\debug10-x64\libs;..\..\..\CS\winlibs\x64\lib;..\..\..\CS\win32libs\lib;$(CRYSTAL)\out\debug10-x64\libs;$(CRYSTAL)\winlibs\x64\lib;$(CRYSTAL)\win32libs\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <TargetMachine>MachineX64</TargetMachine>
+      <LargeAddressAware>true</LargeAddressAware>
+    </Link>
+    <Lib>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetMachine>MachineX64</TargetMachine>
+    </Lib>
+    <PostBuildEvent>
+      <Command>md ..\..\out\debug10-x64\bin 2&gt; nul
+copy /y "$(TargetPath)" ..\..\out\debug10-x64\bin\
+</Command>
+    </PostBuildEvent>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;CS_DEBUG;CS_WIN32_CSCONFIG;__CRYSTAL_SPACE__;CS_SUPPORTS_MMX;CS_THREAD_CHECKER;_WINDOWS;CS_STATIC_LINKED;_WIN64;PROJECTGEN_VERSION=10;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.;..\..\src\client;..\..;..\..\include\msvc;..\..\include;..\..\src\client;..\..\src\server;..\..\src\common;..\..\src\tools\wordnet;..\..\src\tools\breakpad;..\..\src\tools\breakpad\third_party\linux\include;..\..\..\CS\include;..\..\..\CS\winlibs\x64\include;..\..\..\CS\win32libs\include;$(CRYSTAL)\include;$(CRYSTAL)\winlibs\x64\include;$(CRYSTAL)\win32libs\include</AdditionalIncludeDirectories>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+    <Manifest>
+      <AdditionalManifestFiles>..\..\mk\msvc\apppsclient_static-x64.manifest</AdditionalManifestFiles>
+    </Manifest>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ThreadCheckerWithDlls|x64'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <MinimalRebuild>true</MinimalRebuild>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <ProgramDataBaseFileName>..\..\out\debug10-x64\build\apppsclient_static\x64\psclient_static.pdb</ProgramDataBaseFileName>
+      <PreprocessorDefinitions>_DEBUG;CS_DEBUG;CS_WIN32_CSCONFIG;__CRYSTAL_SPACE__;CS_SUPPORTS_MMX;CS_THREAD_CHECKER;_WINDOWS;CS_STATIC_LINKED;WIN32;CS_USE_SHARED_LIBS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalOptions>/D CS_HAVE_CAL3D  %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>.;..\..;..\..\include\msvc;..\..\include;..\..\src\client;..\..\src\server;..\..\src\common;..\..\src\tools\wordnet;..\..\src\tools\breakpad;..\..\src\tools\breakpad\third_party\linux\include;..\..\..\CS\include;..\..\..\CS\winlibs\x64\include;..\..\..\CS\win32libs\include;$(CRYSTAL)\include;$(CRYSTAL)\winlibs\x64\include;$(CRYSTAL)\win32libs\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PrecompiledHeaderOutputFile>..\..\out\debug10-x64\build\apppsclient_static\apppsclient_static.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>..\..\out\debug10-x64\build\apppsclient_static\</AssemblerListingLocation>
+      <ObjectFileName>..\..\out\debug10-x64\build\apppsclient_static\</ObjectFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <ForceConformanceInForLoopScope>true</ForceConformanceInForLoopScope>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <CompileAs>Default</CompileAs>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>LIBC;LIBCD;LIBCMT;LIBCMTD;MSVCRT;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <OutputFile>..\..\psclient_static.exe</OutputFile>
+      <ProgramDatabaseFile>..\..\out\debug10-x64\build\apppsclient_static\x64\psclient_static.pdb</ProgramDatabaseFile>
+      <SubSystem>Console</SubSystem>
+      <AdditionalOptions>libmng.lib libjpeg.lib libpng.lib freetype2.lib cg.lib cgGL.lib vorbisfile.lib vorbis.lib openal32.lib speex.lib ogg.lib cal3d-vc10_d.lib libcrystalspace_windows_d.lib libcrystalspace_opengl_d.lib opengl32.lib version.lib libcrystalspace_staticplugins_d.lib libcrystalspace_d.lib libcrystalspace_directx_d.lib zlib.lib dsound.lib dinput8.lib  %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>libcrystalspace_d.lib;ws2_32.lib;zlib.lib;cal3d-vc10_d.lib;wininet.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <AdditionalLibraryDirectories>..\..\..\CS\out\debug10-x64\libs;..\..\..\CS\winlibs\x64\lib;..\..\..\CS\win32libs\lib;$(CRYSTAL)\out\debug10-x64\libs;$(CRYSTAL)\winlibs\x64\lib;$(CRYSTAL)\win32libs\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <TargetMachine>MachineX64</TargetMachine>
+      <LargeAddressAware>true</LargeAddressAware>
+    </Link>
+    <Lib>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetMachine>MachineX64</TargetMachine>
+    </Lib>
+    <PostBuildEvent>
+      <Command>md ..\..\out\debug10-x64\bin 2&gt; nul
+copy /y "$(TargetPath)" ..\..\out\debug10-x64\bin\
+</Command>
+    </PostBuildEvent>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;CS_DEBUG;CS_WIN32_CSCONFIG;__CRYSTAL_SPACE__;CS_SUPPORTS_MMX;CS_THREAD_CHECKER;_WINDOWS;CS_STATIC_LINKED;_WIN64;PROJECTGEN_VERSION=10;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.;..\..\src\client;..\..;..\..\include\msvc;..\..\include;..\..\src\client;..\..\src\server;..\..\src\common;..\..\src\tools\wordnet;..\..\src\tools\breakpad;..\..\src\tools\breakpad\third_party\linux\include;..\..\..\CS\include;..\..\..\CS\winlibs\x64\include;..\..\..\CS\win32libs\include;$(CRYSTAL)\include;$(CRYSTAL)\winlibs\x64\include;$(CRYSTAL)\win32libs\include</AdditionalIncludeDirectories>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+    <Manifest>
+      <AdditionalManifestFiles>..\..\mk\msvc\apppsclient_static-x64.manifest</AdditionalManifestFiles>
+    </Manifest>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugPSReleaseCSCELWithStaticLibs|x64'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <MinimalRebuild>true</MinimalRebuild>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <ProgramDataBaseFileName>..\..\out\debug10-x64\build\apppsclient_static\x64\psclient_static.pdb</ProgramDataBaseFileName>
+      <PreprocessorDefinitions>NDEBUG;CS_WIN32_CSCONFIG;__CRYSTAL_SPACE__;CS_SUPPORTS_MMX;_WINDOWS;CS_STATIC_LINKED;WIN32;CS_USE_STATIC_LIBS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalOptions>/D CS_HAVE_CAL3D  %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>.;..\..;..\..\include\msvc;..\..\include;..\..\src\client;..\..\src\server;..\..\src\common;..\..\src\tools\wordnet;..\..\src\tools\breakpad;..\..\src\tools\breakpad\third_party\linux\include;..\..\..\CS\include;..\..\..\CS\winlibs\x64\include;..\..\..\CS\win32libs\include;$(CRYSTAL)\include;$(CRYSTAL)\winlibs\x64\include;$(CRYSTAL)\win32libs\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PrecompiledHeaderOutputFile>..\..\out\debug10-x64\build\apppsclient_static\apppsclient_static.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>..\..\out\debug10-x64\build\apppsclient_static\</AssemblerListingLocation>
+      <ObjectFileName>..\..\out\debug10-x64\build\apppsclient_static\</ObjectFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <ForceConformanceInForLoopScope>true</ForceConformanceInForLoopScope>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <CompileAs>Default</CompileAs>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>LIBC;LIBCD;LIBCMT;LIBCMTD;MSVCRT;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <OutputFile>..\..\psclient_static.exe</OutputFile>
+      <ProgramDatabaseFile>..\..\out\debug10-x64\build\apppsclient_static\x64\psclient_static.pdb</ProgramDatabaseFile>
+      <SubSystem>Console</SubSystem>
+      <AdditionalOptions>libmng.lib libjpeg.lib libpng.lib freetype2.lib cg.lib cgGL.lib vorbisfile.lib vorbis.lib openal32.lib speex.lib ogg.lib cal3d-vc10_d.lib libcrystalspace_windows_d.lib libcrystalspace_opengl_d.lib opengl32.lib version.lib libcrystalspace_staticplugins_d.lib libcrystalspace_d.lib libcrystalspace_directx_d.lib zlib.lib dsound.lib dinput8.lib  %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>libcrystalspace.lib;ws2_32.lib;zlib.lib;cal3d-vc10.lib;wininet.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <AdditionalLibraryDirectories>..\..\..\CS\out\release10-x64\libs;..\..\..\CS\winlibs\x64\lib;..\..\..\CS\win32libs\lib;$(CRYSTAL)\out\release10-x64\libs;$(CRYSTAL)\winlibs\x64\lib;$(CRYSTAL)\win32libs\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <TargetMachine>MachineX64</TargetMachine>
+      <LargeAddressAware>true</LargeAddressAware>
+    </Link>
+    <Lib>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetMachine>MachineX64</TargetMachine>
+    </Lib>
+    <PostBuildEvent>
+      <Command>md ..\..\out\debug10-x64\bin 2&gt; nul
+copy /y "$(TargetPath)" ..\..\out\debug10-x64\bin\
+</Command>
+    </PostBuildEvent>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;CS_WIN32_CSCONFIG;__CRYSTAL_SPACE__;CS_SUPPORTS_MMX;_WINDOWS;CS_STATIC_LINKED;_WIN64;PROJECTGEN_VERSION=10;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.;..\..\src\client;..\..;..\..\include\msvc;..\..\include;..\..\src\client;..\..\src\server;..\..\src\common;..\..\src\tools\wordnet;..\..\src\tools\breakpad;..\..\src\tools\breakpad\third_party\linux\include;..\..\..\CS\include;..\..\..\CS\winlibs\x64\include;..\..\..\CS\win32libs\include;$(CRYSTAL)\include;$(CRYSTAL)\winlibs\x64\include;$(CRYSTAL)\win32libs\include</AdditionalIncludeDirectories>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+    <Manifest>
+      <AdditionalManifestFiles>..\..\mk\msvc\apppsclient_static-x64.manifest</AdditionalManifestFiles>
+    </Manifest>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugPSReleaseCSCELWithDlls|x64'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <MinimalRebuild>true</MinimalRebuild>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <ProgramDataBaseFileName>..\..\out\debug10-x64\build\apppsclient_static\x64\psclient_static.pdb</ProgramDataBaseFileName>
+      <PreprocessorDefinitions>NDEBUG;CS_WIN32_CSCONFIG;__CRYSTAL_SPACE__;CS_SUPPORTS_MMX;_WINDOWS;CS_STATIC_LINKED;WIN32;CS_USE_SHARED_LIBS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalOptions>/D CS_HAVE_CAL3D  %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>.;..\..;..\..\include\msvc;..\..\include;..\..\src\client;..\..\src\server;..\..\src\common;..\..\src\tools\wordnet;..\..\src\tools\breakpad;..\..\src\tools\breakpad\third_party\linux\include;..\..\..\CS\include;..\..\..\CS\winlibs\x64\include;..\..\..\CS\win32libs\include;$(CRYSTAL)\include;$(CRYSTAL)\winlibs\x64\include;$(CRYSTAL)\win32libs\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PrecompiledHeaderOutputFile>..\..\out\debug10-x64\build\apppsclient_static\apppsclient_static.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>..\..\out\debug10-x64\build\apppsclient_static\</AssemblerListingLocation>
+      <ObjectFileName>..\..\out\debug10-x64\build\apppsclient_static\</ObjectFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <ForceConformanceInForLoopScope>true</ForceConformanceInForLoopScope>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <CompileAs>Default</CompileAs>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>LIBC;LIBCD;LIBCMT;LIBCMTD;MSVCRT;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <OutputFile>..\..\psclient_static.exe</OutputFile>
+      <ProgramDatabaseFile>..\..\out\debug10-x64\build\apppsclient_static\x64\psclient_static.pdb</ProgramDatabaseFile>
+      <SubSystem>Console</SubSystem>
+      <AdditionalOptions>libmng.lib libjpeg.lib libpng.lib freetype2.lib cg.lib cgGL.lib vorbisfile.lib vorbis.lib openal32.lib speex.lib ogg.lib cal3d-vc10_d.lib libcrystalspace_windows_d.lib libcrystalspace_opengl_d.lib opengl32.lib version.lib libcrystalspace_staticplugins_d.lib libcrystalspace_d.lib libcrystalspace_directx_d.lib zlib.lib dsound.lib dinput8.lib  %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>libcrystalspace.lib;ws2_32.lib;zlib.lib;cal3d-vc10.lib;wininet.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <AdditionalLibraryDirectories>..\..\..\CS\out\release10-x64\libs;..\..\..\CS\winlibs\x64\lib;..\..\..\CS\win32libs\lib;$(CRYSTAL)\out\release10-x64\libs;$(CRYSTAL)\winlibs\x64\lib;$(CRYSTAL)\win32libs\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <TargetMachine>MachineX64</TargetMachine>
+      <LargeAddressAware>true</LargeAddressAware>
+    </Link>
+    <Lib>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetMachine>MachineX64</TargetMachine>
+    </Lib>
+    <PostBuildEvent>
+      <Command>md ..\..\out\debug10-x64\bin 2&gt; nul
+copy /y "$(TargetPath)" ..\..\out\debug10-x64\bin\
+</Command>
+    </PostBuildEvent>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;CS_WIN32_CSCONFIG;__CRYSTAL_SPACE__;CS_SUPPORTS_MMX;_WINDOWS;CS_STATIC_LINKED;_WIN64;PROJECTGEN_VERSION=10;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.;..\..\src\client;..\..;..\..\include\msvc;..\..\include;..\..\src\client;..\..\src\server;..\..\src\common;..\..\src\tools\wordnet;..\..\src\tools\breakpad;..\..\src\tools\breakpad\third_party\linux\include;..\..\..\CS\include;..\..\..\CS\winlibs\x64\include;..\..\..\CS\win32libs\include;$(CRYSTAL)\include;$(CRYSTAL)\winlibs\x64\include;$(CRYSTAL)\win32libs\include</AdditionalIncludeDirectories>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+    <Manifest>
+      <AdditionalManifestFiles>..\..\mk\msvc\apppsclient_static-x64.manifest</AdditionalManifestFiles>
+    </Manifest>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\mk\msvc\apppsclient_static_static_glue_app.cpp" />
+    <ClCompile Include="..\..\mk\msvc\apppsclient_static_static_glue_app_CRYSTAL.cpp" />
+    <ClCompile Include="..\..\mk\msvc\OPENAL.fake_stub.c" />
+    <ClCompile Include="..\..\src\client\actionhandler.cpp" />
+    <ClCompile Include="..\..\src\client\authentclient.cpp" />
+    <ClCompile Include="..\..\src\client\autoexec.cpp" />
+    <ClCompile Include="..\..\src\client\charapp.cpp" />
+    <ClCompile Include="..\..\src\client\chatbubbles.cpp" />
+    <ClCompile Include="..\..\src\client\clientsongmngr.cpp" />
+    <ClCompile Include="..\..\src\client\clientvitals.cpp" />
+    <ClCompile Include="..\..\src\client\cmdadmin.cpp" />
+    <ClCompile Include="..\..\src\client\cmdgroups.cpp" />
+    <ClCompile Include="..\..\src\client\cmdguilds.cpp" />
+    <ClCompile Include="..\..\src\client\cmdusers.cpp" />
+    <ClCompile Include="..\..\src\client\cmdutil.cpp" />
+    <ClCompile Include="..\..\src\client\crashreport.cpp" />
+    <ClCompile Include="..\..\src\client\entitylabels.cpp" />
+    <ClCompile Include="..\..\src\client\guihandler.cpp" />
+    <ClCompile Include="..\..\src\client\meshattach.cpp" />
+    <ClCompile Include="..\..\src\client\modehandler.cpp" />
+    <ClCompile Include="..\..\src\client\pscal3dcallback.cpp" />
+    <ClCompile Include="..\..\src\client\pscamera.cpp" />
+    <ClCompile Include="..\..\src\client\pscelclient.cpp" />
+    <ClCompile Include="..\..\src\client\pscharcontrol.cpp" />
+    <ClCompile Include="..\..\src\client\psclientchar.cpp" />
+    <ClCompile Include="..\..\src\client\psclientdr.cpp" />
+    <ClCompile Include="..\..\src\client\psengine.cpp" />
+    <ClCompile Include="..\..\src\client\psinventorycache.cpp" />
+    <ClCompile Include="..\..\src\client\psmovement.cpp" />
+    <ClCompile Include="..\..\src\client\psnetmanager.cpp" />
+    <ClCompile Include="..\..\src\client\psoptions.cpp" />
+    <ClCompile Include="..\..\src\client\psslotmgr.cpp" />
+    <ClCompile Include="..\..\src\client\questionclient.cpp" />
+    <ClCompile Include="..\..\src\client\shadowmanager.cpp" />
+    <ClCompile Include="..\..\src\client\weather.cpp" />
+    <ClCompile Include="..\..\src\client\zonehandler.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\src\client\actionhandler.h" />
+    <ClInclude Include="..\..\src\client\authentclient.h" />
+    <ClInclude Include="..\..\src\client\autoexec.h" />
+    <ClInclude Include="..\..\src\client\charapp.h" />
+    <ClInclude Include="..\..\src\client\chatbubbles.h" />
+    <ClInclude Include="..\..\src\client\clientsongmngr.h" />
+    <ClInclude Include="..\..\src\client\clientvitals.h" />
+    <ClInclude Include="..\..\src\client\cmdadmin.h" />
+    <ClInclude Include="..\..\src\client\cmdgroups.h" />
+    <ClInclude Include="..\..\src\client\cmdguilds.h" />
+    <ClInclude Include="..\..\src\client\cmdusers.h" />
+    <ClInclude Include="..\..\src\client\cmdutil.h" />
+    <ClInclude Include="..\..\src\client\entitylabels.h" />
+    <ClInclude Include="..\..\src\client\globals.h" />
+    <ClInclude Include="..\..\src\client\guihandler.h" />
+    <ClInclude Include="..\..\src\client\meshattach.h" />
+    <ClInclude Include="..\..\src\client\modehandler.h" />
+    <ClInclude Include="..\..\src\client\pscal3dcallback.h" />
+    <ClInclude Include="..\..\src\client\pscamera.h" />
+    <ClInclude Include="..\..\src\client\pscelclient.h" />
+    <ClInclude Include="..\..\src\client\pscharcontrol.h" />
+    <ClInclude Include="..\..\src\client\psclientchar.h" />
+    <ClInclude Include="..\..\src\client\psclientdr.h" />
+    <ClInclude Include="..\..\src\client\psengine.h" />
+    <ClInclude Include="..\..\src\client\psinventorycache.h" />
+    <ClInclude Include="..\..\src\client\psmovement.h" />
+    <ClInclude Include="..\..\src\client\psnetmanager.h" />
+    <ClInclude Include="..\..\src\client\psoptions.h" />
+    <ClInclude Include="..\..\src\client\psslotmgr.h" />
+    <ClInclude Include="..\..\src\client\questionclient.h" />
+    <ClInclude Include="..\..\src\client\resource.h" />
+    <ClInclude Include="..\..\src\client\shadowmanager.h" />
+    <ClInclude Include="..\..\src\client\weather.h" />
+    <ClInclude Include="..\..\src\client\zonehandler.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="..\..\mk\msvc\apppsclient_static.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="libplaneshift_staticplugins.vcxproj">
+      <Project>{DA886D16-6C20-BDA5-D8CC-0E06ABE8B5C7}</Project>
+    </ProjectReference>
+    <ProjectReference Include="libgui.vcxproj">
+      <Project>{CB174702-BB9B-E18A-7352-E9B7326EB494}</Project>
+    </ProjectReference>
+    <ProjectReference Include="libpsnet.vcxproj">
+      <Project>{DCD16C71-CB69-046C-3AF4-8BBDA8CD0361}</Project>
+    </ProjectReference>
+    <ProjectReference Include="libpsengine.vcxproj">
+      <Project>{8B42FE9F-3E16-6CD1-D6C2-A04C37417888}</Project>
+    </ProjectReference>
+    <ProjectReference Include="libpsrpgrules.vcxproj">
+      <Project>{4B7B2CDB-4DE7-2E3D-0FF6-EA8AC90E4A27}</Project>
+    </ProjectReference>
+    <ProjectReference Include="libpaws.vcxproj">
+      <Project>{50E607EE-8026-ADD6-213E-6EE7F95FDFB1}</Project>
+    </ProjectReference>
+    <ProjectReference Include="libeffects.vcxproj">
+      <Project>{A04BE757-E4C1-A003-8FDB-47430BC64269}</Project>
+    </ProjectReference>
+    <ProjectReference Include="libpsmusic.vcxproj">
+      <Project>{ACECF49B-03F9-65EC-B7B0-27B65393FFE7}</Project>
+    </ProjectReference>
+    <ProjectReference Include="libbreakpad.vcxproj">
+      <Project>{7BD0DB32-E0AD-E520-81A6-F53D07433A63}</Project>
+    </ProjectReference>
+    <ProjectReference Include="libpsutil.vcxproj">
+      <Project>{D9DEA6DD-ED82-1526-6BBF-851FF399854C}</Project>
+    </ProjectReference>
+    <ProjectReference Include="libfparser.vcxproj">
+      <Project>{56CFA369-1F2F-7609-9E86-069C1B5F5651}</Project>
+    </ProjectReference>
+    <ProjectReference Include="libpsclient_static_plugins_CRYSTAL.vcxproj">
+      <Project>{DF4973C1-0D2D-8028-32E7-B93470BF4E4C}</Project>
+    </ProjectReference>
+    <ProjectReference Include="libpsclient_static_plugins.vcxproj">
+      <Project>{64FC67B9-BF74-3E66-EC71-804A36D07DF4}</Project>
+    </ProjectReference>
+    <ProjectReference Include="libplaneshift_database_staticplugins.vcxproj">
+      <Project>{5DFC8F2F-79FD-89B5-6EEC-FDEEB1E3225D}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,5 @@
+SubDir TOP src tools fparser ;
+
+Library fparser :
+	[ Wildcard *.cpp *.h ]
+;

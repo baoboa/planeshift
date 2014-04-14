@@ -1,0 +1,307 @@
+<widget_description>
+
+<widget name="ConfigCameraTree" factory="pawsConfigCamera"
+        visible="yes" savepositions="no" movable="yes"
+        resizable="no" style="New Standard GUI">
+    <bgimage resource="Scaling Widget Background" />
+    <widget factory="pawsTree">
+      <layout rowSpacing="5" levelSpacing="20" />
+
+        <widget factory="pawsSeqTreeNode">
+            <widget factory="pawsWidgetTreeNode">
+                <nodewidget>
+                    <widget factory="pawsTextBox" name="General">
+                        <frame x="0" y="0" width="100" height="20" border="no" />
+                        <text string="General"/>
+                    </widget>
+                </nodewidget>
+            <widget factory="pawsSeqTreeNode" name="Transition Threshold">
+            <attr name="type" value="real"/>
+            <attr name="min" value="0.1"/>
+                <attr name="max" value="10.0"/>
+                <attr name="inc" value="0.05"/>
+                </widget>
+            <widget factory="pawsSeqTreeNode" name="Transition Spring Length">
+                    <attr name="type" value="real"/>
+            <attr name="min" value="0.001"/>
+            <attr name="max" value="2.0"/>
+                <attr name="inc" value="0.001"/>
+                </widget>
+            <widget factory="pawsSeqTreeNode" name="Transition Spring Coefficient">
+            <attr name="type" value="real"/>
+            <attr name="min" value="0.0"/>
+            <attr name="max" value="20.0"/>
+            <attr name="inc" value="0.1"/>
+                </widget>
+            <widget factory="pawsSeqTreeNode" name="Transition Dampening Coefficient">
+                    <attr name="type" value="real"/>
+            <attr name="min" value="0.0"/>
+            <attr name="max" value="20.0"/>
+            <attr name="inc" value="0.1"/>
+                </widget>
+            <widget factory="pawsSeqTreeNode" name="Collision Spring Length">
+                    <attr name="type" value="real"/>
+            <attr name="min" value="0.001"/>
+            <attr name="max" value="2.0"/>
+                <attr name="inc" value="0.001"/>
+                </widget>
+            <widget factory="pawsSeqTreeNode" name="Collision Spring Coefficient">
+            <attr name="type" value="real"/>
+            <attr name="min" value="0.0"/>
+            <attr name="max" value="20.0"/>
+            <attr name="inc" value="0.1"/>
+                </widget>
+            <widget factory="pawsSeqTreeNode" name="Collision Dampening Coefficient">
+                    <attr name="type" value="real"/>
+            <attr name="min" value="0.0"/>
+            <attr name="max" value="20.0"/>
+            <attr name="inc" value="0.1"/>
+                </widget>
+            </widget>
+            <widget factory="pawsWidgetTreeNode">
+                <nodewidget>
+                    <widget factory="pawsTextBox" name="First Person">
+                        <frame x="0" y="0" width="100" height="20" border="no" />
+                <text string="First Person"/>
+                    </widget>
+                </nodewidget>
+            <widget factory="pawsSeqTreeNode" name="Spring Length">
+                    <attr name="type" value="real"/>
+            <attr name="min" value="0.001"/>
+            <attr name="max" value="2.0"/>
+            <attr name="inc" value="0.001"/>
+            <attr name="cammode" value="First Person"/>
+                </widget>
+            <widget factory="pawsSeqTreeNode" name="Spring Coefficient">
+                    <attr name="type" value="real"/>
+            <attr name="min" value="0.0"/>
+            <attr name="max" value="20.0"/>
+            <attr name="inc" value="0.1"/>
+            <attr name="cammode" value="First Person"/>
+                </widget>
+            <widget factory="pawsSeqTreeNode" name="Dampening Coefficient">
+                    <attr name="type" value="real"/>
+            <attr name="min" value="0.0"/>
+            <attr name="max" value="20.0"/>
+            <attr name="inc" value="0.1"/>
+            <attr name="cammode" value="First Person"/>
+                </widget>
+            <widget factory="pawsSeqTreeNode" name="Starting Pitch">
+                    <attr name="type" value="real"/>
+            <attr name="min" value="-3.0"/>
+            <attr name="max" value="3.0"/>
+            <attr name="inc" value="0.1"/>
+            <attr name="cammode" value="First Person"/>
+                </widget>
+            </widget>
+            <widget factory="pawsWidgetTreeNode">
+                <nodewidget>
+                    <widget factory="pawsTextBox" name="Third Person Follow">
+                        <frame x="0" y="0" width="150" height="20" border="no" />
+                <text string="Third Person Follow"/>
+                    </widget>
+                </nodewidget>
+            <widget factory="pawsSeqTreeNode" name="Spring Length">
+                    <attr name="type" value="real"/>
+            <attr name="min" value="0.001"/>
+            <attr name="max" value="2.0"/>
+            <attr name="inc" value="0.001"/>
+            <attr name="cammode" value="Third Person Follow"/>
+                </widget>
+            <widget factory="pawsSeqTreeNode" name="Spring Coefficient">
+                    <attr name="type" value="real"/>
+            <attr name="min" value="0.0"/>
+            <attr name="max" value="20.0"/>
+            <attr name="inc" value="0.1"/>
+            <attr name="cammode" value="Third Person Follow"/>
+                </widget>
+            <widget factory="pawsSeqTreeNode" name="Dampening Coefficient">
+                    <attr name="type" value="real"/>
+            <attr name="min" value="0.0"/>
+            <attr name="max" value="20.0"/>
+            <attr name="inc" value="0.1"/>
+                </widget>
+            <widget factory="pawsSeqTreeNode" name="Camera Distance">
+                    <attr name="type" value="real"/>
+            <attr name="min" value="0.1"/>
+            <attr name="max" value="20.0"/>
+            <attr name="inc" value="0.1"/>
+            <attr name="cammode" value="Third Person Follow"/>
+                </widget>
+            <widget factory="pawsSeqTreeNode" name="Starting Pitch">
+                    <attr name="type" value="real"/>
+            <attr name="min" value="-3.0"/>
+            <attr name="max" value="3.0"/>
+            <attr name="inc" value="0.1"/>
+            <attr name="cammode" value="Third Person Follow"/>
+                </widget>
+            </widget>
+            <widget factory="pawsWidgetTreeNode">
+                <nodewidget>
+                    <widget factory="pawsTextBox" name="Third Person M64">
+                        <frame x="0" y="0" width="150" height="20" border="no" />
+                <text string="Third Person M64"/>
+                    </widget>
+                </nodewidget>
+            <widget factory="pawsSeqTreeNode" name="Spring Length">
+                    <attr name="type" value="real"/>
+            <attr name="min" value="0.001"/>
+            <attr name="max" value="2.0"/>
+            <attr name="inc" value="0.001"/>
+            <attr name="cammode" value="Third Person M64"/>
+                </widget>
+            <widget factory="pawsSeqTreeNode" name="Spring Coefficient">
+                    <attr name="type" value="real"/>
+            <attr name="min" value="0.0"/>
+            <attr name="max" value="20.0"/>
+            <attr name="inc" value="0.1"/>
+            <attr name="cammode" value="Third Person M64"/>
+                </widget>
+            <widget factory="pawsSeqTreeNode" name="Dampening Coefficient">
+                    <attr name="type" value="real"/>
+            <attr name="min" value="0.0"/>
+            <attr name="max" value="20.0"/>
+            <attr name="inc" value="0.1"/>
+            <attr name="cammode" value="Third Person M64"/>
+                </widget>
+            <widget factory="pawsSeqTreeNode" name="Min Camera Distance">
+                    <attr name="type" value="real"/>
+            <attr name="min" value="0.1"/>
+            <attr name="max" value="20.0"/>
+            <attr name="inc" value="0.1"/>
+            <attr name="cammode" value="Third Person M64"/>
+                </widget>
+            <widget factory="pawsSeqTreeNode" name="Max Camera Distance">
+                    <attr name="type" value="real"/>
+            <attr name="min" value="0.1"/>
+            <attr name="max" value="20.0"/>
+            <attr name="inc" value="0.1"/>
+            <attr name="cammode" value="Third Person M64"/>
+                </widget>
+            <widget factory="pawsSeqTreeNode" name="Starting Pitch">
+                    <attr name="type" value="real"/>
+            <attr name="min" value="-3.0"/>
+            <attr name="max" value="3.0"/>
+            <attr name="inc" value="0.1"/>
+            <attr name="cammode" value="Third Person M64"/>
+                </widget>
+            <widget factory="pawsSeqTreeNode" name="Turning Speed">
+                    <attr name="type" value="real"/>
+            <attr name="min" value="0.0"/>
+            <attr name="max" value="5.0"/>
+            <attr name="inc" value="0.1"/>
+            <attr name="cammode" value="Third Person M64"/>
+                </widget>
+            </widget>
+            <widget factory="pawsWidgetTreeNode">
+                <nodewidget>
+                    <widget factory="pawsTextBox" name="Third Person Lara">
+                        <frame x="0" y="0" width="150" height="20" border="no" />
+                <text string="Third Person Lara"/>
+                    </widget>
+                </nodewidget>
+            <widget factory="pawsSeqTreeNode" name="Spring Length">
+                    <attr name="type" value="real"/>
+            <attr name="min" value="0.001"/>
+            <attr name="max" value="2.0"/>
+            <attr name="inc" value="0.001"/>
+            <attr name="cammode" value="Third Person Lara"/>
+                </widget>
+            <widget factory="pawsSeqTreeNode" name="Spring Coefficient">
+                    <attr name="type" value="real"/>
+            <attr name="min" value="0.0"/>
+            <attr name="max" value="20.0"/>
+            <attr name="inc" value="0.1"/>
+            <attr name="cammode" value="Third Person Lara"/>
+                </widget>
+            <widget factory="pawsSeqTreeNode" name="Dampening Coefficient">
+                    <attr name="type" value="real"/>
+            <attr name="min" value="0.0"/>
+            <attr name="max" value="20.0"/>
+            <attr name="inc" value="0.1"/>
+            <attr name="cammode" value="Third Person Lara"/>
+                </widget>
+            <widget factory="pawsSeqTreeNode" name="Min Camera Distance">
+                    <attr name="type" value="real"/>
+            <attr name="min" value="0.1"/>
+            <attr name="max" value="20.0"/>
+            <attr name="inc" value="0.1"/>
+            <attr name="cammode" value="Third Person Lara"/>
+                </widget>
+            <widget factory="pawsSeqTreeNode" name="Max Camera Distance">
+                    <attr name="type" value="real"/>
+            <attr name="min" value="0.1"/>
+            <attr name="max" value="20.0"/>
+            <attr name="inc" value="0.1"/>
+            <attr name="cammode" value="Third Person Lara"/>
+                </widget>
+            <widget factory="pawsSeqTreeNode" name="Starting Pitch">
+                    <attr name="type" value="real"/>
+            <attr name="min" value="-3.0"/>
+            <attr name="max" value="3.0"/>
+            <attr name="inc" value="0.1"/>
+            <attr name="cammode" value="Third Person Lara"/>
+                </widget>
+            <widget factory="pawsSeqTreeNode" name="Swing Coefficient">
+                    <attr name="type" value="real"/>
+            <attr name="min" value="0.0"/>
+            <attr name="max" value="10.0"/>
+            <attr name="inc" value="0.1"/>
+            <attr name="cammode" value="Third Person Lara"/>
+                </widget>
+        </widget>
+            <widget factory="pawsWidgetTreeNode">
+                <nodewidget>
+            <widget factory="pawsTextBox" name="Free Rotation">
+                        <frame x="0" y="0" width="100" height="20" border="no" />
+                <text string="Free Rotation"/>
+                    </widget>
+                </nodewidget>
+            <widget factory="pawsSeqTreeNode" name="Spring Length">
+                    <attr name="type" value="real"/>
+            <attr name="min" value="0.001"/>
+            <attr name="max" value="2.0"/>
+            <attr name="inc" value="0.001"/>
+            <attr name="cammode" value="Free Rotation"/>
+                </widget>
+            <widget factory="pawsSeqTreeNode" name="Spring Coefficient">
+                    <attr name="type" value="real"/>
+            <attr name="min" value="0.0"/>
+            <attr name="max" value="20.0"/>
+            <attr name="inc" value="0.1"/>
+            <attr name="cammode" value="Free Rotation"/>
+                </widget>
+            <widget factory="pawsSeqTreeNode" name="Dampening Coefficient">
+                    <attr name="type" value="real"/>
+            <attr name="min" value="0.0"/>
+            <attr name="max" value="20.0"/>
+            <attr name="inc" value="0.1"/>
+            <attr name="cammode" value="Free Rotation"/>
+                </widget>
+            <widget factory="pawsSeqTreeNode" name="Min Camera Distance">
+                    <attr name="type" value="real"/>
+            <attr name="min" value="0.1"/>
+            <attr name="max" value="20.0"/>
+            <attr name="inc" value="0.1"/>
+            <attr name="cammode" value="Free Rotation"/>
+                </widget>
+            <widget factory="pawsSeqTreeNode" name="Max Camera Distance">
+                    <attr name="type" value="real"/>
+            <attr name="min" value="0.1"/>
+            <attr name="max" value="20.0"/>
+            <attr name="inc" value="0.1"/>
+            <attr name="cammode" value="Free Rotation"/>
+                </widget>
+            <widget factory="pawsSeqTreeNode" name="Starting Pitch">
+                    <attr name="type" value="real"/>
+            <attr name="min" value="-3.0"/>
+            <attr name="max" value="3.0"/>
+            <attr name="inc" value="0.1"/>
+            <attr name="cammode" value="Free Rotation"/>
+                </widget>
+            </widget>
+        </widget>
+    </widget>
+</widget>
+
+</widget_description>

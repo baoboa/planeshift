@@ -1,0 +1,20 @@
+<layerconfig>
+	<staticlights>
+	  <!-- Don't draw static lights for meshes which have the 
+	       CS_ENTITY_STATICLIGHT flag set -->
+	  <nodraw />
+	</staticlights>
+	<layer>
+	        <defaultshader name="lighting_basic" file="/shader/lighting/lighting_basic.xml" />
+		<shadervar name="pass do_ambient" type="integer">1</shadervar>
+	        <!-- Draw layer, even if no lights are present -->
+		<ambient />
+		<maxlightpasses>1</maxlightpasses>
+		<shadertype>base</shadertype>
+		<shadertype>diffuse</shadertype>
+		<shadertype>ambient</shadertype>
+		<shadertype>splatting ambient</shadertype>
+		<shadertype>standard</shadertype>
+		<shadertype>terrain splat</shadertype>
+	</layer>
+</layerconfig>

@@ -1,0 +1,108 @@
+SubDir TOP src npcclient ;
+
+Library libpsnpcclient :
+        [ Filter [ Wildcard *.cpp *.h ] : gtest_main.cpp main.cpp command.cpp [ Wildcard *_unittest.cpp ] ]
+;
+
+ExternalLibs libpsnpcclient : CRYSTAL ;
+LinkWith libpsnpcclient : psnet psengine psrpgrules psutil fparser ;
+
+Application psnpcclient :
+	main.cpp command.cpp : console
+;
+
+CompileGroups psnpcclient : server ;
+ExternalLibs psnpcclient : CRYSTAL ;
+LinkWith psnpcclient : libpsnpcclient paws ;
+
+if $(GTEST.AVAILABLE) = "yes"
+{
+Application npcclient_test :
+        [ Wildcard *_unittest.cpp ] gtest_main.cpp command.cpp : console
+;
+
+ExternalLibs npcclient_test : CRYSTAL GTEST ;
+LinkWith npcclient_test : libpsnpcclient ;
+}
+
+if $(HAVE_STATIC_PLUGINS) = "yes"
+{
+
+SubVariant static ;
+Application psnpcclient_static : main.cpp command.cpp $(extrafiles) : console independent noinstall nohelp ;
+CFlags psnpcclient_static : [ FDefines CS_STATIC_LINKED ] ;
+LFlags psnpcclient_static : -lcrystalspace_staticplugins-$(CRYSTAL.VERSION) ;
+MsvcDefine psnpcclient_static : CS_STATIC_LINKED ;
+LinkWith psnpcclient_static : planeshift_staticplugins planeshift_database_staticplugins libpsnpcclient paws ;
+
+LinkStaticPlugins psnpcclient_static :
+  bindoc
+  csddsimg
+  csfont
+  csopcode
+  csparser
+  cspngimg
+  cssynldr
+  cstgaimg
+  docpreproc
+  dsplex
+  dynavis
+  emit
+  emitldr
+  engine
+  engseq
+  fontplex
+  freefnt2
+  frustvis
+  genmesh
+  gl3d
+  glshader_cg
+  glshader_fixed
+  gmeshanim
+  gmeshldr
+  imgplex
+  null2d
+  null3d
+  nullmesh
+  nullmeshldr
+  particles
+  particlesldr
+  ptanimimg
+  reporter
+  sequence
+  shadermgr
+  shaderweaver
+  sndmanager
+  simpleformer
+  simpleformerldr
+  spr2d
+  spr3d
+  spr3dbin
+  spr3dldr
+  sprcal3d
+  sprcal3dldr
+  stdrep
+  vfs
+  xmlread
+  xmlshader
+  xmltiny
+
+: 
+: CRYSTAL
+;
+
+LinkStaticPlugins psnpcclient_static :
+  bgloader
+  dbmysql
+  recast
+  celgraph
+  soundmngr
+  dummysndmngr
+;
+
+ExternalLibs psnpcclient_static : CRYSTAL ;
+CompileGroups psnpcclient_static : server_static ;
+
+
+SubVariant ;
+}

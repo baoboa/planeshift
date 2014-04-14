@@ -1,0 +1,13 @@
+<config>
+    <mirrors>
+        <mirror id="1" name="PS1" url="http://www.planeshiftmirror.com/updaterdir" />
+        <mirror id="2" name="PS2" url="http://www.planeshiftmirror2.com/updaterdir" />
+    </mirrors>
+    <updater version="1" md5win32="01234556789abcdef" md5linux32="01234556789abcdef" md5linux64="01234556789abcdef" md5macosx="01234556789abcdef />
+    <client>
+        <version name="0.3.019-0.3.020" md5win32="01234556789abcdef" md5linux32="01234556789abcdef" md5linux64="01234556789abcdef" md5macosx="01234556789abcdef" />
+        <version name="0.3.020-0.3.021" md5win32="01234556789abcdef" md5linux32="01234556789abcdef" md5linux64="01234556789abcdef" md5macosx="01234556789abcdef" />
+        <version name="0.4.000-0.4.001" md5win32="01234556789abcdef" md5linux32="01234556789abcdef" md5linux64="01234556789abcdef" md5macosx="01234556789abcdef" />
+        <version name="0.4.001-0.4.002" md5win32="01234556789abcdef" md5linux32="01234556789abcdef" md5linux64="01234556789abcdef" md5macosx="01234556789abcdef" />
+    </client>
+</config>

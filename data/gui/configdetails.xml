@@ -1,0 +1,96 @@
+<widget_description>
+
+    <widget name="ConfigDetails" factory="pawsConfigDetails"
+            visible="no" savepositions="no" movable="no"
+            resizable="no" style="New Standard GUI">
+        <bgimage resource="Scaling Widget Background" />
+
+        <widget name="AdaptCheck" factory="pawsCheckBox">
+            <frame x="100" y="10" width="190" height="20" />
+            <text string="Adaptive distance" position="right"/>
+        </widget>
+
+        <widget name="AdaptConfig" factory="pawsWidget">
+            <frame x="10" y="40" width="390" height="120" />
+            <widget factory="pawsTextBox" name="">
+                <frame x="10" y="10" width="100" height="20" border="no" />
+                <text string="Min. distance:"/>
+            </widget>
+
+            <widget factory="pawsEditTextBox" name="MinDistValue">
+                <frame x="120" y="10" width="50" height="20" border="yes" />
+                <text string=""/>
+            </widget>
+
+            <widget name="MinDistScroll" factory="pawsScrollBar" direction="horizontal" style="Standard Scrollbar Horizontal">
+                <frame x="180" y="10" width="200" height="20" border="no" />
+            </widget>
+
+
+            <widget factory="pawsTextBox" name="">
+                <frame x="10" y="40" width="100" height="20" border="no" />
+                <text string="Min. FPS:"/>
+            </widget>
+
+            <widget factory="pawsEditTextBox" name="MinFPSValue">
+                <frame x="120" y="40" width="50" height="20" border="yes" />
+                <text string=""/>
+            </widget>
+
+            <widget name="MinFPSScroll" factory="pawsScrollBar" direction="horizontal" style="Standard Scrollbar Horizontal">
+                <frame x="180" y="40" width="200" height="20" border="no" />
+            </widget>
+
+
+            <widget factory="pawsTextBox" name="">
+                <frame x="10" y="70" width="100" height="20" border="no" />
+                <text string="Max. FPS:"/>
+            </widget>
+
+            <widget factory="pawsEditTextBox" name="MaxFPSValue">
+                <frame x="120" y="70" width="50" height="20" border="yes" />
+                <text string=""/>
+            </widget>
+
+            <widget name="MaxFPSScroll" factory="pawsScrollBar" direction="horizontal" style="Standard Scrollbar Horizontal">
+                <frame x="180" y="70" width="200" height="20" border="no" />
+            </widget>
+        </widget>
+
+        <widget name="FixedConfig" factory="pawsWidget" visible="no">
+            <frame x="10" y="40" width="390" height="200" />
+            <widget factory="pawsTextBox" name="">
+                <frame x="10" y="10" width="100" height="20" border="no" />
+                <text string="Distance:"/>
+            </widget>
+
+            <widget factory="pawsEditTextBox" name="DistValue">
+                <frame x="120" y="10" width="50" height="20" border="yes" />
+                <text string=""/>
+            </widget>
+
+            <widget name="DistScroll" factory="pawsScrollBar" direction="horizontal" style="Standard Scrollbar Horizontal">
+                <frame x="180" y="10" width="200" height="20" border="no" />
+            </widget>
+        </widget>
+
+        <widget factory="pawsTextBox" name="">
+            <frame x="20" y="260" width="100" height="20" border="no" />
+            <text string="FPS cap:"/>
+        </widget>
+        <widget factory="pawsEditTextBox" name="capFPSValue">
+            <frame x="130" y="260" width="50" height="20" border="yes" />
+            <text string=""/>
+        </widget>
+        <widget name="capFPSScroll" factory="pawsScrollBar" direction="horizontal" style="Standard Scrollbar Horizontal">
+            <frame x="180" y="260" width="200" height="20" border="no" />
+        </widget>
+        <widget factory="pawsTextBox" name="">
+        <frame x="20" y="280" width="200" height="20" border="no" />
+            <text string="Actual FPS may vary."/>
+        </widget>
+
+    </widget>
+
+</widget_description>
+

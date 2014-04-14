@@ -1,0 +1,24 @@
+#! /usr/bin/php
+<?php
+// Converts common strings entries to the format required by the new loader.  Do this before nuking
+// the common strings table - that way everything gets the updated entry.
+
+// Change your database settings here:
+$db = mysql_connect("localhost", "planeshift", "planeshift") or die ("Unable to connect!"); // host, user, pass
+mysql_select_db("planeshift", $db) or die("Could not select database");
+
+mysql_query("ALTER TABLE common_strings DROP key string");
+
+$scripts = mysql_query("SELECT * from common_strings") or die("fatal error: couldn't select stuff: " . mysql_error() . "\n");
+while ($row = mysql_fetch_array($scripts))
+{
+    $s = mysql_real_escape_string(preg_replace('!^/planeshift/[^/]*/!', '/planeshift/materials/',
+                                  preg_replace('!^/planeshift/models/\$F/(\$F.*).dds!', '$1', $row['string'])));
+    if ($s != $row['string'])
+    {
+        echo $row['string'] . " ===> $s\n";
+        mysql_query("UPDATE common_strings SET string = '$s' WHERE id=" . $row['id']) or die(mysql_error() . "\n");
+    }
+}
+
+?>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" ?> 
+<library>
+    <library>/this/data/effects/examples/fire.part</library>
+    <addon plugin="PSEffects">
+        <effect name="fire">
+            <anchor type="basic" name="pos">
+            </anchor>
+            <anchor type="basic" name="target">
+                <keyFrame time="0">
+                    <action name="position" x="0" y="1.5" z="0" />
+                </keyFrame>
+                <keyFrame time="1000">
+			<action name="position" x="0" y="1" z="0" />
+   			<action name="totarget" z=".1" />
+                </keyFrame>
+     		<keyFrame time="1500">
+			<action name="position" x="0" y="1" z="0" />
+   			<action name="totarget" z=".3" />
+                </keyFrame>
+		<keyFrame time="2000">
+			<action name="position" x="0" y="1" z="0" />
+   			<action name="totarget" z=".5" />
+                </keyFrame>
+   		<keyFrame time="2500">
+			<action name="position" x="0" y="1" z="0" />
+   			<action name="totarget" z=".7" />
+                </keyFrame>
+		<keyFrame time="3500">
+			<action name="position" x="0" y="1" z="0" />
+   			<action name="totarget" z="1" />
+                </keyFrame>
+    	            </anchor>
+
+            <obj type="particles" name="fire" fact="fire">
+                <attach>target</attach>
+                <death>3500</death>
+                <mixmode>add</mixmode>
+                <keyFrame time="0">
+                    <action name="animate" value="true" />
+                </keyFrame>
+                <keyFrame time="7000">
+                <action name="animate" value="false" />
+                </keyFrame>
+            </obj>
+        </effect>
+    </addon>
+</library>
+
+

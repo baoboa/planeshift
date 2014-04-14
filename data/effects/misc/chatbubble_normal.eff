@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<library>
+    <textures>
+        <texture name="bubble_short">
+            <file>/this/art/effects/chat_bubble_short.png</file>
+        </texture>
+    </textures>
+    <materials>
+        <material name="bubble_short">
+            <texture>bubble_short</texture>
+        </material>
+    </materials>
+    <addon plugin="PSEffects">
+        <effect name="chatbubble_normal">
+            <anchor type="basic" name="pos">
+                <dir>none</dir>
+                <keyFrame time="0">
+                    <action name="position" y="0.10" />
+                </keyFrame>
+            </anchor>
+
+            <obj type="text" fontquality="26" name="text">
+                <priority>alpha</priority>
+                <mixmode>copy</mixmode>
+                <textarea left="0.03" top="0.07" right="0.96" bottom="0.875" />
+                <attach>pos</attach>
+                <death>7000</death>
+                <dir>camera</dir>
+                <keyFrame time="0">
+                    <action name="height" value="0.5" />
+                    <action name="scale" value="1.7" />
+                </keyFrame>
+            </obj>
+            <obj type="quad" name="bubble" material="bubble">
+                <priority>alpha</priority>
+                <mixmode>alpha</mixmode>
+                <attach>pos</attach>
+                <death>7000</death>
+                <dir>camera</dir>
+                <keyFrame time="0">
+                    <action name="position" y="-0.02" z="-0.1" />
+                    <action name="height" value="0.25" />
+                    <action name="scale" value="2.0" />
+                </keyFrame>
+            </obj>
+            
+        </effect>
+    </addon>
+</library>
+

@@ -1,0 +1,68 @@
+<widget_description>
+    <widget name="ConfigChatTree" factory="pawsConfigChat"
+            visible="no" savepositions="no" movable="no"
+            resizable="no" style="New Standard GUI" >
+        <frame x="225" y="10" width="400" height="300" border="no" />
+        <bgimage resource="Scaling Widget Background" />
+            <!-- Messages that's aimed to the player -->
+        <widget name="cmlbl" factory="pawsTextBox">
+            <frame x="60" y="10" width="230" height="20" />
+            <text string="Combat messages regarding me" />
+        </widget>
+        <widget name="osuc" factory="pawsCheckBox">
+            <frame x="10" y="30" width="250" height="20" />
+            <text string="Own attacks (Successful ones)" />
+        </widget>
+        <widget name="oblo" factory="pawsCheckBox">
+            <frame x="10" y="50" width="250" height="20" />
+            <text string="Own attacks that are blocked" />
+        </widget>
+        <widget name="odod" factory="pawsCheckBox">
+            <frame x="10" y="70" width="250" height="20" />
+            <text string="Own attacks that are dodged" />
+        </widget>
+        <widget name="omis" factory="pawsCheckBox">
+            <frame x="10" y="90" width="250" height="20" />
+            <text string="Own attacks that missed the target" />
+        </widget>
+        <widget name="ofai" factory="pawsCheckBox">
+            <frame x="10" y="110" width="300" height="20" />
+            <text string="Own attacks that fail to penetrate the armor" />
+        </widget>
+        <widget name="osta" factory="pawsCheckBox">
+            <frame x="10" y="130" width="300" height="20" />
+            <text string="Own combat stance changes" />
+        </widget>
+
+
+        <!-- Messages that's aimed to the entites near the player -->
+        <widget name="cmnlbl" factory="pawsTextBox">
+            <frame x="60" y="160" width="340" height="20" />
+            <text string="Combat messages regarding others" />
+        </widget>
+        <widget name="vsuc" factory="pawsCheckBox">
+            <frame x="10" y="180" width="250" height="20" />
+            <text string="Others' attacks (Successful ones)" />
+        </widget>
+        <widget name="vblo" factory="pawsCheckBox">
+            <frame x="10" y="200" width="250" height="20" />
+            <text string="Others' attacks that are blocked" />
+        </widget>
+        <widget name="vdod" factory="pawsCheckBox">
+            <frame x="10" y="220" width="250" height="20" />
+            <text string="Others' attacks that are dodged" />
+        </widget>
+        <widget name="vmis" factory="pawsCheckBox">
+            <frame x="10" y="240" width="250" height="20" />
+            <text string="Others' attacks that missed the target" />
+        </widget>
+        <widget name="vfai" factory="pawsCheckBox">
+            <frame x="10" y="260" width="300" height="20" />
+            <text string="Others' attacks that fail to penetrate the armor" />
+        </widget>
+        <widget name="vsta" factory="pawsCheckBox">
+            <frame x="10" y="280" width="300" height="20" />
+            <text string="Others' combat stance changes" />
+        </widget>
+    </widget>
+</widget_description>

@@ -1,0 +1,4 @@
+<custom_widgets>
+    <widget name="New Options Window" file="data/gui/newoptions.xml" />
+        <widget name="Bank Window" file="data/gui/bankwindow.xml" />
+</custom_widgets>

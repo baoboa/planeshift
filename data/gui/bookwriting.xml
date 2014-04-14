@@ -1,0 +1,41 @@
+<widget_description>
+
+    <widget name="WritingWindow" factory="pawsWritingWindow" resizeable = "no" visible="no" movable="yes" style="New Standard GUI">
+        <frame x="100" y="70" width="447" height="500" border="yes"/>
+        <bgimage resource="Write Book" />
+        <title resource="Scaling Title Bar" text="Book Writing" align="left" close_button="yes"/>
+
+
+        <widget name="ItemName" factory="pawsEditTextBox" >
+            <frame x="35" y="35" width="385" height="40"/>
+            <font name="becker-m.ttf" r="0" g="0" b="0" size="15"/>
+            <text horizAdjust="CENTRE" />
+            <spellChecker enable="true" r="255" g="0" b="0"/>
+        </widget>
+
+         <widget name="body" factory="pawsMultilineEditTextBox" style="textinput">
+            <frame x="35" y="90" width="385" height="380" border="no"/>
+            <font name="becker-m.ttf" r="0" g="0" b="0" size="12"/>
+            <spellChecker enable="true" r="255" g="0" b="0"/>
+        </widget>
+        
+        <widget name="save" factory="pawsButton" id="103" style="Standard Button">
+            <frame x="5" y="5" width="50" height="20" />
+            <label text="OK"/>
+        </widget>
+
+        <widget name="load" factory="pawsButton" id="104" style="Standard Button">
+            <frame x="300" y="5" width="50" height="20" />
+            <label text="Load"/>
+        </widget>
+
+        <widget name="cancel" factory="pawsButton" id="101" style="Standard Button">
+            <frame x="370" y="5" width="70" height="20" />
+            <label text="Cancel"/>
+        </widget>
+
+   </widget>
+
+</widget_description>
+
+

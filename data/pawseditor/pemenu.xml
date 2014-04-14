@@ -1,0 +1,72 @@
+<widget_description>
+<widget name="peMenu" factory="peMenu" 
+        visible="yes" savepositions="no" movable="no" 
+        resizable="no" >
+    
+    <!-- window background -->
+    <bgimage resource="peShaded" alpha="0" fade="no" />
+
+    <!-- size of window and title -->
+    <frame x="0" y="0" width="800" height="35" border="no" />
+    <title resource="peTitleBar" text="Planeshift Effect Editor" align="left" />
+    
+    <!-- toolbox show/hide buttons -->
+    <widget name="FileNewWidget" factory="pawsButton" id="103">
+        <frame x="25" y="5" width="100" height="25" border="no" />
+        <font name="LiberationSans-Regular.ttf" r="255" g="255" b="255" size="7"  sr="0" sg="0" sb="0" shadow="yes" />   
+        <buttonup resource="peButtonUp"/>
+        <buttondown resource="peButtonDown" />
+        <label text="New Widget"/>
+    </widget>
+    
+    <widget name="FileLoadWidget" factory="pawsButton" id="101">
+        <frame x="135" y="5" width="100" height="25" border="no" />
+        <font name="LiberationSans-Regular.ttf" r="255" g="255" b="255" size="7"  sr="0" sg="0" sb="0" shadow="yes" />   
+        <buttonup resource="peButtonUp"/>
+        <buttondown resource="peButtonDown" />
+        <label text="Load Widget..."/>
+    </widget>
+    
+    <widget name="FileSaveWidget" factory="pawsButton" id="104">
+        <frame x="245" y="5" width="100" height="25" border="no" />
+        <font name="LiberationSans-Regular.ttf" r="255" g="255" b="255" size="7"  sr="0" sg="0" sb="0" shadow="yes" />   
+        <buttonup resource="peButtonUp"/>
+        <buttondown resource="peButtonDown" />
+        <label text="Reload Widget"/>
+    </widget>
+
+    <widget name="ReloadStyles" factory="pawsButton" id="105">
+        <frame x="355" y="5" width="100" height="25" border="no" />
+        <font name="LiberationSans-Regular.ttf" r="255" g="255" b="255" size="7"  sr="0" sg="0" sb="0" shadow="yes" />   
+        <buttonup resource="peButtonUp"/>
+        <buttondown resource="peButtonDown" />
+        <label text="Reload Styles"/>
+    </widget>
+
+    <widget name="LoadImageList" factory="pawsButton" id="102">
+        <frame x="465" y="5" width="100" height="25" border="no" />
+        <font name="LiberationSans-Regular.ttf" r="255" g="255" b="255" size="7"  sr="0" sg="0" sb="0" shadow="yes" />   
+        <buttonup resource="peButtonUp"/>
+        <buttondown resource="peButtonDown" />
+        <label text="Load ImageList..."/>
+    </widget>
+
+    <widget name="SelectSkin" factory="pawsButton" id="106">
+        <frame x="575" y="5" width="100" height="25" border="no" />
+        <font name="LiberationSans-Regular.ttf" r="255" g="255" b="255" size="7"  sr="0" sg="0" sb="0" shadow="yes" />   
+        <buttonup resource="peButtonUp"/>
+        <buttondown resource="peButtonDown" />
+        <label text="Select Skin..."/>
+    </widget>
+
+    <widget name="Exit" factory="pawsButton" id="0">
+        <frame x="715" y="5" width="80" height="25" border="no" />
+        <font name="LiberationSans-Regular.ttf" r="255" g="255" b="255" size="7"  sr="0" sg="0" sb="0" shadow="yes" />   
+        <buttonup resource="peButtonUp"/>
+        <buttondown resource="peButtonDown" />
+        <label text="Exit"/>
+    </widget>
+    
+</widget>
+</widget_description>
+

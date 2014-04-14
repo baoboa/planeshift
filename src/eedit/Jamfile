@@ -1,0 +1,90 @@
+SubDir TOP src eedit ;
+
+Application eedit :
+	[ Wildcard *.cpp *.h ]
+;
+
+CompileGroups eedit : tools ;
+ExternalLibs eedit : CRYSTAL CAL3D ;
+LinkWith eedit : paws psutil effects fparser ;
+
+if $(HAVE_STATIC_PLUGINS) = "yes"
+{
+  SubVariant static ;
+
+  ApplicationIcon win32 : eedit_static : [ ConcatDirs $(TOP) support icons icon1.ico ] ;
+  ApplicationIcon macosx : eedit_static : [ ConcatDirs $(TOP) support icons icon1.icns ] ;
+
+  Application eedit_static :
+      [ Wildcard *.cpp *.h ]
+  ;
+
+  CFlags eedit_static : [ FDefines CS_STATIC_LINKED ] ;
+  MsvcDefine eedit_static : CS_STATIC_LINKED ;
+  LinkWith eedit_static : paws psutil effects fparser ;
+
+STATIC.PLUGINLIST =
+  bindoc
+  csddsimg
+  csfont
+  csgifimg
+  csjpgimg
+  csjngimg
+  csopcode
+  csparser
+  cspngimg
+  cssynldr
+  cstgaimg
+  decal
+  docpreproc
+  dsplex
+  engine
+  fontplex
+  freefnt2
+  frustvis
+  genmesh
+  gl3d
+  glshader_cg
+  glshader_fixed
+  glshader_ps1
+  gmeshldr
+  imgplex
+  nullmesh
+  particles
+  particlesldr
+  posteffect
+  ptanimimg
+  ptpdlight
+  reporter
+  rm_unshadowed
+  shadermgr
+  shaderweaver
+  spr3d
+  spr3dldr
+  stdrep
+  vfs
+  xmlshader
+  xmltiny
+  ;
+
+if $(TARGET.OS) != "WIN32" { if $(TARGET.OS) != "MACOS_X" { STATIC.PLUGINLIST += xwin xext86vm glx2d ; } }
+if $(TARGET.OS) = "WIN32" { STATIC.PLUGINLIST += glwin32 ; }
+if $(TARGET.OS) = "MACOS_X" { STATIC.PLUGINLIST += glosx2d ; }
+
+LinkStaticPlugins eedit_static : $(STATIC.PLUGINLIST)
+:
+: CRYSTAL
+;
+
+LinkStaticPlugins eedit_static :
+  bgloader
+  soundmngr
+  dummysndmngr
+;
+
+  CompileGroups eedit_static : tools ;
+  ExternalLibs eedit_static : CRYSTAL CAL3D ;
+
+  SubVariant ;
+}
+

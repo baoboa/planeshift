@@ -1,0 +1,9 @@
+<changedfiles>
+    <changedfile filepath="art/world/world1.zip" diff="art/world/blah1.vcdiff" md5sum="1234567890abcdef1234567890abcdef" />
+    <changedfile filepath="art/world/world2.zip" diff="art/world/blah2.vcdiff" md5sum="1234567890abcdef1234567890abcdef" />
+    <changedfile filepath="art/world/world3.zip" diff="art/world/blah3.vcdiff" md5sum="1234567890abcdef1234567890abcdef" />
+    <changedfile filepath="art/world/world4.zip" diff="art/world/blah4.vcdiff" md5sum="1234567890abcdef1234567890abcdef" />
+    <changedfile filepath="art/world/world5.zip" diff="art/world/blah5.vcdiff" md5sum="1234567890abcdef1234567890abcdef" />
+    <changedfile filepath="art/world/world6.zip" diff="art/world/blah6.vcdiff" md5sum="1234567890abcdef1234567890abcdef" />
+    <changedfile filepath="art/world/world7.zip" diff="art/world/blah7.vcdiff" md5sum="1234567890abcdef1234567890abcdef" />
+</changedfiles>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" ?> 
+<library>
+    <textures>
+        <texture name="star_example">
+            <file>/this/art/effects/examples/star_example.dds</file>
+        </texture>
+    </textures>
+    <materials>
+        <material name="star_example">
+            <texture>star_example</texture>
+        </material>
+    </materials>
+    <addon plugin="PSEffects">
+        <effect name="x_obj_star">
+            <anchor type="basic" name="pos">
+                <dir>none</dir>
+            </anchor>
+
+            <!-- Simplest star (the white one) --> 
+            <obj type="star" name="star" material="star_example" segments="5">
+                <attach>pos</attach>
+                <death>none</death>
+            </obj>
+
+            <!-- Typical star (the yellow one) -->
+            <obj type="star" name="star_typical" material="star_example" segments="5">
+                <attach>pos</attach>
+                <death>none</death>
+                <keyFrame time="0">
+                    <action name="colour" r="255" g="255" b="0" a="255" />
+                    <action name="position" y="3" />
+                    <action name="height" value="20" />
+                    <action name="topscale" value="10" />
+                </keyFrame>
+                <keyFrame time="1000">
+                    <action name="height" value="1" />
+                    <action name="topscale" value="0.5" />
+                </keyFrame>
+                <keyFrame time="2000">
+                    <action name="height" value="20" />
+                    <action name="topscale" value="10" />
+                </keyFrame>
+            </obj>
+        </effect>
+    </addon>
+</library>
+

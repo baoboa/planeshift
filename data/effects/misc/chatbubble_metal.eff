@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<library>
+    <textures>
+        <texture name="bubble_metal">
+            <file>/this/art/effects/chat_bubble_metal.png</file>
+        </texture>
+    </textures>
+    <materials>
+        <material name="bubble_metal">
+            <texture>bubble_metal</texture>
+        </material>
+    </materials>
+    <addon plugin="PSEffects">
+        <effect name="chatbubble_metal">
+            <anchor type="basic" name="pos">
+                <dir>none</dir>
+            </anchor>
+
+            <obj type="text2d" fontsize="14" name="text" align="top">
+                <priority>alpha</priority>
+                <mixmode>copy</mixmode>
+                <attach>pos</attach>
+                <death>7000</death>
+                <background material="bubble_metal">
+                    <elem align="center"       umin="41"  vmin="43"   umax="243" vmax="178" offsetx="5"  offsety="5"  tile="true" />
+
+                    <elem align="top"          umin="3"   vmin="2"    umax="203" vmax="18"  offsetx="5"  offsety="-5" tile="true" />
+                    <elem align="bottom"       umin="3"   vmin="23"   umax="203" vmax="39"  offsetx="5"  offsety="5"  tile="true" />
+                    <elem align="left"         umin="3"   vmin="43"   umax="18"  vmax="244" offsetx="-5" offsety="5"  tile="true" />
+                    <elem align="right"        umin="23"  vmin="43"   umax="38"  vmax="243" offsetx="5"  offsety="5"  tile="true" />
+
+                    <elem align="top-left"     umin="218"  vmin="10"  umax="243" vmax="35" />
+                    <elem align="top-right"    umin="218"  vmin="10"  umax="243" vmax="35" />
+                    <elem align="bottom-left"  umin="218"  vmin="10"  umax="243" vmax="35" />
+                    <elem align="bottom-right" umin="218"  vmin="10"  umax="243" vmax="35" />
+
+                    <elem align="bottom"       umin="44"   vmin="182" umax="104" vmax="252" offsetx="-5" offsety="0" scale="false" />
+
+                </background>
+
+<!--
+                <keyFrame time="0">
+                    <action name="alpha" value="150" />
+                </keyFrame>
+-->
+            </obj>
+        </effect>
+    </addon>
+</library>
+

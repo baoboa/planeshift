@@ -1,0 +1,257 @@
+<StringTable>
+    <!-- charcreate.xml -->
+    <item orig="Character Name" 
+    	 trans="Character-Name"/>
+    <item orig="Back" 
+         trans="Zurück"/>
+    <item orig="Paths" 
+    	 trans="Pfade"/>
+    <item orig="Custom" 
+         trans="Angepasst"/>
+
+    <!-- charpick.xml -->
+    <item orig="New Character" 
+         trans="Neuer Character"/>
+    <item orig="Join Game" 
+         trans="Spiel beitreten"/>
+
+    <!-- chatmenu.xml -->
+    <item orig="Communication" 
+         trans="Kommunikation"/>
+    <item orig="Group" 
+         trans="Gruppe"/>
+    <item orig="Greetings" 
+         trans="Grüsse"/>
+    <item orig="Hi" 
+         trans="Hi"/>
+    <item orig="Hello" 
+         trans="Hallo"/>
+    <item orig="Welcome back" 
+         trans="Willkommen zurück"/>
+    <item orig="Can I join you ?" 
+         trans="Kann ich dich begleiten?"/>
+    <item orig="Defend me !" 
+         trans="Verteidige mich!"/>
+    <item orig="Lets go !" 
+         trans="Los gehts!"/>
+    <item orig="I am leaving" 
+         trans="Ich geh dann mal"/>
+    <item orig="Trade" 
+         trans="Handel"/>
+    <item orig="Hostility" 
+         trans="Feindlichkeit"/>
+
+    <!-- spellwindow.xml -->
+    <item orig="Name" 
+         trans="Name"/>
+    <item orig="Glyphs" 
+         trans="Glyphen"/>
+    <item orig="Way" 
+         trans="Weg"/>
+    <item orig="Realm" 
+         trans="Gebiet"/>
+
+    <!-- configtree.xml -->
+    <item orig="network" 
+         trans="Netzwerk"/>
+    <item orig="server" 
+         trans="Server"/>
+    <item orig="tweaks" 
+         trans="Tweaks"/>
+    <item orig="controls" 
+         trans="Steuerung"/>
+    <item orig="mouse" 
+         trans="Maus"/>
+    <item orig="keyboard" 
+         trans="Tastatur"/>
+    <item orig="graphics" 
+         trans="Grafik"/>
+    <item orig="models" 
+         trans="Modelle"/>
+    <item orig="details" 
+         trans="Details"/>
+    <item orig="landscape" 
+         trans="Landschaft"/>
+
+    <!-- exchange.xml -->
+    <item orig="Count:" 
+         trans="Anzahl:"/>
+
+    <!-- infowindow.xml -->
+    <item orig="No Target" 
+         trans="Keine Auswahl"/>
+    <item orig="Time: " 
+         trans="Zeit: "/>
+
+    <!-- inventory.xml -->
+    <item orig="? Weight" 
+         trans="? Gewicht"/>
+    <item orig="Stack Count" 
+         trans="Stapel"/><!-- @@@ What context? -->
+
+    <!-- itemdesc.xml -->
+    <item orig="Close" 
+         trans="Schließen"/>
+
+    <!-- loginwindow.xml -->
+    <item orig="Account User Name:" 
+         trans="Account Benutzername:"/>
+    <item orig="Account Password:" 
+         trans="Account Passwort:"/>
+    <item orig="Server:" 
+         trans="Server:"/>
+    <item orig="Exit PlaneShift" 
+         trans="Planeshift beenden"/>
+    <item orig="Login" 
+         trans="Login"/>
+    <item orig="New Account" 
+         trans="Neuer Account"/>
+
+    <!-- merchant.xml -->
+    <item orig="Count" 
+         trans="Anzahl"/>
+    <item orig="Buy" 
+         trans="Kaufen"/>
+    <item orig="Sell" 
+         trans="Verkaufen"/>
+
+    <!-- shortcutwindow.xml -->
+    <item orig="Name:" 
+         trans="Name:"/>
+    <item orig="Enter the command(s):" 
+         trans="Befehl(e) eingeben:"/>
+    <item orig="Done" 
+         trans="Fertig"/>
+    <item orig="Cancel" 
+         trans="Abbrechen"/>
+
+    <!-- psengine.cpp -->    
+    <item orig="Loading Game" 
+         trans="Lade Spiel"/>
+    <item orig="Requesting World" 
+         trans="Welt wird abgerufen"/>
+    <item orig="Getting Characters" 
+         trans="Character werden geholt"/>
+    <item orig="Loading GUI" 
+         trans="Lade GUI"/>
+
+    <!-- chatwindow.cpp -->
+    <item orig="Unknown command" 
+         trans="Unbekannter Befehl:"/>
+    <item orig="%s tells group: %s" 
+         trans="%s sagt der Gruppe: %s"/>
+    <item orig="%s shouts: %s" 
+         trans="%s ruft: %s"/>
+    <item orig="%s from %s: %s" 
+         trans="%s von %s: %s"/>
+    <item orig="%s from %s: %s" 
+         trans="%s von %s: %s"/>
+    <item orig="%s says: %s" 
+         trans="%s sagt: %s"/>
+    <item orig="%s %s" 
+         trans="%s %s"/>
+    <item orig="%s tells you: %s" 
+         trans="%s sagt dir: %s"/>
+    <item orig="You tell %s: %s" 
+         trans="Du sagts %s: %s"/>
+    <item orig="You are ignoring all replies from that person." 
+         trans="Du ignorierst alle antworten von dieser Person."/>
+    <item orig="Unknown Chat Type: %d" 
+         trans="Unbekannter Chat-Typ: %d"/>
+    <item orig="Talk to the people in your immediate vicinity." 
+         trans="Rede mit den Leuten in deiner unmittelbaren Nähe."/>
+    <item orig="Talk to people in your sector." 
+         trans="Rede mit den Leuten in deinem Sector."/>
+    <item orig="Talk to someone privately." 
+         trans="Sprich privat mit jemandem."/>
+    <item orig="Talk to everyone in your guild privately." 
+         trans="Sprich privat mit allen deiner Gilde."/>
+    <item orig="Talk to your group privately." 
+         trans="Sprich privat mit allen deiner Gruppe."/>
+    <item orig="Perform an action see by people in your vicinity." 
+         trans="Führ eine Aktion durch, die von allen Leuten in deiner Nähe gesehen wird."/>
+    <item orig="Put an item up for sale or offer to buy something." 
+         trans="Ein Item zum Verkauf anbieten oder ein Kaufangebot machen."/>
+    <item orig="Makes the server log what target player is saying." 
+         trans="Lässt den Server aufzeichen, was der gewählte Spieler sagt."/>
+    <item orig="Ambiguous command:" 
+         trans="Mehrdeutiger Befehl:"/>
+    <item orig="You have ignored no-one." 
+         trans="Du hast niemanden ignoriert."/>
+    <item orig="You have ignored the following players:" 
+         trans="Du ignorierst die folgenden Spieler:"/>
+    <item orig="You can not ignore yourself." 
+         trans="Du kannst dich nich selbst ignorieren."/>
+    <item orig="You will now ignore %s." 
+         trans="Du ignorierst nun %s."/>
+    <item orig="You will no longer ignore %s." 
+         trans="Du ignorierst nicht mehr %s."/>
+
+    <!-- pawsinfowindow.cpp -->
+    <item orig="o&amp;clock" 
+         trans="Uhr"/>
+    
+    <!-- pawscontrolwindow.cpp -->
+    <item orig="Do you really wish to leave Yliakum?" 
+         trans="Willst du wirklich Yliakum verlassen?"/>
+    
+    <!-- pawsloginwindow.cpp -->
+    <item orig="Cannot connect to server" 
+         trans="Kann nicht zum Server verbinden"/>
+    <item orig="No server running at the moment" 
+         trans="Im Moment läuft kein Server"/>
+    
+    <!-- pawspetitiongmwindow.cpp -->
+    <item orig="Manage petitions to help users." 
+         trans="Petitionen, um Nutzern zu helfen, verwalten."/>
+    <item orig="The selected petition was %s" 
+         trans="Die gewählte Petition wurde %s"/>
+    <item orig="cancelled." 
+         trans="abgebrochen."/>
+    <item orig="closed." 
+         trans="geschlossen."/>
+    <item orig="You have been assigned to the selected petition." 
+         trans="Du wurdest der gewählten Petition zugeordnet."/>
+    <item orig="The selected petition has been escalated." 
+         trans="Die gewählte Petition wurde angehoben."/>
+    <item orig="Currently, there are no petitions." 
+         trans="Im Moment gibt es keine Petitionen."/>
+    <item orig="You must select a petition from the list in order to view it." 
+         trans="Du must eine Petition aus der Liste auswählen, um sie anzuzeigen."/>
+    <item orig="You must select a petition from the list in order to cancel it." 
+         trans="Du must eine Petition aus der Liste auswählen, um sie abzubrechen."/>
+    <item orig="You must select a petition from the list in order to assign yourself." 
+         trans="Du must eine Petition aus der Liste auswählen, um dich selbst zuzuorden."/>
+    <item orig="You must select a petition from the list in order to close it." 
+         trans="Du must eine Petition aus der Liste auswählen, um sie zu schliessen."/>
+    <item orig="You must select a petition from the list in order to escalate it." 
+         trans="Du must eine Petition aus der Liste auswählen, um sie anzuheben."/>
+    
+    <!-- pawspetitionwindow.cpp -->
+    <item orig="List all of the petitions you have submitted." 
+         trans="Alle Petitionen, die abgegeben wurden, anzeigen."/>
+    <item orig="The selected petition was cancelled." 
+         trans="Die ausgewählte Petition wurde abgebrochen."/>
+    <item orig="You currently have no petitions." 
+         trans="Du hast im Moment keine Petitionen."/>
+    <item orig="Petition Info" 
+         trans="Petitions-Info"/>
+    <item orig="Status:" 
+         trans="Status:"/>
+    <item orig="Assigned GM:" 
+         trans="Zugeordneter GM:"/>
+    <item orig="Petition submitted:" 
+         trans="Abgeschickte Petition:"/>
+    <item orig="Player name:" 
+         trans="Spielername:"/>
+    <item orig="Escalation Level:" 
+         trans="Stufe:"/>
+    <item orig="Petition Text:" 
+         trans="Petitions-Text:"/>
+    <!-- cmdgroups.cpp -->    <item orig="%s has invited you to join a group. Click Yes to accept or No to reject." 
+         trans="%s hat dich eingeladen, einer Gruppe beizutreten. Klick Ja, um anzunehmen, oder Nein, um abzulehnen."/>
+    <!-- psnetmanager.cpp -->
+    <item orig="Couldn't resolve server hostname." 
+         trans="Konnte Hostnamen nicht auflösen."/>
+
+</StringTable>

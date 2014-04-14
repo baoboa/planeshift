@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?> 
+<library>
+    <library>/this/art/effects/examples/particles_example.part</library>
+    <addon plugin="PSEffects">
+        <effect name="x_obj_particles">
+            <anchor type="basic" name="pos">
+                <dir>none</dir>
+            </anchor>
+            <obj type="particles" name="particles_example" fact="particles_example">
+                <attach>pos</attach>
+                <death>none</death>
+                <keyFrame time="0">
+                    <action name="animate" value="true" />
+                </keyFrame>
+                <keyFrame time="30000">
+                    <action name="animate" value="false" />
+                </keyFrame>
+            </obj>
+        </effect>
+    </addon>
+</library>
+

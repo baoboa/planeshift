@@ -1,0 +1,85 @@
+<widget_description>
+<widget name="eedit" factory="pawsEEdit"
+        visible="yes" savepositions="no" movable="no"
+        resizable="no" >
+
+    <!-- window background -->
+    <bgimage resource="Standard Background" alpha="0" fade="no" />
+
+    <!-- size of window and title -->
+    <frame x="0" y="0" width="800" height="600" border="no" />
+    <title resource="Blue Title" text="PlaneShift Effect Editor" align="left" />
+
+    <!-- preview window -->
+    <widget name="preview" factory="pawsGenericView">
+        <frame x="5" y="5" width="790" height="520" border="no" />
+        <map file="/planeshift/world/npcroom" sector="NPCroom" />
+    </widget>
+
+    <!-- render button -->
+    <widget name="render" factory="pawsButton">
+        <frame x="300" y="530" width="145" height="30" border="yes" />
+        <font name="LiberationSans-Regular.ttf" r="255" g="255" b="255" size="9"/>
+        <buttonup resource="Blue Title"/>
+        <buttondown resource="Blue Title" />
+    <label text="Render"/>
+    </widget>
+
+    <!-- stop button -->
+    <widget name="stop" factory="pawsButton">
+        <frame x="450" y="530" width="50" height="30" border="yes" />
+        <font name="LiberationSans-Regular.ttf" r="255" g="255" b="255" size="9"/>
+        <buttonup resource="Blue Title"/>
+        <buttondown resource="Blue Title" />
+    <label text="Stop"/>
+    </widget>
+
+    <!-- effect selector textbox -->
+    <widget name="effect_selector_lbl" factory="pawsTextBox">
+        <frame x="300" y="570" width="100" height="15" />
+        <font name="LiberationSans-Regular.ttf" r="255" g="255" b="0" size="9"  sr="0" sg="0" sb="0" shadow="yes" />
+        <text string="Effect:" />
+    </widget>
+    <widget name="effect_selector" factory="pawsEditTextBox">
+        <frame x="400" y="570" width="100" height="15" border="yes" />
+        <font name="LiberationSans-Regular.ttf" r="255" g="255" b="255" size="9"/>
+    <text string="test" />
+    </widget>
+
+    <!-- camera controls -->
+    <widget name="cam_left" factory="pawsButton" toggle="no" shadows="yes" >
+        <frame x="582" y="560" width="20" height="20" border="no" />
+        <buttonup resource="Left Arrow" />
+        <buttondown resource="Left Arrow" />
+    </widget>
+    <widget name="cam_right" factory="pawsButton" toggle="no" shadows="yes" >
+        <frame x="620" y="560" width="20" height="20" border="no" />
+        <buttonup resource="Right Arrow" />
+        <buttondown resource="Right Arrow" />
+    </widget>
+    <widget name="cam_up" factory="pawsButton" toggle="no" shadows="yes" >
+        <frame x="600" y="545" width="20" height="20" border="no" />
+        <buttonup resource="Up Arrow" />
+        <buttondown resource="Up Arrow" />
+    </widget>
+    <widget name="cam_down" factory="pawsButton" toggle="no" shadows="yes" >
+        <frame x="600" y="573" width="20" height="20" border="no" />
+        <buttonup resource="Down Arrow" />
+        <buttondown resource="Down Arrow" />
+    </widget>
+    <widget name="cam_forward" factory="pawsButton" toggle="no" shadows="yes" >
+        <frame x="660" y="545" width="20" height="20" border="no" />
+        <buttonup resource="Up Arrow" />
+        <buttondown resource="Up Arrow" />
+    </widget>
+    <widget name="cam_back" factory="pawsButton" toggle="no" shadows="yes" >
+        <frame x="660" y="573" width="20" height="20" border="no" />
+        <buttonup resource="Down Arrow" />
+        <buttondown resource="Down Arrow" />
+    </widget>
+
+
+</widget>
+</widget_description>
+
+

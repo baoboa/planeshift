@@ -1,0 +1,33 @@
+<widget_description>
+
+<widget name="LoadMapToolbox" factory="EEditLoadMapToolbox" 
+        visible="yes" savepositions="yes" movable="yes" resizable="no" resizetoscreen="no" >
+        
+    <frame x="590" y="30" width="210" height="60" border="yes" justtitle="yes" />
+    <title resource="TitleBar" text="Load Map" align="left" />
+    <font name="LiberationSans-Regular.ttf" r="255" g="255" b="255" size="9"  sr="0" sg="0" sb="0" shadow="yes" />   
+    <bgimage resource="BackTall" alpha="75" />
+
+    <widget name="map_path" factory="pawsEditTextBox">
+        <frame x="5" y="5" width="170" height="20" border="no" />
+        <font name="LiberationSans-Regular.ttf" r="255" g="255" b="255" size="9"  sr="0" sg="0" sb="0" shadow="yes" />   
+        <bgimage resource="Shaded" alpha="75" />
+        <text string="" />
+    </widget>
+    <widget name="browse_map_button" factory="pawsButton">
+        <frame x="180" y="5" width="25" height="25" border="no" />
+        <font name="LiberationSans-Regular.ttf" r="255" g="255" b="255" size="7"  sr="0" sg="0" sb="0" shadow="yes" />   
+        <buttonup resource="ButtonUp"/>
+        <buttondown resource="ButtonDown" />
+        <label text="..."/>
+    </widget>
+    <widget name="load_map_button" factory="pawsButton">
+        <frame x="55" y="30" width="100" height="25" border="no" />
+        <font name="LiberationSans-Regular.ttf" r="255" g="255" b="255" size="7"  sr="0" sg="0" sb="0" shadow="yes" />   
+        <buttonup resource="ButtonUp"/>
+        <buttondown resource="ButtonDown" />
+        <label text="Open Map"/>
+    </widget>
+</widget>
+
+</widget_description>

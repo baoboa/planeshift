@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<widget_description>
+<widget name="ConfigAutoexecTree" factory="pawsConfigAutoexec" visible="no"
+        savepositions="no" movable="no" resizable="no" style="New Standard GUI" >
+    <frame x="225" y="10" width="400" height="300" border="no" />
+    <bgimage resource="Scaling Widget Background" />
+    <widget name="enabled" factory="pawsCheckBox">
+        <frame x="10" y="10" width="350" height="20"/>
+        <text string="Enable execution of start-up scripts" />
+    </widget>
+    <widget name="GeneralLabel" factory="pawsTextBox" style="Header Font">
+       <frame x="10" y="40" width="350" height="20" />
+       <text string="Command(s) for all characters:" />
+    </widget>
+    <widget name="GeneralCommandBox" factory="pawsMultilineEditTextBox">
+       <frame x="10" y="70" width="380" height="90" border="no" />
+       <bgimage resource="Scaling Field Background"/>
+       <pawsScrollBar width="15" />
+    </widget>
+    <widget name="CharLabel" factory="pawsTextBox" style="Header Font">
+       <frame x="10" y="170" width="350" height="20" />
+       <text string="Command(s) only for this character:" />
+    </widget>
+    <widget name="CharCommandBox" factory="pawsMultilineEditTextBox">
+       <frame x="10" y="200" width="380" height="90" border="no" />
+       <bgimage resource="Scaling Field Background"/>
+       <pawsScrollBar width="15" />
+    </widget>
+</widget>
+
+</widget_description>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?> 
+ <library>
+   <library>/this/data/effects/examples/puff.part</library>
+<materials>
+        <material name="sparkle">
+            <texture>sparkle</texture>
+        </material>
+    </materials>    
+    <addon plugin="PSEffects">
+        <effect name="puff">
+            <anchor type="basic" name="pos">
+            </anchor>              
+
+            <obj type="spire" name="test" material="sparkle" fact="sparkle" segments="20">
+                <attach>pos</attach>
+                <death>500</death>
+                <mixmode>add</mixmode>
+                <keyFrame time="0">
+                    <action name="animate" value="true" />
+                </keyFrame>
+                <keyFrame time="500">
+                <action name="animate" value="false" />
+                </keyFrame>
+            </obj>
+        </effect>
+    </addon>
+</library>
+
+

@@ -1,0 +1,9 @@
+SubDir TOP src client macosx ;
+
+Library crashreport 
+	: [ Wildcard *.mm *.cpp *.h ]
+	: noinstall
+;
+
+ExternalLibs crashreport : BREAKPAD CRYSTAL ;
+

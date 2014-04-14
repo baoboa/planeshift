@@ -1,0 +1,446 @@
+<Author text="Neckro Colooo" />
+<StringTable> 
+ <item orig="750" trans="750" />
+ <item orig="System text color" trans="Culoare text sistem" />
+ <item orig="Put an item up for sale or offer to buy something." trans="Pune un obiect spre vanzare sau te poti oferi sa cumperi ceva " />
+ <item orig="Stats" trans="Statistici" />
+ <item orig="Admin text color" trans="Culoare text admin" />
+ <item orig="Allow spawning item with missing mesh" trans="Permis obiectelor care se genereaza fara mesh" />
+ <item orig="Desc" trans="Desc" />
+ <item orig="!!!WARNING!!!" trans="!!!ATENTIE!!!" />
+ <item orig="Others' attacks (Successful ones)" trans="Atacurile celorlalti (Cele de success)" />
+ <item orig="Own attacks that missed the target" trans="Atacuri care nu au nimerit tinta (proprii)" />
+ <item orig="Graphics" trans="Grafica" />
+ <item orig="Loading GUI" trans="Incarca GUI" />
+ <item orig="Can I join you ?" trans="Pot sa ma alatur ?" />
+ <item orig="server" trans="server" />
+ <item orig="CHILDHOOD" trans="COPILARIE" />
+ <item orig="LIFE EVENTS" trans="EVENIMENT LIVE" />
+ <item orig="SL" trans="SL" />
+ <item orig="Buy" trans="Cumpara" />
+ <item orig="Guild message of the day (A short message):" trans="Mesajul zilnic al guildei (Unul scurt):" />
+ <item orig="Modifiers" trans="Modificatori" />
+ <item orig="Actions sounds" trans="Sunetele actiunilor" />
+ <item orig="Randomize" trans="Aleator" />
+ <item orig="Create alliance" trans="Creeaza alianta" />
+ <item orig="Third Person Lara" trans="A treia persoana ?Lara?" />
+ <item orig="Disband" trans="Desfintare" />
+ <item orig="Edit" trans="Editor" />
+ <item orig="System" trans="Sistem" />
+ <item orig="Load" trans="Incarca" />
+ <item orig="Buffs" trans="" />
+ <item orig="Stack Count" trans="" />
+ <item orig="Talk to people in your sector." trans="Vorbeste cu persoana din sectorul tau" />
+ <item orig="Factions:" trans="Factiune" />
+ <item orig="Paths" trans="Directive" />
+ <item orig="Active" trans="Activ" />
+ <item orig="Creatures:" trans="Creaturi" />
+ <item orig="View" trans="Vizualizare" />
+ <item orig="PATHS" trans="DIRECTOARE" />
+ <item orig="Shadows" trans="Umbre" />
+ <item orig="Unclaim" trans="Nerevendicat" />
+ <item orig="Server:" trans="Server:" />
+ <item orig="Enable Shadows" trans="Activeaza umbrele" />
+ <item orig="Exit PlaneShift" trans="Iesire PlaneShift" />
+ <item orig="Escalation Level:" trans="Nivel escaladare" />
+ <item orig="Notify when members login/logout" trans="Anunta cand ies/intra membrii" />
+ <item orig="Talk to someone privately." trans="Vorbeste cu cineva privat" />
+ <item orig="Magic Skills List:" trans="Lista Aptitudinilor Magice" />
+ <item orig="House:" trans="Casa:" />
+ <item orig="Withdraw" trans="Retrage" />
+ <item orig="%s from %s: %s" trans="%s din %s" />
+ <item orig="%s from %s: %s" trans="%s din %s" />
+ <item orig="Instant Cast" trans="" />
+ <item orig="H:" trans="H:" />
+ <item orig="Amount available to withdraw" trans="Marimea disponibila pentru retragere" />
+ <item orig="Adaptive distance" trans="Adaptarea distantei" />
+ <item orig="Ban" trans="Ban" />
+ <item orig="Third Person M64" trans="A treia persoana M64" />
+ <item orig="Interface Volume" trans="Volumul interfetei" />
+ <item orig="Edit points" trans="Editeaza puncte" />
+ <item orig="Points" trans="Puncte" />
+ <item orig="Coins to exchange:" trans="Fise pentru schimb" />
+ <item orig="PvP" trans="PvP" />
+ <item orig="landscape" trans="Peisaj" />
+ <item orig="Type:" trans="Tip:" />
+ <item orig="Time: " trans="Timp:" />
+ <item orig="Exchange coins" trans="Fise de schimb" />
+ <item orig="Log the system messages" trans="Pastreaza in log mesajele sistemului" />
+ <item orig="Hostility" trans="Ostilitate" />
+ <item orig="Account User Name:" trans="Numele contului" />
+ <item orig="Auction" trans="Licitatie" />
+ <item orig="You currently have no petitions." trans="Momentan nu ai nici o petitie" />
+ <item orig="Attributes" trans="Atribute" />
+ <item orig="You will now ignore %s." trans="De acum o sa ignori pe %s" />
+ <item orig="Study" trans="Studiu" />
+ <item orig="Private notes" trans="Notificare privata" />
+ <item orig="Change name" trans="Schimba numele" />
+ <item orig="Getting Characters" trans="Obtinerea Caracterelor" />
+ <item orig="Unknown command" trans="Comanda necunoscuta" />
+ <item orig="Others' attacks that missed the target" trans="Atacurile celorlalti care nu au nimerit tinta" />
+ <item orig="Min. FPS:" trans="FPS Min.:" />
+ <item orig="Main" trans="Main" />
+ <item orig="Change" trans="Schimba" />
+ <item orig="Descalate" trans="Descalate" />
+ <item orig="Mother Name:" trans="Numele Mamei" />
+ <item orig="Privil." trans="Privil." />
+ <item orig="Skin Colour" trans="Culoarea pielii" />
+ <item orig="Master:" trans="Master:" />
+ <item orig="Details" trans="Detalii" />
+ <item orig="Collision Detection" trans="Detectare Coliziuni" />
+ <item orig="Max. FPS:" trans="FPS Max:" />
+ <item orig="Prev" trans="Ant." />
+ <item orig="Requesting connection" trans="Se cere conectare" />
+ <item orig="Prv notes" trans="Nota prv" />
+ <item orig="Reload Cache" trans="Reincarca Cache" />
+ <item orig="Amount available to deposit" trans="Marime disponibila pentru depunere" />
+ <item orig="Movements" trans="Miscari" />
+ <item orig="Mesh:" trans="Mesh:" />
+ <item orig="Resolution" trans="Rezolutie" />
+ <item orig="Gender:" trans="Gen:" />
+ <item orig="Refresh MOTD" trans="Reancarca MOTD" />
+ <item orig="Login" trans="Login" />
+ <item orig="Z:" trans="Z:" />
+ <item orig="Spell Description:" trans="Descriere Vraja" />
+ <item orig="Petition Info" trans="Info Petitie" />
+ <item orig="%s has invited you to join a group. Click Yes to accept or No to reject." trans="%s te-a invitat intr-un grup. Apasa Da sa accepti sau Nu pentru a refuza." />
+ <item orig="You must select a petition from the list in order to cancel it." trans="Trebuie sa selectezi o petitie din lista ca sa se poata renunta la aceasta" />
+ <item orig="Alliance" trans="Alianta" />
+ <item orig="Full Mesh" trans="Full Mesh" />
+ <item orig="I am leaving" trans="O sa plec" />
+ <item orig="List:" trans="Lista:" />
+ <item orig="LOGIN" trans="LOGIN" />
+ <item orig="Remove" trans="Inlaturare" />
+ <item orig="Action:" trans="Actiune:" />
+ <item orig="Never tired" trans="Niciodata obosit" />
+ <item orig="Do you really wish to leave Yliakum?" trans="Doresti sa parasesti Yliakum?" />
+ <item orig="Count" trans="Contorizare" />
+ <item orig="Enter the command(s):" trans="Introdu comanda" />
+ <item orig="Month:" trans="Luna:" />
+ <item orig="Chat" trans="Chat" />
+ <item orig="Father Name:" trans="Numele Tatalui:" />
+ <item orig="Rank" trans="Rang" />
+ <item orig="Spawn item" trans="Reaparitie obiect" />
+ <item orig="o&clock" trans="o&clock" />
+ <item orig="Own combat stance changes" trans="Schimbare stare de lupta (proprie)" />
+ <item orig="Experience" trans="Experienta" />
+ <item orig="Upload!" trans="Upload!" />
+ <item orig="Deposit" trans="Depunere!" />
+ <item orig="? Weight" trans="? Greutate" />
+ <item orig="No Target" trans="Fara Tinta" />
+ <item orig="Tria" trans="Tria" />
+ <item orig="Group text color" trans="Culoare text grup" />
+ <item orig="New" trans="Nou" />
+ <item orig="Mute sounds on focus loss" trans="Opreste sunetul la desincronizare" />
+ <item orig="Add Linked" trans="" />
+ <item orig="keyboard" trans="tastatura" />
+ <item orig="Activity:" trans="Activitate:" />
+ <item orig="You have been assigned to the selected petition." trans="Ti s-a repartizat petitia selectata" />
+ <item orig="Combat" trans="Lupta" />
+ <item orig="Path" trans="Cale" />
+ <item orig="Kill Player" trans="Omoara jucator" />
+ <item orig="%s says: %s" trans="%s spune: %s" />
+ <item orig="Get Reward" trans="Ia recompensa" />
+ <item orig="Magic" trans="Magic" />
+ <item orig="Own attacks that fail to penetrate the armor" trans="Atacurile tale care nu au penetrat armura" />
+ <item orig="Credits" trans="Credits" />
+ <item orig="details" trans="detalii" />
+ <item orig="HP" trans="HP" />
+ <item orig="%s shouts: %s" trans="%s urla: %s" />
+ <item orig="No server running at the moment" trans="Niciun server disponibil" />
+ <item orig="You have entered edit mode." trans="Ai intrat in modul de editare" />
+ <item orig="CHARACTER CREATION" trans="CREARE CARACTER" />
+ <item orig="Glyphs" trans="Glyphs" />
+ <item orig="Alliance:" trans="Alianta:" />
+ <item orig="Various Skill description:" trans="Descriere diferite aptitudini:" />
+ <item orig="Edit level" trans="Editeaza nivel" />
+ <item orig="Leave" trans="" />
+ <item orig="Capacity:" trans="Capacitate:" />
+ <item orig="Debuffs" trans="Debufare" />
+ <item orig="You have ignored the following players:" trans="Ai ignorat urmatorii jucatori:" />
+ <item orig="Items:" trans="Obiecte:" />
+ <item orig="Others' attacks that fail to penetrate the armor" trans="Atacurile celorlalti care nu au penetrat armura" />
+ <item orig="Admin" trans="Admin" />
+ <item orig="mouse" trans="mouse" />
+ <item orig="Various Skills List:" trans="Lista deferite aptitudini" />
+ <item orig="Stats description:" trans="Descriere statistici:" />
+ <item orig="Lets go !" trans="Sa mergem!" />
+ <item orig="Account:" trans="Cont:" />
+ <item orig="%s %s" trans="%s %s" />
+ <item orig="Trias" trans="Trias" />
+ <item orig="General" trans="General" />
+ <item orig="Life" trans="Viata" />
+ <item orig="Password:" trans="Parola:" />
+ <item orig="Currently, there are no petitions." trans="Momentan nu sunt petitii." />
+ <item orig="Set" trans="Aplica" />
+ <item orig="Actions Volume" trans="Volum actiuni" />
+ <item orig="Quest Testing" trans="Testare quest" />
+ <item orig="Year:" trans="An:" />
+ <item orig="Save" trans="Salveaza" />
+ <item orig="Promote" trans="Promoveaza" />
+ <item orig="Combat Skills" trans="Aptitudine lupta" />
+ <item orig="Polygon:" trans="Poligon:" />
+ <item orig="Talk to everyone in your guild privately." trans="Vorbeste cu toti din guilda in privat." />
+ <item orig="Others' attacks that are dodged" trans="Atacurile blocate ale celorlalti" />
+ <item orig="Combat music" trans="Muzica lupta" />
+ <item orig="Own attacks (Successful ones)" trans="Atacuri proprii (reusite)" />
+ <item orig="The selected petition was cancelled." trans="Petitia selectata a fost anulata." />
+ <item orig="Welcome back" trans="Bine ai revenit" />
+ <item orig="You are ignoring all replies from that person." trans="Ignori toate mesajele de la acea persoana." />
+ <item orig="Description:" trans="Descriere:" />
+ <item orig="Chat text color" trans="Culoate text chat" />
+ <item orig="Cancel" trans="Anulare" />
+ <item orig="None" trans="Niciunul" />
+ <item orig="Trade" trans="Schimb" />
+ <item orig="Game Control" trans="Control joc" />
+ <item orig="Mainchat brackets" trans="" />
+ <item orig="Progression Points" trans="Puncte progres" />
+ <item orig="Faction" trans="Fractiune" />
+ <item orig="You have ignored no-one." trans="Nu ai ignorat pe nimeni" />
+ <item orig="NPC text color" trans="Culoare text NPC" />
+ <item orig="%s tells group: %s" trans="%s spune grupului: %s" />
+ <item orig="Quick" trans="Repede" />
+ <item orig="Public notes" trans="Note publice" />
+ <item orig="Confirmation" trans="Confirmare" />
+ <item orig="Master Volume" trans="Volum general" />
+ <item orig="Withdraw and Deposit" trans="Retrage si depune" />
+ <item orig="Labels" trans="Etichete" />
+ <item orig="Upload" trans="upload" />
+ <item orig="Exchange" trans="Schimb" />
+ <item orig="Combat Skills List:" trans="Lista aptitudini lupta" />
+ <item orig="tweaks" trans="tweaks" />
+ <item orig="Confirmation upon PvP duel:" trans="Confirmare duel PVP" />
+ <item orig="Petition text:" trans="Text petitie:" />
+ <item orig="Secret guild" trans="Guilda secreta" />
+ <item orig="List Attributes" trans="Lista atributii" />
+ <item orig="Claim" trans="Revendica" />
+ <item orig="Radius:" trans="Radius:" />
+ <item orig="0" trans="0" />
+ <item orig="disabled" trans="dezactivat" />
+ <item orig="Tells" trans="Mesaje private" />
+ <item orig="Manage petitions to help users." trans="Administreaza petitii pentru a ajuta useri." />
+ <item orig="No Fall Damage" trans="0 damage din cazatura" />
+ <item orig="Communication" trans="Comunicare" />
+ <item orig="Cannot connect to server" trans="Imposibil de conectat la server" />
+ <item orig="Your text color" trans="Culoarea textului tau" />
+ <item orig="1" trans="1" />
+ <item orig="Invisible" trans="Invizibil" />
+ <item orig="CHARACTER SELECT" trans="SELECTARE CARACTER" />
+ <item orig="Pickupable" trans="Ridicabil" />
+ <item orig="Detail information:" trans="Detalii informatie:" />
+ <item orig="You will no longer ignore %s." trans="Nu o sa mai ignori pe %s." />
+ <item orig="Others' combat stance changes" trans="Schimbare stare de lupta (a altora)" />
+ <item orig="Ambiguous command: " trans="Comanda ambigua:" />
+ <item orig="The selected petition was %s" trans="Petitia selectata a fost %s" />
+ <item orig="Loading game" trans="Se incarca jocul" />
+ <item orig="Use Collision Detection" trans="Foloseste Detectorul de Coliziuni" />
+ <item orig="Invite" trans="Invita" />
+ <item orig="Sector:" trans="Sector:" />
+ <item orig="Mix yourtext color" trans="Mixeaza culoarea textului" />
+ <item orig="Permissions" trans="Permisiuni" />
+ <item orig="X:" trans="X:" />
+ <item orig="5" trans="5" />
+ <item orig="Make leader" trans="Pune leader" />
+ <item orig="Money" trans="Bani" />
+ <item orig="Guild" trans="Guilda" />
+ <item orig="0 Trias" trans="0 Trias" />
+ <item orig="Parents" trans="Parinti" />
+ <item orig="Jobs" trans="Job-uri" />
+ <item orig="Chat - Bubbles" trans="Chat" />
+ <item orig="Welcome to PlaneShift!" trans="Bine ai venit in PlaneShift" />
+ <item orig="Delete" trans="Sterge" />
+ <item orig="Entities" trans="Entitati" />
+ <item orig="Auction text color" trans="Culoare text licitatie" />
+ <item orig="Hello" trans="Salut" />
+ <item orig="You're offered" trans="" />
+ <item orig="Hi" trans="Hi" />
+ <item orig="Own attacks that are dodged" trans="Atacuri blocate (proprii)" />
+ <item orig="Done" trans="Gata" />
+ <item orig="Birth" trans="Nastere" />
+ <item orig="Keys" trans="Chei" />
+ <item orig="Faction description:" trans="Descrierea factiunii" />
+ <item orig="Perform an action see by people in your vicinity." trans="Initiaza o actiune care va fi vazuta de ceilalti oameni din vecinatate" />
+ <item orig="Reload" trans="Reincarca" />
+ <item orig="Players" trans="Jucatori" />
+ <item orig="Phys Stam." trans="Phys Stam." />
+ <item orig="Stats:" trans="Statistici:" />
+ <item orig="NPC" trans="NPC" />
+ <item orig="Music Volume" trans="Volum Muzica" />
+ <item orig="Defend me !" trans="Apara-ma !" />
+ <item orig="Spell List:" trans="Lista magii:" />
+ <item orig="FPS cap:" trans="FPS cap" />
+ <item orig="Tell text color" trans="Culoare text mesaje private" />
+ <item orig="CP: 0" trans="CP" />
+ <item orig="BIRTH" trans="NASTERE" />
+ <item orig="Unmute Player" trans="Unmute Jucator" />
+ <item orig="Online only" trans="Doar cei online" />
+ <item orig="Pub notes" trans="Note Publice" />
+ <item orig="Edit Master" trans="Editare Master" />
+ <item orig="Amount to deposit" trans="Cantitatea de depunere" />
+ <item orig="Join Game" trans="Intra in joc" />
+ <item orig="Locked" trans="Incuiat" />
+ <item orig="Account Password:" trans="Parola contului:" />
+ <item orig="Items" trans="Obiecte" />
+ <item orig="Factions" trans="Factiune:" />
+ <item orig="Weight:" trans="Greutate:" />
+ <item orig="Petition submitted:" trans="Petitie trimisa:" />
+ <item orig="Men Stam." trans="Men. Stam." />
+ <item orig="Requesting World" trans="Cerere Lume" />
+ <item orig="Group" trans="Grup" />
+ <item orig="Help text color" trans="Culoare text ajutor" />
+ <item orig="Face" trans="Fata" />
+ <item orig="OK" trans="OK" />
+ <item orig="First Person" trans="Prima Persoana" />
+ <item orig="Selection" trans="Selectie" />
+ <item orig="?" trans="?" />
+ <item orig="Trigger:" trans="Trigger:" />
+ <item orig="Refresh List" trans="Lista Refresh" />
+ <item orig="Character Name" trans="Nume Caracter" />
+ <item orig="Kick Player" trans="Kick Jucator" />
+ <item orig="Filter incoming bad words" trans="Filtrare cuvinte urate" />
+ <item orig="Skill" trans="Aptitudini" />
+ <item orig="The selected petition has been escalated." trans="Petitia selectata a fost escaladata." />
+ <item orig="Your notes:" trans="Notitele tale:" />
+ <item orig="Rotate" trans="Roteste" />
+ <item orig="Birth Event:" trans="Eveniment Nastere:" />
+ <item orig="Character description:" trans="Descrierea caracterului:" />
+ <item orig="No" trans="Nu" />
+ <item orig="Combat messages regarding me" trans="Mesaje in lupta cu privire la mine" />
+ <item orig="Player name:" trans="Nume jucator:" />
+ <item orig="Mouse" trans="Mouse:" />
+ <item orig="Position:" trans="Pozitie:" />
+ <item orig="Help" trans="Ajutor" />
+ <item orig="View chat" trans="Vezi chat" />
+ <item orig="Min. distance:" trans="Distanta min." />
+ <item orig="Quit" trans="Iesire" />
+ <item orig="Lockpicking" trans="Spargere incuietoare" />
+ <item orig="models" trans="modele" />
+ <item orig="Siblings" trans="Fratii" />
+ <item orig="Camera" trans="Camera" />
+ <item orig="Remember password" trans="Retine parola" />
+ <item orig="Third Person Follow" trans="Urmareste a Treia Persoana" />
+ <item orig="Character Name:" trans="Nume Caracter:" />
+ <item orig="Day:" trans="Zi:" />
+ <item orig="Clear" trans="Sterge" />
+ <item orig="Next" trans="Urm." />
+ <item orig="Stat" trans="Stat" />
+ <item orig="%s tells you: %s" trans="%s iti spune: %s" />
+ <item orig="D:" trans="D:" />
+ <item orig="Jobs Skill description:" trans="Descriere Aptitudini Joburi" />
+ <item orig="Mana" trans="Mana" />
+ <item orig="Yes" trans="Da" />
+ <item orig="Reset" trans="Reset" />
+ <item orig="Interface sounds" trans="Interfata sunet" />
+ <item orig="Talk to your group privately." trans="Vorbeste privat cu grupul tau" />
+ <item orig="Own attacks that are blocked" trans="Atacuri care sunt blocate (proprii)" />
+ <item orig="Religion:" trans="Religie:" />
+ <item orig="You can not ignore yourself." trans="Nu te poti ingora singur." />
+ <item orig="Members" trans="Membrii" />
+ <item orig="List all of the petitions you have submitted." trans="Lista cu petitiile pe care le-ai trimis." />
+ <item orig="Settings" trans="Setari" />
+ <item orig="You must select a petition from the list in order to assign yourself." trans="Trebuie sa selectezi o petitie din lista sa ti-o poti asigna tie." />
+ <item orig="Count:" trans="Count:" />
+ <item orig="Back" trans="Innapoi" />
+ <item orig="graphics" trans="grafice" />
+ <item orig="You tell %s: %s" trans="Ii spui lui %s: %s" />
+ <item orig="Add New" trans="Adauga Nou" />
+ <item orig="Infinite Inventory" trans="Inventar Infinit" />
+ <item orig="Lose focus on send" trans="Pierde focus la trimitere" />
+ <item orig="Hair Style" trans="Stilul Parului" />
+ <item orig="New Character" trans="Caracter Nou" />
+ <item orig="Magic Skill description:" trans="Descriere aptitudine magica:" />
+ <item orig="M:" trans="M:" />
+ <item orig="Infinite Mana" trans="Mana Infinita" />
+ <item orig="Status:" trans="Status:" />
+ <item orig="Teleport To Player" trans="Teleport La Jucator" />
+ <item orig="Add" trans="Adauga" />
+ <item orig="PARENTS" trans="PARINTI" />
+ <item orig="Petition Text:" trans="Text Petitie" />
+ <item orig="Invincible" trans="Invincibil" />
+ <item orig="You're offering" trans="Oferi" />
+ <item orig="Jobs Skills List:" trans="Lista Aptitudini Joburi" />
+ <item orig="Magic Skills" trans="Aptitudini Magice" />
+ <item orig="Combat messages regarding others" trans="Mesaj in lupta cu privire la altii" />
+ <item orig="Actions" trans="Actiuni" />
+ <item orig="Chat - Filters" trans="Chat - Filtre" />
+ <item orig="Amount to withdraw" trans="Cantitate pt. retragere" />
+ <item orig="Others' attacks that are blocked" trans="Atacuri blocate ale celorlalti" />
+ <item orig="Talk to the people in your immediate vicinity." trans="Vorbeste cu oamenii din apropiata vecinatate." />
+ <item orig="Player name color" trans="Culoare nume jucator" />
+ <item orig="Random name" trans="Nume aleator" />
+ <item orig="Couldn't resolve server hostname." trans="Nu se poate revolva hostul serverului." />
+ <item orig="Escalate" trans="Escaladare" />
+ <item orig="30" trans="30" />
+ <item orig="Various Skills" trans="Aptitudini Variate" />
+ <item orig="Events" trans="Evenimente" />
+ <item orig="Trias:" trans="Trias:" />
+ <item orig="Auto Tab selection:" trans="Ato-Tab selectie:" />
+ <item orig="Chat - Tabs" trans="Taburi - Chat" />
+ <item orig="Makes the server log what target player is saying." trans="" />
+ <item orig="New Account" trans="Cont Nou" />
+ <item orig="Beard Style" trans="Stil Barba" />
+ <item orig="Mute Player" trans="Mute Jucator" />
+ <item orig="Shortcut key:" trans="Cheie shortcut:" />
+ <item orig="Controls" trans="Controale" />
+ <item orig="Name:" trans="Nume:" />
+ <item orig="Discard" trans="Renunta" />
+ <item orig="Y:" trans="Y:" />
+ <item orig="Servers:" trans="Servere:" />
+ <item orig="Join" trans="Alatura" />
+ <item orig="Assigned GM:" trans="Asigurat GM:" />
+ <item orig="Lockable" trans="" />
+ <item orig="Distance:" trans="Distanta:" />
+ <item orig="Echo screen text" trans="Echo screen text" />
+ <item orig="Loading world" trans="Incarca lume" />
+ <item orig="New User? Register at http://www.planeshift.it/account/create" trans="Utilizator Nou? Inregistraza-te la http://www.planeshift.it/account/create" />
+ <item orig="Quests" trans="" />
+ <item orig="Please wait for verification from server" trans="Asteapta pentru verificare din partea serverului" />
+ <item orig="o'clock" trans="" />
+ <item orig="You must select a petition from the list in order to close it." trans="Trebuie aleasa o petitie din lista pentru ca aceasta sa poate fi inchisa." />
+ <item orig="Name" trans="Nume" />
+ <item orig="Getting entities" trans="" />
+ <item orig="You must select a petition from the list in order to escalate it." trans="" />
+ <item orig="Custom" trans="" />
+ <item orig="Sound" trans="Sunet" />
+ <item orig="Background music" trans="Muzica de fundal" />
+ <item orig="Uncompleted" trans="Incomplet" />
+ <item orig="Petitons are waiting." trans="Petitii care asteapta." />
+ <item orig="Completed" trans="Complet" />
+ <item orig="none" trans="nimic" />
+ <item orig="Alternates" trans="Alternativ" />
+ <item orig="Save MOTD" trans="Salveaza MOTD" />
+ <item orig="network" trans="retea" />
+ <item orig="Interface" trans="Interfata" />
+ <item orig="Loop background music" trans="" />
+ <item orig="Shout text color" trans="Culoare text strigat(shout)" />
+ <item orig="Log the chat messages" trans="Retine logurile mesajelor din chat" />
+ <item orig="Filter outgoing bad words" trans="Filtrare cuvinte urate" />
+ <item orig="Realm" trans="" />
+ <item orig="cancelled." trans="anulat." />
+ <item orig="closed." trans="inchis." />
+ <item orig="Waiting on server data.." trans="Se asteapta date de la server.." />
+ <item orig="View all" trans="Vedere totala" />
+ <item orig="Unknown Chat Type: %d" trans="" />
+ <item orig="/ 100" trans="/ 100" />
+ <item orig="Free Rotation" trans="Rotatie Libera" />
+ <item orig="Actual FPS may vary." trans="" />
+ <item orig="You must select a petition from the list in order to view it." trans="Trebuie selectata o petitie din lista pentru a fi vizualizata." />
+ <item orig="Spells" trans="Magii" />
+ <item orig="Shortcuts" trans="Prescurtari" />
+ <item orig="Guild text color" trans="" />
+ <item orig="Random" trans="Aleator" />
+ <item orig="Job:" trans="Job" />
+ <item orig="Ok" trans="Ok" />
+ <item orig="Sell" trans="Vinde" />
+ <item orig="Way" trans="" />
+ <item orig="controls" trans="" />
+ <item orig="Close" trans="Inchis" />
+ <item orig="Website:" trans="Website:" />
+ <item orig="Various" trans="" />
+ <item orig="Combat Skill description:" trans="Descriere aptitudine in lupta: " />
+ <item orig="Ambient sounds" trans="Sunet ambiental" />
+ <item orig="Greetings" trans="" />
+ <item orig="Select a reward:" trans="Selecteaza o recompensa:" />
+ <item orig="Ambient Volume" trans="Volum Ambiental" />
+ <item orig="Hair Colour" trans="Culoarea Parului" />
+</StringTable>

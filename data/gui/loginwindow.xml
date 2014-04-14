@@ -1,0 +1,185 @@
+<widget_description>
+
+    <widget name="LoginWindow" factory="pawsLoginWindow"
+            visible="yes" movable="no" resizable="no" resizetoscreen="yes" scalablefont="yes" >
+        <frame x="0" y="0" width="800" height="600" border="no" />
+        <font name="LiberationSerif-Regular.ttf" r="255" g="255" b="255" sr="0" sg="0" sb="0" shadow="no" size="12" resizetoscreen="yes" />
+        <bgcolour r="255" g="255" b="255" />
+        <bgimage resource="login_background" />
+
+        <form>
+            <!-- Button to simulate click on if enter is pressed -->
+            <enter name="login" />
+            <!-- Add the tab order here -->
+            <tab name="username" />
+            <tab name="password" />
+            <tab name="login" />
+            <tab name="quit" />
+        </form>
+
+        <!-- Title -->
+        <widget name="label_login" factory="pawsTextBox">
+            <frame x="200" y="40" width="400" height="35" />
+            <font name="scurlock.ttf" r="255" g="255" b="255" shadow="yes" sr="0" sg="0" sb="0" size="24" resizetoscreen="yes" />
+            <text string="Login"  horizAdjust="CENTRE" />
+            <!-- <bgcolour r="255" g="127" b="40" /> -->
+        </widget>
+
+         <!-- Message: intended for new players "New User? Register at http://www.planeshift.it/account/create" -->
+        <widget name="message" factory="pawsMultiLineTextBox" visible="yes">
+            <frame x="200" y="115" width="600" height="25" border="no" />
+            <font name="LiberationSerif-Regular.ttf" r="255" g="255" b="255" size="10" resizetoscreen="yes" />
+            <text string="New User? Register at http://www.planeshift.it/account/create" horizAdjust="CENTRE" />
+            <!-- <bgcolour r="255" g="127" b="40" /> -->
+        </widget>
+
+        <!-- Account Info -->
+        <widget name="accountInfo" factory="pawsWidget">
+            <frame x="140" y="145" width="495" height="150" />
+            <font name="scurlock.ttf" r="255" g="255" b="255" size="16" resizetoscreen="yes" />
+            <!--<bgcolour r="200" g="40" b="80" />-->
+
+            <!-- Username -->
+            <widget name="label_account" factory="pawsTextBox">
+                <frame x="0" y="5" width="140" height="30" />
+                <text string="Account:" horizAdjust="RIGHT" vertAdjust="CENTRE" />
+                <!--<bgcolour r="255" g="127" b="40" />-->
+            </widget>
+
+            <widget name="username" factory="pawsEditTextBox">
+                <frame x="145" y="0" width="350" height="40" />
+                <font name="LiberationSerif-Regular.ttf" r="255" g="255" b="255" size="12" resizetoscreen="yes" />
+                <text string="" vertAdjust="CENTRE" />
+                <bgimage resource="darkHilite" alpha="170" />
+                <!--<bgcolour r="200" g="200" b="40" />-->
+            </widget>
+
+            <!-- Password -->
+            <widget name="label_password" factory="pawsTextBox">
+                <frame x="0" y="50" width="140" height="30" />
+                <text string="Password:" horizAdjust="RIGHT" vertAdjust="CENTRE" />
+                <!--<bgcolour r="255" g="127" b="40" />-->
+            </widget>
+
+            <widget name="password" factory="pawsEditTextBox">
+                <frame x="145" y="45" width="350" height="40" />
+                <font name="LiberationSerif-Regular.ttf" r="255" g="255" b="255" size="12" resizetoscreen="yes" />
+                <text string="" vertAdjust="CENTRE" />
+                <bgimage resource="darkHilite" alpha="170" />
+                <!--<bgcolour r="200" g="200" b="40" />-->
+            </widget>
+
+            <widget name="option_password" factory="pawsCheckBox" tooltip="Save the password in configurations files for easier login">
+                <frame x="145" y="90" width="450" height="30" />
+                <font name="LiberationSerif-Regular.ttf" r="255" g="255" b="255" shadow="no" size="12" resizetoscreen="yes" />
+                <text string="Remember password" />
+                <checkbox on="checkon" off="checkoff" size="30"/>
+            </widget>
+
+            <widget name="convert_password" factory="pawsCheckBox" tooltip="Allow the client to send a newly hashed password to the server (check: http://tinyurl.com/5smsz5l )" visible="false">
+                <frame x="145" y="115" width="450" height="30" />
+                <font name="LiberationSerif-Regular.ttf" r="255" g="255" b="255" shadow="no" size="12" resizetoscreen="yes" />
+                <text string="Convert password" />
+                <checkbox on="checkon" off="checkoff" size="30"/>
+            </widget>
+        </widget>
+        <!-- end accountInfo -->
+
+        <!-- Separator -->
+        <widget name="separator" factory="pawsWidget">
+            <frame x="120" y="290" width="550" height="8" />
+            <bgimage resource="tileBorder" />
+        </widget>
+
+        <!-- Server Info -->
+        <widget name="serverInfo" factory="pawsWidget">
+            <frame x="140" y="310" width="595" height="190" />
+            <font name="scurlock.ttf" r="255" g="255" b="255" size="16" resizetoscreen="yes" />
+            <!--<bgcolour r="200" g="40" b="80" />-->
+
+             <!-- Server List -->
+            <widget name="label" factory="pawsTextBox">
+                <frame x="0" y="5" width="140" height="30" />
+                <text string="Servers:" horizAdjust="RIGHT" vertAdjust="CENTRE" />
+                <!--<bgcolour r="255" g="127" b="40" />-->
+            </widget>
+
+            <widget name="servers" factory="pawsListBox" id="10" sortBy="-1">
+                <frame x="145" y="0" width="230" height="102" margin="5" />
+                <scrollbar arrowup="Up Arrow" arrowdown="Down Arrow" arrowsize="8" width="15"  border="no"/>
+
+                <highlight resource="Highlight" />
+
+                <columns height="30">
+                    <column width="105  ">
+                        <widget name="" factory="pawsTextBox" >
+                        <font name="LiberationSerif-Regular.ttf" r="255" g="255" b="255" size="12" resizetoscreen="yes" />
+                        <text string="" vertAdjust="CENTRE" />
+                        </widget>
+                    </column>
+                    <column width="0" >
+                        <widget name="ip" factory="pawsTextBox" visible="no"></widget>
+                    </column>
+                    <column width="115" >
+                        <widget name="ping" factory="pawsTextBox">
+                        <font name="LiberationSerif-Regular.ttf" r="255" g="255" b="255" size="12" resizetoscreen="yes" />
+                        <text string="" horizAdjust="RIGHT" vertAdjust="CENTRE" />
+                        </widget>
+                    </column>
+                </columns>
+            </widget>
+
+           <!-- Connecting [used for server descriptions] -->
+            <widget name="connecting" factory="pawsMultiLineTextBox" visible="yes">
+                <frame x="390" y="10" width="200" height="190" border="no" />
+                <pawsScrollBar arrowup="Up Arrow" arrowdown="Down Arrow" arrowsize="8" width="15"  border="no"/>
+                <font name="LiberationSerif-Regular.ttf" r="255" g="255" b="255" size="11" resizetoscreen="yes" />
+                <!-- <bgcolour r="255" g="127" b="40" /> -->
+            </widget>
+
+        </widget>
+        <!-- end serverInfo -->
+
+        <!-- Version Number -->
+        <widget name="version" factory="pawsTextBox">
+            <frame x="100" y="525" width="600" height="20" />
+            <font name="LiberationSerif-Regular.ttf" r="255" g="255" b="255" size="10" resizetoscreen="yes" />
+            <text string="" horizAdjust="CENTRE" vertAdjust="CENTRE" />
+            <!--<bgcolour r="255" g="127" b="40" />-->
+        </widget>
+
+
+        <!-- Navigation Buttons -->
+        <widget name="navBar" factory="pawsWidget">
+            <frame x="30" y="550" width="740" height="40" />
+            <font name="scurlock.ttf" r="255" g="255" b="255" size="16" resizetoscreen="yes" />
+            <!-- <bgcolour r="200" g="40" b="80" /> -->
+
+            <widget name="quit" factory="pawsButton" id="100" key="Q">
+                <frame x="0" y="0" width="100" height="40" />
+                <label text="Quit" />
+                <bgimage resource="buttonDefault" />
+                <!-- <bgcolour r="80" g="127" b="128" /> -->
+            </widget>
+
+            <!-- Credits -->
+            <widget name="credits" factory="pawsButton" id="102" key="C">
+                <frame x="325" y="0" width="90" height="30" />
+                <font name="LiberationSerif-Regular.ttf" r="255" g="255" b="255" size="10"  resizetoscreen="yes" />
+                <label text="Credits" horizAdjust="CENTRE" vertAdjust="CENTRE" />
+                <bgimage resource="buttonDefaultLong" />
+                <!--<bgcolour r="80" g="127" b="128" />-->
+            </widget>
+
+            <widget name="login" factory="pawsButton" id="101" key="O">
+                <frame x="640" y="0" width="100" height="40" />
+                <label text="Login" />
+                <bgimage resource="buttonDefault" />
+                <!--<bgcolour r="80" g="127" b="128" />-->
+            </widget>
+        </widget>
+        <!-- end navBar -->
+
+    </widget>
+
+</widget_description>

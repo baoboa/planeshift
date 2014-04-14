@@ -1,0 +1,3 @@
+SubDir TOP docs ;
+
+SubInclude TOP docs doxygen ;

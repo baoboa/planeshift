@@ -1,0 +1,17 @@
+<zodiacs>
+
+    <!-- Add real month names here  //blueCommand -->
+
+    <zodiac month="1" img="zodiac0" name="Unodin">Description</zodiac>
+    <zodiac month="2" img="zodiac1" name="Byari">Description</zodiac>
+    <zodiac month="3" img="zodiac2" name="Treman">Description</zodiac>
+    <zodiac month="4" img="zodiac3" name="Kravaan">Description</zodiac>
+    <zodiac month="5" img="zodiac4" name="Quintahl">Description</zodiac>
+    <zodiac month="6" img="zodiac5" name="Azhord">Description</zodiac>
+    <zodiac month="7" img="zodiac6" name="Ylaaren">Description</zodiac>
+    <zodiac month="8" img="zodiac7" name="Dwanden">Description</zodiac>
+    <zodiac month="9" img="zodiac8" name="Novari">Description</zodiac>
+    <zodiac month="10" img="zodiac9" name="Yndoli">Description</zodiac>
+
+</zodiacs>
+

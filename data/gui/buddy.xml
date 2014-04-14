@@ -1,0 +1,80 @@
+<widget_description>
+
+<widget name="BuddyWindow" factory="pawsBuddyWindow" visible="no" savepositions="yes" movable="yes" keepaspect="no" configurable="yes" resizable="yes" style="New Standard GUI">
+
+    <frame x="0" y="100" width="180" height="300" border="yes" />
+    <minframe width="165" height="230" />
+    <maxframe width="200" height="860" />
+    <title resource="Scaling Title Bar" text="Friends" align="left" close_button="yes" />
+
+
+        <widget name="BuddyList" factory="pawsListBox"  >
+            <frame x="7" y="5" width="156" height="250" border="no" />
+
+            <attachpoints>
+               <attach point="PROPORTIONAL_RIGHT" />
+               <attach point="ATTACH_TOP" />
+               <attach point="ATTACH_LEFT" />
+               <attach point="PROPORTIONAL_BOTTOM" />
+            </attachpoints>
+
+            <columns height="16">
+                <column width="250" >
+                    <widget name="Name" factory="pawsTextBox">
+                    <text align="CENTRE" />
+                    </widget>
+                </column>
+            </columns>
+
+        </widget>
+
+    <widget name="BuddyButtons" factory="pawsWidget" selectable="0">
+    <frame x="0" y="265" width="170" height="30" border="yes" />
+
+
+        <widget name="edit" factory="pawsButton" toggle="no" id="4000" style="Scaling Button">
+            <frame x="5" y="5" width="40" height="20" border="yes" />
+            <label text="Edit" />
+            <attachpoints>
+                <attach point="PROPORTIONAL_RIGHT" />
+                <attach point="ATTACH_LEFT" />
+                <attach point="PROPORTIONAL_TOP" />
+                <attach point="ATTACH_BOTTOM" />
+            </attachpoints>
+        </widget>
+
+        <widget name="add" factory="pawsButton" toggle="no" id="3000" style="Scaling Button">
+            <frame x="54" y="5" width="40" height="20" border="yes" />
+            <label text="Add" />
+            <attachpoints>
+                <attach point="PROPORTIONAL_RIGHT" />
+                <attach point="PROPORTIONAL_LEFT" />
+                <attach point="PROPORTIONAL_TOP" />
+                <attach point="ATTACH_BOTTOM" />
+            </attachpoints>
+        </widget>
+
+        <widget name="remove" factory="pawsButton" toggle="no" id="2000" style="Scaling Button">
+            <frame x="103" y="5" width="60" height="20" border="yes" />
+            <label text="Remove" />
+
+            <attachpoints>
+                <attach point="ATTACH_RIGHT" />
+                <attach point="PROPORTIONAL_LEFT" />
+                <attach point="PROPORTIONAL_TOP" />
+                <attach point="ATTACH_BOTTOM" />
+            </attachpoints>
+        </widget>
+
+            <attachpoints>
+                <attach point="ATTACH_RIGHT" />
+                <attach point="ATTACH_LEFT" />
+               <attach point="PROPORTIONAL_TOP" />
+                <attach point="ATTACH_BOTTOM" />
+            </attachpoints>
+
+    </widget>
+
+</widget>
+
+</widget_description>

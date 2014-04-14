@@ -1,0 +1,155 @@
+<widget_description>
+
+  <widget name="ConfigKeysTree" factory="pawsConfigKeys"
+          visible="yes" savepositions="no" movable="no" resizable="no" style="New Standard GUI">
+    <bgimage resource="Scaling Widget Background" />
+
+    <widget factory="pawsTree">
+      <layout rowSpacing="5" levelSpacing="20" />
+
+      <widget factory="pawsSeqTreeNode">
+
+        <widget factory="pawsWidgetTreeNode" name="Movement">
+            <nodewidget>
+                <widget factory="pawsTextBox" name="Movement label">
+                    <frame x="0" y="4" width="100" height="20" border="no" />
+                    <text string="Movements"/>
+                </widget>
+            </nodewidget>
+            <widget factory="pawsSeqTreeNode" name="MouseMove"/>
+            <widget factory="pawsSeqTreeNode" name="Forward"/>
+            <widget factory="pawsSeqTreeNode" name="Backward"/>
+            <widget factory="pawsSeqTreeNode" name="Rotate left"/>
+            <widget factory="pawsSeqTreeNode" name="Rotate right"/>
+            <widget factory="pawsSeqTreeNode" name="Strafe left"/>
+            <widget factory="pawsSeqTreeNode" name="Strafe right"/>
+            <widget factory="pawsWidgetTreeNode" name="Alternates" collapsed="yes">
+                <nodewidget>
+                    <widget factory="pawsTextBox" name="Alternates label">
+                        <frame x="0" y="4" width="100" height="20" border="no" />
+                        <text string="Alternates"/>
+                    </widget>
+                </nodewidget>
+                <widget factory="pawsSeqTreeNode" name="Forward (sec)"/>
+                <widget factory="pawsSeqTreeNode" name="Backward (sec)"/>
+                <widget factory="pawsSeqTreeNode" name="Rotate left (sec)"/>
+                <widget factory="pawsSeqTreeNode" name="Rotate right (sec)"/>
+                <widget factory="pawsSeqTreeNode" name="Strafe left (sec)"/>
+                <widget factory="pawsSeqTreeNode" name="Strafe right (sec)"/>
+            </widget>
+        </widget>
+        <widget factory="pawsWidgetTreeNode" name="Modifiers">
+            <nodewidget>
+                <widget factory="pawsTextBox" name="Modifiers label">
+                    <frame x="0" y="4" width="100" height="20" border="no" />
+                    <text string="Modifiers"/>
+                </widget>
+            </nodewidget>
+            <widget factory="pawsSeqTreeNode" name="Run"/>
+            <widget factory="pawsSeqTreeNode" name="ToggleRun"/>
+            <widget factory="pawsSeqTreeNode" name="AutoMove"/>
+            <widget factory="pawsSeqTreeNode" name="Sneak"/>
+        </widget>
+        <widget factory="pawsWidgetTreeNode" name="Actions">
+            <nodewidget>
+                <widget factory="pawsTextBox" name="Actions label">
+                    <frame x="0" y="4" width="100" height="20" border="no" />
+                    <text string="Actions"/>
+                </widget>
+            </nodewidget>
+            <widget factory="pawsSeqTreeNode" name="Jump"/>
+            <widget factory="pawsSeqTreeNode" name="Sit"/>
+        </widget>
+        <widget factory="pawsWidgetTreeNode" name="Camera">
+            <nodewidget>
+                <widget factory="pawsTextBox" name="Camera label">
+                    <frame x="0" y="4" width="100" height="20" border="no" />
+                    <text string="Camera"/>
+                </widget>
+            </nodewidget>
+            <widget factory="pawsSeqTreeNode" name="Camera mode"/>
+            <widget factory="pawsSeqTreeNode" name="Look up"/>
+            <widget factory="pawsSeqTreeNode" name="Look down"/>
+            <widget factory="pawsSeqTreeNode" name="Zoom in"/>
+            <widget factory="pawsSeqTreeNode" name="Zoom out"/>
+            <widget factory="pawsSeqTreeNode" name="Center camera"/>
+            <widget factory="pawsSeqTreeNode" name="MouseLook"/>
+            <widget factory="pawsSeqTreeNode" name="Toggle MouseLook"/>
+            <widget factory="pawsSeqTreeNode" name="CameraForward/Back"/>
+        </widget>
+        <widget factory="pawsWidgetTreeNode" name="Game Control">
+            <nodewidget>
+                <widget factory="pawsTextBox" name="Game Control label">
+                    <frame x="0" y="4" width="100" height="20" border="no" />
+                    <text string="Game Control"/>
+                </widget>
+            </nodewidget>
+            <widget factory="pawsSeqTreeNode" name="Close"/>
+            <widget factory="pawsSeqTreeNode" name="Toggle chat"/>
+            <widget factory="pawsSeqTreeNode" name="Reply tell"/>
+            <widget factory="pawsSeqTreeNode" name="Communications"/>
+            <widget factory="pawsSeqTreeNode" name="Options"/>
+            <widget factory="pawsSeqTreeNode" name="Spell book"/>
+            <widget factory="pawsSeqTreeNode" name="Stats"/>
+            <widget factory="pawsSeqTreeNode" name="Inventory"/>
+            <widget factory="pawsSeqTreeNode" name="Bag"/>
+            <widget factory="pawsSeqTreeNode" name="Help"/>
+            <widget factory="pawsSeqTreeNode" name="Buddy"/>
+            <widget factory="pawsSeqTreeNode" name="Buy"/>
+            <widget factory="pawsSeqTreeNode" name="Quit"/>
+            <widget factory="pawsSeqTreeNode" name="Brightness up"/>
+            <widget factory="pawsSeqTreeNode" name="Brightness down"/>
+            <widget factory="pawsSeqTreeNode" name="Brightness Reset" />
+        </widget>
+        <widget factory="pawsWidgetTreeNode" name="Shortcuts" >
+            <nodewidget>
+                <widget factory="pawsTextBox" name="Shortcuts Label">
+                    <frame x="0" y="4" width="100" height="20" border="no" />
+                    <text string="Shortcuts"/>
+                </widget>
+            </nodewidget>
+            <widget factory="pawsSeqTreeNode" name="Shortcut 1"/>
+            <widget factory="pawsSeqTreeNode" name="Shortcut 2"/>
+            <widget factory="pawsSeqTreeNode" name="Shortcut 3"/>
+            <widget factory="pawsSeqTreeNode" name="Shortcut 4"/>
+            <widget factory="pawsSeqTreeNode" name="Shortcut 5"/>
+            <widget factory="pawsSeqTreeNode" name="Shortcut 6"/>
+            <widget factory="pawsSeqTreeNode" name="Shortcut 7"/>
+            <widget factory="pawsSeqTreeNode" name="Shortcut 8"/>
+            <widget factory="pawsSeqTreeNode" name="Shortcut 9"/>
+            <widget factory="pawsSeqTreeNode" name="Shortcut 10"/>
+            <widget factory="pawsSeqTreeNode" name="Shortcut 11"/>
+            <widget factory="pawsSeqTreeNode" name="Shortcut 12"/>
+            <widget factory="pawsSeqTreeNode" name="Shortcut 13"/>
+            <widget factory="pawsSeqTreeNode" name="Shortcut 14"/>
+            <widget factory="pawsSeqTreeNode" name="Shortcut 15"/>
+            <widget factory="pawsSeqTreeNode" name="Shortcut 16"/>
+            <widget factory="pawsSeqTreeNode" name="Shortcut 17"/>
+            <widget factory="pawsSeqTreeNode" name="Shortcut 18"/>
+            <widget factory="pawsSeqTreeNode" name="Shortcut 19"/>
+            <widget factory="pawsSeqTreeNode" name="Shortcut 20"/>
+            <widget factory="pawsSeqTreeNode" name="Shortcut 21"/>
+            <widget factory="pawsSeqTreeNode" name="Shortcut 22"/>
+            <widget factory="pawsSeqTreeNode" name="Shortcut 23"/>
+            <widget factory="pawsSeqTreeNode" name="Shortcut 24"/>
+            <widget factory="pawsSeqTreeNode" name="Shortcut 25"/>
+            <widget factory="pawsSeqTreeNode" name="Shortcut 26"/>
+            <widget factory="pawsSeqTreeNode" name="Shortcut 27"/>
+            <widget factory="pawsSeqTreeNode" name="Shortcut 28"/>
+            <widget factory="pawsSeqTreeNode" name="Shortcut 29"/>
+            <widget factory="pawsSeqTreeNode" name="Shortcut 30"/>
+            <widget factory="pawsSeqTreeNode" name="Shortcut 31"/>
+            <widget factory="pawsSeqTreeNode" name="Shortcut 32"/>
+            <widget factory="pawsSeqTreeNode" name="Shortcut 33"/>
+            <widget factory="pawsSeqTreeNode" name="Shortcut 34"/>
+            <widget factory="pawsSeqTreeNode" name="Shortcut 35"/>
+            <widget factory="pawsSeqTreeNode" name="Shortcut 36"/>
+            <widget factory="pawsSeqTreeNode" name="Shortcut 37"/>
+            <widget factory="pawsSeqTreeNode" name="Shortcut 38"/>
+            <widget factory="pawsSeqTreeNode" name="Shortcut 39"/>
+            <widget factory="pawsSeqTreeNode" name="Shortcut 40"/>
+         </widget>
+      </widget>
+   </widget>
+  </widget>
+</widget_description>

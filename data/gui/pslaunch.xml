@@ -1,0 +1,457 @@
+<widget_description>
+  <widget name="Launcher" factory="pawsLauncherWindow" visible="yes" savepositions="no" movable="no" resizable="no" resizetoscreen="yes" id="1">
+
+    <bgimage resource="Launcher BG1" alpha="0"/>
+    <frame x="0" y="0" width="850" height="600" border="no"/>
+    <title resource="Blue Title" text="PlaneShift Launcher" align="left"/>
+    <font name="LiberationSans-Regular.ttf" r="255" g="255" b="255" size="8"/>
+
+    <widget name="LauncherMain" factory="pawsWidget" visible="yes" savepositions="no" movable="no" resizable="no" resizetoscreen="yes" id="11">
+
+      <bgimage resource="Launcher Main" alpha="0" fading="false"/>
+      <frame x="0" y="0" width="850" height="600" border="no"/>
+
+      <!-- Logo -->
+      <widget name="LauncherMain" factory="pawsWidget" visible="yes" savepositions="no" movable="no" resizable="no" id="110">
+        <bgimage resource="PSLogo" alpha="0" fading="false"/>
+        <frame x="430" y="25" width="300" height="80" border="no"/>
+      </widget>
+
+      <!-- Server news -->
+      <widget name="NewsWindow" factory="pawsButton" id="111" alwaysontop="true">
+        <bgimage resource="News Window" alpha="255" fading="false"/>
+        <frame x="60" y="50" width="300" height="470" />
+        <font name="LiberationSans-Regular.ttf" r="108" g="35" b="14" size="9"/>
+        <widget name="ServerNews" factory="pawsMessageTextBox" id="1111">
+          <frame x="20" y="25" width="270" height="330" />
+        </widget>
+      </widget>
+
+      <!-- Quit button -->
+      <widget name="QuitButton" factory="pawsButton" id="112" changeonmouseover="true">
+        <buttonup resource="Quit Button"/>
+        <buttondown resource="Quit Button MO"/>
+        <frame x="58" y="516" width="95" height="50" border="no"/>
+      </widget>
+
+      <!-- Repair button -->
+      <widget name="RepairButton" factory="pawsButton" id="113" changeonmouseover="true">
+        <buttonup resource="Repair Button"/>
+        <buttondown resource="Repair Button MO"/>
+        <frame x="200" y="518" width="95" height="50" border="no"/>
+      </widget>
+
+      <!-- Settings button -->
+      <widget name="SettingsButton" factory="pawsButton" toggle="no" id="114" changeonmouseover="true">
+        <buttonup resource="Settings Button"/>
+        <buttondown resource="Settings Button MO"/>
+        <frame x="340" y="518" width="95" height="50" border="no"/>
+      </widget>
+
+      <!-- Play button -->
+      <widget name="PlayButton" factory="pawsButton" id="115" changeonmouseover="true">
+        <buttonup resource="Play Button"/>
+        <buttondown resource="Play Button MO"/>
+        <frame x="645" y="528" width="95" height="45" border="no"/>
+      </widget>
+    </widget>
+
+    <!-- Update output window -->
+    <widget name="LauncherUpdater" factory="pawsWidget" visible="no" savepositions="no" movable="no" resizable="no" resizetoscreen="yes" id="12">
+      <bgimage resource="Launcher Other" alpha="0" fading="false"/>
+      <frame x="0" y="0" width="850" height="600" border="no"/>
+
+      <widget name="LauncherUpdaterLogo" factory="pawsWidget" visible="yes" savepositions="no" movable="no" resizable="no" id="110">
+        <bgimage resource="PSLogo" alpha="0" fading="false"/>
+        <frame x="430" y="25" width="300" height="80" border="no"/>
+      </widget>
+
+      <widget name="UpdaterOutput" factory="pawsMessageTextBox" id="121" alwaysontop="true">
+        <frame x="90" y="205" width="670" height="290" />
+      </widget>
+
+      <!-- Yes button -->
+      <widget name="UpdaterYesButton" factory="pawsButton" id="122" changeonmouseover="true" visible="no">
+        <buttonup resource="Yes Button"/>
+        <buttondown resource="Yes Button MO"/>
+        <frame x="250" y="517" width="95" height="50" border="no"/>
+      </widget>
+
+      <!-- No button -->
+      <widget name="UpdaterNoButton" factory="pawsButton" id="123" changeonmouseover="true" visible="no">
+        <buttonup resource="No Button"/>
+        <buttondown resource="No Button MO"/>
+        <frame x="400" y="517" width="95" height="55" border="no"/>
+      </widget>
+
+      <!-- Ok button -->
+      <widget name="UpdaterOkButton" factory="pawsButton" id="124" changeonmouseover="true" visible="no">
+        <buttonup resource="Ok Button"/>
+        <buttondown resource="Ok Button MO"/>
+        <frame x="645" y="528" width="95" height="45" border="no"/>
+      </widget>
+
+      <!-- Cancel button -->
+      <widget name="UpdaterCancelButton" factory="pawsButton" id="125" changeonmouseover="true" visible="no">
+        <buttonup resource="Cancel Button"/>
+        <buttondown resource="Cancel Button MO"/>
+        <frame x="58" y="515" width="95" height="60" border="no"/>
+      </widget>
+    </widget>
+
+    <!-- Settings window -->
+    <widget name="LauncherSettings" factory="pawsButton" visible="no" alwaysontop="true" savepositions="no" movable="no" resizable="no" resizetoscreen="yes" id="13">
+      <bgimage resource="Launcher Other" alpha="0" fading="false"/>
+      <frame x="0" y="0" width="850" height="600" border="no"/>
+
+      <widget name="LauncherSettingsLogo" factory="pawsWidget" visible="yes" savepositions="no" movable="no" resizable="no" id="110">
+        <bgimage resource="PSLogo" alpha="0" fading="false"/>
+        <frame x="430" y="25" width="300" height="80" border="no"/>
+      </widget>
+
+      <!-- Ok button -->
+      <widget name="SettingsOkButton" factory="pawsButton" id="131" changeonmouseover="true">
+        <buttonup resource="Ok Button"/>
+        <buttondown resource="Ok Button MO"/>
+        <frame x="645" y="528" width="95" height="45" border="no"/>
+      </widget>
+
+      <!-- Cancel button -->
+      <widget name="SettingsCancelButton" factory="pawsButton" id="132" changeonmouseover="true">
+        <buttonup resource="Cancel Button"/>
+        <buttondown resource="Cancel Button MO"/>
+        <frame x="58" y="515" width="95" height="60" border="no"/>
+      </widget>
+
+      <!-- Audio button -->
+      <widget name="SettingsAudioButton" factory="pawsButton" id="133" toggle="yes">
+        <buttonup resource="Audio Button"/>
+        <buttondown resource="Audio Button MO"/>
+        <frame x="100" y="50" width="100" height="30" border="no"/>
+      </widget>
+
+      <!-- Controls button -->
+      <widget name="SettingsControlsButton" factory="pawsButton" id="134" toggle="yes">
+        <buttonup resource="Controls Button"/>
+        <buttondown resource="Controls Button MO"/>
+        <frame x="220" y="50" width="100" height="30" border="no"/>
+      </widget>
+
+      <!-- General button -->
+      <widget name="SettingsGeneralButton" factory="pawsButton" id="135" toggle="yes">
+        <buttonup resource="General Button"/>
+        <buttondown resource="General Button MO"/>
+        <frame x="100" y="100" width="100" height="30" border="no"/>
+      </widget>
+
+      <!-- Graphics button -->
+      <widget name="SettingsGraphicsButton" factory="pawsButton" id="136" toggle="yes">
+        <buttonup resource="Graphics Button"/>
+        <buttondown resource="Graphics Button MO"/>
+        <frame x="220" y="100" width="100" height="30" border="no"/>
+      </widget>
+
+      <!-- Audio Widget -->
+      <widget name="SettingsAudio" factory="pawsWidget" id="137" visible="no" alwaysontop="true">
+        <frame x="90" y="200" width="670" height="290" />
+
+        <widget name="EnableSound" factory="pawsCheckBox" id="1371">
+          <frame x="0" y="0" width="101" height="15"/>
+          <checkbox on="radioon" off="radiooff" size="17"/>
+          <text string="Enable Sound:" position="left"/>
+        </widget>
+
+        <widget name="SoundRendererText" factory="pawsTextBox" id="1372">
+          <frame x="0" y="20" width="90" height="20"/>
+          <text string="Sound Renderer:"/>
+        </widget>
+
+          <widget name="SoundRenderer" factory="pawsComboBox" id="1373" alwaysontop="true">
+          <frame x="90" y="17" width="60" height="20" border="no" />
+          <listbox rows="2" height="25" useScrollBar="false" />
+          </widget>
+      </widget>
+
+      <!-- Controls Widget -->
+      <widget name="SettingsControls" factory="pawsWidget" id="138" visible="no" alwaysontop="true">
+        <frame x="90" y="200" width="670" height="290" />
+      </widget>
+
+      <!-- General Widget -->
+      <widget name="SettingsGeneral" factory="pawsWidget" id="139" visible="yes" alwaysontop="true">
+        <frame x="90" y="200" width="670" height="290" />
+
+        <widget name="GraphicsPresetText" factory="pawsTextBox" id="1391">
+          <frame x="0" y="3" width="90" height="20"/>
+          <text string="Graphics Quality:"/>
+        </widget>
+
+          <widget name="GraphicsPreset" factory="pawsComboBox" id="1392" alwaysontop="true">
+          <frame x="100" y="0" width="90" height="20" border="no" />
+          <listbox rows="5" height="25" useScrollBar="false" />
+          </widget>
+
+        <widget name="AspectRatioText" factory="pawsTextBox" id="1393">
+          <frame x="0" y="23" width="90" height="20"/>
+          <text string="Aspect Ratio:"/>
+        </widget>
+
+          <widget name="AspectRatio" factory="pawsComboBox" id="1394" alwaysontop="true">
+          <frame x="100" y="20" width="90" height="20" border="no" />
+          <listbox rows="4" height="25" useScrollBar="true" />
+          </widget>
+
+        <widget name="ScreenResolutionText" factory="pawsTextBox" id="1395">
+          <frame x="0" y="43" width="90" height="20"/>
+          <text string="Screen Resolution:"/>
+        </widget>
+
+          <widget name="ScreenResolution" factory="pawsComboBox" id="1396" alwaysontop="true">
+          <frame x="100" y="40" width="90" height="20" border="no" />
+          <listbox rows="4" height="25" useScrollBar="true" />
+          </widget>
+
+        <widget name="Fullscreen" factory="pawsCheckBox" id="1397">
+          <frame x="0" y="63" width="110" height="15"/>
+          <checkbox on="radioon" off="radiooff" size="17"/>
+          <text string="Enable Fullscreen:" position="left"/>
+        </widget>
+
+        <widget name="LanguagesText" factory="pawsTextBox" id="1400">
+          <frame x="0" y="103" width="90" height="20"/>
+          <text string="Language:"/>
+        </widget>
+
+        <widget name="Languages" factory="pawsComboBox" id="1401" alwaysontop="true" sorted="true">
+          <frame x="100" y="100" width="90" height="20" border="no" />
+          <listbox rows="4" height="25" useScrollBar="true" />
+        </widget>
+
+        <widget name="SkinsText" factory="pawsTextBox" id="1398">
+          <frame x="0" y="143" width="90" height="20"/>
+          <text string="Current Skin:"/>
+        </widget>
+
+        <widget name="Skins" factory="pawsComboBox" id="1399" alwaysontop="true">
+          <frame x="100" y="140" width="90" height="20" border="no"/>
+          <listbox rows="3" height="25" useScrollBar="true" />
+        </widget>
+
+        <widget name="SkinDescription" factory="pawsMultiLineTextBox" id="13991">
+          <frame x="0" y="160" width="200" height="100" border="no"/>
+        </widget>
+
+        <widget name="SkinPreview" factory="pawsWidget" visible="yes" savepositions="no" movable="no" resizable="no" id="13992">
+          <frame x="250" y="160" width="200" height="100" border="yes"/>
+
+          <widget name="PreviewButton" factory="pawsButton" id="139921">
+            <frame x="250" y="170" width="130" height="30" border="no"/>
+            <label text="Test button"/>
+          </widget>
+
+          <widget name="PreviewBox" factory="pawsCheckBox" id="139922">
+            <frame x="250" y="230" width="190" height="30" />
+            <text string="Test checkbox"/>
+          </widget>          
+        </widget>
+
+        <widget name="DeleteCacheButton" factory="pawsButton" id="1402" changeonmouseover="true">
+            <buttonup resource="ClearCache Button"/>
+            <buttondown resource="ClearCache Button MO"/>
+            <frame x="300" y="0" width="100" height="30" border="no"/>
+        </widget>
+      </widget>
+
+      <!-- Graphics Widget -->
+      <widget name="SettingsGraphics" factory="pawsWidget" id="1310" visible="no" alwaysontop="true">
+        <frame x="90" y="200" width="670" height="330" />
+
+        <widget name="BasicGraphicSettings" factory="pawsTextBox" id="13120">
+          <frame x="0" y="3" width="210" height="20"/>
+          <text string="BASIC SETTINGS "/>
+        </widget>
+
+        <widget name="TextureQualityText" factory="pawsTextBox" id="13107">
+          <frame x="0" y="23" width="210" height="20"/>
+          <text string="Texture Quality: "/>
+        </widget>
+
+          <widget name="TextureQuality" factory="pawsComboBox" id="13108" alwaysontop="true">
+          <frame x="120" y="20" width="70" height="20" border="no" />
+          <listbox rows="4" height="25" useScrollBar="false" />
+          </widget>
+
+        <widget name="ShadersText" factory="pawsTextBox" id="13109">
+          <frame x="0" y="43" width="210" height="20"/>
+          <text string="Shaders: "/>
+        </widget>
+
+          <widget name="Shaders" factory="pawsComboBox" id="13110" alwaysontop="true">
+          <frame x="120" y="40" width="70" height="20" border="no" />
+          <listbox rows="4" height="25" useScrollBar="false" />
+          </widget>
+
+        <widget name="ParticlesText" factory="pawsTextBox" id="13119">
+          <frame x="0" y="63" width="210" height="20"/>
+          <text string="Particles:"/>
+        </widget>
+
+        <widget name="Particles" factory="pawsComboBox" id="131120" alwaysontop="true">
+          <frame x="120" y="60" width="70" height="20" border="no"/>
+          <listbox rows="2" height="25" useScrollBar="false" />
+        </widget>
+
+        <widget name="EnableGrass" factory="pawsCheckBox" id="13114">
+          <frame x="0" y="83" width="130" height="15"/>
+          <checkbox on="radioon" off="radiooff" size="17"/>
+          <text string="Enable Grass:" position="left"/>
+        </widget>
+
+        <widget name="EnableWeather" factory="pawsCheckBox" id="13114">
+          <frame x="0" y="103" width="130" height="15"/>
+          <checkbox on="radioon" off="radiooff" size="17"/>
+          <text string="Enable Weather:" position="left"/>
+        </widget>
+
+        <widget name="EnableShadows" factory="pawsCheckBox" id="13111">
+          <frame x="0" y="123" width="130" height="15"/>
+          <checkbox on="radioon" off="radiooff" size="17"/>
+          <text string="Enable Shadows:" position="left"/>
+        </widget>
+
+        <widget name="AdvancedGraphicSettings" factory="pawsTextBox" id="13120">
+          <frame x="300" y="3" width="210" height="20"/>
+          <text string="ADVANCED SETTINGS "/>
+        </widget>
+
+        <widget name="EnableBloom" factory="pawsCheckBox" id="13112">
+          <frame x="300" y="23" width="130" height="15"/>
+          <checkbox on="radioon" off="radiooff" size="17"/>
+          <text string="Enable Bloom:" position="left"/>
+        </widget>
+
+        <widget name="EnableHDR" factory="pawsCheckBox" id="13113">
+          <frame x="300" y="43" width="130" height="15"/>
+          <checkbox on="radioon" off="radiooff" size="17"/>
+          <text string="Enable HDR:" position="left"/>
+        </widget>
+
+        <widget name="ScreenDepthText" factory="pawsTextBox" id="13101">
+          <frame x="300" y="63" width="90" height="20"/>
+          <text string="Color Depth:"/>
+        </widget>
+
+          <widget name="ScreenDepth" factory="pawsComboBox" id="13102" alwaysontop="true">
+          <frame x="420" y="60" width="70" height="20" border="no" />
+          <listbox rows="2" height="25" useScrollBar="false" />
+          </widget>
+
+        <widget name="AntiAiasingText" factory="pawsTextBox" id="13103">
+          <frame x="300" y="83" width="210" height="20"/>
+          <text string="Anti-Aliasing:"/>
+        </widget>
+
+          <widget name="AntiAiasing" factory="pawsComboBox" id="13104" alwaysontop="true">
+          <frame x="420" y="80" width="70" height="20" border="no" />
+          <listbox rows="7" height="25" useScrollBar="false" />
+          </widget>
+
+        <widget name="AnisotropicFilteringText" factory="pawsTextBox" id="13105">
+          <frame x="300" y="103" width="210" height="20"/>
+          <text string="Anisotropic Filtering: "/>
+        </widget>
+
+          <widget name="AnisotropicFiltering" factory="pawsComboBox" id="13106" alwaysontop="true">
+          <frame x="420" y="100" width="70" height="20" border="no" />
+          <listbox rows="5" height="25" useScrollBar="false" />
+          </widget>
+
+        <widget name="LoaderCache" factory="pawsCheckBox" id="13116">
+          <frame x="300" y="123" width="130" height="15"/>
+          <checkbox on="radioon" off="radiooff" size="17"/>
+          <text string="Loader Cache:" position="left"/>
+        </widget>
+
+        <widget name="BackgroundLoadingText" factory="pawsTextBox" id="13117">
+          <frame x="300" y="143" width="210" height="20"/>
+          <text string="Background Loading:"/>
+        </widget>
+
+        <widget name="BackgroundLoading" factory="pawsComboBox" id="13118" alwaysontop="true">
+          <frame x="420" y="140" width="70" height="20" border="no"/>
+          <listbox rows="3" height="25" useScrollBar="false" />
+        </widget>
+
+
+        <widget name="VBO" factory="pawsCheckBox" id="13115">
+          <frame x="300" y="163" width="280" height="15"/>
+          <checkbox on="radioon" off="radiooff" size="17"/>
+          <text string="Enable VBO (may cause crashes with ATI cards):" position="left"/>
+        </widget>
+
+
+      </widget>
+    </widget>
+
+    <!-- Update available window -->
+    <widget name="UpdateAvailable" factory="pawsYesNoBox" visible="no" savepositions="no" movable="no" resizable="no" id="14">
+      <frame x="250" y="150" width="300" height="200" border="no" />
+      <bgimage resource="YesNo" alpha="0" />
+
+      <widget name="Message Box" factory="pawsMultiLineTextBox" id="141">
+        <frame x="65" y="50" width="180" height="50" border="no" />
+      </widget>
+
+      <widget name="YesButton" factory="pawsButton" key="Y" id="142" changeonmouseover="true">
+        <frame x="65" y="100" width="80" height="40" border="no" />
+        <buttonup resource="Yes"/>
+        <buttondown resource="Yes MO"/>
+      </widget>
+
+      <widget name="NoButton" factory="pawsButton" key="N" id="143" changeonmouseover="true">
+        <frame x="165" y="100" width="80" height="40" border="no" />
+        <buttonup resource="No"/>
+        <buttondown resource="No MO"/>
+      </widget>
+    </widget>
+
+    <!-- shadercache request window -->
+    <widget name="ShaderCacheRequest" factory="pawsYesNoBox" visible="no" savepositions="no" movable="no" resizable="no" id="16">
+      <frame x="250" y="150" width="300" height="200" border="no" />
+      <bgimage resource="YesNo" alpha="0" />
+
+      <widget name="Message Box" factory="pawsMultiLineTextBox" id="141">
+        <frame x="65" y="50" width="180" height="50" border="no" />
+      </widget>
+
+      <widget name="YesButton" factory="pawsButton" key="Y" id="142" changeonmouseover="true">
+        <frame x="65" y="100" width="80" height="40" border="no" />
+        <buttonup resource="Yes"/>
+        <buttondown resource="Yes MO"/>
+      </widget>
+
+      <widget name="NoButton" factory="pawsButton" key="N" id="143" changeonmouseover="true">
+        <frame x="165" y="100" width="80" height="40" border="no" />
+        <buttonup resource="No"/>
+        <buttondown resource="No MO"/>
+      </widget>
+    </widget>
+
+    <!-- Notify window -->
+    <widget name="Notify" factory="pawsOkBox" visible="no" savepositions="no" movable="no" resizable="no" id="15">
+      <frame x="250" y="150" width="300" height="200" border="no" />
+      <bgimage resource="YesNo" alpha="0" />
+
+      <widget name="Message Box" factory="pawsMultiLineTextBox" id="151">
+        <frame x="50" y="50" width="200" height="60" border="no" />
+      </widget>
+
+      <widget name="OkButton" factory="pawsButton" key="Enter" id="152" changeonmouseover="true">
+        <frame x="110" y="120" width="80" height="40" border="no" />
+        <buttonup resource="Ok Button"/>
+        <buttondown resource="Ok Button MO"/>
+      </widget>
+    </widget>
+
+  </widget>
+</widget_description>

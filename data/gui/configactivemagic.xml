@@ -1,0 +1,137 @@
+<widget_description>
+    <widget name="ConfigActiveMagic" factory="pawsConfigActiveMagic"
+            visible="no" savepositions="no" movable="no" resizable="no" style="New Standard GUI">
+
+        <frame x="10" y="10" width="400" height="300" border="no" />
+        <bgimage resource="Scaling Widget Background" />
+
+        <widget name="" factory="pawsTextBox">
+            <frame x="15" y="10" width="140" height="20" />
+            <text string="Icon Display"/>
+        </widget>
+        <widget name="showEffects" factory="pawsRadioButtonGroup"  >
+            <frame x="10" y="30" width="400" height="20" border="no" />
+               <radionode name="spellOnly" id="1020" >
+                    <frame x="0" y="0" width="150" height="20" />
+                    <text string="Spell Effects Only" position="right" />
+                </radionode>
+                <radionode name="itemAndSpell" id="1021" >
+                    <frame x="160" y="0" width="150" height="20" />
+                    <text string="Item and Spell Effects" position="right" />
+                </radionode>
+        </widget>
+
+        <widget name="" factory="pawsTextBox">
+            <frame x="15" y="70" width="80" height="20" />
+            <text string="Button Height"/>
+        </widget>
+
+        <widget name="buttonHeight" factory="pawsScrollBar" direction="horizontal" style="Standard Scrollbar Horizontal">
+            <frame x="100" y="70" width="110" height="20" border="no" />
+        </widget>
+
+        <widget name="" factory="pawsTextBox">
+            <frame x="15" y="90" width="80" height="20" />
+            <text string="Button Width"/>
+        </widget>
+        <widget name="buttonWidthMode" factory="pawsRadioButtonGroup"  >
+            <frame x="100" y="90" width="130" height="20" border="no" />
+               <radionode name="buttonWidthAutomatic" id="1000" >
+                    <frame x="0" y="0" width="65" height="20" />
+                    <text string="Auto" position="right" />
+                </radionode>
+                <radionode name="buttonWidthManual" id="1001" >
+                    <frame x="55" y="0" width="80" height="20" />
+                    <text string="Manual" position="right" />
+                </radionode>
+        </widget>
+        <widget name="buttonWidth" factory="pawsScrollBar" direction="horizontal" style="Standard Scrollbar Horizontal">
+            <frame x="250" y="90" width="100" height="20" border="no" />
+        </widget>
+
+        <widget name="" factory="pawsTextBox">
+            <frame x="15" y="135" width="140" height="20" />
+            <text string="Left/Up scroll button"/>
+        </widget>
+        <widget name="leftScroll" factory="pawsRadioButtonGroup" >
+            <frame x="15" y="155" width="190" height="20" border="no" />
+               <radionode name="buttonScrollOn" id="1004" >
+                    <frame x="0" y="0" width="60" height="20" />
+                    <text string="On" position="right" />
+                </radionode>
+                <radionode name="buttonScrollAuto" id="1005" >
+                    <frame x="55" y="0" width="62" height="20" />
+                    <text string="Auto" position="right" />
+                </radionode>
+                <radionode name="buttonScrollOff" id="1006" >
+                    <frame x="110" y="0" width="60" height="20" />
+                    <text string="Off" position="right" />
+                </radionode>
+        </widget>
+
+        <widget name="" factory="pawsTextBox">
+            <frame x="250" y="135" width="140" height="20" />
+            <text string="Right/Down scroll button"/>
+        </widget>
+        <widget name="rightScroll" factory="pawsRadioButtonGroup" >
+            <frame x="250" y="155" width="190" height="20" border="no" />
+               <radionode name="buttonScrollOn" id="1007" >
+                    <frame x="0" y="0" width="60" height="20" />
+                    <text string="On" position="right" />
+                </radionode>
+                <radionode name="buttonScrollAuto" id="1008" >
+                    <frame x="55" y="0" width="62" height="20" />
+                    <text string="Auto" position="right" />
+                </radionode>
+                <radionode name="buttonScrollOff" id="1009" >
+                    <frame x="110" y="0" width="60" height="20" />
+                    <text string="Off" position="right" />
+                </radionode>
+        </widget>
+
+        <widget name="" factory="pawsTextBox">
+            <frame x="15" y="210" width="50" height="20" />
+            <text string="Font"/>
+        </widget>
+
+        <widget name="textFont" factory="pawsComboBox" id="1015" alwaysontop="true" >
+            <frame x="60" y="210" width="150" height="20" border="no" />
+            <listbox rows="3" height="20" useScrollBar="true" />
+        </widget>
+
+        <widget name="" factory="pawsTextBox">
+            <frame x="15" y="235" width="100" height="20" />
+            <text string="Text Size"/>
+        </widget>
+
+        <widget name="textSize" factory="pawsScrollBar" direction="horizontal" style="Standard Scrollbar Horizontal">
+            <frame x="100" y="235" width="110" height="20" border="no" />
+        </widget>
+
+        <widget name="" factory="pawsTextBox">
+            <frame x="15" y="260" width="100" height="20" />
+            <text string="Text Spacing"/>
+        </widget>
+
+        <widget name="textSpacing" factory="pawsScrollBar" direction="horizontal" style="Standard Scrollbar Horizontal">
+            <frame x="100" y="260" width="110" height="20" border="no" />
+        </widget>
+
+        <widget name="useImages" factory="pawsCheckBox" id="1022">
+            <frame x="250" y="215" width="190" height="20" />
+            <text string="Use Images"/>
+        </widget>
+
+        <widget name="autoResize" factory="pawsCheckBox" id="1023" >
+            <frame x="250" y="235" width="190" height="20" />
+            <text string="Auto-Resize"/>
+        </widget>
+
+        <widget name="showWindow" factory="pawsCheckBox" id="1024" >
+            <frame x="250" y="255" width="190" height="20" />
+            <text string="show Active Magic Window"/>
+        </widget>
+
+    </widget>
+
+</widget_description>

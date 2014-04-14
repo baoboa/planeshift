@@ -1,0 +1,21 @@
+<widget_description>
+<widget name="peBackground" factory="peBackground" 
+        visible="yes" savepositions="no" movable="no" 
+        resizable="no" >
+    
+    <!-- window background -->
+    <bgimage resource="peShaded" alpha="0" fade="no" />
+
+    <!-- size of window and title -->
+    <frame x="0" y="0" width="800" height="600" border="no" />
+    <title resource="peTitleBar" text="Planeshift Effect Editor" align="left" />
+    
+    <!-- preview window -->
+    <widget name="preview" factory="pawsGenericView">
+        <frame x="0" y="30" width="800" height="570" border="no" />
+        <map file="/planeshift/world/npcroom1" sector="NPCroom" />
+    </widget>
+
+</widget>
+</widget_description>
+

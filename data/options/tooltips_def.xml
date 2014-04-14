@@ -1,0 +1,7 @@
+<tooltips>
+    <enable_tooltips value="1" />    <!-- on -->
+    <enable_bgcolor value="0" />     <!-- off -->
+    <bgcolor value="0" />            <!-- black -->
+    <fontcolor value="16777215" />   <!-- white -->
+    <shadowcolor value="0" />        <!-- black -->
+</tooltips>

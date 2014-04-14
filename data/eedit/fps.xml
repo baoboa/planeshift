@@ -1,0 +1,68 @@
+<widget_description>
+
+
+
+<widget name="FPSToolbox" factory="EEditFPSToolbox" 
+
+        visible="yes" savepositions="yes" movable="yes" resizable="no" resizetoscreen="no" >
+
+        
+
+    <frame x="590" y="115" width="210" height="45" border="yes" justtitle="yes" />
+
+    <title resource="TitleBar" text="FPS: 0.0" align="left" />
+
+    <font name="LiberationSans-Regular.ttf" r="255" g="255" b="255" size="9"  sr="0" sg="0" sb="0" shadow="yes" />   
+
+    <bgimage resource="Back" alpha="75" />
+
+
+
+    <widget name="fps_lbl" factory="pawsTextBox">
+
+        <frame x="15" y="16" width="30" height="18" border="no"/>
+
+        <font name="LiberationSans-Regular.ttf" r="255" g="255" b="255" size="9"  sr="0" sg="0" sb="0" shadow="yes" />   
+
+        <text string="FPS:" />
+
+    </widget>
+
+    <widget name="fps" factory="pawsTextBox">
+
+        <frame x="45" y="16" width="40" height="18" border="no" />        
+
+        <font name="LiberationSans-Regular.ttf" r="255" g="255" b="255" size="9"  sr="0" sg="0" sb="0" shadow="yes" />   
+
+        <text string="0.0" />
+
+    </widget>
+
+    <widget name="fps_target_lbl" factory="pawsTextBox">
+
+        <frame x="80" y="16" width="50" height="18" border="no" />
+
+        <font name="LiberationSans-Regular.ttf" r="255" g="255" b="255" size="9"  sr="0" sg="0" sb="0" shadow="yes" />   
+
+        <text string="Target:" />
+
+    </widget>
+
+    <widget name="fps_target" factory="pawsSpinBox">
+
+        <frame x="135" y="10" width="65" height="25" border="no" />        
+
+        <font name="LiberationSans-Regular.ttf" r="255" g="255" b="255" size="9"  sr="0" sg="0" sb="0" shadow="yes" />   
+
+        <bgimage resource="Shaded" alpha="75" />
+
+        <number default="60.0" min="1" max="300" inc="1" position="left"/>
+
+    </widget>
+
+</widget>
+
+
+
+</widget_description>
+

@@ -1,0 +1,5 @@
+#define IDD_CRASH 1000
+#define IDC_COMMENTS 1001
+#define IDC_STC1 1002
+#define IDC_STC2 1003
+#define IDC_STC3 1004

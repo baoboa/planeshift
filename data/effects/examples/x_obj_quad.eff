@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8" ?> 
+<library>
+    <textures>
+        <texture name="quad_example">
+            <file>/this/art/effects/examples/quad_example.dds</file>
+        </texture>
+    </textures>
+    <materials>
+        <material name="quad_example">
+            <texture>quad_example</texture>
+        </material>
+    </materials>
+    <addon plugin="PSEffects">
+        <effect name="x_obj_quad">
+            <anchor type="basic" name="pos">
+                <dir>none</dir>
+            </anchor>
+
+            <!-- Simplest Quad (the white one) --> 
+            <obj type="quad" name="quad" material="quad_example">
+                <attach>pos</attach>
+                <death>none</death>
+            </obj>
+
+            <!-- Quad Dir: Target (the red one) -->
+            <!-- HINT: Rotate the target actor to see the effect this has -->
+            <obj type="quad" name="quad_target" material="quad_example">
+                <attach>pos</attach>
+                <death>none</death>
+                <dir>target</dir>
+                <keyFrame time="0">
+                    <action name="position" y="0.5" z="1" />
+                    <action name="spin" x="90" />
+                    <action name="colour" r="255" g="0" b="0" />
+                </keyFrame>
+            </obj>
+
+            <!-- Quad Dir: Origin (the green one) -->
+            <!-- HINT: Rotate the origin actor to see the effect this has -->
+            <obj type="quad" name="quad_origin" material="quad_example">
+                <attach>pos</attach>
+                <death>none</death>
+                <dir>origin</dir>
+                <keyFrame time="0">
+                    <action name="position" y="1" z="1" />
+                    <action name="spin" x="90" />
+                    <action name="colour" r="0" g="255" b="0" />
+                </keyFrame>
+            </obj>
+
+            <!-- Quad Dir: ToTarget (the blue one) -->
+            <!-- HINT: Move the target/origin away from eachother or around to see this the effect this has -->
+            <obj type="quad" name="quad_totarget" material="quad_example">
+                <attach>pos</attach>
+                <death>none</death>
+                <dir>totarget</dir>
+                <keyFrame time="0">
+                    <action name="position" y="1.5" z="1" />
+                    <action name="spin" x="90" />
+                    <action name="colour" r="0" g="0" b="255" />
+                </keyFrame>
+            </obj>
+
+            <!-- Quad Dir: Camera (the yellow one) -->
+            <!-- HINT: Move the camera around to see this the effect this has -->
+            <obj type="quad" name="quad_camera" material="quad_example">
+                <attach>pos</attach>
+                <death>none</death>
+                <dir>camera</dir>
+                <keyFrame time="0">
+                    <action name="position" y="2" z="1" />
+                    <action name="colour" r="255" g="255" b="0" />
+                </keyFrame>
+            </obj>
+
+            <!-- Quad Dir: Billboard (the magenta one) -->
+            <!-- NOTE: This will be very similar to the Camera dir, but it's still slightly different.  
+                       Experiment with the two to see which works best for your situation.
+                       Because of the texture though, and how it's used, you probably won't see a difference in this situation.
+            -->
+            <obj type="quad" name="quad_billboard" material="quad_example">
+                <attach>pos</attach>
+                <death>none</death>
+                <dir>billboard</dir>
+                <keyFrame time="0">
+                    <action name="position" y="2.5" z="1" />
+                    <action name="colour" r="255" g="0" b="255" />
+                </keyFrame>
+            </obj>
+
+            <!-- Quad showing cell animations (the cyan one). -->
+            <!-- This is basically dividing the texture into squared cells and choosing which one to display -->
+            <!-- The xcells and ycells in the obj line determine the division of the texture -->
+            <obj type="quad" name="quad_cells" xcells="2" ycells="1" material="quad_example">
+                <attach>pos</attach>
+                <death>none</death>
+                <dir>billboard</dir>
+                <keyFrame time="0">
+                    <action name="position" y="3" z="1" />
+                    <action name="colour" r="0" g="255" b="255" />
+                    <action name="cell" value="0" />
+                </keyFrame>
+                <keyFrame time="500">
+                    <action name="cell" value="1" />
+                </keyFrame>
+                <keyFrame time="1000">
+                    <action name="cell" value="0" />
+                </keyFrame>
+            </obj>
+        </effect>
+    </addon>
+</library>
+

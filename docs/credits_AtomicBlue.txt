@@ -1,0 +1,109 @@
+
+@  Team at Atomic Blue Release (Released 2002.05.02)
+
+
+
+
+&Project Leader, Director and Overall Camp Counselor
+
+Luca "Talad" Pancallo, for building a great team to make a dream come true.
+
+
+
+&Client and Server engine
+
+Andrew "Acraig" Craig, for leadership, great aws skills, inventory screens, xml, ...
+
+Keith "Vengeance" Fulton, for lights, animations management, char customization, client/server connections and more...
+
+Matthias "Matzeb" Braun, for network improvements and bug hunting talent.
+
+Marc-Andre "Sarmaeel" Courtois, for updater program.
+
+David "Zane" Asbell, for binary loaders and weapon wield function.
+
+Christophe "Atanor" Painchaud, for object description window.
+
+&Settings
+
+Derek "" Smith, for npcs description and dialogues.
+
+Steve "Darkmoon" Scott, for maps and special buildings.
+
+Chris "Kendaro" Pyles, for enkidukai packs, architecture guide, temple docs.
+
+Joel "Xolon" van Dieren, for npcs, world resources guides.
+
+Dennis "ParaSite" Hellewegen, for plaza ideas, items, houses.
+
+
+&2D Art
+
+Ben "Djaggernaut" Chavigner, for krans and enkikudai skins.
+
+Ben "Bennels" Bryant, for human and ynnwn skins.
+
+Joshua "Bigfoot" Morden, for falchion textures.
+
+"Kada-El", for tavern paintings.
+
+"Satat", monsters concept art.
+
+
+&3D Art
+
+Stefano "Boonet" Oggeri, for his never-ending contribution of models, renderings, textures and style.
+
+Joseph Halito Day : character modeling and texturing, female dwarf model and skins, weapons.
+
+Tom "Rainbow" Purcell, for character modeling, texturing, GUI graphics, ynnwn, female elf.
+
+Horatius "Hory" Romosan, for object modeling and texturing, temple model, trees, blacksmith, 
+
+Fernando "Elentor" Pires, for object modeling and texturing, GUI graphics, weapons, general objects, city fountains.
+
+Luke "Nataku" Sluder, for modeling and texturing, street lamps, paintings.
+
+Randolph "Lawngila" Riley, for his support on base char models.
+
+
+&PR
+
+Antonio "Annah" Stefan, for PR management.
+
+Shane "Washi" Paul, for fan channel moderation.
+
+
+&Rules
+
+Pablo "Paxx" Carapella, for progression, combat rules, economy, plot, and other great ideas.
+
+"Hobble" for combat rules and combat simulator
+
+
+&Music and sounds
+
+Bruno "CyberMozart" Largarde, for the amazing main theme, intro songs and battle theme*
+
+Dana "Gardorlin" Hawkes, for tavern theme and battle theme*
+
+Nick "" Sherman, for the dark Death Realm theme*
+
+
+* (you will hear those songs in future releases of PlaneShift)
+
+
+@Very Special Thanks to
+
+Jorrit Tyberghein, for his great 3D engine, for the continuous and nearly bug-free support to our team, vectors, 3dmatrix and other e=mc2 things.
+
+All the Crystal Space contributors (it's not always Jorrit alone :)
+
+Mauro Zanetti, for creating (a long time ago) Yliakum's world, legends, races and the base rules.
+
+All the former developers for their work and contributions to planeshift.
+
+.... and to all our players, fans and supporters!
+
+
+http://www.planeshift.it, don't miss the next update!

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" ?> 
+<library>
+    <textures>
+        <texture name="sparkle">
+            <file>/this/data/effects/examples/puff_02.dds</file>
+        </texture>
+    </textures>
+    <materials>
+        <material name="sparkle">
+            <texture>sparkle</texture>
+        </material>
+    </materials>
+	<meshfact name="sparkle">
+	  <plugin>crystalspace.mesh.loader.factory.particles</plugin>
+	    <params>
+          <material>sparkle</material>
+          
+          <emitter type="sphere">
+            <duration>10</duration>
+            <radius></radius>            
+            <emissionrate>5</emissionrate>
+            <mass min="1" max="6" />
+            <uniformvelocity />
+            <initialvelocity x="0" y="1" z="0" />
+            <initialttl min="1" max="2" />
+            <placement>volume</placement>                                          
+          </emitter>
+ <particlesize x="1" y="" />
+          <effector type="force">
+            <randomacceleration x="0" y="0" z="0" />
+          </effector>    
+          		  
+          <effector type="lincolor">
+            <color red="1" green="1" blue="1" alpha="1" />
+          </effector>        
+	  </params>
+	</meshfact>
+</library>

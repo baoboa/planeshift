@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8" ?> 
+<library>
+    <shaders>
+        <shader>
+            <file>/shader/lighting/fullbright.xml</file>
+        </shader>
+    </shaders>
+    <textures>
+        <texture name="marker">
+            <file>/this/art/effects/marker02.dds</file>
+        </texture>
+    </textures>
+    <materials>
+        <material name="marker">
+            <texture>marker</texture>
+	      <shader type="base">lighting_fullbright</shader>
+	      <shader type="diffuse">lighting_fullbright</shader>
+        </material>
+    </materials>
+    <addon plugin="PSEffects">
+        <effect name="marker">
+            <anchor type="basic" name="pos">
+                <dir>none</dir>
+            </anchor>
+            <obj type="quad" name="left" material="marker">
+                <attach>pos</attach>
+                <death>none</death>
+                <dir>none</dir>
+                <keyFrame time="0">
+                    <action name="alpha" value="0" />
+                    <action name="position" x="-0.6" y="0.03" z="0" />
+                    <action name="scale" value="0.8" />
+                    <action name="rotate" x="0" y="0" z="0" />
+                    <action name="spin" y="-90" />
+                    <action name="colour" r="0" g="200" b="40" />
+                </keyFrame>
+                <keyFrame time="2500">
+                    <action name="rotate" x="0" y="360" z="0" />
+                </keyFrame>
+            </obj>
+            <obj type="quad" name="top" material="marker">
+                <attach>pos</attach>
+                <death>none</death>
+                <dir>none</dir>
+                <keyFrame time="0">
+                    <action name="alpha" value="0" />
+                    <action name="position" x="0" y="0.03" z="0.6" />
+                    <action name="scale" value="0.8" />
+                    <action name="rotate" x="0" y="0" z="0" />
+                    <action name="spin" y="180" />
+                    <action name="colour" r="0" g="200" b="40" />
+                </keyFrame>
+                <keyFrame time="2500">
+                    <action name="rotate" x="0" y="360" z="0" />
+                </keyFrame>
+            </obj>
+            <obj type="quad" name="bottom" material="marker">
+                <attach>pos</attach>
+                <death>none</death>
+                <dir>none</dir>
+                <keyFrame time="0">
+                    <action name="alpha" value="0" />
+                    <action name="position" x="0" y="0.03" z="-0.6" />
+                    <action name="scale" value="0.8" />
+                    <action name="rotate" x="0" y="0" z="0" />
+                    <action name="spin" y="0" />
+                    <action name="colour" r="0" g="200" b="40" />
+                </keyFrame>
+                <keyFrame time="2500">
+                    <action name="rotate" x="0" y="360" z="0" />
+                </keyFrame>
+            </obj>
+            <obj type="quad" name="right" material="marker">
+                <attach>pos</attach>
+                <death>none</death>
+                <dir>none</dir>
+                <keyFrame time="0">
+                    <action name="alpha" value="0" />
+                    <action name="position" x="0.6" y="0.03" z="0" />
+                    <action name="scale" value="0.8" />
+                    <action name="rotate" x="0" y="0" z="0" />
+                    <action name="spin" y="90" />
+                    <action name="colour" r="0" g="200" b="40" />
+                </keyFrame>
+                <keyFrame time="2500">
+                    <action name="rotate" x="0" y="360" z="0" />
+                </keyFrame>
+            </obj>
+            <obj type="quad" name="leftcw" material="marker">
+                <attach>pos</attach>
+                <death>none</death>
+                <dir>none</dir>
+                <keyFrame time="0">
+                    <action name="alpha" value="0" />
+                    <action name="position" x="-0.6" y="0.03" z="0" />
+                    <action name="scale" value="0.8" />
+                    <action name="rotate" x="0" y="0" z="0" />
+                    <action name="spin" y="270" />
+                    <action name="colour" r="0" g="200" b="40" />
+                </keyFrame>
+                <keyFrame time="2500">
+                    <action name="rotate" x="0" y="-360" z="0" />
+                </keyFrame>
+            </obj>
+            <obj type="quad" name="topcw" material="marker">
+                <attach>pos</attach>
+                <death>none</death>
+                <dir>none</dir>
+                <keyFrame time="0">
+                    <action name="alpha" value="0" />
+                    <action name="position" x="0" y="0.03" z="0.6" />
+                    <action name="scale" value="0.8" />
+                    <action name="rotate" x="0" y="0" z="0" />
+                    <action name="spin" y="180" />
+                    <action name="colour" r="0" g="200" b="40" />
+                </keyFrame>
+                <keyFrame time="2500">
+                    <action name="rotate" x="0" y="-360" z="0" />
+                </keyFrame>
+            </obj>
+            <obj type="quad" name="bottomcw" material="marker">
+                <attach>pos</attach>
+                <death>none</death>
+                <dir>none</dir>
+                <keyFrame time="0">
+                    <action name="alpha" value="0" />
+                    <action name="position" x="0" y="0.03" z="-0.6" />
+                    <action name="scale" value="0.8" />
+                    <action name="rotate" x="0" y="0" z="0" />
+                    <action name="spin" y="0" />
+                    <action name="colour" r="0" g="200" b="40" />
+                </keyFrame>
+                <keyFrame time="2500">
+                    <action name="rotate" x="0" y="-360" z="0" />
+                </keyFrame>
+            </obj>
+            <obj type="quad" name="rightcw" material="marker">
+                <attach>pos</attach>
+                <death>none</death>
+                <dir>none</dir>
+                <keyFrame time="0">
+                    <action name="alpha" value="0" />
+                    <action name="position" x="0.6" y="0.03" z="0" />
+                    <action name="scale" value="0.8" />
+                    <action name="rotate" x="0" y="0" z="0" />
+                    <action name="spin" y="90" />
+                    <action name="colour" r="0" g="200" b="40" />
+                </keyFrame>
+                <keyFrame time="2500">
+                    <action name="rotate" x="0" y="-360" z="0" />
+                </keyFrame>
+            </obj>
+        </effect>
+    </addon>
+</library>

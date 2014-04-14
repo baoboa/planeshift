@@ -1,0 +1,63 @@
+<widget_description>
+
+    <widget name="BookReadingWindow" factory="pawsBookReadingWindow" visible="no" movable="yes" style="New Standard GUI" savepositions="yes" >
+        <frame x="100" y="70" width="721" height="478" border="yes"/>
+        <bgimage resource="Book Background" />
+        <title resource="Scaling Title Bar" text="Read Book" align="left" close_button="yes"/>
+
+
+        <widget name="ItemName" factory="pawsTextBox" >
+            <frame x="50" y="35" width="280" height="40"/>
+            <font name="becker-m.ttf" r="0" g="0" b="0" size="15"/>
+            <text horizAdjust="CENTRE" />
+        </widget>
+        
+       <widget name="ItemNameRight" factory="pawsTextBox" >
+            <frame x="380" y="35" width="290" height="40"/>
+            <font name="becker-m.ttf" r="0" g="0" b="0" size="15"/>
+            <text horizAdjust="CENTRE" />
+        </widget>
+
+    <widget name="ItemDescription" factory="pawsMultiPageDocumentView" style="textinput">
+        <frame x="50" y="90" width="290" height="330" border="no"/>
+        <font name="becker-m.ttf" r="0" g="0" b="0" size="12"/>
+    </widget>
+    
+    <widget name="ItemDescriptionRight" factory="pawsMultiPageDocumentView" style="textinput">
+        <frame x="380" y="90" width="290" height="330" border="yes"/>
+        <font name="becker-m.ttf" r="0" g="0" b="0" size="12"/>
+    </widget> 
+    
+    <widget name="ItemDescriptionCraft" factory="pawsMultiPageDocumentView" style="textinput">
+        <frame x="50" y="90" width="290" height="330" border="no"/>
+        <font name="becker-m.ttf" r="0" g="0" b="0" size="12"/>
+    </widget>
+    <widget name="ItemDescriptionCraftRight" factory="pawsMultiPageDocumentView" style="textinput">
+        <frame x="380" y="90" width="290" height="330" border="no"/>
+        <font name="becker-m.ttf" r="0" g="0" b="0" size="12"/>
+    </widget>    
+
+    <widget name="WriteButton" factory="pawsButton" id="1001" tooltip="Write in this book">
+        <frame x="35" y="8" width="22" height="22" />
+        <bgimage resource="Scribe" />
+    </widget>
+
+    <widget name="SaveButton" factory="pawsButton" id="1002" tooltip="Save this book">
+        <frame x="65" y="8" width="22" height="22" />
+        <bgimage resource="Scribe" />
+    </widget>
+    
+    <widget name="NextButton" factory="pawsButton" id="1003" tooltip="Next Page">
+        <frame x="651" y="430" width="32" height="32" />
+        <bgimage resource="Scribe" />
+    </widget>    
+    
+    <widget name="PrevButton" factory="pawsButton" id="1004" tooltip="Prev Page">
+        <frame x="38" y="430" width="32" height="32" />
+        <bgimage resource="Scribe" />
+    </widget> 
+
+    </widget>
+
+</widget_description>
+

@@ -1,0 +1,51 @@
+<widget_description>
+
+<widget name="ModsWindow" factory="pawsModsWindow" visible="no"
+    savepositions="yes" movable="yes" configurable="no" resizable="no"
+    style="New Standard GUI">
+
+    <frame x="0" y="100" width="350" height="266" border="yes" />
+    <title resource="Scaling Title Bar" text="Modifiers" align="left" close_button="yes" />
+
+    <widget name="adjectiveList" factory="pawsListBox"  >
+        <frame x="8" y="5" width="100" height="250" border="no" />
+
+        <columns height="16" sortBy="0" sortOrder="asc">
+            <column width="250" >
+                <widget name="Adjective" factory="pawsTextBox">
+                <text align="CENTRE" />
+                </widget>
+            </column>
+        </columns>
+
+    </widget>
+
+    <widget name="prefixList" factory="pawsListBox"  >
+        <frame x="124" y="5" width="100" height="250" border="no" />
+
+        <columns height="16" sortBy="0" sortOrder="asc">
+            <column width="250" >
+                <widget name="Prefix" factory="pawsTextBox">
+                <text align="CENTRE" />
+                </widget>
+            </column>
+        </columns>
+
+    </widget>
+
+    <widget name="suffixList" factory="pawsListBox"  >
+        <frame x="240" y="5" width="100" height="250" border="no" />
+
+        <columns height="16" sortBy="0" sortOrder="asc">
+            <column width="250" >
+                <widget name="Suffix" factory="pawsTextBox">
+                <text align="CENTRE" />
+                </widget>
+            </column>
+        </columns>
+
+    </widget>
+
+</widget>
+
+</widget_description>

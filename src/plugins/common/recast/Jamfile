@@ -1,0 +1,8 @@
+SubDir TOP src plugins common recast ;
+
+Plugin recast :
+  [ Wildcard *.cpp *.h ]
+  [ Wildcard recastnavigation : *.cpp *.h ] ;
+IncludeDir recastnavigation : recast ;
+ExternalLibs recast : CRYSTAL ; 
+CompileGroups recast : psclient psnpcclient ;

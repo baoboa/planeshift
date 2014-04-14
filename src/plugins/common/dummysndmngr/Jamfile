@@ -1,0 +1,9 @@
+SubDir TOP src plugins common dummysndmngr ;
+
+Description dummysndmngr : "Dummy Sound Manager Plugin" ;
+
+Plugin dummysndmngr
+	: [ Wildcard *.cpp *.h ]
+;
+ExternalLibs dummysndmngr : CRYSTAL ;
+CompileGroups dummysndmngr : psclient ;

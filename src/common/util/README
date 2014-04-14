@@ -1,0 +1,4 @@
+It's bad, but STL actually has some compatibility problems (or better the
+implementations have...)
+So we build tool classes ourself here... If you miss something, take a look at
+CS first, it also has some own tool classes.

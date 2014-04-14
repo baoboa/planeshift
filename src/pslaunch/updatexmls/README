@@ -1,0 +1,7 @@
+updaterinfo.xml - Contains all update information; mirror list, updater version, client updates, md5sums.
+
+These three are distributed inside the same zip as the client updates.
+
+changedfiles.xml - Contains a list of all changed files which have a diff in this update.
+newfiles.xml - Contains a list of all new files in this update; those which are a whole file and not a diff.
+deletedfiles.xml - Contains a list of all files to be deleted in this update.

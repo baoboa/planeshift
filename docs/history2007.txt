@@ -1,0 +1,4116 @@
+*** 2007-12-31 by Andrew Craig
+- Added a Mesh() call to the GEMClientObject that returns iMeshWrapper.
+  Changed inventorywindow to use this instead of iPcMesh.
+
+*** 2007-12-31 by Kenny Graunke
+- Removed support for the "undo_equip" syntax in item_stats/prg_evt_unequip.
+  Leaving that field blank already does the same thing.
+
+*** 2007-12-31 by Andrew Craig
+- Made the common/psworld Distance function use iMeshWrapper instead of 
+  iCelEntity. This removes the dependency of CEL in this class.   
+
+*** 2007-12-31 by Michael Gist
+- More work on GUI with help from Kenny:
+  - Font now scales with widgets.
+  - Improved chat and info window scaling.
+  - Removed manual font scaling, it'll be replaced with a new version.
+
+*** 2007-12-31 by Kenny Graunke
+- NULL'd out prg_event_unequip column in loot_modifiers, so generated items
+  use undo_equip by default.
+
+*** 2007-12-30 by Anders Reggestad
+- Removed warning that paths wasn't able to assamle, that was caused
+  by paths without any points, in which is quite legal.
+- Make sure that the npc client don't start if there is indeed something
+  wrong with the data set for paths.
+- Added possible keyword Me to /pet target command to target yourself.
+- Added type="nearest,owner,target" and range for nearest for npcbehavior Watch.
+- Modified Chase operation to use the CheckMovedOk function and update that
+  function to handle the case where the new position would be in a new sector.
+
+*** 2007-12-30 by Dave Bentham
+- Added public books (FS#573). Books writeable by anyone. Requires suitable
+  entry in item_stats DB: see FS#573 for details.
+
+*** 2007-12-29 by Andrew Craig
+- Added a psGemMeshAttach class that is used to attach client objects 
+  ( ie players, items, etc ) to meshes.  This is used when a player 
+  clicks on a mesh we can then figure out what game object that mesh
+  is for.  This used to be done by CEL but now handles by PS. 
+- Removed unused function   CreateProxActorList
+- Added a psSolid class in common that is used to make items
+  'solid' ie so the player will collsion detect on them. This used to 
+  be done by the CEL iPcSolid class.
+
+*** 2007-12-29 by Michael Gist
+- Added Update.Execs option to the updater. Set to false if you don't want to
+  update executable files.
+- Updated xDelta3.
+- Some warning fixes.
+- Added Planeshift.Client.Loading.UnloadLast option to psclient.cfg which
+  alters whether unloading is done before or after map loading. Set to true
+  by default, maps are loaded before old are unloaded (faster for machines
+  with enough ram to not swap, possibly slower for those who swap). Will
+  add GUI option in future.
+
+*** 2007-12-29 by Anders Reggestad
+- Added alias command to the /path admin command.
+
+*** 2007-12-28 by Kenny Graunke
+- Added the ability to give multiple items and money to NPCs in a single step.
+  The syntax is "Player gives Somebody 1 Milk, 5 Eggs, 1 Hexa."
+  Items can be specified in any order, and mixed with coins.
+- Added a test script for multiple items - tell MaleEnki "hungry" to start it.
+
+*** 2007-12-28 by Anders Reggestad
+- Removed the admin command /waypoint that where deprecated by
+  the /path command.
+- Updated /path admin command to handle all the old waypoint functions.
+  To create a path follow these steps:
+  1. /path format <name_of_new_waypoints_%d> 0
+  2. /path start 1
+  3. /path point (Repeated for each point in the path)
+  4. /path end
+  See help file for detailed information.
+- Added function to psPathNetwork to handle insert of new elements
+  into the db. Refactored the HandlePath code to use the new inteface.
+- Added waypoint aliases. This so that each waypoint could be
+  identified with different names. One wp might be the work place
+  for multiple npcs and than an alias is needed to prevent creating
+  multiple waypoints at the same location.
+  - DB VER BUMP!
+
+*** 2007-12-25 by Anders Reggestad
+- Removed some not needed calls to server internal data from the
+  network thread in the CheckLinkDead code.
+
+*** 2007-12-24 by Roland Schulz
+- changed entitylabels over to new label effect.
+- fixed problem with guild names not updating correctly
+- fixed guild over player name bug
+
+*** 2007-12-24 by Kenny Graunke
+- Removed growarray.h, a csArray like thing from five year old CS.
+- Reimplemented psStringArray as a subclass of csStringArray - the only
+  extra feature it had was the handy FormatPush feature.
+- Removed Keith's delimited string class, as nobody uses it and it doesn't
+  even have a copyright header...
+- No more crazy logarithms in TutorialManager's array subscripts.
+
+*** 2007-12-23 by Roland Schulz
+- Finishing tweaks on the labels and adjusted glyph table
+  and made loading it work. 
+
+*** 2007-12-23 by Anders Reggestad
+- Finaly the npc client will be able to react to any kind of timed
+  event. The value string now is on the following format:
+  "hour,min,year,month,day", for values that should not be matched
+  simply let them out. So if an event should happend 16:30 on any
+  day the value would be "16,30,,,". If it should happend 12:00 at
+  the 5th day in any month it would be "12,00,,,5". If it should
+  happen 5 minute past every houer it would be ",5,,,". This should
+  be very similar to the cron syntax. The random value has been
+  added to have the same format. If an event should happend anytime
+  between the hole hour and 15 minutes past the value would be
+  ",0,,," and the random would be ",15,,,". This is for the time
+  reaction: <react event="time" value=",,,," random=",,,," ...
+  Note: This depricate the change from 2007-12-22 where value1,value2,
+  random1,and random2 . 
+
+*** 2007-12-22 by Dave Bentham
+- Further fix for FS#669: when completing an event, the GMs name is
+  immortalised in the events description. Includes bug fix to the 
+  /event complete <name> stuff to stop an unidentifiable event entry
+  in the event gui.
+
+*** 2007-12-22 by Anders Reggestad
+- Changed so that the server publsh the minute change as well. 
+  Prepared for more gametime.
+  - NETVER BUMPED!
+- Cleanup of some more npcoperations.
+- Added perceptions for minutes as well as hours in the npcclient.
+- Added value2 for minutes in the react statement. Added random1 and
+  random2 to be random values added to value1 and value2 in order
+  to give a random reaction from a generic behavior script. Will
+  be usefull so not all workers go home at the same time.
+- Improved guard to prevent calling advance on operations that has
+  completed.
+- Added $owner and $target as text substitues for the locate object.
+- Cleanup of code.
+  - Moved some common function up in psWorld in common.
+  - Moved all npc script operations into a sepearate file.
+- Created new operation Watch that will give a perception if the
+  watched target go outside watch range.
+- Added sending of target information when sending owner commands to
+  npc client. Perception will than be able to tell who is the target.
+  - NPC NETVER BUMPED!
+
+*** 2007-12-21 by Anders Reggestad
+- Extended flags in sc_waypoint table to be 100 characters.
+  - DB VER BUMP!
+- Added indoor flag to waypoints and allow for wander only 
+  using indoor waypoints.
+- Added test on item_category to verify correct value before loading
+  item stats.
+- Some cleanups in the pet code. Added missing reactions to pet commands
+  in the sample behavior.xml file.
+- Fixed setlog to accept t,y,1 instead of only "true", changed
+  to accept match of substrings as well. This allow for 
+  "setlog trib t" that would lead to setting of loging for LOG_TRIBES.
+
+*** 2007-12-20 by Anders Reggestad
+- Fixed chase operation to work in npc's warp space. This fix problems with
+  odd behaviours when pets follow you between sectors. Like ( BT#1323 )
+- Added dump of warp space table to npc client as well. 
+- Added support to only react to perception when target behavior is active. Had
+  inactive_only from before. Now with active_only to it is possible to control
+  turning on and off behaviors without steady increasing/descresing the need
+  on repetive on or offs.
+- Fixed /pet summon so that npc client get updated with summoned possition. This
+  prevent that /pet follow go back to old position before staring to follow.
+  This is part of ( FS#779 ).
+- Made NPCs have same stand upon server restart as respawn. ( FS#486 )
+- Removed dublicate code for name verification, use functions from psCharCreationManager
+- Added repetive character test to psCharCreationManager::FilterName. ( FS#776 )
+- Added help for "/pet" and "/path"
+- Fixed FS#754 uninitialized values is now set. Using default itemstat quality
+  if no quality given by user.
+- Cleanups in client code. Moved the point where it crash at exit to somewhere
+  else.
+
+*** 2007-12-19 by Anders Reggestad
+- Added new flaggs to each waypoint. The new flags are as following:
+   - UNDERGROUND  - Used to indicate that the waypoint is underground. 
+   - UNDERWATER   - Used to indicate that the waypoint is underwater(Future).
+   - PRIVATE      - Used to indicate that the waypoint is private. Like
+                    the path up to the door of a private home.
+   - PUBLIC       - Used to indicate that the waypoint is public. Like every
+                    waypoint on a public road or trail.
+   - CITY         - Used to indicate that the waypoint is inside a city.
+- Added support for wander to only wander on certen types of waypoints for
+  random movement. Examples.: <wander random="true" underground="true"/> will
+  only allow the npc to wander using waypoints marked with UNDERGROUND. Like
+  rats in a sewer. A guard wandering around might have 
+  <wander random="true" city="true" public="true">.
+- Added check in client for no animation return from FindAnim and printing
+  warning. This failed every time the NPCclient crashed, casing every client
+  to die as well.
+- Added new behavoir MoveUnderground to test the new wander operations
+- Removed commented out code for all wander operation. No need to keep its
+  in old revision in history anyway :)
+- Added some more debug code.
+- Moved handling of server time to go through npcclient.
+
+*** 2007-12-19 by Dave Bentham
+- To register players in range into an event now needs the word range in the
+  GM command: /event register [range <r> | <player>]
+  This is for consistency & clarity.
+
+*** 2007-12-19 by Kenny Graunke
+- Clean up a bunch of fixed-length buffers and sprintf...use csString.
+- Added pssetup to trunk, with a few changes:
+  - Made it edit /planeshift/userdata/planeshift.cfg, not psclient.cfg.
+  - Removed the relight panel, as it's useless with lighter2.
+  - Minor fixes to the GUI.
+
+*** 2007-12-18 by Anders Reggestad
+- Added loading of diabled npc flag from npc definitions.
+- Added display of db sector id in server command sectors.
+- Update help text on message filtering.
+- Compiler warning fixes.
+
+*** 2007-12-17 by Sasha Levin
+- Commited fix for FS#739 by Lanarel.
+
+*** 2007-12-17 by Kenny Graunke
+- Removed MB Crystal Hunt code.
+
+*** 2007-12-15 by Andrew Craig
+- Moved the start server time to the end of initialization. It was causing 
+  some strange problems when the event was queued too early.  
+
+*** 2007-12-14 by Roland Schulz
+- Added new effect pseffectobjlabel to replace entity labels.
+  Will avoid prerendering of labels, instead putting them into a mesh
+  and texturing the mesh from a font table.
+
+*** 2007-12-14 by Andrew Craig
+- Added ability to setup duration events.  This is done using:
+    <evt duration="time in ticks">
+        <op>
+        <op>
+        <op>
+    </evt>
+  The entire event will run the inverse once the duration time has expired. 
+- These events are also stored through login/logout by saving the remaining
+  duration left on event.
+- Only one event can be active at a time and if another added it will replace 
+  the current one.
+
+- Added ability to fire this duration event early based on actions.
+  Can be done via quest script:  FireEvent <name>                      
+  
+- Fixed issue with ActiveWindow magic not showing correctly on login.  Server
+  was sending data to it before it was fully ready.  
+
+*** 2007-12-13 by Dave Bentham
+- GM's can take over control of an Event if the originator GM has abandoned
+  it (e.g. had to logoff prior to completion, character deleted).
+  /event control <event name>
+
+*** 2007-12-13 by Kenny Graunke
+- Made the sell window display quality as well as the item name (for example,
+  Inferior Dagger) for crafted items.  Vizanti and starg hope this will
+  prevent people from accidentally selling their good items.
+- Removed some disgusting fixed-length buffers and sprintfs.
+- Fixed a bug where out-of-bounds window positions would be restored - namely,
+  if you ran PS at high resolution, moved the windows to the lower right, and
+  then ran it at low resolution, your windows would be entirely offscreen.
+
+*** 2007-12-12 by Roland Schulz
+- short fix for FS#621 by Lanarel, attacking action locations
+  or items gives more appropriate error message now.
+
+*** 2007-12-11 by Michael Gist
+- Added 'unknown' npc trigger. This allows us to have a seperate 'error'
+  response for a question. (e.g. "Sorry I don't know." instead of 
+  "I don't understand.")
+- Patch from Caarrie to add some more options to /show.
+
+*** 2007-12-11 by Kenny Graunke
+- Moved planeshift.cfg to /planeshift/userdata VFS mount point.
+- Cleaned up some formatting and naming in psCSSetup.
+- Fixed a bug where psOptions wasn't resolving the VFS path for options.cfg.
+
+*** 2007-12-10 by Roland Schulz
+- fix FS#743 and second part of BT#2432 (set target for mouserun also
+  disabled when dead).
+- trying to fix FS#742.
+- fix temporary freeze of client when focus returns to client window.
+- fix BT#2883 - change shortcut numbers to start with 1 everywhere
+  (old 0-based in shortcutcommands.xml still read and translated).
+- fix BT#2860 - Autorun is disabled after /unstick now.
+- fix BT#2646 - After adding a buddy, focus is now returned to world.
+
+*** 2007-12-10 by Michael Gist
+- Widgets now default to not scaling to client resolution. This means that
+  they're displayed at the widgets defined size (which is a Good Thing).
+- Changed pawsObjectView to scale based on widget size and not resolution.
+- Fixed most of the fallout of the above changes, but some things might need
+  a little tweaking to look at their best (like missing <font /> needing to be
+  defined).
+- Patch from Wired_Crawler to fix BT#1953 (crash with /screenshot nogui).
+
+*** 2007-12-10 by Kenny Graunke
+- Remove unnecessary check in ProgressionManager - I made consumable items not
+  use the equip script, so we don't have to rule out false positives anymore.
+
+*** 2007-12-09 by Dave Bentham
+- Fixed FS#669: deleting GM character does not remove their Event(s) from
+  the game.
+
+*** 2007-12-09 by Kenny Graunke
+- Remove ugly hack to unreverse animation direction - the new CS fixes it.
+- Introduced /planeshift/userdata VFS mount, a platform-specific location for
+  storing user-customized data files.
+  
+  It uses csGetPlatformConfigPath(), which maps to:
+  - [Linux]   ~/.PlaneShift
+  - [MacOS X] ~/Library/Application Support/PlaneShift
+  - [Windows] Application Data\PlaneShift, falling back to "My Documents"
+  I also print "Your configuration files are in..." on startup to help
+  everyone find the new location while we transition.
+
+  All options, quest notes, chat logs, and screenshots now live there.
+  I plan to move planeshift.cfg there in a future commit.
+
+  Should fix many issues:
+  - The "data" folder now only contains static data, making it easier to
+    prepare an update.
+  - The updater won't overwrite your settings if someone accidentally
+    uploads shortcuts.xml or such (and then doesn't fix it for months).
+  - If you have multiple users on your computer, each will get their own
+    separate settings - so you and your little brother don't edit each others
+    controls (or, eventually, read & overwrite each others' email/passwords).
+  - [Mac OS X] PS shouldn't write to / anymore, fixing permission denied errors.
+  - [Linux] You can now install PS system-wide, in /opt or such, and not have
+            to grant 777 permissions on /opt/planeshift/data/options and such.
+
+  Please test this thoroughly.  To get your shortcuts/controls back, copy the
+  non-"_def" XML files from data/options to the new location.
+
+  Thanks to azaghal for doing much of the work in making this happen!
+
+*** 2007-12-08 by Roland Schulz
+- fix for bt#2432 - annoying message on mouseclick when dead, thanks to
+  Wired_Crawler.
+- Deferred label rendering when label mode = visible on mouseover by Vornne. 
+- Fix linking of cal3d for psclient
+
+*** 2007-12-08 by Sasha Levin
+- Patch by f8ejf to improve /target.
+
+*** 2007-12-08 by Michael Gist
+- Patch from Trymm to fix BT#961.
+- Pushed CS, CEL and cal3d revisions.
+  Now: 28281 (1.2), 3072 (1.2), 493 (trunk).
+
+*** 2007-12-08 by Andrew Craig
+- Applied patch for: FS#703 - Some svn quests in trunk do not work
+  http://www.hydlaa.com/flyspray_upgrade/index.php?do=details&task_id=703
+- Fixed FS#588 - Shortcuts 100-103 won't edit.
+
+*** 2007-12-07 by Sasha Levin
+- Increased the priority of the delayed db writer.
+- Fixed #3029.
+- Removed skill and stat limits.
+- Issue with quest status not saved was resolved.
+
+*** 2007-12-07 by Kenny Graunke
+- Commit minor guild window changes from PBT#1519, slightly improved.
+
+*** 2007-12-06 by Roland Schulz
+- Added mouselook target selection code for modes != 1st person (BT#2377)
+- Fix for FS#585 (reintroduced StopControlledMovement call and fix that
+  to only stop movement if not autorun or mouserun as suggested by
+  Vornne)
+
+*** 2007-12-06 by Kenny Graunke
+- Removed extraneous indx_sector_name from sectors.sql - it broke create_all.
+- Tidying: No need to use CreateWidget() when the widget type is statically
+  known...it's exactly the same as using "new" but less clear and efficient.
+
+*** 2007-12-06 by Michael Gist
+- Updater fixes.
+- Added updaterinfo.xml generation to the updater-server script.
+
+*** 2007-12-05 by Sasha Levin
+- Added message to both parties on intruduction.
+- Instead of letting only devs cast all spells, It's now checked just like
+  any other gm command - So if needed, gms can cast all spells too.
+- Added item quality to /inspect.
+- Improvements to gm window: No longer hidden on teleport/change name/...
+  Sorting order and selected player are maintained through list updates.
+- Character introductions are deleted from db when char is deleted.
+- Added logging of warnings given to accounts.
+- Added the GM /listwarnings.
+- DB VER BUMP!
+
+*** 2007-12-03 by Roland Schulz
+- /settrait command now takes target argument like most other GM commands and
+  help cleanups, thanks to Vornne
+- Fixed some warnings.
+
+*** 2007-12-04 by Andrew Craig
+- Some more cleanups to the exit sequence of the client to make 
+  it shutdown cleanly.
+
+*** 2007-12-03 by Sasha Levin
+- Added support for item pricing according to supply/demand rules, allowing
+  to take amount of items inserted into the economy and amount of items 
+  taken out when calculating the price of an item.
+- Added support for time in item price calculation - allowing to change
+  item prices according to the time of the day.
+
+*** 2007-12-03 by Michael Gist
+- A few updater fixes.
+- Wrote the server side script for the updater.
+
+*** 2007-12-02 by Roland Schulz
+- Fix tell window to use last addressed character instead of outputting to
+  main when player forgets the /tell, thanks to Rakhun *bows*.
+- Add armor making skill as requested by TomT.
+- Added NO_RANDOM_QUALITY define to workmanager for testing crafting.
+- Added combine button to paws container window.
+- Fix size check for adding items to stacks in container in inventory,
+  thanks again to Rakhun (FS#690).
+
+*** 2007-12-02 by Andrew Craig
+- Some code formatting clean ups and fixed a crash when 
+  server exists.
+- Fixed issue with tutorial map loading.  
+- Added a subscriber to the heart beat messages so they have at 
+  least one handler to remove warning about unknown messages. 
+
+*** 2007-12-02 by Michael Gist
+- Fixed FS#638.
+
+*** 2007-12-02 by Sasha Levin
+- Added $sir, $guild and $race to the shortcut commands (works
+  just like $target).
+- NETVER BUMP!
+- Fixed FS#689.
+- Fixed imprecise location of items when dropping and random item movements
+  when starting server. Code was doing artificial collision detection checks
+  in attempt to prevent items appearing inside each other. Since either
+  actor was always in range (when dropping) or item was around many other
+  items (like in guildhouses), items used to move and spin a bit.
+  Code was removed - Real colldet (thats now implemented) should be used when
+  that behaviour is desired.
+
+*** 2007-12-01 by Roland Schulz
+- Also check for weapon requirements during combat, not just at start.
+
+*** 2007-12-01 by Roland Schulz
+- Added one more position saving for eedit
+- More work on inactive items extending 2007-11-25 commit. Items are now
+  properly set to active/inactive when spells are cast or expire.
+  Should actually work with anything that uses a progression script to change
+  players stats. This should fix bug 2618 on the old bugtracker.
+
+*** 2007-12-01 by Andrew Craig
+- Moved some more stuff inside the defines in the database plugin to 
+  help fix some strange behaviours. 
+- Fixed crash in text box when NULL text passed in.  
+  
+*** 2007-12-01 by Michael Gist
+- Added basic /marriageinfo GM command. Can be extended further.
+
+*** 2007-12-01 by Andrew Craig
+- FS#594 - wrong body color (texture) when unwielding torso armor on kran.
+- Cleaned up some error handling when tutorial not found.
+
+*** 2007-11-29 by Roland Schulz
+- add position saving for eedit widgets as requested in FS#641
+
+*** 2007-11-29 by Sasha Levin
+- Added support for sectors with colldet enabled - to be used in
+  guildhouses.
+- Colldet data change on /modify is now being sent to both player
+  and area.
+- DB VER BUMP!
+- Added XOR operator for quest prerequisites.
+
+*** 2007-11-28 by Michael Gist
+- Launcher fix.
+
+*** 2007-11-28 by Sasha Levin
+- Modified /action create_entrance: Now it accepts name for the house,
+  changes the locks name and AL's name to match. Also, Creating a
+  sign (currently a claymore - art needed!) infront of the door with
+  a label with the house name.
+- Added 'Require time of day' and 'Require not time of day' quest ops.
+  Usage: 'Require time of day [minTime]-[maxTime].' Same for the 'not'
+  version.
+- Time of day allows for overnight restrictions too.
+- Items with different guarding chars don't stack when dropped.
+
+*** 2007-11-27 by Sasha Levin
+- Added a time-of-day quest prerequisite operator.
+- Entity labels are only rendered when needed, not always.
+- Added a 'DoAdminCmd' script command, Allowing to run and admin
+  command as a script. Example syntax: 
+  'DoAdminCmd /slide targetchar u 1'.
+
+*** 2007-11-26 by Roland Schulz
+- fix FS#666 - repair with skill 0 and no training
+- fix gcc warnings in workmanager.cpp
+
+*** 2007-11-25 by Roland Schulz
+- Added IsActive flag for psItem. This is to solve the problem of
+  an item which has requirements for equipping, which may not be
+  fulfilled later on. Unequipping the item seems not indicated
+  (inventory could be full), hence a way to leave the item in place
+  but disable its effects.
+- modified CalculateEquipmentModifiers to enable/disable items
+  using IsActive flag.
+- adjusted combatmanager to verify item requirements before attack.
+TODO: Still needs work for spells/delayed progression events.
+- remove (unnecessary) clamping of training points, in case the training
+  costs someday will again be based on buffed attributes. (FS#599)
+- reverted ^M-ness from mk/jam/debuginfo.jam, unix shells dont seem
+  to like ^M in shell scripts. Please exercise caution when editing
+  jam files under windows/mac.
+- fix small crash on server exit (progressionmanager.c)
+
+*** 2007-11-24 by Sasha Levin
+- Added support for collision detection on items.
+- Added a /modify collide option to enable/disable collision
+  detection on items.
+
+*** 2007-11-23 by Sasha Levin
+- Ctrl+left click on shortcut opens up the shortcut edit menu 
+  Instead of alt+left click.
+- Item price calculation when trading with merchants is now a math
+  script too. Allowing to change the price based on character stats
+  and skills. The test script adds CHA/10 to price when selling and
+  decreases CHA/10 when buying.
+- Added possibility to specify max values for faction prereqs.
+
+*** 2007-11-22 by Michael Gist
+- Camera key additions from Caarrie for eedit, resolving FS#642.
+
+*** 2007-11-21 by Michael Gist
+- Fix for FS#112 from Rakhun & Kaerli.
+
+*** 2007-11-21 by Sasha Levin
+- Added infinite mana option for GMs.
+- Added an IntroductionOp to be used within scripts. Adding many
+  possibilities for scripted introductions.
+- NPCs are now also unknown to the player, until they introduce
+  themselves.
+- Added an IntroduceResponseOp to be used with npcs.
+- Improved the IntroduceResponseOp, Allowing npcs to introduce other
+  npcs, And not just themselves.
+- NpcTerm is now saved downcased to fix any case-sensetivity problems.
+- An attempt to fix crashes on delayed progression events.
+
+*** 2007-11-19 by Michael Gist
+- Removed update checking code from client and server.
+=> NETVERSION BUMPED!
+- Fixed a few compile warnings.
+
+*** 2007-11-18 by Kenny Graunke
+- Fixed bug #319: Undo script incorrect for non-additive adjustments.
+
+*** 2007-11-18 by Sasha Levin
+- Introduce button is shown only if you didn't introduce yourself to the 
+  target char.
+- Not loading all introductions on startup, But loading them on char login
+  and unloading on logoff.
+- Fixed crash on new char creation.
+
+*** 2007-11-17 by Sasha Levin
+- Added the introduction manager. By default, Your char doesn't know any
+  other chars. You can introduce your char to other chars by targeting
+  the other char and running /introduce. Until introduced, your name will
+  remain hidden from entity labels, char name in info window and the char
+  info window.
+- DB VER BUMP!
+- NET VER BUMP!
+- Added Introduce button to interactive menu.
+- GMs know everybody, gods can do that :)
+
+*** 2007-11-16 by Sasha Levin
+- Fixed factions with 2 or more words in the name.
+- Improved banking window. Thanks Sajut!
+
+*** 2007-11-15 by Sasha Levin
+- Added lots of effects for testing on svn.
+- Players will get moved to the sector starting location instead of their 
+  spawn points when receiving oob data (falling off the map).
+
+*** 2007-11-15 by Kenny Graunke
+- Fixed PBT#2086, "Flooding does not take recipient into consideration."
+  Also greatly simplified the anti-flood code.
+
+*** 2007-11-15 by Michael Gist
+- Fix for FS#375, thanks to Trymm for his help.
+
+*** 2007-11-14 by Dave Bentham
+- GMs can reward faction standing points to participants of an event.
+  /event reward [all | range # | playername] # item
+  where item = "faction <name>" then # points are given.
+- Fixed bug where a Faction Update to a client could inhibit that client
+  requesting a Faction Full List if it happens before the client's Skill
+  window is first opened.
+
+*** 2007-11-14 by Sasha Levin
+- Some fixes to the mysql threading code.
+- Fixed mouse click-through on the group windows buttons.
+
+*** 2007-11-14 by Kenny Graunke
+- Bugfix: Right clicks are no longer passed through when they trigger a
+  context menu or the window settings dialog.  This was causing my character
+  to auto-run when trying to use context menus.
+
+*** 2007-11-13 by Andrew Craig
+- Some updates to the linux side of the updater and some fixing to parsing 
+  of the XML data.
+
+*** 2007-11-13 by Michael Gist
+- A few class renames and improvement to UpdaterEngine ctor.
+- Added a fallback download of the full file if patching fails.
+- Fixed some bugs in the updater and started to add the updating output window.
+- Updater output is now logged in updater.log
+
+*** 2007-11-11 by Roland Schulz
+- Stab at FS#141 ... mental stats affect the cost of training, but this cost
+  was not recalculated when stats are modified by items, SetSkill or training,
+  only on next login.
+
+*** 2007-11-11 by Sasha Levin
+- Enabled mysql auto-reconnect option in dbmysql.
+
+*** 2007-11-10 by Andrew Craig
+- Added #ifdef around the delay MYSQL query system.  For some 
+  reason it doesn't work well for me so add the define in 
+  dal.h to turn it on/off.
+- Race info now stores the helm group.  This saves a mysql query 
+  everytime a character is loaded.  
+- Moved some data when quick loading a character so only one query to the
+  character table is needed.  
+- Removed the loading of skills on quick load. There is no verification of 
+  item equipping here so the skills are not needed.   
+
+*** 2007-11-10 by Roland Schulz
+- fix for BT#2755: Guild edit permission. Now actor can only change priviledges
+  that the actor himself has in the guild.
+
+*** 2007-11-10 by Roland Schulz
+- changed quest lockouts to be in seconds not in ticks
+- changed player quest lockouts to be expressed in player age, so those
+  quest entries only need to be updated in db once the player lockout expires,
+  not on every signoff.
+
+*** 2007-11-10 by Michael Gist
+- Made a number of fixes to the updater/launcher.
+- Added 'server news' widget to the launcher.
+- Warning fixes.
+- Added yes/no box for when an update is available.
+- Updated xdelta3 lib.
+
+*** 2007-11-10 by Dave Bentham
+- 'Discard' works for events in the Quest/Event notebook. Only works
+  for participants, not for GMs who are running the event.
+
+*** 2007-11-10 by Sasha Levin
+- Added a 'Buy Skill Level' button to the skills window, Allowing to buy a
+  whole skill level (or maximum part of one level).
+- Limited character description to 3 consecutive line breaks.
+
+*** 2007-11-09 by Roland Schulz
+- fixed FS#585 (Autorun interrupted by mouseclick)
+
+*** 2007-11-08 by Sasha Levin
+- Fixed #2573 - Leak in CachaManager.
+- Fixed FS#128 & FS#370 - The flags field for items in the db was too short,
+  items that had many flags couldn't saved all of them to the db, causing
+  a wrong status when relogging (glyphs unpurified & keys unlocked for example)
+- Game time is now saved between server restarts (and crashes).
+- Players in the global instance can also see everybody else.
+- Threaded sql executor is now a queue instead of a stack.
+- Added guarding char info in item details window.
+- Added something to mark master keys in item details window.
+- Fixed psserver using 100% cpu on linux, Thanks thebolt!
+- Updated error message in /key. Thanks Vornne.
+
+*** 2007-11-07 by Michael Gist
+- Deprecation fixes.
+- Removed some hindering checks from GM /divorce command.
+
+*** 2007-11-07 by Sasha Levin
+- Add a threaded sql query executor, allowing to run async queries. Usefull
+  for update and delete commands - Where waiting on return value isn't
+  necessary.
+- Copying guarding char id when copying items.
+- Fixed wrong format string causing GM item spawn gui not to work.
+
+*** 2007-11-06 by Roland Schulz
+- fixed bug 1952 on the old BT: backward movement now also cancels autorun.
+- comment out debug msgs from last commit
+
+*** 2007-11-06 by Roland Schulz
+- fixed fix to FS#530 (the fix broke modifiers for keyboard keys). Both
+  key and mouse modifiers should work now.
+  
+*** 2007-11-06 by Sasha Levin
+- Shortcuts can be edited with alt + left click.
+- Set unique flag on some uniqe indexes.
+- Added more indexes - Including a unique one on username in accounts table.
+
+*** 2007-11-04 by Andrew Craig
+- Fixed command parser on client to use standard XML parser system.
+
+*** 2007-11-04 by Kenny Graunke
+- Clean up scary code (with warnings) in factions.cpp.
+
+*** 2007-11-04 by Sasha Levin
+- Cleaned up the string utils a bit.
+- A new training system to save up on sql queries and mouse clicks. Instead of
+  clicking lots of times on the train button, A number prompt window opens up.
+- Preventing stacking of items with different name or description.
+- Constified some methods in psItem and psItem stats. Todo: Constify anything
+  possible!
+
+*** 2007-11-04 by Andrew Craig
+- Did some work on the slot manager to fix up some issue related to containers.  
+  It was not splitting them correctly so was causing some problems when items 
+  moved around.  Fixes bug:
+  FS#246 - Changing furnace slots results in wrong number of molten
+- Fixed some more problems with mouse clicks falling through some widgets.  
+- Fix FS#372 - Player's books showing in GM item spawn gui.  Those 
+  items will not show up under the /item->item window now.  
+
+*** 2007-11-03 by Andrew Craig
+- Fixed problem where clicking on a tree node button ( ie the +/- ) would
+  also make the character walk to point.
+- Fixed problem with scroll bar that had the same issue.  
+
+*** 2007-11-03 by Michael Gist
+- Fixes to the region unloading code.
+
+*** 2007-11-03 by Dave Bentham
+- Event GMs can award experience to participants.
+  /event reward [all | range # | playername] # item
+  where item = "exp" then # progression points are given.
+
+*** 2007-11-03 by Sasha Levin
+- Fixed bug in material manager where LoadTexture() recieved a wrong name due
+  to wrong location of a temporary var.
+- Keys that open different locks won't stack.
+- Moved the banking button in interact menu to show the 'give' button too.
+
+*** 2007-11-02 by Andrew Craig
+- Patch from Roland to fix FS#530 Ctrl+LeftClick combo does not work
+- Patch from Roland to fix FS#415: Mouserun doesn't work when target selected
+- Patch from Roland for Mouse Look:
+Patch changes the mouselook behavior to allow selecting of items,
+npcs and players in that mode. When in first person view, the item selected
+is the one in the center of the screen (some pointing hand or crosshair like
+in the cvs skin would be nice to have here) and in the other modes an item
+roughly in front of the character (not the camera view) is selected. The
+mouselook button
+is also made into a toggle, so it can be used to temporarily switch out of
+mouselook mode. Mouselook mode is no longer aborted when the left or right
+mousebuttons are pressed and paws handling is passed through in mouselook
+mode (otherwise the selection would never reach the handling layer)
+
+
+*** 2007-11-02 by Sasha Levin
+- Committed Lanarels' fix for FS#545.
+- Added force discard for quest assignments.
+- /quest now discards quests with infinite lockouts too.
+- Fixed the MakeKey method, Now it properly creates simple keys too.
+- Key properties are being checked when stacking.
+
+*** 2007-11-01 by Sasha Levin
+- Converted the following hardcoded formulas into math scripts: Item sell price, Guild
+  account level (banking), Char account level (banking), Bank fee and Mining odds.
+- Proper formatting of exchange messages.
+- Fixed message parsing in cmdutil, Now /confirm works right with quotes.
+
+*** 2007-10-31 by Sasha Levin
+- Removed usage of strcmp in psNPCDialog::SubstituteKeywords.
+- Moved gender string generation to the psRaceInfo class.
+- Calling mysql_real_query for queries, Should save up on lots of strlens.
+- Not forcing QuestAssignments updates into db on char logout, dirty flag
+  is doing a good job already.
+- Disabled skeleton key until the bug is solved.
+
+*** 2007-10-28 by Andrew Craig
+- character skills now have a 'dirty' flag so they are only saved if
+  they have been changed since login.  This should again greatly 
+  reduce the total number of database hits. 
+
+*** 2007-10-26 by Andrew Craig
+- The last login time for guild memebers is now cached when guild
+  created.  Before was hitting the database everytime a guild window
+  was opened.
+- Saving of character skills now doesn't clear them all and rewrite them 
+  anymore.  Now it does and update and if that fails will do an insert. 
+- Added check to CacheManager::GetBasicItemStatsByID() to bail out if 
+  the ID was 0.     
+
+*** 2007-10-26 by Sasha Levin
+- Added support for custom item names.
+- DB VER BUMP!
+- Added GM interface to change item names and descs, /setitemname.
+- Added missing message after changing quality.
+- Fixed slow mouse pointer. Seems like the cause was a wrong check, that made images fail
+  loading all the time, Making it impossible for the OS to accelerate them.
+- Added /reload item command, allowing to reload (or load) item stats from db.
+
+*** 2007-10-26 by Kenny Graunke
+- Changed default strafe speed to 2.0 m/s, halfway between sneak and walk.
+  Karyuu already updated most art for this a while ago, and Trymm is going
+  to look at the rest.
+
+*** 2007-10-26 by Sasha Levin
+- Added db indexes for common selects. Should speed up those operations.
+- Added a /setquality command for GMs.
+- Added a fix for #2593 by Vornne
+- Fixed broken char creation if tutorial doesn't exist (like in svn).
+- Added /settrait command for GMs.
+
+*** 2007-10-24 by Andrew Craig
+- Fixed an issue with hair colours not being set correctly when removing helm.
+
+*** 2007-10-24 by Anders Reggestad
+- Added setting of impervious when disabling stuck NPCs so that they would not be easy
+  targets for players. 
+  NPC NET VERSION BUMPED
+- Fixed compiler warning in psraceinfo.cpp
+
+*** 2007-10-24 by Dave Bentham
+- Rewards can be given to individual participants of events.
+  /event reward [all | range # | playername] # item
+  playername can be by target. # items is now mandatory.
+
+*** 2007-10-24 by Sasha Levin
+- Added support for multiple spawn points for each race.
+- DB VER BUMP!
+- Fixed crash in MoveFromInventory.
+- GM2+ can now pick up any PC guarded items.
+- Added guarding for items in sacks too.
+- Public containers now also have the 5m guard limit. If you walk from your furnace, Your
+  items are free for all!
+- Interrupting repair work wasn't resetting the repaired item in-use status. Makes the
+  repaired item 'stick' in your hand. Fixed.
+- Added an optional parameter to /event complete, allowing other GMs to close events
+  that they didn't start.
+- Added /event list - Listing all running events. 
+
+*** 2007-10-24 by Michael Gist
+- Added skeleton version of launcher app. Atm there's just 'Quit' and 'Launch Client'
+  buttons on the GUI. Supports update checking and launcher self-restarting on client
+  crash. Also added basic .cfg and .xml files to the PS root dir, so the updater
+  can successfully find no updates available (and exit correctly).
+- A few more changes to the updater version layout in updaterinfo.xml
+
+*** 2007-10-23 by Andrew Craig
+- Cleaned up some more code.  Moved server side stuff out of common and into server. 
+
+*** 2007-10-23 by Andrew Craig
+- Removed a large block of admin stuff that is no longer used and is just dead code.
+
+*** 2007-10-23 by Michael Gist
+- Increased MAXQUEUESIZE to 20000.
+
+*** 2007-10-23 by Anders Reggestad
+- Added disabling and stopping of NPCs that use to long time on a tick.
+
+*** 2007-10-22 by Andrew Craig
+- Added patch from DarcSabre to improve the look of the pawsSkill window.
+
+*** 2007-10-22 by Andrew Craig
+- /report logs are now time stamped.
+
+*** 2007-10-22 by Anders Reggestad
+- Added listing of faction to WC.
+
+*** 2007-10-22 by Sasha Levin
+- Fixed FS#498 - Repair issue
+- Added guard for dropped items. Chars guard any items they dropped on the ground within
+  5m range. Should prevent item 'stealing'.
+
+*** 2007-10-22 by Michael Gist
+- Changed updater xml to hold an updater md5 for each platform.
+- Some Jamfile work for the updater.
+
+*** 2007-10-20 by Michael Gist
+- Updated build files from CS.
+- Changed updater to use csmd5.
+
+*** 2007-10-20 by Sasha Levin
+- Added dynamic item price calculation. Now it uses math script to include quality of the
+  item in the calculation.
+- Fix by Lanarel for conflicting quests.
+
+*** 2007-10-19 by Michael Gist
+- Wrote a new updater. Console only atm.
+
+*** 2007-10-18 by Michael Gist
+- Removed the disable of texture_rectangle OGL extensions.
+  We need to track down the cards this doesn't work on, not disable it for everyone!
+- Commented some unneeded console output.
+
+*** 2007-10-17 by Thomas Towey
+- Removed some repair weapon server spam.
+
+*** 2007-10-17 by Michael Gist
+- Re-enabled bilinear filtering for GUI textures. Resolves FS#404.
+- Did some code nicefying and maybe fixed some possible accuracy problems.
+  Made a printf more useful too.
+- If you die in the tutorial, you now respawn in the tutorial.
+- Fixed a NaN occuring in AoE code.
+
+*** 2007-10-16 by Thomas Towey
+- Check for ID 0 on item destroy.  Sometimes items that were never properly created are 
+  attempted to be destroyed.  This change eliminates the common false error message.
+
+*** 2007-10-16 by Kenny Graunke
+- Fixed crash in CSV log rotation code.
+
+*** 2007-10-14 by Michael Gist
+- Updated compiling guide to have the latest dates and revisions PS 020 will use.
+  CS bump adds a fix for non-preload maps option, CEL brings the revision to version 1.2
+- Fixed wrong value returned when fetching character's combat stance.
+- Initial spawn is now set to tutorial, and then the raceinfo spawn if that doesn't exist.
+- Added check for texture existing to material manager.
+- Teleport script now sets instance to 0.
+
+*** 2007-10-13 by Michael Gist
+- Camera distance clipping is reset on sector switch. This as well as yesterdays fog fixes
+  resolve FS#398.
+- Changed charapp to use the material manager to load materials.
+
+*** 2007-10-12 by Kenny Graunke
+- Upped tracebeam distance to 1000 in psCamera::Get3DPointFrom2D.
+- Added check for invalid distances to psCamera::Get3DPointFrom2D.
+=> CS VERSION BUMPED!  Need at least 27876 from the 1.2 branch.
+- Commit ugly kludge for PBT#1749...forces animations to play forwards again
+  when setting the velocity back to 0.
+
+*** 2007-10-12 by Michael Gist
+- Patch from Ragnar to add a run toggle button.
+- Patch from Ragnar with tweaks from me to allow GMs to see skills/levels of NPCs and
+  players like they can see stats today.
+- Merged an old patch by Sasha Levin to add rotation to mouserun.
+- Improved run toggle slightly.
+- Skill window tweak from Thom.
+- Improvements to fog cull distance. Now it doesn't save bogus values or use a distance beyond
+  the distance specified in options, and also produces better values from DistanceForOpacity().
+
+*** 2007-10-12 by Kenny Graunke
+- Added test quest for bug FS#166 from Jeraphon.
+- Fixed FS#166.  When an exact trigger match wasn't found, it would go to the
+  ErrorTrigger, which would try looking at each word in reverse order...but
+  once it found it, it didn't handle it like a normal trigger and update the
+  last response.  ErrorTrigger was the wrong place for this code anyway,
+  because if it succeeds in matching one of those words, it's not an error and
+  should work like normal.
+
+*** 2007-10-11 by Kenny Graunke
+- Fixed FS#169.  Sketch text did not escape XML entities properly.
+
+*** 2007-10-11 by Enar Vaikene
+- Now outputs an error message when trying to submit an empty petition using the GUI window.
+  Fixes FS#346.
+
+*** 2007-10-11 by Michael Gist
+- Patch from Ragnar adding the /setlabelcolor command for GM2 and above.
+=> NETVERSION BUMPED!
+- Added a range check for /trade before the trade request is sent.
+
+*** 2007-10-10 by Kenny Graunke
+- Fix FS#380/quest items lost when players have no free inventory slots.
+  Items are now dropped on the ground when you're out of space, and you get
+  a rather obvious warning.
+
+*** 2007-10-10 by Michael Gist
+- Disabled splash jingle when we're not preloading anything, there's not enough time
+  to play it before the music starts so it overlaps and sounds bad.
+- Fixed FS#63, bad grammar in marriage proposal message.
+- Fixed FS#261, vfs initialised twice.
+- Some weather changes:
+  Fixed FS#283, fog correctly fades out now.
+  Use 'stop' instead of 'off' to stop weather.
+  Rain/Snow no longer totally overrides fog. If there is already fog, then this is saved
+  and restored after Rain/Snow has ended. Fog started using /fog must be ended with /fog. FS#282
+  Split auto weather from /rain and /snow and put it in a /weather command.
+
+*** 2007-10-09 by Michael Gist
+- Improved map loading background display a bit more.
+- Added calling of tax scripts to bankmanager.
+
+*** 2007-10-08 by Andrew Craig
+- Fixed FS#136 - Map window has no title bar (cannot close)
+- Fixed FS#304 - Spell casting progress bar doesn't show and progress window doesn't disappear.
+
+*** 2007-10-07 by Andrew Craig
+- Fixed FS#289 - items dont equip correctly when morphed
+- Fixed problem with chainmail equip/dequip
+
+*** 2007-10-07 by Kenny Graunke
+- Fix bugs in SlotManager::Consume introduced by Magodra's accidental commit.
+
+*** 2007-10-07 by Andrew Craig
+- Added initial logging class to the npcclient.
+
+*** 2007-10-07 by Anders Reggestad
+- Fixed all compiler warnings for gcc on my linux host.
+- Fixed FS#112. Added check to se if you are in range before you could attack a npc.
+  This prevent you from luring npcs away with attacking them.
+
+*** 2007-10-07 by Kenny Graunke
+- Commit fix from Enar: Don't stop controlled movement on paws events.  This
+  made autorun turn into autowalk whenever you tried to use the GUI.  We're
+  not sure why they did that in the first place.
+- Use SetVelocity only when airborne only if the y-velocity is negative.
+  This fixes some jumping quirks, yet unsticking still seems to work fine.
+
+*** 2007-10-07 by Enar Vaikene
+- Moved item dropped messages from system to system base so that they are seen on the
+  main chat tab as it was originally planned. Also closes FS#365.
+
+*** 2007-10-06 by Anders Reggestad
+- Created "/waypoint adjust", "/path adjust", and "/location adjust" commands
+  they will move the nearest point to your current location. If you have
+  turned on the display of points with the corresponding display sub command
+  a new effect will be created in the spot. This will stay until you hide
+  all. So you will have both new and old so that you could se how you rearanged
+  the points. Should consider to have a different effect for this.
+- Created alias "show" to the "/waypoint display", "/path display", and 
+  "/location display".
+
+*** 2007-10-06 by Michael Gist
+- Fixed the name of the metal chatbubble.
+- Fix from Caarrie so chatbubble backgrounds aren't transparent. FS#267
+- Fixed texture not changing back to default when removing armour. FS#308
+  I'd appreciate it if acraig looks at this and fixes it in the 'best' way.
+  The submesh shouldn't need to be changed to 'default' as well, because it
+  wasn't changed on equip (for armour like chainmail).
+- More work on taxing, now updates the money event depending on the situation.
+=> DB VERSION BUMPED!
+
+*** 2007-10-06 by Dave Bentham
+- Fixed FS#48 - more consistent book writing buttons.
+
+*** 2007-10-06 by Enar Vaikene
+- Fixed FS#194 - skin preview didn't work in pssetup.
+
+*** 2007-10-06 by Sasha Levin
+- Fixed an issue where buffs where used to calculate new skill level after training.
+
+*** 2007-10-05 by Michael Gist
+- Replaced some fonts with ones with a better (GPL) license.
+
+*** 2007-10-05 by Kenny Graunke
+- Attempt to fix build on MSVC, which doesn't support %zu in printf - only the CS
+  printf formatters are portible.
+- Move #include from psquestprereqops.h to the .cpp file.
+
+*** 2007-10-05 by Anders Reggestad
+- Had some problems creating a new effect for displaying waypoints/paths/locations
+  with the /waypoint display, /path display and /location display admin commands.
+  In order to debug I maede load of effects more strict with more warnings.
+  In order to have the client load the following changes has to be done:
+   **> - wand03a.spr in the weapons.zip has to add <library> </library> 
+         around all the xml content in order to load correctly.
+   **> - electrotouch.eff had to be termporary removed since some gfx is missing.
+- Cleanup in adminmanager. Changed all commands with subcommands to use
+  the subCmd string not their own command string.
+- Fixed effect object mesh to not chrash when loading none sprite.3d meshes.
+- Inserted { } blocks after some if statements where the following statement
+  where on a new line. Good C/C++ practice.
+
+*** 2007-10-05 by Sasha Levin
+- A fix for the 'set' button in key config window by ThomPhoenix.
+
+*** 2007-10-05 by Kenny Graunke
+- Cleaned up active spell category code.  Much simpler, and now supports an
+  arbitrary number of active spell categories.
+- Added <activemagic> quest prerequisite op, so quests can be given only when
+  a particular spell category is active.
+- Added "Flying a Kite" quest to MaleEnki to test the above.  You should only
+  be able to get the quest after casting Defensive Wind on yourself.
+
+*** 2007-10-04 by Thomas Towey
+- Fixed problem with not showing craft failure messages for autoconfig containers.
+- Also fixed some gramatical errors.
+
+*** 2007-10-04 by Kenny Graunke
+- Changed death penalty to take effect when you exit the DR, rather than when
+  you enter it, so living friends are able to help.  This also makes it no
+  longer apply to NPCs.  Thanks, Xillix, Xordan, and Magodra!
+
+*** 2007-10-03 by Thomas Towey
+- Removed extraneous event process pointer.
+- Added subprocesses to crafting to allow the use of other equipment.
+- Removed some commented out slot manager code.
+- Fixed bug with false you moved restriction to combining items.
+- Changed craft processes caching to support subprocess.
+- Upped db version.
+
+*** 2007-10-03 by Sasha Levin
+- Fixed FS#349 - npcclient crashes on startup.
+- Fixed typo in /info.
+- Fixed keyboard+mouse combos in key configuration.
+
+*** 2007-10-03 by Kenny Graunke
+- Fixed PBT#2859 - error message on /unstick now specifies how long to wait.
+
+*** 2007-10-03 by Sasha Levin
+- Fixed #2020 - Guild invintation window stays always on top
+- Fixed #1927 - Arerano's patch to make mouserun stop when chatwindow is focused.
+
+*** 2007-10-02 by Michael Gist
+- Added removal of local renderloops (if no longer used) when leaving a region.
+- Fixed loading window, I broke it with cleanups.
+- Changing regions no longer stops movement (except when via /teleport).
+
+*** 2007-10-02 by Kenny Graunke
+- Implement first cut at...the curse of the death realm!  Muahahaha.
+  Let's just say that you'd best not use the DR as a shortcut anymore.
+
+*** 2007-10-02 by Anders Reggestad
+- Modified the npc behavior WanderOperation to use Paths.
+  - Added new function find path with two waypoints as input.
+  - Rewrote Run, Advance, Complete to use the path.
+  - Updated all test behaviors to locate neares waypoint and go
+    there before using wander. New code require to be on the waypoint
+    before navigating using paths.
+- Clean up: Modified npc GetName function to return const char*
+- Added complete operation to the MovePathOperation to set
+  end point for path when finished moving.
+- Included some display of paths in WC.
+- Modified path point to contain prev_point to link path points into a path.
+  - Added seting of prev_point id to online editing of paths. Created three
+    new paths online and dumped db to include in cvs.
+=> DB VERSION BUMPED!.
+
+*** 2007-10-02 by Kenny Graunke
+- Initial cut at a fix for FS#318.
+  - psCharacter now stores active, persistent progression events - anything
+    with an undo script.  These are saved to the DB on log out, like
+    everything else.
+  - Undo scripts unregister the script with psCharacter.  This is done via a
+    magical "persistentID" returned by the registration function, which has no
+    meaning other than to correlate the undo script with the original text.
+  - Likely there's more work to do...I doubt if I've gotten all cases correct.
+- Commented some migration code, rather than trying to fix it for my changes.
+
+*** 2007-10-01 by Sasha Levin
+- Fixed FS#288 - Problem with saving detail config.
+
+*** 2007-10-01 by Kenny Graunke
+- Fix FS#329...missed some callers in my last cleanup.
+- Fix buglet where preloadModels flag was used uninitialized.
+
+*** 2007-10-01 by Sasha Levin
+- Fixed FS#270 - Teleporting to the start of a map no longer puts you in a random instance.
+
+*** 2007-10-01 by Michael Gist
+- Materials, Textures and Factories are no longer moved into the shared region. These are already
+  stored in the same lists, and Ref Counting already does the job of keeping track of what's using them.
+- Fixed some crashes in the Material Manager.
+- Memory used by a region is now correctly freed when the region is deleted. Thanks to res for his help
+  with this.
+- Some cleanups and speedups.
+- CS 1.2 revision needs bumping again! It is now 27753.
+- Fixed "Not Deleted" in effects region on client exit. Thanks aarobber.
+- Added another guild permissions check to the bank manager.
+- Materials, textures and factories which don't belong to a region are no longer cleaned up if preloadModels
+  is true.
+- Removed sharedRegion and room (sector) as they are no longer used.
+
+*** 2007-09-30 by Sasha Levin
+- Fixed FS#176 - Consumed items now recalculate encumbrence (and handle consumption better).
+- Doubled the timeouts on advisor sessions.
+- Fixed FS#218 - NPC camera without npc selected shouldn't be doing nothing.
+
+*** 2007-09-30 by Enar Vaikene
+- Fixed FS#233 - Chat bubbles not shown for some NPCs.
+  Now uses the first name to find the target actor in case the target NPC has both names.
+- Added 'Other person' field to the psChatMessage class.
+  This field can be used in cases where both the sender and the receiver name
+  are needed. Currently only the advisor message needs it and any other chat
+  types use a 0 string there.
+- Fixed bug #2387. Now the advisor message is shown how Arianna originally planned it:
+  Advisee gets "Advisor suggests ...", advisor gets "You advise ..." and other advisors
+  get "<advisorname> advices <playername> ...".
+- Added check for unique aliases and names to the buddy list window.
+  Otherwise it was possible to have two or more buddies with the same alias.
+- paswListBoxRow now uses the standard mouse double-click event handler for selecting
+  listbox rows instead of detecting it in the mouse down handler. Fixes bug #2334 and
+  should in general work better in any other places as well.
+
+*** 2007-09-30 by Kenny Graunke
+- Compile and crash fixes.  Not sure if they're correct.
+
+*** 2007-09-30 by Michael Gist
+- More work on material manager.
+- Added deletion of textures, materials and mesh factories when they aren't needed; saves a fair bit of ram.
+- Some fixes to texture/material/factory loading, and altered map loading to use the material manager.
+  Still more work to do.
+  This commit requires a CS 1.2 revision of at least 27743, therefore pushing our revision to that.
+
+*** 2007-09-30 by Andrew Dai
+- Added flagging to clients, the number of flags a client has can be found
+  with the admin command /info. Flags require more work. The eventual goal
+  is to move to a flag structure with details of type, severity and time
+  of each flag.
+- Fixed FS#278 - Removed hard lock on DR messages when a client is not
+  allowed to move. This is because messages may be legitimate ones from lag
+  or gravity. Client will be flagged when this happens.
+
+*** 2007-09-29 by Kenny Graunke
+- Cleaned up progression scripts to not pass ProgressionManager pointers all
+  over the place...only a few places need it, and it's already a global.
+- Cleaned up StatsOp a bit.
+
+*** 2007-09-29 by Sasha Levin
+- Fixed FS#313 - Shouldn't be an error on deleting guild with no members.
+- Fixed FS#254 - By Ben Anderson. Fixed compiling errors when compiling CS with
+  ref tracking.
+
+*** 2007-09-28 by Michael Gist
+- Moved texture loading from celbase to materialmanager.
+- Cleaned up celbase a little.
+
+*** 2007-09-28 by Kenny Graunke
+- Fix FS#301 - server crash when killing someone with a DoT spell.
+  psScriptGameEvents were registering death callbacks without unregistering.
+- Fix FS#33 - if you held the up key, then tapped autorun, then released up,
+  you would have to hit autorun twice for it to take effect.  Releasing up now
+  doesn't cancel autorun, which is much nicer.
+
+*** 2007-09-28 by Michael Gist
+- Started writing a material manager and used it in factory loading.
+- Changed texture preloading to not occur by default, it's enabled with 'preload_models'.
+- Altered weather textures to load the first time they're needed.
+
+*** 2007-09-28 by Kenny Graunke
+- Clean up pawsImageDrawable and pawsFrameDrawable.
+- Fix infinite loop caused by invalid dimensions in pawsBorder.
+
+*** 2007-09-27 by Andrew Dai
+- Un-reverted anti-sticking change with the correct fix to jumping.
+- Fixed the problem of terraformers not having their CD initialised.
+- Improved logging of exchanges.
+- CSV Logs now rotate when full, up to 5 previous logs of each type are kept.
+
+*** 2007-09-27 by Sasha Levin
+- Fixed FS#288 - Detail config window now saves all information to xml, and not just part of it.
+- Fixed FS#280 - A mixup in natural resources was possible, So one could fish for gold for example.
+- Fixed #3042 - New skill info is now sent on /setskill too.
+- DB BUMP!
+
+*** 2007-09-26 by Kenny Graunke
+- FS#253: Fixed that I was sending the wrong name.
+- Fixed FS#33:
+  - Autorun no longer needs two taps to start if you interrupt by pressing Up.
+  - After interrupting, the player will walk normally, not run.
+
+*** 2007-09-25 by Kenny Graunke
+- Continuing work on FS#253:
+  - You need at least one living, non-defeated opponent to be able to yield.
+  - You can't yield when defeated or dead.
+  - Duel clients are now only reset to PEACE if they're targetting the newly
+    defeated player -and- are in combat or spell casting.  At least on yield.
+- StopAttack() now interrupts spell casting as well.
+
+*** 2007-09-25 by Michael Gist
+- Enabled trading while sitting.
+- Added some more checks for banking.
+- Fixed an incorrect ID in interact.xml, also made it tidy.
+- Added bank button to the interact menu (to access personal bank account).
+=> NET VERSION BUMPED!
+- Changed -debug_load to -preload_models and set the progress bar to not show when not preloading.
+  Thanks to Kenny for those 3 lines ;)
+- Added 'Preload Models' checkbox to pssetup. The faster load is default now, users can switch
+  back to the old preloading of everything by selecting this box.
+- Fixed /item for non-preloading.
+
+*** 2007-09-25 by Kenny Graunke
+- Reverted anti-sticking change to the movement system...though it helped with
+  sticking, it broke jumping in unnatural ways.
+- Fixed FS#253: /yield should end in DEFEAT.  Also, you no longer need to
+  target an opponent to yield.
+
+*** 2007-09-24 by Kenny Graunke
+- Fixed most "deprecated conversion from string constant to 'char*'" warnings
+  from gcc 4.2.0.  Tidied up a few bits of code where appropriate.
+
+*** 2007-09-23 by Michael Gist
+- Fixed a compile error and some warnings.
+
+*** 2007-09-23 by Sasha Levin
+- Fixed FS#293 - Issue with summoning pets in non-default instances.
+
+*** 2007-09-22 by Thomas Towey
+- Added textEffect effect message constructor.
+- Added some dev messages for failure paths.
+- Added support for unlockable entrances.
+- Added GM command to enable security and regular locks.
+- Added masterkey type keys.
+- Added create effect script operator.
+- Allow both normal and security locks on main menu.
+- Fix picklocking message.
+- Fixed craft effect code.
+
+*** 2007-09-22 by Sasha Levin
+- Fixed FS#290 - Issue with creating a new Kran char.
+
+*** 2007-09-22 by Anders Reggestad
+- Fix FX#281, the config iterator isn't valid before first calling Next, so 
+  added call to Next before using it.
+- Added /path command to admin commands. This command will edit paths directly
+  in db. Subcommands are
+   display : Display all path points in current sector.
+   hide    : Hide all displayed path points
+   point   : Add a new point
+   create  : Set the waypoint link id to be used for the new path.
+   help    : Display a short help description.
+- Compiler warning fixes
+- New class psPath and psPathNetwork to handle the new predefined path objects.
+  - Moved most of the waypoint function from npcclient to the new Path Network class.
+  - Added points to paths from the waypoint object to point to each path connecting
+    that waypoint to other waypoints. It is created a default path if no path points
+    are in the db that goes linear between the two waypoints. If this looks bad just
+    add some point in the path with the /path point command.
+- Added new utility function psGetRandom and psGetRandom(uint32 limit) easy
+  to use instead of creating your own random objects all over the place.
+- Added pathlist command to npcclient til list all current paths. Needed for debug.
+- Added replacement $name, $race, $tribe in the npc client locate behaviour operation.
+  This allow for behaviors like <locate obj="home:$name" />, name will be replaced with
+  the npcs name. This will allow to generate a generic npc types like citizen that could
+  have each npc go to different home and work locations but still using the same script.
+- Modified the MovePath npc client behaviour to use the new paths.
+  - Added a new name attribute to each waypoint_link in order to find the path this behaviour
+    should walk.
+  - Added new direction attribute that could be either forward or revers.
+- Removed old import of npcdefs.xml file. All data has been moved to db.
+- Improved the performance of the item detection perception stuff in the npc client.
+=> DB VERSION BUMPED!. 
+
+- Moved decoding of AdminCmdMsg out of the message code and into the admin manager
+  where it belongs. The message has never been more than a text string. This will
+  allow us to change admin commands without any change to the network code. This
+  final net version bump to make sure everyone get that pice of code out of their
+  network code. 
+=> NET VERSION BUMPED!.
+
+- Added more test characters to npc room to test behaviours.
+- Added /location admin command to create new locations online.
+
+
+*** 2007-09-22 by Michael Gist
+- More banking window tweaks.
+- Added money events. Coins can now be removed from or given to a player or guild
+  bank account at specified intervals.
+=> DB VERSION BUMPED!.
+
+*** 2007-09-21 by Michael Gist
+- A few gui fixes from Caarrie.
+- Improvements to the banking window.
+- Added a small entry for /bank in help.xml
+
+*** 2007-09-20 by Sasha Levin
+- New chars a moved to an instance set by their char id on creation, Instead
+  of starting on the default instance.
+
+*** 2007-09-20 by Kenny Graunke
+- Fix FS#240 a third time: the client wasn't setting the actor to be alive
+  unless the mode was explicitly set to PEACE - but now it goes directly to
+  OVERWEIGHT.  I changed it to be alive if the new mode != DEAD, just like
+  the server does.
+
+*** 2007-09-18 by Sasha Levin
+- Added a new /quest command to help GMs with quest testing. The command
+  is able to complete and discard quests on both self and target, and list
+  quests and their status on self or target. use: 
+  '/quest [status (0/1)] [quest name]' or simply '/quest' for a list.  
+- Added another privilage level to limit the use of /quest on others.
+- Added command info to the help file.
+
+*** 2007-09-18 by Kenny Graunke
+- Fixed fix for FS#240: characters were not able to resurrect when carrying
+  too much.  (We need to check if we can switch from the current mode to the
+  new mode, -then- from the new mode to overweight.)
+
+*** 2007-09-17 by Dave Bentham
+- Fixed bug #3077: Close Book Reading window when Writing Book.
+
+*** 2007-09-17 by Sasha Levin
+- Added support for a 'global' instance. Any actor located in that instance
+  is visible in all other instances.
+- Added instance information in /pos command.
+
+*** 2007-09-17 by Michael Gist
+- Added 'account level' calculation, and used it to calculate exchange fee.
+
+*** 2007-09-16 by Kenny Graunke
+- Reworked how exchange code handles money.
+
+*** 2007-09-16 by Michael Gist
+- Made a number of improvements and fixes to the banking window.
+- Fixed various bugs/potential crashes in the banking code.
+- Implemented coin exchange. The 'money' section of banking is now feature complete.
+=> NETVERSION BUMPED!
+- Fixed some char creation char saving problems.
+
+*** 2007-09-15 by Dave Bentham
+- Improvements to ensuring editable book titles are unique.
+  Database item_stats.name field is now unique key.
+=>Database version bumped.
+
+*** 2007-09-15 by Andrew Craig
+- Implemented a /loadquest on the client side that will allow quests
+  to be loaded while the server is still active.  
+- Took out code to stop server crashing on startup if quest is failing.
+- Quests that fail to load up will be flagged and not enabled. 
+- Will need to add some dedicated logging tools to quest manager so
+  settings team can easily review errors on startup.   
+
+*** 2007-09-15 by Sasha Levin
+- Fixed broken /morph when using -debug_load
+
+*** 2007-09-15 by Kenny Graunke
+- Fixed server crash on "spawn" - psGuildInfo was missing a new in one of the
+  ctors.  However, rather than adding it, I changed bankMoney back to not
+  being a pointer.  It lives for the same duration as the object anyway...
+- Fixed FS#240 "changing to/from OVERWEIGHT mode clears DEFEATED mode."
+- Implemented a CanSwitchMode() function which dictates whether one is allowed
+  to switch from one mode to another.  This ought to help avoid mode priority
+  inversions.
+- Fixed mode priority inversion where OVERWEIGHT kept DEAD from being set.
+
+*** 2007-09-15 by Michael Gist
+- More compiler warning fixes.
+
+*** 2007-09-15 by Sasha Levin
+- Fixed broken skeleton key creation (/key skel).
+- Fixed bad formatting of book messages.
+
+*** 2007-09-15 by Anders Reggestad
+- Compiler warning fixes.
+
+*** 2007-09-14 by Michael Gist
+- Small optimisation when loading money on character load,
+  it doesn't save back to the db straight away now.
+- Patch from Caarrie specifying a font in two places in the item desc window.
+- Patch from Caarrie; long keyboard shortcuts are now fully displayed.
+  Also reverts part of an old bugfix that isn't needed.
+- Added first implementation of banks. Currently supported is a personal account
+  and a guild account (only accessible to the guild leader currently). On both
+  accounts you can withdraw and deposit money. To access, click on a banker npc
+  (in cvs it is the merchant) and type /bank [personal|guild] depending on which
+  one you want. Transactions are then made using the banking window.
+=> NETVERSION BUMPED!
+
+*** 2007-09-13 by Sasha Levin
+- Fixed FS#251 - Some CVS db fixes
+
+*** 2007-09-13 by Michael Cummings
+- Added Death notification system (similar to disconnect)
+- modified psScriptGameEvent and psSpellAffectGameEvent to react properly 
+  to the death or either the actor or target
+  
+*** 2007-09-13 by Michael Gist
+- Fixed some deprecation warnings in effects.
+- Added 'banker' field to characters table.
+  'Merchant' in cvs is now also a banker.
+- Added bank money fields for guilds.
+=> DB VERSION BUMPED!
+- Added skeleton /bank command.
+- Changed KEY_SKELETON to -2 for Kemedes.
+
+*** 2007-09-12 by Kenny Graunke
+- Bumped the number of shortcuts to 200.  Xillix has a crazy amount of them. :)
+- Fixed FS#229: /stopattack clears defeated state.  I only allow /stopattack
+  when actually in combat...you could even use it to stop sitting, before!
+- Fixed FS#230: no confirmation dialog when attempting to slay a defeated
+  duelist by casting a spell or using the info window to change stances.
+
+*** 2007-09-10 by Kenny Graunke
+- Initial implementation of non-deathmatch duels.  Now, instead of killing
+  a player, you'll simply defeat them/knock them down when their health
+  reaches zero,  If you strike them when they're down, you'll kill them -
+  otherwise, they're automatically released after 30 seconds.
+=> NETVERSION BUMPED!
+- Fix FS#232: server crash when attacking NPCs (or probably those who've gone
+  offline).
+
+*** 2007-09-10 by Sasha Levin
+- Using /teleport along with 'here', 'target', or playername will now correctly
+  teleport to the needed instance too.
+
+*** 2007-09-09 by Sasha Levin
+- Fixed FS#222 - Thanks Vornne.
+- Commited a partial fix to FS#136 - Thanks Caarrie.
+
+*** 2007-09-09 by Dave Bentham
+- Fixed FS#102: delete character references from GM Events database when
+  that character is deleted.
+
+*** 2007-09-09 by Andrew Craig
+- Fixed FS#132. There some issues with horizontal scroll bars inside the 
+  input number window.  Also fixed some funny behaviour in scroll bars where
+  the thumb would move on it's own.
+
+*** 2007-09-08 by Sasha Levin
+- Disabled mesh visibility checks in UpdateProxList, This should give a serious
+  performance boost to handling of DR messages.
+
+*** 2007-09-08 by Kenny Graunke
+- Fix non-POD crash in ToString method for combat stance messages.
+- Added a new prg_evt_consume field.  Consumable items now use that instead of
+  the equip script.  Now items can safely be both consumable and equippable
+  (like cider mugs).  Fixed FS#184.  --> DB version bumped <--
+
+*** 2007-09-07 by Andrew Craig
+- Cleaned up some unused function in psengine, mostly related to appearance things
+  which are now handled by the system I added a while ago.
+- Fixed various compile warnings in psclient
+- Fixed FS#213 where the radio buttons where not toggling correctly.
+
+*** 2007-09-05 by Dave Bentham
+- Book titles are editable.
+- Book-authors & sketch-artists are assigned to the buyer of blank books
+  & sketches. No-one else can write/draw on them (FS#98). Note this will
+  not apply to existing blank items already purchased pre-version 0.3.020.
+- NETVER bumped
+ 
+*** 2007-09-05 by Sasha Levin
+- Added instance info to /pos.
+- Added instance teleportation support to /teleport.
+- Fixed an issue where items in a different instance were saved to
+  instance 0.
+- NETVER bumped (again).
+
+*** 2007-09-05 by Kenny Graunke
+- Added a description box for storyline-religions to char creation at the
+  request of the Settings Department.
+
+*** 2007-09-05 by Michael Gist
+- Made mana and stamina reset on resurrect.
+
+*** 2007-09-04 by Sasha Levin
+- Fix for crash when looting items or exchanging items with full
+  inventory and dropping them to an existing stack. The psItem*
+  would get deleted in CombineStack() but still used afterwards. 
+
+*** 2007-09-04 by Kenny Graunke
+- More fix for FS#155 - /die and /teleport restore now switch back to the
+  0-instance.  This prevents people from getting stuck in guildhouses.
+
+*** 2007-09-03 by Michael Gist
+- Fixed a bunch of compile warnings, mainly deprecations.
+
+*** 2007-09-02 by Kenny Graunke
+- Remove unused floating point values from network messages. Piggybacking on
+  Xordan's netversion bump - this breaks it too.
+- Updated autoconf scripts for the new CS and cel.  You will need to re-run
+  autogen.sh and configure.
+- Fix FS#190: glyph lost when trying to purify a stack of glyphs with a full
+  inventory.
+
+*** 2007-09-02 by Michael Gist
+- Fixed PS to compile with V1.2 of CS and CEL.
+- Updated compiling guide for the new revisions and branches.
+  CS revision is now: 27527
+  CS URL: https://crystal.svn.sourceforge.net/svnroot/crystal/CS/branches/release/V1.2
+  CEL revision is now: 2966
+  CEL URL: https://cel.svn.sourceforge.net/svnroot/cel/cel/branches/release/V1.2
+- Moved stances from being hard coded to a table in the database.
+- Rewrote the way stances are handled. Now to make an attack you can specify a stance to use by name.
+  So: /attack bloody
+- Made the stamina check for combat use the value that each hit drains instead of a %.
+  At the moment all changes are backwards compatible with current rules. Some cleanups can be done
+  once the rules are updated to use the new system.
+  NETVERSION and DB VERSION BUMPED!
+
+*** 2007-09-02 by Kenny Graunke
+- Fixed FS#155 - stuck in the wrong instance.  AdminManager::MoveObject wasn't
+  setting the instance.  More work could definitely be done with instances.
+
+*** 2007-09-01 by Sasha Levin
+- Added deletion of psItems when the inventory is being deleted. Not deleting
+  them there means that the items will be leaked, and the cleanup code
+  for them will never be called. This also caused the quality not saved
+  on exit bug.
+- Fixed FS#167 where typed pass on char deletion wasn't shadowed.
+
+*** 2007-08-30 by Sasha Levin
+- Fixed FS#176 Where you could bypass encumbrance checks by playing
+  with stacks in the inventory.
+- Fixed FS#177. A wrong return type was used in 
+  psNPCRaceListMessage::AddRace.
+
+*** 2007-08-30 by Michael Cummings
+- Moved rpgrules,xml to table 
+- DB Version bump
+- Added spell_failure Effect during casting
+
+*** 2007-08-30 by Sasha Levin
+- Removed hardcoded race info
+- Changed marriage to not be Kran-specific. Rules are now only based on
+  gender, and not race id.
+- DB ver bumped.
+
+*** 2007-08-29 by Anders Reggestad 
+- Added new NPCRACELIST message from server to superclients to distribute
+  race parameters from server to superclients.
+- Added racelist npc client command to dump the race list info structure.
+- Modified all npctype and script operations to allow for $walk and $run
+  as input in vel attribute. E.g. if a wander operation should be executed
+  at run speed use: <wander vel="$run" /> or set default for a npc type
+  with <npctype vel="$walk">..</npctype>
+- Modified the MoveTest NPCs to use the new walk and run speeds.
+- Fixed a number of linux compilation warnings.
+
+*** 2007-08-28 by Michael Gist
+- Part of fix for bug #135 from Karyuu.
+
+*** 2007-08-28 by Sasha Levin
+- Fixed server crash when NPC client authenticates with an empty username.
+
+*** 2007-08-28 by Michael Gist
+- Enabled -O2 optimizations in debug mode.. these shouldn't interfere with debugging
+  while providing a nice speedup (thinking of server). Also made cpu-specific-optimizations
+  be max by default.
+
+*** 2007-08-27 by Anders Reggestad
+- Added check for shift modifier when selecting items from slots to only
+  pick one item.
+- Added Debug8 define
+
+*** 2007-08-27 by Kenny Graunke
+- Fixed server crashes relating to natural armor.
+- Refactored psCharacterInventory to set the owner in the ctor and to use
+  a dtor instead of Clear().
+- Made the server only use one Fist psItem per character instead of two.
+
+*** 2007-08-27 by Andrew Dai
+- Fixed sticking problem as a result of disabling movement while in the air.
+
+*** 2007-08-26 by Sasha Levin
+- Fixed FS#125 - If moving items inside container, no need to check for weight
+  restrictions.
+
+*** 2007-08-26 by Michael Gist
+- Stamina now regenerates faster when sitting.
+
+*** 2007-08-26 by Alejandro Alberich Blanes
+- Fixed bug #1964 - Strafe shortcut key sometimes works as toggle, now
+  when you stop preshing a buton it will allways cause the stop of the triggers
+  asociated to mods of it (like shift-a).
+
+*** 2007-08-26 by Sasha Levin
+- Added FS#147, When in third person view, zooming in to one notch over the
+  max will now switch camera to first person. Zooming out of first person
+  will switch to the last used camera mode.
+
+*** 2007-08-25 by Andrew Craig
+- Some fixes for bug FS#55 for petition viewing.
+
+*** 2007-08-25 by Sasha Levin
+- Fixed FS#148 where the last used spell wasn't highlighted in
+  spells window after window reload.
+
+*** 2007-08-25 by Andrew Craig
+- Added in support for seperate hair and beard meshes. 
+
+*** 2007-08-25 by Sasha Levin
+- Fixed FS#55 where escalating beyond max GM level would make the petition
+  not viewable by anyone, ever. Escalation level is now capped to dev level. 
+
+*** 2007-08-25 by Kenny Graunke
+- Fixed bug (possibly #119) where you sometimes had to press 'z' twice before
+  your character would actually sit/stand.  psCharController was trying to
+  store the state internally, but the /sit and /standup commands change it too.
+- Fixed bug #2796, "Possible to take items you don't own out of world
+  containers."
+
+*** 2007-08-25 by Tom Towey
+- Added teleport to race spawn point script operator.
+
+*** 2007-08-25 by Michael Gist
+- Made base stamina regeneration use a % instead of a set value.
+
+*** 2007-08-24 by Sasha Levin
+- Fixed broken petitions window for regular players.
+- Fixed an issue that allowed anyone to manage petitions.
+
+*** 2007-08-24 by Kenny Graunke
+- Fix non-POD crash.  You can't pass a csString through "%s".
+- Initialize "enabled" flag to true in pawsButton.
+- Fix crash in pawsBorder when opening sketches.
+
+*** 2007-08-24 by Andrew Craig
+- Fixed FS#55 where petition descalated below 0 where given a crazy number
+  in the database since that column is unsigned. So the level was ~0 which no
+  GM has that high a level.  Instead now you cannot descalete a petition below 
+  0.
+
+*** 2007-08-23 by Andrew Robberts
+- Added the ability to disable/enable and grey a pawsButton, pawsCheckbox, 
+  and the buttons on pawsScrollbars
+- Added the ability to specify a button down image for non-toggle 
+  pawsButtons when they have mouse down on them
+- Added a value changed event to pawsScript and added support for it to
+  checkboxes
+- Added support for controlling whether a checkbox is enabled or checked from
+  pawsScript
+- Added the ability to use "Me" when referencing pawsWidgets in pawsScript.
+  This will cause the script to reference the widget owner.
+- Fixed a bug in pawsScript where a line like: widget:Foo(); isn't valid.
+- Added the ability to define pawsStyles in individual skins
+- Added a pawsFrameDrawable.  This adds support for horizontal, vertical, and
+  9 or 8-piece composite drawables.
+- Renamed pawsDrawable to pawsImageDrawable.
+- Fixed a bug with masks in paws being invisible.
+
+*** 2007-08-22 by Sasha Levin
+- Fixed crash when running psclient with -debug_load.
+
+*** 2007-08-22 by Michael Gist
+- Fixed bug #2116: Natural Armour is now applied as a bonus to normal armour instead of being a set
+  of armour worn in its own right and replaced when equipping other armour.
+- Fixed bug #2155: 'basecloths' no longer count as light armour.
+
+*** 2007-08-21 by Kenny Graunke
+- Fixed bug #58 / "Cannot trade/give directly out of a sack".
+
+*** 2007-08-20 by Luca Pancallo
+- Enlarged tutorial window, made first message to be immediately displayed on screen
+- Made delay for NPC displayed text fixed and no more related to length of text.
+
+*** 2007-08-20 by Kenny Graunke
+- Fixed server crash when using a coin as a quest reward.
+  (psCharacterInventory::AddOrDrop would destroy the coin, then the
+   caller would try to set it loaded.)
+
+*** 2007-08-19 by Alejandro Alberich
+- Fixed bug #2793 - text sent doesn't match text recieved
+
+*** 2007-08-19 by Kenny Graunke
+- Added blanket security check to AdminManager::HandleMessage - you now need
+  to have at least "tester" security level to talk to adminmanager at all.
+  This way, if someone forgets to check the security level in some command,
+  the exploit will be limited - lower level GMs may get access to more than
+  they should, but no players will.
+
+*** 2007-08-18 by Michael Gist
+- Made cone AoE spells work out if an actor is hit using the angle from cast direction instead
+  of the angle of caster orientation. Fixes bug #82.
+- Fixed a few typos in printfs/message sends.
+- Updated Gust of Wind to be a good test spell.
+- Added Potion of Will as a test for potion blocking.
+
+*** 2007-08-17 by Michael Gist
+- Fixed bug where BlockOP had no target if the target was actually the actor.
+
+*** 2007-08-17 by Kenny Graunke
+- Fixed crash when drawing slots without an image.
+- Removed useless duel points system; settings has a better system in mind,
+  for the future.  I did not bump netversion, simply publishing 0, as I didn't
+  want to break that just yet.
+
+*** 2007-08-17 by Andrew Robberts
+- Improved the effects 2d elements to support tiling as well as some other options.  This
+  really increases the potential to make things like chat bubbles look a lot better.
+- Fixed a bug with 2D text in effects where it didn't correctly determine if an outline was
+  specified.
+
+*** 2007-08-17 by Andrew Robberts
+- Improved the effects 2d elements to support tiling as well as some other options.  This
+  really increases the potential to make things like chat bubbles look a lot better.
+- Fixed a bug with 2D text in effects where it didn't correctly determine if an outline was
+  specified.
+- Fixed up the current chat bubble a bit and added an alternative chat bubble effect.  This
+  isn't final, but it's better than it used to be.
+
+*** 2007-08-17 by Michael Gist
+- Fixed a missing space character from '<skill' type progression event generation,
+  which caused the event to have an invalid element and therefore not be loaded and saved by
+  the server.
+
+*** 2007-08-16 by Michael Gist
+- Made the 'too tired' point lower for stamina related activities (10%).
+- Made 'work' stamina drain take into consideration racial bonuses.
+
+*** 2007-08-16 by Andrew Robberts
+- Committed rewrite of paws texture manager.  This should provide a more object oriented
+  approach to a paws texture manager that is faster and easier to expand than the old
+  one.  This removes psImageDescription and pawsImage; instead of finding
+  psImageDescription from the texture manager and creating a new image from it as you
+  would do in the old way, just find a csRef<iPAWSDrawable> from the texture manager
+  and use it as you would a pawsImage.
+
+*** 2007-08-15 by Kenny Graunke
+- Fixed bug #2934.
+
+*** 2007-08-14 by Dave Bentham
+- Fixed bug #3058: improvements to Tuturial gui font and layout, provided by Caarrie.
+
+*** 2007-08-14 by Kenny Graunke
+- More cleaning: removed 'creator' field from psItem, which was entirely for
+  debug purposes - acraig, TomT, and I haven't used it.
+
+*** 2007-08-13 by Tom Towey
+- Commented out quality check in quest exchanges at settings request.  
+  Code will be changed or removed as soon as we figure out what we want.
+
+*** 2007-08-13 by Michael Gist
+- Fixed bug where spell progression events were being performed multiple times.
+- Fixed bug where hpRate was being applied slightly incorrect and thus stacking wrongly.
+- Fixed Fire Warts spell to not stack, also modified it to be a better test case.
+- Removed Interval attribute in spells. It is potentially buggy, isn't used currently,
+  and doesn't work correctly with progression events. Will be implemented properly
+  as a progression event attribute instead of a spell attribute.  
+
+*** 2007-08-13 by Kenny Graunke
+- Fixed stupid gcc warnings in npcclient's initialization lists.
+- Spring cleaning!  Removed a lot of unused rubble from the old inventory
+  system.
+
+*** 2007-08-12 by Arianna Benigno
+- Added the total trias amount in the skillwindow, by Caarrie.
+- Fixed from Kemedes for bug #2978. The client was hanging when switching
+  camera mode while talking to NPCs.
+- Fixed patch from peeg for notifying players that they can't discard 
+  one-time quests (note, this is indipendent from the fact that right now
+  all quests can't be discarded).
+- Fixed bug #2920, after cleaning up Kemedes' patch on the matter. When
+  a ring with the movement attribute was equipped on login, the client was
+  crashing.
+- Fixed bug #3060, concerning some missing logic behind how the marry
+  button should appear.
+- Fixed bug FS#52, where a redundant message was appearing when getting a 
+  divorce.
+- Fixed some additional problem in the marriage manager, concerning the
+  setting of married name, with female chars.
+
+*** 2007-08-11 by Arianna Benigno
+- Fixed typos listed in bug #3065.
+- Fixed bug #3006: there were some typos in the help file.
+
+*** 2007-08-11 by Kenny Graunke
+- Fixed bug FS#43, "Containers disappearing when picking up with full inv."
+  psCharacterInventory::Add was placing the picked container in another
+  container, which is illegal.
+
+*** 2007-08-10 by Andrew Craig
+- Fixed small bug in skills window where it was attaching
+  items to the wrong model.
+
+*** 2007-08-10 by Luca Pancallo
+- Added display of size to the item description window
+- Changed how the stackcount is displayed in the item description window,
+  it's not more 2 lines, but just one line with name (count)
+- Changed the Fighter behaviour to run instead of walk in npcbehave.xml
+
+*** 2007-08-10 by Dave Bentham
+- Fixed bug #3078: a message to the client to confirm a players book
+  has saved.
+
+*** 2007-08-10 by Andrew Craig
+- Fixed  receiver->DeleteObjectCallback(this); crash with AoE spells.
+  It was changing the spell event target but not setting it back to 
+  the original one.  This caused the gemObject's receiver list to be
+  borked.
+
+*** 2007-08-09 by Andrew Craig
+- Added a new psCharAppearance class that handles all the details
+  of a character's appearance in the game.  This takes a bit from 
+  the psmeshutil and a bit from engine and pscelclient and localizes 
+  it to this class.  Makes it easier to adjust appearance when we 
+  need to. 
+- Equipping helms now will remove the hair mesh.
+- Removing helm will put the orginal hair and colour back.
+
+*** 2007-08-08 by Dave Bentham
+- New "creative content" method of holding data for books and sketches. Its
+  now encapsulated within a XML structure. It is intended as a common way
+  of storing such data, and also for future expansion of created things
+  without affecting the database structure.
+- Fixed bug #3073: improvments to book writing window.
+
+*** 2007-08-08 by Andrew Dai
+- Added the creation_time column to the characters table which will be set
+  automatically when a character is inserted.
+
+*** 2007-08-04 by Luca Pancallo
+- Added a patch for book save submitted by Kemedes
+- Improved randomloot command to display also equip/unequip scripts
+
+*** 2007-08-04 by Kenny Graunke
+- Fix crash in gemActor::DoDamage caused by my last commit.
+- Fix NULL and non-POD crashes when trying to spawn invalid world items.
+- Zero out location in world when assigning an owner to an item.  Items with
+  an owner are always in the inventory, and hence can't be in the world.
+- Commit fixes from Kemedes for crash fixes when using /tell, /report, or
+  /marriage propose on Superclient.
+- Fix bug #3045 (items disappearing).  MoveFromInventory was not handling
+  special containers (like inventory or offered money), and trying to treat
+  them like any other one, resulting in the items being added in an invalid
+  slot.
+
+*** 2007-08-03 by Tom Towey
+- Added more printf's for debugging winch door.
+- Cleared guarding character ID when removing item from container.
+- Set guardian character to 0 when removing items from containers.
+
+*** 2007-08-04 by Michael Gist
+- Added progression script options for the recovery rates of mana and stamina.
+
+*** 2007-08-03 by Tom Towey
+- Fixed server crash when nothing is targeted for /badtext.
+- Added optional quality parameter to /item <name> command.
+- Fixed bug where item can be removed from container from far away.
+- Fixed but 2703 where low quality ingredients have little effect 
+  for high skilled players.
+- Updated help on /item to include random and quality qualifiers.
+
+*** 2007-08-03 by Kenny Graunke
+- Change "Fire Warts" spell in CVS data to actually be a DoT spell as it
+  claimed to be.
+- Fix bug #985: players couldn't loot when killing via a DoT spell.  The
+  HP update routines don't know who the attacker is, so they can't supply one.
+  In this case, it now looks in the DamageHistory for the most recent DoT entry.
+- Fix bug #2868 ("Kikiri ate my steel stock"): player->NPC trades weren't being
+  properly aborted if no dialog was found.
+
+*** 2007-08-03 by Keith Fulton
+- Fixed an obscure crash in chatmanager which happened today on laanx.
+- Also took out an error message and changed to a filtered warning in MsgManager.
+
+*** 2007-08-03 by Kenny Graunke
+- Correctly label parameters to psDeathEvent ctor in the header file.
+
+*** 2007-08-02 by Kenny Graunke
+- Commented Error3 message when unable to compute fall damage between sectors.
+  It means someone teleported between two sectors with no connecting portal.
+
+*** 2007-08-01 by Tom Towey
+- Fixed bug 3017 where transformations continued after item was removed when container 
+  was not targeted.
+- Removed bad error message when players examine craft books wthat have no combinations 
+  assoicatied with them.
+
+*** 2007-08-01 by Michael Gist
+- Added WaySkill input for spell scripts.
+
+*** 2007-07-31 by Tom Towey
+- Put back in checks for container failures.  The three op codes this will add to the 
+  success path will not impact performance, but will catch container failures if canadd 
+  is ever changed.  Kenny please do not roll back these redundant checks.  Thanks.
+
+*** 2007-07-31 by Alejandro Alberich
+- Changed the System message of workmanager for errors in repairing objects to be more
+  accurrate in response to bug 3018.
+- Fixed only lower case in System Chat window, bug 3022.
+
+*** 2007-07-31 by Kenny Graunke
+- Revert AddToContainer() checks in SlotManager.  CanAdd does this already.
+
+*** 2007-07-30 by Tom Towey
+- Added instance to MoveObject.
+- Teleport will now always bring player back to 0 instance.
+- MoveOject for slide will stay in same instance.
+- Added syntax and exmaple comments to script operators for extract to settings.
+- Please add these types of comments when new operators are added or old ones are changed.
+- Added chech to AddToContainer() to check for slot out of range error.
+- Added check to invalid dropped item comming from slot manager.
+- Added check to invalid item in transformation.
+- These will report errors now and not call save assert.
+
+*** 2007-07-30 by Kenny Graunke
+- Marked some psWorkManager internal state as private.
+
+*** 2007-07-29 by Kenny Graunke
+- Workaround client brokenness on load: actors should no longer be sent to
+  their spawn point when logging on in bronzedoors.
+  
+  [The issue is that when the client receives the first psPersistActor, it
+   moves the actor to SectorWhereWeKeepEntitiesResidingInUnloadedMaps and sends
+   a DR packet with a (null) sector, relying on the server to MoveToValidPos
+   (unstick) to put it back to the original location.  The server complains,
+   but system messages aren't shown that early in loading.  Fixing the client
+   not to put itself in invalid locations would be better, long term.]
+
+*** 2007-07-27 by Tom Towey
+- Changed guild house lock from Door lock to Sinmple Lock because the latter is already in database.
+
+*** 2007-07-26 by Kenny Graunke
+- Fix crash in HandleRepairEvent when trying to use a consumable tool to
+  repair itself.
+- Fix spell power exploit.
+
+*** 2007-07-25 by Rakhun applied by Tom Towey
+- Added a precise paramater for check stackable with calls.
+- Added check for item quality for some stack attempts.
+- Removed check for guild it prevented players from sharing resources.
+- Checks if quality, max quality, and owner are different for autostacking.
+- Made sure we do not care about quality checking for spawned stacks.
+- Made sure we allow players to specificly stack items if they want regardless of quality and creater matching.
+
+
+*** 2007-07-24 by Tom Towey
+- Added usage information for /key command.
+- Added 180 deg to entrance exit position.
+- Added /key and /action commands.  
+- And I alphabetized the help list.  If anyone wants to go back to semi-random grouping please let me know and I will put it back.
+
+*** 2007-07-24 by Michael Gist
+- Patch from Kemedes; Now prompted for a password when attempting to delete a character.
+
+*** 2007-07-23 by Andrew Robberts
+- Commited actual thing I said belove on 2007-07-18
+
+*** 2007-07-23 by Tom Towey
+- Added cache of unique transformations.
+- Add extra cariage return for craft info.
+- Added range check to world containers.
+- Added ingredient transform capability to crafting.
+- Updated action locations to support test scripts.
+- Updated fighter1 and maleenki locations for testing.
+- Updated progression events to support test scripts.
+- Updated sectors to support AL entrance test scripts.
+- Updated trade data for test scripts.
+
+*** 2007-07-22 by Tom Towey
+- Fixed winch access bug caused by change in default progression script result value.
+
+*** 2007-07-19 by Dave Bentham
+- Prohibit GMs spawning personlised items, such as Blank Book and Blank Map,
+  because they are effectively templates, and such spawning 'leaks' these
+  templates into the world which can then be altered.
+
+*** 2007-07-18 by Alejandro Alberich
+- Fixed bug #2960 by adding updates in the SlotManager of the Containers stats
+  to the clients when they move an Item from or to a Container.
+
+*** 2007-07-18 by Andrew Robberts
+- Fixed a crash on exit if 2D effect elements were still visible.  This was due
+  to the effect 2D renderer being deleted before visible effects.
+- Added a new automatic camera mode for NPC conversations.  When conversation
+  with an NPC is initiated, the camera will automatically pan to a view of both
+  main actor and target NPC.  The camera mode automatically resets when the
+  player moves or targets something else.
+
+*** 2007-07-15 by Arianna Benigno
+- Fixed bug #2906. /deputize reset reset also the label of the character.
+- Fixed feature request #2719 by Sasha Levin. When somebody will say the name of 
+  the char (say, tell, guild, etc.) the tab button will flash. There is missing
+  art (already requested) to have the button flashed in a different way respect
+  to the standard flashing.
+- Fixed bug #2913 by Sasha Levin. Problems with combine glyphs window after 
+  trading the glyphs.
+
+*** 2007-07-14 by Dave Bentham
+- Fixed bug #2875. Enforce the limits of scroll bar widgets such that the slider
+  cannot breach the min/max values.
+
+*** 2007-07-13 by Keith Fulton
+- Committing patch from Sasha Levin for -debug_load command line option on the
+  client.  This stops all preloading of textures and meshes and only loads them on
+  demand, which makes starting up the client during development about 100x faster.
+  Devs are highly recommended to try this flag.
+
+*** 2007-07-13 by Arianna Benigno
+- Fixed in cooperation with Lanarel, Kemedes and acraig bug #2901: crash 
+  of the server when somebody was assigning guild points to offline members.
+
+*** 2007-07-13 by Dave Bentham
+- Fixed bug #2881. Character creation: reset all traits when switching races.
+
+*** 2007-07-12 by Arianna Bengno
+- Fixed bug #2849, by Alejandro Blanes. The spell power bar was having no 
+  limits
+
+*** 2007-07-11 by Kenny Graunke
+- Fixed bug #2852: typing in the auction tab didn't automatically translate
+  into /auction text.
+- Fixed "Active" checkbox in GM Action Location editing window.  It manually
+  toggled the checkbox, and then it was automatically toggled back,
+  effectively making it impossible to change.
+- Continued previous fix.  Both client and server were trying to compare const
+  char* variables with ==, which doesn't work at all.
+- Don't show equipment in merchant Buy/Sell window.  Players have sold their
+  equipment by accident (thinking it was spare), and merchants on Laanx ended
+  up selling two copies of things (one from bulk, one from equipment).
+- Fixed server crash: equipment array's indexes were not being updated for
+  shifting when an item is removed from the inventory.
+- Fixed server crash: Added NULL check when moving from inventory to a world
+  container.  (If given an invalid stack count, it should be NULL.)
+
+*** 2007-07-10 by Kenny Graunke
+- Added Ulbernaut4 to PSCHARACTER_RACE enumeration.  Did not bump netversion;
+  neither client nor npcclient seem to care.
+- Fixed weight in world containers: the stack count was being multiplied
+  twice, resulting in containers seeming massively heavier than they should.
+  Thanks for finding the problem, Kemedes!
+- Removed bogus call to SetOwningCharacter when adding an item - it was
+  setting the owner even when calling with the test flag, and also resulted in
+  equip scripts being run at the wrong time (exploitable).  It's not necessary
+  because CombineStack and UpdateInventoryStatus already ensure that the owner
+  gets set correctly.
+- Made /inspect show the full inventory, even if multiple items are listed in
+  the same slot.  Also show the slots for all items.
+
+*** 2007-07-09 by Kenny Graunke
+- Fixed crash in /changename when given an extra space, i.e.
+  "/changename PID: 21 yes Earl"
+- Implement new settings-ordained title for Krans: "gemma" (similar to "sir".)
+
+*** 2007-07-07 by Keith Fulton
+- Complete revamp of how containers update clients with their contents.  Now the gemContainer
+  multicasts all updates whenever any item is added or removed.  The ownership of the
+  item is sent along with the update message, so each client can determine how to display
+  the item.  This change to the message requires a net version ding, which I wanted
+  to be sure to get in there before the client was released.
+- Made a way for npc's to not spawn at low % of HP or mana.  Now if mod_hitpoints or
+  mod_mana are set to -1 (any negative number), the character will spawn at whatever
+  his/her max was calculated to be.
+- Fixed silent failure of adding item to container when size exceeded.  In general,
+  be sure to tell players what is happening when something doesn't work, and if possible,
+  why it isn't working so they can learn and change their behaviors (and not think
+  it is a bug).
+
+*** 2007-07-07 by Kenny Graunke
+- Fixed bug #2381: simply made exchanges not check weight restrictions
+  on accept.  If a player exceeds their max weight, encumbrance kicks in.
+- Fixed another case triggering #2018.
+
+*** 2007-07-07 by Arianna Benigno
+- Fixed bug #2018 by Alejandro Blanes. Items in containers could exceed 
+  the capacity and weight limits.
+
+*** 2007-07-06 by Kenny Graunke
+- Made psCharacterInventory::Add() not check weight/size restrictions,
+  and made it update encumbrance instead.  If you pick up too much,
+  you'll be encumbered.  This is much safer.
+- Removed Alejandro's item dropping in SlotManager::MoveFromInventory
+  on splitting stacks.  Add will no longer fail in that case, so it
+  isn't necessary.
+- Fixes an assert, crash, and encumbrance-release bug.
+- Moved NPC inventory perception after container is fully added.
+- Used sit down/stand up animations with encumbrance.
+- Fixed mode bugs: psModeMessage::* and PSCHARACTER_MODE_* were out of sync,
+  causing psPersistActor messages to use EXHAUSTED instead of OVERWEIGHT
+  messages.  This meant that the player would not appear sitting when logging
+  on encumbered.
+- Fixed QuickLoad so equipment shows up at the character selection podium.
+
+*** 2007-07-05 by Arianna Benigno
+- Alejandro Blanes' new attempt for fixing bugs #2820 and 2801. They were
+  problems related to trade.
+
+*** 2007-07-04 by Kenny Graunke
+- Removed unused backup_inventory field from psCharacterInventory:
+  Alejandro already removed all code that used it, making it reload the
+  inventory from the DB on rollback instead of saving it in-memory.
+- Fixed part of bug #2778: when spawning an item via the GM gui, the server
+  performed no bounds checking on the requested stack count.  It was possible
+  to spawn items with 0 stack count, and they'd be saved in the DB.
+- Fixed the rest of bug #2778: the code to compute an item's weight did not
+  consider the stack count if the item was considered unstackable.  While it
+  seems reasonable, it isn't necessary (multiplying by 1 is harmless), and
+  does give the wrong result if an item somehow is created that's unstackable
+  and has a stack count > 1 (namely, the GM spawn GUI can do this).
+
+*** 2007-07-03 by Arianna Benigno
+- Alejandro Blanes fixed the auto-created bug #2820. Still problems with 
+  stacks and inventory.
+
+*** 2007-07-03 by Dave Bentham
+- Character generation requires full parents data: valid first names, 'Normal'
+  status by default, and a chosen religion.
+
+*** 2007-07-03 by Tom Towey
+- Fixed guardian on pickup that was broke by load fix.
+- Added no pickup to the oven and bakers table.
+- Also removed some extra items from Vengeance player.
+
+*** 2007-07-02 by Arianna Benigno
+- Alejandro Blanes fixed bug #2818. The exchange window shows correctly who has
+  accepted the trade.
+
+*** 2007-07-02 by Keith Fulton
+- Fixed lost "NoRepeat" directive on "..." operator in quest scripts.  Thanks to Luca
+  for spotting the source of the problem.
+
+*** 2007-07-01 by Dave Bentham
+- Implemented simple Randomize facility for character creation Life Events.
+
+*** 2007-07-01 by Arianna Benigno
+- Alejandro Blanes fixed part (the main part) of bug #2801. It was not 
+  possible to move objects from a stack, if part of the stack was previously
+  traded.
+- Alejandro fixed also some server crash and some problem related to the 
+  cancelling of a trade.
+ 
+*** 2007-06-30 by Arianna Benigno
+- Alejandro Blanes fixed the camera height for a character that is sitting.
+  It is now half of the height of a standing character.
+- Fixed patch for looping the animation for casting spells.
+
+*** 2007-06-30 by Keith Fulton
+- Fixed Release Stopping bug about inventory wrong after a refused trade with 
+  an npc.  This is 2 of the 3 current showstoppers on the nexus testing website.
+
+*** 2007-06-29 by Tom Towey
+- Fixed guardian bug in item load.
+
+*** 2007-06-29 by Dave Bentham
+- Fixed the crash in ProgressionManager::SendSkillList when creating new
+  characters.
+- Character generation 'Life Events' at least one event is required.
+
+*** 2007-06-28 by Keith Fulton
+- Fixed crashing bug on player-to-npc exchanges.  This was a pretty general 
+  bug, so it might have fixed a number of bug reports in addition to my specific
+  case I was doing.  Please retest as many cases as you can find.
+
+*** 2007-06-28 by Arianna Benigno
+- Alejandro Blanes fixed a newly created crash opportunity in ProgressionManager
+
+*** 2007-06-27 by Andrew Robberts
+- Changed pawsScript so that it doesn't parse the script until the first time it's
+  executed.  This is so that widgets that will be loaded after the script can still
+  be referenced.
+
+*** 2007-06-27 by Andrew Craig
+- Changed how Knowledge areas are stored.  They were in a list before but were 
+  using 2 different keys ( area, priority ).  This caused the tree to be 
+  incorrectly formed.  Changed now to use a csArray and the data is pushed
+  in to it sorted by priority ( done with the 'order' on the mysql command ).
+  
+*** 2007-06-25 by Michael Gist
+- Updated shortcut icons to be higher quality, added OSX and linux versions for some. Thanks to Xanacru.
+
+*** 2007-06-24 by Dave Bentham
+- 'Quick' character generation will only upload if a valid Path is selected.
+- Character generation 'Birth' page requires sibling count.
+
+*** 2007-06-24 by Arianna Benigno
+- Alejandro Blanes has fixed the problems with connected to the usage of 
+  objects that modify the hp and mana max value (ring of mana/ring of Hp in CVS).
+- Fixed bug #2331. When zoneinfo.xml contains some error, the client doesn't crash
+  but it ends gracefully reporting an error. Patch submitted by Alejandro Blanes.
+- Fixed bug #2714 by Sasha Levin. It is now possible to use middle mouse or ctrl key
+  for grabbing the whole content of a slot. Tested also on MacOs (see bug report).
+
+*** 2007-06-23 by Tom Towey
+- Display craft information when examining design item.
+- Added combination data to craft information.
+- Removed check for garbage item on random quaility calculation.
+- Also check for garbage item transforms when item left in autotrans containers.
+
+*** 2007-06-23 by Keith Fulton
+- Fixed dropping and picking up items from worldContainers to respect the 
+  NPCOWNED flag.
+- Fixed issue with missing update of container window when adding items 
+  back to inv from world container.
+
+*** 2007-06-23 by Dave Bentham
+- Character creation now expects a last name.
+
+*** 2007-06-21 by Kenny Graunke
+- Implemented "item guardians."  When a character places an item in the forge
+  or some other non-pickable container, they no longer own the item but
+  "guard" it.  Players currently can take items out if: (a) the item is
+  public, (b) it's guarded by the one taking it out, or (c) the guardian is
+  offline.
+- Fixes inventory loading issue on server crash/reset: the inventory loads
+  all items a character owns - and since items in world containers were owned,
+  they'd get loaded into the inventory.  Now they're guarded instead of owned.
+- Ported gemContainer and WorkManager, tested both.
+- WorkManager no longer resets ownership or guardians on logout, as players
+  can take guarded items whenever the guarding character is offline.  No need.
+- BUMPED DB VERSION! (now 1150)
+
+*** 2007-06-21 by Arianna Benigno
+- Fixed bug #1899. Pssetup config was still using tinyxml instead of the binary 
+  format for the world file. Not sure this is exactly the file that goes in the
+  release package, but I hope this will be an useful reminder.
+
+*** 2007-06-21 by Kenny Graunke
+- Remove incorrect ! in test when transferring from world containers to
+  inventory.  Also made it ignore the specific destination slot requested 
+  because psCharacterInventory::Add doesn't correctly handle the case where
+  the destination slot is already full. (Stupidly, SlotManager does that.)
+- Fix bug where an item in slot 0 of a world container wasn't being loaded.
+
+*** 2007-06-21 by Michael Gist
+- Spells which fail to cast now drain 10% of the normal amount of mana. Mana drain now
+  occurs at the end of a spell cast instead of at the beginning, so interrupted spell 
+  casts drain no mana.
+
+*** 2007-06-20 by Kenny Graunke
+- Fix exploit where anyone could take items out of the forge; only the client
+  was checking.  Refactored code from FillContainerMessage into new
+  Client::CanTake(psItem*) method; called it in SlotManager as well.
+- Provide new gemContainer::CanAdd method to test if one can add a given
+  amount of an item.  Internally, checking's done via a test flag in
+  AddToContainer because it's convenient and keeps the code in sync; to hide
+  this poor interface (what does "true" mean?), I made it protected and
+  provided a public wrapper which doesn't support the flag.
+- Use CanAdd in SlotManager to check for failure rather than botching everything.
+- Fix client-side display issue in container window: when trying to view the
+  same world container as before, slots weren't cleared, leading to ghosts.
+- Fix bug where you couldn't examine items dropped on the ground.
+
+*** 2007-06-19 by Kenny Graunke
+- Fix crashes due to csWeakRef memcopy asserts in gemContainer; it's not legal
+  to create a csArray of csWeakRefs.  I simply switched it to be a csArray
+  of bare psItem pointers for now; changing it to csSafeCopyArray should also
+  have worked.  We aren't taking advantage of it being a smart pointer anyway.
+- Fix bad bug when dropping sacks: DropItem iterated over the inventory's
+  contents, but neglected to shift the index backwards after removing an item.
+  This caused some items not to be dropped with the container, later growing
+  into even worse problems.
+- Dropping and picking up containers now preserves slot locations.
+  gemContainers are still 0-based, while in-inventory ones start at 16
+  (PSCHARACTER_SLOT_BULK1).  Dropping/adding code now converts.
+- Remove code to pick up container contents from psCharacterInventory::Add
+  in the stackable case: non-empty containers should not be stackable.  I also
+  explicitly disallowed stacking if given a container to import, just in case.
+  Also, simplified the code slightly: no need to remove from a container
+  that's going away, and no need to recursively call Add - just add it.
+- Add SlotCount() method for gemContainers, returning the number of slots in
+  the container.  Currently it's fixed to be PSITEM_MAX_CONTAINER_SLOTS, but
+  eventually should be a variable number, depending on the container.
+- Updated slot checks to be in-line with actual slot limits.
+- Prevent multiple items in the same gemContainer slot: if the destination
+  slot's full, simply retry, looking for a free slot.  (No stacking yet.)
+- Fix max quality stacking exploit.  Max qualities will now average for items
+  which have PSITEMSTATS_FLAG_AVERAGEQUALITY set...otherwise they won't stack.
+
+*** 2007-06-17 by Keith Fulton
+- Now if you are the author of a sketch and you resize/reposition the sketch, 
+  the pos and size are saved as part of the sketch, to allow us to have small 
+  and big sketches.
+- Made icons also resize according to the resolution settings, so now sketches will
+  look basically the same across all resolutions.
+
+*** 2007-06-17 by Kenny Graunke
+- Fix "too few arguments for format" bug in SetProgressionPoints.
+- Split SlotManager out into its own source files - easier to find stuff.
+
+*** 2007-06-16 by Arianna Benigno
+- Alejandro Blanes has fixed the petition window to display the closed petitions as well.
+  The resolution of such petitions is displayed in the description of the petition.
+- Fixed bug #1615 by Alejandro Blanes. The list of advice requests was containing also 
+  already answered advices. Also the validity of the advice request is now checked.
+- Fixed bug #2036 by Bas van den Broek. /awardexp can't reward more than 100 pp per time
+  (this in order to avoid some overflow).
+- Completed the fix for bug #1882 by Alejandro Blanes. Camera options is save correctly 
+  and restored correctly.
+
+*** 2007-06-16 Dave Bentham
+- Fixed bug #2364 - improved handling of Quest notebook window.
+
+*** 2007-06-15 Arianna Benigno
+- Fixed part of bug #1882, by Alejandro "deathkiller" Blanes. Camera and details 
+  options are now working in the options window. 
+
+*** 2007-06-12 Thomas Towey
+- Fixed subscription slot string to use the slot id from the message instead 
+  of the index.
+- Changed back slot id for client message to view item container contents.
+- Removed slot parameter from remove item from container call since it already 
+  has item pointer and slot is not used.
+- Fixed container object to support slot id.  Items put into specific slots 
+  stay there.
+- Changed logic for world containers to support location in parent.  This included 
+  some slot manager code.  In general use PSCHARACTER_SLOT_NONE if you do not care 
+  which slot, otherwise use the   specific slot enumeration for inventory or the 
+  slot index for containers.
+- Changes repopulate items to use container database location in parrents slot information.
+- Changed crafting code to use container manipulation functions correctly.
+- Added fucntion to set items parent item instance id.
+
+*** 2007-06-10 Thomas Towey
+- Fixed craft cache delete memory error.
+
+*** 2007-06-08 by Kenny Graunke
+- Fixed container window so it updates correctly for both inventory and world
+  containers.
+  - Renamed sigClearAllSlots to sigClearInventorySlots, and added a
+    sigClearContainerSlots.
+  - The container window subscribes all slots to sigClearContainerSlots, but
+    also to sigClearInventorySlots for inventory containers.  World containers
+    should -not- be cleared when the inventory is resent.
+- Removed useless parentItem fields from psSlotMovementMsg,
+  psViewItemDescription, psWriteBookMessage, and psReadBookTextMessage.
+  Updated corresponding code.  It was only necessary with recursive containers,
+  and was just confusing.
+  => NETVERSION BUMPED!
+- Fixed bugs where you could not view items/read books which were in
+  containers.
+
+*** 2007-06-07 by Arianna Benigno
+- Added /fish command by Sasha Levin. For using the command the database needs to be
+  changed with some data.
+- Fixed part of bug #2714 still by Sasha Levin. Added an "exchange all" button in the
+  merchange window.
+- Patch for bug #2551 from Bas van den Broek (Lanarel), to split the money among the 
+  "lootable" clients.
+
+*** 2007-06-06 by Arianna Benigno
+- Fixed bug #2372 by Sasha Levin. The money display is updated when training, now.
+
+*** 2007-06-02 by Thomas Towey
+- Added craft info support.  it will be easy to finish once we decide the est way to present it to   players.
+
+*** 2007-06-02 by Arianna Benigno
+- Fixed bug #2735 by Sasha Levin. Libpsnet was crashing if compiled with 
+  #PACKETDDEBUG.
+
+*** 2007-06-01 by Keith Fulton
+- Fixed sketch to be resolution-independent and to be resizable in 
+  edit mode only.
+
+*** 2007-05-23 by Keith Fulton
+- Fixed resize and movable flags in sketch window.
+- Also fixed resizing and moving the sketch window around with the mouse.
+- Be sure to update /data/gui to get this working.
+
+*** 2007-05-23 by Tom Towey
+- Fixed remaining workmanager code to work with new containers.
+- Added a server crash check on bad container iterator pointer
+- Changed item stats for new dough item to allow right and left hand equiping.
+
+*** 2007-05-23 by Keith Fulton
+- Added a "toolbar" to the top of the Sketch Window.  Update data/gui and 
+  svn to get everything for it.
+- Minor formatting fixes.
+
+*** 2007-05-22 by Tom Towey
+- Changed stop auto work call for stopping crafting to correct stop work call.
+- Changed item instances and stats for testing containers.
+
+*** 2007-05-22 by Kenny Graunke
+- Fixes for bugs 2709 and 2710 by Sasha Levin and myself.  Thanks Sasha!
+
+*** 2007-05-22 by Andrew Robberts
+- Added better widget resolving to pawsScript.  Now it will go through the
+  parents of the current widget to try and find the referenced widget.
+- Calling pawsScript::Execute() on an invalid script no longer crashes.
+
+*** 2007-05-21 by Tom Towey
+- Added some item and trade data to test craft code.
+
+*** 2007-05-21 by Kenny Graunke
+- Fix bug where the equipment array was not initialized on inventory load:
+  All equipment already in-place when you logged on had no effect whatsoever.
+  You could look like you had a claymore, but hit for the damage of a fist. :)
+- Initial fix for bug 2640 - players can no longer escape encumbrance by
+  logging off and on again.  However, there's no clear indication of -why- the
+  player can't move, so more work needs to be done.
+
+*** 2007-05-20 by Dave Bentham
+- BUY_PERSONALISE flag support for item_stats of 'blank' items that are
+  bought from a merchant and then 'personalised' by the buyer; such 
+  initial items being blank maps and books which get renamed, e.g. 
+  "Book of <name>".
+
+*** 2007-05-20 by Tom Towey
+- Added hash table access to combine and transform cache.
+- Removed old unused character work info.
+- Removed old unused autocontainer structure.
+- Added action location test quest script.
+
+*** 2007-05-19 by Anders Reggestad
+- Fixed so that multiple triggers all get inserted with errors. Only the last
+  where entered correctly as "trigger error" in the dictionary.
+- Added back in handling of prerequistite for error responses to a quest
+  trigger.
+- Changed back the quest_scripts.sql file to have quest test instructions
+  in [] instead of (). () is used for error responses so all quest tests
+  didn't work.
+
+*** 2007-05-19 by Keith Fulton
+- Fixed Luca's reported bug about spells working, but having the text say 
+  "no effect" even when there was an effect.  This was a bug due to a hacky 
+  thing in progression events, where the Run() function returns a "result"
+  from the script to enable certain cases to use a calculated value.  Not 
+  all prog events actually return numeric results though, so the callers 
+  that check for non-zero success think it failed when it actually worked.
+- Also renamed FireEvent to QueueEvent, for clarity.
+- Committing patch from Brandon Rioja which interrupts any WORK in progress
+  if you move.  This fixes a fatigue bug (#2029).
+- Minor reformatting.
+
+*** 2007-05-18 by Kenny Graunke
+- Fix most recent form of bug #2579, "Partial stacks in exchange are broken."
+  The same item was being repeatedly purged from each character's inventory.
+- Commit patch from Brandon Rioja which prevents players from using /unstick
+  for the first 15 seconds after beginning to fall (or until they hit the
+  ground).  This way, they can't jump off cliffs and use /unstick to save
+  themselves, but they can wait and use it if they're really stuck.
+
+*** 2007-05-17 by Keith Fulton
+- Committing patch by Richard Ortiz, which makes the little resize handle  
+  on any pawsWidget fade with the alpha of the parent window.  Thanks Richard!
+
+*** 2007-05-17 by Anders Reggestad
+- Fixed a integer that where printed using %f.
+- Fixed a LOG_NPC debug text where two parameters where swaped.
+- Completed Acraig's change from 10th of May to Downcase trigger areas.
+  - NPC's name is now downcased when added as KA for the NPC.
+  - Area is downcased when loaded from db.
+
+*** 2007-05-17 by Kenny Graunke
+- Commit patches from Brandon Rioja: Fixes bug #2372 (fall damage on unstick),
+  and also makes /unstick much less likely to consider states where you're
+  falling as valid locations to restore you to.  Thanks, Brandon!
+- Add "Buffed Sword of Strength" and "Buffed Sword of Negativity" testing
+  swords to CVS database.  The former adds +30 STR, +3 Sword, while the
+  latter does -50 STR, -5 Sword.
+
+*** 2007-05-16 by Kenny Graunke
+- Fix partial stack drops, broken 2007-05-12 by Sasha (via Keith).
+
+*** 2007-05-15 by Keith Fulton
+- Changed acraig's optional parameter in Inventory.Add() which broke every
+  other call to Add in the code.  Fixed Talad's reported /buy error.
+
+*** 2007-05-15 by Kenny Graunke
+- Remove check for falling on /unstick, as the system usually thinks you
+  are falling when you're stuck.
+- Commit a patch from Sasha Levin (Kemedes) to send a message when changing
+  a member's guild points.
+
+*** 2007-05-15 by Anders Reggestad
+- Cache collisiondetection pointer for npcs in superclient.
+- Turn of CD for paths. We decide where the path should go
+  so make sure it goes out of way for obstructions. This will
+  save a lot of CPU.
+
+*** 2007-05-15 by Keith Fulton
+- Committing two patches by Sasha Levin, to make /away off only work on the whole 
+  word "off", and to enable "/me" and "/my" commands in away messages.
+
+*** 2007-05-13 by Andrew Craig
+- Fixed up many ownership issues when dealing with containers.  Now behaviour is:
+    -> Items dropped into containers that can be picked up have no owner
+    -> Items dropped into containers that cannot be picked up are still owned by 
+       the player. 
+- Item ownership now correctly set when dropping and picking up containers.  Before
+  the internal items were not updated ( or even transfered ).       
+- Fixed up some GUI issues with having to re-open the container window.  Whenever 
+  the inventory was sent it was clearing all widgets.  Even those in the containers.
+- StopAuto work now called when item removed from GEM container.  
+  
+         
+*** 2007-05-12 by Tom Towey
+- Put all the action location response XML parsing in the cache load to make it easier to add entrance info.
+- Added can transform vertual to check for autotransform gemContainers.
+- Changed the stack count of the entrance key to 10.
+- Changed container from psItem to gemContainer.
+- Added experience points for sucessful skill based crafting.
+- Also tweeked quality calculation to be less extreem.
+
+*** 2007-05-12 by Dave Bentham
+- Fixed bug #2420: non-offensive spells do not allow "kill-steal".
+
+*** 2007-05-12 by Kenny Graunke
+- Save experience points whenever progression points are saved.  Fixes small
+  exp. exploit when the server crashes.
+
+*** 2007-05-12 by Keith Fulton
+- Committing a patch by Sasha Levin to make the mysql connect port instead 
+  of being hard-coded to use the default port.  Thanks Sasha!
+- Committing two more fixes from Sasha Levin.  STA bug when digging (#1758) 
+  and losing an inventory item when dropping in world while repairing.  (#2650)
+  Thanks Sasha (Kemedes)!
+
+*** 2007-05-12 by Anders Reggestad
+- Added check to KnowledgeArea < operator to make it sort
+  first on priority and than area.
+- Fixed full inventory for tribe members that collect resources. They
+  now transfere the item out of inventory and into the tribe. 
+  - Added new transfer command and perception between server and
+    superclient => NPCNETVERSION bumped!
+  - Added new behavior transfer. For a tribe when at home the behavior
+    <transfer item="tribe:wealth" target="tribe" /> should be added.
+  - Changed tribe to modify wealth on transfer perception instead of
+    inventory perceptions.
+- Fixed showinvf console command to display correct item count.
+- Added count to inventory perception commands to superclient.
+
+*** 2007-05-11 by Kenny Graunke
+- Bugfix - glyphs were being unpurified when moving between slots.
+- Streamlined exchange code for updating client offering/receiving views:
+  - The client who calls AddItem, MoveItem, or RemoveItem is clearly
+    altering their own offering.  In one-player exchanges, this is enough;
+    in two-player exchanges, the other client's receiving window should be
+    updated as well.
+  - New methods SendAddItemMessage and SendRemoveItemMessage in Exchange send
+    messages to update the Offering window; they are overridden in
+    PlayerToPlayerExchange to also update the receiving window of the "other"
+    client.  No need to constantly check for starterClient vs. targetClient.
+  - I rewrote AddItem, MoveItem, and RemoveItem to use these instead of
+    UpdateOffering, UpdaterReceiving, RemoveOffering, and RemoveReceiving.
+- This fixed several bugs, including:
+  - The targetCharacter could not move items in their offering window.
+  - When the starterCharacter moved offered items within the window, that
+    change was not reflected in the recipient's receiving window.  They could
+    then move those items out of the exchange, tricking the recipient into
+    thinking they were getting more than they actually did.
+- Fix from Brandon Rioja: psCharacterInventory::GetCurrentTotalWeight needed
+  to return a float, since weights can be fractional.
+
+*** 2007-05-10 by Andrew Craig
+- NPC trigger areas are now downcased when added and checked. 
+
+*** 2007-05-10 by Kenny Graunke
+- Fix psCharacterInventory::Add() - missed converting a few returns.  Fixes
+  crashes on inventory send.
+
+*** 2007-05-09 by Kenny Graunke
+- Move item Save() calls into psCharacterInventory::Add(). This should
+  increase our chances of getting the DB saves at the right time.
+  - Also removed saves no longer necessary after this change.
+- Reworked max stack count code to be simpler:
+  - CheckStackableWith now fails if combining stacks would exceed the limit.
+  - CombineStack now CS_ASSERTs that they must be stackable, as you should
+    check first.  It also only combines both stacks fully - remainders are
+    too easy to mishandle.
+- Hooked up NPC inventory perceptions.
+- Made Add respect the test flag in non-stacking cases.
+- Small bugfix for container window: when viewing a container with no icon, it
+  would still show the icon for the last container you viewed.
+
+*** 2007-05-08 by Kenny Graunke
+- Restore CVS data to match Daniel's book text -> item_stats change, so the
+  server doesn't try to load Fists into the world.
+- Fix FS#19/massive duping when the client sent stack counts that were too
+  large.
+- Bugfix: The stack count was not being updated in the DB when combining
+  stacks via slot movement.
+- Bugfix: The gemItem wasn't being removed when picking up coins.
+
+*** 2007-05-07 by Kenny Graunke
+- Add an assert in psItem::Save to prevent saving items in slot NONE which are
+  still owned.
+- Fix EntityManager::MoveItemToWorld so dropped items aren't still owned by
+  the one dropping the item; this caused the dropped items to be reloaded into
+  the character's inventory on relog.
+- Fix FS#18/PBT#2678 - glyph duplication.  The original stack wasn't being
+  saved to the DB after being split.
+
+*** 2007-05-06 by Kenny Graunke
+- Update compiling.html for 0.3.019...or thereabouts.
+- Fix a bug where the mind slot was being cleared on a sigClearGlyphSlots
+  signal...once for each slot in the glyph combination window.
+- Bugfix: Trying to apply a HP script on someone with 100% HP would fail
+  with a message "so and so doesn't have any wounds" - even if you were trying
+  to do damage.  As a result no offensive spells worked.
+
+*** 2007-05-05 by Daniel Fryer
+- Moved book text back into item_stats
+
+*** 2007-05-04 by Kenny Graunke
+- Patch from Ivan Avramovic to make the server and superclient use GMT instead
+  of local time.  Thanks!  (A related client patch will go in shortly.)
+
+*** 2007-05-03 by Tom Towey
+- Set to 0,0,0 the landing co-ordinates for Gm created action location entrance.
+- Added the new container logic to handle removing items while using container iterators.
+
+*** 2007-05-03 by Andrew Craig
+- Patch from Thom to make the combo widget look a bit better. 
+
+*** 2007-05-02 by Andrew Robberts
+- Added subscribe/publish support to pawsscrollbar
+- Fixed mathscript so that it verifies that the assignee is valid, so that lines
+  such as 'Options:Save(blah = 2);' don't get confused with having an assignee.
+- Added a springyness option to pscamera and new option system.
+- Fixed pawseditor jamfile to include link to fparser
+- Fixed bug with mouse down event in pawsScript.  Thanks to Lanarel for the help
+  in solving this issue.
+
+*** 2007-05-02 by Kenny Graunke
+- Put an insertion in MathScript at aarobber's request: it will detect broken
+  MathScripts which had no spaces around the = sign.  These will behave
+  differently now, as such lines were previously not executed and given a
+  default value of 0.
+- "Fixed" DV and TargetDV lines in Calculate Damage script so they don't
+  trigger said assertion..
+- Fixed a few non-virtual destructor issues/warnings.
+- Fixed a few issues with acraig/rioja's patch to stance changes:
+  - Updated the default stance when attacked to FULL_DEFENSIVE instead of BLOODY.
+  - Removed PSCHARACTER_STANCE_DUMMY.  We had one of those before and I used
+    it to make a bug.  The proper stance to use is NORMAL.
+  - Add assertion to SetCharacterStance to make sure no dummy value is ever used.
+
+*** 2007-05-01 by Andrew Craig
+- Fixed issue with Faction list in the skill window where it was
+  setting the faction value to the wrong widget.
+- Patch from brandon:
+When a message file is to be played, a message is created and sent to the
+client to play a file. The server leaks this message. One time this
+happens is when the client unequips a weapon. This change adds a msg
+cracker for the  playsound message type and uses it.
+
+This one fixes the bloody stance not getting too tired message. Tired
+gets set to 0, in a bloody stance the next line checks to see if the
+current stamina is strictly less than the max stamina times tired. If
+tired is 0 then the statement will never evaluate to true because
+nothing can be less than zero. The least intrusive change would be to
+add a smudge to tired, using <= would not be ideal because equality for
+floating point number is undefined.
+
+Another point to note is that bloody stance has a value of 1 in the
+message, but the enum shows a full defensive stance.  The stance enum is
+in reverse from the message sent to the server! 
+
+*** 2007-05-01 by Andrew Robberts
+- Fixed jamfile for pawseditor to link with fparser
+
+*** 2007-05-01 by Andrew Robberts
+- Changed MathScript so that a space isn't needed before and/or after an 
+  assignment '='.
+- Change MathScript so that a line doesn't need to assign its value to a
+  variable.  If there is no assignee variable, then the MathScript line
+  will simply be evaluated and the result thrown away.  This is useful
+  for lines that just call a function without needing a return value
+  (ie, Options:Save();).
+- Fixed pawsScript for the above MathScript changes.
+
+*** 2007-05-01 by Kenny Graunke
+- Temporarily disable all trading of containers as a stop-gap to prevent many
+  bugs.  See bugs.hydlaa.com #2659.
+- Disallow the sale of non-empty containers - not only did it trigger bugs,
+  but the player likely didn't realize what they were doing.  Fixes bug #2600.
+- Fix bug when dropping an item onto an exchange slot which already had an
+  item in it.  I made it require an empty slot, though swapping would be better.
+
+*** 2007-04-31 by Andrew Robberts
+- Committed a working chat bubble texture in binary mode instead of text.
+
+*** 2007-04-31 by Andrew Robberts
+- Added shell for new options system.  Only one option in psCamera is currently
+  implemented, but the new system can be tested out by making widget in 
+  data/gui/newoptions.xml visible.
+- Added the ability to make any class accessible to PAWS scripts.
+- Added a mousedown event for PAWS scripts.
+
+*** 2007-04-30 by Kenny Graunke
+- Change all %zu's to %lu's in my last commit - apparently MSVC does not
+  comply to the C99 standard.  I guess %zu works in CS calls but not printf.
+  %lu seems to work on both MSVC and gcc.
+
+*** 2007-04-30 by Andrew Robberts
+- Changed the way compound functions work in mathscript.  In the old version, something
+  like Target:blah(23) would become blah(Target, 23) and the custom blah function would
+  need to be specifically defined in mathscript.  In the new system, Target:blah(23) becomes
+  customCompoundFunc3(A, Target, 23) where A is the index of the word "blah" in a lookup
+  table.  This allows for functions to be specified solely in the iScritableVar and not
+  need any special code in mathscript.
+- Removed specific server mathscript functions from mathscript.cpp; they now use the new
+  system.
+
+*** 2007-04-30 by Kenny Graunke
+- Fix over 90 simple compiler warnings.
+- Move FindFreeEquipSlot to psCharacterInventory, where it belongs.
+
+*** 2007-04-29 by Kenny Graunke
+- Fix a non-POD crash and finish Michael's work at making PS -Wnon-virtual-dtor clean.
+
+*** 2007-04-29 by Michael Gist
+- Updated jam, autoconf and configure.ac files from CS. Run autogen.sh and configure
+  again. This should fix several problems.
+- Compile fix and lots of warning fixes.
+
+*** 2007-04-29 by Andrew Robberts
+- Added a pawsSimpleWindow factory.  The purpose of this is to be a base window
+  widget so that it's possible to create a paws window that completely utilizes 
+  paws scripts and the pub/sub system (ie, no C++ code needed at all).
+- Added a data file (data/gui/customwidgetslist.xml) that allows users to specify
+  extra paws widget .xml files to load without needing to recompile the client
+
+*** 2007-04-29 by Andrew Robberts
+- Removed the dependency to psserver from mathscript.
+- Added changed value callback support for mathscript variables.
+- Added pawsScript, which is a simple scripting system for paws windows
+
+*** 2007-04-29 by Kenny Graunke
+- Enforce the rule container -> !stackable in psItemStats; complain if data
+  tries to set both CONTAINER and STACKABLE.  Stacking non-empty containers
+  will likely result in permanently lost items, and there's no clear meaning
+  to trying to do so.
+- Fix CVS item_stats data so Sack and Book Container aren't stackable.
+
+*** 2007-04-28 by Keith Fulton
+- Now dropping an item checks first for whether the item is in use, in a repair for
+  example.
+
+*** 2007-04-28 by Kenny Graunke
+- Broadcast updated guild MOTD to all members when it changes; also sends the
+  new one in the system tab, thanks to Socia.
+- Bugfix (possibly 2644): When asked to move an item into a container slot,
+  SlotManager looked for the proposed parent item, but didn't actually verify
+  that it was a container.  Made psCharacterInventory::CheckSlotRequirements
+  check for this condition.
+- Commit a less broken StaminaMove script for testers (still fake though).
+
+*** 2007-04-28 by Andrew Robberts
+- Fixed calculation of shadow size under entities and made the shadow less visible.
+- Added an options file "data/options/chatbubbles.xml" for chat bubbles.  This file
+  holds settings for what bubbles appear for what chat messages.
+- Added the ability to delay the execution of any progression event.  Just use the
+  format: <evt delay="blah"> where blah is any valid mathscript.
+
+*** 2007-04-28 by Kenny Graunke
+- Made pawsManager not broadcast UNKNOWN/empty data on a new subscription.
+- Implemented publish-nothing method in pawsManager:
+    void PawsManager::Publish(const char *dataname);
+  When called, it will publish UNKNOWN/empty data to all subscribers.
+  This can be used for one-time named signals - things like sigClearAllSlots
+  which need to send a message to a lot of widgets, but which you do -not-
+  want to cache.
+- Made pawsSlot publish "" for invslot_N when it receives a sigClear message.
+  This prevents phantom data from reappearing in the container window when
+  resubscribing.  Should fix the rest of bug 2607 and possibly 2644.
+
+*** 2007-04-26 by Kenny Graunke
+- Bugfix: psGUIInventoryMessages were restricting the number of possible items
+  to the # of inventory slots + the # of equipment slots.  This is no longer
+  correct, as inventory-container items are sent in that message, too.
+  The symptom was that if you filled up more than 48 slots (all of bulk and
+  some containers), then you couldn't see all your items and the client would
+  complain loudly. Switched it to use a dynamic array and send as many items
+  as it needs to.
+- Bugfixes: psCharacterInventory::Add() would place items into
+  PSCHARACTER_SLOT_NONE if bulk was full, the first container encountered was
+  full, and the slot given was < 0 (as it is by default).  Also, it was
+  claiming success even if it failed.
+- Remove MoveItem method, which is both unused and broken.
+
+*** 2007-04-26 by Arianna Benigno
+- Inserting credit for Andrew J. Roll (Pakot) who committed some config lines in 
+  /planeshift/data/gldrivers.xml for S3TC support in Mesa DRI R200 (which was 
+  broken) and GeForce 6600/PCI/SSE2/3DNOW (for Linux) where the sky corruption 
+  was reported. The file is in CS SVN but it was found during PS investigation.
+
+*** 2007-04-23 by Keith Fulton
+- Fixed exchange messages "Vengeance gave Guest 5 Batters" now uses the correct number
+  of offered items instead of the stackcount of the underlying inventory item.
+- Changed "gave" messages to also just use First names to shorten them a bit.
+- This fixes #2622 and perhaps #2579.
+- I could not duplicate the report that the other party never gets quantity updates.
+  I got all offered quantity updates here.
+
+*** 2007-04-22 by Keith Fulton
+- Fix for aarobber's entity labels
+- 6 minor fixes from Brandon Rioja's valgrind debugging of the server.
+
+*** 2007-04-21 by Andrew Robberts
+- Added the ability to have 2D screen elements in effects.
+- Made chat bubbles 2D.
+- Uncomment #define DISABLE_CHAT_BUBBLES at top of src/client/chatbubbles.cpp to
+  enable chat bubbles.
+
+*** 2007-04-21 by Keith Fulton
+- Fixed bug where putting things in an exchange offering slot, then taking a partial
+  stack back out, wasn't working at all.  I believe offerings and inventory now stay
+  consistent as you move things back and forth.
+- This fixes bug 2622.
+
+*** 2007-04-21 by Kenny Graunke
+- Fixed bug #2623: English language improvements to exchange confirmation.
+- Fixed bug #2620: The "so and so dropped something" message was using the
+  object's quantity -after- drop.  Since dropped items can stack with others,
+  this was the quantity of that whole stack, rather than the quantity dropped.
+  
+*** 2007-04-20 by Kenny Graunke
+- Fixed resurrected bug #2437: Now you can't drop items from the inventory
+  into the glyph combination window, nor does dropping an item from the glyph
+  window onto an inventory item start a drag.
+- Fix crash in pawsSlot::OnUpdateData: If a slot subscribed to a signal that'd
+  already existed, but didn't have any previous data, it'd try to set it to
+  bogus data.
+- Made pawsSlots clear when sent an empty signal.
+- Some progress on bug #2607: containers no longer show each other's items,
+  but moving an item in a container, switching the view to another, and back,
+  still shows the item in both locations.  Guessing the subscription still had
+  old data that wasn't cleared.
+
+*** 2007-04-19 by Keith Fulton
+- Took out something that was saving every item in the world on initial startup, right
+  after each item was loaded, which was weird.
+- Now you cannot move items around in your inventory if they are being offered in
+  an exchange.  This should fix (block) an entire category of bugs from occurring.
+
+*** 2007-04-18 by Kenny Graunke
+- Silence a double->int conversion warning - it's intentional.
+- Fix server build under MSVC, broken by my StatDR change...uint32_t wasn't
+  defined in servervitals.cpp.  Thanks, Arianna.
+
+*** 2007-04-18 by Dave Bentham
+- randomloot server console command added.
+  randomloot "<base item>" <#modifiers> Generates and dumps stats for a
+  random generated item, applying 0-3 modifiers, to the console. For example
+  randomloot "broad sword" 2
+
+*** 2007-04-17 by Kenny Graunke
+- Use strcasecmp instead of stricmp (which is non-portable) in quest code.
+- Change all gemContainer iterators to be stack-allocated.
+- Rework how psStatDRMessages work: it was including pscharacter.h, resulting
+  in the client including server code.  Not good.
+  - Moved from common/engine/drmessage.* to common/net/messages.*
+  - Changed it to accept arrays of parameters; servervitals populates them.
+  - ServerVitals also sends it so I don't have to pass it back, usually just
+    to be sent anyway.  It won't send it unless it's considered "useful".
+
+*** 2007-04-16 by Tom Towey
+-  Do case indifferent compare in get quest by name function.
+-  Fixed comments about stacking item for crafting in gem.cpp.
+-  Uncommenting craft container code now that gemcontainer is working.  This will allow further testing.
+
+*** 2007-04-16 by Kenny Graunke
+- Update compiling.html for aarobber's new CS dates: CS 26768, CEL 2703.
+
+*** 2007-04-16 by Andrew Robberts
+- Fixed up shadows.
+
+*** 2007-04-15 by Kenny Graunke
+- Patch from Brandon Rioja to fix crash on item drop.  Thanks!
+
+*** 2007-04-15 by Tom Towey
+- Uncommented out some craft container logic that was off until container code was completed.  
+  Needs a take out of container call of some sort and it should be back to normal.
+
+*** 2007-04-14 by Keith Fulton
+- Committed fix for sound uninitialized sound variable, found by Brandon Rioja.
+- Also committing remedy to Hit and Run attacks in the PvP area.  Now you can attack
+  anyone who has done you damage, whether either of you is still in a PVP area or not,
+  so it is useless to run outside the area.
+
+*** 2007-04-14 by Michael Gist
+- Fixed two bugs in character selection related to deletion.
+- Small cleanups in pawscharpick.
+
+** 2007-04-14 by Kenny Graunke
+- Fix bug #2437 - glyph window now only shows kinds of glyphs, not individual
+  glyphs nor stacks.  Rewrote much of the code to handle this on both ends, to
+  simplify it.  Also removed stack count field from the network message.
+  => NETVERSION BUMP!
+
+** 2007-04-13 by Kenny Graunke
+- Fix so glyphs remain purified on load.
+- Fix bug #2582: location.worldInstance was being used uninitialized. I set it
+  to 0 in psItem's constructor.
+
+** 2007-04-13 by Michael Gist
+- Refactor and fixes to spell researching.
+- Removed save spell button. Researching automatically saves to spell book on success.
+  MSGTYPE_SAVE_SPELL is removed with this change.
+- Moved MSGTYPE_PING to the top of the list as suggested by Nilaya.
+  After netversion bumps, the client should always see a ping and the helpful version message
+  instead of a FAILED when logging in.
+- NETVERSION BUMP!!!
+- Removed unused and unneeded min_range/varMinRange from spells code.
+
+*** 2007-04-13 by Kenny Graunke
+- Add security override at Xordan's request: developers (level 30) can now
+  cast spells without having them in their spellbook nor having the proper
+  purified glyphs.
+
+*** 2007-04-13 by Anders Reggestad
+- Fixed /setskill to work correctly with MAX_STATS > MAX_SKILL.
+
+*** 2007-04-13 by Kenny Graunke
+- Made Combine Glyphs window update on slot movement/inventory interaction,
+  as well as the inventory window. (Bug #2437.)
+- Made both windows update when spawning via /item.  Attempted the same for
+  /giveitem, /takeitem, and key code.
+- Fixed psEffectObj::Show, which was toggling CS_ENTITY_INVISIBLE instead of
+  CS_ENTITY_INVISIBLEMESH.  This meant that NOHITBEAM was also toggled,
+  resulting in effects like entity labels being clickable.
+
+*** 2007-04-12 by Kenny Graunke
+- Fix pawsTree - decorators and layouts were not being set properly in cases
+  where Setup() isn't called.  Notably, /help and /item were broken.
+- Try to fix issues introduced by removing MoveToInventory - Add actually
+  returns 0 on success, which translates to -false-, making several cases do
+  exactly the wrong thing.
+
+*** 2007-04-12 by Anders Reggestad
+- Changed chase npc client operation to accept vel attribute.
+- Changed rotate to use rot_vel attribute name for rotation velocity.
+- Updated test data for the rot_vel attribute name change.
+- Fixed a crash in the server where UpdateItemView where called for
+  superclients.
+
+*** 2007-04-11 by Kenny Graunke
+- Refactor dropping, part 1: removed SlotManager::DropInWorld, updated
+  psCharacter's DropItem to do everything needed.
+- Implemented new inventory method, AddOrDrop(), which attempts to add an
+  item to the inventory, or, failing that, drops it.
+- Removed psCharacter::MoveToInventory in favor of either Add or AddOrDrop.
+  - Moved ScheduleRespawn() code to gem pickup code.
+  - NPC perception code belongs in Add(), but commented for now.
+- Converted all other code for these two changes.
+- Implemented dropping items for NPCs, which had been broken for some time.
+
+*** 2007-04-10 by Andrew Craig
+- Updated faction details so that information is sent when it is changed.
+- Update the FactionOp to allow inverse effects to be handled ( for example,
+  charm spells or equipment that can wear off ).
+
+*** 2007-04-10 by Thomas Towey
+- Added function to get an items quality level.
+- Added quality level to item name and stack count if specified in quest.
+- If item is crafted by player it adds quality to exchange trigger.
+- Added quality adjective to item description.
+- Removed description: 0 from descriptionless item description.
+- Removed some old unused craft cache code.
+- Updated some comments and debug messages in workmanager.
+
+*** 2007-04-10 by Thomas Towey
+- Check for repair weapon in progress when combat started.
+- Create stop repair function and call it when getting unstuck.
+  These are both from prospect Piriel.
+
+*** 2007-04-09 by Keith Fulton
+- Several patches for memory leaks and uninitialized variables found
+  by prospect Brandon Rioja using valgrind.  Keep going Brandon!
+
+*** 2007-04-09 by Anders Reggestad
+- Added edit of npc_spell_category for WC spell edit.
+- Seting peace for npcs when super client disconnect. Where setting
+  unknown mode that was filtered out in the set function so it realy
+  didn't have any effect.
+- Updated WC to better handling editing of regions when a sector is
+  selected.
+
+*** 2007-04-08 by Kenny Graunke
+- Fix bug #2508, "Can equip stacks due to issue with item-switching."
+
+*** 2007-04-08 by Anders Reggestad
+- Fixed so that DR messages is only sent once for each tick for each
+  NPC.
+
+*** 2007-04-07 by Kenny Graunke
+- Make CreateFamiliarOp silently not support inverse operations to silence a
+  "You already have a familiar" message on ring unequip.
+- Allow dropping items directly from gemContainers.
+
+*** 2007-04-07 by Anders Reggestad
+- Added a number of lookup tables to the npcclient. Replaced a number
+  of loops with lookups in the new tables.
+- Included the check for DoLog in the wrapper for each log function so that
+  we can do minimal work when not logging.
+- Renamed some of the stores in npc client. This to make it clear what they
+  contain and make it easier to create new stores for the same data stored
+  on diffrent keys. This should in future reduce the need for looping over
+  big tables in the npc client.
+- Removed some db queries when tell can't find the player online.
+- Modified /changename to be able to use pid:<id> for the player name eaven
+  when the name of the character with id is the same as another character.
+
+*** 2007-04-06 by Kenny Graunke
+- Sweeping changes to how inventory handles equipment: now, equipment scripts
+  and messages are done whenever psItem::UpdateInventoryStatus is called.  If
+  it was in an equipment slot, it unequips...if it is after the move, it equips.
+  Basically, the right thing automatically happens with few exceptions.
+
+*** 2007-04-06 by Anders Reggestad
+- Added save of tribe resources to db. => DB VERSION BUMPED.
+- Added resource nick to tribe table. This to use the nick when digging.
+- Updated WC to display and edit the name of waypoints.
+- Updated WC to display WP with allow return and links with no_wander
+  in different colors.
+
+*** 2007-04-05 by Anders Reggestad
+- Updated dig operation to handle the resource name "tribe:wealth" that will
+  ask the tribe for the wealth resource for that tribe.
+
+*** 2007-04-05 by Kenny Graunke
+- Made the const char* version of ProgressionManager::ProcessEvent handle
+  inverse operations as well as the ProgressionEvent* version. Simplifies code.
+
+*** 2007-04-04 by Kenny Graunke
+- Fix from Brandon Rioja - pawseditor was relying on case insensitivity when
+  loading its GUI xml files.  This meant it wouldn't run under Linux.
+
+*** 2007-04-04 by Anders Reggestad
+- Added range to the /pos command.
+- Added range to output for locate operations for waypoints.
+- Added storing of tribe memories to the DB. => DB VERSION BUMPED.
+- Added npc flag to psPersistActor, now that we distribute player id
+  to npc client for npcs we need a new way to identify them.
+- Fixed wrong calculation of limits for locate operations in npc client.
+
+*** 2007-04-03 by Kenny Graunke
+- Code refactoring: Made psGlyph unpurify when changing owners. Previously,
+  psCharacter::DropItem, ExchangeManager::TransferOffer, and
+  WorkManager::HandleCleanupEvent all did this...but other places didn't.
+  Moving it to the root class is cleaner and ensures it will always get done.
+  Dynamic binding removes the need for checks and casts, too.
+- Fixed a bug in SlotManager::DropInWorld - it would never return success, so
+  other code would think the drop failed and re-add it to the inventory.  One
+  consequence was that you could drop the same item many times, creating
+  several gemObjects all with the same psItem pointer inside.
+
+*** 2007-04-02 by Kenny Graunke
+- Fix ability to move items into inventory containers - destSlot was being
+  computed incorrectly.
+- Made item icons visible in the GM spawn window.  You'll need a new
+  data/gui/gmspawn.xml.  => NETVERSION BUMPED!
+
+*** 2007-04-02 by Keith Fulton
+- Fix attempt to make dropping containers into the world from inventory work,
+  and have the contents of the container also follow.
+
+*** 2007-04-02 by Anders Reggestad
+- Splitted checking for proximity for items and location to run 1/4 of the
+  job every tick.
+
+*** 2007-04-01 by Kenny Graunke
+- Removed weapon_dmg_pct_* columns from item_stats table at Talad's request;
+  apparently they were all 0.  In the future, this can be part of a new XML
+  field for weapon/armor information.  The engine will still return 0 for
+  these values, so existing mathscripts should still work.
+- Added an accessor function for EQUIP_STACKABLE.
+- Added armor type to descriptions - for example, Leather Armor will say
+  "Light Armor".  People were uncertain which kind of armor their helmets were.
+- Plug small memory leak in pawsButton - kudos to Brandon Rioja.
+- Fix bug #2566?  Made small inventory window subscribe to sigClearAllSlots;
+  it seems to work now...
+- Switch to DROP TABLE IF EXISTS in unique_content.sql...otherwise
+  create_all.sql doesn't work for me.
+- Initial stab at encumbrance: Characters exceeding their max weights will
+  immediately sit, unable to move, until they solve the problem. This can be
+  done via dropping items, exchanging items, or raising your stats again via
+  spells & potions.  Prevents combat, spell casting, and all other actions.
+- Bugfix: Players could put inventory containers in other inventory containers.
+- Bugfix: Players could equip an item, then add to the stack, even if the item
+  wasn't EQUIP_STACKABLE.  Inserted a check in psItem::CheckStackableWith().
+
+*** 2007-04-01 by Keith Fulton
+- Quest reloading started by deleting the existing quest from CacheManager, then loading
+  it back in.  Deleting it cleared out all existing weak references to that quest--mostly
+  character quest assignments.  Now the quest assignment detects that it has been cleared
+  and attempts to update itself, so reloading works properly now.
+
+*** 2007-04-01 by Dave Bentham
+- Fixed bug #2504. Improved handling of cancelled spells when their cast event
+  expires.
+
+*** 2007-03-31 by Kenny Graunke
+- Fixed a bug introduced in my 3-27 commit: it worked right for equipment, but
+  not for bulk<->bulk swaps! Oops.
+
+*** 2007-03-31 by Keith Fulton
+- Fixed a bug which resulted in equipping unequippable items.  Thanks for the report,
+  Kenny.
+
+*** 2007-03-31 by Anders Reggestad
+- Updated WC for better handling of behaviors for simple NPCs
+- Updated WC for better handling of regions for NPCs
+- Modified create simple NPC to specify fields in the insert statement so
+  that a DB change dosn't break the insert.
+- Only one gemID should be deleted.
+- Added more printout when NPC's are killed because they fall through the floor.
+- Added [first] to syntax printout for '/waypoint path format [first]'
+- Added psResumeScriptEvent::ToString.
+- Changed name of game event for psNPCTick to actual be psNPcTick. The old
+  copy past value could be a little confusing when trying to read logs.
+
+*** 2007-03-31 by Kenny Graunke
+- Remove weapon_dmg_* and armor_prot_* columns from item_stats table; instead
+  use dmg_slash, dmg_blunt, dmg_pierce for both weapons and armor.
+  => DB VERSION BUMPED
+  In the future, we may add an XML field the damage types, but seeing as we
+  don't use them now, we're going to wait until we decide exactly what we want.
+- Also fixed CacheMananger::CopyItemStats in the process.  It was missing the
+  cstr_id_part_mesh column and was still using illum_definition instead of
+  sketch_definition, causing it to fail every time.  This meant that no new
+  random loot modifier combinations could be created.
+- Fixed crash in psCharacter::DropItem when the item wasn't in the inventory
+  (i.e. looting with no space to put it)
+
+*** 2007-03-30 by Keith Fulton
+- Now npc's remember the last 64 things anyone said to them that they didn't understand,
+  along with frequency.  This is in addition to the npc_bad_text permanent record.
+  The counters reset each restart, but will help Settings fix problems.
+- Now level 30 users (devs) can use "/badtext 1 10" to see the top 10 problem things
+  players say, ranked by frequency.
+
+*** 2007-03-30 by Kenny Graunke
+- Minor security/privacy fix from Cebot.
+- Fix crash in npcclient: NPC::Printf was missing a va_start.
+
+*** 2007-03-27 by Kenny Graunke
+- Fixed equip script bug in MoveToInventory: itemIndexEquipped was not cleared on
+  unequip, so the last item you unequipped's undo_equip script would run the
+  next time you equipped something in that slot.
+
+*** 2007-03-25 by Kenny Graunke
+- Simplify Venge's fix to GetEquipmentInfo - 100% static now.
+- Add a ring of agility to the database for testing purposes.
+
+*** 2007-03-25 by Daniel Fryer
+- Server side of book saving.  Book contents are now stored in the "unique_content"
+  table, and are associated with an item instance through the item_stats_unique_id
+  key.  The "WRITABLE" flag in the item_stats allows the bearer to write in the book.
+  Blank book templates should have '0' for their unique content ID or else they will
+  end up sharing content.  The migration of text from description to the content table
+  is handled in upgrade_schema.sql, hopefully in the future we will be able to 
+  examine a books description separately from reading the book.
+- Some pawstextwrap fixes from Rolenun related to cursor positioning and long word
+  wrapping.
+
+*** 2007-03-25 by Keith Fulton
+- Refactored quest parsing somewhat in preparation for extending it for other purposes.
+- Now quest scripts can be used to define KAs also.  Specify -1 for the quest ID,
+  then use the name of the KA instead of the npc name to add the specified triggers
+  and responses to KAs.
+- Fixed bad param on GetEquipmentInfo so it doesn't crash the server.  Thanks Nilaya.
+- Fixed an issue with multiple triggers in the same KA script, with ... between them.
+  Note: You do NOT need to repeat the entire name after a ... if the same name/npc
+  is being used.
+
+*** 2007-03-24 by Kenny Graunke
+- Tidying in SlotManager: Make some functions private; comment some dead code.
+
+*** 2007-03-22 by Keith Fulton
+- Committed fix to quality decay causing items to pop back to perfect sent by Socia.
+  Thanks Socia!
+- Made dialog check each word in a trigger 1 by 1 if the entire trigger is not found.
+
+*** 2007-03-21 by Keith Fulton
+- Now dev level players can see the parsed trigger when npc responses come back.
+  This is very useful for debugging dialog and seeing how it is working, what words
+  are ignored or synonyms or whatever.
+
+*** 2007-03-21 by Thomas Towey
+- Added range check for examine action locations and entrances.
+- Use selected mesh name instead of default for entrance.  
+  Right clicking now displays mesh name and stores it for use with later commands.
+- Added set and get mesh name functions.
+- Added lock name to key descriptions.
+- Coded friends craft constraint.
+
+*** 2007-03-11 by Anders Reggestad
+- Moved start of timer for next tick in npc client to start of tick function. If the
+  last tick take long time the next tick will at least be started right away.
+- Added some more timeing code
+
+*** 2007-03-18 by Dave Bentham
+- Fixed bug 2278: Active magic window now handles removal of expired spell buff &
+  debuff rows correctly.
+
+*** 2007-03-17 by Keith Fulton
+- Added support for period-separated trigger groups all in one string in trigger text.
+  Now "hello. gates. jobs. scully" makes all four triggers equivalent.  "hello" ends
+  up being the trigger of record, and the others are a dynamically created
+  trigger_group under that.
+- Refactored and corrected Split() function for this parsing, which affected a couple
+  other files.
+
+*** 2007-03-16 by Enar Vaikene
+- GCC warning and error fixes.
+
+*** 2007-03-15 by Keith Fulton
+- Fixed potion consumption now.  It is a different kind of item manipulation, with
+  deletion and separate stack splitting, etc.  But now it works.  This is bug 2458.
+
+*** 2007-03-14 by Keith Fulton
+- Fixed bug 2390 as described by Thom.  Thanks Thom.
+- Fixed bug 2458.  I cannot test the potion consumption part because I cannot spawn
+  potions here, but any auto-equip works the same way and they should all be fixed
+  now when you drop an item on the model in the middle of the inv screen.
+
+*** 2007-03-13 by Keith Fulton
+- Now unequip scripts also work, plus equip scripts work on initial character load
+  now as well.   Fixes bug 2397 and probably 2458 and 2389.
+
+*** 2007-03-12 by Keith Fulton
+- Now you can take items out of world containers and put them in your own inventory.
+- Now moving an item to an equip slot now runs scripts and recalculates stats.  Deequip
+  probably still doesn't work.
+
+*** 2007-03-12 by Andrew Craig
+- /repair now takes a slot name parameter.  So for example to 
+  repair your shield in your left hand use /repair lefthand. Will 
+  be nice to wrap in GUI at some point.
+- Pet names now check the banned list of names.  
+
+*** 2007-03-12 by Keith Fulton
+- World containers can now show their contents again.
+- Fixed bug 2466 to drop item back in same slot.
+- Now action location and entity containers should both show their contained items
+  on inspect.
+- Now dropping items on world containers works ok.  You cannot remove things from
+  them yet.
+
+*** 2007-03-12 by Kenny Graunke
+- Fixed "call will abort at runtime" issue in messages.cpp...don't pass
+  csStrings through %s.
+
+*** 2007-03-12 by Andrew Craig
+- Fixed inventory issue with meshes ( like equipment ) not showing up on characters
+  in character selection screen or in game.
+
+*** 2007-03-11 by Dave Bentham
+- Fixed bug #2114: text change: spells can be cast on 'living associates' instead of 'npcs'
+  more RP-like terminology.
+
+*** 2007-03-11 by Arianna Benigno
+- Fixed a crash that was happened while loading the client (if not updated the data/effect/misc 
+  folder), by aarobber.
+- Fixed bug #474: a player can't heal another one with 100% hp and he doesn't gain practice points.
+
+*** 2007-03-11 by Anders Reggestad
+- Updates to console handling. Each line is now prefixed with the timestamp.
+  This to make debuging more easey.
+- Integrated Log with server console to get the prefix. Should integrate the CS
+  reporter as well at a later time.
+
+*** 2007-03-10 by Enar Vaikene
+- Added missing psItem::ItemAboutToMove() function call when moving items other than
+  money to the inventory. Fixes the bug #2463 where items from the hunting locations table
+  didn't respawn when picked up.
+- Sending not handled psMapActionMessage messages to clients with the security level 30+ only.
+  No reason to spam the network and then ignore the message on the client side.
+
+*** 2007-03-09 by Anders Reggestad
+- Added support to edit location types in WC
+- Added check Yield CPU in networking thread if the input queue is full
+  and try back later one more time before dropping package.
+- Added funciton to test locations in npc client.
+- Pushed one more point of a location into the location struct so that
+  within region will work.
+- Moved ClearState for npc's from object to actor destructor so that 
+  the brain need is reset when the npc die.
+- Added reset of interruped flag to npc behaviors when Clearinig stats when they die.
+- Added so that when a npc has a region it only look for most hated
+  entities that are within the region.
+- Added test date with two more fighters that has a region. Inserted axe objects
+  in each corner of the region to see where it is.
+
+*** 2007-03-08 by Anders Reggestad
+- Commited fixes to the skillwindow and exchange window. Thanks to Caarrie.
+- Fixed drawing of NPCs maps to include waypoints/locations/natural resources.
+
+*** 2007-03-07 by Thomas Towey
+- Committed a file that did not commit for some reason that contained the al return response code.
+- Added a set radius function to action locations.
+- Added a radius value to GM created entrances allow action locations to use same mesh and be placed near each other.
+
+*** 2007-03-06 by Thomas Towey
+- Added function to populate the cached action location has arrays.
+- Added function to lookup action location based on action ID.
+- Combined return information with entrance infromation in response string.
+- Changed repair logic to combat exploit.
+
+*** 2007-03-06 by Anders Reggestad
+- KA fixes to WC. Now possible to delete KAs and edit triggers.
+
+*** 2007-03-04 by Keith Fulton
+- Fixed bug 2412 to display weight properly when inspecting item in inventory.
+- Fixed bug 2396.  Now you can view items in containers.  Also the weight and size
+  currently used in the container is displayed correctly.
+- Fixed bug 2425, server crash on item pickup.
+- Fixed several warnings in Magodra's last commit
+- Fixed numerous typos misspelling "equipped".  It has two "P"s people!  :-)
+- Fixed bug 2392 moving partial stacks around in one's own inventory.
+- Fixed bug 2393, so now you can drop money into the world from your inventory.
+- Fixed bug 2413, cannot take money out of offering on give or exchange.
+  (Note: The counts of money in your own inventory don't change until the exchange
+  is complete.  Making them change might be clearer but is difficult to do transactionally.
+  See what you think of it like it is.  If you hate it, perhaps I'll make the numbers
+  change but for now I'm viewing it as a "training" issue. :-) )
+
+*** 2007-03-02 by Keith Fulton
+- Now inventory will let you split a stack successfully.
+- Added merging of stackable items in inventory slots also.  This fixes bug 2392.
+- Fixed bug 2395, not losing money in exchanges when giving money.  Now it appears
+  to work.
+
+*** 2007-03-02 by Anders Reggestad
+- Added check to make sure the obj size for actors are no
+  less than a minimum so that ExtrapolatePosition in NPCClient
+  would not take to long time.
+- Created a queue of EIDs in GEMSupervisor so that we don't 
+  reuse EIDs right away. 1000 new eids has to be selected before
+  we start reusing from the free list.
+- Added check for null entity in interruped script operations. This
+  to prevent crash for operation that should be run when dead.
+- Cleand up some more prints in npc client. Put them eier under
+  npc->Printf or as log levels.
+- Added ScopedTimer that could be used to time the processing of a scope.
+- Changed CheckPosition to do a number of Extrapolations while
+  cel sub Extrapolation has been disabled.
+
+
+*** 2007-03-01 by Keith Fulton
+- Fixed bug 2412. Uncommented the code that calculates limits on weight and 
+  capacity whenever skills and stats are changed.
+
+*** 2007-03-01 by Kenny Graunke
+- Fixed bug 2044: The outgoing chat filter wasn't working without an explicit
+  /say, /guild, or such...and had an incomplete list of commands.  Code is now
+  much simpler too.
+
+*** 2007-03-01 by Anders Reggestad
+- Cleand up the npc client some more for easy readability. Collected
+  add and remove functions that do things in inverse order to make
+  sure nothing is done wrong on add/remove.
+- Cleand up some more npc client print functions.
+
+*** 2007-03-01 by Kenny Graunke
+- Fixed bug with training stats above 200: when loading a character, it would
+  erroneously clamp the skill to MAX_SKILL, but leave the stat at 201.  This
+  caused it to display as 200 (201) and lose ranks over 200 when training.
+
+*** 2007-02-28 by Anders Reggestad
+- Make sure that the entity pointer is cleared from the NPC when
+  receiving remove object in npc client.
+- Renamed to use PID and EID where player IDs and entity IDs are
+  used this to make sure we don't mix them up.
+- Updated prints to use "EID: %u" and "PID: %u" to print EIDs
+  and PIDs. This to make it easy to search logs for happenings
+  on particulare entites when debuging.
+- Fixed sending of persist commands only once to the super client
+  when connecting and when creating new entities. This will hopfully
+  prevent the server from flodding the npc client totaly at startup.
+
+*** 2007-02-26 by Thomas Towey
+- Made craft error code variable unsigned to support more error codes.
+- Added new combine match logic to make sure one to one match happens.
+- Fixed problem where stamina check passes with max stamina at zero.
+- Added garbage transform message for bad combinations.
+
+*** 2007-02-25 by Keith Fulton
+- Fixed bug 2411.  Merchant now respects stack count when you want to sell only part
+  of a stack to him.
+- Refactored giant merchant function in psServerChar into several more specific functions.
+- Took out a lot more unnecessary code, mostly related to items containing items.
+  All item hierarchy is now implied by parent item instance id (GetContainerID() )
+  but stored in the same flat inventory[] array.
+- Also started work on re-enabling weight and space tracking, so please test this
+  if you are one of the people testing my stuff, for which I thank you. :-)
+
+*** 2007-02-25 by Anders Reggestad
+- Changed message queue in npcclient from 100 to 300 elements.
+- Changed event manager to run next event when scheduled not waiting until
+  next 250 tick. This will make npc client movement smoother.
+- Added loading of emotions in client
+- Added printing of desimal msg number for
+  not handled messages to be able to compare
+  more easy with the log messages and numbers we
+  have in messages.h.
+- Added parsing of Log setup from config file for npcclient.
+- Changed so that npc need based on perceptions go from current need
+  if the new_need hasn't been initialized.
+
+*** 2007-02-23 by Anders Reggestad
+- Added time monitoring function in npc client Tick
+  to be able to find when cause big lags occures.
+- Updated dump of behavior lists for NPC's to include
+  more information. Should give some clue about
+  way npc's dosn't fight back from time to time.
+- Included more id's in prints.
+
+*** 2007-02-23 by Keith Fulton
+- I think dropping items in world and picking them up again now save properly, but
+  this critical feature needs more testing.  The big difference now is that the system
+  allows character ownership of items on the ground, so now the loc_sector_id is used
+  to decide if the item is "in world" or not.
+- Also, now when you drop an item, it appears in the map at the location of your mouse
+  instead of at your feet.
+- Took out a bunch of debug printfs
+- Fixed the sack inside itself stack overflow recursion bug.
+
+*** 2007-02-23 by Anders Reggestad
+- Cleand up how npc's are created in the npc client.
+- Updated cvs data for familiars so that it works to spawn them
+- Disabled pet summon limit for dev security level, need this to
+  test pet behaviors.
+- Cleand up some mixed up entity and player id's in the npc client
+
+*** 2007-02-23 by Andrew Robberts
+- Added drop shadow support
+- Fixed up decal support in planeshift
+
+*** 2007-02-22 by Kenny Graunke
+- Move decal includes to inside the #ifdef at aarobber's request.
+
+*** 2007-02-22 by Keith Fulton
+- Fixed error reporting and item spawning in world.  Not sure about containers but
+  in general, items appear in the world now.
+- Picking up Items from world seems to work now, as does dropping them on the ground.
+
+*** 2007-02-22 by Andrew Robberts
+- Added decal support to effects system.
+
+*** 2007-02-21 by Keith Fulton
+- Fixed detecting and adding bought (added) items to empty slots in containers when
+  bulk inventory is full.
+- Added the start of auto-dropping (but retaining) items on the ground.
+
+*** 2007-02-21 by Andrew Robberts
+- A bit of further tweaking to the size of entity labels.
+
+*** 2007-02-21 by Andrew Robberts
+- Fixed display problem with entity labels. (bug #2381)
+- I may have fixed crashing in entity labels when canvas visibilty changes
+  (bug #2383 & #2186)
+
+*** 2007-02-20 by Kenny Graunke
+- Bump netversion and PS version numbers to prevent people from accidentally
+  using new inventory code with Laanx.  Approved by Venge, dfryer, and myself.
+
+*** 2007-02-20 by Keith Fulton
+- This is a major commit to do a major rewrite of Inventory and how we handle items
+  on the server.  Here are some highlights:
+- Inventory does not attempt to mirror its in-memory structure with the hierarchy
+  of containers and sacks used by the player.  The slot number encodes the hierarchy
+  instead, but the inventory itself is maintained in a linear array.
+- Exchanges and gifts do not affect character inventory until the Accept button is
+  executed.  If a client crashes, etc., no inventory changes and no pointer copying
+  is required to "undo" it because nothing was "done".
+- No distinction between "Bulk" and "equipped" except slot number.  We do check whene
+  equipping things for the right skills and requirements, but otherwise there is far
+  less checking.
+- You will notice slight differences in how inventory and exchange slot movement works.
+- Weight and size checking is disabled for this commit but I will add it back in in
+  the next couple of days.
+
+- DO NOT UPDATE LAANX FROM CVS FROM NOW ON.  All fixes to Laanx must be made with
+  local editing now.
+
+- Db Version ding.  No more Location and Equipped Slot columns on item_instances.
+  Everything is encoded by the slot number and container.
+- Please bear with us as we get this back to 100% working.  Sorry for the inconvenience.
+
+*** 2007-02-19 by Kenny Graunke
+- Temporarily disable gravity when movelocked.  Otherwise, the client and
+  server play DR-wars, where the client tries to change its y-velocity, and
+  the server responds with its last position.  Visibly the character jolts
+  up and down, and effectively the two packetflood each other.
+
+  Ideally players would continue their trajectory toward the ground and then
+  stop, but that is more error-prone and wasn't the existing behavior.
+
+- Call MoveToSpawnPos instead of MoveToValidPos for out of bounds DR data.
+  (If you're at -13000 for y, the /unstick pos is not likely valid either.)
+- Removed checks for falling/flying out of the world.  This previously killed
+  the player (when it's almost always a map or engine bug at fault), and the
+  check only triggered if your velocity was the right direction...
+- Instead, consider |y| > 1000 to be out of bounds, regardless of velocity.
+
+*** 2007-02-19 by Thomas Towey
+- Added /action create_entrance command for creating entrances.
+- Changed find action location function to use sector map.
+- Simplified the action location menu logic.
+- Fixed problems in key making progressions scripts.
+- Added some of the key logic to the action location progression script so that only one script is needed.
+
+*** 2007-02-18 by Thomas Towey
+- Added security check to allow devs to move unpickupable items.
+- Fixed bug with stoping work on item that does not exist.
+- Changed removeitemsincontainer to pass client pointer.
+
+*** 2007-02-18 by Anders Reggestad
+- Fixed loading of worlds in server to not exclude portals nodes. This
+  nodes are needed to calculate the correct warpspace for portals that
+  are put into portals child nodes in the sector.
+- Changed the fall distance back to only include the vertical component
+  this will fix bug #2382.
+- Fixed bug #2372 that state that you get fall damage when with unstick
+  while falling. You should not have the unstick to undo a leep of faith,
+  so preventing unsticking when falling.
+
+*** 2007-02-17 by Kenny Graunke
+- Fix from Eldkin for bug #2374. /cast is case insensitive again.
+- Fix info window so it only displays a stance if in combat. (Broken by my
+  earlier reintroduction of psModeMessage.)
+
+*** 2007-02-17 by Andrew Craig
+- Added a check to see if a repair tool exists for items. It was allowing
+  people to repair things like Mugs which do not have an assigned repair
+  item yet.
+
+*** 2007-02-17 by Daniel Fryer
+- Committed rewritten pawsMultilineEditText widget from Rolenun
+
+*** 2007-02-17 by Anders Reggestad
+- Fixed BuildWarpCash to insert transformations in correct
+  spot in array.
+- Created dumpwarpcach server command to debug warpcash.
+- Added toString functions for csMatrix3 and csTransform.
+- Added test to test for "0" when loading trigger prerequisites. We had a
+  server crash where the value where "0" in db.
+
+*** 2007-02-16 by Kenny Graunke
+- Removed redundant check in SendCharacterDescription.  Thanks, Nilrem.
+
+*** 2007-02-17 by Thomas Towey
+- Only allow Dev level clients to move NPC owned items from containers.
+
+*** 2007-02-16 by Kenny Graunke
+- Fixed bug #2180. Item unequip scripts are now run on a forced unequip. Sounds
+  should also be triggered now (if there are any) - just like a normal unequip.
+- Fixed bug #2370. There was a gap in the level comparison when evaluating
+  another character's strength - if you were between 46 and 50 ranks lower
+  than them (inclusive), you would get the message "You evaluate that so and
+  so won't require any effort to defeat."  Up to 49 ranks lower is now
+  "significantly more powerful" while 50 ranks or worse is "impossible".
+
+*** 2007-02-16 by Andrew Craig
+- Fixed bug where NPC's that where using a bad startlocation as a spawn
+  location and could no be teleported out of it without them going
+  back to their bad position on death.
+  Added a new /updaterespawn command that will update the respawn location
+  of the current target to current position.
+
+*** 2007-02-15 by Anders Reggestad
+- Fixed bug #1289, where no distance where caluclated when falling from one sector
+  to another. Now the distance from the point where you started to be not on the
+  ground to the point where you are at ground again is calculated.
+
+*** 2007-02-15 by Michael Gist
+- Created emotes.xml file to store emotes. Contains /greet as an example.
+  Real emotes.xml is now stored in svn.
+- Changed emote code to load from the xml. Still more to do to optimise it.
+
+*** 2007-02-15 by Arianna Benigno
+- Fixed bug #393: when advising it will be clear who the advisor is answering to.
+- Fixed bug #2283: the client was crashing if trying to open a gui.xml file that
+  didn't have the resource for the border in the list.
+  *****************************************************************************
+  IMPORTANT: every time a new window is added, add dummy new resources in CVS art!!
+  Also, avoid to use "printf" and use Notify, Warning, Error macros!
+  ******************************************************************************
+
+*** 2007-02-14 by Anders Reggestad
+- Added support for NPC client behavior sequence that
+  send a message to the server to send the psSequenceMessage
+  to the client.
+- Added the <sequence name="winch_up" cmd="start"/> to the npcbehavior.xml
+- Updated the psNPCCommandsMessage to send sequences => BUMPED NPC Net VERSION
+
+*** 2007-02-13 by Anders Reggestad
+- Fixed move npc behavior move operations when interrupted.
+- Cleaned up some of the npc behavior code and moved common
+  scriptoperation function to same place in file.
+- Moved the region check into the common CheckMovedOk so that
+  that region "in bound" and "out bound" perception would be
+  used for all kind of movement.
+- Moved dump of obj in server from com_print to Dump function in object.
+- Made sure prox_distance_current is set to desired when larger than desired.
+
+*** 2007-02-12 by Dave Bentham
+- Fixed Bug #2169, "A spell does not have to be in the character's spellbook to be cast."
+
+*** 2007-02-12 by Anders Reggestad
+- Updated NPC client waypoint wandering to take smoth turns at each waypoint.
+  - Created new common function StartTurnTo that start a turn given turn_end_angle
+    and angle_vel.
+  - Used StartTurnTo to make the NPC take the smoth turn at each waypoint in the
+    wander operation.
+  - Updated to use the common StopMovment operation everywhere the NPC stop in a movement
+    operation.
+  - Fixed rotate operation to work when interruped.
+    - Updated the rotation operation to use the cel ExtrapolatePosition function on each
+      advance so that interruped possition would be stored correctly.
+  -
+  - Created new common function to CheckMovedOk that give collision perception
+    if not moved or moved only a small distance for 8 consec updates.
+  - Use this the CheckMovedOk for both Move and Wander operation.
+
+*** 2007-02-11 by Kenny Graunke
+- Remove PSCHARACTER_STANCE_NONE and set NORMAL instead.  The ctor for
+  psCharacter sets it to NORMAL, so it makes sense to use that.  Fixes a bug
+  where low-skill players were unable to hurt NPCs after they respawned with
+  stance NONE.
+
+*** 2007-02-11 by Enar Vaikene
+- Added base system messages (like greetings and all the new emotes) to the chat log.
+  Excluded combat messages shown on the main tab. If somebody really wants to log these too,
+  they can turn on the system log.
+- Fixed training (bug #2335).
+  Clamping skill knowledge and practice is not necessary, because they indicate the progression
+  to the next level and can be higher than 200.
+- Added clamping to coordinate values for the teleport command (bug #2322).
+
+*** 2007-02-10 by Dave Bentham
+- "/event reward..." now goes straight into participants inventory.
+- Max number of players per event upped to 100.
+
+*** 2007-02-09 by Kenny Graunke
+- Fixed the previous Length() deprecation fixes.
+- Send psViewActionLocationMessage instead of psViewItemDescription even if the
+  action doesn't have an <Examine> script.
+- Fixed /testanim so it doesn't return a pointer to a string allocated on the stack.
+
+*** 2007-02-09 by Michael Gist
+- Fixed Length() and SetLength() depreciation warnings. Use GetSize() and SetSize() with arrays instead.
+- Fixed an invalid return thing in effects.
+
+*** 2007-02-08 by Andrew Robberts
+- Fixed effects text obj to use quad and fixed up generating of material
+- Fixed entity labels to use new effects text obj
+- Added a height parameter to effect quads to allow you to change their aspect ratio.
+- Removed effect quads "cell" parameters, they weren't used and were annoying to maintain.
+- Added initial version of chat bubbles
+
+*** 2007-02-08 by Thomas Towey
+- Added check for no progression event for already equiped items that was causing crash.
+- Fixed problems with action location containers not presenting combine button.
+
+*** 2007-02-08 by Enar Vaikene
+- Fixed a server crash when trying to morph after a failed morph attempt (bug #2324).
+  CEL iPcMesh::SetMesh() function always removes the mesh even if it fails.
+
+*** 2007-02-07 by Keith Fulton
+- Committed fixed for two more places with potential container duping exploits.  Cannot
+  reproduce exploit known locally anymore.  There are probably others though.
+- Changed dangerous optional Save parameter, which determines whether to save the
+  child items inside a container (a sack, for example) or to skip them, which was set
+  by default to skip if not specified.
+- Added minimum clamp of item_stats.weapon_speed to 1.5 seconds per hit, to save our
+  poor server.
+- Added max clamp of 300 for item quality.
+
+*** 2007-02-07 by Kenny Graunke
+- Add a direct link for Cg to docs/compiling.html, by request.
+
+*** 2007-02-07 by Thomas Towey
+- Fixed bug with uninitalized return variable.
+- Fixed uninitialized variable bug.
+
+*** 2007-02-07 by Anders Reggestad
+- Fixed syntax system error for /slide to include distance.
+- Changed to use float instead of integer when converting from degree to rad
+  for the 'slide target T degree' command.
+- Fixed MoveObject to set correct rotation for the Movable for items so that
+  slide with T works.
+
+*** 2007-02-06 by Kenny Graunke
+- Fixed textbox to be the right size in the View Action Location window.
+- Changed GRANT line in docs/compiling.html to not specify "WITH GRANT OPTION"
+  (it's not needed), and only grant permission on planeshift.*. More secure.
+
+*** 2007-02-06 by Keith Fulton
+- Made title bars without image resources specified work properly, so the sketch window
+  does not have to have a title bar visible.  The title text (which should be the item_stat.name
+  I think) should be visible  but notwith the ugly bar.
+- Illumination window updated to look better without title bar.
+
+*** 2007-02-06 by Enar Vaikene
+- Disabled cache for player characters. There is very little advantage using it and
+  several bugs are related to it. NPCs will keep using the cache.
+
+*** 2007-02-05 by Keith Fulton
+- Made several small but important revisions to combat.
+  a. Now if you go out of range, you don't lose combat mode.  This will prevent players
+     from jumping in and out of range to kite npcs and duel in unfun ways.
+  b. Now if you are hit by an attack, you are not interrupted if you are casting spells
+     or crafting, etc.  You will only auto-target if you are at PEACE mode, doing nothing.
+  c. We now also do angle of attack checking on each hit.  You must be roughly facing
+     the mob in order to hit it now.
+
+*** 2007-02-04 by Keith Fulton
+- Added a timeDelay capability to NpcResponse scripts, which means they can say things
+  in sequence, plus the /me /my commands I added yesterday, and they don't all show
+  up at once in the client chat window.  Hopefully this will make talking with an npc
+  a bit more realistic.
+- Added eventmanager->SendMessageDelayed, which you can use with any net msg on the
+  server if you want to process but not to appear on the client for a while.
+
+*** 2007-02-04 by Anders Reggestad
+- Adapted web console to reasent changes in relations between
+  npc_triggers and npc_responses.
+- Changed field trigger to trigger_text since trigger is a reserved word
+  in newer mysql server implementations. => DB VERSION BUMPED
+- Added print of hypernyms to the dict server command.
+- Fixed the breadth-first seach into wordnet to find all hypernyms in all
+  senses of the word. Make sure one instance of each hypernym is only entered into
+  the list of hypernyms.
+
+*** 2007-02-04 by Tom Towey
+-  Added function to finds an inactive entrance action location of a specified style.
+-  Added key operator to create key for specific locks or modify existing keys.
+-  Added action location operator that activates inactive locations for use of players.
+-  Added entrance styles to allow for diffent entrances to be specified as quest reqards.
+
+*** 2007-02-03 by Dave Bentham
+- Minor improvements to /event:
+-  'system' help covers /event reward.
+-  GMs informed of /event reward outcome.
+-  Red splash removed for 0 quests/events on Quest dialog.
+
+*** 2007-02-03 by Keith Fulton
+- Added three new chat types.  CHAT_NPC_ME, CHAT_NPC_MY and CHAT_NPC_NARRATE
+- These new chat types are used in quest scripting, with the following example:
+     "Merchant: Congratulations! You get to save the princess now.[Merchant bows
+      to $playername.]I wish you luck.[As he finishes talking, you notice clouds
+      darkening on the horizon...]
+- This script turns into a /say, a /me, another /say and a /narrate in the npc_response
+  automatically.
+- Also added Text adding and Line Adding to the Sketch Window.  Use T for text and
+  \ for a new line.
+- Changed max stack_count clamp to 65 per dev request.
+
+*** 2007-02-03 by Enar Vaikene
+- The "/quit now" command exits the game without asking. Useful when there are mouse
+  problems or when running the client in valgrind and moving the mouse to the Yes
+  button takes more than 10 minutes.
+
+*** 2007-02-02 by Dave Bentham
+- Additional functions for /events:
+-  Register players in specified range, "/event register 0-100"
+-  Reward event participants "/event reward..." Currently prize is dropped next to
+-   player on ground :(
+-  A few other code tidy-ups.
+
+*** 2007-02-01 by Keith Fulton
+- Added clamping to Skills, Stats and StackCounts when loading from database, and
+  when merging stacks in game.  If the players discover other bugs or exploits, this
+  should at least keep them from having 33000 STR and 65000 glyphs.
+- Took out warning about ignored words in triggers to reduce spam on server on startup.
+- Worked on server item dupe exploit.  Made a guess about what is causing it.
+- Renamed some member functions that were not clearly named and did not meet our naming
+  standard.
+
+*** 2007-01-31 by Kenny Graunke
+- Corrected IRC info in docs/compiling.html. (Thanks to Caarrie for noticing.)
+- Increased the number of shortcuts to 100.
+
+*** 2007-01-31 by Thomas Towey
+- Made drop item not use random location, put 1/2 m in front of player instead.
+- Fixed obscure bug in XML parser that did not return contents of text child nodes.
+- Toggle locked button mouse float to show locked/unlocked.
+- Added support for security locks that allows secure entry of locked door in one step.
+- Added support for entry progression scripts.
+- Added copy key and change lock GM commands.
+
+*** 2007-01-31 by Anders Reggestad
+- Added faction quest prerequisite operation as a
+  replacement for the min and max attitude on the
+  trigger table. This operation is general and it
+  will be possible to use it both in quest scripts and
+  for general triggers (See next change).
+- Added prerequisite script to npc_responses table.
+- Moved x-ref between triggers and responses to the
+  responses table. This will align responses with the
+  quest system that allow for multiple responses on to
+  one trigger. This was triggerd by looking at error
+  prints at startup. Now it load without errors. Though
+  there will some work to update database.
+- Updated npc_behavior.xml with more face to player scripts.
+- DB VERSION UPDATED for changes in trigger/responses.
+- Cleand up some more spam to console. If run with no logs
+  there are no output if there are no errors. :)
+
+*** 2007-01-29 by Kenny Graunke
+- Remove multiline support from pawsEditTextBox, convert all code to use
+  pawsMultilineEditTextBox instead.
+- More crash and bug fixes in pawsMultilineEditTextBox (weren't triggered before).
+- Remove buffer="yes" from GemOfClarity script in DB, as the syntax is buff="no" now.
+
+*** 2007-01-29 by Keith Fulton
+- Added skill "Illustration" as skill 64 in database.
+- Now which icons you can use are filtered by mathscript.
+- Now how many primitives you can use is filtered by mathscript.
+- Now you can only edit the sketch if the creator_mark_id is 0 or your own playerid.
+- Took out a bunch of printfs.  Could be more still in.
+- Added mathscript example for Illustration limits.
+
+*** 2007-01-29 by Kenny Graunke
+- Make flood warnings use fading red text in addition to the system tab,
+  so they're more noticeable.
+- Patch from Rolenun to fix many pawsMultilineEditTextBox bugs. Hopefully
+  fixes all the crashes!
+
+*** 2007-01-29 by Keith Fulton
+- Work on sketching continues...
+  - Added editmode toggle (F2)
+  - Added ability to add icons (+)
+  - Added ability to change icons from a downloaded list (PgDn/PgUp)
+  - Added ability to move objects with arrow keys 1 pixel at a time
+  - Added table character_limitations to list which icons are available to which players.
+    Right now all icons come to all users and all users can edit the sketch.
+  - DB VERSION UPDATE FOR NEW CHARACTER_LIMITATIONS TABLE.
+
+*** 2007-01-29 by Michael Gist
+- Rewrote all PS threading code to use the new CS threading system.
+- Pushed CS and CEL revisions to 26286 and 2591.
+
+*** 2007-01-28 by Kenny Graunke
+- Add new /modify subcommand: "move x y z [yrot]" (all absolute coordinates)
+  If yrot is not specified, 0 will be used.
+
+*** 2007-01-28 by Michael Gist
+- Emotes are now stored in an array. It makes life easy to add new ones and
+  now they all use the same code. More can be done in the future, but for now
+  it works!
+- Added 58 new emotes as 'test cases' :) Thanks to Karyuu for writing most of these.
+  Note that all of these just output text right now, but are a big bonus because it's
+  easier to use an emote than type /me whatever, and less typing means less chance of
+  repetitive strain injury in the fingers of our players!
+- Changed /sit up and /sit down to be /stand and /sit.
+- Added a /listemotes command.
+- Some small cleanups and data fixes.
+
+*** 2007-01-28 by Keith Fulton
+- Sketches are now saved automatically if they have been changed while visible.  The
+  underlying item_stat record is updated in the database and refreshed the next time
+  someone views the object.
+
+*** 2007-01-28 by Anders Reggestad
+- Added npc response command npccmd. This is used to send a command to the npc
+  client. Could be used in a react to start and behavior.
+  - Updated NPCCommandMessage with npccmd => BUMPED NPC NET VERSION
+  - Created a new NPC Client perception NPCCmdPerception.
+  - To use add a response like <npccmd cmd="test_cmd"/> to a npc response.
+    In the behavior script for NPCs add a reaction like this
+    <react event="npccmd:global:test_cmd" .../> to start a command based on the
+    response. Currently supporting global,self for scope.
+- Cleand out much duplicated code in the dictionary.cpp file when parsing
+  responses.
+- Updated npc behavior debug to take the debug level as input instead of just
+  on and off.
+- Added test characters to test the new npc cmd functionality.
+- Changed FindLocation and FindWaypoint in npcclient to use strcasecmp. This
+  so that the casing of waypoints and names used in behavior script don't need
+  to be the same as in the sc_locations or sc_waypoints table. Should make it
+  much more easy to script the client this way.
+- Added printing of known KAs to the print command when a NPC entity is printed.
+- Created global receive and send filters for message filtering.
+- Cleand up code in Rotate operation.
+- Created Circle operation inherrited from MoveOperation. This new class calculate
+  ang_vel from radius and velocity.
+
+*** 2007-01-28 by Kenny Graunke
+- Fix from Mektar so characters respawn in NPCroom if they die in -any-
+  NPCroom sector (2, 3, etc.), not just the original one.
+- Fix docs/compiling.html to point to new URL for cs-win32libs. Thanks Xayton!
+- Silence "Lost entity label of object ___!" messages for action locations.
+
+*** 2007-01-25 by Anders Reggestad
+- Updated server console to match changes to spell table.
+- Fixed a couple of null pointer uses and index outside array.
+- Changed npcclient to exit instead of abort. No more core files from that.
+
+*** 2007-01-26 by Enar Vaikene
+- Added the ability to rename names in the buddy list. Changes are saved locally into
+  the file data/aliases_$CHARACTERNAME$.xml.
+  Changed the Tell button in the buddy list to Edit, because there was no space for an
+  extra button. Tells can now be sent from the buddy list by double-clicking on the name.
+  The code for the Tell button is still there and the button can be restored if needed.
+
+*** 2007-01-25 by Andrew Craig
+- Added a "AVERAGEQUALITY" Flag for the database for item stats.  Only items with this
+  flag will stack with different qualities and average them over the stack.
+- Added delivery of faction information to the client.  Factions are displayed now
+  in the skills window.
+- Increased network ID to reflect changes in network messages.
+- Various patches from Kai Ludwig to improve the mouse look system and fix several
+  existing bugs.
+
+*** 2007-01-25 by Anders Reggestad
+- Added support to set player_lockout_time to -1 in db to indicate infinite
+  player lockout.
+- Added user feedback that exp is received in quests.
+- Added scripts to update db. No change in structure but data has to
+  be changed in order to be compatible with this change so i BUMPED DB VERSION.
+- Added support for setting of factions from quests. Add the command:
+  "Give <amount> faction <to faction>" in the quest script.
+- Added opp to quest give merchant sandwich for testing.
+- Moved loading of factions to cache manager.
+
+*** 2007-01-21 by Kenny Graunke
+- Switch skill buffs to be signed, to avoid underflow issues.
+- Clamp SetSkillRank to only set ranks between 0 and MAX_SKILL (or MAX_STAT,
+  as the case may be.)  Also clamp GetSkillRank so it never returns a negative
+  number---fixes many nasty underflow issues.  No more 65535 skill buffs.
+- Fix psCharacterLoader so it saves the non-buffed skill rank.  This was
+  causing temporary buffs to become permanent when the actor cached expired.
+- Training no longer takes buffs into account.
+
+*** 2007-01-20 by Keith Fulton
+- Added ability to edit the image by moving icons, text and line endpoints with the
+  mouse.  Still no saving yet.
+
+*** 2007-01-20 by Michael Gist
+- Small refactor of emotes. Added Emote function to process emotes, and changed
+  /greet to use it.
+
+*** 2007-01-20 by Thomas Towey
+-  Moved the quality penality calculation outside of the skill check
+   so that it will apply to all transformations not just skilled ones.
+
+*** 2007-01-20 by Enar Vaikene
+- Changed the /setskill command to change skills on other characters too (credit
+  goes to Eldkin for this change). The command now follows the same general
+  format than other commands:
+    /setskill [target] [skill] [value]
+  "setskill others" in the command_group_assignment table specifies the GM level
+  to set skills on others.
+- GMs can now see both base stat values and stat buffs in the character description
+  window.
+- Items in containers not owned by the player now show the icon of the item,
+  but no stack count.
+- Added the "NPCOWNED" flag for item instances. This will be used for containers
+  like bookselfs to make sure that players can't remove items from it nor put
+  items into it.
+  * Only devs can remove items from containers that have the NPCOWNED flag set.
+  * Only devs can add items to containers that have the NPCOWNED flag set.
+  The /modify command can be used to change the NPCOWNED flag in the game.
+- The "NOPICKUP" flag for item instances is now overwritten by the similar flag
+  in base item stats only if the item instance didn't have it set already. It was
+  impossible to set the "NONPICKUP" flag for item instances if the base item didn't
+  have the same flag set.
+
+*** 2007-01-19 by Kenny Graunke
+- Display skill buffs in the Skills Window, not just stat buffs.
+- Implement inverse for SkillOp scripts, fix delayed-undo scripts with adjust="set"
+- Made SkillOp buff stats by default. This is much safer, as broken scripts
+  will now result in non-permanent changes. Renamed the parameter to "buff" at
+  Xordan's request.
+
+  SKILL SCRIPTS MUST BE UPDATED! <skill> nodes must now specify buff="no" to achieve
+  a permanent change to the base stats. They should only have name, aim, buff="no",
+  value, delay, and adjust="set" attributes.  All others can be removed.  Also,
+  always specify buff="no" with adjust="set" - one cannot set an explicit
+  value for buffs.  All equip scripts should use buffs.
+
+  Note that this does not apply whatsoever to stat nodes, as those have a
+  different syntax.
+
+
+*** 2007-01-17 by Kenny Graunke
+- Moved handling of character uploads from psServerCharManager to
+  psCreationManager in order to clean things up.
+- Remove client/gui/pawsstackcountwindow.(cpp|h) to save confusion; it was
+  replaced by pawsNumberPromptWindow ages ago.
+- Initialize nevertired and safefall in gemActor - fixes valgrind error.
+
+*** 2007-01-16 by Kenny Graunke
+- Made psAuthApprovedMessage compute the proper message size - before it was
+  just adding 5000 and assuming it was big enough for all the XML.  Crash
+  reports have indicated that this isn't always the case.  This change does
+  not bump netversion as the message on the wire should be the same.
+
+*** 2007-01-16 by Keith Fulton
+- Fixed sketches so they follow the window around if you drag the sketch window.
+
+*** 2007-01-16 by Kenny Graunke
+- Update from Induane for docs/compiling.html - has information for
+  Ubuntu 6.10/Edgy Eft as opposed to 6.06/Dapper.
+- Patch from Andreas Brandmaier to sanity-check counts in merchant trades.
+
+*** 2007-01-16 by Kenny Graunke
+- Fixed bug 1966 (mode change teleports). Resurrected psModeMessage, which
+  sends PSCHARACTER_* modes, and restricted the use of "movement modes"
+  (defined in movement.sql) to run/walk/sneak only.
+- Fixed combat stand animations.
+- Implement pawsActionLocationWindow for viewing map actions, such as the
+  plaza floor, or the NPCroom smith.
+- NETVERSION BUMP!
+
+*** 2007-01-12 by Keith Fulton
+- Added basic sketch/map functionality to server and client.  Basic primitives supported
+  are:  icon, text, startPoint and lineTo.  I will add the required art to svn as well
+  today or tomorrow.  Right-click on the Treasure Map in Vengeance inventory to see
+  the map.
+
+*** 2007-01-11 by Enar Vaikene
+- Fixed a server crash in psItem.
+
+*** 2007-01-08 by Enar Vaikene
+- Patch from Eldkin. Fixes a crash in the skill window during the skill training (bug #2092).
+
+*** 2007-01-08 by Michael Gist
+- Compile fixes from Nilaya.
+- If attacked, initial stance will now be full-defensive.
+
+*** 2007-01-07 by Enar Vaikene
+- Patch from Nilaya:
+  Sitting is now possible only when the character is not moving and on the ground.
+
+*** 2007-01-05 by Michael Gist
+- Clean up of src/common dir:
+  Moved files in admin to net, interface to net, psbehave to engine and then removed the former folders along with psprop.
+  Move fparser to its own directory in src/tools as it's an external library.
+  Removed the large chunk of leftover commented code in adminmessage.
+- Made some other small fixes and cleanups.
+
+*** 2007-01-04 by Enar Vaikene
+- Moved iLoaderPlugin implementation to the separate psEffecLoader class.
+  Should fix our remaining exit crashes and "pure virtual function call" errors.
+  CS still keeps references to the loader plugin and doesn't release them until the DestroyApplication
+  function is called.
+- MSVS warning fixes.
+
+*** 2007-01-03 by Enar Vaikene
+- psImageDescripiton and pawsImage now request the iGraphics3D interface from the pawsManager
+  singleton instead of querying it. Also removed the static csRef<iGraphics3D> object that
+  was causing exit crashes.

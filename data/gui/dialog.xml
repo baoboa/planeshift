@@ -1,0 +1,132 @@
+<widget_description>
+  <pawsNpcDialogWindow name="NPCDialogWindow" xmlbinding="dlgmenu" visible="no" savepositions="yes" movable="yes" scalefont="yes" keepaspect="no" configurable="yes" resizable="yes" style="New Standard GUI">
+
+    <frame x="0" y="0" width="500" height="250" border="yes" />
+    <minframe width="300" height="125" />
+    <title resource="Scaling Title Bar" text="Quest Responses" align="left" close_button="yes" />
+
+    <widget name="Lists" factory="pawsWidget" visible="no">
+      <frame x="0" y="0" width="500" height="250" border="no" /> 
+      <pawsListBox name="ResponseList" xmlbinding="options" visible="no">
+          <frame x="11" y="6" width="480" height="230" margin="0" border="yes" />
+          <columns height="20" xmlbinding="row">
+              <column width="480" xmlbinding="text">
+                  <widget name="Name" factory="pawsTextBox" scalefont="yes"></widget>
+              </column>
+              <column width="0" xmlbinding="trig" visible="no">
+                  <widget name="trigger" factory="pawsTextBox" visible="no"></widget>
+              </column>
+          </columns>
+          <attachpoints>
+              <attach point="ATTACH_RIGHT" />
+              <attach point="ATTACH_TOP" />
+              <attach point="ATTACH_LEFT" />
+              <attach point="ATTACH_BOTTOM" />
+          </attachpoints>
+      </pawsListBox>
+      <attachpoints>
+            <attach point="ATTACH_RIGHT" />
+            <attach point="ATTACH_TOP" />
+            <attach point="ATTACH_LEFT" />
+            <attach point="ATTACH_BOTTOM" />
+      </attachpoints>
+    </widget>
+
+
+
+    <widget name="Bubbles" factory="pawsWidget" visible="no">
+        <frame x="0" y="0" width="1024" height="600" border="no" />
+
+        <widget name="Bubble1" factory="pawsButton" visible="yes" id="100">
+            <frame x="230" y="10" width="298" height="135" border="no" />
+            <bgimage resource="QuestBubble" />
+
+            <widget name="QuestName" factory="pawsTextBox" style="textinput">
+                    <frame x="20" y="25" width="250" height="17" border="yes" />
+                    <font r="209" g="205" b="158" size="12" bold="yes" />
+            </widget>
+
+            <widget name="QuestText" factory="pawsMultiLineTextBox" style="textinput">
+                   <frame x="20" y="45" width="250" height="60" border="no" />
+                   <font r="168" g="183" b="206" size="12" bold="yes" />
+            </widget>
+        </widget>
+
+        <widget name="Bubble2" factory="pawsButton" visible="yes" id="101">
+            <frame x="580" y="10" width="298" height="135" border="no" />
+            <bgimage resource="QuestBubble" />
+
+            <widget name="QuestName" factory="pawsTextBox" style="textinput">
+                    <frame x="20" y="25" width="250" height="17" border="yes" />
+                    <font r="209" g="205" b="158" size="12" bold="yes" />
+            </widget>
+
+            <widget name="QuestText" factory="pawsMultiLineTextBox" style="textinput">
+                   <frame x="20" y="45" width="250" height="60" border="no" />
+                   <font r="168" g="183" b="206" size="12" bold="yes" />
+            </widget>
+        </widget>
+
+        <widget name="Bubble3" factory="pawsButton" visible="yes" id="102">
+            <frame x="30" y="140" width="298" height="135" border="no" />
+            <bgimage resource="QuestBubble" />
+
+            <widget name="QuestName" factory="pawsTextBox" style="textinput">
+                    <frame x="20" y="25" width="250" height="17" border="yes" />
+                    <font r="209" g="205" b="158" size="12" bold="yes" />
+            </widget>
+
+            <widget name="QuestText" factory="pawsMultiLineTextBox" style="textinput">
+                   <frame x="20" y="45" width="250" height="60" border="no" />
+                   <font r="168" g="183" b="206" size="12" bold="yes" />
+            </widget>
+        </widget>
+
+        <widget name="LeftArrow" factory="pawsButton" visible="yes">
+            <frame x="40" y="300" width="25" height="105" border="no" />
+            <bgimage resource="NPCLeftArrow" />
+        </widget>
+
+        <widget name="RightArrow" factory="pawsButton" visible="yes">
+            <frame x="915" y="300" width="25" height="105" border="no" />
+            <bgimage resource="NPCRightArrow" />
+        </widget>
+
+        <widget name="CloseBubble" factory="pawsButton" visible="yes">
+            <frame x="700" y="300" width="135" height="58" border="no" />
+            <bgimage resource="InputBubble" />
+
+            <widget name="CloseTrigger" factory="pawsTextBox" style="textinput">
+                <frame x="40" y="10" width="35" height="40" border="no" />
+                <font r="168" g="183" b="206" size="12" bold="yes" />
+                <text string="Bye!" />
+            </widget>
+        </widget>
+
+        <widget name="SpeechBubble" factory="pawsButton" visible="no">
+            <frame x="30" y="80" width="331" height="207" border="no" />
+            <bgimage resource="NPCSpeechBubble" />
+
+            <widget name="BubbleText" factory="pawsMultiLineTextBox" style="textinput">
+                <frame x="20" y="25" width="260" height="157" border="no" />
+                <font r="209" g="205" b="158" size="12" bold="yes" />
+            </widget>
+        </widget>
+
+        <widget name="FreeBubble" factory="pawsWidget" visible="yes">
+            <frame x="630" y="160" width="294" height="95" border="no" />
+            <bgimage resource="InputBubble" />
+
+            <widget name="StartSign" factory="pawsTextBox" style="textinput">
+                <frame x="20" y="40" width="8" height="25" border="no"/>
+                <text string=">" />
+            </widget>
+            <widget name="InputText" factory="pawsEditTextBox">
+                <frame x="28" y="40" width="250" height="25" border="no" />
+                <text string="" />
+            </widget>
+        </widget>
+
+    </widget>
+  </pawsNpcDialogWindow>
+</widget_description>

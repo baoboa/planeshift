@@ -1,0 +1,31 @@
+<widget_description>
+
+<widget name="SelectNewAnchorKeyFrame" factory="EEditSelectNewAnchorKeyFrame" 
+        visible="yes" savepositions="no" movable="yes" resizable="no" resizetoscreen="no" >
+        
+    <frame x="0" y="0" width="220" height="80" border="yes" justtitle="yes" />
+    <title resource="TitleBar" text="Add New Anchor KeyFrame" align="left" />
+    <font name="LiberationSans-Regular.ttf" r="255" g="255" b="255" size="9"  sr="0" sg="0" sb="0" shadow="yes" />   
+    <bgimage resource="Back" alpha="0" />
+
+    <widget name="time_lbl" factory="pawsTextBox">
+        <frame x="10" y="14" width="70" height="18" border="no"/>
+        <font name="LiberationSans-Regular.ttf" r="255" g="255" b="255" size="9"  sr="0" sg="0" sb="0" shadow="yes" />   
+        <text string="Time:" />
+    </widget>
+    <widget name="select_time" factory="pawsSpinBox">
+        <frame x="75" y="8" width="135" height="25" border="no" />        
+        <font name="LiberationSans-Regular.ttf" r="255" g="255" b="255" size="9"  sr="0" sg="0" sb="0" shadow="yes" />   
+        <bgimage resource="Shaded" alpha="75" />
+        <number default="0" min="0" max="1000000" inc="5" position="left"/>
+    </widget>
+    <widget name="add" factory="pawsButton">
+        <frame x="140" y="38" width="70" height="25" border="no" />
+        <font name="LiberationSans-Regular.ttf" r="255" g="255" b="255" size="7"  sr="0" sg="0" sb="0" shadow="yes" />   
+        <buttonup resource="ButtonUp"/>
+        <buttondown resource="ButtonDown" />
+        <label text="Add"/>
+    </widget>
+</widget>
+
+</widget_description>

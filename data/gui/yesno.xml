@@ -1,0 +1,23 @@
+<widget_description>
+
+    <widget name="YesNoWindow" factory="pawsYesNoBox" visible="no" savepositions="no" movable="yes" resizable="no" style="New Standard GUI" >
+
+        <frame x="0" y="0" width="460" height="240" border="no" />
+
+            <widget name="Message Box" factory="pawsMultiLineTextBox" style="Standard Font">
+            <frame x="25" y="25" width="410" height="150" border="no" />
+            </widget>
+
+            <widget name="YesButton" factory="pawsButton" tooltip="yes" id="-10" key="Y" style="Main Header Font">
+                <frame x="80" y="185" width="80" height="40" border="yes"/>
+                <label text="Yes" />
+            </widget>
+
+            <widget name="NoButton" factory="pawsButton" tooltip="no" id="-20" key="N" style="Main Header Font">
+                <frame x="300" y="185" width="80" height="40" border="yes"/>
+                <label text="No" />
+            </widget>
+
+    </widget>
+
+</widget_description>

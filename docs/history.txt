@@ -1,0 +1,9 @@
+﻿This was the PlaneShift development change log. This log is no longer updated.
+
+Please use:
+
+svn log
+
+Or subscribe to the PlaneShift-svn mailing list to see the change log or follow
+new changes.
+

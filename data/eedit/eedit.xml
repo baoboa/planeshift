@@ -1,0 +1,81 @@
+<widget_description>
+<widget name="eedit" factory="pawsEEdit" 
+        visible="yes" savepositions="no" movable="no" 
+        resizable="no" >
+    
+    <!-- window background -->
+    <bgimage resource="Shaded" alpha="0" fade="no" />
+
+    <!-- size of window and title -->
+    <frame x="0" y="0" width="1024" height="768" border="no" />
+    <title resource="TitleBar" text="PlaneShift Effect Editor" align="left" />
+    
+    <!-- preview window -->
+    <widget name="preview" factory="pawsGenericView">
+        <frame x="5" y="5" width="1014" height="728" border="no" />
+        <map file="/planeshift/world/npcroom1" sector="NPCroom" />
+    </widget>
+
+    <!-- toolbox show/hide buttons -->
+    <widget name="show_shortcuts" factory="pawsButton" id="110">
+        <frame x="5" y="738" width="120" height="30" border="no" />
+        <font name="LiberationSans-Regular.ttf" r="255" g="255" b="255" size="10"  sr="0" sg="0" sb="0" shadow="yes" />   
+        <buttonup resource="ButtonUp"/>
+        <buttondown resource="ButtonDown" />
+        <label text="Show Shortcuts"/>
+    </widget>
+    <widget name="ShowTarget" factory="pawsButton" id="102">
+        <frame x="130" y="738" width="120" height="30" border="no" />
+        <font name="LiberationSans-Regular.ttf" r="255" g="255" b="255" size="10"  sr="0" sg="0" sb="0" shadow="yes" />   
+        <buttonup resource="ButtonUp"/>
+        <buttondown resource="ButtonDown" />
+        <label text="Hide Target"/>
+    </widget>
+    <widget name="ShowCamera" factory="pawsButton" id="103">
+        <frame x="255" y="738" width="120" height="30" border="no" />
+        <font name="LiberationSans-Regular.ttf" r="255" g="255" b="255" size="10"  sr="0" sg="0" sb="0" shadow="yes" />   
+        <buttonup resource="ButtonUp"/>
+        <buttondown resource="ButtonDown" />
+        <label text="Hide Camera"/>
+    </widget>
+    <widget name="ShowRender" factory="pawsButton" id="104">
+        <frame x="380" y="738" width="120" height="30" border="no" />
+        <font name="LiberationSans-Regular.ttf" r="255" g="255" b="255" size="10"  sr="0" sg="0" sb="0" shadow="yes" />   
+        <buttonup resource="ButtonUp"/>
+        <buttondown resource="ButtonDown" />
+        <label text="Hide Render"/>
+    </widget>
+    <widget name="ShowLoadEffect" factory="pawsButton" id="105">
+        <frame x="505" y="738" width="100" height="30" border="no" />
+        <font name="LiberationSans-Regular.ttf" r="255" g="255" b="255" size="10"  sr="0" sg="0" sb="0" shadow="yes" />   
+        <buttonup resource="ButtonUp"/>
+        <buttondown resource="ButtonDown" />
+        <label text="Hide LoadEffect"/>
+    </widget>
+    <widget name="ShowEffectTree" factory="pawsButton" id="106">
+        <frame x="630" y="738" width="120" height="30" border="no" />
+        <font name="LiberationSans-Regular.ttf" r="255" g="255" b="255" size="10"  sr="0" sg="0" sb="0" shadow="yes" />   
+        <buttonup resource="ButtonUp"/>
+        <buttondown resource="ButtonDown" />
+        <label text="Hide Effect Tree"/>
+    </widget>
+    <widget name="ShowParticles" factory="pawsButton" id="111">
+        <frame x="755" y="738" width="120" height="30" border="no" />
+        <font name="LiberationSans-Regular.ttf" r="255" g="255" b="255" size="10"  sr="0" sg="0" sb="0" shadow="yes" />   
+        <buttonup resource="ButtonUp"/>
+        <buttondown resource="ButtonDown" />
+        <label text="Hide Particles"/>
+    </widget>
+
+
+    <widget name="Exit" factory="pawsButton" id="0">
+        <frame x="925" y="738" width="80" height="30" border="no" />
+        <font name="LiberationSans-Regular.ttf" r="255" g="255" b="255" size="10"  sr="0" sg="0" sb="0" shadow="yes" />   
+        <buttonup resource="ButtonUp"/>
+        <buttondown resource="ButtonDown" />
+        <label text="Exit"/>
+    </widget>
+</widget>
+</widget_description>
+
+

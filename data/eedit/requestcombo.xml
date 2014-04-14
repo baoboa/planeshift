@@ -1,0 +1,41 @@
+<widget_description>
+
+<widget name="RequestComboDialog" factory="EEditRequestCombo" 
+        visible="yes" savepositions="no" movable="no" resizable="no" resizetoscreen="no" >
+
+    <frame x="300" y="200" width="250" height="120" border="yes" justtitle="yes" />
+    <title resource="TitleBar" text="Question?" align="left" close_button="no" />
+    <bgimage resource="BackTall" alpha="75" />
+
+    <widget name="choices" factory="pawsListBox">	
+        <frame x="5" y="5" width="240" height="80" border="no"/>
+        <bgimage resource="Shaded" alpha="100" />
+        <font name="LiberationSans-Regular.ttf" r="255" g="255" b="255" size="9"  sr="0" sg="0" sb="0" shadow="yes" />   
+        <highlight resource="ListSelect" alpha="100" />
+        <columns height="20" headings="no">
+            <column width="200">            
+                <widget name="Name" factory="pawsTextBox">
+                </widget>
+            </column>                                               
+        </columns>
+	</widget>
+
+    <widget name="ok_button" factory="pawsButton">
+        <frame x="5" y="90" width="100" height="25" border="no" />
+        <font name="LiberationSans-Regular.ttf" r="255" g="255" b="255" size="7"  sr="0" sg="0" sb="0" shadow="yes" />   
+        <buttonup resource="ButtonUp"/>
+        <buttondown resource="ButtonDown" />
+        <label text="Ok"/>
+    </widget>
+    <widget name="cancel_button" factory="pawsButton">
+        <frame x="110" y="90" width="100" height="25" border="no" />
+        <font name="LiberationSans-Regular.ttf" r="255" g="255" b="255" size="7"  sr="0" sg="0" sb="0" shadow="yes" />   
+        <buttonup resource="ButtonUp"/>
+        <buttondown resource="ButtonDown" />
+        <label text="Cancel"/>
+    </widget>
+</widget>
+
+
+
+</widget_description>

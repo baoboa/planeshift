@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?> 
+<library>
+    <library>/this/art/effects/examples/mesh_example.spr</library>
+    <addon plugin="PSEffects">
+        <effect name="x_obj_mesh">
+            <anchor type="basic" name="pos">
+                <dir>none</dir>
+            </anchor>
+            <obj type="mesh" name="mesh_example" fact="mesh_example">
+                <attach>pos</attach>
+                <death>none</death>
+                <mixmode>mult2</mixmode>
+            </obj>
+            <obj type="mesh" name="mesh_example2" fact="mesh_example">
+                <attach>pos</attach>
+                <death>none</death>
+                <mixmode>mult2</mixmode>
+                <keyFrame time="0">
+                    <action name="scale" value="0.75" />
+                    <action name="position" x="1" y="2" />
+                    <action name="rotate" y="45" />
+                    <action name="spin" y="45" />
+                    <action name="colour" r="128" g="128" b="128" />
+                </keyFrame>
+            </obj>
+        </effect>
+    </addon>
+</library>

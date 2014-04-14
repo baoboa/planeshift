@@ -1,0 +1,151 @@
+SubDir TOP src client ;
+SubInclude TOP src client gui ;
+
+switch $(TARGET.OS)
+{
+case MACOS_X :                          # MacOS/X
+  SubInclude TOP src client macosx ;
+case * :                                # Posix, Unix, GNU/Linux, etc.
+}
+
+ApplicationIcon win32 : psclient : [ ConcatDirs $(TOP) support icons icon1.ico ] ;
+ApplicationIcon macosx : psclient : [ ConcatDirs $(TOP) support icons icon1.icns ] ;
+Application psclient : [ Wildcard *.cpp *.h ] ;
+ExternalLibs psclient : CRYSTAL CAL3D BREAKPAD ;
+CompileGroups psclient : client ;
+COMMONLIBS = gui psnet psengine psrpgrules psutil paws effects fparser psmusic ;
+if $(REPORTER)
+{
+  if $(TARGET.OS) = "MACOS_X" { COMMONLIBS += crashreport ; }
+  if $(TARGET.OS) != "MACOS_X" { COMMONLIBS += breakpad ; }
+}
+LinkWith psclient : $(COMMONLIBS) ;
+Win32Resource psclient : [ ConcatDirs $(SUBDIR) crashdialog.rc ] ;
+
+if $(HAVE_STATIC_PLUGINS) = "yes"
+{
+
+SubVariant static ;
+ApplicationIcon win32 : psclient_static : [ ConcatDirs $(TOP) support icons icon1.ico ] ;
+ApplicationIcon macosx : psclient_static : [ ConcatDirs $(TOP) support icons icon1.icns ] ;
+Application psclient_static : [ Wildcard *.cpp *.h ] $(extrafiles) : independent noinstall nohelp ;
+CFlags psclient_static : [ FDefines CS_STATIC_LINKED ] ;
+LFlags psclient_static : -lcrystalspace_staticplugins-$(CRYSTAL.VERSION) ;
+MsvcDefine psclient_static : CS_STATIC_LINKED ;
+LinkWith psclient_static : planeshift_staticplugins $(COMMONLIBS) ;
+Win32Resource psclient_static : [ ConcatDirs $(SUBDIR) crashdialog.rc ] ;
+
+#
+# The plugins that we need
+#
+STATIC.PLUGINLIST =
+  animesh
+  animeshldr
+  bindoc
+  bruteblock
+  csddsimg
+  csfont
+  csgifimg
+  csjpgimg
+  csjngimg
+  csopcode
+  csparser
+  cspngimg
+  cssynldr
+  cstgaimg
+  decal
+  docpreproc
+  dsplex
+  dynavis
+  emit
+  emitldr
+  engine
+  engseq
+  fontplex
+  freefnt2
+  frustvis
+  genmesh
+  gl3d
+  glshader_cg
+  glshader_fixed
+  glshader_ps1
+  glshader_glsl
+  gmeshanim
+  gmeshanimpdl
+  gmeshldr
+  imgplex
+  null2d
+  null3d
+  nullmesh
+  nullmeshldr
+  particles
+  particlesldr
+  posteffect
+  ptanimimg
+  ptpdlight
+  reporter
+  rm_shadow_pssm
+  rm_unshadowed
+  rm_deferred
+  sequence
+  shadermgr
+  shaderweaver
+  simpleformer
+  simpleformerldr
+  skeleton2
+  skeleton2ldr
+  sndmanager
+  sndsysloader
+  sndsysnull
+  sndsysogg
+  sndsysopenal
+  sndsyssoft
+  sndsysspeex
+  sndsyswav
+  spr2d
+  spr3d
+  spr3dbin
+  spr3dldr
+  sprcal3d
+  sprcal3dldr
+  stdrep
+  terrainldr
+  terrain2
+  terrain2ldr
+  vfs
+  xmlshader
+  xmltiny
+  slcombiner
+  ;
+
+STATIC.PlUGINLIST.OPTIONAL =
+  svgimage
+  ;
+
+if $(TARGET.OS) != "WIN32" { if $(TARGET.OS) != "MACOS_X" { STATIC.PLUGINLIST += xwin xext86vm glx2d sndsysalsa sndsysoss ; } }
+if $(TARGET.OS) = "WIN32" { STATIC.PLUGINLIST += glwin32 sndsyswin ; }
+if $(TARGET.OS) = "MACOS_X" { STATIC.PLUGINLIST += glosx2d sndsyscoreaudio ; }
+
+LinkStaticPlugins psclient_static : $(STATIC.PLUGINLIST)
+: $(STATIC.PlUGINLIST.OPTIONAL)
+: CRYSTAL
+;
+
+STATIC.PLUGINLIST.PS =
+  bgloader
+  soundmngr
+  dummysndmngr
+;
+
+if $(TARGET.OS) != "WIN32" { if $(HUNSPELL.AVAILABLE) { STATIC.PLUGINLIST.PS += spellchecker ; } }
+
+LinkStaticPlugins psclient_static :
+  $(STATIC.PLUGINLIST.PS)
+;
+
+ExternalLibs psclient_static : CRYSTAL CAL3D BREAKPAD ;
+CompileGroups psclient_static : client_static ;
+
+SubVariant ;
+}
+

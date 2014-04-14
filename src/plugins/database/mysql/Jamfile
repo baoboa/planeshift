@@ -1,0 +1,12 @@
+SubDir TOP src plugins database mysql ;
+
+if $(LIBMYSQLCLIENT.AVAILABLE) = "yes"
+{
+Plugin dbmysql :
+	[ Wildcard *.cpp *.h ]
+;
+ExternalLibs dbmysql : CRYSTAL LIBMYSQLCLIENT ;
+LinkWith dbmysql : psutil ;
+CompileGroups dbmysql : psserver psnpcclient ;
+
+}

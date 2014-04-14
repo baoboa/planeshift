@@ -1,0 +1,46 @@
+<widget_description>
+
+  <widget name="IgnoreWindow" factory="pawsIgnoreWindow" visible="no" savepositions="yes" movable="yes" resizable="yes" style="New Standard GUI">
+
+    <frame x="0" y="100" width="200" height="240" border="yes" />
+    <minframe width="200" height="160" />
+    <title resource="Scaling Title Bar" text="Ignore List" align="left" close_button="yes"/>
+
+
+    <widget name="IgnoreList" factory="pawsListBox"  >
+        <frame x="10" y="10" width="170" height="190" border="yes" />
+        <columns height="32">
+            <column width="140" >
+                <widget name="Name" factory="pawsTextBox">
+                </widget>
+            </column>
+        </columns>
+
+         <attachpoints>
+            <attach point="ATTACH_LEFT" />
+            <attach point="ATTACH_BOTTOM" />
+            <attach point="ATTACH_TOP" />
+            <attach point="ATTACH_RIGHT" />
+        </attachpoints>
+    </widget>
+
+    <widget name="remove" factory="pawsButton" toggle="no" id="2000" shadows="yes" style="Standard Button">
+        <frame x="70" y="210" width="60" height="20" border="yes" />
+        <label text="Remove" />
+        <attachpoints>
+            <attach point="ATTACH_LEFT" />
+            <attach point="ATTACH_BOTTOM" />
+        </attachpoints>
+    </widget>
+
+    <widget name="add" factory="pawsButton" toggle="no" id="3000" shadows="yes" style="Standard Button">
+        <frame x="140" y="210" width="50" height="20" border="yes" />
+        <label text="Add" />
+        <attachpoints>
+            <attach point="ATTACH_LEFT" />
+            <attach point="ATTACH_BOTTOM" />
+        </attachpoints>
+    </widget>
+
+  </widget>
+</widget_description>

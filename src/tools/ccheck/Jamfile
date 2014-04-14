@@ -1,0 +1,39 @@
+SubDir TOP src tools ccheck ;
+
+Application ccheck :
+	[ Wildcard *.cpp *.h ] : console ;
+
+LinkWith ccheck : psutil ;
+CompileGroups ccheck : tools ;
+ExternalLibs ccheck : CRYSTAL ;
+
+if $(HAVE_STATIC_PLUGINS) = "yes"
+{
+  SubVariant static ;
+
+  Application ccheck_static :
+        [ Wildcard *.cpp *.h ] : console ;
+
+  CFlags ccheck_static : [ FDefines CS_STATIC_LINKED ]
+  LFlags ccheck_static : -lcrystalspace_staticplugins-$(CRYSTAL.VERSION)
+  LinkWith ccheck_static : psutil ;
+
+  STATIC.PLUGINLIST =
+    bindoc
+    xmltiny
+    cssynldr
+    csparser
+    vfs
+  ;
+
+  LinkStaticPlugins ccheck_static : $(STATIC.PLUGINLIST)
+  :
+  : CRYSTAL
+  ;
+
+  CompileGroups ccheck_static : tools ;
+  ExternalLibs ccheck_static : CRYSTAL ;
+
+  SubVariant ;
+}
+

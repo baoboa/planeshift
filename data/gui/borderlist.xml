@@ -1,0 +1,30 @@
+<borderlist>
+
+<border name="Leather Sketch Border">
+    <topleft>
+    <image file="/paws/base/maps/leather/top_left_1.png" resource="UpperLeftMap" />
+    </topleft>
+    <topright>
+    <image file="/paws/base/maps/leather/top_right_1.png" resource="UpperRightMap" />
+    </topright>
+    <bottomleft>
+    <image file="/paws/base/maps/leather/bottom_left_1.png" resource="LowerLeftMap" />
+    </bottomleft>
+    <bottomright>
+    <image file="/paws/base/maps/leather/bottom_right_1.png" resource="LowerRightMap" />
+    </bottomright>
+    <leftmiddle>
+    <image file="/paws/base/maps/leather/left_1.png" resource="MiddleLeftMap" />
+    </leftmiddle>
+    <rightmiddle>
+    <image file="/paws/base/maps/leather/right_1.png" resource="MiddleRightMap" />
+    </rightmiddle>
+    <topmiddle>
+    <image file="/paws/base/maps/leather/top_1.png" resource="UpperMiddleMap" />
+    </topmiddle>
+    <bottommiddle>
+    <image file="/paws/base/maps/leather/bottom_1.png" resource="LowerMiddleMap" />
+    </bottommiddle>
+</border>
+
+</borderlist>

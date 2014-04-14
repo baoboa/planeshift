@@ -1,0 +1,8 @@
+SubDir TOP src tools pawseditor ;
+
+Application pawseditor :
+	[ Wildcard *.cpp *.h ]
+;
+CompileGroups pawseditor : tools ;
+ExternalLibs pawseditor : CRYSTAL ;
+LinkWith pawseditor : paws psutil fparser ;

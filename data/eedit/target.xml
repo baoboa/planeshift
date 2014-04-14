@@ -1,0 +1,105 @@
+<widget_description>
+
+<widget name="TargetToolbox" factory="EEditTargetToolbox" 
+        visible="yes" savepositions="yes" movable="yes" resizable="no" resizetoscreen="no" >
+        
+    <frame x="805" y="215" width="210" height="160" border="yes" justtitle="yes" />
+    <title resource="TitleBar" text="Effect Target" align="left" />
+    <font name="LiberationSans-Regular.ttf" r="255" g="255" b="255" size="9"  sr="0" sg="0" sb="0" shadow="yes" />   
+    <bgimage resource="Back" alpha="75" />
+
+    <widget name="tar_x_lbl" factory="pawsTextBox">
+        <frame x="10" y="14" width="70" height="18" border="no"/>
+        <font name="LiberationSans-Regular.ttf" r="255" g="255" b="255" size="9"  sr="0" sg="0" sb="0" shadow="yes" />   
+        <text string="X Position:" />
+    </widget>
+    <widget name="tar_x" factory="pawsSpinBox">
+        <frame x="100" y="8" width="95" height="25" border="no" />        
+        <font name="LiberationSans-Regular.ttf" r="255" g="255" b="255" size="9"  sr="0" sg="0" sb="0" shadow="yes" />   
+        <bgimage resource="Shaded" alpha="75" />
+        <number default="-43" min="-10000" max="10000" inc="0.5" position="left"/>
+    </widget>
+    <widget name="tar_y_lbl" factory="pawsTextBox">
+        <frame x="10" y="44" width="70" height="18" border="no" />
+        <font name="LiberationSans-Regular.ttf" r="255" g="255" b="255" size="9"  sr="0" sg="0" sb="0" shadow="yes" />   
+        <text string="Y Position:" />
+    </widget>
+    <widget name="tar_y" factory="pawsSpinBox">
+        <frame x="100" y="38" width="95" height="25" border="no" />        
+        <font name="LiberationSans-Regular.ttf" r="255" g="255" b="255" size="9"  sr="0" sg="0" sb="0" shadow="yes" />   
+        <bgimage resource="Shaded" alpha="75" />
+        <number default="0.1" min="-10000" max="10000" inc="0.5" position="left"/>
+    </widget>
+    <widget name="tar_z_lbl" factory="pawsTextBox">
+        <frame x="10" y="74" width="70" height="18" border="no" />
+        <font name="LiberationSans-Regular.ttf" r="255" g="255" b="255" size="9"  sr="0" sg="0" sb="0" shadow="yes" />   
+        <text string="Z Position:" />
+    </widget>
+    <widget name="tar_z" factory="pawsSpinBox">
+        <frame x="100" y="68" width="95" height="25" border="no" />        
+        <font name="LiberationSans-Regular.ttf" r="255" g="255" b="255" size="9"  sr="0" sg="0" sb="0" shadow="yes" />   
+        <bgimage resource="Shaded" alpha="75" />
+        <number default="-184" min="-10000" max="10000" inc="0.5" position="left"/>
+    </widget>
+    <widget name="tar_rot_lbl" factory="pawsTextBox">
+        <frame x="10" y="104" width="70" height="18" border="no" />
+        <font name="LiberationSans-Regular.ttf" r="255" g="255" b="255" size="9"  sr="0" sg="0" sb="0" shadow="yes" />   
+        <text string="Direction:" />
+    </widget>
+    <widget name="tar_rot" factory="pawsSpinBox">
+        <frame x="100" y="98" width="95" height="25" border="no" />        
+        <font name="LiberationSans-Regular.ttf" r="255" g="255" b="255" size="9"  sr="0" sg="0" sb="0" shadow="yes" />   
+        <bgimage resource="Shaded" alpha="75" />
+        <number default="0" min="-10000" max="10000" inc="1" position="left"/>
+    </widget>
+
+    <widget name="more_less" factory="pawsButton">
+        <frame x="125" y="130" width="70" height="25" border="no" />
+        <font name="LiberationSans-Regular.ttf" r="255" g="255" b="255" size="7"  sr="0" sg="0" sb="0" shadow="yes" />   
+        <buttonup resource="ButtonUp"/>
+        <buttondown resource="ButtonDown" />
+        <label text="More >>"/>
+    </widget>
+
+    <widget name="anim" factory="pawsButton">
+        <frame x="10" y="130" width="70" height="25" border="no" />
+        <font name="LiberationSans-Regular.ttf" r="255" g="255" b="255" size="7"  sr="0" sg="0" sb="0" shadow="yes" />   
+        <buttonup resource="ButtonUp"/>
+        <buttondown resource="ButtonDown" />
+        <label text="Anim"/>
+    </widget>
+
+    <widget name="tar_type" factory="pawsRadioButtonGroup">
+        <frame x ="0" y="160" width="125" height="100" border="no" />
+        <font name="LiberationSans-Regular.ttf" r="255" g="255" b="255" size="9"  sr="0" sg="0" sb="0" shadow="yes" />   
+        <radio on="RadioOn" off="RadioOff"/>
+                      
+        <widget name="tar_type_none" factory="pawsRadioButton" id="0">
+            <frame x="5" y="5" width="125" height="20"/>            
+            <text string="No mesh" position="right"/>            
+        </widget> 
+        <widget name="tar_type_axis" factory="pawsRadioButton" id="1">
+            <frame x="5" y="30" width="125" height="20"/>            
+            <text string="Axis Arrows" position="right"/>            
+        </widget>         
+        <widget name="tar_type_custom" factory="pawsRadioButton" id="2">
+            <frame x="5" y="55" width="125" height="20"/>            
+            <text string="Custom Mesh:" position="right"/>            
+        </widget>         
+    </widget>
+    <widget name="tar_mesh_file" factory="pawsEditTextBox" visible="no">
+        <frame x="140" y="91" width="0" height="20" border="no" />
+        <font name="LiberationSans-Regular.ttf" r="255" g="255" b="255" size="9"  sr="0" sg="0" sb="0" shadow="yes" />   
+        <bgimage resource="Shaded" alpha="75" />
+        <text string="" />
+    </widget>
+    <widget name="tar_mesh_browse" factory="pawsButton">
+        <frame x="125" y="215" width="70" height="25" border="no" />
+        <font name="LiberationSans-Regular.ttf" r="255" g="255" b="255" size="7"  sr="0" sg="0" sb="0" shadow="yes" />   
+        <buttonup resource="ButtonUp"/>
+        <buttondown resource="ButtonDown" />
+        <label text="Browse"/>
+    </widget>
+</widget>
+
+</widget_description>

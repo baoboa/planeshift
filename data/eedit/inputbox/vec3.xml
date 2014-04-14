@@ -1,0 +1,53 @@
+<widget_description>
+
+<widget name="SelectVec3" factory="EEditSelectVec3" 
+        visible="yes" savepositions="no" movable="yes" resizable="no" resizetoscreen="no" >
+        
+    <frame x="0" y="0" width="160" height="130" border="yes" justtitle="yes" />
+    <title resource="TitleBar" text="Select" align="left" />
+    <font name="LiberationSans-Regular.ttf" r="255" g="255" b="255" size="9"  sr="0" sg="0" sb="0" shadow="yes" />   
+    <bgimage resource="Back" alpha="0" />
+
+    <widget name="select_x_lbl" factory="pawsTextBox">
+        <frame x="10" y="14" width="70" height="18" border="no"/>
+        <font name="LiberationSans-Regular.ttf" r="255" g="255" b="255" size="9"  sr="0" sg="0" sb="0" shadow="yes" />   
+        <text string="X:" />
+    </widget>
+    <widget name="select_x" factory="pawsSpinBox">
+        <frame x="50" y="8" width="95" height="25" border="no" />        
+        <font name="LiberationSans-Regular.ttf" r="255" g="255" b="255" size="9"  sr="0" sg="0" sb="0" shadow="yes" />   
+        <bgimage resource="Shaded" alpha="75" />
+        <number default="0" min="-10000" max="10000" inc="0.05" position="left"/>
+    </widget>
+    <widget name="select_y_lbl" factory="pawsTextBox">
+        <frame x="10" y="44" width="70" height="18" border="no" />
+        <font name="LiberationSans-Regular.ttf" r="255" g="255" b="255" size="9"  sr="0" sg="0" sb="0" shadow="yes" />   
+        <text string="Y:" />
+    </widget>
+    <widget name="select_y" factory="pawsSpinBox">
+        <frame x="50" y="38" width="95" height="25" border="no" />        
+        <font name="LiberationSans-Regular.ttf" r="255" g="255" b="255" size="9"  sr="0" sg="0" sb="0" shadow="yes" />   
+        <bgimage resource="Shaded" alpha="75" />
+        <number default="0" min="-10000" max="10000" inc="0.05" position="left"/>
+    </widget>
+    <widget name="select_z_lbl" factory="pawsTextBox">
+        <frame x="10" y="74" width="70" height="18" border="no" />
+        <font name="LiberationSans-Regular.ttf" r="255" g="255" b="255" size="9"  sr="0" sg="0" sb="0" shadow="yes" />   
+        <text string="Z:" />
+    </widget>
+    <widget name="select_z" factory="pawsSpinBox">
+        <frame x="50" y="68" width="95" height="25" border="no" />        
+        <font name="LiberationSans-Regular.ttf" r="255" g="255" b="255" size="9"  sr="0" sg="0" sb="0" shadow="yes" />   
+        <bgimage resource="Shaded" alpha="75" />
+        <number default="0" min="-10000" max="10000" inc="0.05" position="left"/>
+    </widget>
+    <widget name="ok" factory="pawsButton">
+        <frame x="75" y="98" width="70" height="25" border="no" />
+        <font name="LiberationSans-Regular.ttf" r="255" g="255" b="255" size="7"  sr="0" sg="0" sb="0" shadow="yes" />   
+        <buttonup resource="ButtonUp"/>
+        <buttondown resource="ButtonDown" />
+        <label text="Ok"/>
+    </widget>
+</widget>
+
+</widget_description>

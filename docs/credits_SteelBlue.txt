@@ -1,0 +1,170 @@
+@PlaneShift Team at Steel Blue 0.4.03 Release (released December-2008)
+
+&Project Leader, Director
+
+Luca "Talad" Pancallo, for building a great team to make a dream come true.
+
+
+&The pillars
+
+Andrew "Acraig" Craig, for client gui foundation, char creation screens, equipment, inventory, overall coordination ...
+
+Brian Lee "Xillix" Bonfonti, Settings department leader, for quests, npcs dialogues, books, prospect management, hard work and lots of passion.
+
+
+&Client and Server engine
+
+Andrew "Acraig" Craig, client side department leader.
+
+Keith "Vengeance" Fulton, for lights, animation management, char customization, client/server connections, ...
+
+Arianna "AryHann" Benigno, for marriage system, weather, past running of the testing team and many bug fixes.
+
+Dave "Acissej" Bentham, for maps/book uniqueness, spells, active magic window, events commands.
+
+Michael "Borrillis" Cummings, for Pets system, char creation affinity.
+
+Andrew "Khaki" Dai, for client/server synchronization, anti-cheat modules, improved collision detection.
+
+Michael "Xordan" Gist, for a new updater, banking system, many bug fixes and optimisations, and cross-platform maintenance.
+
+Kenny "Kayden" Graunke, for bug fixing, code clean up, inventory, containers and non mortal duels.
+
+Sasha "Kemedes" Levin, for commands improvements, char deletion and lot of bug fixing.
+
+Anders "Magodra" Reggestad, for magic system implementation, NPC AI, tribes and a lot more.
+
+Andrew "aarobber" Robberts, for camera movement, particles, shadows, chat bubbles.
+
+Roland "Ragnarin" Schulz, for improving the char labels and endless other fixes.
+
+Thomas "TomT" Towey, for weapon and armor craft systems, server maintenance and many bug fixes.
+
+Enar "Bereror" Väikene, for minigames and bug fixing.
+
+Trond "Trymm" Varslot, for MacOSX support.
+
+Steven "Aresilek" Patrick, for refactors, bug fixes and patch reviewing.
+
+Andreas "Paldorin" Heinchen, for fixing many serious memory leaks and other code bugs.
+
+Stefano "weltall" Angeleri, for lots of bug fixing and code refactoring.
+
+
+&Settings
+
+Brian Lee "Xillix" Bonfonti, Setting department leader, for quests, npcs dialogues, books.
+
+Desmond "Jeraphon", for quests, npc dialogues, kas and books.
+
+Sherry "Rizin" Heidkamp, for quests, books, NPCs, oversight of and proposals for the tutorial, internal document management, and exceptional editing.
+
+Steve "Darkmoon" Scott, for maps, npcs dialogues, quests and knowledge areas.
+
+Stacy "Venae Rell" Davis, for uncompromising editing, written and artistic contributions, and superior prospect management.
+
+Fred "Steuben" Prentice, for npc paths, and engine liason duties.
+
+Frank "Eriroley" Barton, for WebConsole utilities and special projects, quests, and editing.
+
+Melissa "Ellille" Barton for cooking and baking development, and her aid in furthering settings and making the world make sense.
+
+Angela "Oomi" Miller, for quests, books, KAs, and organization of in-progress quests.
+
+
+
+&2D Art
+
+Rob "Ulf" Walker, for gugrontid level, lot of good textures and his motivation.
+
+Kelvin "Gluonite" Mason for gugrontid textures, derghir tools, houses and textures, items.
+
+Elina "Karyuu" Eganova, for player and monsters skins, icons, new web site, armor skins and more.
+
+Jan "Ghrynn" Horak, for new character skeleton and new animations for player races.
+
+Alexei "Inca" Popov, for great architectural sketches on player races and other concept art.
+
+Ethan "Gentar" Scheu, for bronze doors texturing, and armor textures.
+
+
+&3D Art
+
+Ville "Cherppow" Rantapuska, for many item models, stone and elves client skins, deathrealm expansion and more.
+
+Rob "Ulf" Walker, for gugrontid level, lot of good textures and his motivation.
+
+Stacy "Venae Rell" Davis, for blackflame and xiosia altars and other textures.
+
+Elina "Karyuu" Eganova, for Tlo-ke, Kikiri and female Dermf models, Klyros male and Dermorian female animations.
+
+Trond "Trymm" Varslot, improvement to characters animations, velnishi and kikiri animations.
+
+Creath "Artician" Carter, for his impressive hard work and focus on critical assets like arena, ojaveda, roads.
+
+Ben "Djaggernaut" Chavigner, for carkarass and consumer monster, plus amazing additions to death realm.
+
+Erik "Erik" Bakker, for Trepor model, Klyros model, sewers level, player animations.
+
+
+&Game Masters
+
+Anselm "Kerol" Kiefner, GM Team Leader, oversight of and proposals for the tutorial, and settings contributor.
+
+
+&Rules
+
+Michael "Xordan" Gist, for balancing progression system and new stamina rules.
+
+Scott "Starg" Gibson, for adding new crafting, repairing old crafting, and many other small fixes.
+
+
+&Music and sounds
+
+Ruslan "Ellarion" Perezhilo, for travel songs, death jingles and lot of nice sounds.
+
+Jiri "GeorgeD" Ptacek, for death realm song, victory jingles and lot of nice sounds.
+
+Bruno "CyberMozart" Largarde, for the main theme, intro songs and battle theme.
+
+
+&Testing Team
+
+Bas "Lanarel" van den Broek, for leading the testing team, helping out with many issues, and fixing and closing many bugs.
+
+Jochen "Peeg" Woidich, for fixing and closing many bugs and providing support with issues related to bugs.
+
+Steven "Vornne" Schwartfeger, for fixing and closing many bugs, and investigating many issues.
+
+Michele "Caarrie" Davis, for fixing and closing many bugs, as well as providing support on the forums and in many other places.
+
+"Mrokii", for helping to test many mac issues and other bugs.
+
+Mario "LigH" Rohkrämer, for reporting and testing many art bugs, and work on bug prevention.
+
+"f-rd", for testing many bugs and making even weird ones reproducible.
+
+Thom "ThomPhoenix" Hurks, for testing and finding many bugs.
+
+Stefano "weltall" Angeleri, for contributing very many patches for bugs both reported and unknown.
+
+
+@Special Thanks to
+
+Frank "res" Richter, for lots of great work on CS and supporting our project directly.
+
+Marc Haseinko, for providing a 99.9% reliable testing environment.
+
+
+@Very Special Thanks to
+
+Jorrit Tyberghein, for his great 3D engine (Crystal Space), for the continuous and passionate support to our team, quaternions and other e=mc2 things.
+
+Fragnetics Team (www.fragnetics.com) for providing the necessary hardware and bandwidth.
+
+
+All the former developers for their work and contributions to PlaneShift.
+
+.... and to all our players, fans and supporters!
+
+@Be sure to read the other credits files in docs directory to have a full list of developers of previous releases.

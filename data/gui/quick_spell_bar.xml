@@ -1,0 +1,72 @@
+<widget_description>
+<widget name="HotBar" factory="pawsBartenderWindow" visible="no" savepositions="yes" movable="yes" resizable="no" configurable="yes" style="New Standard GUI">
+    <frame x="200" y="100" width="650" height="50" border="yes" />
+    <widget name="BartenderSlot_1" factory="pawsSlot">
+        <bartender_slot>1</bartender_slot>
+        <show_stack_amount>0</show_stack_amount>
+        <frame x="0" y="0" width="48" height="48" />
+    </widget>
+    <widget name="BartenderSlot_2" factory="pawsSlot">
+        <bartender_slot>1</bartender_slot>
+        <show_stack_amount>0</show_stack_amount>
+        <frame x="50" y="0" width="48" height="48" />
+    </widget>
+    <widget name="BartenderSlot_3" factory="pawsSlot">
+        <bartender_slot>1</bartender_slot>
+        <show_stack_amount>0</show_stack_amount>
+        <frame x="100" y="0" width="48" height="48" />
+    </widget>
+    <widget name="BartenderSlot_4" factory="pawsSlot">
+        <bartender_slot>1</bartender_slot>
+        <show_stack_amount>0</show_stack_amount>
+        <frame x="150" y="0" width="48" height="48" />
+    </widget>
+
+    <widget name="BartenderSlot_5" factory="pawsSlot">
+        <bartender_slot>1</bartender_slot>
+        <show_stack_amount>0</show_stack_amount>
+        <frame x="200" y="0" width="48" height="48" />
+    </widget>
+    <widget name="BartenderSlot_6" factory="pawsSlot">
+        <bartender_slot>1</bartender_slot>
+        <show_stack_amount>0</show_stack_amount>
+        <frame x="250" y="0" width="48" height="48" />
+    </widget>
+    <widget name="BartenderSlot_7" factory="pawsSlot">
+        <bartender_slot>1</bartender_slot>
+        <show_stack_amount>0</show_stack_amount>
+        <frame x="300" y="0" width="48" height="48" />
+    </widget>
+    <widget name="BartenderSlot_8" factory="pawsSlot">
+        <bartender_slot>1</bartender_slot>
+        <show_stack_amount>0</show_stack_amount>
+        <frame x="350" y="0" width="48" height="48" />
+    </widget>
+
+    <widget name="BartenderSlot_9" factory="pawsSlot">
+        <bartender_slot>1</bartender_slot>
+        <show_stack_amount>0</show_stack_amount>
+        <frame x="400" y="0" width="48" height="48" />
+    </widget>
+    <widget name="BartenderSlot_10" factory="pawsSlot">
+        <bartender_slot>1</bartender_slot>
+        <show_stack_amount>0</show_stack_amount>
+        <frame x="450" y="0" width="48" height="48" />
+    </widget>
+    <widget name="BartenderSlot_11" factory="pawsSlot">
+        <bartender_slot>1</bartender_slot>
+        <show_stack_amount>0</show_stack_amount>
+        <frame x="500" y="0" width="48" height="48" />
+    </widget>
+    <widget name="BartenderSlot_12" factory="pawsSlot">
+        <bartender_slot>1</bartender_slot>
+        <show_stack_amount>0</show_stack_amount>
+        <frame x="550" y="0" width="48" height="48" />
+    </widget>
+    <widget name="LockButton" factory="pawsButton" id="100" tooltip="Lock/Unlock" visible="yes" toggle="yes" >
+       <frame x="600" y="0" width="26" height="26" />
+       <buttonup resource="lockicon" />
+       <buttondown resource="unlockicon" />
+    </widget>
+</widget>
+</widget_description>

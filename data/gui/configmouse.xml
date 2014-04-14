@@ -1,0 +1,56 @@
+<widget_description>
+
+  <widget name="ConfigMouseTree" factory="pawsConfigMouse"
+          visible="yes" savepositions="no" movable="no" resizable="no" style="New Standard GUI">
+    <bgimage resource="Scaling Widget Background" />
+
+    <widget factory="pawsTree">
+      <layout rowSpacing="20" levelSpacing="20" />
+
+    <widget factory="pawsSeqTreeNode">
+
+        <widget factory="pawsWidgetTreeNode">
+            <nodewidget>
+              <widget factory="pawsTextBox" name="Selection label">
+                <frame x="0" y="4" width="100" height="20" border="no" />
+                <text string="Selection"/>
+              </widget>
+            </nodewidget>
+            <widget factory="pawsSeqTreeNode" name="ContextMenu">
+                <attr name="type" value="action"/>
+            </widget>
+            <widget factory="pawsSeqTreeNode" name="EntitySelect">
+                <attr name="type" value="action"/>
+            </widget>
+            <widget factory="pawsSeqTreeNode" name="EntityDragDrop">
+                <attr name="type" value="action"/>
+            </widget>
+            <widget factory="pawsSeqTreeNode" name="EntityDragDropOne">
+                <attr name="type" value="action"/>
+            </widget>
+            <widget factory="pawsSeqTreeNode" name="EntityDragDropAll">
+                <attr name="type" value="action"/>
+            </widget>
+        </widget>
+        <widget factory="pawsWidgetTreeNode">
+            <nodewidget>
+                <widget factory="pawsTextBox" name="Settings label">
+                    <frame x="0" y="4" width="100" height="20" border="no" />
+                    <text string="Settings"/>
+                </widget>
+            </nodewidget>
+            <widget factory="pawsSeqTreeNode" name="InvertMouse">
+                <attr name="type" value="onoff"/>
+            </widget>
+            <widget factory="pawsSeqTreeNode" name="HorzSensitivity">
+                <attr name="type" value="natnum"/>
+            </widget>
+            <widget factory="pawsSeqTreeNode" name="VertSensitivity">
+                <attr name="type" value="natnum"/>
+            </widget>
+        </widget>
+    </widget>
+  </widget>
+</widget>
+
+</widget_description>

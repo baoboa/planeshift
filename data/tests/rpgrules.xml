@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<rpgtestsuite>
+	<testmoney name="Test default initialization">
+		<checkstr value="0,0,0,0" />
+		<checktotal value="0" />
+	</testmoney>
+	<testmoney name="Test 0 Initialization">
+		<init value="0,0,0,0" />
+		<checkstr value="0,0,0,0" />
+		<checktotal value="0" />
+	</testmoney>
+	<testmoney name="Test Tria Initialization">
+		<init value="0,0,0,1" />
+		<checkstr value="0,0,0,1" />
+		<checktotal value="1" />
+	</testmoney>
+	<testmoney name="Test Hexa Initialization">
+		<init value="0,0,1,0" />
+		<checkstr value="0,0,1,0" />
+		<checktotal value="10" />
+	</testmoney>
+	<testmoney name="Test Octa Initialization">
+		<init value="0,1,0,0" />
+		<checkstr value="0,1,0,0" />
+		<checktotal value="50" />
+	</testmoney>
+	<testmoney name="Test Circle Initialization">
+		<init value="1,0,0,0" />
+		<checkstr value="1,0,0,0" />
+		<checktotal value="250" />
+	</testmoney>
+	<testmoney name="Test All Initialization">
+		<init value="1,2,3,4" />
+		<checkstr value="1,2,3,4" />
+		<checktotal value="384" />
+		<checkcircles value="1" />
+		<checkoctas   value="2" />
+		<checkhexas   value="3" />
+		<checktrias   value="4" />
+	</testmoney>
+	<testmoney name="Test Adjusting Trias">
+		<init value="1,1,1,1"/>
+		<adjusttrias value="3" />
+		<checktotal value="314" />
+		<checktrias value="4" />
+	</testmoney>
+	<testmoney name="Test adding 2 money values">
+		<init value="1,1,1,1"/>
+		<adjustmoney value="3,3,3,3" />
+		<checktotal value="1244" />
+		<checktrias value="4" />
+		<checkhexas value="4" />
+		<checkoctas value="4" />
+		<checkcircles value="4" />
+	</testmoney>
+	<testmoney name="Test User String">
+		<init value="4,3,2,1"/>
+		<checkuserstring value="4 Circles, 3 Octas, 2 Hexas and 1 Trias"/>
+	</testmoney>
+	<testmoney name="Test normalize">
+		<init value="0,0,0,314" />
+		<normalize />
+		<checkstr value="1,1,1,4" />
+	</testmoney>
+	<testmoney name="Test > operator">
+		<init value="1,1,1,1" />
+		<checkgreaterthan value="1,1,1,0" />
+		<checkgreaterthan value="1,1,0,1" />
+		<checkgreaterthan value="1,0,1,1" />
+		<checkgreaterthan value="0,1,1,1" />
+	</testmoney>
+	<testmoney name="Test - operator">
+		<init value="1,1,1,1" />
+		<subtract value="0,1,0,1" />
+		<checkstr value="1,0,1,0" />
+	</testmoney>
+	<testmoney name="Test unary - operator">
+		<init value="1,1,1,1" />
+		<negate />
+		<checkstr value="-1,-1,-1,-1" />
+	</testmoney>
+	<testmoney name="Test * operator">
+		<init value="1,1,1,1" />
+		<multiply value="3" />
+		<checkstr value="3,3,3,3" />
+	</testmoney>
+
+</rpgtestsuite>

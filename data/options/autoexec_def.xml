@@ -1,0 +1,4 @@
+<autoexec>
+    <options enable="1" />
+    <commands execute="/tip&#x0A;/replay 10" />
+</autoexec>

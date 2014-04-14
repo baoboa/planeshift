@@ -1,0 +1,26 @@
+<widget_description>
+
+<widget name="SelectFloat" factory="EEditSelectFloat" 
+        visible="yes" savepositions="no" movable="yes" resizable="no" resizetoscreen="no" >
+        
+    <frame x="0" y="0" width="123" height="30" border="yes" justtitle="yes" />
+    <title resource="TitleBar" text="Select" align="left" />
+    <font name="LiberationSans-Regular.ttf" r="255" g="255" b="255" size="9"  sr="0" sg="0" sb="0" shadow="yes" />   
+    <bgimage resource="Back" alpha="0" />
+
+    <widget name="select_value" factory="pawsSpinBox">
+        <frame x="3" y="3" width="65" height="25" border="no" />        
+        <font name="LiberationSans-Regular.ttf" r="255" g="255" b="255" size="9"  sr="0" sg="0" sb="0" shadow="yes" />   
+        <bgimage resource="Shaded" alpha="75" />
+        <number default="0" min="-10000" max="10000" inc="0.5" position="left"/>
+    </widget>
+    <widget name="ok" factory="pawsButton">
+        <frame x="73" y="3" width="45" height="25" border="no" />
+        <font name="LiberationSans-Regular.ttf" r="255" g="255" b="255" size="7"  sr="0" sg="0" sb="0" shadow="yes" />   
+        <buttonup resource="ButtonUp"/>
+        <buttondown resource="ButtonDown" />
+        <label text="Ok"/>
+    </widget>
+</widget>
+
+</widget_description>

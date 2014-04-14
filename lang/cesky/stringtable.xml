@@ -1,0 +1,256 @@
+<StringTable>
+    <!-- charcreate.xml -->
+    <item orig="Character Name" 
+         trans="Jmeno postavy"/>
+    <item orig="Back" 
+         trans="Zpet"/>
+    <item orig="Paths" 
+         trans="Cesty"/>
+    <item orig="Custom" 
+         trans="Vlastni"/>
+
+    <!-- charpick.xml -->
+    <item orig="New Character" 
+         trans="Nova postava"/>
+    <item orig="Join Game" 
+         trans="Vstup do hry"/>
+
+    <!-- chatmenu.xml -->
+    <item orig="Communication" 
+         trans="Komunikace"/>
+    <item orig="Group" 
+         trans="Skupina"/>
+    <item orig="Greetings" 
+         trans="Pozdravy"/>
+    <item orig="Hi" 
+         trans="Cau"/>
+    <item orig="Hello" 
+         trans="Nazdar"/>
+    <item orig="Welcome back" 
+         trans="Vitej zpet"/>
+    <item orig="Can I join you ?" 
+         trans="Mohu se k tobe pripojit ?"/>
+    <item orig="Defend me !" 
+         trans="Bran me !"/>
+    <item orig="Lets go !" 
+         trans="Pojdme !"/>
+    <item orig="I am leaving" 
+         trans="Odchazim"/>
+    <item orig="Trade" 
+         trans="Obchod"/>
+    <item orig="Hostility" 
+         trans="Nepratelstvi"/>
+
+    <!-- spellwindow.xml -->
+    <item orig="Name" 
+         trans="Nazev"/>
+    <item orig="Glyphs" 
+         trans="Runy"/>
+    <item orig="Way" 
+         trans="Cesta"/>
+    <item orig="Realm" 
+         trans="Oblast"/>
+
+    <!-- configtree.xml -->
+    <item orig="network" 
+         trans="sit"/>
+    <item orig="server" 
+         trans="server"/>
+    <item orig="tweaks" 
+         trans="tweaks"/>
+    <item orig="controls" 
+         trans="ovladani"/>
+    <item orig="mouse" 
+         trans="mys"/>
+    <item orig="keyboard" 
+         trans="klavesnice"/>
+    <item orig="graphics" 
+         trans="grafika"/>
+    <item orig="models" 
+         trans="modely"/>
+    <item orig="details" 
+         trans="detaily"/>
+    <item orig="landscape" 
+         trans="krajina"/>
+
+    <!-- exchange.xml -->
+    <item orig="Count:" 
+         trans="Pocet:"/>
+
+    <!-- infowindow.xml -->
+    <item orig="No Target" 
+         trans="Zadny cil"/>
+    <item orig="Time: " 
+         trans="Cas: "/>
+
+    <!-- inventory.xml -->
+    <item orig="? Weight" 
+         trans="? Naklad"/>
+    <item orig="Stack Count" 
+         trans="Stack Count_cze"/>
+
+    <!-- itemdesc.xml -->
+    <item orig="Close" 
+         trans="Zavrit"/>
+
+    <!-- loginwindow.xml -->
+    <item orig="Account User Name:" 
+         trans="Nazev uctu:"/>
+    <item orig="Account Password:" 
+         trans="Heslo k uctu:"/>
+    <item orig="Server:" 
+         trans="Server:"/>
+    <item orig="Exit PlaneShift" 
+         trans="Ukonci PlaneShift"/>
+    <item orig="Login" 
+         trans="Prihlasit se"/>
+    <item orig="New Account" 
+         trans="Novy ucet"/>
+
+    <!-- merchant.xml -->
+    <item orig="Count" 
+         trans="Pocet"/>
+    <item orig="Buy" 
+         trans="Koupit"/>
+    <item orig="Sell" 
+         trans="Prodat"/>
+
+    <!-- shortcutwindow.xml -->
+    <item orig="Name:" 
+         trans="Nazev"/>
+    <item orig="Enter the command(s):" 
+         trans="Napis prikaz(y):"/>
+    <item orig="Done" 
+         trans="Hotovo"/>
+    <item orig="Cancel" 
+         trans="Zrusit"/>
+
+    <!-- psengine.cpp -->    
+    <item orig="Loading Game" 
+         trans="Nahravam hru"/>
+    <item orig="Requesting World" 
+         trans="Prijimam svet"/>
+    <item orig="Getting Characters" 
+         trans="Prijimam postavy"/>
+    <item orig="Loading GUI" 
+         trans="Nahravam GUI"/>
+
+    <!-- chatwindow.cpp -->
+    <item orig="Unknown command" 
+         trans="Neznamy prikaz"/>
+    <item orig="%s tells group: %s" 
+         trans="%s rika skupine: %s"/>
+    <item orig="%s shouts: %s" 
+         trans="%s krici: %s"/>
+    <item orig="%s from %s: %s" 
+         trans="%s od %s: %s"/>
+    <item orig="%s says: %s" 
+         trans="%s rika: %s"/>
+    <item orig="%s tells you: %s" 
+         trans="%s ti rika: %s"/>
+    <item orig="You tell %s: %s" 
+         trans="Rikas %s: %s"/>
+    <item orig="You are ignoring all replies from that person." 
+         trans="Ignorujes vse od teto osoby."/>
+    <item orig="Unknown Chat Type: %d" 
+         trans="Neznamy typ komunikace: %d"/>
+    <item orig="Talk to the people in your immediate vicinity." 
+         trans="Mluv k lidem v tve bezprostredni blizkosti."/>
+    <item orig="Talk to people in your sector." 
+         trans="Mluv k lidem v tvem sektoru."/>
+    <item orig="Talk to someone privately." 
+         trans="Mluv k nekomu soukrome."/>
+    <item orig="Talk to everyone in your guild privately." 
+         trans="Mluv ke vsem clenum sveho guildu soukrome."/>
+    <item orig="Talk to your group privately." 
+         trans="Mluv ke sve skupine soukrome."/>
+    <item orig="Perform an action see by people in your vicinity." 
+         trans="Proved akci viditelnou lidmi v tve blizkosti."/>
+    <item orig="Put an item up for sale or offer to buy something." 
+         trans="Nabidni neco k prodeji nebo zkus neco koupit."/>
+    <item orig="Makes the server log what target player is saying." 
+         trans="Zacne logovat vse, co zamerena postava rika."/>
+    <item orig="Ambiguous command:" 
+         trans="Nejasny prikaz:"/>
+    <item orig="You have ignored no-one." 
+         trans="Nikoho neignorujes."/>
+    <item orig="You have ignored the following players:" 
+         trans="Ignorujes nasledujici hrace:"/>
+    <item orig="You can not ignore yourself." 
+         trans="Nemuzes ignorovat sam sebe."/>
+    <item orig="You will now ignore %s." 
+         trans="Zacal jsi ignorovat hrace %s."/>
+    <item orig="You will no longer ignore %s." 
+         trans="Prestal jsi ignorovat hrace %s."/>
+
+    <!-- pawsinfowindow.cpp -->
+    <item orig="o&apos;clock" 
+         trans=". hodina"/>
+    
+    <!-- pawscontrolwindow.cpp -->
+    <item orig="Do you really wish to leave Yliakum?" 
+         trans="Opravdu si prejes opustit Yliakum?"/>
+    
+    <!-- pawsloginwindow.cpp -->
+    <item orig="Cannot connect to server" 
+         trans="Nemohu se pripojit k serveru"/>
+    <item orig="No server running at the moment" 
+         trans="Zrovna ted zadny server nebezi"/>
+    
+    <!-- pawspetitiongmwindow.cpp -->
+    <item orig="Manage petitions to help users." 
+         trans="Prohlizeni petic."/>
+    <item orig="The selected petition was %s" 
+         trans="Vybrana petice byla %s"/>
+    <item orig="cancelled." 
+         trans="zrusena."/>
+    <item orig="closed." 
+         trans="uzavrena."/>
+    <item orig="You have been assigned to the selected petition." 
+         trans="Byl jsi prirazen k vybrane petici."/>
+    <item orig="The selected petition has been escalated." 
+         trans="Vybrana petice byla eskalovana."/>
+    <item orig="Currently, there are no petitions." 
+         trans="Zrovna ted zadne petice neexistuji."/>
+    <item orig="You must select a petition from the list in order to view it." 
+         trans="Musis vybrat petici ze seznamu, abys ji mohl prohlednout."/>
+    <item orig="You must select a petition from the list in order to cancel it." 
+         trans="Musis vybrat petici ze seznamu, abys ji mohl zrusit."/>
+    <item orig="You must select a petition from the list in order to assign yourself." 
+         trans="Musis vybrat petici ze seznamu, abys sis ji mohl k sobe priradit."/>
+    <item orig="You must select a petition from the list in order to close it." 
+         trans="Musis vybrat petici ze seznamu, abys ji mohl uzavrit."/>
+    <item orig="You must select a petition from the list in order to escalate it." 
+         trans="Musis vybrat petici ze seznamu, abys ji mohl eskalovat."/>
+    
+    <!-- pawspetitionwindow.cpp -->
+    <item orig="List all of the petitions you have submitted." 
+         trans="Seznam vsech petic ktere jsi vytvoril."/>
+    <item orig="The selected petition was cancelled." 
+         trans="Vybrana petice byla zrusena."/>
+    <item orig="You currently have no petitions." 
+         trans="V soucasnosti zadna tebou vytvorena petice neexistuje."/>
+    <item orig="Petition Info" 
+         trans="Informace o petici"/>
+    <item orig="Status:" 
+         trans="Status:"/>
+    <item orig="Assigned GM:" 
+         trans="Prirazeny GM:"/>
+    <item orig="Petition submitted:" 
+         trans="Petitice vytvorena:"/>
+    <item orig="Player name:" 
+         trans="Jmeno hrace:"/>
+    <item orig="Escalation Level:" 
+         trans="Uroven eskalace:"/>
+    <item orig="Petition Text:" 
+         trans="Text petice:"/>
+    
+    <!-- cmdgroups.cpp -->
+    <item orig="%s has invited you to join a group. Click Yes to accept or No to reject." 
+         trans="%s te pozval(a) do skupiny. Zvol Ano, nebo Ne."/>
+
+    <!-- psnetmanager.cpp -->
+    <item orig="Couldn't resolve server hostname." 
+         trans="Nepovedlo se najit jmeno serveru."/>
+
+</StringTable>

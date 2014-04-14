@@ -1,0 +1,9 @@
+SubDir TOP src common sound ;
+
+Library sound
+	: [ Wildcard *.cpp *.h ]
+	: noinstall
+;
+
+LinkWith paws : psutil ;
+ExternalLibs sound : CRYSTAL ;

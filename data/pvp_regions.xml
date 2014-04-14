@@ -1,0 +1,9 @@
+<pvp_regions>
+  <region name="wander region">
+    <loc x="33.5" z="-213.57" />
+    <loc x="27.18" z="-263.67" />
+    <loc x="-22.18" z="-256.67" />
+    <loc x="-27.89" z="-209.85" />
+    <loc x="1.12" z="-191.12" />
+  </region>
+</pvp_regions>

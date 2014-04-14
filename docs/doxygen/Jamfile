@@ -1,0 +1,10 @@
+SubDir TOP docs doxygen ;
+
+if $(CMD.DOXYGEN)
+{
+CSDOXY_FILES = [ Wildcard *.css *.png ] ;
+DoxyTag apitags    : devapi.dox : doxytag : planeshift.tag ;
+Doxygen apihtml : devapi.dox $(CSDOXY_FILES) : html apidev : index.html ;
+Help apihtml    : "Build the API reference manual"    ;
+Help apitags    : "Build a Doxygen tagfile for the API reference"    ;
+}

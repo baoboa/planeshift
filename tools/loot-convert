@@ -1,0 +1,93 @@
+#! /usr/bin/php
+<?php
+// random loot converter
+
+
+//used to order the basic item names by name from the longest to the shortest (lowers double hits)
+function cmp($a, $b)
+{
+    if(strlen($a[1]) == strlen($b[1]))
+        return 0;
+    else return  (strlen($a[1]) > strlen($b[1]) ? -1 : 1);
+}
+
+//special conversion rules. They will be added to the main ones.
+//$specialItems = Array( Array(515,"Short Sword"), Array(4,"Broad Sword"));
+$specialItems = Array();
+
+// Change your database settings here:
+$db = mysql_connect("127.0.0.1", "planeshift", "planeshift") or die ("Unable to connect!"); // host, user, pass
+mysql_select_db("planeshift", $db) or die("Could not select database");
+
+//get a list of all the modifiers in the database
+$lootmodifiers = mysql_query("SELECT id, modifier_type, name from loot_modifiers") or die("fatal error: couldn't select stuff: " . mysql_error() . "\n");
+while ($row = mysql_fetch_array($lootmodifiers))
+{
+    $searchTerm = mysql_real_escape_string($row[2]); //stores the escaped name of the modifier (what will be appended to the item)
+    $type = ""; //stores the type of loot modifier is this used later to choose the right field
+    if($row[1] == "prefix") //loot modifier type = prefix
+    {
+        $searchTerm = $searchTerm."%"; //as it's a prefix we search only for items starting with it
+        $type = "prefix";
+    }
+    else if($row[1] == "adjective") //loot modifier type = adjective
+    {
+        $searchTerm = "%".$searchTerm."%"; //as it's an adjective we search for item with it in the middle (or the start)
+        $type = "adjective";
+    }
+    else if($row[1] == "suffix") //loot modifier type = suffix
+    {
+        $searchTerm = "%".$searchTerm;  //as it's a suffix we search for item with it at the end.
+        $type = "suffix";
+    }
+    else  //invalid loot modifier we stop.
+    { 
+        die("error: invalid modifier type\n"); 
+    }
+    printf("search term : %s\n", $searchTerm);
+    
+    //searches all the items with the modifier
+    $modifiedItems = mysql_query("select id, name from item_stats where name like \"".$searchTerm."\" and stat_type=\"R\"");
+    while ($statRow = mysql_fetch_array($modifiedItems))
+    {
+        printf("found %d %s\n", $statRow[0], $statRow[1]);
+        //updates all the items with the modifier we were searching
+        $query = "update item_instances set ".$type."=".$row[0]." where item_stats_id_standard=".$statRow[0];
+        mysql_query($query);
+        printf("%s\n",$query);
+    }
+}
+
+//now we have to set the items to their original version.
+//get a list of all basic items in the database
+$items = array();
+$basicItems = mysql_query("SELECT id, name from item_stats where stat_type=\"B\"") or die("fatal error: couldn't select stuff: " . mysql_error() . "\n");
+while ($row = mysql_fetch_array($basicItems))
+{
+    //fill an array with id and names
+    $items[] = array( $row[0], $row[1] );   
+}
+
+    //adds the special cases items
+    $items = array_merge($items, $specialItems);
+
+    print_r($items);
+    //order the list of items from the one with the longest name to the shortest.
+    usort($items, "cmp");
+    print_r($items);
+
+foreach($items as $entry)
+{
+    //searches for the item in the list by name as it's the only link left in the old schema
+    echo "attempting: SELECT id, name from item_stats where stat_type=\"R\" and name like \"%".$entry[1]."%\"\n";
+    $randomItems = mysql_query("SELECT id, name from item_stats where stat_type=\"R\" and name like \"%".$entry[1]."%\"") or die("fatal error: couldn't select stuff: " . mysql_error() . "\n");
+    while ($row = mysql_fetch_array($randomItems))
+    {
+        //set the real basic item on the instances
+        $query ="update item_instances set item_stats_id_standard=".$entry[0]." where item_stats_id_standard=".$row[0];
+        printf("%s\n", $query);
+        mysql_query($query);
+    }
+}
+
+?>

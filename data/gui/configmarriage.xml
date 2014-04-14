@@ -1,0 +1,28 @@
+<widget_description>
+
+    <widget name="ConfigMarriageTree" factory="pawsConfigMarriage"
+            visible="no" savepositions="no" movable="no"
+            resizable="no" style="New Standard GUI" >
+        <frame x="225" y="10" width="400" height="300" border="no" />
+        <bgimage resource="Scaling Widget Background" />
+
+        <widget name="confirmmarriage" factory="pawsRadioButtonGroup">
+            <frame x="160" y="100" width="220" height="120" />
+            <widget factory="pawsTextBox" name="">
+                <frame x="0" y="0" width="220" height="20" border="no" />
+                <text string="Confirmation upon marriage proposal:"/>
+            </widget>
+
+            <radionode name="ConfirmMarriageNever" id="0">
+                <frame x="0" y="20" width="220" height="20" />
+                <text string="Never accept" position="right" />
+            </radionode>
+            <radionode name="ConfirmMarriageEach" id="1">
+                <frame x="0" y="50" width="220" height="20" />
+                <text string="Confirm each time" position="right" />
+            </radionode>
+        </widget>
+
+    </widget>
+
+</widget_description>

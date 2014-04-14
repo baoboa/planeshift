@@ -1,0 +1,19 @@
+<widget_description>
+
+<widget name="ActionLocationWindow" factory="pawsActionLocationWindow" visible="no" movable="yes" configurable="yes" resizable="no" style="New Standard GUI">
+
+    <frame x="50" y="200" width="330" height="330" border="yes" />
+    <title resource="Scaling Title Bar" text="Examine" align="left" close_button="yes"/>
+
+        <widget name="Name" factory="pawsTextBox" style="Header Font" >
+            <frame x="10" y="20" width="300" height="25" border="no"/>
+        </widget>
+
+        <!-- Description -->
+        <widget name="Description" factory="pawsMultiLineTextBox">
+            <frame x="10" y="60" width="300" height="250" border="no" />
+        </widget>
+
+</widget>
+
+</widget_description>

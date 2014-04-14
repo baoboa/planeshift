@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?> 
+<library>
+    <addon plugin="PSEffects">
+        <effect name="entitylabel">
+            <anchor type="basic" name="pos">
+                <dir>none</dir>
+            </anchor>
+            <obj type="text" name="label" fontquality="44">
+                <mixmode>copy</mixmode>
+                <attach>pos</attach>
+                <death>none</death>
+                <dir>billboard</dir>
+            </obj>
+        </effect>
+    </addon>
+</library>

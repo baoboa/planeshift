@@ -1,0 +1,22 @@
+<widget_description>
+
+<widget name="OkWindow" factory="pawsOkBox" visible="no" savepositions="no" movable="yes" resizable="no" style="New Standard GUI" >
+
+    <frame x="0" y="0" width="460" height="240" border="no" />
+
+        <form>
+            <enter name="OkButton" />
+        </form>
+
+    <widget name="Message Box" factory="pawsMultiLineTextBox" style="Header Font">
+        <frame x="25" y="25" width="410" height="150" border="no" />
+    </widget>
+
+    <widget name="OkButton" factory="pawsButton" id="-30" style="Main Header Font">
+        <frame x="180" y="185" width="80" height="40" border="no"/>
+    <label text="Ok" />
+    </widget>
+
+</widget>
+
+</widget_description>

@@ -1,0 +1,45 @@
+<widget_description>
+
+   <widget name="GroupWindow" factory="pawsGroupWindow" visible="no" movable="yes" keepaspect="no" resizable="yes" savepositions="yes" configurable="no" ContextMenu="groupmenu.xml" style="New Standard GUI">
+        <frame x="0" y="100" width="140" height="200" border="no" />
+    <minframe width="130" height="102" />
+        <maxframe width="130" height="1200" />
+        <bgimage resource="" />
+
+        <widget name="List" factory="pawsListBox" selectable="0">
+            <frame x="2" y="14" width="139" height="180" border="no" />
+
+            <attachpoints>
+                <attach point="ATTACH_LEFT" />
+                <attach point="ATTACH_RIGHT" />
+                <attach point="ATTACH_BOTTOM" />
+                <attach point="ATTACH_TOP" />
+            </attachpoints>
+
+            <columns height="40" headings="no">
+                <column width="125">
+                    <widget name="stats" factory="pawsWidget" width="100" height="50" >
+                        <frame x="0" y="0" width="120" height="40" border="no" />
+                        <widget name="ICON" factory="pawsWidget">
+                            <frame x="0" y="3" width="36" height="36" border="no"/>
+                        </widget>
+                        <widget name="NAME" factory="pawsTextBox">
+                <frame x="35" y="3" width="80" height="15" border="no" />
+                        </widget>
+                        <widget name="HP" factory="pawsProgressBar" tooltip="HP">
+                            <frame x="27" y="20" width="90" height="10" border="yes" />
+                    <color r="150" g="20" b="20" />
+                    <fadecolor r="200" g="50" b="50" />
+                        </widget>
+                        <widget name="MANA" factory="pawsProgressBar" tooltip="Mana">
+                            <frame x="27" y="30" width="90" height="10" border="yes" />
+                    <color r="20" g="20" b="160" />
+                    <fadecolor r="50" g="50" b="200" />
+                        </widget>
+                    </widget>
+                  </column>
+            </columns>
+        </widget>
+    </widget>
+
+</widget_description>

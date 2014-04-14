@@ -1,0 +1,194 @@
+<widget_description>
+
+<pawsConfigWindow name="ConfigWindow" visible="no" savepositions="yes" movable="yes" resizable="no" configurable="yes" style="New Standard GUI">
+
+    <frame x="10" y="100" width="680" height="346" border="yes" />
+    <title resource="Scaling Title Bar" text="Options" align="left" close_button="yes"/>
+
+    <pawsSimpleTree name="ConfigTree" >
+
+        <frame x="10" y="8" width="200" height="305" border="no" />
+
+        <widget factory="pawsSimpleTreeNode">
+        <frame x="225" y="0" width="400" height="305" border="yes" />
+
+            <widget factory="pawsSimpleTreeNode" label="Controls">
+                    <attr name="SectionName" value="ControlsGeneral"/>
+                    <attr name="factory" value="pawsConfigTextPage"/>
+                    <attr name="TextName" value="In this section you can configure the keys associated to actions, for example the keys used for movement.
+
+You can also change the commands sent by each mouse button."/>
+
+                <widget factory="pawsSimpleTreeNode" label="Keys">
+                    <attr name="SectionName" value="keyboard"/>
+                    <attr name="factory" value="pawsConfigKeys"/>
+                </widget>
+                <widget factory="pawsSimpleTreeNode" label="Mouse">
+                    <attr name="SectionName" value="mouse"/>
+                    <attr name="factory" value="pawsConfigMouse"/>
+                </widget>
+                <widget factory="pawsSimpleTreeNode" label="Entities">
+                    <attr name="SectionName" value="entityinteract"/>
+                    <attr name="factory" value="pawsConfigEntityInteraction"/>
+                </widget>
+            </widget>
+
+            <widget factory="pawsSimpleTreeNode" label="Sound">
+                    <attr name="SectionName" value="SoundGeneral"/>
+                    <attr name="factory" value="pawsConfigTextPage"/>
+                    <attr name="TextName" value="IMPORTANT: If you are not hearing any sound, be sure it's enabled. At the moment enabling sound is available ONLY in the PlaneShift launcher.
+
+If you want to check this, you need to close this client, and relaunch PlaneShift. In the Launcher window, click on 'Settings' and 'Audio'."/>
+                    
+                <widget factory="pawsSimpleTreeNode" label="General">
+                    <attr name="SectionName" value="configsound"/>
+                    <attr name="factory" value="pawsConfigSound"/>
+                </widget>
+            </widget>
+
+            <widget factory="pawsSimpleTreeNode" label="Graphics">
+                    <attr name="SectionName" value="GraphicsGeneral"/>
+                    <attr name="factory" value="pawsConfigTextPage"/>
+                    <attr name="TextName" value="IMPORTANT: The following graphical options are available ONLY in the PlaneShift launcher. If you want to change any of those, you need to close this client, and relaunch PlaneShift. In the Launcher window, click on 'Settings' and 'Settings/Graphics'.
+
+- Full screen or windowed mode (launcher only)
+- Resolution of the screen (launcher only)
+- Increase or lower graphical quality (launcher only)
+
+We suggest you to try different settings and see what's best for your hardware."/>
+
+                <widget factory="pawsSimpleTreeNode" label="Brightness">
+                    <attr name="SectionName" value="BrightnessGeneral"/>
+                    <attr name="factory" value="pawsConfigTextPage"/>
+                    <attr name="TextName" value="You can change the brightness/gamma of the game by pressing F11 to reduce the brightness, F12 to increase the brightness, and F10 to reset to default value."/>
+                </widget>
+                <widget factory="pawsSimpleTreeNode" label="Details">
+                    <attr name="SectionName" value="details"/>
+                    <attr name="factory" value="pawsConfigDetails"/>
+                </widget>
+                <widget factory="pawsSimpleTreeNode" label="Labels">
+                    <attr name="SectionName" value="entitylabels"/>
+                    <attr name="factory" value="pawsConfigEntityLabels"/>
+                </widget>
+                <widget factory="pawsSimpleTreeNode" label="Shadows">
+                    <attr name="SectionName" value="shadows"/>
+                    <attr name="factory" value="pawsConfigShadows"/>
+                </widget>
+            </widget>
+
+            <widget factory="pawsSimpleTreeNode" label="Interface">
+                    <attr name="SectionName" value="InterfaceGeneral"/>
+                    <attr name="factory" value="pawsConfigTextPage"/>
+                    <attr name="TextName" value="In this section you can configure various options for the User Interface. Once you have learned the basic commands and controls, we suggest you to look at 'Chat-Tabs' and enable the Tabs you want to see in the chat window."/>
+                <widget factory="pawsSimpleTreeNode" label="Language">
+                    <attr name="SectionName" value="LanguageGeneral"/>
+                    <attr name="factory" value="pawsConfigTextPage"/>
+                    <attr name="TextName" value="You can change the language of PlaneShift to have the user interface displayed in your language. We support Cesky, Dutch, French, Italian, German, Romanian, Russian, Swedish, and more. Please note public dialogues in game between players should  be in English.
+
+Changing the language can be done ONLY in the PlaneShift Launcher. To do this you should close this client, and relaunch PlaneShift. In the Launcher you should change the 'Language' dropdown."/>
+                </widget>
+                <widget factory="pawsSimpleTreeNode" label="Chat - Tabs">
+                    <attr name="SectionName" value="chattabs" />
+                    <attr name="factory" value="pawsConfigChatTabs" />
+                </widget>
+                <widget factory="pawsSimpleTreeNode" label="Chat - font">
+                    <attr name="SectionName" value="chatfonts" />
+                    <attr name="factory" value="pawsConfigChatFont" />
+                </widget>
+                 <widget factory="pawsSimpleTreeNode" label="Pop-ups">
+                    <attr name="SectionName" value="popup"/>
+                    <attr name="factory" value="pawsConfigPopup"/>
+                </widget>
+                <widget factory="pawsSimpleTreeNode" label="Tooltips">
+                    <attr name="SectionName" value="tooltips"/>
+                    <attr name="factory" value="pawsConfigTooltips"/>
+                </widget>
+                <widget factory="pawsSimpleTreeNode" label="Chat - Logs">
+                    <attr name="SectionName" value="chatlogs"/>
+                    <attr name="factory" value="pawsConfigChatLogs"/>
+                </widget>
+                <widget factory="pawsSimpleTreeNode" label="Shortcut Bar">
+                    <attr name="SectionName" value="shortcut"/>
+                    <attr name="factory" value="pawsConfigShortcut"/>
+                </widget>
+                <widget factory="pawsSimpleTreeNode" label="Active Magic Bar">
+                    <attr name="SectionName" value="activemagic"/>
+                    <attr name="factory" value="pawsConfigActiveMagic"/>
+                </widget>
+            </widget>
+
+            <widget factory="pawsSimpleTreeNode" label="Confirmations">
+                    <attr name="SectionName" value="ConfirmationsGeneral"/>
+                    <attr name="factory" value="pawsConfigTextPage"/>
+                    <attr name="TextName" value="IMPORTANT: By default in PlaneShift you cannot be attacked by other people without your approval. This is to ensure a smooth experience in the game.
+
+If you change the PvP setting, you may be attacked at any time."/>
+                    
+                <widget factory="pawsSimpleTreeNode" label="PvP">
+                    <attr name="SectionName" value="configpvp"/>
+                    <attr name="factory" value="pawsConfigPvP"/>
+                </widget>
+                <widget factory="pawsSimpleTreeNode" label="Marriage">
+                    <attr name="SectionName" value="configmarriage"/>
+                    <attr name="factory" value="pawsConfigMarriage"/>
+                </widget>
+            </widget>
+
+            <widget factory="pawsSimpleTreeNode" label="Interface - Advanced">
+                <widget factory="pawsSimpleTreeNode" label="Chat">
+                    <attr name="SectionName" value="chat"/>
+                    <attr name="factory" value="pawsConfigChat"/>
+                </widget>
+                <widget factory="pawsSimpleTreeNode" label="Chat - Filters">
+                    <attr name="SectionName" value="chatfilter"/>
+                    <attr name="factory" value="pawsConfigChatFilter"/>
+                </widget>
+                <widget factory="pawsSimpleTreeNode" label="Chat - Bubbles">
+                    <attr name="SectionName" value="chatbubbles"/>
+                    <attr name="factory" value="pawsConfigChatBubbles"/>
+                </widget>
+               <widget factory="pawsSimpleTreeNode" label="Chat - TabCompletion">
+                    <attr name="SectionName" value="tabcompletion"/>
+                    <attr name="factory" value="pawsConfigChatTabCompletion"/>
+                </widget>
+		    <widget factory="pawsSimpleTreeNode" label="Chat - Spellchecker">
+                        <attr name="SectionName" value="spellchecker"/>
+                        <attr name="factory" value="pawsConfigSpellChecker"/>
+                    </widget>
+               <widget factory="pawsSimpleTreeNode" label="Autoexec">
+                    <attr name="SectionName" value="autoexec"/>
+                    <attr name="factory" value="pawsConfigAutoexec"/>
+                </widget>
+                <widget factory="pawsSimpleTreeNode" label="Camera">
+                    <attr name="SectionName" value="camera"/>
+                    <attr name="factory" value="pawsConfigCamera"/>
+                </widget>
+            </widget>
+
+        </widget>
+
+    </pawsSimpleTree>
+
+    <pawsWidget name="PanelParent">
+        <frame x="220" y="0" width="460" height="321" border="no" />
+        <attachpoints>
+            <attach point="ATTACH_RIGHT" />
+            <attach point="ATTACH_TOP" />
+            <attach point="ATTACH_LEFT" />
+            <attach point="ATTACH_BOTTOM" />
+        </attachpoints>
+    </pawsWidget>
+
+    <pawsButton name="OKButton" toggle="no" style="Standard Button">
+        <frame x="25" y="322" width="80" height="20" border="no"/>
+        <label text="Save"/>
+    </pawsButton>
+
+    <pawsButton name="ResetButton" toggle="no" style="Standard Button">
+        <frame x="115" y="322" width="80" height="20" border="no"/>
+        <label text="Reset"/>
+    </pawsButton>
+
+</pawsConfigWindow>
+
+</widget_description>

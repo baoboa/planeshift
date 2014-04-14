@@ -1,0 +1,25 @@
+#! /usr/bin/php
+<?php
+// creative content converter to schema 1252
+
+// Change your database settings here:
+$bookID = 8518;
+$sketchID = 2051;
+$db = mysql_connect("localhost", "planeshift", "planeshift") or die ("Unable to connect!"); // host, user, pass
+mysql_select_db("planeshift", $db) or die("Could not select database");
+
+$creativessketch = mysql_query("SELECT id, name, creative_definition,description from item_stats where stat_type=\"U\" and creative_definition like \"<creative type=\\\"sketch\\\"%\"") or die("fatal error: couldn't select stuff: " . mysql_error() . "\n");
+while ($row = mysql_fetch_array($creativessketch))
+{
+   $query = "update item_instances set item_name=\"".mysql_real_escape_string($row[1])."\", item_description=\"".mysql_real_escape_string($row[3])."\", creative_definition=\"".mysql_real_escape_string($row[2])."\", item_stats_id_standard=".$sketchID." where item_stats_id_standard=".$row[0];
+   mysql_query($query);
+}
+
+$creativesbook = mysql_query("SELECT id, name, creative_definition,description from item_stats where stat_type=\"U\" and creative_definition like \"<creative type=\\\"literature\\\"%\"") or die("fatal error: couldn't select stuff: " . mysql_error() . "\n");
+while ($row = mysql_fetch_array($creativesbook))
+{
+   $query = "update item_instances set item_name=\"".mysql_real_escape_string($row[1])."\", item_description=\"".mysql_real_escape_string($row[3])."\", creative_definition=\"".mysql_real_escape_string($row[2])."\", item_stats_id_standard=".$bookID." where item_stats_id_standard=".$row[0];
+   mysql_query($query);
+}
+
+?>

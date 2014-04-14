@@ -1,0 +1,157 @@
+<widget_description>
+    <widget name="AddEditActionWindow" factory="pawsGMActionWindow" style="New Standard GUI" resizable="no" movable="yes" savepositions="yes" visible="no">
+
+        <frame x="0" y="0" width="360" height="370" border="yes" />
+        <title resource="Scaling Title Bar" text="Add/Edit Action" align="left" close_button="yes" />
+
+        <widget name="cmdSave" factory="pawsButton" style="button" id="100">
+            <frame x="270" y="5" width="80" height="20" />
+            <label text="Save" />
+        </widget>
+        <widget name="cmdCancel" factory="pawsButton" style="button" id="101">
+            <frame x="270" y="30" width="80" height="20"/>
+            <label text="Cancel" />
+        </widget>
+
+        <widget name="cmdEditMaster" factory="pawsButton" visible="no" style="button" id="102">
+            <frame x="155" y="195" width="80" height="20"/>
+            <label text="Edit Master" />
+        </widget>
+
+        <widget name="lblID" factory="pawsTextBox" visible="no">
+            <frame x="5" y="5" width="45" height="20" />
+            <text string="Name:" horizAdjust="LEFT" />
+        </widget>
+        <widget name="txtID" factory="pawsEditTextBox" visible="no">
+            <frame x="55" y="5" width="200" height="20" />
+            <text string="" horizAdjust="LEFT" />
+        </widget>
+
+        <widget name="lblName" factory="pawsTextBox" style="label">
+            <frame x="5" y="5" width="45" height="20" />
+            <text string="Name:" horizAdjust="LEFT" />
+        </widget>
+        <widget name="txtName" factory="pawsEditTextBox" >
+            <frame x="55" y="5" width="200" height="20"/>
+            <text string="" horizAdjust="LEFT" />
+        </widget>
+
+        <widget name="lblSector" factory="pawsTextBox" style="label">
+            <frame x="5" y="30" width="45" height="20"/>
+            <text string="Sector:" horizAdjust="LEFT" />
+        </widget>
+        <widget name="txtSector" factory="pawsEditTextBox" >
+            <frame x="55" y="30" width="200" height="20"/>
+            <text string="" horizAdjust="LEFT" />
+        </widget>
+
+        <widget name="lblMesh" factory="pawsTextBox" style="label">
+            <frame x="5" y="55" width="45" height="20"/>
+            <text string="Mesh:" horizAdjust="LEFT" />
+        </widget>
+        <widget name="txtMesh" factory="pawsEditTextBox" >
+            <frame x="55" y="55" width="200" height="20"/>
+            <text string="" horizAdjust="LEFT" />
+        </widget>
+
+        <widget name="chkFullMesh" factory="pawsCheckBox" style="label" id="103">
+            <frame x="270" y="55" width="95" height="20"/>
+            <text string="Full Mesh" horizAdjust="LEFT" />
+        </widget>
+        <widget name="chkActive" factory="pawsCheckBox" style="label" id="104">
+            <frame x="270" y="80" width="95" height="20"/>
+            <text string="Active" horizAdjust="LEFT" />
+        </widget>
+
+
+        <widget name="lblPoly" factory="pawsTextBox" style="label">
+            <frame x="5" y="80" width="45" height="20"/>
+            <text string="Polygon:" horizAdjust="LEFT" />
+        </widget>
+        <widget name="txtPoly" factory="pawsEditTextBox" >
+            <frame x="55" y="80" width="60" height="20"/>
+            <text string="" horizAdjust="LEFT" />
+        </widget>
+
+        <widget name="lblPos" factory="pawsTextBox" style="label">
+            <frame x="5" y="105" width="100" height="20"/>
+            <text string="Position:" horizAdjust="LEFT" />
+        </widget>
+        <widget name="lblX" factory="pawsTextBox" style="label">
+            <frame x="60" y="105" width="20" height="20"/>
+            <text string="X:" horizAdjust="LEFT" />
+        </widget>
+        <widget name="txtX" factory="pawsEditTextBox">
+            <frame x="80" y="105" width="90" height="20"/>
+            <text string="" horizAdjust="LEFT" />
+        </widget>
+        <widget name="lblY" factory="pawsTextBox" style="label">
+            <frame x="60" y="125" width="20" height="20"/>
+            <text string="Y:" horizAdjust="LEFT" />
+        </widget>
+        <widget name="txtY" factory="pawsEditTextBox">
+            <frame x="80" y="125" width="90" height="20"/>
+            <text string="" horizAdjust="LEFT" />
+        </widget>
+        <widget name="lblZ" factory="pawsTextBox" style="label">
+            <frame x="60" y="145" width="20" height="20"/>
+            <text string="Z:" horizAdjust="LEFT" />
+        </widget>
+        <widget name="txtZ" factory="pawsEditTextBox">
+            <frame x="80" y="145" width="90" height="20"/>
+            <text string="" horizAdjust="LEFT" />
+        </widget>
+
+        <widget name="lblRadius" factory="pawsTextBox" style="label">
+            <frame x="175" y="105" width="45" height="20"/>
+            <text string="Radius:" horizAdjust="LEFT" />
+        </widget>
+        <widget name="txtRadius" factory="pawsEditTextBox" >
+            <frame x="225" y="105" width="90" height="20"/>
+            <text string="" horizAdjust="LEFT" />
+        </widget>
+
+        <widget name="lblInstance" factory="pawsTextBox" style="label">
+            <frame x="175" y="125" width="45" height="20"/>
+            <text string="Instance:" horizAdjust="LEFT" />
+        </widget>
+        <widget name="txtInstance" factory="pawsEditTextBox" >
+            <frame x="230" y="125" width="90" height="20"/>
+            <text string="" horizAdjust="LEFT" />
+        </widget>
+
+        <widget name="lblMaster" factory="pawsTextBox" style="label">
+            <frame x="5" y="170" width="45" height="20"/>
+            <text string="Master:" horizAdjust="LEFT" />
+        </widget>
+        <widget name="txtMaster" factory="pawsEditTextBox" >
+            <frame x="55" y="170" width="90" height="20"/>
+            <text string="" horizAdjust="LEFT" />
+        </widget>
+
+        <widget name="lblTriggerType" factory="pawsTextBox" style="label">
+            <frame x="5" y="195" width="45" height="20"/>
+            <text string="Trigger:" horizAdjust="LEFT" />
+        </widget>
+        <widget name="cboTriggerType" factory="pawsComboBox" style="combobox">
+            <frame x="55" y="195" width="200" height="20"/>
+        </widget>
+
+        <widget name="lblReponseType" factory="pawsTextBox" style="label">
+            <frame x="5" y="220" width="45" height="20"/>
+            <text string="Type:" horizAdjust="LEFT" />
+        </widget>
+        <widget name="cboResponseType" factory="pawsComboBox" style="combobox">
+            <frame x="55" y="220" width="200" height="20"/>
+        </widget>
+
+        <widget name="lblAction" factory="pawsTextBox" style="label">
+            <frame x="5" y="245" width="45" height="20"/>
+            <text string="Action:" horizAdjust="LEFT" />
+        </widget>
+        <widget name="txtAction" factory="pawsMultilineEditTextBox" >
+            <frame x="5" y="270" width="348" height="93"/>
+            <text string="" horizAdjust="LEFT" />
+        </widget>
+    </widget>
+</widget_description>

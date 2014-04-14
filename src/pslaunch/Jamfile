@@ -1,0 +1,64 @@
+SubDir TOP src pslaunch ;
+
+ApplicationIcon win32 : pslaunch : [ ConcatDirs $(TOP) support icons icon1.ico ] ;
+Application pslaunch :
+	[ Wildcard *.cpp *.h ]
+;
+
+ExternalLibs pslaunch : CRYSTAL CURL ;
+CompileGroups pslaunch : client ;
+LinkWith pslaunch : xdelta3 paws psutil fparser ;
+
+if $(HAVE_STATIC_PLUGINS) = "yes"
+{
+
+SubVariant static ;
+ApplicationIcon win32 : pslaunch_static : [ ConcatDirs $(TOP) support icons icon1.ico ] ;
+ApplicationIcon macosx : pslaunch_static : [ ConcatDirs $(TOP) support icons setup.icns ] ;
+Application pslaunch_static : [ Wildcard *.cpp *.h ] ;
+CFlags pslaunch_static : [ FDefines CS_STATIC_LINKED CURL_STATICLIB ] ;
+LFlags pslaunch_static : -lcrystalspace_staticplugins-$(CRYSTAL.VERSION) ;
+MsvcDefine pslaunch_static : CS_STATIC_LINKED CURL_STATICLIB ;
+LinkWith pslaunch_static : xdelta3 paws psutil fparser ;
+
+STATIC.PLUGINLIST = 
+  csfont
+  cspngimg
+  fontplex
+  freefnt2
+  gl3d
+  imgplex
+  sndsysopenal
+  xmltiny
+  vfs
+  ;
+  
+STATIC.OPTIONALPLUGINLIST =
+  ;
+
+if $(TARGET.OS) != "WIN32"
+{
+    if $(TARGET.OS) != "MACOS_X"
+    {
+        STATIC.OPTIONALPLUGINLIST += xwin xext86vm glx2d ;
+    }
+}
+if $(TARGET.OS) = "WIN32" { STATIC.PLUGINLIST += glwin32 ; }
+if $(TARGET.OS) = "MACOS_X" { STATIC.PLUGINLIST += glosx2d ; }
+
+LinkStaticPlugins pslaunch_static : $(STATIC.PLUGINLIST)
+: $(STATIC.OPTIONALPLUGINLIST)
+: CRYSTAL
+;
+
+LinkStaticPlugins pslaunch_static :
+  soundmngr
+  dummysndmngr
+;
+
+ExternalLibs pslaunch_static : CRYSTAL CURL ;
+CompileGroups pslaunch_static : client_static ;
+
+SubVariant ;
+}
+

@@ -1,0 +1,111 @@
+<image_list>
+
+<image file="/this/art/eedit/normal.png" resource="Standard Mouse Pointer">
+    <alpha level="0" />
+    <trans r="255" g="255" b="255" />
+</image>
+
+<image file="/this/art/eedit/busy.png" resource="Busy Mouse Pointer">
+    <alpha level="0" />
+    <trans r="255" g="0" b="255" />    
+</image>
+
+<image file="/this/art/eedit/titlebar.png" resource="TitleBar">
+    <alpha level="0" />
+    <trans r="255" g="0" b="255" />    
+</image>
+<image file="/this/art/eedit/titlebar.png" resource="TitleBarShort">
+    <texturerect x="0" y="0" width="256" height="24" />
+    <alpha level="0" />
+    <trans r="255" g="0" b="255" />    
+</image>
+<image file="/this/art/eedit/backtall.png" resource="BackTall">
+    <alpha level="0" />
+    <trans r="255" g="0" b="255" />    
+</image>
+<image file="/this/art/eedit/back.png" resource="Back">
+    <alpha level="0" />
+    <trans r="255" g="0" b="255" />    
+</image>
+<image file="/this/art/eedit/backmedium.png" resource="BackMedium">
+    <!--<texturerect x="0" y="128" width="256" height="128" />-->
+    <alpha level="0" />
+    <trans r="255" g="0" b="255" />
+</image>
+<image file="/this/art/eedit/backshort.png" resource="BackShort">
+    <!--<texturerect x="0" y="192" width="256" height="64" />-->
+    <alpha level="0" />
+    <trans r="255" g="0" b="255" />
+</image>
+<image file="/this/art/eedit/shaded.png" resource="Shaded">
+    <alpha level="0" />
+    <trans r="255" g="0" b="255" />    
+</image>
+<image file="/this/art/eedit/shaded.png" resource="Standard Background">
+    <alpha level="0" />
+    <trans r="255" g="0" b="255" />    
+</image>
+
+<image file="/this/art/eedit/shaded.png" resource="Scaling Widget Background">
+    <alpha level="0" />
+    <trans r="255" g="0" b="255" />    
+</image>
+
+<image file="/this/art/eedit/radiooff.png" resource="RadioOff">
+    <alpha level="0" />
+    <trans r="255" g="0" b="255" />    
+</image>
+<image file="/this/art/eedit/radioon.png" resource="RadioOn">
+    <alpha level="0" />
+    <trans r="255" g="0" b="255" />    
+</image>
+
+<image file="/this/art/eedit/buttondown.png" resource="ButtonDown">
+    <alpha level="0" />
+</image>
+<image file="/this/art/eedit/buttonup.png" resource="ButtonUp">
+    <alpha level="0" />
+</image>
+
+
+<image file="/this/art/eedit/listselect.png" resource="ListSelect">
+    <alpha level="0" />
+</image>
+
+<image file="/this/art/eedit/treeexpand.png" resource="treeexpand">
+    <alpha level="0" />
+</image>
+
+<image file="/this/art/eedit/treecollapse.png" resource="treecollapse">
+    <alpha level="0" />
+</image>
+
+<image file="/this/art/eedit/scrollthumb.png" resource="ScrollBar Thumb">
+    <alpha level="0" />
+</image>
+
+<image file="/this/art/eedit/scrollthumbmove.png" resource="ScrollBar Thumb Moving">
+    <alpha level="0" />
+</image>
+
+<image file="/this/art/eedit/spindown.png" resource="SpinDown">
+    <alpha level="0" />
+</image>
+<image file="/this/art/eedit/spinup.png" resource="SpinUp">
+    <alpha level="0" />
+</image>
+
+<image file="/this/art/eedit/down.png" resource="Down Arrow">
+    <alpha level="0" />
+</image>
+<image file="/this/art/eedit/up.png" resource="Up Arrow">
+    <alpha level="0" />
+</image>
+<image file="/this/art/eedit/left.png" resource="Left Arrow">
+    <alpha level="0" />
+</image>
+<image file="/this/art/eedit/right.png" resource="Right Arrow">
+    <alpha level="0" />
+</image>
+
+</image_list>

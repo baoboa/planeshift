@@ -1,0 +1,8 @@
+SubDir TOP src common net ;
+
+Library psnet 
+	: [ Wildcard *.cpp *.h ]
+	: noinstall
+;
+
+ExternalLibs psnet : CRYSTAL ;

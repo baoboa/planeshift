@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<shortcuts>
+    <shortcut1 name="Buy" buttonimage="ButtonBuy">/buy</shortcut1>
+    <shortcut2 name="Sell" buttonimage="ButtonSell">/sell</shortcut2>
+    <shortcut3 name="Trade" buttonimage="MerchantTrade">/trade</shortcut3>
+    <shortcut4 name="Start Atk" buttonimage="ButtonAttackNormalActive">/attack</shortcut4>
+    <shortcut5 name="Stop Atk" buttonimage="ButtonStopAttackActive">/stopattack</shortcut5>
+    <shortcut6 name="Challenge">/challenge</shortcut6>
+    <shortcut7 name="Yield">/yield</shortcut7>
+    <shortcut8 name="Next Player">/target next player</shortcut8>
+    <shortcut9 name="Next NPC">/target next npc</shortcut9>
+    <shortcut10 name="Greet" buttonimage="ButtonIntroduce">/greet</shortcut10>
+    <shortcut11 name="Online">/who</shortcut11>
+    <shortcut12 name="Clear target">/target clear</shortcut12>
+    <shortcut13 name="Train">/train</shortcut13>
+    <shortcut14 name="Use">/use</shortcut14>
+    <shortcut15 name="Unstick">/unstick</shortcut15>
+</shortcuts>

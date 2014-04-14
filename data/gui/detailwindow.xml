@@ -1,0 +1,107 @@
+<widget_description>
+
+    <widget name="DetailWindow" factory="pawsDetailWindow"
+            visible="no" savepositions="yes" movable="yes" configurable="yes" savepositions="yes" resizable="no" style="New Standard GUI" >
+        <frame x="0" y="200" width="320" height="400" border="yes" />
+	<title resource="Scaling Title Bar" text="Details" align="left" close_button="yes"/>
+
+        <widget name="ShowDescr" factory="pawsButton" style="Standard Tab" id="999" >
+            <frame x="14" y="58" width="49" height="25"/>
+            <label text="Desc" />
+            <attachpoints>
+                <attach point="PROPORTIONAL_RIGHT" />
+                <attach point="ATTACH_LEFT" />
+            </attachpoints>
+        </widget>
+
+        <widget name="ShowDescrOOC" factory="pawsButton" style="Standard Tab" id="1006" >
+            <frame x="63" y="58" width="49" height="25"/>
+            <label text="OOC" />
+            <attachpoints>
+                <attach point="PROPORTIONAL_RIGHT" />
+                <attach point="ATTACH_LEFT" />
+            </attachpoints>
+        </widget>
+
+        <widget name="ShowCC" factory="pawsButton" style="Standard Tab" id="1007" >
+            <frame x="112" y="58" width="49" height="25"/>
+            <label text="CC" />
+            <attachpoints>
+                <attach point="PROPORTIONAL_RIGHT" />
+                <attach point="ATTACH_LEFT" />
+            </attachpoints>
+        </widget>
+
+        <widget name="ShowStats" factory="pawsButton" style="Standard Tab" id="1000" >
+            <frame x="14" y="82" width="49" height="25"/>
+            <label text="Stats" />
+            <attachpoints>
+                <attach point="PROPORTIONAL_RIGHT" />
+                <attach point="PROPORTIONAL_LEFT" />
+            </attachpoints>
+        </widget>
+
+        <widget name="ShowFaction" factory="pawsButton" style="Standard Tab" id="1005" >
+            <frame x="63" y="82" width="49" height="25"/>
+            <label text="Faction" />
+            <attachpoints>
+                <attach point="PROPORTIONAL_RIGHT" />
+                <attach point="PROPORTIONAL_LEFT" />
+            </attachpoints>
+        </widget>
+
+        <widget name="ShowCombat" factory="pawsButton" style="Standard Tab" id="1001" >
+            <frame x="112" y="82" width="49" height="25"/>
+            <label text="Combat" />
+            <attachpoints>
+                <attach point="PROPORTIONAL_RIGHT" />
+                <attach point="PROPORTIONAL_LEFT" />
+            </attachpoints>
+        </widget>
+
+        <widget name="ShowMagic" factory="pawsButton" style="Standard Tab" id="1002">
+            <frame x="161" y="82" width="49" height="25"/>
+            <label text="Magic" />
+            <attachpoints>
+                <attach point="PROPORTIONAL_RIGHT" />
+                <attach point="PROPORTIONAL_LEFT" />
+            </attachpoints>
+        </widget>
+
+        <widget name="ShowCraft" factory="pawsButton" style="Standard Tab" id="1003">
+            <frame x="210" y="82" width="49" height="25"/>
+            <label text="Jobs" />
+            <attachpoints>
+                <attach point="PROPORTIONAL_RIGHT" />
+                <attach point="PROPORTIONAL_LEFT" />
+            </attachpoints>
+        </widget>
+
+        <widget name="ShowMisc" factory="pawsButton" style="Standard Tab" id="1004">
+            <frame x="259" y="82" width="49" height="25"/>
+            <label text="Various" />
+            <attachpoints>
+               <attach point="ATTACH_RIGHT" />
+               <attach point="PROPORTIONAL_LEFT" />
+            </attachpoints>
+        </widget>
+
+        <!-- You see a gender race in front of you named name. -->
+        <widget name="intro" factory="pawsMultiLineTextBox">
+            <frame x="20" y="10" width="280" height="40" border="no" />
+        </widget>
+
+        <widget name="EditDesc" factory="pawsButton" id="100" tooltip="Modify Description" >
+            <frame x="270" y="53" width="32" height="32" />
+            <bgimage resource="Scribe" />
+        </widget>
+
+
+        <!-- Description -->
+        <widget name="Description" factory="pawsMultiLineTextBox">
+            <frame x="20" y="115" width="280" height="265" border="no" />
+        </widget>
+
+    </widget>
+
+</widget_description>

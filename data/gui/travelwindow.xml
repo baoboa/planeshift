@@ -1,0 +1,26 @@
+<widget_description>
+
+  <widget name="travelwindow.xml" factory="pawsLoadWindow" visible="no" movable="no" resizable="no" resizetoscreen="yes" alwaysontop="yes">
+        <frame x="0" y="0" width="800" height="600" border="no" />
+        <font name="cupandtalon.ttf" r="180" g="180" b="180" size="12" shadow="yes" resizetoscreen="yes" />
+        <bgimage resource="Loading Background" />
+
+        <widget name="motd" factory="pawsMultiLineTextBox" visible="no">
+            <frame x="460" y="80" width="295" height="100" />
+        </widget>
+        <widget name="guildmotd" factory="pawsMultiLineTextBox" visible="no">
+            <frame x="460" y="180" width="295" height="100" border="no" />
+        </widget>
+        <widget name="tip" factory="pawsMultiLineTextBox" >
+            <frame x="490" y="340" width="270" height="170" border="no" />
+        <bgimage resource="Scaling Field Background" />
+        </widget>
+        <widget name="Progress" factory="pawsProgressBar" style="Scaling Progressbar">
+            <frame x="25" y="570" height="20" width="750" />
+            <fadecolor r="100" g="100" b="255" />
+        </widget>
+    </widget>
+</widget_description>
+
+
+

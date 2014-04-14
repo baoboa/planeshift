@@ -1,0 +1,591 @@
+<zonelist>
+
+  <!-- guildlaw -->
+  <zone sector="guildlaw" loadimage="Loading Background">
+    <region map="guildlaw" />
+  </zone>
+
+  <!-- guildsimple -->
+  <zone sector="guildsimple" loadimage="Loading Background">
+    <region map="guildsimple" />
+  </zone>
+
+  <!-- guildsimple -->
+  <zone sector="guildgug" loadimage="Loading Background">
+    <region map="guildgug" />
+  </zone>
+
+  <!-- guildoja -->
+  <zone sector="guildoja" loadimage="Loading Background">
+    <region map="guildoja" />
+  </zone>
+
+  <!-- tutorial -->
+  <zone sector="tutorial" loadimage="Loading Background">
+    <region map="hydlaa_common" />
+	<region map="tutorial" />
+  </zone>
+
+ <!-- NPCRoom test level -->
+
+  <zone sector="NPCroom" loadimage="Loading Background">
+    <region map="npcroom1" />
+    <region map="npcroom_corr" />
+  </zone>
+
+  <zone sector="NPCroom1" loadimage="Loading Background">
+    <region map="npcroom1" />
+    <region map="npcroom_corr" />
+  </zone>
+
+  <zone sector="NPCroom2" loadimage="Loading Background">
+    <region map="npcroom2" />
+    <region map="npcroom_corr" />
+  </zone>
+
+  <zone sector="NPCroom3" loadimage="Loading Background">
+    <region map="npcroom2" />
+    <region map="npcroom_corr" />
+  </zone>
+
+  <zone sector="NPCroomwarp" loadimage="Loading Background">
+    <region map="npcroom2" />
+    <region map="npcroom_corr" />
+  </zone>
+
+
+  <!-- podium -->
+  <zone sector="podium" loadimage="Loading Background">
+    <region map="podium" />
+  </zone>
+
+  <!-- death-realm -->
+  <zone sector="DR01" loadimage="Loading Death Realm Background">
+    <region map="deathrealm" />
+  </zone>
+  <zone sector="DRexit" loadimage="Loading Death Realm Background">
+    <region map="deathrealm" />
+  </zone>
+  <zone sector="DRCitadel" loadimage="Loading Death Realm Background">
+    <region map="deathrealm" />
+  </zone>
+
+  <!-- hydlaa -->
+  <zone sector="hydlaa_plaza" loadimage="Loading Background">
+    <region map="hydlaa_common" />
+    <region map="hydlaa_plaza" />
+    <region map="laanx" />
+    <region map="hydungeon" />
+    <region map="tavern_de_kadel" />
+    <region map="wtower" />
+
+    <region map="hyarena" />
+    <region map="hyjayose" />
+    <region map="hybdr" />
+    <region map="hysewers" />
+  </zone>
+
+  <zone sector="laanx_inside" loadimage="Loading Dungeon Background">
+    <region map="hydlaa_common" />
+    <region map="hydungeon" />
+    <region map="hydlaa_plaza" />
+    <region map="laanx" />
+    <region map="tavern_de_kadel" />
+    <region map="wtower" />
+
+    <region map="hyarena" />
+    <region map="hyjayose" />
+    <region map="hybdr" />
+    <region map="hysewers" />
+  </zone>
+  <zone sector="tavern_de_kadel" loadimage="Loading Background">
+    <region map="hydlaa_common" />
+    <region map="tavern_de_kadel" />
+    <region map="hydlaa_plaza" />
+    <region map="laanx" />
+    <region map="hydungeon" />
+    <region map="wtower" />
+
+    <region map="hyarena" />
+    <region map="hyjayose" />
+    <region map="hybdr" />
+    <region map="hysewers" />
+  </zone>
+  <zone sector="laanxdungeon" loadimage="Loading Dungeon Background">
+    <region map="laanxdungeon" />
+    <region map="hydungeon" />
+    <region map="wtower" />
+  </zone>
+  <zone sector="hydungeon" loadimage="Loading Dungeon Background">
+    <region map="hydungeon" />
+    <region map="laanxdungeon" />
+    <region map="wtower" />
+  </zone>
+  <zone sector="laanxentrance" loadimage="Loading Background">
+    <region map="hydlaa_common" />
+    <region map="laanx" />
+    <region map="hydlaa_plaza" />
+    <region map="hydungeon" />
+    <region map="tavern_de_kadel" />
+    <region map="wtower" />
+
+    <region map="hyarena" />
+    <region map="hyjayose" />
+    <region map="hybdr" />
+    <region map="hysewers" />
+  </zone>
+  <zone sector="laanxmain" loadimage="Loading Background">
+    <region map="hydlaa_common" />
+    <region map="laanx" />
+    <region map="hydlaa_plaza" />
+    <region map="hydungeon" />
+    <region map="tavern_de_kadel" />
+    <region map="wtower" />
+
+    <region map="hyarena" />
+    <region map="hyjayose" />
+    <region map="hybdr" />
+    <region map="hysewers" />
+  </zone>
+  <zone sector="laanxwell" loadimage="Loading Background">
+    <region map="hydlaa_common" />
+    <region map="laanx" />
+    <region map="hydungeon" />
+    <region map="hydlaa_plaza" />
+    <region map="tavern_de_kadel" />
+    <region map="wtower" />
+
+    <region map="hyarena" />
+    <region map="hyjayose" />
+    <region map="hybdr" />
+    <region map="hysewers" />
+  </zone>
+  <zone sector="wtowerdung" loadimage="Loading Dungeon Background">
+    <region map="wtower" />
+    <region map="laanxdungeon" />
+    <region map="hydungeon" />
+  </zone>
+  <zone sector="wtowerexit" loadimage="Loading Background">
+    <region map="hydlaa_common" />
+    <region map="wtower" />
+    <region map="hydlaa_plaza" />
+    <region map="laanx" />
+    <region map="hydungeon" />
+    <region map="tavern_de_kadel" />
+
+    <region map="hyarena" />
+    <region map="hyjayose" />
+    <region map="hybdr" />
+    <region map="hysewers" />
+  </zone>
+  <zone sector="wtowertop" loadimage="Loading Background">
+    <region map="hydlaa_common" />
+    <region map="wtower" />
+    <region map="hydlaa_plaza" />
+    <region map="laanx" />
+    <region map="hydungeon" />
+    <region map="tavern_de_kadel" />
+
+    <region map="hyarena" />
+    <region map="hyjayose" />
+    <region map="hybdr" />
+    <region map="hysewers" />
+  </zone>
+  <zone sector="wtower" loadimage="Loading Background">
+    <region map="hydlaa_common" />
+    <region map="wtower" />
+    <region map="hydlaa_plaza" />
+    <region map="laanx" />
+    <region map="hydungeon" />
+    <region map="tavern_de_kadel" />
+
+    <region map="hyarena" />
+    <region map="hyjayose" />
+    <region map="hybdr" />
+    <region map="hysewers" />
+  </zone>
+
+  <!-- hysewers -->
+  <zone sector="swr-darkgreen01" loadimage="Loading Background">
+    <region map="hydlaa_common" />
+    <region map="hysewers" />
+    <region map="hydlaa_plaza" />
+    <region map="laanx" />
+    <region map="hydungeon" />
+    <region map="tavern_de_kadel" />
+    <region map="wtower" />
+
+    <region map="hyarena" />
+    <region map="hyjayose" />
+    <region map="hybdr" />
+  </zone>
+  <zone sector="swr-darkgreen02" loadimage="Loading Sewers Background">
+    <region map="hysewers" />
+    <region map="sewers" />
+  </zone>
+  <zone sector="swr-lightblue01" loadimage="Loading Background">
+    <region map="hydlaa_common" />
+    <region map="hysewers" />
+    <region map="hydlaa_plaza" />
+    <region map="laanx" />
+    <region map="hydungeon" />
+    <region map="tavern_de_kadel" />
+    <region map="wtower" />
+    <region map="hyarena" />
+    <region map="hyjayose" />
+    <region map="hybdr" />
+  </zone>
+  <zone sector="swr-lightblue02" loadimage="Loading Sewers Background">
+    <region map="hysewers" />
+    <region map="sewers" />
+  </zone>
+
+  <!-- sewers -->
+  <zone sector="swr-pink" loadimage="Loading Sewers Background">
+    <region map="sewers" />
+    <region map="hysewers" />
+  </zone>
+  <zone sector="swr-lightgreen" loadimage="Loading Sewers Background">
+    <region map="sewers" />
+    <region map="hysewers" />
+  </zone>
+  <zone sector="swr-yellow" loadimage="Loading Sewers Background">
+    <region map="sewers" />
+    <region map="hysewers" />
+  </zone>
+  <zone sector="swr-purple" loadimage="Loading Sewers Background">
+    <region map="sewers" />
+    <region map="hysewers" />
+  </zone>
+  <zone sector="swr-red" loadimage="Loading Sewers Background">
+    <region map="sewers" />
+    <region map="hysewers" />
+  </zone>
+  <zone sector="swr-blue" loadimage="Loading Sewers Background">
+    <region map="sewers" />
+    <region map="hysewers" />
+  </zone>
+  <zone sector="swr-orange" loadimage="Loading Sewers Background">
+    <region map="sewers" />
+    <region map="hysewers" />
+  </zone>
+
+  <!-- blackflame -->
+  <zone sector="blackflame" loadimage="Loading Sewers Background">
+    <region map="blackflame" />
+  </zone>
+  
+  <!-- hydlaa_smith -->
+  <zone sector="hydlaa_smith" loadimage="Loading Background">
+    <region map="hydlaa_common" />
+    <region map="hydlaa_smith" />
+  </zone>
+
+  <!-- hybdr -->
+  <zone sector="hybdr1" loadimage="Loading Background">
+    <region map="terr_common" />
+    <region map="hydlaa_common" />
+    <region map="hybdr" />
+    <region map="hydlaa_plaza" />
+    <region map="laanx" />
+    <region map="hydungeon" />
+    <region map="tavern_de_kadel" />
+    <region map="wtower" />
+
+    <region map="hyarena" />
+    <region map="hyjayose" />
+    <region map="hysewers" />
+  </zone>
+  <zone sector="hybdr2" loadimage="Loading Forest Background">
+    <region map="terr_common" />
+    <region map="hybdr" />
+    <region map="bdroad1" />
+    <region map="korogan" />
+    <region map="magicshop" />
+  </zone>
+
+  <!-- magicshop -->
+  <zone sector="magicshop" loadimage="Loading Forest Background">
+    <region map="terr_common" />
+    <region map="magicshop" />
+    <region map="hybdr" />
+    <region map="bdroad1" />
+    <region map="korogan" />
+  </zone>
+  <zone sector="magicshopout" loadimage="Loading Forest Background">
+    <region map="terr_common" />
+    <region map="magicshop" />
+    <region map="hybdr" />
+    <region map="bdroad1" />
+    <region map="korogan" />
+  </zone>
+
+  <!-- bdroad1 -->
+  <zone sector="bdroad1" loadimage="Loading Terrain Background">
+    <region map="terr_common" />
+    <region map="bdroad1" />
+    <region map="hybdr" />
+    <region map="korogan" />
+    <region map="magicshop" />
+	<region map="roadtogug" />
+  </zone>
+
+  <!-- gugrontid -->
+  <zone sector="gugrontid" loadimage="Loading Gugrontid Background">
+    <region map="terr_common" />
+    <region map="gugrontid" />
+	<region map="roadtogug" />
+  </zone>
+
+  <!-- road to gug-->
+  <zone sector="bdgug01" loadimage="Loading Terrain Background">
+    <region map="terr_common" />
+    <region map="bdroad1" />
+    <region map="hybdr" />
+    <region map="korogan" />
+    <region map="magicshop" />
+	<region map="roadtogug" />
+  </zone>
+  <zone sector="bdgug02" loadimage="Loading Terrain Background">
+    <region map="terr_common" />
+    <region map="gugrontid" />
+	<region map="roadtogug" />
+  </zone>
+
+  <!-- cave01 -->
+  <zone sector="ojaroadcave01" loadimage="Loading Caves Background">
+    <region map="caves01" />
+  </zone>
+
+  <!-- cave02 -->
+  <zone sector="bdroadcave02" loadimage="Loading Caves Background">
+    <region map="caves02" />
+  </zone>
+
+  <!-- cave03 -->
+  <zone sector="caves03" loadimage="Loading Caves Background">
+    <region map="caves03" />
+  </zone>
+
+  <!-- korogan -->
+  <zone sector="kor01" loadimage="Loading Terrain Background">
+    <region map="terr_common" />
+    <region map="korogan" />
+    <region map="bdroad1" />
+    <region map="magicshop" />
+    <region map="hybdr" />
+  </zone>
+  <zone sector="kor02" loadimage="Loading Terrain Background">
+    <region map="terr_common" />
+    <region map="korogan" />
+    <region map="bdroad2" />
+    <region map="bdr2bdoors" />
+  </zone>
+
+  <!-- bdroad2 -->
+  <zone sector="bdroad2" loadimage="Loading Terrain Background">
+    <region map="terr_common" />
+    <region map="bdroad2" />
+    <region map="korogan" />
+    <region map="bdr2bdoors" />
+  </zone>
+
+  <!-- bdr2bdoors -->
+  <zone sector="bdr2bd1" loadimage="Loading Terrain Background">
+    <region map="terr_common" />
+    <region map="korogan" />
+    <region map="bdroad2" />
+    <region map="bdr2bdoors" />
+  </zone>
+  <zone sector="bdr2bd2" loadimage="Loading BronzeDoors Background">
+    <region map="terr_common" />
+    <region map="bdr2bdoors" />
+    <region map="bronzedoors" />
+  </zone>
+
+
+  <!-- bronzedoors -->
+  <zone sector="bdoorsout" loadimage="Loading BronzeDoors Background">
+    <region map="terr_common" />
+    <region map="bdr2bdoors" />
+    <region map="bronzedoors" />
+  </zone>
+  <zone sector="bdoorsin" loadimage="Loading BronzeDoors Background">
+    <region map="terr_common" />
+    <region map="bdr2bdoors" />
+    <region map="bronzedoors" />
+  </zone>
+
+
+  <!-- hyarena -->
+  <zone sector="hycorr1" loadimage="Loading Background">
+    <region map="hydlaa_common" />
+    <region map="hyarena" />
+    <region map="hydlaa_plaza" />
+    <region map="laanx" />
+    <region map="hydungeon" />
+    <region map="tavern_de_kadel" />
+    <region map="wtower" />
+
+    <region map="hyjayose" />
+    <region map="hybdr" />
+    <region map="hysewers" />
+  </zone>
+  <zone sector="hycorr2" loadimage="Loading Arena Background">
+    <region map="hyarena" />
+    <region map="arena" />
+  </zone>
+
+  <!-- arena -->
+  <zone sector="arenainner" loadimage="Loading Arena Background">
+    <region map="arena" />
+    <region map="hyarena" />
+  </zone>
+  <zone sector="arenaupper" loadimage="Loading Arena Background">
+    <region map="arena" />
+    <region map="hyarena" />
+  </zone>
+  <zone sector="arenaouter" loadimage="Loading Arena Background">
+    <region map="arena" />
+    <region map="hyarena" />
+  </zone>
+
+
+  <!-- hyjayose -->
+
+  <zone sector="hyjayose01" loadimage="Loading Background">
+    <region map="hydlaa_common" />
+    <region map="hyjayose" />
+    <region map="hyarena" />
+    <region map="hydlaa_plaza" />
+    <region map="laanx" />
+    <region map="hydungeon" />
+    <region map="tavern_de_kadel" />
+    <region map="wtower" />
+
+    <region map="hybdr" />
+    <region map="hysewers" />
+  </zone>
+  <zone sector="hyjayose02" loadimage="Loading Jayose Background">
+    <region map="hydlaa_common" />
+    <region map="hydlaa_jayose" />
+    <region map="jayose" />
+
+    <region map="hyjayose" />
+    <region map="hyoja2" />
+  </zone>
+
+
+  <!-- hydlaa_jayose -->
+  <zone sector="hydlaa_jayose" loadimage="Loading Jayose Background">
+    <region map="hydlaa_common" />
+    <region map="hydlaa_jayose" />
+    <region map="jayose" />
+
+    <region map="hyjayose" />
+    <region map="hyoja2" />
+  </zone>
+
+  <!-- jayose -->
+  <zone sector="jayose_inside" loadimage="Loading Jayose Background">
+    <region map="hydlaa_common" />
+    <region map="hydlaa_jayose" />
+    <region map="jayose" />
+
+    <region map="hyjayose" />
+    <region map="hyoja2" />
+  </zone>
+
+  <!-- hyoja2 -->
+  <zone sector="hyoja2a" loadimage="Loading Background">
+    <region map="terr_common" />
+    <region map="hydlaa_common" />
+    <region map="hydlaa_jayose" />
+
+    <region map="hyjayose" />
+    <region map="hyoja2" />
+  </zone>
+  <zone sector="hyoja2b" loadimage="Loading Terrain Background">
+    <region map="terr_common" />
+    <region map="ojaroad1" />
+
+    <region map="ojakorogan" />
+    <region map="hyoja2" />
+  </zone>
+
+  <!-- ojaroad1 -->
+  <zone sector="ojaroad1" loadimage="Loading Terrain Background">
+    <region map="terr_common" />
+    <region map="ojaroad1" />
+
+    <region map="ojakorogan" />
+    <region map="hyoja2" />
+  </zone>
+
+  <!-- ojakorogan -->
+  <zone sector="kora" loadimage="Loading Terrain Background">
+    <region map="terr_common" />
+    <region map="ojaroad1" />
+
+    <region map="ojakorogan" />
+    <region map="hyoja2" />
+  </zone>
+  <zone sector="korb" loadimage="Loading Terrain Background">
+    <region map="terr_common" />
+    <region map="ojaroad2" />
+
+    <region map="ojakorogan" />
+    <region map="akkroad" />
+  </zone>
+
+  <!-- ojaroad2 -->
+  <zone sector="ojaroad2" loadimage="Loading Terrain Background">
+    <region map="terr_common" />
+    <region map="ojaroad2" />
+
+    <region map="ojakorogan" />
+    <region map="akkroad" />
+  </zone>
+
+  <!-- akkroad -->
+  <zone sector="akkroad1" loadimage="Loading Terrain Background">
+    <region map="terr_common" />
+    <region map="ojaroad2" />
+
+    <region map="ojakorogan" />
+    <region map="akkroad" />
+  </zone>
+  <zone sector="akkroad2" loadimage="Loading Ojaveda Background">
+    <region map="terr_common" />
+    <region map="akkaio" />
+    <region map="akkroad" />
+  </zone>
+
+  <!-- akkaio -->
+  <zone sector="ojapath" loadimage="Loading Ojaveda Background">
+    <region map="akkaio" />
+    <region map="akkroad" />
+  </zone>
+  <zone sector="Akk-Central" loadimage="Loading Ojaveda Background">
+    <region map="akkaio" />
+    <region map="akkroad" />
+  </zone>
+  <zone sector="Akk-East" loadimage="Loading Ojaveda Background">
+    <region map="akkaio" />
+    <region map="akkroad" />
+  </zone>
+
+  <!-- hydlaa_winch -->
+  <zone sector="hydlaa_winch" loadimage="Loading Winch Background">
+    <region map="hydlaa_common" />
+    <region map="hydlaa_winch" />
+  </zone>
+
+  <!-- amdeneir -->
+  <zone sector="amdeneir" loadimage="Loading Amdeneir Background">
+    <region map="terr_common" />
+    <region map="amdeneir" />
+  </zone>
+
+</zonelist>
+

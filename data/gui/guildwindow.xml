@@ -1,0 +1,503 @@
+<widget_description>
+
+
+
+    <widget name="GuildWindow" factory="pawsGuildWindow" savepositions="yes" visible="no" movable="yes" resizable="no" configurable="yes" style="New Standard GUI">
+
+        <frame x="100" y="200" width="630" height="385" border="yes"/>
+        <title resource="Scaling Title Bar" text="Guild" align="left" close_button="yes"/>
+
+        <!--
+        <childborders>
+                <colour r="0" g="0" b="0" />
+                <colour r="0" g="0" b="255" />
+                <colour r="32" g="32" b="32" />
+                <colour r="148" g="138" b="255" />
+                <colour r="64" g="64" b="64" />
+        </childborders>
+        -->
+
+
+
+        <widget name="Settings_Tab" factory="pawsButton" id="203" toggle="yes" shadows="yes" style="Standard Tab" >
+            <frame x="5" y="5" width="80" height="25" />
+
+        <attachpoints>
+            <attach point="PROPORTIONAL_RIGHT" />
+            <attach point="PROPORTIONAL_LEFT" />
+        </attachpoints>
+
+            <label text="Settings" />
+        </widget>
+
+        <widget name="Members_Tab" factory="pawsButton" id="201" toggle="yes" shadows="yes" style="Standard Tab" >
+            <frame x="93" y="5" width="80" height="25" />
+
+        <attachpoints>
+            <attach point="PROPORTIONAL_RIGHT" />
+            <attach point="PROPORTIONAL_LEFT" />
+        </attachpoints>
+
+            <label text="Members" />
+        </widget>
+
+        <widget name="Permissions_Tab" factory="pawsButton" id="200" toggle="yes" shadows="yes" style="Standard Tab" >
+            <frame x="179" y="5" width="80" height="25" />
+
+        <attachpoints>
+            <attach point="PROPORTIONAL_RIGHT" />
+            <attach point="PROPORTIONAL_LEFT" />
+        </attachpoints>
+
+            <label text="Permissions" />
+        </widget>
+
+        <widget name="Alliances_Tab" factory="pawsButton" id="202" toggle="yes" shadows="yes" style="Standard Tab" >
+            <frame x="266" y="5" width="80" height="25" />
+
+        <attachpoints>
+            <attach point="PROPORTIONAL_RIGHT" />
+            <attach point="PROPORTIONAL_LEFT" />
+        </attachpoints>
+
+            <label text="Alliance" />
+        </widget>
+
+
+
+
+
+        <!-- PERMISSIONS PANEL -->
+
+        <widget name="Permissions_Panel" factory="pawsWidget">
+            <frame x="5" y="30" width="620" height="345" border="yes"/>
+
+
+            <widget name="" factory="pawsTextBox" vertical="yes" >
+                <frame x="151" y="15" width="25" height="130" />
+                <text string="View chat" vertAdjust="BOTTOM"/>
+            </widget>
+
+            <widget name="" factory="pawsTextBox" vertical="yes" >
+                <frame x="174" y="15" width="25" height="130" />
+                <text string="Chat" vertAdjust="BOTTOM"/>
+            </widget>
+
+            <widget name="" factory="pawsTextBox" vertical="yes" >
+                <frame x="199" y="15" width="25" height="130" />
+                <text string="Invite" vertAdjust="BOTTOM"/>
+            </widget>
+
+            <widget name="" factory="pawsTextBox" vertical="yes" >
+                <frame x="219" y="15" width="25" height="130" />
+                <text string="Remove" vertAdjust="BOTTOM"/>
+            </widget>
+
+            <widget name="" factory="pawsTextBox" vertical="yes" >
+                <frame x="243" y="15" width="25" height="130" />
+                <text string="Promote" vertAdjust="BOTTOM"/>
+            </widget>
+
+            <widget name="" factory="pawsTextBox" vertical="yes" >
+                <frame x="268" y="15" width="25" height="130" />
+                <text string="Privil." vertAdjust="BOTTOM"/>
+            </widget>
+
+            <widget name="" factory="pawsTextBox" vertical="yes" >
+                <frame x="292" y="15" width="25" height="130" />
+                <text string="Points" vertAdjust="BOTTOM"/>
+            </widget>
+
+            <widget name="" factory="pawsTextBox" vertical="yes" >
+                <frame x="316" y="15" width="25" height="130" />
+                <text string="Edit" vertAdjust="BOTTOM"/>
+            </widget>
+
+            <widget name="" factory="pawsTextBox" vertical="yes" >
+                <frame x="338" y="17" width="25" height="130" />
+                <text string="Pub notes" vertAdjust="BOTTOM"/>
+            </widget>
+
+            <widget name="" factory="pawsTextBox" vertical="yes" >
+                <frame x="361" y="17" width="25" height="130" />
+                <text string="Prv notes" vertAdjust="BOTTOM"/>
+            </widget>
+
+            <widget name="" factory="pawsTextBox" vertical="yes" >
+                <frame x="384" y="17" width="25" height="130" />
+                <text string="View al.Chat" vertAdjust="BOTTOM"/>
+            </widget>
+
+            <widget name="" factory="pawsTextBox" vertical="yes" >
+                <frame x="407" y="17" width="25" height="130" />
+                <text string="All. Chat" vertAdjust="BOTTOM"/>
+            </widget>
+
+            <widget name="" factory="pawsTextBox" vertical="yes" >
+                <frame x="430" y="17" width="25" height="130" />
+                <text string="Guild Bank" vertAdjust="BOTTOM"/>
+            </widget>
+
+
+
+
+            <widget name="LevelList" factory="pawsListBox" xmlbinding="levellist" id="1100" autoid="yes"  selectable="0">
+                <frame x="25" y="156" width="610" height="195" border="no"/>
+
+                <columns height="20" headings="no" xmlbinding="l" >
+                    <column width="90" xmlbinding="title" >
+                         <widget name="Name" factory="pawsButton"></widget>
+                    </column>
+
+                    <column width="15" >
+                         <widget name="ThisIsBlankSpace" factory="pawsTextBox"></widget>
+                    </column>
+
+                    <column width="13" xmlbinding="level" >
+                         <widget name="Level" factory="pawsTextBox"></widget>
+                    </column>
+
+                    <column width="23" xmlbinding="view_chat" >
+                         <widget name="View Chat" factory="pawsCheckBox"><text string="" position="right"/></widget>
+                    </column>
+
+                    <column width="23" xmlbinding="chat" >
+                         <widget name="Chat" factory="pawsCheckBox"><text string="" position="right"/></widget>
+                    </column>
+
+                    <column width="23" xmlbinding="invite" >
+                         <widget name="Invite" factory="pawsCheckBox"><text string="" position="right"/></widget>
+                    </column>
+
+                    <column width="23" xmlbinding="remove" >
+                         <widget name="Remove" factory="pawsCheckBox"><text string="" position="right"/></widget>
+                    </column>
+
+                    <column width="23" xmlbinding="promote" >
+                         <widget name="Promote" factory="pawsCheckBox"><text string="" position="right"/></widget>
+                    </column>
+
+                    <column width="23" xmlbinding="edit_level" >
+                         <widget name="Edit level" factory="pawsCheckBox"><text string="" position="right"/></widget>
+                    </column>
+
+                    <column width="23" xmlbinding="edit_points" >
+                         <widget name="Edit points" factory="pawsCheckBox"><text string="" position="right"/></widget>
+                    </column>
+
+                    <column width="23" xmlbinding="edit_guild" >
+                         <widget name="Edit guild" factory="pawsCheckBox"><text string="" position="right"/></widget>
+                    </column>
+
+                    <column width="23" xmlbinding="edit_public" >
+                         <widget name="Edit public" factory="pawsCheckBox"><text string="" position="right"/></widget>
+                    </column>
+
+                    <column width="23" xmlbinding="edit_private" >
+                         <widget name="Edit private" factory="pawsCheckBox"><text string="" position="right"/></widget>
+                    </column>
+
+                    <column width="23" xmlbinding="alliance_view_chat" >
+                         <widget name="View alliance chat" factory="pawsCheckBox"><text string="" position="right"/></widget>
+                    </column>
+
+                    <column width="23" xmlbinding="alliance_chat" >
+                         <widget name="Alliance chat" factory="pawsCheckBox"><text string="" position="right"/></widget>
+                    </column>
+
+                    <column width="23" xmlbinding="guild_bank" >
+                         <widget name="Guild bank" factory="pawsCheckBox"><text string="" position="right"/></widget>
+                    </column>
+
+                </columns>
+
+            </widget>
+
+
+
+        </widget>
+
+
+
+
+
+        <!-- MEMBER PANEL -->
+
+        <widget name="Members_Panel" factory="pawsWidget">
+            <frame x="5" y="30" width="620" height="345" border="yes"/>
+
+
+
+            <widget name="OnlineOnly" factory="pawsCheckBox" id="1003" shadows="yes">
+                <frame x="31" y="7" width="200" height="20" />
+                <text string="Online only" position="right" />
+            </widget>
+
+
+
+            <widget name="MemberCount" factory="pawsTextBox">
+                <frame x="280" y="7" width="200" height="20" />
+                <text string="Chat" vertAdjust="BOTTOM"/>
+            </widget>
+
+
+            <widget name="Invite" factory="pawsButton" id="305" style="Standard Button">
+                <frame x="440" y="7" width="70" height="19" />
+                <label text="Invite" />
+
+            </widget>
+
+
+
+            <widget name="Leave" factory="pawsButton" id="306" style="Standard Button">
+                <frame x="515" y="7" width="70" height="19" />
+                <label text="Leave" />
+            </widget>
+
+
+
+            <widget name="MemberList" factory="pawsListBox" xmlbinding="memberlist" >
+                <frame x="31" y="35" width="549" height="229" border="no"/>
+
+                <columns height="25" headings="yes" xmlbinding="m" sortBy="0" sortOrder="asc">
+
+                    <column width="95" xmlbinding="name" >
+                         <widget name="Name" factory="pawsTextBox"></widget>
+                    </column>
+
+                    <column width="120" xmlbinding="level" >
+                         <widget name="Level" factory="pawsTextBox"> </widget>
+                    </column>
+
+                    <column width="50" xmlbinding="online" >
+                         <widget name="Online" factory="pawsTextBox"> <text horizAdjust="CENTRE" /></widget>
+                    </column>
+
+                    <column width="95" xmlbinding="sector" >
+                         <widget name="Sector" factory="pawsTextBox"> <text horizAdjust="CENTRE" /></widget>
+                    </column>
+
+                    <column width="120" xmlbinding="lastonline" >
+                         <widget name="Last online" factory="pawsTextBox"> <text horizAdjust="CENTRE" /></widget>
+                    </column>
+
+                    <column width="60" xmlbinding="points" >
+                         <widget name="Points" factory="pawsTextBox"> <text horizAdjust="CENTRE" /></widget>
+                    </column>
+
+                </columns>
+
+            </widget>
+
+            <widget name="GuildMemberNotifications" factory="pawsCheckBox" id="1005" shadows="yes" >
+                <frame x="10" y="270" width="400" height="20" />
+                <text string="Notify when members login/logout" position="right" />
+            </widget>
+
+            <widget name="RemoveMember" factory="pawsButton" id="300" style="Standard Button">
+                <frame x="10" y="320" width="90" height="19" />
+                <label text="Remove" />
+            </widget>
+
+            <widget name="EditLevel" factory="pawsButton" id="301" style="Standard Button" >
+                <frame x="110" y="320" width="90" height="19" />
+                <label text="Edit level" />
+            </widget>
+
+            <widget name="EditGuildPoints" factory="pawsButton" id="302" style="Standard Button">
+                <frame x="210" y="320" width="90" height="19" />
+                <label text="Edit points" />
+            </widget>
+
+            <widget name="EditPublicNotes" factory="pawsButton" id="303" style="Standard Button">
+                <frame x="310" y="320" width="90" height="19" />
+                <label text="Public notes" />
+            </widget>
+
+            <widget name="EditPrivateNotes" factory="pawsButton" id="304" style="Standard Button">
+                <frame x="410" y="320" width="90" height="19" />
+                <label text="Private notes" />
+            </widget>
+
+            <widget name="EditMaxGuildPoints" factory="pawsButton" id="311" style="Standard Button">
+                <frame x="510" y="320" width="90" height="19" />
+                <label text="Edit Max GP" />
+            </widget>
+
+
+        </widget>
+
+
+
+        <!-- ALLIANCES PANEL -->
+
+        <widget name="Alliances_Panel" factory="pawsWidget">
+            <frame x="5" y="30" width="620" height="345" border="yes"/>
+
+
+            <widget name="AllianceNameLabel" factory="pawsTextBox">
+                <frame x="58" y="14" width="90" height="20" />
+                <text string="Alliance:" />
+            </widget>
+
+            <widget name="AllianceName" factory="pawsTextBox" >
+                <frame x="148" y="14" width="200" height="20"/>
+            </widget>
+
+
+        <widget name="Invite" factory="pawsButton" id="502" style="Standard Button">
+                <frame x="380" y="7" width="70" height="19" />
+                <label text="Invite" />
+            </widget>
+
+
+
+            <widget name="Disband" factory="pawsButton" id="504" style="Standard Button">
+                <frame x="460" y="7" width="70" height="19" />
+                <label text="Disband" />
+            </widget>
+
+
+            <widget name="Leave" factory="pawsButton" id="503" style="Standard Button">
+                <frame x="540" y="7" width="70" height="19" />
+                <label text="Leave" />
+            </widget>
+
+
+            <widget name="CreateAlliance" factory="pawsButton" id="505" style="Standard Button">
+                <frame x="520" y="7" width="100" height="19" />
+                <label text="Create alliance" />
+            </widget>
+
+
+            <widget name="AllianceMemberList" factory="pawsListBox">
+                <frame x="40" y="41" width="547" height="215" border="no"/>
+                <columns height="30" sortBy="0" sortOrder="asc" headings="yes">
+
+                    <column width="180" xmlbinding="name" >
+                         <widget name="Name" factory="pawsTextBox"></widget>
+                    </column>
+
+                    <column width="60" xmlbinding="online" >
+                         <widget name="Status" factory="pawsTextBox"></widget>
+                    </column>
+
+                    <column width="120" xmlbinding="leader" >
+                         <widget name="Leader" factory="pawsTextBox"></widget>
+                    </column>
+
+                    <column width="60" xmlbinding="online" >
+                         <widget name="Online" factory="pawsTextBox"></widget>
+                    </column>
+
+                </columns>
+            </widget>
+
+
+
+            <widget name="Remove" factory="pawsButton" id="500" style="Standard Button">
+                <frame x="10" y="320" width="90" height="19" />
+               <label text="Remove" />
+            </widget>
+
+            <widget name="MakeLeader" factory="pawsButton" id="501" style="Standard Button">
+                <frame x="110" y="320" width="90" height="19" />
+                <label text="Make leader" />
+            </widget>
+
+            <widget name="AllianceMemberNotifications" factory="pawsCheckBox" id="1006" shadows="yes" >
+                <frame x="10" y="270" width="400" height="20" />
+                <text string="Notify when alliance members login/logout" position="right" />
+            </widget>
+
+
+        </widget>
+
+
+
+        <!-- Settings_Panel -->
+
+        <widget name="Settings_Panel" factory="pawsWidget">
+            <frame x="5" y="30" width="620" height="345" border="yes"/>
+
+
+            <widget name="label" factory="pawsTextBox">
+            <frame x="25" y="7" width="300" height="30" border="no"/>
+            <text string="Guild message of the day (A short message):" />
+            </widget>
+
+
+
+            <widget name="motd" factory="pawsMultilineEditTextBox">
+                <frame x="24" y="37" width="390" height="150" border="no"/>
+                <attachpoints>
+                    <attach point="ATTACH_LEFT" />
+                    <attach point="ATTACH_RIGHT" />
+                    <attach point="ATTACH_BOTTOM" />
+                    <attach point="ATTACH_TOP" />
+                </attachpoints>
+            </widget>
+
+            <widget name="ReloadMOTD" factory="pawsButton" id="2001" style="Standard Button" >
+                <frame x="40" y="210" width="90" height="25" />
+                <label text="Refresh MOTD" />
+            </widget>
+
+            <widget name="SaveMOTD" factory="pawsButton" id="2000" style="Standard Button">
+                <frame x="140" y="210" width="90" height="25" />
+                <label text="Save MOTD" />
+            </widget>
+
+
+
+            <!-- Guild Name -->
+
+            <widget name="GuildNameLabel" factory="pawsTextBox">
+                <frame x="10" y="260" width="50" height="20" />
+                <text string="Name:" />
+            </widget>
+
+            <widget name="GuildName" factory="pawsTextBox">
+                <frame x="50" y="260" width="300" height="20"/>
+            </widget>
+
+            <widget name="GuildNameButton" factory="pawsButton" id="1001" style="Standard Button">
+                <frame x="420" y="260" width="60" height="25"/>
+                <label text="Change"/>
+            </widget>
+
+
+
+            <!-- Guild Web Page -->
+
+            <widget name="GuildWebPageLabel" factory="pawsTextBox">
+                <frame x="10" y="290" width="75" height="20" />
+                <text string="Website:" />
+            </widget>
+
+            <widget name="GuildWebPage" factory="pawsTextBox">
+                <frame x="65" y="290" width="340" height="20"/>
+            </widget>
+
+            <widget name="GuildWebPageButton" factory="pawsButton" id="1004" style="Standard Button">
+                <frame x="420" y="290" width="60" height="25"/>
+                <label text="Change"/>
+            </widget>
+
+
+
+            <!-- Guild Secret -->
+
+            <widget name="GuildSecret" factory="pawsCheckBox" id="1002" shadows="yes" >
+                <frame x="500" y="260" width="120" height="20" />
+                <text string="Secret guild" position="right" />
+            </widget>
+
+
+        </widget>
+    </widget>
+
+
+</widget_description>
+
+

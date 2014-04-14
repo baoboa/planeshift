@@ -1,0 +1,130 @@
+@PlaneShift Team at Crystal Blue 020 Release (released Oct-2007)
+
+&Project Leader, Director and Overall Camp Counselor
+
+Luca "Talad" Pancallo, for building a great team to make a dream come true.
+
+
+&The pillars
+
+Andrew "Acraig" Craig, for client gui foundation, char creation screens, equipment, inventory, ...
+
+Keith "Vengeance" Fulton, for lights, animations management, char customization, client/server connections, ...
+
+
+&Client and Server engine
+
+Andrew "Acraig" Craig, client side department leader.
+
+Keith "Vengeance" Fulton, server side department leader.
+
+Arianna "AryHann" Benigno, for marriage system, weather and many bug fixes.
+
+Michael "Borrillis" Cummings, for Pets system, char creation affinity.
+
+Andrew "Khaki" Dai, for client/server synchronization, anti-cheat modules, improved collision detection.
+
+Daniel "dfryer" Fryer, for the MacOSX distribution of PlaneShift.
+
+Andrew "Rhad" Mann, for new sound plugin and advanced networking.
+
+Anders "Magodra" Reggestad, for magic system implementation, NPC AI, tribes and a lot more.
+
+Andrew "aarobber" Robberts, for camera movement, particles, shadows, chat bubbles.
+
+Thomas "TomT" Towey, for weapon and armor craft systems.
+
+Dave "Acissej" Bentham, for maps/book uniqueness, spells, active magic window, events commands.
+
+Enar "Bereror" Väikene, for minigames and many bug fixes.
+
+Kenny "Kayden" Graunke, for contributing to the debug and fix of version 019, inventory and containers.
+
+
+&Settings
+
+Brian Lee "Xillix" Bonfonti, Setting department leader, for quests, npcs dialogues, books.
+
+Steve "Darkmoon" Scott, for maps, npcs dialogues, quests and knowledge areas.
+
+Desmond "Jeraphon", for quests and npc dialogues.
+
+Stacy "Venae Rell" Davis, for uncompromising editing, written and artistic contributions, and superior prospect management.
+
+Fred "Steuben" Prentice, for npc paths, and engine liason duties.
+
+
+&2D Art
+
+Elina "Karyuu" Eganova, for player and monsters skins, icons, new web site, armor skins and more.
+
+Jan "Ghrynn" Horak, for new character skeleton and new animations for player races.
+
+Vicky "Moogie" Hoskin, for player skins, face customization and additional 2d art.
+
+Alexei "Inca" Popov, for great architectural sketches on player races and other concept art.
+
+Ethan "Gentar" Scheu, for bronze doors texturing, and armor textures.
+
+Christina "Nanaki" Stadlmann, for player character skins and splashscreen.
+
+
+&3D Art
+
+Creath "Artician" Carter, for his impressive hard work and focus on critical assets like arena, ojaveda, roads.
+
+Ben "Djaggernaut" Chavigner, for carkarass and consumer monster, plus amazing additions to death realm.
+
+Erik "Erik" Bakker, for Trepor model, Klyros model, sewers level, player animations.
+
+Niklas "Niber" Bergström for shields, items models, and magic shop.
+
+Mattew "TorQ" Carter, for the dwarf model, magic shop outside model.
+
+Aaron "Storm" Gardiner, for animations of player characters.
+
+Natalia "Nata3D" Mitrofanova, for the ulbenault monster.
+
+Stefano "Boonet" Oggeri, for his contribution of models, renderings, textures and style.
+
+Ville "Cherppow" Rantapuska, for many item models, stone and elves client skins, deathrealm expansion and more.
+
+Harry "Massie" Vermeulen, for models and animations of many monsters.
+
+
+&Rules
+
+Michael "Xordan" Gist, for balancing progression system and new stamina rules.
+
+
+&Music and sounds
+
+Ruslan "Ellarion" Perezhilo, for travel songs, death jingles and lot of nice sounds
+
+Jiri "GeorgeD" Ptacek, for death realm song, victory jingles and lot of nice sounds
+
+Bruno "CyberMozart" Largarde, for the main theme, intro songs and battle theme
+
+
+&PR
+
+Luca "Talad" Pancallo, for managing PR activities with no members!
+
+
+@Special Thanks to
+
+Frank "res" Richter, for working on CS New Renderer and supporting directly our project.
+
+Marc Haseinko, for providing a 99.9% reliable testing environment.
+
+
+@Very Special Thanks to
+
+Jorrit Tyberghein, for his great 3D engine (Crystal Space), for the continuous and passionate support to our team, quaternions and other e=mc2 things.
+
+Fragnetics Team (www.fragnetics.com) for providing the necessary hardware and bandwidth.
+
+
+All the former developers for their work and contributions to PlaneShift.
+
+.... and to all our players, fans and supporters!

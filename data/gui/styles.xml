@@ -1,0 +1,305 @@
+
+<styles>
+
+
+    <!-- note that some widgets have default sizes - it is better to keep them standardized -->
+
+
+    <!-- standard noneditable piece of text in a window -->
+    <style name="label" inherit="Standard Font">
+        <frame height="20" />
+    </style>
+
+    <!-- bigger noneditable piece of text in a window that can denote a group of widgets -->
+    <style name="header" inherit="Header Font">
+        <frame height="20" />
+    </style>
+
+    <!-- old default button -->
+    <style name="button" inherit="Button Font">
+        <frame border="yes" />
+        <buttonup resource="Standard Button" />
+        <buttondown resource="Standard Button Down" />
+    </style>
+
+    <!-- more fancy looking button, for important matters -->
+    <style name="nicebutton" toggle="no" inherit="Button Font" >
+        <frame width="80" height="22" border="no" />
+        <buttonup resource="Scaling Button" />
+        <buttondown resource="Scaling Button Down" />
+    </style>
+
+    <!-- for inputs where you edit text -->
+    <style name="textinput" inherit="Input Font">
+        <frame border="yes" />
+    </style>
+
+    <style name="checkbox" shadows="yes" >
+        <frame width="120" height="20" />
+        <text position="right" vertAdjust="CENTRE" />
+    </style>
+
+    <style name="combobox" >
+        <frame height="20" border="yes"/>
+        <listbox rows="2" height="20" text="Choose one..."/>
+    </style>
+
+    <style name="listbox">
+        <frame border="no" margin="5" />
+        <highlight resource="Highlight" />
+        <childborders>
+            <colour r="0" g="0" b="0" />
+            <colour r="180" g="180" b="180" />
+            <colour r="32" g="32" b="32" />
+            <colour r="220" g="220" b="220" />
+            <colour r="64" g="64" b="64" />
+        </childborders>
+    </style>
+
+    <!-- top level window (i.e. child of mainwidget) -->
+    <style name="topwindow" inherit="label" movable="yes" savepositions="yes" configurable="yes">
+        <title resource="Scaling Title Bar" align="left" close_button="yes" />
+        <frame border="yes" />
+        <bgimage resource="Scaling Window Background" alpha="128" />
+    </style>
+
+    <!-- tab window - note that it has standardized relative position -->
+    <style name="tabwindow">
+        <frame x="5" y="30" border="yes"/>
+    </style>
+
+    <style name="tabpanel" inherit="Standard Font">
+        <frame border="yes" />
+        <bgimage resource="Scaling Widget Background" alpha="0" />
+    </style>
+
+
+
+
+
+
+
+
+    <!-- Font used for all standard (non-editable, non-clickable) text -->
+    <style name="Standard Font">
+    <font name="/planeshift/data/ttf/LiberationSans-Regular.ttf" r="121" g="147" b="42" size="9" shadow="no"  />
+    </style>
+
+    <!-- Font used for buttons and tabs -->
+    <style name="Button Font">
+    <font name="/planeshift/data/ttf/LiberationSans-Regular.ttf" r="171" g="197" b="92" size="9" shadow="no" bold="no" />
+    </style>
+
+    <!-- Font used for all kinds of text input from the user -->
+    <style name="Input Font">
+    <font name="/planeshift/data/ttf/LiberationSans-Regular.ttf" r="200" g="200" b="200" size="9" shadow="no" />
+        <frame border="yes" />
+    </style>
+
+    <!-- Font used for headers and large labels -->
+    <style name="Header Font">
+        <font name="/planeshift/data/ttf/cupandtalon.ttf" r="121" g="147" b="42" size="12" shadow="yes" />
+        <frame height="20" />
+    </style>
+
+    <!-- Font used for main headers eg. window titles -->
+    <style name="Main Header Font">
+        <font name="/planeshift/data/ttf/scurlock.ttf" r="250" g="250" b="250" size="14" scalefont="no" shadow="yes" />
+        <frame height="25" />
+    </style>
+
+
+
+    <!-- Buttons --->
+    <style name="Simple Button" inherit="Button Font" toggle="no" >
+    </style>
+
+    <style name="Standard Button" inherit="Button Font" toggle="no" >
+        <frame border="yes" />
+        <bgimage resource="Standard Button" />
+        <buttonup resource="Standard Button" />
+        <buttondown resource="Standard Button Down" />
+
+    <attachpoints>
+            <attach point="ATTACH_TOP" />
+        <attach point="ATTACH_LEFT" />
+    </attachpoints>
+    </style>
+
+    <style name="Scaling Button" inherit="Button Font" toggle="no" >
+        <frame border="yes" />
+        <bgimage resource="Scaling Button" />
+        <buttonup resource="Scaling Button" />
+        <buttondown resource="Scaling Button Down" />
+        <buttonspecial resource="Scaling Button Disabled" />
+
+    <attachpoints>
+            <attach point="ATTACH_TOP" />
+        <attach point="ATTACH_LEFT" />
+    </attachpoints>
+    </style>
+
+
+
+    <!-- Tabs --->
+    <style name="Standard Tab" inherit="Button Font" toggle="yes" >
+        <frame border="yes" />
+        <buttonup resource="Standard Tab" />
+        <buttondown resource="Standard Tab Highlight" />
+        <buttonspecial resource="Standard Tab Disabled" />
+    <attachpoints>
+            <attach point="ATTACH_TOP" />
+        <attach point="ATTACH_LEFT" />
+    </attachpoints>
+    </style>
+    <style name="Scaling Tab" inherit="Button Font" toggle="yes" >
+        <frame border="yes" />
+        <buttonup resource="Scaling Tab" />
+        <buttondown resource="Scaling Tab Highlight" />
+        <buttonspecial resource="Scaling Tab Disabled" />
+    <attachpoints>
+            <attach point="ATTACH_TOP" />
+        <attach point="ATTACH_LEFT" />
+    </attachpoints>
+    </style>
+
+
+    <!-- Slots (inventory, glyph) --->
+    <style name="Standard Slot" inherit="Standard Font">
+        <bgimage resource="Standard Slot" />
+    </style>
+   <style name="Scaling Slot" inherit="Standard Font">
+        <frame border="yes" />
+        <bgimage resource="Scaling Slot" />
+    </style>
+
+
+    <!-- Progressbars --->
+    <style name="Standard Progressbar" inherit="Input Font" >
+        <bgimage resource="Progressbar Background" />
+        <mask resource="Progressbar Mask" />
+    </style>
+    <style name="Simple Progressbar" inherit="Input Font" >
+    </style>
+    <style name="Scaling Progressbar" inherit="Input Font" >
+        <bgimage resource="Scaling Progressbar Background" />
+        <mask resource="Scaling Progressbar Mask" />
+    </style>
+
+
+    <!-- Scrollbars --->
+    <style name="Standard Scrollbar" inherit="Input Font" >
+        <bgimage resource="Scrollbar Background Vertical" />
+      <up   grey="Up Arrow Disabled" unpressed="Up Arrow" pressed="Up Arrow Highlight"       width="20" height="20" />
+      <down grey="Down Arrow Disabled" unpressed="Down Arrow" pressed="Down Arrow Highlight" width="20" height="20" />
+      <thumb stopped="ScrollBar Thumb" moving="ScrollBar Thumb Moving" />
+        <attachpoints>
+            <attach point="ATTACH_TOP" />
+            <attach point="ATTACH_RIGHT" />
+            <attach point="ATTACH_BOTTOM" />
+        </attachpoints>
+    </style>
+    <style name="Standard Scrollbar Horizontal" inherit="Input Font" >
+        <bgimage resource="Scrollbar Background Horizontal" />
+      <up   grey="Left Arrow Disabled"  unpressed="Left Arrow"  pressed="Left Arrow Highlight"  width="20" height="20" />
+      <down grey="Right Arrow Disabled" unpressed="Right Arrow" pressed="Right Arrow Highlight" width="20" height="20" />
+      <thumb stopped="ScrollBar Thumb" moving="ScrollBar Thumb Moving" />
+        <attachpoints>
+            <attach point="ATTACH_RIGHT" />
+            <attach point="ATTACH_LEFT" />
+            <attach point="ATTACH_BOTTOM" />
+        </attachpoints>
+    </style>
+
+
+    <style name="Standard Checkbox" inherit="Button Font" >
+        <checkbox off="Checkbox Off" on="Checkbox On" greyoff="Checkbox Off Locked" greyon="Checkbox On Locked" size="16" />
+        <text position="right" vertAdjust="CENTRE" />
+    </style>
+
+    <style name="Standard Radiobutton" inherit="Button Font" >
+        <text position="right" vertAdjust="CENTRE" />
+    </style>
+
+    <style name="Left Side Tree" inherit="Standard MLB">
+        <highlight resource="Highlight" />
+        <attachpoints>
+            <attach point="ATTACH_TOP" />
+            <attach point="ATTACH_LEFT" />
+            <attach point="ATTACH_BOTTOM" />
+        </attachpoints>
+    </style>
+
+
+    <!-- Textfields and lists --->
+    <style name="Standard Field" inherit="Standard Font">
+    </style>
+    <style name="Standard EditTextBox" inherit="Input Font">
+        <bgimage resource="Scaling Field Background" />
+    </style>
+
+    <style name="Standard TextBox" inherit="Standard Font" >
+    </style>
+
+    <style name="Standard Prompt" inherit="Input Font" >
+    </style>
+
+    <style name="Standard MLB" inherit="Standard Font">
+        <bgimage resource="Scaling Widget Background"/>
+    </style>
+
+    <style name="Standard MLE" inherit="Input Font">
+        <bgimage resource="Scaling Widget Background" />
+    </style>
+
+    <style name="Standard MsgText" inherit="Standard Font">
+        <attachpoints>
+            <attach point="ATTACH_RIGHT" />
+            <attach point="ATTACH_TOP" />
+            <attach point="ATTACH_LEFT" />
+            <attach point="ATTACH_BOTTOM" />
+        </attachpoints>
+    </style>
+    <style name="Fancy Standard MsgText" inherit="Standard MsgText">
+        <bgimage resource="Scaling Widget Background" alpha="128"/>
+    </style>
+    <style name="Standard ListBox" inherit="Standard Font">
+        <highlight resource="Highlight" />
+        <bgimage resource="Scaling Widget Background" alpha="128" />
+        <attachpoints>
+            <attach point="ATTACH_RIGHT" />
+            <attach point="ATTACH_TOP" />
+            <attach point="ATTACH_LEFT" />
+            <attach point="ATTACH_BOTTOM" />
+        </attachpoints>
+    </style>
+
+
+
+
+    <style name="New Standard GUI" inherit="Standard Font">
+        <bgimage resource="Scaling Window Background" />
+    <title resource="Scaling Title Bar" align="left" close_button="yes" style="Main Header Font" />
+
+        <defaultstyle widget="pawsButton"           style="Simple Button"/>
+        <defaultstyle widget="pawsTextBox"          style="Standard TextBox"/>
+        <defaultstyle widget="pawsMultiLineTextBox" style="Standard MLB"/>
+        <defaultstyle widget="pawsDocumentView"     style="Standard MLB"/>
+        <defaultstyle widget="pawsEditTextBox"      style="Standard EditTextBox"/>
+        <defaultstyle widget="pawsMessageTextBox"   style="Standard MsgText"/>
+        <defaultstyle widget="pawsListBox"          style="Standard ListBox"/>
+        <defaultstyle widget="pawsSimpleTree"       style="Left Side Tree"/>
+        <defaultstyle widget="pawsMultilineEditTextBox" style="Standard MLE"/>
+        <defaultstyle widget="pawsCheckBox"             style="Standard Checkbox"/>
+        <defaultstyle widget="pawsRadioButton"          style="Standard Radiobutton"/>
+        <defaultstyle widget="pawsSlot"          style="Standard Slot"/>
+        <defaultstyle widget="pawsGlyphSlot"          style="Standard Slot"/>
+        <defaultstyle widget="pawsProgressBar"          style="Scaling Progressbar"/>
+        <defaultstyle widget="pawsScrollBar"          style="Standard Scrollbar"/>
+    </style>
+
+    <style name="QuestionBox" inherit="New Standard GUI">
+        <bgimage resource="YesNo" alpha="0"/>
+    </style>
+
+</styles>

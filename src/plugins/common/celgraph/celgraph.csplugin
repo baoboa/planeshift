@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!-- celgraph.csplugin -->
+<plugin>
+  <scf>
+    <classes>
+      <class>
+        <name>cel.celpath</name>
+        <implementation>celPath</implementation>
+	<description>CEL Path</description>
+      </class>
+      <class>
+        <name>cel.celgraph</name>
+        <implementation>celGraph</implementation>
+	<description>CEL Graph</description>
+      </class>
+    </classes>
+  </scf>
+</plugin>

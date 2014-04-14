@@ -1,0 +1,155 @@
+<widget_description>
+    <widget name="CharPickerWindow" factory="pawsCharacterPickerWindow" visible="no" movable="no" resizable="no" resizetoscreen="yes" scalablefont="yes">
+        <frame x="0" y="0" width="800" height="600" border="no" />
+        <font name="LiberationSerif-Regular.ttf" r="255" g="255" b="255" sr="0" sg="0" sb="0" shadow="no" size="12" resizetoscreen="yes" />
+<!--
+        <bgcolour r="255" g="255" b="255" />
+ -->
+        <bgimage resource="login_background" />
+
+        <form>
+        <!-- Button to simulate click on if enter is pressed -->
+            <enter name="login" />
+        <!-- Add the tab order here -->
+        </form>
+
+        <!-- Title -->
+        <widget name="label_login" factory="pawsTextBox">
+            <frame x="200" y="35" width="400" height="35" />
+            <font name="scurlock.ttf" r="255" g="255" b="255" sr="0" sg="0" sb="0" shadow="yes" size="24" resizetoscreen="yes" />
+            <text string="Choose Your Character"  horizAdjust="CENTRE" />
+<!--
+            <bgcolour r="255" g="127" b="40" />
+ -->
+        </widget>
+
+        <!-- Instructions -->
+        <widget name="instructions" factory="pawsTextBox">
+            <frame x="100" y="70" width="600" height="25" border="no" />
+            <text string="Click a character name below, then click Join. Or click New Character." horizAdjust="CENTRE" vertAdjust="CENTRE" resizetoscreen="yes" />
+<!--
+            <bgcolour r="255" g="127" b="40" />
+ -->
+        </widget>
+
+        <!-- Server wait -->
+        <!-- re-code to use instructions above -->
+        <widget name="wait_label" factory="pawsTextBox">
+            <frame x="100" y="70" width="600" height="25" border="no" />
+            <font name="LiberationSerif-Regular.ttf" r="255" g="255" b="255" sr="0" sg="0" sb="0" shadow="no" size="16" resizetoscreen="yes" />
+            <text string="Waiting on server data.." horizAdjust="CENTRE" resizetoscreen="yes" />
+<!--
+            <bgcolour r="255" g="127" b="40" />
+ -->
+        </widget>
+
+        <!-- Character View -->
+        <widget name="PaperDollView" factory="pawsObjectView">
+            <frame x="94" y="98" width="306" height="424" border="no" />
+            <mask resource="charborder"/>
+            <map file="podium" sector="podium"/>
+            <distance value="3.0"/>
+          <cameramod x="-0.025" y="1.0" z="0.0"/>
+        </widget>
+
+        <!-- Character Select -->
+        <widget name="characterSelect" factory="pawsWidget">
+            <frame x="425" y="200" width="295" height="190" />
+            <font name="LiberationSerif-Regular.ttf" r="255" g="255" b="255" sr="0" sg="0" sb="0" shadow="no" size="13" resizetoscreen="yes" horizAdjust="LEFT" />
+<!--
+            <bgcolour r="200" g="40" b="80" />
+ -->
+
+            <widget name="ImgCharacter0" factory="pawsWidget" visible="no">
+                <frame x="0" y="0" width="30"    height="30" border="no" />
+                <bgimage resource="radiooff2" />
+            </widget>
+
+            <widget name="SelectCharacter0" factory="pawsButton" id="0" visible="no">
+                <frame x="35" y="0" width="260" height="30" border="no" />
+                <label text="New Character" />
+            </widget>
+
+            <widget name="ImgCharacter1" factory="pawsWidget" visible="no">
+                <frame x="0" y="40" width="30" height="30" border="no" />
+                <bgimage resource="radiooff2" />
+            </widget>
+
+            <widget name="SelectCharacter1" factory="pawsButton" id="1" visible="no">
+                <frame x="35" y="40" width="260" height="30" border="no" />
+                <label text="New Character" />
+            </widget>
+
+            <widget name="ImgCharacter2" factory="pawsWidget" visible="no">
+                <frame x="0" y="80" width="30" height="30" border="no" />
+                <bgimage resource="radiooff2" />
+            </widget>
+
+            <widget name="SelectCharacter2" factory="pawsButton" id="2" visible="no">
+                <frame x="35" y="80" width="260" height="30" border="no" />
+                <label text="New Character" />
+            </widget>
+
+            <widget name="ImgCharacter3" factory="pawsWidget" visible="no">
+                <frame x="0" y="120" width="30" height="30" border="no" />
+                <bgimage resource="radiooff2" />
+            </widget>
+
+            <widget name="SelectCharacter3" factory="pawsButton" id="3" visible="no">
+                <frame x="35" y="120" width="260" height="30" border="no" />
+                <label text="New Character" />
+            </widget>
+
+            <!-- Delete Char Button -->
+            <widget name="delete" factory="pawsButton" id="150" visible="yes">
+                <frame x="35" y="160" width="260" height="30" border="no" />
+                <font name="LiberationSerif-Regular.ttf" r="255" g="255" b="255" sr="0" sg="0" sb="0" shadow="no" size="14" resizetoscreen="yes" />
+                <label text="Delete Selected Character" />
+                <bgimage resource="buttonDefaultLong" />
+            </widget>
+
+        </widget>
+        <!-- end characterSelect -->
+
+        <!-- Navigation Buttons -->
+        <widget name="navBar" factory="pawsWidget">
+            <frame x="30" y="550" width="740" height="40" />
+            <font name="scurlock.ttf" r="255" g="255" b="255" sr="0" sg="0" sb="0" shadow="no" size="16" resizetoscreen="yes" />
+<!--
+            <bgcolour r="200" g="40" b="80" />
+ -->
+
+            <widget name="quit" factory="pawsButton" id="250" key="Q">
+                <frame x="0" y="0" width="100" height="40" />
+                <label text="Quit" />
+                <bgimage resource="buttonDefault" />
+<!--
+                <bgcolour r="80" g="127" b="128" />
+ -->
+            </widget>
+
+           <!-- Back Button -->
+            <widget name="back" factory="pawsButton" id="200" key="B">
+                <frame x="110" y="0" width="100" height="40" />
+                <label text="Log Out" />
+                <bgimage resource="buttonDefault" />
+<!--
+                <bgcolour r="80" g="127" b="128" />
+ -->
+            </widget>
+
+            <widget name="login" factory="pawsButton" id="100" visible="yes" key="L">
+                <frame x="640" y="0" width="100" height="40" />
+                <label text="Join" />
+                <bgimage resource="buttonDefault" />
+<!--
+                <bgcolour r="80" g="127" b="128" />
+ -->
+            </widget>
+        </widget>
+        <!-- end navbar -->
+
+    </widget>
+    <!-- end CharPickerWindow -->
+
+</widget_description>

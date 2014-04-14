@@ -1,0 +1,17 @@
+<widget_description>
+
+    <widget name="CreditsWindow" factory="pawsCreditsWindow"
+            visible="yes" movable="no" resizable="no" resizetoscreen="yes" >
+        <frame x="0" y="0" width="800" height="600" border="no" />
+        <font name="cupandtalon.ttf" r="255" g="255" b="255" size="18" resizetoscreen="yes" />
+        <bgimage resource="Credits Background" />
+
+        <widget name="OkButton" factory="pawsButton" id="100">
+            <frame  x="30" y="503" width="80" height="50" border="no"/>
+            <font name="cupandtalon.ttf" r="255" g="255" b="255" sr="0" sg="0" sb="0" size="28" shadow="yes" resizetoscreen="yes" />
+            <label text="Back" />
+        </widget>
+
+    </widget>
+
+</widget_description>

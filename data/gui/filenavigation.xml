@@ -1,0 +1,115 @@
+<widget_description>
+<widget name="filenavigation" factory="pawsFileNavigation"
+        visible="no" savepositions="no" movable="yes"
+        resizable="no" >
+
+    <!-- window background -->
+    <bgimage resource="Standard Background" alpha="0" fade="no" />
+
+    <!-- size of window and title -->
+    <frame x="0" y="0" width="400" height="400" border="yes" />
+    <title resource="Blue Title" text="Open File" align="left" />
+
+    <!-- A button for closing (hiding) the window -->
+    <widget name="windowclose" factory="pawsButton">
+    <frame x="380" y="5" width="16" height="16" border="yes" />
+    <buttonup resource="Window Close" />
+    <buttondown resource="Window Close" />
+    </widget>
+
+    <!-- A button for moving up one path level -->
+    <widget name="uppath" factory="pawsButton">
+    <frame x="360" y="5" width="16" height="16" border="yes" />
+    <buttonup resource="Up Path" />
+    <buttondown resource="Up Path" />
+    </widget>
+
+    <!-- A path display textbox -->
+    <widget name="pathtext_label" factory="pawsTextBox">
+        <frame x="5" y="5" width="30" height="16" border="no" />
+        <font name="LiberationSans-Regular.ttf" r="255" g="255" b="255" size="10"/>
+        <text vertAdjust="CENTRE" string="Path:" />
+    </widget>
+
+    <widget name="pathtext" factory="pawsComboBox">
+        <frame x="40" y="5" width="300" height="16" border="yes" />
+    <listbox rows="10" height="15" text="InitialText" fliptotop="no" />
+    </widget>
+
+    <!-- A folders display text -->
+    <widget name="folders_label" factory="pawsTextBox">
+        <frame x="5" y="30" width="190" height="15" border="no" />
+        <font name="LiberationSans-Regular.ttf" r="255" g="255" b="255" size="10"/>
+        <text vertAdjust="CENTRE" horizAdjust="CENTER" string="Folders" />
+    </widget>
+
+    <!-- The dir display list -->
+    <widget name="dirlist" factory="pawsListBox">
+    <frame x="5" y="45" width="190" height="290" border="yes" />
+    <columns height="15" sortBy="0" sortOrder="desc">
+        <column width="170"><widget factory="pawsTextBox"/></column>
+    </columns>
+    </widget>
+
+    <!-- A files display text -->
+    <widget name="files_label" factory="pawsTextBox">
+        <frame x="205" y="30" width="190" height="15" border="no" />
+        <font name="LiberationSans-Regular.ttf" r="255" g="255" b="255" size="10"/>
+        <text vertAdjust="CENTRE" horizAdjust="CENTER" string="Files" />
+    </widget>
+
+    <!-- The file display list -->
+    <widget name="filelist" factory="pawsListBox">
+    <frame x="205" y="45" width="190" height="290" border="yes" />
+    <columns height="15" sortBy="0" sortOrder="desc">
+        <column width="170"><widget factory="pawsTextBox"/></column>
+    </columns>
+    </widget>
+
+    <!-- A file selection edit textbox -->
+    <widget name="fileedit_label" factory="pawsTextBox">
+        <frame x="5" y="345" width="45" height="16" border="no" />
+        <font name="LiberationSans-Regular.ttf" r="255" g="255" b="255" size="10"/>
+        <text vertAdjust="CENTRE" string="Filename:" />
+    </widget>
+
+    <widget name="fileedit" factory="pawsEditTextBox">
+        <frame x="50" y="345" width="285" height="16" border="yes" />
+        <font name="LiberationSans-Regular.ttf" r="255" g="255" b="255" size="10"/>
+        <text vertAdjust="CENTRE" horizAdjust="RIGHT" string="" />
+    </widget>
+
+    <!-- A file selection edit textbox -->
+    <widget name="filetype_label" factory="pawsTextBox">
+        <frame x="5" y="370" width="45" height="16" border="no" />
+        <font name="LiberationSans-Regular.ttf" r="255" g="255" b="255" size="10"/>
+        <text vertAdjust="CENTRE" string="Filetype:" />
+    </widget>
+
+    <widget name="filetype" factory="pawsComboBox">
+        <frame x="50" y="370" width="285" height="16" border="yes" />
+    <listbox rows="3" height="15" text="*" fliptotop="yes" />
+    </widget>
+
+    <!-- A button for saving/loading -->
+    <widget name="perform" factory="pawsButton">
+        <frame x="340" y="345" width="55" height="16" border="yes" />
+        <font name="LiberationSans-Regular.ttf" r="255" g="255" b="255" size="10"/>
+        <buttonup resource="Blue Title"/>
+        <buttondown resource="Blue Title" />
+        <label text="Save"/>
+    </widget>
+
+    <!-- A button for canceling (same as close) -->
+    <widget name="cancel" factory="pawsButton">
+        <frame x="340" y="370" width="55" height="16" border="yes" />
+        <font name="LiberationSans-Regular.ttf" r="255" g="255" b="255" size="10"/>
+        <buttonup resource="Blue Title"/>
+        <buttondown resource="Blue Title" />
+        <label text="Cancel"/>
+    </widget>
+
+
+</widget>
+</widget_description>
+

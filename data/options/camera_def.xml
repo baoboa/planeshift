@@ -1,0 +1,62 @@
+<General>
+    <camsetting name="StartingCameraMode" value="1" />
+    <camsetting name="UseCollisionDetection" value="on" />
+    <camsetting name="TransitionThreshold" value="1" />
+</General>
+<CameraTransition>
+    <camsetting name="SpringLength" value=".01" />
+    <camsetting name="SpringCoefficient" value="3.5" />
+    <camsetting name="DampeningCoefficient" value=".25" />
+</CameraTransition>
+<CollisionBuffer>
+    <camsetting name="SpringLength" value=".01" />
+    <camsetting name="SpringCoefficient" value="4" />
+    <camsetting name="DampeningCoefficient" value=".01" />
+</CollisionBuffer>
+<FirstPerson>
+    <camsetting name="SpringLength" value=".01" />
+    <camsetting name="SpringCoefficient" value="10" />
+    <camsetting name="DampeningCoefficient" value=".1" />
+    <camsetting name="StartingPitch" value="0" />
+</FirstPerson>
+<ThirdPersonFollow>
+    <camsetting name="SpringLength" value=".01" />
+    <camsetting name="SpringCoefficient" value="3.5" />
+    <camsetting name="DampeningCoefficient" value=".25" />
+    <camsetting name="CameraDistance" value="5" />
+    <camsetting name="StartingPitch" value="-.3" />
+</ThirdPersonFollow>
+<ThirdPersonM64>
+    <camsetting name="SpringLength" value=".01" />
+    <camsetting name="SpringCoefficient" value="3.5" />
+    <camsetting name="DampeningCoefficient" value=".25" />
+    <camsetting name="MaxCameraDistance" value="6" />
+    <camsetting name="MinCameraDistance" value="2" />
+    <camsetting name="StartingPitch" value="-.3" />
+    <camsetting name="TurningSpeed" value="1" />
+</ThirdPersonM64>
+<ThirdPersonLara>
+    <camsetting name="SpringLength" value=".01" />
+    <camsetting name="SpringCoefficient" value="3.5" />
+    <camsetting name="DampeningCoefficient" value=".25" />
+    <camsetting name="MaxCameraDistance" value="6" />
+    <camsetting name="MinCameraDistance" value="2" />
+    <camsetting name="StartingPitch" value="-.3" />
+    <camsetting name="TurningSpeed" value="1" />
+    <camsetting name="SwingCoefficient" value=".7" />
+</ThirdPersonLara>
+<FreeRotation>
+    <camsetting name="SpringLength" value=".01" />
+    <camsetting name="SpringCoefficient" value="3.5" />
+    <camsetting name="DampeningCoefficient" value=".25" />
+    <camsetting name="MaxCameraDistance" value="16" />
+    <camsetting name="MinCameraDistance" value="2" />
+    <camsetting name="StartingPitch" value="-1" />
+</FreeRotation>
+<DistanceClipping>
+    <camsetting name="Adaptive" value="off" />
+    <camsetting name="Dist" value="1000" />
+    <camsetting name="MinFPS" value="20" />
+    <camsetting name="MaxFPS" value="30" />
+    <camsetting name="MinDist" value="100" />
+</DistanceClipping>

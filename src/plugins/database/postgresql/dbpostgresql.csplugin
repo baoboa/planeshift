@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<!-- dbpostgresql.csplugin -->
+<plugin>
+  <name>dbpostgresql</name>
+  <scf>
+    <classes>      
+      <class>
+        <name>planeshift.database.postgresql</name>
+        <implementation>psMysqlConnection</implementation>
+	    <description>psDatabase database plugin</description>
+      </class>
+    </classes>
+  </scf>    
+</plugin>

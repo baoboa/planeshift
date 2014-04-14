@@ -1,0 +1,150 @@
+<widget_description>
+    <widget name="GMSpawnWindow" factory="pawsGMSpawnWindow" visible="no" savepositions="yes" movable="yes" resizable="no" configurable="yes" style="New Standard GUI">
+        <frame x="150" y="100" width="700" height="560" border="yes" />
+        <title resource="Scaling Title Bar" text="GM Spawn interface" align="left" close_button="yes"/>
+
+
+        <widget name="ItemView" factory="pawsObjectView">
+            <frame x="300" y="10" width="200" height="200" border="yes" />
+            <map file="podium" sector="podium" />
+            <distance value="3"/>
+        </widget>
+
+        <widget name="ItemImage" factory="pawsWidget" visible="yes" >
+            <frame x="550" y="160" width="48" height="48" border="yes" />
+        </widget>
+
+        <widget name="Rotate" factory="pawsButton" id ="2001" style="Standard Button">
+            <frame x="550" y="100" width="70" height="20" border="no" />
+            <label text="Rotate"/>
+        </widget>
+
+        <widget name="Up" factory="pawsButton" id ="2002">
+            <frame x="550" y="25" width="20" height="20" border="no" />
+            <bgimage resource="Up Arrow" />
+        </widget>
+        <widget name="Down" factory="pawsButton" id="2003">
+            <frame x="550" y="72" width="20" height="20" border="no" />
+            <bgimage resource="Down Arrow" />
+        </widget>
+
+        <widget name="ItemName" factory="pawsTextBox">
+            <frame x="310" y="220" width="200" height="20" border="no" />
+        </widget>
+
+        <widget name="" factory="pawsTextBox">
+            <frame x="310" y="243" width="50" height="20" border="no" />
+            <text string="Count:"/>
+        </widget>
+
+        <widget name="Count" factory="pawsEditTextBox" visible="no">
+            <frame x="364" y="245" width="50" height="20" border="yes" />
+            <text string="1"/>
+        </widget>
+
+        <widget name="" factory="pawsTextBox">
+            <frame x="310" y="265" width="50" height="20" border="no" />
+            <text string="Quality:"/>
+        </widget>
+
+        <widget name="Quality" factory="pawsEditTextBox" visible="no">
+            <frame x="364" y="263" width="50" height="20" border="yes" />
+            <text string="0"/>
+        </widget>
+
+        <widget name="Pickupable" factory="pawsCheckBox" visible="no">
+                <frame x="450" y="205" width="100" height="20" border="no" />
+                <text string="Pickupable"/>
+        </widget>
+
+        <widget name="PickupableWeak" factory="pawsCheckBox" visible="no">
+            <frame x="450" y="225" width="150" height="20" border="no" />
+            <text string="Weak Pickupable"/>
+        </widget>
+
+        <widget name="Collidable" factory="pawsCheckBox" visible="no">
+            <frame x="450" y="245" width="170" height="20" border="no" />
+            <text string="Collision Detection"/>
+        </widget>
+
+        <widget name="Locked" factory="pawsCheckBox" visible="no">
+            <frame x="450" y="265" width="100" height="20" border="no" />
+            <text string="Locked"/>
+        </widget>
+
+        <widget name="Lockable" factory="pawsCheckBox" visible="no">
+            <frame x="450" y="285" width="300" height="20" border="no" />
+            <text string="Lockable"/>
+        </widget>
+
+        <widget name="Unpickable" factory="pawsCheckBox" visible="no">
+            <frame x="450" y="305" width="300" height="20" border="no" />
+            <text string="Unpickable"/>
+        </widget>
+
+        <widget name="Transient" factory="pawsCheckBox" visible="no">
+            <frame x="450" y="325" width="300" height="20" border="no" />
+            <text string="Transient"/>
+        </widget>
+
+        <widget name="Settingitem" factory="pawsCheckBox" visible="no">
+            <frame x="450" y="345" width="300" height="20" border="no" />
+            <text string="Setting Item"/>
+        </widget>
+
+        <widget name="Npcowned" factory="pawsCheckBox" visible="no">
+            <frame x="450" y="365" width="300" height="20" border="no" />
+            <text string="NPC Owned"/>
+        </widget>
+
+        <widget name="LockSkill" factory="pawsEditTextBox" visible="no" tooltip="Skill to unlock / lock">
+            <frame x="310" y="310" width="140" height="20" border="yes" />
+            <text string="Lockpicking"/>
+        </widget>
+
+        <widget name="LockStr" factory="pawsEditTextBox" visible="no" tooltip="Strength on the lock">
+            <frame x="310" y="340" width="50" height="20" border="yes" />
+            <text string="5"/>
+        </widget>
+
+        <widget name="Force" factory="pawsCheckBox">
+            <frame x="310" y="380" width="320" height="30" border="no" />
+            <text string="Allow spawning item with missing mesh"/>
+        </widget>
+
+        <widget name="Spawn" factory="pawsButton" id ="1000" visible="no" style="Standard Button">
+            <frame x="310" y="410" width="150" height="20" border="no" />
+            <label text="Spawn item"/>
+        </widget>
+
+        <widget name="meshfactname" factory="pawsTextBox" visible="no" tooltip="Name of the mesh fact">
+            <frame x="310" y="430" width="380" height="20" border="no" />
+            <text string="none"/>
+        </widget>
+
+        <widget name="meshname" factory="pawsTextBox" visible="no" tooltip="Name of the mesh">
+            <frame x="310" y="450" width="380" height="20" border="no" />
+            <text string="none"/>
+        </widget>
+
+        <widget name="imagename" factory="pawsTextBox" visible="no" tooltip="Name of the pic">
+            <frame x="310" y="470" width="380" height="20" border="no" />
+            <text string="none"/>
+        </widget>
+
+        <widget name="adjective" factory="pawsTextBox" visible="no" tooltip="Adjective item modifier">
+            <frame x="310" y="490" width="380" height="20" border="no" />
+            <text string="none"/>
+        </widget>
+
+        <widget name="prefix" factory="pawsTextBox" visible="no" tooltip="Prefix item modifier">
+            <frame x="310" y="510" width="380" height="20" border="no" />
+            <text string="none"/>
+        </widget>
+
+        <widget name="suffix" factory="pawsTextBox" visible="no" tooltip="Suffix item modifier">
+            <frame x="310" y="530" width="380" height="20" border="no" />
+            <text string="none"/>
+        </widget>
+    </widget>
+</widget_description>

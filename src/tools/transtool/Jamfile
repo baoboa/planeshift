@@ -1,0 +1,37 @@
+SubDir TOP src tools transtool ;
+
+Application transtool :
+	[ Wildcard *.cpp *.h ] : console ;
+
+CompileGroups transtool : tools ;
+ExternalLibs transtool : CRYSTAL ;
+
+if $(HAVE_STATIC_PLUGINS) = "yes"
+{
+  SubVariant static ;
+
+  Application transtool_static :
+        [ Wildcard *.cpp *.h ] : console ;
+
+  CFlags transtool_static : [ FDefines CS_STATIC_LINKED ]
+  LFlags transtool_static : -lcrystalspace_staticplugins-$(CRYSTAL.VERSION) ;
+
+  STATIC.PLUGINLIST =
+    bindoc
+    xmltiny
+    cssynldr
+    csparser
+    vfs
+  ;
+
+  LinkStaticPlugins transtool_static : $(STATIC.PLUGINLIST)
+  :
+  : CRYSTAL
+  ;
+
+  CompileGroups transtool_static : tools ;
+  ExternalLibs transtool_static : CRYSTAL ;
+
+  SubVariant ;
+}
+

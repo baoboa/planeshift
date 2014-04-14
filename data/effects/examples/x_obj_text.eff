@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8" ?> 
+<library>
+    <addon plugin="PSEffects">
+        <effect name="x_obj_text">
+            <anchor type="basic" name="pos">
+                <dir>none</dir>
+                <keyFrame time="0">
+                    <action name="position" y="1" />
+                </keyFrame>
+            </anchor>
+
+            <!-- Simplest Text (the white one) --> 
+            <obj type="text" name="text">
+                <attach>pos</attach>
+                <death>none</death>
+                <dir>billboard</dir>
+                <text>
+                    This is some text.
+                </text>
+            </obj>
+
+            <!-- Coloured Text (the green one) and different font --> 
+            <obj type="text" name="text" font="/this/data/ttf/cupandtalon.ttf">
+                <attach>pos</attach>
+                <death>none</death>
+                <dir>billboard</dir>
+                <text>
+                    [colour:00ff00]This is some green text.[/colour]
+                </text>
+                <keyFrame time="0">
+                    <action name="position" y="0.5" />
+                </keyFrame>
+            </obj>
+
+            <!-- Shadowed text --> 
+            <obj type="text" name="text" static="false"> <!-- non static text is less efficient, but means that the text of the obj can be change from code at runtime -->
+                <attach>pos</attach>
+                <death>none</death>
+                <dir>billboard</dir>
+                <text>
+                    [shadow]This is some shadowed text.[/shadow]
+                </text>
+                <keyFrame time="0">
+                    <action name="position" y="1" />
+                </keyFrame>
+            </obj>
+
+            <!-- Green Shadowed text and antialiased --> 
+            <obj type="text" name="text" antialias="true">
+                <attach>pos</attach>
+                <death>none</death>
+                <dir>billboard</dir>
+                <text>
+                    [shadow:00ff00]This is some green shadowed text.[/shadow]
+                </text>
+                <keyFrame time="0">
+                    <action name="position" y="1.5" />
+                </keyFrame>
+            </obj>
+
+            <!-- Text alignment --> 
+            <obj type="text" name="text" fontQuality="12"> <!-- higher the font quality, the more memory and processing power needed -->
+                <attach>pos</attach>
+                <death>none</death>
+                <dir>billboard</dir>
+                <text>
+                    [left]This is some left aligned text[/left]
+                    [right]Right aligned[/right]
+                    [center]Center[/center]
+                </text>
+                <keyFrame time="0">
+                    <action name="position" y="2" />
+                </keyFrame>
+            </obj>
+
+            <!-- Outlined text --> 
+            <obj type="text" name="text">
+                <attach>pos</attach>
+                <death>none</death>
+                <dir>billboard</dir>
+                <text>
+                    [outline]This is some outlined text.[/outline]
+                </text>
+                <keyFrame time="0">
+                    <action name="position" y="2.5" />
+                </keyFrame>
+            </obj>
+
+            <!-- Green Outlined text --> 
+            <obj type="text" name="text">
+                <attach>pos</attach>
+                <death>none</death>
+                <dir>billboard</dir>
+                <text>
+                    [outline:00ff00]This is some green outlined text.[/outline]
+                </text>
+                <keyFrame time="0">
+                    <action name="position" y="3" />
+                </keyFrame>
+            </obj>
+        </effect>
+    </addon>
+</library>
+

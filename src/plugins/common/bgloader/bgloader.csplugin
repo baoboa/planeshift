@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<plugin>
+  <scf>
+    <classes>
+      <class>
+        <name>crystalspace.bgloader</name>
+        <implementation>BgLoader</implementation>
+        <description>Background Loader</description>
+        <requires>
+          <class>crystalspace.level.threadedloader</class>
+        </requires>
+      </class>
+    </classes>
+  </scf>
+</plugin>

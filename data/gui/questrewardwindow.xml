@@ -1,0 +1,59 @@
+<widget_description>
+
+<widget name="QuestRewardWindow" factory="pawsQuestRewardWindow" visible="no" savepositions="yes" movable="yes" resizable="no" style="New Standard GUI">
+
+    <frame x="0" y="100" width="300" height="275" border="yes" />
+    <title resource="Scaling Title Bar" text="Quest" align="left" close_button="yes"/>
+
+    <widget name="selectreward" factory="pawsTextBox" style="Header Font">
+        <frame x="62" y="4" width="180" height="20" />
+        <text string="Select a reward:" />
+    </widget>
+
+    <widget name="QuestRewardList" factory="pawsListBox"  xmlbinding="rewards" id="1101">
+        <frame x="22" y="51" width="272" height="179" border="no"/>
+
+        <childborders>
+            <colour r="0" g="0" b="0" />
+            <colour r="180" g="180" b="180" />
+            <colour r="32" g="32" b="32" />
+            <colour r="220" g="220" b="220" />
+            <colour r="64" g="64" b="64" />
+        </childborders>
+
+        <columns height="42" headings="no" xmlbinding="L" >
+            <column width="50" xmlbinding="image" >
+                <widget name="icon" factory="pawsSlot">
+                <frame x="0" y="0" width="40" height="40" />
+                <offset left="0" top="0" />
+                </widget>
+            </column>
+            <column width="204" xmlbinding="name" >
+                <widget name="name" factory="pawsTextBox">
+                </widget>
+            </column>
+            <column width="0" xmlbinding="id">
+                <widget name="id" factory="pawsTextBox" visible="no"></widget>
+            </column>
+            <column width="0" xmlbinding="desc">
+                <widget name="desc" factory="pawsTextBox" visible="no"></widget>
+            </column>
+        </columns>
+    </widget>
+
+
+    <widget name="View Button" factory="pawsButton" toggle="no" id="1000" shadows="yes" style="Standard Button">
+        <frame x="35" y="245" width="120" height="20" border="no" />
+        <label text="View" />
+    </widget>
+
+    <widget name="GetReward" factory="pawsButton" toggle="no" id="1001" shadows="yes" style="Standard Button">
+        <frame x="155" y="245" width="120" height="20" border="no" />
+        <label text="Get Reward" />
+    </widget>
+
+</widget>
+
+
+
+</widget_description>

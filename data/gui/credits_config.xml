@@ -1,0 +1,9 @@
+<credits_config>
+    <color name="standard" r="255" g="255" b="255" />
+    <color name="@" r="255" g="0" b="0" />
+    <color name="&" r="150" g="150" b="255" />
+    <!-- Speed = ms it takes for 1 line to move 1 line upwards -->
+    <area width="500" height="300" x="150" y="140" speed="1000" loop="no" boxed="no" />
+    <!-- If we don't loop, show this message -->
+    <end msg="THANKS!" r="100" g="100" b="100" />
+</credits_config>

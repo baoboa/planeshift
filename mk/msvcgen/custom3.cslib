@@ -1,0 +1,64 @@
+[% FILTER null;
+#==================================================================================
+# TemplateToolkit2 PlaneShift customizations for MSVC project generation
+# Copyright (C) 2004 by Eric Sunshine <sunshine@sunshineco.com>
+#
+#    This library is free software; you can redistribute it and/or modify it
+#    under the terms of the GNU Library General Public License as published by
+#    the Free Software Foundation; either version 2 of the License, or (at your
+#    option) any later version.
+#
+#    This library is distributed in the hope that it will be useful, but
+#    WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY
+#    or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU Library General Public
+#    License for more details.
+#
+#    You should have received a copy of the GNU Library General Public License
+#    along with this library; if not, write to the Free Software Foundation,
+#    Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
+#
+#==================================================================================
+
+#----------------------------------------------------------------------------------
+# Search the 'debug' and 'release' build configuration since this configuration is based on them.
+#----------------------------------------------------------------------------------
+
+builddebug = {};
+FOREACH build IN builds;
+  IF build.tag == 'debug';
+    builddebug = build;
+    BREAK;
+  END;
+END;
+
+buildrelease = {};
+FOREACH build IN builds;
+  IF build.tag == 'release';
+    buildrelease = build;
+    BREAK;
+  END;
+END;
+
+#------------------------------------------------------------------------------
+# We add an additional build configuration to the default set
+# provided by the generic, project-agnostic builds[] array (control.tlib).
+# This allows us to build a debug PlaneShift with an optimized CS and cel.
+#------------------------------------------------------------------------------
+
+# Build DebugPlaneShift config by copying the default debug config and changing
+# some fields.
+
+builddebugplaneshift = {};
+builddebugplaneshift.import(builddebug);
+builddebugplaneshift.import({
+    name => 'DebugPSReleaseCSCEL',
+	defines => buildrelease.defines,
+	libskey => buildrelease.libskey,
+	libdirskey => buildrelease.libdirskey,
+    priority => 600
+  });
+# Merge into the builds array
+builds = builds.merge([builddebugplaneshift]);
+
+END %]
+

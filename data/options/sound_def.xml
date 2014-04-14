@@ -1,0 +1,17 @@
+<sound>
+    <ambient on="yes" />
+    <actions on="yes" />
+    <music on="yes" />
+    <gui on="yes" />
+    <voices on="yes" />
+    <volume value="50" />
+    <musicvolume value="40" />
+    <ambientvolume value="30" />
+    <actionsvolume value="40" />
+    <guivolume value="50" />
+    <voicesvolume value="40" />
+    <muteonfocusloss on="yes" />
+    <loopbgm on="yes" />
+    <combatmusic on="yes" />
+</sound>
+

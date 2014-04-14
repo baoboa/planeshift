@@ -1,0 +1,76 @@
+<widget_description>
+
+<widget name="RenderToolbox" factory="EEditRenderToolbox" 
+        visible="yes" savepositions="yes" movable="yes" resizable="no" resizetoscreen="no">
+	
+    <frame x="105" y="400" width="530" height="250" border="yes" justtitle="yes" />
+    <title resource="TitleBar" text="Render Effect" align="left" />
+    <font name="LiberationSans-Regular.ttf" r="255" g="255" b="255" size="9"  sr="0" sg="0" sb="0" shadow="yes" />   
+    <bgimage resource="Back" alpha="75" />
+
+    <widget name="render" factory="pawsButton">
+        <frame x="5" y="5" width="58" height="30" border="no" />
+        <font name="LiberationSans-Regular.ttf" r="255" g="255" b="255" size="7"  sr="0" sg="0" sb="0" shadow="yes" />   
+        <buttonup resource="ButtonUp"/>
+        <buttondown resource="ButtonDown" />
+        <label text="Render"/>
+    </widget>
+    <widget name="load" factory="pawsButton">
+        <frame x="68" y="5" width="37" height="30" border="no" />
+        <font name="LiberationSans-Regular.ttf" r="255" g="255" b="255" size="7"  sr="0" sg="0" sb="0" shadow="yes" />   
+        <buttonup resource="ButtonUp"/>
+        <buttondown resource="ButtonDown" />
+        <label text="Load"/>
+    </widget>
+    <widget name="pause" factory="pawsButton">
+        <frame x="110" y="5" width="45" height="30" border="no" />
+        <font name="LiberationSans-Regular.ttf" r="255" g="255" b="255" size="7"  sr="0" sg="0" sb="0" shadow="yes" />   
+        <buttonup resource="ButtonUp"/>
+        <buttondown resource="ButtonDown" />
+        <label text="Pause"/>
+    </widget>
+    <widget name="stop" factory="pawsButton">
+        <frame x="160" y="5" width="45" height="30" border="no" />
+        <font name="LiberationSans-Regular.ttf" r="255" g="255" b="255" size="7"  sr="0" sg="0" sb="0" shadow="yes" />   
+        <buttonup resource="ButtonUp"/>
+        <buttondown resource="ButtonDown" />
+        <label text="Stop"/>
+    </widget>
+
+    <widget name="list" factory="pawsListBox">	
+        <frame x="5" y="40" width="220" height="205" border="no"/>
+        <bgimage resource="Shaded" alpha="100" />
+        <font name="LiberationSans-Regular.ttf" r="255" g="255" b="255" size="9"  sr="0" sg="0" sb="0" shadow="yes" />   
+        <highlight resource="ListSelect" alpha="100" />
+        <columns height="20" headings="no">
+            <column width="50">            
+                <widget name="Type" factory="pawsTextBox">
+                </widget>
+            </column>                                               
+            <column width="170">            
+                <widget name="Name" factory="pawsTextBox">
+                </widget>
+            </column>                                               
+        </columns>
+    </widget>
+
+    <widget name="list2" factory="pawsListBox">	
+        <frame x="230" y="40" width="290" height="205" border="no"/>
+        <bgimage resource="Shaded" alpha="100" />
+        <font name="LiberationSans-Regular.ttf" r="255" g="255" b="255" size="9"  sr="0" sg="0" sb="0" shadow="yes" />   
+        <highlight resource="ListSelect" alpha="100" />
+        <columns height="20" headings="no">
+            <column width="65">            
+                <widget name="Type" factory="pawsTextBox">
+                </widget>
+            </column>                                               
+            <column width="245">            
+                <widget name="Name" factory="pawsTextBox">
+                </widget>
+            </column>                                               
+        </columns>
+    </widget>
+
+</widget>
+
+</widget_description>

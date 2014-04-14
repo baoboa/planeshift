@@ -1,0 +1,53 @@
+<widget_description>
+
+<widget name="SelectNewAnchor" factory="EEditSelectNewAnchor" 
+        visible="yes" savepositions="no" movable="yes" resizable="no" resizetoscreen="no" >
+        
+    <frame x="0" y="0" width="220" height="160" border="yes" justtitle="yes" />
+    <title resource="TitleBar" text="Add New Anchor" align="left" />
+    <font name="LiberationSans-Regular.ttf" r="255" g="255" b="255" size="9"  sr="0" sg="0" sb="0" shadow="yes" />   
+    <bgimage resource="Back" alpha="0" />
+
+    <widget name="add_anchor_lbl" factory="pawsTextBox">
+        <frame x="10" y="14" width="70" height="18" border="no"/>
+        <font name="LiberationSans-Regular.ttf" r="255" g="255" b="255" size="9"  sr="0" sg="0" sb="0" shadow="yes" />   
+        <text string="Name:" />
+    </widget>
+    <widget name="select_name" factory="pawsEditTextBox">
+        <frame x="75" y="8" width="135" height="25" border="no" />        
+        <font name="LiberationSans-Regular.ttf" r="255" g="255" b="255" size="9"  sr="0" sg="0" sb="0" shadow="yes" />   
+        <bgimage resource="Shaded" alpha="75" />
+    </widget>
+    <widget name="type_lbl" factory="pawsTextBox">
+        <frame x="10" y="54" width="70" height="18" border="no" />
+        <font name="LiberationSans-Regular.ttf" r="255" g="255" b="255" size="9"  sr="0" sg="0" sb="0" shadow="yes" />   
+        <text string="Anchor Type:" />
+    </widget>
+    <widget name="anchor_type" factory="pawsRadioButtonGroup">
+        <frame x ="10" y="70" width="105" height="80" border="no" />
+        <font name="LiberationSans-Regular.ttf" r="255" g="255" b="255" size="9"  sr="0" sg="0" sb="0" shadow="yes" />   
+        <radio on="RadioOn" off="RadioOff"/>
+                      
+        <widget name="anchor_type_basic" factory="pawsRadioButton" id="0">
+            <frame x="5" y="5" width="100" height="20"/>            
+            <text string="Basic" position="right"/>            
+        </widget> 
+        <widget name="anchor_type_spline" factory="pawsRadioButton" id="1">
+            <frame x="5" y="30" width="100" height="20"/>            
+            <text string="Spline" position="right"/>            
+        </widget>         
+        <widget name="anchor_type_socket" factory="pawsRadioButton" id="2">
+            <frame x="5" y="55" width="100" height="20"/>            
+            <text string="Socket" position="right"/>            
+        </widget>         
+    </widget>
+    <widget name="add" factory="pawsButton">
+        <frame x="140" y="125" width="70" height="25" border="no" />
+        <font name="LiberationSans-Regular.ttf" r="255" g="255" b="255" size="7"  sr="0" sg="0" sb="0" shadow="yes" />   
+        <buttonup resource="ButtonUp"/>
+        <buttondown resource="ButtonDown" />
+        <label text="Add"/>
+    </widget>
+</widget>
+
+</widget_description>

@@ -1,0 +1,25 @@
+<widget_description>
+
+<widget name="peWidgetTree" factory="peWidgetTree" 
+        visible="yes" savepositions="no" movable="yes" 
+        resizable="no" resizetoscreen="yes" >
+        
+    <frame x="600" y="60" width="200" height="540" border="yes" justtitle="yes" />
+    <title resource="peTitleBar" text="Widget" align="left" />
+    <font name="LiberationSans-Regular.ttf" r="255" g="255" b="255" size="9"  sr="0" sg="0" sb="0" shadow="yes" />   
+    <bgimage resource="peBackTall" alpha="75" />
+
+    <widget name="WidgetItemsTree" factory="pawsTree">
+        
+        <frame x="5" y="5" width="190" height="510" border="no" />
+        <bgimage resource="peShaded" alpha="100" />
+
+        <decorator lineR="153" lineG="153" lineB="153" />
+        
+        <widget factory="pawsSimpleTreeNode" name="EffectItemsRoot" />
+
+    </widget>
+        
+</widget>
+
+</widget_description>

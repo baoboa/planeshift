@@ -1,0 +1,19 @@
+SubDir TOP src plugins common spellchecker ;
+
+if $(HUNSPELL.AVAILABLE) = "yes"
+{
+HUNSPELLDEF = HUNSPELL ;
+}
+
+Description spellchecker : "Hunspell-Spellchecker Plugin" ;
+
+Plugin spellchecker
+	: [ Wildcard *.cpp *.h ]
+;
+
+CFlags spellchecker : [ FDefines $(HUNSPELLDEF) ] ;
+ExternalLibs spellchecker : CRYSTAL $(HUNSPELLDEF) ;
+CompileGroups spellchecker : psclient ;
+
+
+

@@ -1,0 +1,53 @@
+<widget_description>
+    <widget factory="pawsMoney">
+    <frame x="0" y="0" width="50" height="100" />
+
+        <widget name="Circles" factory="pawsSlot" tooltip="each values 250 Tria" >
+            <frame x="0" y="0" width="50" height="24" />
+         <bgimage resource="InventoryBulk" />
+        <font name="LiberationSans-Regular.ttf" r="250" g="250" b="250" size="10" />
+            <attachpoints>
+              <attach point="ATTACH_TOP" />
+              <attach point="ATTACH_LEFT" />
+              <attach point="PROPORTIONAL_RIGHT" />
+              <attach point="PROPORTIONAL_BOTTOM" />
+            </attachpoints>
+        </widget>
+    <widget name="Octas" factory="pawsSlot" tooltip="each values 50 Tria" >
+            <frame y="24" x="0" width="50" height="24" />
+        <bgimage resource="InventoryBulk" />
+        <font name="LiberationSans-Regular.ttf" r="250" g="250" b="250" size="10" />
+            <attachpoints>
+
+              <attach point="ATTACH_TOP" />
+              <attach point="PROPORTIONAL_LEFT" />
+              <attach point="ATTACH_RIGHT" />
+              <attach point="PROPORTIONAL_BOTTOM" />
+            </attachpoints>
+        </widget>
+    <widget name="Hexas" factory="pawsSlot" tooltip="each values 10 Tria" >
+            <frame y="48" x="0" width="50" height="24" />
+        <bgimage resource="InventoryBulk" />
+        <font name="LiberationSans-Regular.ttf" r="250" g="250" b="250" size="10" />
+            <attachpoints>
+
+              <attach point="PROPORTIONAL_TOP" />
+              <attach point="ATTACH_LEFT" />
+              <attach point="PROPORTIONAL_RIGHT" />
+              <attach point="ATTACH_BOTTOM" />
+            </attachpoints>
+        </widget>
+    <widget name="Trias" factory="pawsSlot" tooltip="each values 1 Tria">
+            <frame y="72" x="0" width="50" height="24" />
+        <bgimage resource="InventoryBulk" />
+        <font name="LiberationSans-Regular.ttf" r="250" g="250" b="250" size="10" />
+            <attachpoints>
+
+              <attach point="PROPORTIONAL_TOP" />
+              <attach point="PROPORTIONAL_LEFT" />
+              <attach point="ATTACH_RIGHT" />
+              <attach point="ATTACH_BOTTOM" />
+            </attachpoints>
+        </widget>
+    </widget>
+</widget_description>

@@ -1,0 +1,108 @@
+<widget_description>
+
+<widget name="SmallInventoryWindow" factory="pawsSmallInventoryWindow"
+        visible="no" savepositions="yes" movable="yes"
+        resizable="no" configurable="yes" style="New Standard GUI">
+
+    <frame x="100" y="400" width="530" height="170" border="yes" />
+    <title resource="Scaling Title Bar" text="Inventory" align="left" close_button="yes"/>
+
+
+
+   <widget name="BulkList" factory="pawsListBox" selectable="0">
+        <frame x="10" y="5" width="405" height="150" border="no"/>
+        <columns height="48" headings="no" >
+            <column width="48" >
+                <widget name="Bulk0" factory="pawsSlot">
+                    <frame x="0" y="0" width="48" height="48" />
+                    <subscriptions>
+                        <subscribe data="sigClearSlot" />
+                    </subscriptions>
+                </widget>
+            </column>
+            <column width="48" >
+                <widget name="Bulk1" factory="pawsSlot">
+                    <frame x="0" y="0" width="48" height="48" />
+                    <subscriptions>
+                        <subscribe data="sigClearSlot" />
+                    </subscriptions>
+                </widget>
+            </column>
+            <column width="48" >
+                <widget name="Bulk2" factory="pawsSlot">
+                    <frame x="0" y="0" width="48" height="48" />
+                    <subscriptions>
+                        <subscribe data="sigClearSlot" />
+                    </subscriptions>
+                </widget>
+            </column>
+            <column width="48" >
+                <widget name="Bulk3" factory="pawsSlot">
+                    <frame x="0" y="0" width="48" height="48" />
+                    <subscriptions>
+                        <subscribe data="sigClearSlot" />
+                    </subscriptions>
+                </widget>
+            </column>
+            <column width="48" >
+                <widget name="Bulk4" factory="pawsSlot">
+                    <frame x="0" y="0" width="48" height="48" />
+                    <subscriptions>
+                        <subscribe data="sigClearSlot" />
+                    </subscriptions>
+                </widget>
+            </column>
+            <column width="48" >
+                <widget name="Bulk5" factory="pawsSlot">
+                    <frame x="0" y="0" width="48" height="48" />
+                    <subscriptions>
+                        <subscribe data="sigClearSlot" />
+                    </subscriptions>
+                </widget>
+            </column>
+            <column width="48" >
+                <widget name="Bulk6" factory="pawsSlot">
+                    <frame x="0" y="0" width="48" height="48" />
+                    <subscriptions>
+                        <subscribe data="sigClearSlot" />
+                    </subscriptions>
+                </widget>
+            </column>
+            <column width="48" >
+                <widget name="Bulk7" factory="pawsSlot">
+                    <frame x="0" y="0" width="48" height="48" />
+                    <subscriptions>
+                        <subscribe data="sigClearSlot" />
+                    </subscriptions>
+                </widget>
+            </column>
+        </columns>
+    </widget>
+
+
+
+    <widget name="TotalTriasLabel" factory="pawsTextBox" style="Header Font">
+        <frame x="425" y="5" width="50" height="20" />
+        <text string="Trias:" />
+    </widget>
+   <widget name="TotalTrias" factory="pawsTextBox">
+        <frame x="425" y="25" width="90" height="20" />
+        <text string="0" />
+        <subscriptions>
+            <subscribe data="sigInvMoneyTotal" />
+        </subscriptions>
+    </widget>
+
+    <widget name="Money" factory="pawsMoney" border="no" >
+            <frame x="425" y="50" width="96" height="96"/>
+            <subscriptions>
+                <subscribe data="sigInvMoney" />
+            </subscriptions>
+    </widget>
+
+
+</widget>
+
+
+
+</widget_description>

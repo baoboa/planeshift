@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" ?> 
+ <library>
+   <library>/this/data/effects/examples/sparkle.part</library>
+    <addon plugin="PSEffects">
+        <effect name="test_">
+            <anchor type="basic" name="pos">
+            </anchor>
+            <anchor type="basic" name="target">
+                <keyFrame time="0">
+                    <action name="position" x="0" y="1"/>
+                <action name="totarget" z=".1" />
+                </keyFrame>
+		 <keyFrame time="200">
+                    <action name="position" x="0" y="1"/>
+                <action name="totarget" z=".5" />
+                </keyFrame>
+		 <keyFrame time="500">
+                    <action name="position" x="0" y="1"/>
+                <action name="totarget" z="1" />
+                </keyFrame>                 
+            </anchor>
+
+            <obj type="spire" name="sparkle" material="sparkle" segments="30">
+                <attach>pos</attach>
+                <dir>none</dir>
+                <birth>0</birth>
+                <death>3000</death>
+                <keyFrame time="0">
+                    <action name="position" x="0" y="0.3" z="0" />
+                    <action name="scale" value="0.9" />
+                    <action name="height" value="0.8" />
+                    <action name="topscale" value="1.0" />
+                    <action name="colour" r="100" g="140" b="110" />
+                </keyFrame>
+                <keyFrame time="2000">
+                    <action name="spin" x="0" y="360" z="0" />
+                </keyFrame>
+            </obj>
+        </effect>
+    </addon>
+</library>
+
+

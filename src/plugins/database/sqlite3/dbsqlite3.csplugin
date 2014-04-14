@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<!-- dbsqlite3.csplugin -->
+<plugin>
+  <name>dbsqlite3</name>
+  <scf>
+    <classes>      
+      <class>
+        <name>planeshift.database.sqlite3</name>
+        <implementation>psMysqlConnection</implementation>
+	    <description>psDatabase database plugin</description>
+      </class>
+    </classes>
+  </scf>    
+</plugin>

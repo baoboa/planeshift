@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<widget_description>
+<widget name="ConfigChatTabCompletionTree" factory="pawsConfigChatTabCompletion"
+        visible="no" savepositions="no" movable="no"
+        resizable="no" style="New Standard GUI" >
+    <frame x="225" y="10" width="400" height="300" border="no" />
+    <bgimage resource="Scaling Widget Background" />
+    <widget name="CompletionItemsLabel" factory="pawsTextBox" style="Header Font">
+       <frame x="10" y="10" width="350" height="20" />
+       <text string="Words for tab completion:" />
+    </widget>
+    <widget name="CompletionItemsBox" factory="pawsMultilineEditTextBox">
+       <frame x="10" y="40" width="200" height="250" border="no" />
+       <bgimage resource="Scaling Field Background"/>
+       <pawsScrollBar width="15" />
+    </widget>
+</widget>
+
+</widget_description>

@@ -1,0 +1,39 @@
+<widget_description>
+
+<widget name="LoadEffectToolbox" factory="EEditLoadEffectToolbox" 
+        visible="yes" savepositions="yes" movable="yes" resizable="no" resizetoscreen="no" >
+        
+    <frame x="805" y="490" width="210" height="230" border="yes" justtitle="yes" />
+    <title resource="TitleBar" text="Load Effect" align="left" />
+    <font name="LiberationSans-Regular.ttf" r="255" g="255" b="255" size="9"  sr="0" sg="0" sb="0" shadow="yes" />   
+    <bgimage resource="BackTall" alpha="75" />
+
+    <widget name="effect_list" factory="pawsListBox">	
+        <frame x="5" y="5" width="200" height="190" border="no"/>
+        <bgimage resource="Shaded" alpha="100" />
+        <font name="LiberationSans-Regular.ttf" r="255" g="255" b="255" size="9"  sr="0" sg="0" sb="0" shadow="yes" />   
+        <highlight resource="ListSelect" alpha="100" />
+        <columns height="20" headings="no">
+            <column width="180">            
+                <widget name="Effect" factory="pawsTextBox">
+                </widget>
+            </column>                                               
+        </columns>
+	</widget>
+    <widget name="load_effect_button" factory="pawsButton">
+        <frame x="110" y="200" width="95" height="25" border="no" />
+        <font name="LiberationSans-Regular.ttf" r="255" g="255" b="255" size="7"  sr="0" sg="0" sb="0" shadow="yes" />   
+        <buttonup resource="ButtonUp"/>
+        <buttondown resource="ButtonDown" />
+        <label text="Open Effect"/>
+    </widget>
+    <widget name="refresh_button" factory="pawsButton">
+        <frame x="5" y="200" width="95" height="25" border="no" />
+        <font name="LiberationSans-Regular.ttf" r="255" g="255" b="255" size="7"  sr="0" sg="0" sb="0" shadow="yes" />   
+        <buttonup resource="ButtonUp"/>
+        <buttondown resource="ButtonDown" />
+        <label text="Refresh"/>
+    </widget>
+</widget>
+
+</widget_description>

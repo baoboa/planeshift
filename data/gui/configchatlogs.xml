@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<widget_description>
+<widget name="ConfigChatLogsTree" factory="pawsConfigChatLogs"
+        visible="no" savepositions="no" movable="no"
+        resizable="no" style="New Standard GUI" >
+    <frame x="225" y="10" width="400" height="300" border="no" />
+    <bgimage resource="Scaling Widget Background" />
+    <widget name="logtypes" factory="pawsListBox" id="2000" >
+        <frame x="10" y="10" width="180" height="270" border="no" />
+        <font name="/planeshift/data/ttf/LiberationSans-Regular.ttf" r="255" g="255" b="255" shadow="no" size="12" resizetoscreen="yes" />
+        <scrollbar arrowup="Up Arrow" arrowdown="Down Arrow" arrowsize="8" width="15"  border="no"/>
+        <highlight resource="Highlight" />
+        <columns height="20">
+            <column width="180" >
+                <widget name="" factory="pawsTextBox" />
+            </column>
+        </columns>
+    </widget>
+    <widget name="enabled" factory="pawsCheckBox" tooltip="Enables the logging of the selected chat type">
+        <frame x="200" y="10" width="150" height="20"/>
+        <text string="Enable logging" />
+        <tooltip string="Enables the logging of the selected chat type" />
+    </widget>
+    <widget name="filenameLabel" factory="pawsTextBox" style="Header Font">
+       <frame x="200" y="40" width="200" height="20" />
+       <text string="Log Filename:" />
+    </widget>
+    <widget name="filename" factory="pawsEditTextBox">
+        <frame border="yes" x="200" y="60" width="200" height="20" />
+    </widget>
+    <widget name="bracketLabel" factory="pawsTextBox" style="Header Font">
+       <frame x="200" y="90" width="200" height="20" />
+       <text string="Log Bracket:" />
+    </widget>
+    <widget name="bracket" factory="pawsEditTextBox">
+        <frame border="yes" x="200" y="110" width="200" height="20" />
+    </widget>
+</widget>
+
+</widget_description>

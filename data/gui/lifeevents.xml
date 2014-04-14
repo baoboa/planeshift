@@ -1,0 +1,97 @@
+<widget_description>
+
+    <widget name="LifeEvents" factory="pawsLifeEventWindow"
+            visible="no" movable="no" resizable="no" resizetoscreen="yes" >
+        <frame x="0" y="0" width="800" height="600" border="no" />
+        <font name="cupandtalon.ttf" r="255" g="255" b="255" sr="0" sg="0" sb="0" shadow="yes" size="15" resizetoscreen="yes" />
+        <bgimage resource="login_background" />
+
+        <!-- Title -->
+        <widget name="label_events" factory="pawsTextBox">
+            <frame x="200" y="40" width="400" height="35" />
+            <font name="scurlock.ttf" r="255" g="255" b="255" sr="0" sg="0" sb="0" shadow="yes" size="24" resizetoscreen="yes" />
+            <text string="LIFE EVENTS" horizAdjust="CENTRE" />
+        </widget>
+
+        <!-- CP -->
+        <widget name="CP" factory="pawsTextBox">
+            <frame x="605" y="40" width="100" height="40" border="no" />
+            <text string="" horizAdjust="CENTRE" />
+            <bgimage resource="cpBox" />
+        </widget>
+
+        <!-- Life Event -->
+        <widget name="text" factory="pawsTextBox" >
+            <frame x="100" y="120" width="180" height="30" />
+            <font name="cupandtalon.ttf" r="255" g="255" b="255" sr="0" sg="0" sb="0" shadow="yes" size="18" resizetoscreen="yes" />
+            <text string="Available Events:" />
+        </widget>
+
+        <widget name="text" factory="pawsTextBox" >
+            <frame x="420" y="120" width="180" height="30" />
+            <font name="cupandtalon.ttf" r="255" g="255" b="255" sr="0" sg="0" sb="0" shadow="yes" size="18" resizetoscreen="yes" />
+            <text string="Selected Events:" />
+        </widget>
+
+        <widget name="Life Event" factory="pawsSelectorBox" >
+            <frame x="100" y="145" width="650" height="210" border="no" />
+            <available width="300" rowheight="24" />
+            <selected width="420" rowheight="24" />
+            <widget name="addbutton" factory="pawsButton" id="-100">
+                <frame x="300" y="85" width="25" height="20" />
+                <bgimage resource="arrowRight" />
+            </widget>
+            <widget name="removebutton" factory="pawsButton" id="-200">
+                <frame x="300" y="123" width="25" height="20" />
+                <bgimage resource="arrowLeft" />
+            </widget>
+            <highlight resource="Highlight" />
+            <font name="LiberationSans-Regular.ttf" r="255" g="255" b="255" sr="0" sg="0" sb="0" shadow="yes" size="12" />
+        </widget>
+
+        <widget name="desc_label" factory="pawsTextBox" >
+            <frame x="100" y="370" width="150" height="30" />
+            <font name="cupandtalon.ttf" r="255" g="255" b="255" sr="0" sg="0" sb="0" shadow="yes" size="18" resizetoscreen="yes" />
+            <text string="Description:" />
+        </widget>
+
+        <widget name="EventDesc" factory="pawsMultiLineTextBox">
+            <frame x="100" y="400" width="600" height="90" border="no" />
+            <font name="LiberationSans-Regular.ttf" r="255" g="255" b="255" sr="0" sg="0" sb="0" shadow="yes" size="12" />
+            <text string="" />
+        </widget>
+
+        <widget name="SelEventDesc" factory="pawsMultiLineTextBox">
+            <frame x="0" y="0" width="100" height="90" border="no" />
+            <font name="LiberationSans-Regular.ttf" r="255" g="255" b="255" sr="0" sg="0" sb="0" shadow="yes" size="12" />
+            <text string="Remove me" />
+        </widget>
+
+        <!-- Navigation Buttons -->
+        <widget name="navBar" factory="pawsWidget">
+            <frame x="30" y="550" width="740" height="40" />
+            <font name="scurlock.ttf" r="255" g="255" b="255" sr="0" sg="0" sb="0" shadow="no" size="16" resizetoscreen="yes" />
+
+            <widget name="BackButton" factory="pawsButton" id="6000">
+                <frame x="110" y="0" width="100" height="40" />
+                <label text="Prev"/>
+                <bgimage resource="buttonDefault" />
+            </widget>
+
+            <!-- Randomize button -->
+            <widget name="randomize" factory="pawsButton">
+                <frame x="306" y="0" width="130" height="40" />
+                <label text="Randomize"/>
+                <bgimage resource="buttonBrown" />
+            </widget>
+
+            <widget name="NextButton" factory="pawsButton" id="5000">
+                <frame x="520" y="0" width="100" height="40" />
+                <label text="Next" />
+                <bgimage resource="buttonDefault" />
+            </widget>
+        </widget>
+
+    </widget>
+
+</widget_description>

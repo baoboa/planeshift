@@ -1,0 +1,17 @@
+<?xml version="1.0" ?> 
+<chat_bubbles maxLineLen="32" shortPhraseCharCount="9" longPhraseLineCount="5" enabled="yes">
+	<chat type="say" enabled="yes" colourR="186" colourG="168" colourB="126" shadowR="108" shadowG="98" shadowB="73" align="left" effectPrefix="chatbubble_" /> 
+	<chat type="tell" enabled="yes" colourR="38" colourG="196" colourB="15" shadowR="22" shadowG="66" shadowB="9" outlineR="0" outlineG="0" outlineB="0" align="left" effectPrefix="chatbubble_" /> 
+	<chat type="group" enabled="yes" colourR="108" colourG="57" colourB="222" shadowR="46" shadowG="24" shadowB="94" outlineR="0" outlineG="0" outlineB="0" align="left" effectPrefix="chatbubble_" /> 
+	<chat type="guild" enabled="yes" colourR="55" colourG="89" colourB="213" shadowR="22" shadowG="36" shadowB="87" outlineR="0" outlineG="0" outlineB="0" align="left" effectPrefix="chatbubble_" /> 
+	<chat type="shout" enabled="yes" colourR="188" colourG="12" colourB="12" shadowR="87" shadowG="5" shadowB="5" outlineR="0" outlineG="0" outlineB="0" align="left" effectPrefix="chatbubble_" /> 
+	<chat type="npc" enabled="yes" colourR="189" colourG="12" colourB="174" shadowR="86" shadowG="5" shadowB="80" outlineR="0" outlineG="0" outlineB="0" align="left" effectPrefix="chatbubble_" /> 
+	<chat type="npcinternal" enabled="yes" colourR="189" colourG="12" colourB="174" shadowR="86" shadowG="5" shadowB="80" outlineR="0" outlineG="0" outlineB="0" align="left" effectPrefix="chatbubble_" /> 
+	<chat type="auction" enabled="no" colourR="133" colourG="212" colourB="199" shadowR="5" shadowG="110" shadowB="95" outlineR="0" outlineG="0" outlineB="0" align="left" effectPrefix="chatbubble_" /> 
+	<chat type="me" enabled="no" colourR="251" colourG="180" colourB="87" shadowR="130" shadowG="80" shadowB="0" outlineR="0" outlineG="0" outlineB="0" align="left" effectPrefix="chatbubble_" /> 
+	<chat type="tellself" enabled="no" colourR="197" colourG="199" colourB="226" shadowR="83" shadowG="93" shadowB="140" outlineR="0" outlineG="0" outlineB="0" align="left" effectPrefix="chatbubble_" /> 
+	<chat type="my" enabled="no" colourR="119" colourG="255" colourB="0" shadowR="199" shadowG="136" shadowB="0" outlineR="0" outlineG="0" outlineB="0" align="left" effectPrefix="chatbubble_" /> 
+	<chat type="npc_me" enabled="no" colourR="68" colourG="136" colourB="255" shadowR="0" shadowG="68" shadowB="147" outlineR="0" outlineG="0" outlineB="0" align="left" effectPrefix="chatbubble_" /> 
+	<chat type="npc_my" enabled="no" colourR="251" colourG="180" colourB="87" shadowR="130" shadowG="80" shadowB="80" outlineR="0" outlineG="0" outlineB="0" align="left" effectPrefix="chatbubble_" /> 
+	<chat type="npc_narrate" enabled="no" colourR="186" colourG="168" colourB="126" shadowR="108" shadowG="98" shadowB="73" outlineR="0" outlineG="0" outlineB="0" align="left" effectPrefix="chatbubble_" /> 
+</chat_bubbles>

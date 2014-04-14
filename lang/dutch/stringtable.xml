@@ -1,0 +1,767 @@
+<Author text="" />
+<StringTable>
+  <item orig="750" trans="" />
+  <item orig="System text color" trans="Systeemtekst kleur" />
+  <item orig="Put an item up for sale or offer to buy something." trans="Zet een item te koop of bied aan iets te kopen." />
+  <item orig="Stats" trans="Toestand" />
+  <item orig="Admin text color" trans="Admintekst kleur" />
+  <item orig="Allow spawning item with missing mesh" trans="Sta creëren van item zonder mesh toe." />
+  <item orig="Desc" trans="Beschr" />
+  <item orig="!!!WARNING!!!" trans="!!!PAS OP!!!" />
+  <item orig="Others&apos; attacks (Successful ones)" trans="Aanvallen van anderen (succesvol)" />
+  <item orig="Buddy List Hide" trans="" />
+  <item orig="Skill to unlock / lock" trans="" />
+  <item orig="Own attacks that missed the target" trans="Eigen aanvallen die doel misten" />
+  <item orig="Graphics" trans="Graphics" />
+  <item orig="Loading GUI" trans="GUI aan het laden" />
+  <item orig="Tell shadow colour" trans="Tell schaduw kleur" />
+  <item orig="Can I join you ?" trans="Mag ik mij bij je aansluiten?" />
+  <item orig="server" trans="server" />
+  <item orig="CHILDHOOD" trans="JEUGD" />
+  <item orig="Unpickable" trans="Niet oppakbaar" />
+  <item orig="LIFE EVENTS" trans="LEVENSGEBEURTENISSEN" />
+  <item orig="Hexas available to withdraw." trans="" />
+  <item orig="SL" trans="SL" />
+  <item orig="Buy" trans="kopen" />
+  <item orig="Guild message of the day (A short message):" trans="Gilde bericht van de dag (kort bericht):" />
+  <item orig="Modifiers" trans="Modificators" />
+  <item orig="Actions sounds" trans="Aktiegeluiden" />
+  <item orig="Randomize" trans="Willekeurig maken" />
+  <item orig="Create alliance" trans="Alliantie maken" />
+  <item orig="Third Person Lara" trans="Derde persoon Lara" />
+  <item orig="Guild info" trans="" />
+  <item orig="Combine items in container" trans="" />
+  <item orig="Disband" trans="Ontbinden" />
+  <item orig="Edit" trans="Aanpassen" />
+  <item orig="System" trans="Systeem" />
+  <item orig="Load" trans="Laden" />
+  <item orig="Buffs" trans="" />
+  <item orig="Creatures" trans="Wezens" />
+  <item orig="Stack Count" trans="Stapel aantal" />
+  <item orig="Dismiss" trans="" />
+  <item orig=" unanswered petitions." trans="Onbeantwoorde petities." />
+  <item orig="Talk to people in your sector." trans="Praat met personen in je sector." />
+  <item orig="Torso" trans="" />
+  <item orig="Examine" trans="" />
+  <item orig="Factions:" trans="Facties:" />
+  <item orig="Paths" trans="Paden" />
+  <item orig="Right Finger" trans="" />
+  <item orig="Default" trans="Standaard" />
+  <item orig="Tellself outline colour" trans="Tellselft omtrek kleur" />
+  <item orig="Log Out" trans="Uitloggen" />
+  <item orig="male " trans="mannelijk" />
+  <item orig="Money depositing and withdrawal" trans="" />
+  <item orig="Active" trans="Aktief" />
+  <item orig="alliance text colour" trans="Alliantie tekst kleur" />
+  <item orig="Creatures:" trans="Wezens:" />
+  <item orig="View" trans="Kijk" />
+  <item orig="PATHS" trans="PADEN" />
+  <item orig="Shadows" trans="Schaduw" />
+  <item orig="Unclaim" trans="Vrijgeven" />
+  <item orig="Description" trans="" />
+  <item orig="Chose Color (c)" trans="" />
+  <item orig="Previous Icon (PgUp)" trans="" />
+  <item orig="says" trans="" />
+  <item orig="Server:" trans="Server:" />
+  <item orig="Exit PlaneShift" trans="PlaneShift verlaten" />
+  <item orig="Enable Shadows" trans="Schaduwen aanzetten" />
+  <item orig="Escalation Level:" trans="Escalatie niveau" />
+  <item orig="Notify when members login/logout" trans="Melden wanneer leden in/uitloggen" />
+  <item orig="P. stamina" trans="F. stamina" />
+  <item orig="Talk to someone privately." trans="Praat met iemand alleen." />
+  <item orig="Magic Skills List:" trans="Magische Bekwaamheid Lijst:" />
+  <item orig="House:" trans="Huis:" />
+  <item orig="System Base" trans="Systeembasis" />
+  <item orig="Withdraw" trans="Intrekken" />
+  <item orig="%s from %s: %s" trans="s van %s: %s" />
+  <item orig="%s from %s: %s" trans="s van %s: %s" />
+  <item orig="Instant Cast" trans="Instantane spreuk" />
+  <item orig="H:" trans="G:" />
+  <item orig="10 Tria" trans="" />
+  <item orig="Marry" trans="" />
+  <item orig="Testers" trans="Testers" />
+  <item orig="Amount available to withdraw" trans="Beschikbare hoeveelheid om op te nemen" />
+  <item orig="Adaptive distance" trans="Adaptieve afstand" />
+  <item orig="Ban" trans="Verbannen" />
+  <item orig="NPC text colour" trans="NPC tekst kleur" />
+  <item orig="Third Person M64" trans="Derde persoon M64" />
+  <item orig="Interface Volume" trans="" />
+  <item orig="View Item" trans="" />
+  <item orig="Combine" trans="" />
+  <item orig="Edit points" trans="Punten aanpassen" />
+  <item orig="Points" trans="Punten" />
+  <item orig="Coins to exchange:" trans="Uittewisselen munten:" />
+  <item orig="Are you sure you want to discard the selected quest?" trans="Weet je zeker dat je de geselecteerde queste wilt wegdoen?" />
+  <item orig="PvP" trans="" />
+  <item orig="Enable alliance" trans="Alliantie mogelijk maken" />
+  <item orig="landscape" trans="landschap" />
+  <item orig="Type:" trans="" />
+  <item orig="Time: " trans="Tijd:" />
+  <item orig="Voices Volume" trans="Stem volume" />
+  <item orig="Exchange coins" trans="Munten uitwisselen" />
+  <item orig="View all. Chat" trans="Alles zien. Gebabbel" />
+  <item orig="Log the system messages" trans="Log de systeemmessages" />
+  <item orig="Free Movement" trans="Vrije Beweging" />
+  <item orig="Hostility" trans="Vijandigheid" />
+  <item orig="npcinternal outline colour" trans="npcinternal omtrek kleur" />
+  <item orig="Auction" trans="Veiling:" />
+  <item orig="Account User Name:" trans="Account Gebruikersnaam:" />
+  <item orig="You currently have no petitions." trans="Je hebt op het moment geen petities" />
+  <item orig="Open Inventory" trans="" />
+  <item orig="set invisible" trans="" />
+  <item orig="Edit Mode (F2)" trans="" />
+  <item orig="Attributes" trans="Attributen" />
+  <item orig="M. Stamina" trans="" />
+  <item orig="Mount" trans="" />
+  <item orig="The number of octas that you may exchange." trans="" />
+  <item orig="You will now ignore %s." trans="Je zult nu %s negeren." />
+  <item orig="Study" trans="Studeer" />
+  <item orig="Private notes" trans="Prive notities" />
+  <item orig="Tell Alignment" trans="Vertel Uitlijning" />
+  <item orig="Enable NPC" trans="" />
+  <item orig="Change name" trans="Naam veranderen" />
+  <item orig="Getting Characters" trans="Karakters aan het ophalen" />
+  <item orig="Pick up" trans="" />
+  <item orig="Introduce yourself" trans="" />
+  <item orig="set invincible" trans="" />
+  <item orig="Main tab" trans="Hoofdtabblad" />
+  <item orig="Unknown command" trans="Onbekend commando" />
+  <item orig="Others&apos; attacks that missed the target" trans="Aanvallen van anderen die doel misten" />
+  <item orig="Min. FPS:" trans="" />
+  <item orig="Enable my" trans="" />
+  <item orig="Main" trans="Hoofd" />
+  <item orig="Change" trans="Veranderen" />
+  <item orig="Descalate" trans="De-escaleren" />
+  <item orig="Mother Name:" trans="Naam Moeder:" />
+  <item orig="The server isn&apos;t available!" trans="De server is niet beschikbaar!" />
+  <item orig="Privil." trans="" />
+  <item orig="NPC_my Alignment" trans="NPC_my Uitlijning" />
+  <item orig="Skin Colour" trans="Huidskleur" />
+  <item orig="Buy Skill Level" trans="" />
+  <item orig="Master:" trans="Meester:" />
+  <item orig="NPC_me text colour" trans="" />
+  <item orig="Details" trans="" />
+  <item orig="View Stats" trans="" />
+  <item orig="Collision Detection" trans="Botsingdetectie" />
+  <item orig="Max. FPS:" trans="" />
+  <item orig="Prev" trans="Vorige" />
+  <item orig="No Petitions" trans="Geen Petities" />
+  <item orig="Requesting connection" trans="Verbinding aan het aanvragen" />
+  <item orig="Guild Alignment" trans="Gilde Uitlijning" />
+  <item orig="Prv notes" trans="prv notities" />
+  <item orig="Reload Cache" trans="Cache herladen" />
+  <item orig="Amount available to deposit" trans="Beschikbare hoeveelheid om te deponeren" />
+  <item orig="Auction text colour" trans="Veiling tekst kleur" />
+  <item orig="Movements" trans="Bewegingen" />
+  <item orig="Mesh:" trans="" />
+  <item orig="Resolution" trans="Resolutie" />
+  <item orig="Refresh MOTD" trans="MOTD verversen" />
+  <item orig="Gender:" trans="Geslacht:" />
+  <item orig="Right Hand" trans="" />
+  <item orig="Login" trans="Inloggen" />
+  <item orig="Z:" trans="" />
+  <item orig="Spell Description:" trans="Spreukbeschrijving" />
+  <item orig="Petition Info" trans="Petitie Info" />
+  <item orig="%s has invited you to join a group. Click Yes to accept or No to reject." trans="%s heeft je uitgenodigd in een groep. Klik op Ja om te accepteren of Nee om af te wijzen." />
+  <item orig="You must select a petition from the list in order to cancel it." trans="Je moet een petitie van de lijst selecteren om het te annuleren." />
+  <item orig="Alliance" trans="Alliantie" />
+  <item orig="Dynamic Follow" trans="Dynamisch volgen" />
+  <item orig="NPC_my text colour" trans="" />
+  <item orig="Full Mesh" trans="" />
+  <item orig="NPC_narrate shadow colour" trans="" />
+  <item orig="I am leaving" trans="Ik ga ervandoor" />
+  <item orig="alliance outline colour" trans="" />
+  <item orig="Train" trans="" />
+  <item orig="Circles available to deposit." trans="" />
+  <item orig="List:" trans="Lijst:" />
+  <item orig="LOGIN" trans="" />
+  <item orig="Remove" trans="Verwijder" />
+  <item orig="Action:" trans="Aktie:" />
+  <item orig="Never tired" trans="Nooit moe" />
+  <item orig="Unlock" trans="" />
+  <item orig="Exchange items" trans="" />
+  <item orig="
+Do you really wish to leave Yliakum?" trans="" />
+  <item orig="Count" trans="Tellen" />
+  <item orig="Enter the command(s):" trans="Geef commando(s):" />
+  <item orig="Chat" trans="Babbelen" />
+  <item orig="Month:" trans="Maand:" />
+  <item orig="NPC_me outline colour" trans="" />
+  <item orig="Mute on focus loss" trans="" />
+  <item orig="Father Name:" trans="Naam Vader:" />
+  <item orig="Aggressive" trans="" />
+  <item orig="Add Bezier Curve (b)" trans="" />
+  <item orig="The number of coins you wish to exchange." trans="" />
+  <item orig="GM 1" trans="" />
+  <item orig="Rank" trans="Rang" />
+  <item orig="Spawn item" trans="" />
+  <item orig="Enable guild" trans="" />
+  <item orig="o&amp;clock" trans="uur" />
+  <item orig="Give Kill Experience" trans="Geef Slachtpunten" />
+  <item orig="Group stats" trans="" />
+  <item orig="Construct" trans="" />
+  <item orig="Own combat stance changes" trans="Eigen aanvalshouding veranderingen" />
+  <item orig="You see a " trans="Je ziet een " />
+  <item orig="Experience" trans="Ervaring" />
+  <item orig="Upload!" trans="Inleveren!" />
+  <item orig="Deposit" trans="" />
+  <item orig="? Weight" trans="? Gewicht" />
+  <item orig="Buy Skill" trans="" />
+  <item orig="M. stamina" trans="" />
+  <item orig="Enable auction" trans="Veiling aanzetten" />
+  <item orig="No Target" trans="Geen doel" />
+  <item orig="Tria" trans="" />
+  <item orig="Group text color" trans="" />
+  <item orig="No Petitions." trans="Geen Petities" />
+  <item orig="New" trans="Nieuw" />
+  <item orig="Mute sounds on focus loss" trans="" />
+  <item orig="1 Tria" trans="" />
+  <item orig="Filter" trans="" />
+  <item orig="Create Line (\)" trans="" />
+  <item orig="The number of trias that you may exchange." trans="" />
+  <item orig="Add Linked" trans="" />
+  <item orig="keyboard" trans="toetsenbord" />
+  <item orig="Activity:" trans="" />
+  <item orig="Exchange all items" trans="" />
+  <item orig="Research Magic" trans="" />
+  <item orig="The number of trias you wish to withdraw." trans="" />
+  <item orig="You have been assigned to the selected petition." trans="" />
+  <item orig="Say Alignment" trans="Zeg Uitlijning" />
+  <item orig="Combat" trans="Vechten" />
+  <item orig="Say outline colour" trans="" />
+  <item orig="Default last chat" trans="" />
+  <item orig="Path" trans="Pad" />
+  <item orig="Delete Selected Character" trans="Geselecteerd Karakter Verwijderen" />
+  <item orig="set viewall" trans="" />
+  <item orig="Kill Player" trans="Dood Speler" />
+  <item orig="%s says: %s" trans="%s zegt: %s" />
+  <item orig="Are you sure you want to upload your character?" trans="Weet je zeker dat je je karakter wilt opsturen?" />
+  <item orig="Enable Chat Bubbles" trans="Babbelbellen aanzetten" />
+  <item orig="Own attacks that fail to penetrate the armor" trans="Eigen aanvallen die wapenuitrusting niet doorboren" />
+  <item orig="Magic" trans="Magie" />
+  <item orig="Get Reward" trans="Pak Beloning" />
+  <item orig="Transfer to inventory" trans="" />
+  <item orig="Credits" trans="" />
+  <item orig="details" trans="" />
+  <item orig="HP" trans="" />
+  <item orig="You have entered edit mode." trans="Je bent nu in aanpasmodus" />
+  <item orig="%s shouts: %s" trans="%s schreeuwt: %s" />
+  <item orig="Quality:" trans="Kwaliteit:" />
+  <item orig="No server running at the moment" trans="Er draait op het moment geen server" />
+  <item orig="Physical Stamina" trans="" />
+  <item orig="CHARACTER CREATION" trans="KARAKTER MAKEN" />
+  <item orig="Alliance:" trans="Alliantie" />
+  <item orig="Glyphs" trans="" />
+  <item orig="Various Skill description:" trans="Verscheidene Bekwaamheden beschrijving" />
+  <item orig="Buddy list" trans="" />
+  <item orig="100%" trans="" />
+  <item orig="Edit level" trans="Niveau aanpassen" />
+  <item orig="Leave" trans="Ga weg" />
+  <item orig="Capacity:" trans="Kapaciteit" />
+  <item orig="Debuffs" trans="" />
+  <item orig="Alliance text color" trans="" />
+  <item orig="Play/Solve" trans="" />
+  <item orig="Strength on the lock" trans="" />
+  <item orig="Store" trans="Opslag" />
+  <item orig="You have ignored the following players:" trans="Je negeert de volgende spelers:" />
+  <item orig="Enable group" trans="" />
+  <item orig="Items:" trans="" />
+  <item orig="Max Line Length" trans="Maximale regellengte" />
+  <item orig="Others&apos; attacks that fail to penetrate the armor" trans="Aanvallen van anderen die wapenuitrusting niet doorboren" />
+  <item orig="Study Item" trans="" />
+  <item orig="Auction outline colour" trans="Veiling omtrek kleur" />
+  <item orig="Admin" trans="" />
+  <item orig="mouse" trans="muis" />
+  <item orig="Various Skills List:" trans="Verscheidene Bekwaamheden Lijst" />
+  <item orig="Stats description:" trans="Toestandsbeschrijving" />
+  <item orig="Spell book" trans="" />
+  <item orig="Lets go !" trans="Laten we gaan!" />
+  <item orig="Account:" trans="" />
+  <item orig="%s %s" trans="" />
+  <item orig="Trias" trans="" />
+  <item orig="General" trans="Algemeen" />
+  <item orig="Password:" trans="Wachtwoord:" />
+  <item orig="Life" trans="Leven" />
+  <item orig="female " trans="vrouwelijk " />
+  <item orig="ALL" trans="ALLES" />
+  <item orig="Currently, there are no petitions." trans="Er zijn op het moment geen petities." />
+  <item orig="Set" trans="Zet" />
+  <item orig="Grouped with you and the same guild" trans="Met jou en hetzelfde gild gegroepeerd" />
+  <item orig="Load (l)" trans="" />
+  <item orig="View al.Chat" trans="Alles zien.Gebabbel" />
+  <item orig="Actions Volume" trans="Aktie Volume" />
+  <item orig="NPC_my outline colour" trans="" />
+  <item orig="Normal" trans="" />
+  <item orig="Quest Testing" trans="Queste Testen" />
+  <item orig="alliance Alignment" trans="alliantie Uitlijning" />
+  <item orig="Year:" trans="Jaar:" />
+  <item orig="Save" trans="Opslaan" />
+  <item orig="Promote" trans="Promoveer" />
+  <item orig="Combat Skills" trans="Gevechtsbekwaamheid" />
+  <item orig="The server isn&apos;t ready!" trans="De server is nog niet zover!" />
+  <item orig="Enable NPC_narrate" trans="" />
+  <item orig="Apply to all" trans="" />
+  <item orig="Give" trans="" />
+  <item orig="Name (n)" trans="" />
+  <item orig="Polygon:" trans="" />
+  <item orig="Talk to everyone in your guild privately." trans="Met iedereen in je guild prive praten." />
+  <item orig="Others&apos; attacks that are dodged" trans="Aanvallen van anderen die zijn ontweken" />
+  <item orig="Combat music" trans="Gevechtsmuziek" />
+  <item orig="Enable shout" trans="Geschreeuw aanzetten" />
+  <item orig="Own attacks (Successful ones)" trans="Eigen aanvallen (Succesvolle)" />
+  <item orig="The selected petition was cancelled." trans="De geselecteerde petitie was geannuleerd." />
+  <item orig="Welcome back" trans="Welkom terug" />
+  <item orig="Divorce" trans="" />
+  <item orig="You are ignoring all replies from that person." trans="Je negeert alle antwoorden van deze persoon." />
+  <item orig="Description:" trans="Beschrijving:" />
+  <item orig="NPC shadow colour" trans="" />
+  <item orig="Chat text color" trans="Gebabbel tekst kleur" />
+  <item orig="Cancel" trans="Annuleren" />
+  <item orig="None" trans="Geen" />
+  <item orig="Trade" trans="Handel" />
+  <item orig="Mix Action colours" trans="Mix Aktie kleuren" />
+  <item orig="Game Control" trans="Spell Controlle" />
+  <item orig="Edit Max GP" trans="" />
+  <item orig="Enter" trans="" />
+  <item orig="Name of the mesh" trans="" />
+  <item orig="Trias available to withdraw." trans="" />
+  <item orig="Mainchat brackets" trans="Hoofdgebabbel haakjes" />
+  <item orig="Progression Points" trans="Progressiepunten" />
+  <item orig="Enable npcinternal" trans="" />
+  <item orig="Faction" trans="Factie" />
+  <item orig="You have ignored no-one." trans="Je hebt niemand genegeerd." />
+  <item orig="NPC text color" trans="" />
+  <item orig="%s tells group: %s" trans="%s verteld de groep: %s" />
+  <item orig="Inventory" trans="" />
+  <item orig="Full Defensive" trans="" />
+  <item orig="Use" trans="" />
+  <item orig="Quick" trans="Snel" />
+  <item orig="Public notes" trans="Openbare notities" />
+  <item orig="Confirmation" trans="Bevestiging" />
+  <item orig="Master Volume" trans="Hoofd Volume" />
+  <item orig="Withdraw and Deposit" trans="Opnemen en afgeven" />
+  <item orig="Group outline colour" trans="Groep omtrek kleur" />
+  <item orig="Guild shadow colour" trans="Gilde schaduw kleur" />
+  <item orig="Labels" trans="" />
+  <item orig="Upload" trans="Inzenden" />
+  <item orig="Group Alignment" trans="Groep Uitlijning" />
+  <item orig="Exchange" trans="" />
+  <item orig="Combat Skills List:" trans="" />
+  <item orig="tweaks" trans="" />
+  <item orig="SINGLE" trans="" />
+  <item orig="Confirmation upon PvP duel:" trans="" />
+  <item orig="Tellself text colour" trans="" />
+  <item orig="Petition text:" trans="Petitie tekst:" />
+  <item orig="Voices" trans="" />
+  <item orig="Secret guild" trans="Geheim gilde" />
+  <item orig="Auction shadow colour" trans="Veiling schaduw kleur" />
+  <item orig="List Attributes" trans="Lijst Attributen" />
+  <item orig="OOC" trans="" />
+  <item orig="Dead body" trans="Lijk" />
+  <item orig="Claim" trans="Toeeigenen" />
+  <item orig="Radius:" trans="Straal:" />
+  <item orig="CC" trans="" />
+  <item orig="Hide Toolbar/Change Style" trans="" />
+  <item orig="Show Toolbar" trans="" />
+  <item orig="Neck" trans="" />
+  <item orig="Buy/Sell" trans="" />
+  <item orig="set infinitemana" trans="" />
+  <item orig="0" trans="" />
+  <item orig="disabled" trans="uit" />
+  <item orig="Tells" trans="" />
+  <item orig="Manage petitions to help users." trans="" />
+  <item orig="Tell text colour" trans="" />
+  <item orig="No Fall Damage" trans="Geen valschade" />
+  <item orig="Communication" trans="" />
+  <item orig="Cannot connect to server" trans="Kan niet met server verbinden" />
+  <item orig="Health" trans="Gezondheid" />
+  <item orig="Your text color" trans="Jouw tekst kleur" />
+  <item orig="Communications" trans="" />
+  <item orig="The number of hexas that you may exchange." trans="" />
+  <item orig="1" trans="" />
+  <item orig="Invisible" trans="Onzichtbaar" />
+  <item orig="CHARACTER SELECT" trans="KARAKTER SELECTIE" />
+  <item orig="Pickupable" trans="Oppakbaar" />
+  <item orig="Detail information:" trans="Detail informatie" />
+  <item orig="You will no longer ignore %s." trans="Je zult %s niet langer negeren." />
+  <item orig="Shout shadow colour" trans="Schreeuw schaduw kleur" />
+  <item orig="Storage" trans="" />
+  <item orig="Others&apos; combat stance changes" trans="Aanvalhoudingsveranderingen van anderen" />
+  <item orig="Guild outline colour" trans="Gilde omtrek kleur" />
+  <item orig="NPC outline colour" trans="" />
+  <item orig="Group shadow colour" trans="" />
+  <item orig="Ambiguous command: " trans="Niet uniek commando:" />
+  <item orig="The selected petition was %s" trans="" />
+  <item orig="Setting Item" trans="Zet Item" />
+  <item orig="Loading game" trans="Spel aan het laden" />
+  <item orig="Invite" trans="Nodig uit" />
+  <item orig="Use Collision Detection" trans="Gebruik botsingdetectie" />
+  <item orig="Loading..." trans="Aan het laden..." />
+  <item orig="Active Spells" trans="" />
+  <item orig="Sector:" trans="" />
+  <item orig="Mix yourtext color" trans="" />
+  <item orig="Max. Transparency:" trans="" />
+  <item orig="Permissions" trans="Permissies" />
+  <item orig="X:" trans="" />
+  <item orig="Shout outline colour" trans="Geschreeuw omtrek kleur" />
+  <item orig="NPC Alignment" trans="NPC Uitlijning" />
+  <item orig="NPC_narrate Alignment" trans="NPC_narrate Uitlijning" />
+  <item orig=" unaswered petitions." trans=" onbeantwoorde petities." />
+  <item orig="Colors" trans="Kleuren" />
+  <item orig="Create Icon (+)" trans="" />
+  <item orig="The number of trias you wish to deposit." trans="" />
+  <item orig="5" trans="" />
+  <item orig="Make leader" trans="Maak leider" />
+  <item orig="Money" trans="Geld" />
+  <item orig="Guild" trans="Gilde" />
+  <item orig="0 Trias" trans="" />
+  <item orig="Shout Alignment" trans="Geschreeuw Uitlijning" />
+  <item orig="Talk" trans="" />
+  <item orig="Parents" trans="Ouders" />
+  <item orig="Jobs" trans="Werk" />
+  <item orig="Chat - Bubbles" trans="Gebabbel - Belletjes" />
+  <item orig="Start Personal Banking" trans="" />
+  <item orig="set attackable" trans="" />
+  <item orig="The number of circles you wish to deposit." trans="" />
+  <item orig="DescOC" trans="BeschrOC" />
+  <item orig="Welcome to PlaneShift!" trans="Welkom bij PlaneShift!" />
+  <item orig="Delete" trans="Verwijderen" />
+  <item orig="Entities" trans="Entiteiten" />
+  <item orig="Guild text colour" trans="" />
+  <item orig="NPC_narrate text colour" trans="" />
+  <item orig="no" trans="" />
+  <item orig="Information" trans="" />
+  <item orig="Modify Description" trans="" />
+  <item orig="Name of the mesh fact" trans="" />
+  <item orig="Attackable" trans="Aanvalbaar" />
+  <item orig="Auction text color" trans="" />
+  <item orig="Hello" trans="Hallo" />
+  <item orig="You&apos;re offered" trans="Je wordt aangeboden" />
+  <item orig="Hi" trans="Hoi" />
+  <item orig="Stop Attack" trans="" />
+  <item orig="Target" trans="" />
+  <item orig="Mind" trans="" />
+  <item orig="Purify" trans="" />
+  <item orig="Own attacks that are dodged" trans="Eigen aanvallen die worden ontweken" />
+  <item orig="Done" trans="Klaar" />
+  <item orig="Birth" trans="Geboorte" />
+  <item orig="Say text colour" trans="Zeg tekst kleur" />
+  <item orig="Enable NPC_me" trans="" />
+  <item orig="Add a comment about this event if you wish" trans="Voeg een commentaar over dit event toe als je wilt" />
+  <item orig="The number of hexas you wish to deposit." trans="" />
+  <item orig="Keys" trans="Toetsen" />
+  <item orig="Faction description:" trans="Factiebeschrijvingen" />
+  <item orig="Perform an action see by people in your vicinity." trans="Voer een aktie uit, te zien door mensen in je omgeving." />
+  <item orig="Reload" trans="Herladen" />
+  <item orig="Players" trans="Spelers" />
+  <item orig="Phys Stam." trans="Fys. Stam." />
+  <item orig="Stats:" trans="Staat:" />
+  <item orig="NPC" trans="" />
+  <item orig="Music Volume" trans="Muziek Volume" />
+  <item orig="Defend me !" trans="Bescherm mij !" />
+  <item orig="Spell List:" trans="Spreuk Lijst:" />
+  <item orig="FPS cap:" trans="" />
+  <item orig="Tell text color" trans="" />
+  <item orig="CP: 0" trans="" />
+  <item orig="BIRTH" trans="GEBOORTE" />
+  <item orig="All. Chat" trans="Alles. Gebabbel" />
+  <item orig="NPC Owned" trans="NPC Bezit" />
+  <item orig="View item" trans="" />
+  <item orig="Unmute Player" trans="Onmute Speler" />
+  <item orig="Online only" trans="Alleen online" />
+  <item orig="Pub notes" trans="" />
+  <item orig="Edit Master" trans="" />
+  <item orig="Amount to deposit" trans="Hoeveelheid te deponeren" />
+  <item orig="Join Game" trans="Treed tot het spel toe." />
+  <item orig="Auction Alignment" trans="Veiling Uitlijning" />
+  <item orig="Me shadow colour" trans="" />
+  <item orig="Petitions" trans="" />
+  <item orig="Arms" trans="" />
+  <item orig="Accept trade" trans="" />
+  <item orig="Name of the pic" trans="" />
+  <item orig="Locked" trans="Op slot" />
+  <item orig="Account Password:" trans="Account wachtwoord:" />
+  <item orig="Items" trans="" />
+  <item orig="Factions" trans="Facties:" />
+  <item orig="PPs:" trans="" />
+  <item orig="250 Tria" trans="" />
+  <item orig="Weight:" trans="Gewicht:" />
+  <item orig="Petition submitted:" trans="Petitie ingediend:" />
+  <item orig="Men Stam." trans="" />
+  <item orig="Requesting World" trans="Wereld aan het Opvragen" />
+  <item orig="Group" trans="Groep" />
+  <item orig="Help text color" trans="" />
+  <item orig="Face" trans="Gezicht" />
+  <item orig="Me text colour" trans="" />
+  <item orig="Here you can place any OOC information except to advertise companies, products, or services from the real world. To disable this feature delete everything in the window by using the Modify Description button." trans="Hier kunt u alle  informatie plaats, behalve om reclame te maken voor bedrijven, producten of diensten uit de echte wereld. Om deze functie uit te schakelen verwijder alles in het venster met behulp van de knop Beschrijving Wijzigen." />
+  <item orig="Defensive" trans="" />
+  <item orig="Time" trans="" />
+  <item orig="The number of circles you wish to withdraw." trans="" />
+  <item orig="OK" trans="" />
+  <item orig="First Person" trans="Eerste Persoon" />
+  <item orig="Selection" trans="Selectie" />
+  <item orig="?" trans="" />
+  <item orig="Fade Speed:" trans="Wegebsnelheid" />
+  <item orig="My Alignment" trans="My Uitlijning" />
+  <item orig="Labels visibility" trans="Labelzichtbaarheid" />
+  <item orig=" in front of you named " trans=" voor je, genaamd " />
+  <item orig="Trigger:" trans="" />
+  <item orig="Refresh List" trans="Ververs Lijst" />
+  <item orig="Character Name" trans="Karakternaam" />
+  <item orig="Kick Player" trans="Schop Speler eraf" />
+  <item orig="Filter incoming bad words" trans="Filter binnenkomende scheldwoorden" />
+  <item orig="Skill" trans="Bekwaamheid" />
+  <item orig="alliance shadow colour" trans="" />
+  <item orig="Transient" trans="" />
+  <item orig="Bloody" trans="" />
+  <item orig="Octas available to withdraw." trans="" />
+  <item orig="The selected petition has been escalated." trans="De geselecteerde petitie is geescalleerd." />
+  <item orig="Your notes:" trans="Jouw notities:" />
+  <item orig="Rotate" trans="Roteer" />
+  <item orig="Birth Event:" trans="Geboorte Gebeurtenis:" />
+  <item orig="Long Phrase Line Count" trans="Lange zin regeltelling" />
+  <item orig="Character description:" trans="Karakter beschrijving:" />
+  <item orig="No" trans="Nee" />
+  <item orig="Combat messages regarding me" trans="Gevechtsberichten betreffende mijzelf" />
+  <item orig="My text colour" trans="Mijn tekst kleur" />
+  <item orig="Left Hand" trans="" />
+  <item orig="Attack" trans="" />
+  <item orig="set instantcast" trans="" />
+  <item orig="Player name:" trans="Spelernaam" />
+  <item orig="Mouse" trans="Muis" />
+  <item orig="Position:" trans="Positie:" />
+  <item orig="Help" trans="Hulp" />
+  <item orig="View chat" trans="Bekijk gebabbel" />
+  <item orig="Min. distance:" trans="Min. afstand:" />
+  <item orig="set buddyhide" trans="" />
+  <item orig="Quit" trans="Vertrek" />
+  <item orig="Lockpicking" trans="Slotbreken" />
+  <item orig="models" trans="modellen" />
+  <item orig="Siblings" trans="Broers en zussen" />
+  <item orig="Receive:" trans="Ontvang:" />
+  <item orig="Administrative banking" trans="" />
+  <item orig="Camera" trans="" />
+  <item orig="Remember password" trans="Wachtwoord onthouden" />
+  <item orig="Third Person Follow" trans="Derde Persoon Volgen" />
+  <item orig="Character Name:" trans="Karakternaam:" />
+  <item orig="Day:" trans="Dag:" />
+  <item orig="This window is what people will read when they click on you; this box is not to be filled with anything other than things that a person could reasonably perceive with their senses. There is no reason to include anything beyond what one can sense when looking at your character. While sensual detail ONLY is to be included, this does not mean that you should be sparing, please include as many appeals to the senses as your character clearly eminates that can be sensed with the five accepted senses (sight, touch, hearing and smell (being primary)(only list taste if you anticipate people tasting your character)). If you are on the non rp server: Not only can you disregard the above, but you are encouraged to include epic descriptions of all sorts, quote great authors and even recite your own unpublished novels with no limitation whatsoever." trans="Dit venster bevat wat mensen zullen lezen wanneer ze op je klikken. Dit vak mag niet worden gevuld met iets anders dan dingen die een persoon redelijkerwijze zou kunnen waarnemen met hun zintuigen. Er is geen reden om iets anders toe te voegen dan wat men waarnemen bij het kijken naar je karakter. Hoewel alleen waarneembare details mogen worden opgenomen, betekent dit niet dat je je in moet houden. Voeg alsjeblieft veel prikkelingen voor alle 5 zintuigen (zicht, tast, gehoor en reuk (voornamelijk)(speficeer smaak alleen als je denkt dat anderen je zullen proeven)) toe. Als je op de niet-RP server bent: Niet alleen mag je het bovenstaande negeren, maar je wordt gestimuleerd om allerlei epische beschrijvingen te geven, grote auteurs te citeren en zelfs je eigen ongepubliceerde romans te reciteren en met geen enkele beperking op te nemen." />
+  <item orig="Me Alignment" trans="Me Uitlijning" />
+  <item orig="Group loot" trans="" />
+  <item orig="Take item" trans="" />
+  <item orig="Clear" trans="" />
+  <item orig="Next" trans="" />
+  <item orig="Stat" trans="" />
+  <item orig="Min. Transparency:" trans="" />
+  <item orig="Enabled" trans="" />
+  <item orig="Whisper" trans="Gefluister" />
+  <item orig="Drop" trans="" />
+  <item orig="Exchange one item" trans="" />
+  <item orig="set nevertired" trans="" />
+  <item orig="Notify when alliance members login/logout" trans="" />
+  <item orig="%s tells you: %s" trans="%s verteld je: %s" />
+  <item orig="D:" trans="" />
+  <item orig="Jobs Skill description:" trans="Werk Bekwaamheid beschrijving:" />
+  <item orig="Mana" trans="" />
+  <item orig="Yes" trans="Ja" />
+  <item orig="Reset" trans="" />
+  <item orig="Interface sounds" trans="Interface geluiden" />
+  <item orig="Tell outline colour" trans="" />
+  <item orig="Evaluate" trans="Evalueren" />
+  <item orig="Unmount" trans="" />
+  <item orig="Talk to your group privately." trans="Praat met je groep prive" />
+  <item orig="Own attacks that are blocked" trans="Eigen aanvallen die worden geweerd" />
+  <item orig="Religion:" trans="Religie:" />
+  <item orig="Enable tellself" trans="" />
+  <item orig="NPC_my shadow colour" trans="" />
+  <item orig="NPC_narrate outline colour" trans="" />
+  <item orig="Main chat brackets" trans="" />
+  <item orig="Assemble Slot" trans="" />
+  <item orig="set givekillexp" trans="" />
+  <item orig="You can not ignore yourself." trans="Je kunt jezelf niet negeren." />
+  <item orig="Members" trans="Leden" />
+  <item orig="Shout text colour" trans="Geschreeuw tekst kleur" />
+  <item orig="GM 2-5" trans="" />
+  <item orig="List all of the petitions you have submitted." trans="" />
+  <item orig="Settings" trans="" />
+  <item orig="You must select a petition from the list in order to assign yourself." trans="" />
+  <item orig="Count:" trans="Telling:" />
+  <item orig="Back" trans="Terug" />
+  <item orig="graphics" trans="" />
+  <item orig="You tell %s: %s" trans="Je verteld %s: %s" />
+  <item orig="set questtester" trans="" />
+  <item orig="The number of circles that you may exchange." trans="" />
+  <item orig="Add New" trans="" />
+  <item orig="Infinite Inventory" trans="Oneindige Inventaris" />
+  <item orig="Lose focus on send" trans="" />
+  <item orig="Hair Style" trans="Haarstijl" />
+  <item orig="Say shadow colour" trans="" />
+  <item orig="Flashing" trans="Geknipper" />
+  <item orig="Char Name" trans="Kar Naam" />
+  <item orig="Create Text (t)" trans="" />
+  <item orig="New Character" trans="Nieuw Karakter" />
+  <item orig="Magic Skill description:" trans="Magie Bekwaamheid beschrijving:" />
+  <item orig="npcinternal Alignment" trans="npcinternal Uitlijning" />
+  <item orig="Tria:" trans="" />
+  <item orig="Options" trans="" />
+  <item orig="Lock" trans="" />
+  <item orig="Cast" trans="" />
+  <item orig="M:" trans="" />
+  <item orig="Infinite Mana" trans="Oneindig Mana" />
+  <item orig="Status:" trans="Toestand:" />
+  <item orig="Teleport To Player" trans="Teleporteer Naar Speler" />
+  <item orig="Add" trans="Toevoegen" />
+  <item orig="PARENTS" trans="OUDERS" />
+  <item orig="Enable NPC_my" trans="" />
+  <item orig="Mental Stamina" trans="" />
+  <item orig="Petition Text:" trans="" />
+  <item orig="Me outline colour" trans="" />
+  <item orig="Join default chan" trans="" />
+  <item orig="Invincible" trans="Onzichtbaar" />
+  <item orig="You&apos;re offering" trans="Je bied aan" />
+  <item orig="Jobs Skills List:" trans="Werk Bekwaamheden Lijst:" />
+  <item orig="Magic Skills" trans="Magie Bekwaamheden" />
+  <item orig="Combat messages regarding others" trans="Gevechtberichten betreffende anderen" />
+  <item orig="Replaying previous chat..." trans="Vorig gebabbel aan het herafspelen..." />
+  <item orig="Developers" trans="Ontwikkelaars" />
+  <item orig="Instance:" trans="" />
+  <item orig="Next Icon (PgDn)" trans="" />
+  <item orig="Actions" trans="Akties" />
+  <item orig="Chat - Filters" trans="Gebabbel - Filters" />
+  <item orig="Amount to withdraw" trans="Hoeveelheid op te nemen" />
+  <item orig="Others&apos; attacks that are blocked" trans="Aanvallen van anderen die worden geweerd" />
+  <item orig="Head" trans="" />
+  <item orig="Gloves" trans="" />
+  <item orig="Belt" trans="" />
+  <item orig="50 Tria" trans="" />
+  <item orig="The number of hexas you wish to withdraw." trans="" />
+  <item orig="Do you really wish to leave Yliakum?" trans="Wil je Yliakum echt verlaten?" />
+  <item orig="Talk to the people in your immediate vicinity." trans="Praat met anderen in je directe omgeving." />
+  <item orig="Player name color" trans="Spelernaam kleur" />
+  <item orig="Tellself Alignment" trans="Tellself Uitlijning" />
+  <item orig="Grouped with you" trans="Met jou gegroepeerd" />
+  <item orig="Circles available to withdraw." trans="" />
+  <item orig="Random name" trans="Willekeurige naam" />
+  <item orig="Couldn&apos;t resolve server hostname." trans="Kon server hostnaam niet vinden." />
+  <item orig="Escalate" trans="Escaleren" />
+  <item orig="30" trans="" />
+  <item orig="Various Skills" trans="Verscheiden Vaardigheden" />
+  <item orig="Events" trans="" />
+  <item orig="Trias:" trans="" />
+  <item orig="Auto Tab selection:" trans="" />
+  <item orig="Short Phrase Char Count" trans="" />
+  <item orig="Connecting to server... Please wait" trans="Met server aan het vervinden...Even wachten" />
+  <item orig="Selected Target" trans="" />
+  <item orig="Save this book" trans="" />
+  <item orig="Chat - Tabs" trans="Gebabbel - Tabbladen" />
+  <item orig="Makes the server log what target player is saying." trans="Maakt de server opslaan wat aangewezen speler zegt." />
+  <item orig="New Account" trans="Nieuw Account" />
+  <item orig="Beard Style" trans="Baardstijl" />
+  <item orig="NPC_me shadow colour" trans="" />
+  <item orig="Guild Bank" trans="Gilde Bank" />
+  <item orig="Spell Power" trans="" />
+  <item orig="Mute Player" trans="" />
+  <item orig="Shortcut key:" trans="" />
+  <item orig="Controls" trans="" />
+  <item orig="My shadow colour" trans="" />
+  <item orig="There are " trans="Er zijn " />
+  <item orig="Alliance Chat" trans="Alliantie Gebabbel" />
+  <item orig="Give:" trans="Geef:" />
+  <item orig="Show guild " trans="" />
+  <item orig="Delete Selected (del)" trans="" />
+  <item orig="Name:" trans="Naam:" />
+  <item orig="Discard" trans="" />
+  <item orig="Y:" trans="" />
+  <item orig="NPC_me Alignment" trans="NPC_me Uitlijning" />
+  <item orig="Bracers" trans="" />
+  <item orig="Click to see Instructions" trans="" />
+  <item orig="The number of octas you wish to deposit." trans="" />
+  <item orig="Servers:" trans="" />
+  <item orig="Join" trans="Toetreden" />
+  <item orig="Enable say" trans="" />
+  <item orig="Click a character name below, then click Join. Or click New Character." trans="Klik een personagenaam hieronder, dan Toetreden. Of klik Nieuw Personage." />
+  <item orig="Assigned GM:" trans="" />
+  <item orig="Lockable" trans="Sluitbaar" />
+  <item orig="Distance:" trans="Afstand:" />
+  <item orig="Echo screen text" trans="" />
+  <item orig="Enable tell" trans="" />
+  <item orig="npcinternal shadow colour" trans="" />
+  <item orig="Join default channel" trans="Treed toe tot standaard kanaal" />
+  <item orig="Loading world" trans="Wereld aan het laden" />
+  <item orig="New User? Register at http://www.planeshift.it/account/create" trans="Nieuwe Gebruiker? Registreer op http://www.planeshift.it/account/create" />
+  <item orig="Quests" trans="Questes" />
+  <item orig="Please wait for verification from server" trans="Wacht alsjeblieft voor verificatie door de server" />
+  <item orig="Scale Font:" trans="" />
+  <item orig="Write in this book" trans="" />
+  <item orig="Research" trans="" />
+  <item orig="o&apos;clock" trans="uur" />
+  <item orig="You must select a petition from the list in order to close it." trans="" />
+  <item orig="Name" trans="Naam" />
+  <item orig="Getting entities" trans="Entititeiten aan het verkrijgen" />
+  <item orig="You must select a petition from the list in order to escalate it." trans="" />
+  <item orig="Custom" trans="" />
+  <item orig="Sound" trans="Geluid" />
+  <item orig="Background music" trans="" />
+  <item orig="Group text colour" trans="" />
+  <item orig="Choose Your Character" trans="" />
+  <item orig="Uncompleted" trans="" />
+  <item orig="Petitons are waiting." trans="" />
+  <item orig="npcinternal text colour" trans="" />
+  <item orig="Boots" trans="" />
+  <item orig="Completed" trans="" />
+  <item orig="none" trans="" />
+  <item orig="Alternates" trans="" />
+  <item orig="Skills and stats" trans="" />
+  <item orig="Save (s)" trans="" />
+  <item orig="Save MOTD" trans="" />
+  <item orig="network" trans="" />
+  <item orig="Interface" trans="" />
+  <item orig="Loop background music" trans="" />
+  <item orig="Shout text color" trans="" />
+  <item orig="Log the chat messages" trans="" />
+  <item orig="Filter outgoing bad words" trans="" />
+  <item orig="My outline colour" trans="" />
+  <item orig="P. Stamina" trans="" />
+  <item orig="Failed" trans="" />
+  <item orig="Left Finger" trans="" />
+  <item orig="Realm" trans="" />
+  <item orig="cancelled." trans="" />
+  <item orig="closed." trans="" />
+  <item orig="Waiting on server data.." trans="" />
+  <item orig="View all" trans="" />
+  <item orig="Unknown Chat Type: %d" trans="" />
+  <item orig="/ 100" trans="" />
+  <item orig="Free Rotation" trans="" />
+  <item orig="Actual FPS may vary." trans="" />
+  <item orig="Enable me" trans="" />
+  <item orig="Tellself shadow colour" trans="" />
+  <item orig="Legs" trans="" />
+  <item orig="Loot" trans="" />
+  <item orig="The number of octas you wish to withdraw." trans="" />
+  <item orig="You must select a petition from the list in order to view it." trans="" />
+  <item orig="Spells" trans="Spreuken" />
+  <item orig="Shortcuts" trans="" />
+  <item orig="Guild text color" trans="" />
+  <item orig="Random" trans="Willekeur" />
+  <item orig="Job:" trans="Baan:" />
+  <item orig="Ok" trans="" />
+  <item orig="Sell" trans="Verkoop" />
+  <item orig="Way" trans="Weg" />
+  <item orig="controls" trans="" />
+  <item orig="Close" trans="Sluit" />
+  <item orig="Website:" trans="" />
+  <item orig="Various" trans="" />
+  <item orig="Combat Skill description:" trans="" />
+  <item orig="Ambient sounds" trans="" />
+  <item orig="Please re-login" trans="" />
+  <item orig="Fading:" trans="Wegebben" />
+  <item orig="set infiniteinventory" trans="" />
+  <item orig="Greetings" trans="Gegroet" />
+  <item orig="Select a reward:" trans="Kies een beloning:" />
+  <item orig="Ambient Volume" trans="" />
+  <item orig="Hair Colour" trans="Haarkleur" />
+  <item orig="Edit Permissions" trans="Permissies aanpassen" />
+  <item orig="Select a vote (1-10)" trans="Kies een stem (1-10)" />
+  <item orig="yes" trans="ja" />
+  <item orig="set nofalldamage" trans="" />
+</StringTable>

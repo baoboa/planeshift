@@ -1,0 +1,82 @@
+SubDir TOP src worldeditor ;
+
+Application worldeditor :
+	[ Wildcard *.cpp *.h ]
+;
+CompileGroups worldeditor : tools ;
+ExternalLibs worldeditor : CRYSTAL ;
+LinkWith worldeditor : fparser paws psutil ;
+
+if $(HAVE_STATIC_PLUGINS) = "yes"
+{
+  SubVariant static ;
+
+  Application worldeditor_static :
+      [ Wildcard *.cpp *.h ]
+  ;
+  CFlags worldeditor_static : [ FDefines CS_STATIC_LINKED ]
+  LFlags worldeditor_static : -lcrystalspace_staticplugins-$(CRYSTAL.VERSION)
+  MsvcDefine worldeditor_static : CS_STATIC_LINKED ;
+  LinkWith worldeditor_static : fparser paws psutil ;
+
+STATIC.PLUGINLIST =
+  bindoc
+  csddsimg
+  csfont
+  csgifimg
+  csjpgimg
+  csjngimg
+  csopcode
+  csparser
+  cspngimg
+  cssynldr
+  cstgaimg
+  docpreproc
+  dsplex
+  engine
+  fontplex
+  freefnt2
+  frustvis
+  genmesh
+  gl3d
+  glshader_cg
+  glshader_fixed
+  glshader_ps1
+  gmeshldr
+  imgplex
+  particles
+  particlesldr
+  ptanimimg
+  ptpdlight
+  reporter
+  rm_unshadowed
+  shadermgr
+  shaderweaver
+  stdrep
+  terrain2
+  terrain2ldr
+  vfs
+  xmlshader
+  xmltiny
+  ;
+
+if $(TARGET.OS) != "WIN32" { if $(TARGET.OS) != "MACOS_X" { STATIC.PLUGINLIST += xwin xext86vm glx2d ; } }
+if $(TARGET.OS) = "WIN32" { STATIC.PLUGINLIST += glwin32 ; }
+if $(TARGET.OS) = "MACOS_X" { STATIC.PLUGINLIST += glosx2d ; }
+
+LinkStaticPlugins worldeditor_static : $(STATIC.PLUGINLIST)
+:
+: CRYSTAL
+;
+
+LinkStaticPlugins worldeditor_static :
+  bgloader
+  soundmngr
+  dummysndmngr
+;
+
+  CompileGroups worldeditor_static : tools ;
+  ExternalLibs worldeditor_static : CRYSTAL ;
+
+  SubVariant ;
+}

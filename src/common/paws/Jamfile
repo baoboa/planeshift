@@ -1,0 +1,9 @@
+SubDir TOP src common paws ;
+
+Library paws 
+	: [ Wildcard *.cpp *.h ]
+	: noinstall
+;
+
+LinkWith paws : psutil ;
+ExternalLibs paws : CRYSTAL ;

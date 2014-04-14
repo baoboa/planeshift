@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" ?> 
+<library>
+    <textures>
+        <texture name="spire_example">
+            <file>/this/art/effects/examples/spire_example.dds</file>
+        </texture>
+    </textures>
+    <materials>
+        <material name="spire_example">
+            <texture>spire_example</texture>
+        </material>
+    </materials>
+    <addon plugin="PSEffects">
+        <effect name="x_obj_spire">
+            <anchor type="basic" name="pos">
+                <dir>none</dir>
+            </anchor>
+
+            <!-- Simplest spire (the white one) --> 
+            <obj type="spire" name="spire" material="spire_example" shape="circle" segments="9">
+                <attach>pos</attach>
+                <death>none</death>
+            </obj>
+    
+            <!-- Typical spire (the yellow one) -->
+            <obj type="spire" name="spire_typical" material="spire_example" shape="circle" segments="9">
+                <attach>pos</attach>
+                <death>none</death>
+                <keyFrame time="0">
+                    <action name="position" y="1" />
+                    <action name="colour" r="255" g="255" b="0" />
+                    <action name="spin" y="0" />
+                    <action name="height" value="0.5" />
+                    <action name="topscale" value="2" />
+                </keyFrame>
+                <keyFrame time="1000">
+                    <action name="spin" y="360" />
+                </keyFrame>
+            </obj>
+
+            <!-- Asterix-shaped spire (the red one) -->
+            <obj type="spire" name="spire_asterix" material="spire_example" shape="asterix" segments="9">
+                <attach>pos</attach>
+                <death>none</death>
+                <keyFrame time="0">
+                    <action name="position" y="2" />
+                    <action name="colour" r="255" g="0" b="0" />
+                    <action name="height" value="0.5" />
+                </keyFrame>
+            </obj>
+        </effect>
+    </addon>
+</library>
+

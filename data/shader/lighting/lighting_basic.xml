@@ -1,0 +1,31 @@
+<shader compiler="shaderweaver" name="lighting_basic">
+  <technique priority="150">
+    <pass>
+      <combiner plugin="crystalspace.graphics3d.shader.combiner.glsl" />
+
+      <snippet id="position" file="/shader-snippets/position-noclip.xml" />
+      <snippet id="surface" file="/shader-snippets/surface/surface-modulate.xml" />
+      <snippet id="apply_mixmode_alpha" file="/shader-snippets/mixmode-alpha.xml" />
+      <snippet id="sectorfog" file="/shader-snippets/fog/fog-sector.xml" />
+
+      <connection from="position" to="surface" />
+      <connection from="surface" to="apply_mixmode_alpha" />
+      <connection from="apply_mixmode_alpha" to="sectorfog" />
+    </pass>
+  </technique>
+  <technique priority="100">
+    <pass>
+      <combiner plugin="crystalspace.graphics3d.shader.combiner.glcg" />
+
+      <snippet id="position" file="/shader-snippets/position-noclip.xml" />
+      <snippet id="surface" file="/shader-snippets/surface/surface-modulate.xml" />
+      <snippet id="apply_mixmode_alpha" file="/shader-snippets/mixmode-alpha.xml" />
+      <snippet id="sectorfog" file="/shader-snippets/fog/fog-sector.xml" />
+
+      <connection from="position" to="surface" />
+      <connection from="surface" to="apply_mixmode_alpha" />
+      <connection from="apply_mixmode_alpha" to="sectorfog" />
+    </pass>
+  </technique>
+  <fallbackshader name="lighting_vproc_fixed" file="/shader/lighting/vproc_fixed.xml" />
+</shader>

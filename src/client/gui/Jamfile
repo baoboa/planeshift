@@ -1,0 +1,8 @@
+SubDir TOP src client gui ;
+
+Library gui 
+	: [ Wildcard *.cpp *.h ]
+	: noinstall
+;
+
+ExternalLibs gui : CRYSTAL ;

@@ -1,0 +1,381 @@
+<widget_description>
+    <widget name="GmGUI" factory="pawsGmGUIWindow" visible="no" savepositions="yes" movable="yes" resizable="no" style="New Standard GUI">
+        <frame x="0" y="0" width="630" height="425" border="yes"/>
+        <title resource="Scaling Title Bar" text="Game Master Options" align="left" close_button="yes" />
+
+        <widget name="GM Tabs" factory="pawsTabWindow" style="tabwindow">
+            <frame y="0" width="630" height="425" />
+            <attachpoints>
+                <attach point="ATTACH_RIGHT" />
+                <attach point="ATTACH_TOP" />
+                <attach point="ATTACH_LEFT" />
+                <attach point="PROPORTIONAL_BOTTOM" />
+            </attachpoints>
+
+            <!-- Tabs, there are three tabs. -->
+            <widget name="Players Button" factory="pawsButton" id="1000" style="Standard Tab">
+                <frame x="15" y="3" width="69" height="25" />
+                <label text="Players" />
+            </widget>
+            <widget name="Action Button" factory="pawsButton" id="1002" style="Standard Tab">
+                <frame x="85" y="3" width="69" height="25" />
+                <label text="Actions" />
+            </widget>
+            <widget name="Attributes Button" factory="pawsButton" id="1003" style="Standard Tab">
+                <frame x="155" y="3" width="69" height="25" />
+                <label text="Attributes" />
+            </widget>
+
+        <!-- The Tab Panels -->
+        <!-- The Player Panel here -->
+            <widget name="Player Controls" factory="pawsWidget" visible="no" id="1100">
+                <frame x="0" y="25" width="620" height="397" />
+                <attachpoints>
+                    <attach point="ATTACH_RIGHT" />
+                    <attach point="PROPORTIONAL_TOP" />
+                    <attach point="ATTACH_LEFT" />
+                    <attach point="PROPORTIONAL_BOTTOM" />
+                </attachpoints>
+
+                <widget name="PlayerList" factory="pawsListBox" id="1201" >
+                    <frame x="20" y="10" width="458" height="350" />
+
+                    <columns height="25" headings="yes">
+                    <column width="110" >
+                        <pawsTextBox name="First Name"/>
+                    </column>
+                    <column width="90" >
+                        <pawsTextBox name="Last Name"/>
+                    </column>
+                    <column width="40" >
+                        <pawsTextBox name="Gnd"/>
+                    </column>
+                    <column width="140" >
+                        <pawsTextBox name="Guild"/>
+                    </column>
+                    <column width="120" >
+                        <pawsTextBox name="Sector"/>
+                    </column>
+                    </columns>
+                </widget>
+
+                <widget name="RefreshPlayerList" factory="pawsButton" id="1298" style="Standard Button">
+                    <frame x="25" y="372" width="130" height="20" />
+                    <label text="Refresh List" />
+                </widget>
+
+                <widget name="PlayerCount" factory="pawsTextBox" >
+                    <frame x="240" y="375" width="200" height="20"/>
+                </widget>
+
+                <widget name="SectorLbl" factory="pawsTextBox" style="label" >
+                    <frame x="495" y="5" width="120" height="20"/>
+                    <text string="Sector:" />
+                </widget>
+                <widget name="MoveTarget" factory="pawsTextBox" style="label" >
+                    <frame x="525" y="40" width="30" height="20"/>
+                    <text string="SL" horizAdjust="CENTRE" vertAdjust="CENTRE" />
+                </widget>
+                <widget name="TargetLeft" factory="pawsButton" toggle="no" id="1211"  >
+                    <frame x="507" y="40" width="20" height="20" border="no" />
+                    <buttonup resource="Left Arrow" />
+                    <buttondown resource="Left Arrow" />
+                </widget>
+                <widget name="TargetRight" factory="pawsButton" toggle="no" id="1212"  >
+                    <frame x="550" y="40" width="20" height="20" border="no" />
+                    <buttonup resource="Right Arrow" />
+                    <buttondown resource="Right Arrow" />
+                </widget>
+                <widget name="TargetForward" factory="pawsButton" toggle="no" id="1213" >
+                    <frame x="528" y="25" width="20" height="20" border="no" />
+                    <buttonup resource="Up Arrow" />
+                    <buttondown resource="Up Arrow" />
+                </widget>
+                <widget name="TargetBackwards" factory="pawsButton" toggle="no" id="1214"  >
+                    <frame x="528" y="55" width="20" height="20" border="no" />
+                    <buttonup resource="Down Arrow" />
+                    <buttondown resource="Down Arrow" />
+                </widget>
+                <widget name="TargetUp" factory="pawsButton" toggle="no" id="1215" >
+                    <frame x="585" y="25" width="20" height="20" border="no" />
+                    <buttonup resource="Up Arrow" />
+                    <buttondown resource="Up Arrow" />
+                </widget>
+                <widget name="TargetDown" factory="pawsButton" toggle="no" id="1216" >
+                    <frame x="585" y="52" width="20" height="20" border="no" />
+                    <buttonup resource="Down Arrow" />
+                    <buttondown resource="Down Arrow" />
+                </widget>
+
+                <widget name="AidPet" factory="pawsButton" toggle="no" id="1210" style="Standard Button">
+                    <frame x="495" y="80" width="115" height="20" />
+                    <label text="Teleport To Player" />
+                </widget>
+
+                <widget name="KillWarn" factory="pawsTextBox" style="label" >
+                    <frame x="495" y="105" width="115" height="20" />
+                    <text string="!!!WARNING!!!" horizAdjust="CENTRE" vertAdjust="CENTRE" />
+                    <font name="LiberationSans-Regular.ttf" r="255" g="0" b="0" size="10" />
+                </widget>
+                <widget name="Kill" factory="pawsButton" toggle="no" id="1233" style="Standard Button">
+                    <frame x="495" y="125" width="115" height="20" />
+                    <label text="Kill Player" />
+                </widget>
+
+                <widget name="Mute" factory="pawsButton" id="1231" style="Standard Button">
+                    <frame x="495" y="160" width="115" height="20" />
+                    <label text="Mute Player" />
+                </widget>
+                <widget name="Unmute" factory="pawsButton" id="1232" style="Standard Button">
+                    <frame x="495" y="185" width="115" height="20" />
+                    <label text="Unmute Player" />
+                </widget>
+
+                <widget name="ChangeName" factory="pawsButton" id="1234" style="Standard Button">
+                    <frame x="495" y="220" width="115" height="20" />
+                    <label text="Change name" />
+                </widget>
+                <widget name="ChangeNameRnd" factory="pawsButton" id="1235" style="Standard Button">
+                    <frame x="495" y="245" width="115" height="20"  />
+                    <label text="Random name" />
+                </widget>
+
+                <widget name="Kick" factory="pawsButton" id="1230" style="Standard Button">
+                    <frame x="495" y="280" width="115" height="20" />
+                    <label text="Kick Player" />
+                </widget>
+
+                <widget name="BanMin" factory="pawsEditTextBox">
+                    <frame x="510" y="311" width="20" height="20" border="no"/>
+                    <text string="30" horizAdjust="CENTRE" />
+                </widget>
+                <widget name="BanHrs" factory="pawsEditTextBox">
+                    <frame x="545" y="311" width="20" height="20" border="no"/>
+                    <text string="0" horizAdjust="CENTRE" />
+                </widget>
+                <widget name="BanDays" factory="pawsEditTextBox">
+                    <frame x="582" y="311" width="20" height="20" border="no"/>
+                    <text string="0" horizAdjust="CENTRE" />
+                </widget>
+
+                <widget name="BanMinlbl" factory="pawsTextBox" style="label">
+                    <frame x="492" y="314" width="20" height="20" />
+                    <text string="M:" horizAdjust="CENTRE" />
+                </widget>
+                <widget name="BanHrslbl" factory="pawsTextBox" style="label">
+                    <frame x="528" y="314" width="20" height="20" />
+                    <text string="H:" horizAdjust="CENTRE" />
+                </widget>
+                <widget name="BanDayslbl" factory="pawsTextBox" style="label">
+                    <frame x="563" y="314" width="20" height="20" />
+                    <text string="D:" horizAdjust="CENTRE" />
+                </widget>
+
+                <widget name="Ban" factory="pawsButton" id="1236" style="Standard Button">
+                    <frame x="495" y="335" width="115" height="20" />
+                    <label text="Ban" />
+                </widget>
+
+            </widget>
+                <!-- Action Panel below here -->
+            <widget name="Action Controls" factory="pawsWidget" visible="no" id="1102">
+                <frame x="0" y="25" width="680" height="397" border="no"/>
+                <attachpoints>
+                    <attach point="ATTACH_RIGHT" />
+                    <attach point="PROPORTIONAL_TOP" />
+                    <attach point="ATTACH_LEFT" />
+                    <attach point="PROPORTIONAL_BOTTOM" />
+                </attachpoints>
+                <widget name="ActionList" factory="pawsListBox" id="1265" >
+                    <frame x="20" y="10" width="580" height="330" />
+                    <columns height="24" headings="yes">
+                        <column width="20" >
+                            <pawsTextBox name="Id"/>
+                        </column>
+                        <column width="160" >
+                            <pawsTextBox name="Name"/>
+                        </column>
+                        <column width="135" >
+                            <pawsTextBox name="Mesh"/>
+                        </column>
+                        <column width="40" >
+                            <pawsTextBox name="Poly"/>
+                        </column>
+                        <column width="145" >
+                            <pawsTextBox name="Pos"/>
+                        </column>
+                        <column width="120" >
+                            <pawsTextBox name="Type"/>
+                        </column>
+                    </columns>
+                </widget>
+
+                <widget name="cmdRefresh" factory="pawsButton" id="1260" style="Standard Button">
+                    <frame x="20" y="350" width="105" height="20" />
+                    <label text="Refresh List" />
+                </widget>
+
+                <widget name="cmdReload" factory="pawsButton" id="1266" style="Standard Button">
+                    <frame x="20" y="375" width="105" height="20" />
+                    <label text="Reload Cache" />
+                </widget>
+
+                <widget name="cmdAdd" factory="pawsButton" id="1261" style="Standard Button">
+                    <frame x="140" y="350" width="105" height="20" />
+                    <label text="Add New" />
+                </widget>
+
+                <widget name="cmdAddLink" factory="pawsButton" id="1262" style="Standard Button">
+                    <frame x="140" y="375" width="105" height="20"  />
+                    <label text="Add Linked" />
+                </widget>
+
+                <widget name="cmdEdit" factory="pawsButton" id="1263" style="Standard Button">
+                    <frame x="260" y="350" width="105" height="20" />
+                    <label text="Edit" />
+                </widget>
+
+                <widget name="cmdDelete" factory="pawsButton" id="1264" style="Standard Button">
+                    <frame x="260" y="375" width="105" height="20" />
+                    <label text="Delete" />
+                </widget>
+
+
+            </widget>
+                <!-- Attribute Panel here -->
+            <widget name="Attribute Controls" factory="pawsWidget" visible="no" id="1103">
+                <frame x="0" y="25" width="620" height="397" border="no"/>
+                <attachpoints>
+                    <attach point="ATTACH_RIGHT" />
+                    <attach point="PROPORTIONAL_TOP" />
+                    <attach point="ATTACH_LEFT" />
+                    <attach point="PROPORTIONAL_BOTTOM" />
+                </attachpoints>
+
+
+                <widget name="listattributes" factory="pawsButton" toggle="no" id="1250" style="Standard Button">
+                    <frame x="30" y="20" width="160" height="20" border="no" />
+                    <label text="List Attributes" />
+                </widget>
+
+
+                <widget name="invincible" factory="pawsTextBox" id="1251" visible="no" tooltip="set invincible">
+                    <frame x="30" y="44" width="160" height="20" border="no" />
+                    <text string="Invincible" />
+                </widget>
+                <widget name="toggleInvincible" factory="pawsCheckBox" id="1251" visible="no">
+                    <frame x="200" y ="44" width="100" height="20" border="no"/>
+                    <text string="disabled" />
+                </widget>
+
+
+        <widget name="invisible" factory="pawsTextBox" visible="no" tooltip="set invisible">
+                    <frame x="30" y="68" width="160" height="20" border="no" />
+                    <text string="Invisible" />
+                </widget>
+                <widget name="toggleInvisible" factory="pawsCheckBox" id="1252" visible="no">
+                    <frame x="200" y ="68" width="100" height="20" border="no"/>
+                    <text string="disabled" />
+                </widget>
+
+
+        <widget name="viewall" factory="pawsTextBox" visible="no" tooltip="set viewall">
+                    <frame x="30" y="92" width="160" height="20" border="no"/>
+                    <text string="View all" />
+                </widget>
+                <widget name="toggleViewAll" factory="pawsCheckBox" id="1253" visible="no">
+                    <frame x="200" y ="92" width="100" height="20" border="no"/>
+                    <text string="disabled" />
+                </widget>
+
+
+        <widget name="nevertired" factory="pawsTextBox" visible="no" tooltip="set nevertired">
+                    <frame x="30" y="116" width="160" height="20" border="no"/>
+                    <text string="Never tired" />
+                </widget>
+                <widget name="toggleNeverTired" factory="pawsCheckBox" id="1254" visible="no">
+                    <frame x="200" y ="116" width="100" height="20" border="no"/>
+                    <text string="disabled" />
+                </widget>
+
+
+        <widget name="nofalldamage" factory="pawsTextBox" visible="no" tooltip="set nofalldamage">
+                    <frame x="30" y="140" width="160" height="20" border="no" />
+                    <text string="No Fall Damage" />
+                </widget>
+                <widget name="toggleNoFallDamage" factory="pawsCheckBox" id="1255" visible="no">
+                    <frame x="200" y ="140" width="100" height="20" border="no"/>
+                    <text string="disabled" />
+                </widget>
+
+
+        <widget name="infiniteinventory" factory="pawsTextBox" visible="no" tooltip="set infiniteinventory">
+                    <frame x="30" y="164" width="160" height="20" border="no" />
+                    <text string="Infinite Inventory" />
+                </widget>
+                <widget name="toggleInfiniteInventory" factory="pawsCheckBox" id="1256" visible="no">
+                    <frame x="200" y ="164" width="100" height="20" border="no"/>
+                    <text string="disabled" />
+                </widget>
+
+
+        <widget name="questtester" factory="pawsTextBox" visible="no" tooltip="set questtester">
+                    <frame x="30" y="188" width="160" height="20" border="no" />
+                    <text string="Quest Testing" />
+                </widget>
+                <widget name="toggleQuestTester" factory="pawsCheckBox" id="1257" visible="no">
+                    <frame x="200" y ="188" width="100" height="20" border="no"/>
+                    <text string="disabled" />
+                </widget>
+
+
+        <widget name="infinitemana" factory="pawsTextBox" visible="no" tooltip="set infinitemana">
+                    <frame x="30" y="212" width="160" height="20" border="no" />
+                    <text string="Infinite Mana" />
+                </widget>
+                <widget name="toggleInfiniteMana" factory="pawsCheckBox" id="1258" visible="no">
+                    <frame x="200" y ="212" width="100" height="20" border="no"/>
+                    <text string="disabled" />
+                </widget>
+
+
+        <widget name="instantcast" factory="pawsTextBox" visible="no" tooltip="set instantcast">
+                    <frame x="30" y="236" width="160" height="20" border="no" />
+                    <text string="Instant Cast" />
+                </widget>
+                <widget name="toggleInstantCast" factory="pawsCheckBox" id="1259" visible="no">
+                    <frame x="200" y ="236" width="100" height="20" border="no"/>
+                    <text string="disabled" />
+                </widget>
+
+        <widget name="givekillexp" factory="pawsTextBox" visible="no" tooltip="set givekillexp">
+                    <frame x="30" y="260" width="160" height="20" border="no" />
+                    <text string="Give Kill Experience" />
+                </widget>
+                <widget name="toggleGiveKillExp" factory="pawsCheckBox" id="1267" visible="no">
+                    <frame x="200" y ="260" width="100" height="20" border="no"/>
+                    <text string="disabled" />
+                </widget>
+
+        <widget name="attackable" factory="pawsTextBox" visible="no" tooltip="set attackable">
+                    <frame x="30" y="284" width="160" height="20" border="no" />
+                    <text string="Attackable" />
+                </widget>
+                <widget name="toggleAttackable" factory="pawsCheckBox" id="1268" visible="no">
+                    <frame x="200" y ="284" width="100" height="20" border="no"/>
+                    <text string="disabled" />
+                </widget>
+
+        <widget name="buddyhide" factory="pawsTextBox" visible="no" tooltip="set buddyhide">
+                    <frame x="30" y="308" width="160" height="20" border="no" />
+                    <text string="Buddy List Hide" />
+                </widget>
+                <widget name="toggleBuddyHide" factory="pawsCheckBox" id="1269" visible="no">
+                    <frame x="200" y ="308" width="100" height="20" border="no"/>
+                    <text string="disabled" />
+                </widget>
+
+            </widget>
+        </widget>
+    </widget>
+</widget_description>

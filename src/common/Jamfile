@@ -1,0 +1,13 @@
+SubDir TOP src common ;
+
+SubInclude TOP src common engine ;
+SubInclude TOP src common net ;
+SubInclude TOP src common util ;
+SubInclude TOP src common rpgrules ;
+SubInclude TOP src common paws ;
+SubInclude TOP src common effects ;
+SubInclude TOP src common sound ;
+SubInclude TOP src common music ;
+
+
+

@@ -1,0 +1,428 @@
+<?xml version="1.0"?>
+<!--
+  CommonScripting.rng - a RelaxNG schema for PlaneShift scripting.
+
+  Author: Kenny Graunke <kenny@whitecape.org>
+  Copyright (C) 2009 Atomic Blue (info@planeshift.it, http://www.atomicblue.org)
+ 
+  This program is free software; you can redistribute it and/or
+  modify it under the terms of the GNU General Public License
+  as published by the Free Software Foundation (version 2 of the License)
+  This program is distributed in the hope that it will be useful,
+  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  GNU General Public License for more details.
+  You should have received a copy of the GNU General Public License
+  along with this program; if not, write to the Free Software
+  Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
+ -->
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+  
+  <define name="ImperativeMode">
+    <zeroOrMore>
+      <choice>
+      
+        <!-- let-blocks -->
+        <element name="let">
+          <attribute name="vars"/>
+          <ref name="ImperativeMode"/>
+        </element>
+
+        <!-- conditionals -->
+        <element name="if">
+          <attribute name="t"/>
+          <element name="then">
+            <ref name="ImperativeMode"/>
+          </element>
+          <optional>
+            <element name="else">
+              <ref name="ImperativeMode"/>
+            </element>
+          </optional>
+        </element>
+        <ref name="apply"/>
+        <element name="apply-linked">
+          <attribute name="name"/>
+          <attribute name="duration"/>
+          <interleave>
+            <element name="buff"> <!-- beneficiary, but that's rather wordy -->
+              <attribute name="aim"/>
+              <ref name="ApplyMode"/>
+            </element>
+            <element name="debuff"> <!-- victim -->
+              <attribute name="aim"/>
+              <ref name="ApplyMode"/>
+            </element>
+          </interleave>
+        </element>
+        <element name="cancel">
+          <attribute name="aim"/>
+          <attribute name="type">
+            <choice>
+              <value>all</value>
+              <value>ordered</value>
+              <value>random</value>
+            </choice>
+          </attribute>
+          <oneOrMore>
+            <element name="spell">
+              <attribute name="name"/>
+              <ref name="SpellType"/>
+            </element>
+          </oneOrMore>
+        </element>
+
+        <!-- imperative operations -->
+
+        <element name="msg">
+          <attribute name="aim"/>
+          <attribute name="text"/>
+          <ref name="msgtype"/>
+        </element>
+
+        <element name="fx">
+          <optional>
+            <attribute name="source"/>
+          </optional>
+          <attribute name="target"/>
+          <attribute name="name"/>
+          <optional>
+            <attribute name="type">
+              <choice>
+                <value>attached</value>
+                <value>unattached</value>
+              </choice>
+            </attribute>
+            <attribute name="scale"/>
+          </optional>
+        </element>
+
+        <element name="teleport">
+          <attribute name="aim"/>
+          <ref name="teleport"/>
+        </element>
+
+        <element name="create-familiar">
+          <attribute name="aim"/>
+          <optional>
+            <attribute name="masterID"/>
+          </optional>
+        </element>
+
+        <element name="destroy">
+          <attribute name="aim"/>
+        </element>
+
+        <element name="key">
+          <!-- TBH this is bad, we can't determine if keyID is necessary. -->
+          <!-- should probably change these operations... -->
+          <attribute name="aim"/>
+          <attribute name="funct">
+            <choice>
+              <value>make</value>
+              <value>modify</value>
+            </choice>
+          </attribute>
+          <attribute name="lockid"/>
+          <attribute name="stat"/>
+          <attribute name="location">
+            <choice>
+              <value>inventory</value>
+              <value>ground</value>
+            </choice>
+          </attribute>
+        </element>
+
+        <element name="action">
+          <attribute name="aim"/>
+          <attribute name="sector"/>
+          <attribute name="stat"/>
+        </element>
+
+        <element name="item">
+          <attribute name="aim"/>
+          <attribute name="name"/>
+          <attribute name="count"/>
+          <optional>
+            <attribute name="location">
+              <choice>
+                <value>inventory</value>
+                <value>ground</value>
+              </choice>           
+            </attribute>
+            <attribute name="randomize" >
+              <choice>
+                <value>true</value>
+                <value>false</value>
+              </choice>
+            </attribute>
+            <attribute name="randomcost"/>
+            <attribute name="randomlevel"/>
+          </optional>
+        </element>
+
+        <element name="variableset">
+          <attribute name="aim"/>
+          <attribute name="name"/>
+          <optional>
+            <attribute name="value"/>
+          </optional>
+        </element>
+
+        <element name="variableunset">
+          <attribute name="aim"/>
+          <attribute name="name"/>
+          <attribute name="value"/>
+        </element>
+
+        <element name="faction">
+          <attribute name="aim"/>
+          <attribute name="name"/>
+          <optional>
+            <attribute name="value"/>
+          </optional>
+        </element>
+
+        <!-- TODO: summon -->
+        <element name="fog">
+          <optional>
+            <attribute name="r"/>
+            <attribute name="g"/>
+            <attribute name="b"/>
+          </optional>
+        </element>
+        <element name="rain">
+          <ref name="weatherbase"/>
+          <attribute name="density"/>
+        </element>
+        <element name="snow">
+          <ref name="weatherbase"/>
+          <attribute name="density"/>
+        </element>
+        <element name="lightning">
+          <ref name="weatherbase"/>
+        </element>
+        <element name="weather"> <!-- automatic weather -->
+          <attribute name="enable"> <ref name="boolean"/> </attribute>
+          <attribute name="sector"/>
+        </element>
+
+        <!-- vitals -->
+        <element name="hp">
+          <ref name="imperative2"/>
+          <optional>
+            <attribute name="attacker"/>
+          </optional>
+        </element>
+        <element name="mana">     <ref name="imperative2"/> </element>
+        <element name="pstamina"> <ref name="imperative2"/> </element>
+        <element name="mstamina"> <ref name="imperative2"/> </element>
+
+        <!-- stats -->
+        <element name="agi"> <ref name="imperative2"/> </element>
+        <element name="end"> <ref name="imperative2"/> </element>
+        <element name="str"> <ref name="imperative2"/> </element>
+        <element name="cha"> <ref name="imperative2"/> </element>
+        <element name="int"> <ref name="imperative2"/> </element>
+        <element name="wil"> <ref name="imperative2"/> </element>
+
+        <!-- other -->
+        <element name="exp"> <ref name="imperative2"/> </element>
+
+        <element name="skill"> <ref name="imperative3"/> </element>
+        <element name="faction"> <ref name="imperative3"/> </element>
+        <element name="animal-affinity"> <ref name="imperative3"/> </element>
+
+      </choice>
+    </zeroOrMore>
+  </define>
+
+  <define name="ApplyMode">
+    <oneOrMore>
+      <choice>
+        <!-- buffables -->
+        <element name="hp-rate">
+          <ref name="applied1"/>
+          <optional>
+            <attribute name="attacker"/>
+          </optional>
+        </element>
+        <element name="mana-rate">     <ref name="applied1"/> </element>
+        <element name="pstamina-rate"> <ref name="applied1"/> </element>
+        <element name="mstamina-rate"> <ref name="applied1"/> </element>
+
+        <element name="hp-max">       <ref name="applied1"/> </element>
+        <element name="mana-max">     <ref name="applied1"/> </element>
+        <element name="pstamina-max"> <ref name="applied1"/> </element>
+        <element name="mstamina-max"> <ref name="applied1"/> </element>
+
+        <element name="atk"> <ref name="applied1"/> </element>
+        <element name="def"> <ref name="applied1"/> </element>
+
+        <element name="agi"> <ref name="applied1"/> </element>
+        <element name="end"> <ref name="applied1"/> </element>
+        <element name="str"> <ref name="applied1"/> </element>
+        <element name="cha"> <ref name="applied1"/> </element>
+        <element name="int"> <ref name="applied1"/> </element>
+        <element name="wil"> <ref name="applied1"/> </element>
+
+        <element name="skill"> <ref name="applied2"/> </element>
+        <element name="faction"> <ref name="applied2"/> </element>
+        <element name="animal-affinity"> <ref name="applied2"/> </element>
+
+        <!-- overridables -->
+        <element name="race"> <ref name="applied1"/> <attribute name="sex"/> </element>
+        <element name="pos"> <ref name="teleport"/> </element>
+
+        <!-- other -->
+        <element name="msg">
+          <attribute name="text"/>
+          <attribute name="undo"/>
+          <ref name="msgtype"/>
+        </element>
+
+        <element name="fx">
+          <optional>
+            <choice>
+              <attribute name="source"/>
+              <group>
+                <attribute name="x"/>
+                <attribute name="y"/>
+                <attribute name="z"/>
+              </group>
+            </choice>
+          </optional>
+          <attribute name="name"/>
+        </element>
+
+        <element name="can-summon-familiar">
+          <empty/>
+        </element>
+
+        <element name="on">
+          <choice>
+            <attribute name="type">
+              <choice>
+                <value>attack</value>
+                <value>defense</value>
+                <value>nearlydead</value>
+                <value>move</value>
+              </choice>
+            </attribute>
+            <attribute name="distance"/> <!-- how do we handle enter/exit pairing again? -->
+            <!-- attributes for naming input parameters? -->
+          </choice>
+          <ref name="ImperativeMode"/>
+        </element>
+
+      </choice>
+    </oneOrMore>
+  </define>
+
+  <define name="imperative2">
+    <attribute name="aim"/>
+    <attribute name="value"/>
+  </define>
+
+  <define name="imperative3">
+    <attribute name="aim"/>
+    <attribute name="name"/>
+    <attribute name="value"/>
+  </define>
+
+  <define name="applied1">
+    <attribute name="value"/>
+  </define>
+
+  <define name="applied2">
+    <attribute name="name"/>
+    <attribute name="value"/>
+  </define>
+
+  <define name="SpellType">
+    <attribute name="type">
+      <choice>
+        <value>buff</value>
+        <value>debuff</value>
+        <value>item</value>
+      </choice>
+    </attribute>
+  </define>
+
+  <define name="apply">
+    <element name="apply">
+      <attribute name="aim"/>
+      <attribute name="name"/>
+      <ref name="SpellType"/>
+      <optional>
+        <attribute name="duration"/>
+      </optional>
+      <ref name="ApplyMode"/>
+    </element>
+  </define>
+
+  <define name="teleport">
+    <choice>
+      <attribute name="location"/>
+      <group>
+        <attribute name="sector"/>
+        <optional>
+          <attribute name="x"/>
+          <attribute name="y"/>
+          <attribute name="z"/>
+        </optional>
+        <optional>
+          <attribute name="instance"/>
+        </optional>
+      <!-- </group>
+      <group> -->
+         <attribute name="delay"/>
+         <attribute name="background"/>
+         <attribute name="widget"/>
+         <optional>
+           <attribute name="x1"/>
+           <attribute name="y1"/>
+           <attribute name="x2"/>
+           <attribute name="y2"/>
+         </optional>
+      </group>
+    </choice>
+  </define>
+
+
+  <define name="boolean">
+    <choice>
+      <value>true</value>
+      <value>false</value>
+    </choice>
+  </define>
+
+
+  <define name="weatherbase">
+    <attribute name="type">
+      <choice>
+        <value>rain</value>
+        <value>snow</value>
+      </choice>
+    </attribute>
+    <attribute name="sector"/>
+    <attribute name="duration"/>
+    <attribute name="fade"/>
+    <attribute name="enable"> <ref name="boolean"/> </attribute>
+  </define>
+
+  
+
+  <define name="msgtype">
+    <optional>
+      <attribute name="type">
+        <choice>
+          <value>info</value>
+          <value>ok</value>
+          <value>result</value>
+          <value>error</value>
+        </choice>
+      </attribute>
+    </optional>
+  </define>
+</grammar>

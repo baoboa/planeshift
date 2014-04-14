@@ -1,0 +1,166 @@
+<widget_description>
+
+  <pawsQuestListWindow name="QuestNotebook" visible="no" savepositions="yes" movable="yes" resizable="no" configurable="yes" style="New Standard GUI">
+    <frame x="100" y="100" width="550" height="400" border="yes" />
+    <title resource="Scaling Title Bar" text="Quest & Events Notebook" align="left" close_button="yes" />
+
+    <pawsTextBox name="" style="Header Font">
+        <frame x="20" y="15" width="135" height="20" />
+        <text string="List:" />
+    </pawsTextBox>
+
+
+  <pawsTabWindow name="EventsOrQuests">
+    <frame x="5" y="3" width="280" height="250" border="yes" />
+
+    <pawsButton name="QuestLists" id="300" style="Standard Tab">
+        <frame x="80" y="10" width="55" height="25" />
+        <label text="Quests" />
+    </pawsButton>
+
+    <pawsButton name="EventLists" id="301" style="Standard Tab">
+        <frame x="150" y="10" width="55" height="25" />
+        <label text="Events" />
+    </pawsButton>
+
+    <pawsTabWindow name="QuestTabs" id="400">
+
+        <frame x="0" y="30" width="280" height="220" border="yes" />
+
+       <pawsButton name="UncompletedButton" id="1000" style="Standard Tab">
+            <frame x="37" y="185" width="100" height="25" />
+            <label text="Uncompleted" />
+        </pawsButton>
+        <pawsButton name="CompletedButton" id="1001" style="Standard Tab">
+            <frame x="157" y="185" width="90" height="25" />
+            <label text="Completed" />
+        </pawsButton>
+
+
+	<pawsListBox name="UncompletedQuestList" xmlbinding="quests" id="1100" sortBy="0">
+            <frame x="16" y="10" width="250" height="161" />
+            <columns height="20" headings="no" xmlbinding="q" >
+              <column width="230" xmlbinding="desc" >
+                <pawsTextBox name="Name" />
+              </column>
+              <column width="0" xmlbinding="id">
+                <pawsTextBox name="ID" visible="no" />
+              </column>
+              <column width="0" xmlbinding="status">
+                <pawsTextBox name="Status" visible="no" />
+              </column>
+            </columns>
+        </pawsListBox>
+
+        <pawsListBox name="CompletedQuestList" xmlbinding="quests" id="1101" sortBy="0">
+            <frame x="16" y="10" width="250" height="161" />
+       <columns height="20" headings="no" xmlbinding="q" >
+              <column width="230" xmlbinding="desc" >
+                <pawsTextBox name="Name" />
+              </column>
+              <column width="0" xmlbinding="id">
+                <pawsTextBox name="ID" visible="no" />
+              </column>
+              <column width="0" xmlbinding="status">
+                <pawsTextBox name="Status" visible="no" />
+              </column>
+            </columns>
+        </pawsListBox>
+    </pawsTabWindow>
+
+    <pawsTabWindow name="EventTabs" visible="no" id="401">
+
+        <frame x="0" y="30" width="280" height="220" border="yes" />
+
+        <pawsButton name="UncompletedButton" id="1000" style="Standard Tab">
+            <frame x="37" y="185" width="100" height="25" />
+            <label text="Uncompleted" />
+        </pawsButton>
+        <pawsButton name="CompletedButton" id="1001" style="Standard Tab">
+            <frame x="157" y="185" width="90" height="25" />
+            <label text="Completed" />
+        </pawsButton>
+
+       <pawsListBox name="UncompletedEventList" xmlbinding="gmevents" id="1100" sortBy="0">
+            <frame x="16" y="10" width="250" height="161" />
+            <columns height="20" headings="no" xmlbinding="event" >
+              <column width="230" xmlbinding="name" >
+                <pawsTextBox name="Name" />
+              </column>
+              <column width="7" xmlbinding="role" >
+                <pawsTextBox name="Role" visible="yes" />
+              </column>
+              <column width="0" xmlbinding="id">
+                <pawsTextBox name="ID" visible="no" />
+              </column>
+              <column width="0" xmlbinding="status">
+                <pawsTextBox name="Status" visible="no" />
+              </column>
+            </columns>
+        </pawsListBox>
+
+       <pawsListBox name="CompletedEventList" xmlbinding="gmevents" id="1101" sortBy="0">
+            <frame x="16" y="10" width="250" height="161" />
+            <columns height="20" headings="no" xmlbinding="event" >
+              <column width="230" xmlbinding="name" >
+                <pawsTextBox name="Name" />
+              </column>
+              <column width="7" xmlbinding="role" >
+                <pawsTextBox name="Role" visible="yes" />
+              </column>
+              <column width="0" xmlbinding="id">
+                <pawsTextBox name="ID" visible="no" />
+              </column>
+              <column width="0" xmlbinding="status">
+                <pawsTextBox name="Status" visible="no" />
+              </column>
+            </columns>
+        </pawsListBox>
+    </pawsTabWindow>
+  </pawsTabWindow>
+
+    <pawsTextBox name="Total">
+        <frame x="270" y="225" width="75" height="17" />
+        <text string="" />
+    </pawsTextBox>
+
+    <pawsButton name="Discard" id="1201" style="Standard Button">
+        <frame x="460" y="225" width="78" height="25"/>
+        <label text="Discard"/>
+    </pawsButton>
+
+    <pawsButton name="Evaluate" id="1205" visible="no" style="Standard Button">
+        <frame x="350" y="225" width="78" height="25"/>
+        <label text="Evaluate"/>
+    </pawsButton>
+
+
+    <pawsTextBox name="" style="Header Font">
+        <frame x="288" y="15" width="135" height="20" />
+        <text string="Description:" />
+    </pawsTextBox>
+    <pawsMessageTextBox name="Description" style="Fancy Standard MsgText">
+        <frame x="290" y="40" width="242" height="168"/>
+    </pawsMessageTextBox>
+
+
+    <pawsTextBox name="" style="Header Font">
+        <frame x="28" y="245" width="100" height="15" />
+        <text string="Your notes:" />
+    </pawsTextBox>
+    <pawsMultilineEditTextBox name="Notes">
+        <frame x="30" y="265" width="490" height="90" />
+    </pawsMultilineEditTextBox>
+
+    <pawsButton name="SaveButton" id="1203" style="Standard Button">
+        <frame x="24" y="370" width="60" height="25"/>
+        <label text="Save" />
+    </pawsButton>
+    <pawsButton name="CancelButton" id="1204" style="Standard Button">
+        <frame x="111" y="370" width="70" height="25"/>
+        <label text="Reload" />
+    </pawsButton>
+
+    </pawsQuestListWindow>
+
+</widget_description>

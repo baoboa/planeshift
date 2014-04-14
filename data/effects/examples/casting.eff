@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8" ?> 
+<library>
+    <textures>
+        <texture name="spark">
+            <file>/this/data/effects/examples/sparkle_03.dds</file>
+        </texture>
+    </textures>
+    <materials>
+        <material name="spark">
+            <texture>spark</texture>
+        </material>
+    </materials>    
+    <addon plugin="PSEffects">
+        <effect name="casting">
+            <anchor type="basic" name="pos">
+                <dir>none</dir>
+            </anchor>
+            
+            <obj type="spire" name="spark" material="spark" segments="20">
+                <attach>pos</attach>
+                <dir>none</dir>
+                <death>1500</death>
+                <keyFrame time="0">
+                    <action name="position" x="0" y="0.01" z="0" />
+                    <action name="rotate" x="0" y="0" z="0" />
+                    <action name="scale" value="1" />
+                    <action name="height" value="0" />
+                    <action name="topscale" value="1.1" />
+                    <action name="colour" r="10" g="200" b="10" />
+                </keyFrame>
+                <keyFrame time="800">
+                    <action name="position" x="0" y="0.01" z="0" />
+                    <action name="rotate" x="0" y="0" z="0" />
+                    <action name="scale" value="1.5" />
+                    <action name="height" value="1" />
+                    <action name="topscale" value="1.1" />
+                </keyFrame>
+                <keyFrame time="900">
+                <action name="height" value="0.75" />
+                </keyFrame>
+                <keyFrame time="1200">
+                    <action name="rotate" y="360" />
+                    <action name="scale" value="1" />
+                    <action name="height" value="0.09" />
+                </keyFrame>
+            </obj>
+            <obj type="spire" name="spire2" material="spark" segments="10">
+                <attach>pos</attach>
+                <death>1500</death>
+                <dir>none</dir>
+                <keyFrame time="0">
+                    <action name="position" x="0" y="0.01" z="0" />
+                    <action name="rotate" x="0" y="0" z="0" />
+                    <action name="scale" value="0.5" />
+                    <action name="height" value="0" />
+                    <action name="topscale" value="1.1" />
+                    <action name="colour" r="10" g="200" b="10" />
+                </keyFrame>
+                <keyFrame time="800">
+                    <action name="height" value="4" />
+                    <action name="topscale" value="1" />
+                </keyFrame>
+                <keyFrame time="1200">
+                    <action name="rotate" y="360" />
+                    <action name="height" value="0.5" />
+                    <action name="topscale" value="3" />
+                </keyFrame>
+            </obj>
+        </effect>
+    </addon>
+</library>

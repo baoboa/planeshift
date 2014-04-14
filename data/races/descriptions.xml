@@ -1,0 +1,237 @@
+<descriptions>
+    <race   name="Stonebreaker" 
+            description=
+"Physical Traits: Stonehammers are a race of Dwarves dominated by two clans. The Stonebreakers; generally shorter and less robust than other Dwarves, normally with blond or red hair and beard, and pale skin. And the Hammerwielders who are taller and more robust than other Dwarves (some rare individuals can reach one and a half meters in height), have a darker complexion and generally black or brown hair. All Dwarves, let their beards, moustache and hair grow and then tie them into elaborate plaits and knots.
+
+Abilities and fields of interest: The clan of Stonebreakers lived for centuries digging tunnels, shafts, wells and caves in the deep of the earth before arriving in Yliakum. They are talented engineers of machinery like winches, ventilation pipes, canals, means of transport for goods and everything that can be useful to overcome the drawbacks of underground life. They are also powerful and untiring miners; many say that they some created sections of the Stone Labyrinths. Hammerwielders have a natural affinity with metals and gems more so than with granite, becoming often clever blacksmiths and gem cutters. They tend to be skilful fighters and often put their crafted weapons to the test. 
+
+Psychology: Stonebreakers have a strong pride that sometimes develops into feuds with other clans or other races. They tend to be bigoted towards other races that are taller than they are. Hammerwielders can be found easily in taverns, due to being strong drinkers. They usually behave in a cheerful and communicative way, but they can become noisy and boastful when sitting in big groups at the tavern. If you hear someone using the phrase 'rough as a dwarf', you can be sure that he refers to a Hammerwielder. 
+Rules: Nothing Special for now."  
+
+       
+            basetexture="1.png" 
+            male="stonebm" 
+            female="stonebf" 
+            male_available="yes" 
+            female_available="yes">     
+            
+    <FollowPos x="0" y="3" z="4" />
+    <LookatPos x="0" y="2" z="0" />
+    <FirstPos x="0" y="1.14" z="0" />
+    <ViewerPos x="0" y="-0.2" z="2"/>
+    <FACEPOS x="-0.05" y="1.1" z="-1.4" />
+
+    
+</race>     
+    
+    <race   name="Enkidukai" 
+            description=
+"Physical traits: Humanoids with feline features, the Enkidukai are smaller than humans.  Their bodies are covered in short hair rather like fur, which can be striped, spotted, dark or uniform. They have small, slitted eyes, their limbs are long and lean and taper into clawed hands and feet.
+
+Abilities and fields of interest: The Enkidukai possess extraordinary acute senses, and excellent reflexes. Given the hard training and the constant competition of survival, all the Enkidukai are good warriors and valuable companions in battle. They are stronger and more resistant to disease or harm than one would guess by their slim constitution, and they have a deep determination and unshakeable will.
+
+Psychology: The Enkidukai race maintains its wild nature. They live in packs controlled by the male who is strongest and most skilful in combat. Each pack has a typical and easily recognizable look, mostly because of their habit in cutting or colouring fur in ritual or traditional ways. Enkidukai are always suspicious of strangers at the beginning, but once you gain their trust, they become faithful companions.
+Rules: Nothing Special for now."            
+            basetexture="1.png" 
+            male="enkim" 
+            female="enkif" 
+            male_available="yes" 
+            female_available="yes">
+
+    <FirstPos x="0" y="1.56" z="0" />    
+    </race>     
+    
+    <race   name="Ynnwn" 
+            description=
+"Physical Features: The Ynnwn race is a strange but relatively frequent crossing between a Diaboli and an Elf. Two such opposite characters generate a type of giant, never shorter than two meters, with dark red skin. Ynnwn have pointed ears and white hair and rarely grow horns or tails, although in some cases these are present. 
+
+Abilities and fields of interest: The Ynnwn possess optimal physical and mental characteristics and they do not have any profession limitations, succeeding well in almost all the aspects of the Yliakumic life. However, their unusual blood gives them a harmful sensitivity to precious metals. They prefer not to use gold, silver, or platinum coins; contact with such metals provokes a skin rash. The wounds that they suffer from weapons plated with these metals are very painful, slow to heal and sometimes lethal. They instead tolerate the orichalc, although they prefer not to handle it too long because of the percentage of gold it contains.
+
+Psychological traits: Contrary to what people may think, the Ynnwn don't feel diminished by their half-breed status and they face life with a positive attitude. 
+Rules: Nothing Special for now."            
+            basetexture="1.png" 
+            male="ynnwnm" 
+            female="fynnwn" 
+            male_available="yes" 
+            female_available="yes">    
+
+    <FirstPos x="0" y="1.81" z="0" />
+    <FACEPOS x="0" y="1.75" z="-1.0" />
+    
+    </race>     
+
+    <race   name="Ylian" 
+            description=
+"THE FEMALE 3D MODEL FOR THIS RACE IS NOT YET AVAILABLE IN GAME. YOU CAN CONTINUE ANYWAY USING THE FEMALE MODEL OF THE YNNWN RACE.
+
+Physical Traits: Their robust and well-proportioned body gives them the opportunity to excel in all arts. They can have hair from black to white, eyes with wonderful colours and skin from pale to dark brown. 
+
+Abilities and fields of interest: Ylians are a practical and disciplined race with fighters, sorcerers, merchants and politicians. They tend to learn a little of everything without choosing a preferred profession. 
+
+Psychology: The Ylians were the first to see the Blue Sun. They were proud of this peculiarity and, in the early days of the civilization, they invented the name Ylians to distinguish them from the other humans that arrived later. In spite of this, they are the most inclined to mix with other races, and have friendly relations with anyone. Thanks to this ability they often cover political roles. 
+Rules: Nothing Special for now."
+            basetexture="1.png" 
+            male="ylianm" 
+            female="fynnwn" 
+            male_available="yes"
+            female_available="yes">
+
+    <FirstPos x="0" y="1.68" z="0" />
+    <FACEPOS x="0" y="1.6" z="-1.1" />
+
+    </race>     
+    
+    <race   name="Xacha" 
+            description=
+"THE 3D MODELS FOR THIS RACE ARE NOT YET AVAILABLE IN GAME. YOU CAN CONTINUE ANYWAY USING THE MALE MODEL OF THE YLIAN RACE AND FEMALE MODEL OF THE YNNWN RACE. 
+
+Physical Traits: They differ from other humans because they are taller, have a less solid and less robust body. Since they left the surface a long time ago, their skin is very pale and similar to the people who are born underground.
+
+Abilities and fields of interest: Keepers of great knowledge, the Xacha use the magic arts and study natural phenomena as a tradition that is passed from generation to generation. Many scientists of Yliakum belong to this race. 
+
+Psychology: The Xacha are proud of their origins and traditions.  They are the last survivors of an ancient people, almost extinct due to the crowding of the peninsula in which they lived. Generally they have a strong will, and a quite different mindset focusing on logical solutions to problems. 
+Rules: Nothing Special for now."            
+            basetexture="1.png" 
+            male="ylianm" 
+            female="fynnwn" 
+            male_available="yes" 
+            female_available="yes">                
+    <FirstPos x="0" y="1.68" z="0" />
+
+    </race>     
+
+    
+    <race   name="Nolthrir" 
+            description=
+"Physical Traits: The most ancient race of Elves are the Nolthrirs, which first became part of the society as seaweed fishers and farmers, an activity it is believed they perfected before leaving the Surface. After many centuries, the great amount of time spent working underwater and the unique altering properties of the Crystal have made the Nolthrirs an amphibious race, with webbed fingers and both gilled and pulmonary respiration. Nolthrirs appear as slim elves, with skin and hair coloured from azure to green, and icy eyes coloured from light azure to light green. They tend to be beardless but both sexes have very long hair. They live mainly on the two submerged levels.
+
+Abilities and fields of interest: Almost all elves have familiarity with some form of magic, mainly elemental magic. Nolthirs have a particular disadvantage on using fire related spells, but on the other hand they master water spells. 
+
+Psychology: The serenity of the underwater life with its soft rumours and dimmed lights is reflected in Nolthrir's way of life. 
+Rules: Nothing Special for now."
+            basetexture="1.png" 
+            male="nolthrirm" 
+            female="nolthrirf" 
+            male_available="yes" 
+            female_available="yes">
+
+    <FirstPos x="0" y="1.55" z="0" />
+    <FACEPOS x="0" y="1.6" z="-1.1" />
+
+    </race>     
+    
+    <race   name="Dermorian" 
+            description=
+"Physical Traits: The Dermorians have an amber-coloured or copper-coloured skin and their hair ranges from brown to red, never black, rarely blond.
+
+Abilities and fields of interest: Due to the long roaming in the Labyrinths searching for a final place to live, their race is capable of seeing in the dark. In Yliakum, the best hunters of the Labyrinths are the Dermorians, mainly due to their aptitude of surviving even in extreme situations, obtaining food and water from foraging. 
+
+Psychology: They are native of a land of the Surface called Dermoria. Before the long trip to the underground, their habits were tribal and characterized by the love of nature; they were nomads in search of new pastures and hunting areas. 
+Rules: Nothing Special for now."            
+            basetexture="1.png" 
+            male="dermm" 
+            female="dermf" 
+            male_available="yes" 
+            female_available="yes">
+
+    <FirstPos x="0" y="1.55" z="0" />
+    <FACEPOS x="0" y="1.4" z="-1.0" />
+    
+    </race>     
+    
+
+    
+    <race   name="Hammerwielder" 
+            description=
+"THE 3D MODELS FOR THIS RACE ARE NOT YET AVAILABLE IN GAME. YOU CAN CONTINUE ANYWAY USING THE MODELS OF THE STONEBREAKER RACE. 
+
+Physical Traits: The Hammerwielders are taller and even more robust then other Dwarves (some rare individuals can reach one meter and half in height), have a darker complexion and black or brown hair. Like many Dwarves, they let their beards and moustache grow and then tie them in plaits and knots.
+
+Abilities and fields of interest: Hammerwielders have a more natural affinity with metals and gems than with granite, becoming often-clever blacksmiths and gem cutters.  They tend to be skilful fighters and often put their crafted weapons to the test. 
+
+Psychology: You can find them easily in taverns, because they are strong drinkers. They usually behave in a cheerful and communicative way, much more than other Dwarves, but they can become noisy and boastful when sitting in big groups at the tavern.  If you hear someone using the phrase 'rough as a dwarf', you can be sure that he refers to a Hammerwielder. 
+Rules: Nothing Special for now."            
+            basetexture="1.png" 
+            male="stonebm" 
+            female="stonebf" 
+            male_available="yes" 
+            female_available="yes">                
+
+    <FirstPos x="0" y="1.23" z="0" />
+    <FACEPOS x="0.05" y="1.1" z="-1.4" />
+
+    </race>     
+    
+    <race   name="Diaboli" 
+            description=
+"THE 3D MODELS FOR THIS RACE ARE NOT YET AVAILABLE IN GAME. YOU CAN CONTINUE ANYWAY USING THE MODELS OF THE YNNWN RACE. Physical traits: The typical Diaboli has shiny oil-black skin, a thin pointed tail and little horns. Apart from that, they have almost the same body proportions as humans, and almost identical internal organs. Both male and female have gorgeous, perfectly shaped bodies.
+
+Abilities and fields of interest: The Diaboli developed a good resistance to many elemental spells thanks to a deep knowledge in that area of magic. On the other hand, they avoid holy places as they feel uncomfortable in them. It's quite rare to meet a Diaboli inside a temple. They diligently try to avoid sacred objects: holy weapons are devastating against them. They are famous for their ability to attract and charm people, and therefore the Diaboli have a natural talent for social relations.
+
+Psychology: A popular tradition tells that their homeland was a burning land that continuously erupted black smoke (this may suggest the presence of a volcano), a dark and perpetually cloudy sky and sulphuric rivers of flowing blood. Some sages believe they originated in a distant, unexplored universe, but opinions are contradictory. Nonetheless, their race is the only one who thinks of Yliakum as a real paradise, and this says a lot about their homeland. They rarely keep a single partner, preferring to have many, and that explains the large number of half-breeds in Yliakum. Diaboli are a happy, bustling, malicious race, quite unreliable.  Humility is a completely foreign concept to them. Their familiarity with some of the semi-intelligent races that dwell in the Stone Labyrinths has raised suspicion with the other races.
+Rules: Nothing Special for now."            
+            basetexture="1.png" 
+            male="ynnwnm" 
+            female="fynnwn" 
+            male_available="yes" 
+            female_available="yes">                
+
+    <FirstPos x="0" y="1.81" z="0" />
+    <FACEPOS x="0" y="1.9" z="-1.0" />
+ 
+    </race>     
+    
+    <race   name="Kran" 
+            description=
+"Physical Traits: They belong more to the mineral kingdom than to the animal one. Their body is the only one, amongst the known races, to be based on silicon instead of carbon. They appear as humanoids made of rock. The colour of the body is mainly grey or black and slightly wrinkled, with coloured veins different from individual to individual. Some rare Kran have a different coloured skin, like white, azure or pink, which is highly appreciated by Kran. Their head is slightly lengthened at the top, without ears and nose. They are born underground and none of them has ever seen the light of the sun.
+
+Abilities and fields of interest: Because their skin is made of silicon, the Kran are very resistant to laceration but is more easily damaged by bludgeoning weapons. Silicon still supports oxygen linkages, so Kran breathe much more slowly than other races, enabling them to happily breathe underwater. Without ears, they perceive sounds thanks to vibrations in their bodies. Strong and tireless, Kran are as resistant as the rock that they are born from. Since magic was created to act on different principles, it seems to have little effect on them. Also, the way in which they reproduce is incompatible with all other races; there are no half-breed Kran.
+
+Psychology: They are not one of most intelligent races of Yliakum, but they tend to be loyal and firm in their beliefs. 
+Rules: Nothing Special for now."            
+            basetexture="1.png" 
+            male="kran" 
+            female="kran" 
+            male_available="yes" 
+            female_available="yes">
+
+    <FirstPos x="0" y="1.96" z="0" />
+
+    </race>       
+          
+    <race   name="Lemur" 
+            description=
+"THE 3D MODELS FOR THIS RACE ARE NOT YET AVAILABLE IN GAME. YOU CAN CONTINUE ANYWAY USING THE MALE MODEL OF THE DERMORIAN RACE AND FEMALE MODEL OF THE YNNWN RACE. 
+
+Physical Features: The Lemurs have an appearance similar to Humans, but their origins can't be connected. They have a hypoxygenated skin, which after living in dark and subterranean places with low ventilation perspires little and is almost completely without pigment. For this reason, they have a pale and azure complexion. Until two to three months of age, their children have an almost transparent skin that reveals the underlying capillary circulation. Their body is neither very robust nor resistant. They have light hair in a variety of hues. Lemur women, graceful and ethereal creatures, are amongst the most beautiful of Yliakum; male lemurs are equally beautiful but lack in prominent masculine features like bulky muscle. 
+
+Abilities and fields of interest: They have a clever intellect, superior to the other races. The Lemurs are brilliant artists, innate aesthetes and researchers of beauty in all its forms.
+
+Psychological traits: Everyone knows that the Lemurs were the first of all races to settle in Yliakum, and they are proud of it. The legends tell that their origins of the Lemurs are connected to a huge city located in the depths of earth, abandoned from a widespread disease. No one knows how to reach this city or if anyone still lives there. All lemurs share a sense of loss for their mysterious, distant homeland.
+Rules: Nothing Special for now."
+            basetexture="1.png" 
+            male="dermm" 
+            female="fynnwn" 
+            male_available="yes" 
+            female_available="yes">                
+    </race>     
+    
+    
+    
+    <race   name="Klyros" 
+            description=
+"Physical Features: The Klyros are a humanoid race with a tall, slim body (they range in height from 160cm to 180cm). Their skin is similar to reptiles, being slimy and cold, and varies from grey-green to steel dark blue. They have an oval head decorated with a multicoloured crest starting from the forehead and ends at the base of the skull that make them look like a fish. White and drop-like eyes enable them to see in the dark. Their hands have sharp and dangerous claws. Just under the shoulders they have two big wings that appear to be weak and non-functional. The skeleton is thin and flexible to flight easier, but is easily damaged. Thanks to their body structure, the Klyros are fast in three elements: air, water and earth.
+
+Abilities and fields of interest: Klyros are brave hunters, travellers and fighters, and many are rich merchants. They have a talent for fishing deep-water fishes and small underwater monsters that are used to create very peculiar Klyros' garments and light armours. They are interested in decorative arts and magic.
+
+Psychological traits: Thanks to their triple nature and their easy adaptability to environmental conditions, the Klyros are basically nomads and react quickly to new situations. The Klyros believe strongly in the concept of brotherhood with the other members of their race. Regardless of their appearance, they are not an evil race.
+Rules: Nothing Special for now."            
+            basetexture="1.png" 
+            male="klyrosm" 
+            female="klyrosm" 
+            male_available="yes" 
+            female_available="yes">                
+    </race>     
+  
+              
+</descriptions>

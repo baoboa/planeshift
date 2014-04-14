@@ -1,0 +1,124 @@
+<widget_description>
+
+    <widget name="Childhood" factory="pawsChildhoodWindow"
+            visible="no" movable="no" resizable="no" resizetoscreen="yes" >
+        <frame x="0" y="0" width="800" height="600" border="no" />
+        <font name="cupandtalon.ttf" r="255" g="255" b="255" sr="0" sg="0" sb="0" shadow="yes" size="15" resizetoscreen="yes" />
+        <bgimage resource="login_background" />
+
+        <!-- Title -->
+        <widget name="label_childhood" factory="pawsTextBox">
+            <frame x="200" y="40" width="400" height="35" />
+            <font name="scurlock.ttf" r="255" g="255" b="255" sr="0" sg="0" sb="0" shadow="yes" size="24" resizetoscreen="yes" />
+            <text string="CHILDHOOD" horizAdjust="CENTRE" />
+        </widget>
+
+        <!-- CP -->
+        <widget name="CP" factory="pawsTextBox">
+            <frame x="605" y="40" width="100" height="40" border="no" />
+            <text string="" horizAdjust="CENTRE" />
+            <bgimage resource="cpBox" />
+        </widget>
+
+        <!-- Birth Event -->
+        <widget name="text" factory="pawsTextBox" >
+            <frame x="100" y="120" width="150" height="30" />
+            <font name="cupandtalon.ttf" r="255" g="255" b="255" sr="0" sg="0" sb="0" shadow="yes" size="18" resizetoscreen="yes" />
+            <text string="Birth Event:" />
+        </widget>
+
+        <widget name="bevent" factory="pawsListBox" id="1" >
+            <frame x="100" y="145" width="220" height="96" border="no" />
+            <font name="LiberationSans-Regular.ttf" r="255" g="255" b="255" sr="0" sg="0" sb="0" shadow="yes" size="12" resizetoscreen="yes" />
+            <scrollbar arrowup="Up Arrow" arrowdown="Down Arrow" arrowsize="8" width="15"  border="no"/>
+            <highlight resource="Highlight" />
+            <columns height="20">
+                <column width="148" >
+                    <widget name="" factory="pawsTextBox"></widget>
+                </column>
+            </columns>
+        </widget>
+
+        <widget name="bdesc" factory="pawsMultiLineTextBox"  >
+            <frame x="380" y="145" width="350" height="100" border="no" />
+            <font name="LiberationSans-Regular.ttf" r="255" g="255" b="255" sr="0" sg="0" sb="0" shadow="yes" size="12" />
+            <text string="Select event that happend on your birthday" />
+        </widget>
+
+        <!-- For Childhood activity -->
+        <widget name="text" factory="pawsTextBox" >
+            <frame x="100" y="245" width="110" height="30" />
+            <font name="cupandtalon.ttf" r="255" g="255" b="255" sr="0" sg="0" sb="0" shadow="yes" size="18" resizetoscreen="yes" />
+            <text string="Activity:" />
+        </widget>
+
+        <widget name="activity" factory="pawsListBox" id="2" >
+            <frame x="100" y="270" width="220" height="91" border="no" />
+            <font name="LiberationSans-Regular.ttf" r="255" g="255" b="255" sr="0" sg="0" sb="0" shadow="yes" size="12" resizetoscreen="yes" />
+            <scrollbar arrowup="Up Arrow" arrowdown="Down Arrow" arrowsize="8" width="15"  border="no"/>
+            <highlight resource="Highlight" />
+            <columns height="20">
+                <column width="151" >
+                    <widget name="" factory="pawsTextBox"></widget>
+                </column>
+            </columns>
+        </widget>
+        <widget name="adesc" factory="pawsMultiLineTextBox"  >
+            <frame x="380" y="270" width="350" height="100" border="no" />
+            <font name="LiberationSans-Regular.ttf" r="255" g="255" b="255" sr="0" sg="0" sb="0" shadow="yes" size="12" />
+            <text string="Select your childhood game" />
+        </widget>
+
+        <!-- For house -->
+        <widget name="text" factory="pawsTextBox" >
+            <frame x="100" y="375" width="110" height="30" />
+            <font name="cupandtalon.ttf" r="255" g="255" b="255" sr="0" sg="0" sb="0" shadow="yes" size="18" resizetoscreen="yes" />
+            <text string="House:" />
+        </widget>
+
+        <widget name="house" factory="pawsListBox" id="3">
+            <frame x="100" y="400" width="220" height="91" border="no" />
+            <font name="LiberationSans-Regular.ttf" r="255" g="255" b="255" sr="0" sg="0" sb="0" shadow="yes" size="12" resizetoscreen="yes" />
+            <scrollbar arrowup="Up Arrow" arrowdown="Down Arrow" arrowsize="8" width="15"  border="no"/>
+            <highlight resource="Highlight" />
+            <columns height="20">
+                <column width="153" >
+                    <widget name="" factory="pawsTextBox"></widget>
+                </column>
+            </columns>
+        </widget>
+
+        <widget name="hdesc" factory="pawsMultiLineTextBox"  >
+            <frame x="380" y="400" width="350" height="100" border="no" />
+            <font name="LiberationSans-Regular.ttf" r="255" g="255" b="255" sr="0" sg="0" sb="0" shadow="yes" size="12" />
+            <text string="Select your childhood home" />
+        </widget>
+
+        <!-- Navigation Buttons -->
+        <widget name="navBar" factory="pawsWidget">
+            <frame x="30" y="550" width="740" height="40" />
+            <font name="scurlock.ttf" r="255" g="255" b="255" sr="0" sg="0" sb="0" shadow="no" size="16" resizetoscreen="yes" />
+
+            <widget name="BackButton" factory="pawsButton" id="6000">
+                <frame x="110" y="0" width="100" height="40" />
+                <label text="Prev"/>
+                <bgimage resource="buttonDefault" />
+            </widget>
+
+            <!-- Randomize button -->
+            <widget name="randomize" factory="pawsButton">
+                <frame x="306" y="0" width="130" height="40" />
+                <label text="Randomize"/>
+                <bgimage resource="buttonBrown" />
+            </widget>
+
+            <widget name="NextButton" factory="pawsButton" id="5000">
+                <frame x="520" y="0" width="100" height="40" />
+                <label text="Next" />
+                <bgimage resource="buttonDefault" />
+            </widget>
+        </widget>
+
+    </widget>
+
+</widget_description>

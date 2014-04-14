@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<library>
+    <textures>
+        <texture name="bubble">
+            <file>/this/art/effects/chat_bubble.png</file>
+        </texture>
+    </textures>
+    <materials>
+        <material name="bubble">
+            <texture>bubble</texture>
+        </material>
+    </materials>
+    <addon plugin="PSEffects">
+        <effect name="chatbubble">
+            <anchor type="basic" name="pos">
+                <dir>none</dir>
+            </anchor>
+
+            <obj type="text2d" fontsize="10" font="/planeshift/data/ttf/LiberationSans-Regular.ttf" name="text" align="top">
+                <priority>alpha</priority>
+                <mixmode>copy</mixmode>
+                <attach>pos</attach>
+                <death>7000</death>
+                <background material="bubble">
+                    <elem align="top-left"     umin="0"   vmin="0"  umax="22"  vmax="22" />
+                    <elem align="top"          umin="22"  vmin="0"  umax="105" vmax="22" tile="true" />
+                    <elem align="top-right"    umin="105" vmin="0"  umax="127" vmax="22" />
+                    
+                    <elem align="left"         umin="0"   vmin="22" umax="22"  vmax="72" tile="true" />
+                    <elem align="center"       umin="22"  vmin="22" umax="105" vmax="72" />
+                    <elem align="right"        umin="105" vmin="22" umax="127" vmax="72" tile="true" />
+
+                    <elem align="bottom-left"  umin="0"   vmin="72" umax="22"  vmax="92" />
+                    <elem align="bottom"       umin="22"  vmin="72" umax="105" vmax="92" tile="true" />
+                    <elem align="bottom-right" umin="105" vmin="72" umax="127" vmax="92" />
+
+                    <elem align="bottom" umin="7" vmin="99" umax="30" vmax="126" scale="false" offsetx="-7" />
+                </background>
+<!--
+                <keyFrame time="0">
+                    <action name="alpha" value="150" />
+                </keyFrame>
+-->
+            </obj>
+        </effect>
+    </addon>
+</library>
+

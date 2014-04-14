@@ -1,0 +1,122 @@
+@PlaneShift Team at Arcane Chrysalis 0.5.9.2 Release (released October 2012)
+
+&Project Leader, Director
+
+Luca "Talad" Pancallo, for building a great team to make a dream come true, and continuous leadership for 11 years.
+
+
+&The pillars
+
+Stefano "weltall" Angeleri, for leadership in the engine side, addition of many new features and constant improvement of the game, lot of testing and the loan of his personal hardware as test server.
+
+Jerome "Tuux" Ornech, for spells effects and textures, environment sounds, spells sounds, creatures sounds, nice videos and good french accent.
+
+
+&Client and Server engine
+
+Stefano "weltall" Angeleri, for leadership in the engine side, addition of many new features and constant improvement of the game, lot of testing and the loan of his personal hardware as test server.
+
+Andrea "Lucubro" Rizzi, for the implementation of musical instruments and score, plus other sound engine fixes.
+
+Andrew "Acraig" Craig, for client gui foundation, char creation screens, equipment, inventory, overall coordination ...
+
+Michael "Xordan" Gist, for a new updater system and game launcher, a background loader, graphical enhancements, many performance improvements and more...
+
+Anders "Magodra" Reggestad, for magic system implementation, NPC AI, tribes and a lot more.
+
+Matthieu "RlyDontKnow" Kraus, for NPC navigation mesh, particle effects, shaders knowledge, and light improvements
+
+Daniel "Kalaspuffar" Persson, for the 0.5.9 updater.
+
+&Settings
+
+Giacomo "drJack" Mariani, for his leadership in the setting department, the wizard quests, overall background ideas, and factions.
+
+Mordaan, for bug fixing many quests, spellchecking and work on quest chains.
+
+Venalan, for bug fixing many quests, spellchecking and work on quest chains.
+
+Jay "Hanix" Glenn, for quest writing, testing, tutorial rewrites, and content review.
+
+
+&2D Art
+
+Sergios "Cale" Daskarolis, for the models and textures of new hydlaa plaza and new items.
+
+Christophe "Nynn" Lehay, for player skins, robes, items, and more.
+
+Christof "Kinea" Hagedorn, for players and monsters textures.
+
+Jerome "Tuux" Ornech, for spells effects and textures.
+
+&3D Art
+
+Cale, for the models and coordination of new hydlaa plaza and many other items.
+
+Arco "Arcooo" Mul, for rigging and level modeling.
+
+Christophe "Nynn" Lehay, for player skins, robes, items, and more.
+
+Joel "Xoel" McLeay, for the modeling of Dsar Kore and Ojaveda guild.
+
+Jerome "Tuux" Ornech, for new wands geometry and textures.
+
+&Music and sounds
+
+Jerome "Tuux" Ornech, for environment sounds, spells sounds, creatures sounds, nice videos and good french accent.
+
+Video Symphony team, for the great contributions of sounds and voiceovers.
+
+Ruslan "Ellarion" Perezhilo, for travel songs, death jingles and lot of nice sounds.
+
+Jiri "GeorgeD" Ptacek, for death realm song, victory jingles and lot of nice sounds.
+
+Bruno "CyberMozart" Largarde, for the main theme, intro songs and battle theme.
+
+&Game Masters
+
+Jay "Hanix" Glenn, for his work as GM Team Leader
+
+Sarva for the constant presence in game, support of our events, and coordination of GM activities
+
+The GM Team: Daxa, Dohmo, Durgrem, Janner, Marathal, Norra, Rhumdor, Taulus, Veluriane, Venalan, Zeetra and Zordian for holding events, answering petitions, testing and more ...
+
+&Rules
+
+Davide "eonwind" Vescovini, for extensive work on crafting rules, in particular alchemy and herbalism.
+
+Stefan "Stelanso" Landgraf, for NPC paths, waypoints, progression and more.
+
+G. "Ravna" Hofstee, for rewriting part of the new webconsole and keeping it up to date.
+
+
+&Testing Team
+
+Mario "LigH" Rohkrämer, for reporting and testing many art bugs, and work on bug prevention.
+
+Frédéric "f-rd" Delcorso, for testing many bugs and making even weird ones reproducible.
+
+Bas "Lanarel" van den Broek, for helping out with many issues, fixing and closing many bugs.
+
+
+@Special Thanks to
+
+Marc Haseinko, for providing a 99.9% reliable internal server.
+
+
+@Very Special Thanks to
+
+Jorrit Tyberghein, for his great 3D engine (Crystal Space), for the continuous and passionate support to our team, quaternions and other e=mc2 things.
+
+Frank "res" Richter, from Crystal Space team, for continuous support on lighting, performances and stability.
+
+Caronet (www.caro.net), Subhosting (www.subhosting.net) for providing the necessary hardware and bandwidth.
+
+All the former developers for their work and contributions to PlaneShift.
+
+.... and to all our players, fans and supporters!
+
+@Be sure to read the other credits files in docs directory to have a full list of developers of previous releases.
+
+Sonora font is used with permission of the author: Christian Texier (christian.texier.pagespro-orange.fr)
+Thanks to Kevin Budd for providing the flute sounds.

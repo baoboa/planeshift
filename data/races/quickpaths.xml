@@ -1,0 +1,90 @@
+<paths>
+	<path name="Street Warrior" info="The street warrior is a fighter who relies on physical strength as well as his agility and skills to find a way out of any situation. A street warrior knows how to handle a sword as well as a lockpick and, most of all, he knows when to fight and when to flee." parents="Your dad is the helping hand at the local blacksmith and your mom is a servant at the local tavern." life="You mostly grew up on your own as both your parents worked long hours, fending for yourself you learned to be street smart.">
+		<StatBonus name="Strength" value="0.35" />
+		<StatBonus name="Endurance" value="0.25" />
+		<StatBonus name="Agility" value="0.25" />
+		<StatBonus name="Intelligence" value="0.05" />
+		<StatBonus name="Will" value="0.05" />
+		<StatBonus name="Charisma" value="0.05" />
+		<SkillBonus name="Mace &amp; Hammer" rank="5" />
+		<SkillBonus name="Axe" rank="5" />
+		<SkillBonus name="Light Armor" rank="5" />
+		<SkillBonus name="Body Development" rank="5" />
+		<SkillBonus name="Mining" rank="5" />
+		<SkillBonus name="Metallurgy" rank="5" />
+		<Advantage name="Hard Skin" />
+	</path>
+	<path name="Enchanter" info="The enchanter is a pure wizard. She devotes herself to the study of the highest forms of magic, the kind of energies correlated to the light, the mind, and the very dweomer. Of course, every citizen has to learn a little about defending themselves as well." parents="Both parents work at the inn that they own." life="Your fascination with magic started at an early age, when you hang around various way masters.">
+		<StatBonus name="Strength" value="0" />
+		<StatBonus name="Endurance" value="0" />
+		<StatBonus name="Agility" value="0.25" />
+		<StatBonus name="Intelligence" value="0.35" />
+		<StatBonus name="Will" value="0.30" />
+		<StatBonus name="Charisma" value="0.10" />
+		<SkillBonus name="Knives &amp; Daggers" rank="5" />
+		<SkillBonus name="Crystal Way" rank="5" />
+		<SkillBonus name="Azure Way" rank="5" />
+		<SkillBonus name="Red Way" rank="5" />
+		<SkillBonus name="Herbal" rank="5" />
+		<SkillBonus name="Alchemy" rank="5" />
+		<Advantage name="Danger Awareness" />
+	</path>
+	<path name="Fighting Monk" info="The monks in Yliakum follow the teachings of the Ahrijani,ancient sages and philosophers that have reached the perfect consciousness and control of mind, body and spirit. Fighting monks are experts in using meditation as a deadly weapon to enhance strength and defend themselves, a friend or a helpless one from peril." parents="Your dad is a tanner and your mom works at the local bakery." life="Finding yourself an outcast from the rest of the neighbourhood kids, you spent most of your time reading and talking to the town elders.">
+		<StatBonus name="Strength" value="0.20" />
+		<StatBonus name="Endurance" value="0.20" />
+		<StatBonus name="Agility" value="0.20" />
+		<StatBonus name="Intelligence" value="0.10" />
+		<StatBonus name="Will" value="0.30" />
+		<StatBonus name="Charisma" value="0" />
+		<SkillBonus name="Melee" rank="10" />
+		<SkillBonus name="Light Armor" rank="5" />
+		<SkillBonus name="Body Development" rank="10" />
+		<SkillBonus name="Harvesting" rank="5" />
+		<SkillBonus name="Fishing" rank="5" />
+		<Advantage name="Poison Resistance" />
+	</path>
+	<path name="Warlock" info="The warlock is a combatant mage. His task is to win battles and wars with metal and magic. Most warlocks try to follow both the way of fighting and the way of glyphs, but only a few of them achieve this goal." parents="Your dad is a guard at your hometown and your mom is an embroider working from home." life="Stories from your dad's expeditions awakened your thirst for combat. In your late teens, you saw a magic tournament, which sparked the ambition to combine normal fighting with magic use.">
+		<StatBonus name="Strength" value="0.15" />
+		<StatBonus name="Endurance" value="0.15" />
+		<StatBonus name="Agility" value="0.20" />
+		<StatBonus name="Intelligence" value="0.20" />
+		<StatBonus name="Will" value="0.15" />
+		<StatBonus name="Charisma" value="0.15" />
+		<SkillBonus name="Sword" rank="10" />
+		<SkillBonus name="Light Armor" rank="5" />
+		<SkillBonus name="Brown Way" rank="10" />
+		<SkillBonus name="Blue Way" rank="5" />
+		<SkillBonus name="Repair Weapons" rank="5" />
+		<Advantage name="Ambidexterity" />
+	</path>
+	<path name="Knight" info="Knights are warriors at the service of someone else, either the master of a guild, a vigesimi or even an octarch. The difference between a heavily armored man-at-arm and a knight is a knight's loyalty; it's as strong as crystal, and his master can safely rely on him because the oath of a knight will never be broken as long as he remains a knight." parents="Your dad owns the local merchant store and your mom is a housewife." life="Coming from a religious up bringing, you value honour and respect. Your word is all you have.">
+		<StatBonus name="Strength" value="0.40" />
+		<StatBonus name="Endurance" value="0.40" />
+		<StatBonus name="Agility" value="0.10" />
+		<StatBonus name="Intelligence" value="0" />
+		<StatBonus name="Will" value="0" />
+		<StatBonus name="Charisma" value="0.10" />
+		<SkillBonus name="Sword" rank="10" />
+		<SkillBonus name="Medium Armor" rank="5" />
+		<SkillBonus name="Shield Handling" rank="5" />
+		<SkillBonus name="Body Development" rank="5" />
+		<SkillBonus name="Repair Weapons" rank="5" />
+		<SkillBonus name="Repair Armors" rank="5" />
+		<Advantage name="Fearless" />
+	</path>
+	<path name="Rogue" info="Rogues and thieves rely on agility and quickness to win through many situations. Their skills in subterfuge and camouflage are a secret weapon to find new ways of completing quests and making money. But they are also very skilled in herbs, potions, gems, poisons and small weapons. Using brain over brawn, they can often become popular in society and well-known for specialized skills. The profession has nothing to do with moral belief and values; many rogues have never stolen a single penny." parents="Your dad is a miner and your mom works in the local library." life="Growing up in a house where strong moral values were imposed upon you, you vowed to break free from the rules and live your life as you decide.">
+		<StatBonus name="Strength" value="0.20" />
+		<StatBonus name="Endurance" value="0.10" />
+		<StatBonus name="Agility" value="0.40" />
+		<StatBonus name="Intelligence" value="0.10" />
+		<StatBonus name="Will" value="0.10" />
+		<StatBonus name="Charisma" value="0.10" />
+		<SkillBonus name="Knives &amp; Daggers" rank="5" />
+		<SkillBonus name="Ranged" rank="10" />
+		<SkillBonus name="Light Armor" rank="5" />
+		<SkillBonus name="Dark Way" rank="5" />
+		<SkillBonus name="Lockpicking" rank="5" />
+		<SkillBonus name="Repair Weapons" rank="5" />
+		<Advantage name="Lucky" />
+	</path>
+</paths>

@@ -1,0 +1,301 @@
+<widget_description>
+
+<widget name="ConfigKeysTree" factory="pawsSeqTreeNode" visible="yes"
+        savepositions="no" movable="no" resizable="no" style="New Standard GUI" >
+     <frame x="5" y="5" width="433" height="294" border="no" />
+     <bgimage resource="Scaling Widget Background" />
+
+    <!-- subtree for visibility selection-->
+    <widget factory="pawsSeqTreeNode" name = "rootNode">
+        <widget factory="pawsWidgetTreeNode" name="ShowEntityNode">
+            <nodewidget>
+                <widget factory="pawsTextBox" name="Show entity label">
+                    <frame x="0" y="0" width="100" height="20" border="no" />
+                    <text string="Labels visibility"/>
+                </widget>
+            </nodewidget>
+            <widget factory="pawsSeqTreeNode" name="Creatures">
+                <nodewidget>
+                    <widget factory="pawsTextBox" name="ShowCreaturesLabel">
+                        <frame x="0" y="5" width="60" height="20" border="no" />
+                        <text string="Creatures"/>
+                    </widget>
+<!-- I have no clue yet, why listbox in combo, placed in the tree don't show-->
+<!--                    <widget name="visCreatures" factory="pawsComboBox" >-->
+<!--                        <listbox rows="3" height="20" text="Always" />-->
+<!--                        <frame x="225" y="0" width="100" height="25" border="no" />-->
+<!--                    </widget>-->
+                    <widget name="CreaturesRG" factory="pawsRadioButtonGroup">
+                        <radio on="radioon" off="radiooff" size="16"/>
+                        <frame x="0" y="0" width="380" height="25" />
+                        <radionode name="always" id="100">
+                            <text string="Always" position="right" />
+                            <frame x="55" y="0" width="75" height="25" />
+                        </radionode>
+                        <radionode name="mouse" id="101">
+                            <text string="On Mouse" position="right" />
+                            <frame x="130" y="0" width="95" height="25" />
+                        </radionode>
+                        <radionode name="target" id="102">
+                            <text string="On Target" position="right" />
+                            <frame x="225" y="0" width="95" height="25" />
+                        </radionode>
+                        <radionode name="never" id="103">
+                            <text string="Never" position="right" />
+                            <frame x="310" y="0" width="80" height="25" />
+                        </radionode>
+                    </widget>
+                </nodewidget>
+                <attr name="type" value="visibility"/>
+            </widget>
+            <widget factory="pawsSeqTreeNode" name="Items">
+                <nodewidget>
+                    <widget factory="pawsTextBox" name="ShowItemsLabel">
+                        <frame x="0" y="5" width="80" height="20" border="no" />
+                        <text string="Items"/>
+                    </widget>
+<!--                    <widget name="visItems" factory="pawsComboBox" >-->
+<!--                        <listbox rows="3" height="20" text="Always" />-->
+<!--                        <frame x="225" y="0" width="100" height="25" border="no" />-->
+<!--                    </widget>-->
+
+                    <widget name="ItemsRG" factory="pawsRadioButtonGroup">
+                        <radio on="radioon" off="radiooff" size="16"/>
+                        <frame x="0" y="0" width="380" height="25" />
+                        <radionode name="always" id="103">
+                            <text string="Always" position="right" />
+                            <frame x="55" y="0" width="75" height="25" />
+                        </radionode>
+                        <radionode name="mouse" id="104">
+                            <text string="On Mouse" position="right" />
+                            <frame x="130" y="0" width="95" height="25" />
+                        </radionode>
+                        <radionode name="target" id="105">
+                            <text string="On Target" position="right" />
+                            <frame x="225" y="0" width="95" height="25" />
+                        </radionode>
+                        <radionode name="never" id="106">
+                            <text string="Never" position="right" />
+                            <frame x="310" y="0" width="80" height="25" />
+                        </radionode>
+                    </widget>
+                </nodewidget>
+                <attr name="type" value="visibility"/>
+            </widget>
+            <widget factory="pawsSeqTreeNode" name="Guild label visible">
+                <nodewidget>
+                    <widget name="visGuild" factory="pawsCheckBox" id="100">
+                        <frame x="0" y="0" width="112" height="25"/>
+                        <text string="Show guild" position="left"/>
+                    </widget>
+                </nodewidget>
+                <attr name="type" value="guild"/>
+            </widget>
+        </widget>
+
+        <!-- subtree for color selection-->
+
+        <widget factory="pawsWidgetTreeNode" name="ColorNode">
+            <nodewidget>
+                <widget factory="pawsTextBox" name="ColorLabel">
+                    <frame x="0" y="0" width="100" height="25" border="no" />
+                    <text string="Colors"/>
+                </widget>
+            </nodewidget>
+            <widget factory="pawsSeqTreeNode" name="Default">
+                <nodewidget>
+                    <widget factory="pawsTextBox" name="DefaultColorLabel">
+                        <frame x="0" y="4" width="250" height="25" border="no" />
+                        <text string="Items"/>
+                    </widget>
+                    <widget factory="pawsButton" name="DefDefColorBtn" id="10">
+                        <bgimage resource="Scaling Button" />
+                        <frame x="240" y="4" width="60" height="15"/>
+                        <label text="Default" />
+                    </widget>
+                    <widget factory="pawsButton" name="DefColorBtn" id="0">
+                        <bgimage resource="Scaling Button" />
+                        <frame x="305" y="4" width="30" height="15"/>
+                        <label text="Set" />
+                    </widget>
+                </nodewidget>
+                <attr name="type" value="color"/>
+            </widget>
+            <widget factory="pawsSeqTreeNode" name="Players">
+                <nodewidget>
+                    <widget factory="pawsTextBox" name="PlayerColorLabel">
+                        <frame x="0" y="4" width="250" height="25" border="no" />
+                        <text string="Players"/>
+                    </widget>
+                    <widget factory="pawsButton" name="DefPlayerColorBtn" id="11">
+                        <bgimage resource="Scaling Button" />
+                        <frame x="240" y="4" width="60" height="15"/>
+                        <label text="Default" />
+                    </widget>
+                    <widget factory="pawsButton" name="PlayerColorBtn" id="1">
+                        <bgimage resource="Scaling Button" />
+                        <frame x="305" y="4" width="30" height="15"/>
+                        <label text="Set" />
+                    </widget>
+                </nodewidget>
+                <attr name="type" value="color"/>
+            </widget>
+            <widget factory="pawsSeqTreeNode" name="NPC">
+                <nodewidget>
+                    <widget factory="pawsTextBox" name="NPCColorLabel">
+                        <frame x="0" y="4" width="250" height="25" border="no" />
+                        <text string="NPC"/>
+                    </widget>
+                    <widget factory="pawsButton" name="DefNPCColorBtn" id="12">
+                        <bgimage resource="Scaling Button" />
+                        <frame x="240" y="4" width="60" height="15"/>
+                        <label text="Default" />
+                    </widget>
+                    <widget factory="pawsButton" name="NPCColorBtn" id="2">
+                        <bgimage resource="Scaling Button" />
+                        <frame x="305" y="4" width="30" height="15"/>
+                        <label text="Set" />
+                    </widget>
+                </nodewidget>
+                <attr name="type" value="color"/>
+            </widget>
+            <widget factory="pawsSeqTreeNode" name="Dead body">
+                <nodewidget>
+                    <widget factory="pawsTextBox" name="DeadColorLabel">
+                        <frame x="0" y="4" width="250" height="25" border="no" />
+                        <text string="Dead body"/>
+                    </widget>
+                    <widget factory="pawsButton" name="DefDeadColorBtn" id="13">
+                        <bgimage resource="Scaling Button" />
+                        <frame x="240" y="4" width="60" height="15"/>
+                        <label text="Default" />
+                    </widget>
+                    <widget factory="pawsButton" name="DeadColorBtn" id="3">
+                        <bgimage resource="Scaling Button" />
+                        <frame x="305" y="4" width="30" height="15"/>
+                        <label text="Set" />
+                    </widget>
+                </nodewidget>
+                <attr name="type" value="color"/>
+            </widget>
+            <widget factory="pawsSeqTreeNode" name="Testers">
+                <nodewidget>
+                    <widget factory="pawsTextBox" name="TestersColorLabel">
+                        <frame x="0" y="4" width="250" height="25" border="no" />
+                        <text string="Testers"/>
+                    </widget>
+                    <widget factory="pawsButton" name="DefTestColorBtn" id="14">
+                        <bgimage resource="Scaling Button" />
+                        <frame x="240" y="4" width="60" height="15"/>
+                        <label text="Default" />
+                    </widget>
+                    <widget factory="pawsButton" name="TestColorBtn" id="4">
+                        <bgimage resource="Scaling Button" />
+                        <frame x="305" y="4" width="30" height="15"/>
+                        <label text="Set" />
+                    </widget>
+                </nodewidget>
+                <attr name="type" value="color"/>
+            </widget>
+            <widget factory="pawsSeqTreeNode" name="GM 1">
+                <nodewidget>
+                    <widget factory="pawsTextBox" name="GM1ColorLabel">
+                        <frame x="0" y="4" width="250" height="25" border="no" />
+                        <text string="GM 1"/>
+                    </widget>
+                    <widget factory="pawsButton" name="DefGM1ColorBtn" id="15">
+                        <bgimage resource="Scaling Button" />
+                        <frame x="240" y="4" width="60" height="15"/>
+                        <label text="Default" />
+                    </widget>
+                    <widget factory="pawsButton" name="GM1ColorBtn" id="5">
+                        <bgimage resource="Scaling Button" />
+                        <frame x="305" y="4" width="30" height="15"/>
+                        <label text="Set" />
+                    </widget>
+                </nodewidget>
+                <attr name="type" value="color"/>
+            </widget>
+            <widget factory="pawsSeqTreeNode" name="GM 2-5">
+                <nodewidget>
+                    <widget factory="pawsTextBox" name="GM25ColorLabel">
+                        <frame x="0" y="4" width="250" height="25" border="no" />
+                        <text string="GM 2-5"/>
+                    </widget>
+                    <widget factory="pawsButton" name="DefGM25ColorBtn" id="16">
+                        <bgimage resource="Scaling Button" />
+                        <frame x="240" y="4" width="60" height="15"/>
+                        <label text="Default" />
+                    </widget>
+                    <widget factory="pawsButton" name="GM25ColorBtn" id="6">
+                        <bgimage resource="Scaling Button" />
+                        <frame x="305" y="4" width="30" height="15"/>
+                        <label text="Set" />
+                    </widget>
+                </nodewidget>
+                <attr name="type" value="color"/>
+            </widget>
+            <widget factory="pawsSeqTreeNode" name="Developer">
+                <nodewidget>
+                    <widget factory="pawsTextBox" name="DevColorLabel">
+                        <frame x="0" y="4" width="250" height="25" border="no" />
+                        <text string="Developers"/>
+                    </widget>
+                    <widget factory="pawsButton" name="DefDevColorBtn" id="17">
+                        <bgimage resource="Scaling Button" />
+                        <frame x="240" y="4" width="60" height="15"/>
+                        <label text="Default" />
+                    </widget>
+                    <widget factory="pawsButton" name="DevColorBtn" id="7">
+                        <bgimage resource="Scaling Button" />
+                        <frame x="305" y="4" width="30" height="15"/>
+                        <label text="Set" />
+                    </widget>
+                </nodewidget>
+                <attr name="type" value="color"/>
+            </widget>
+            <widget factory="pawsSeqTreeNode" name="Grouped with you">
+                <nodewidget>
+                    <widget factory="pawsTextBox" name="GroupColorLabel">
+                        <frame x="0" y="4" width="250" height="25" border="no" />
+                        <text string="Grouped with you"/>
+                    </widget>
+                    <widget factory="pawsButton" name="DefGrpColorBtn" id="18">
+                        <bgimage resource="Scaling Button" />
+                        <frame x="240" y="4" width="60" height="15"/>
+                        <label text="Default" />
+                    </widget>
+                    <widget factory="pawsButton" name="GrpColorBtn" id="8">
+                        <bgimage resource="Scaling Button" />
+                        <frame x="305" y="4" width="30" height="15"/>
+                        <label text="Set" />
+                    </widget>
+                </nodewidget>
+                <attr name="type" value="color"/>
+            </widget>
+            <widget factory="pawsSeqTreeNode" name="Grouped with you and the same guild">
+                <nodewidget>
+                    <widget factory="pawsTextBox" name="GuildColorLabel">
+                        <frame x="0" y="4" width="250" height="25" border="no" />
+                        <text string="Grouped with you and the same guild"/>
+                    </widget>
+                    <widget factory="pawsButton" name="DefGldColorBtn" id="19">
+                        <bgimage resource="Scaling Button" />
+                        <frame x="240" y="4" width="60" height="15"/>
+                        <label text="Default" />
+                    </widget>
+                    <widget factory="pawsButton" name="GldColorBtn" id="9">
+                        <bgimage resource="Scaling Button" />
+                        <frame x="305" y="4" width="30" height="15"/>
+                        <label text="Set" />
+                    </widget>
+                </nodewidget>
+                <attr name="type" value="color"/>
+            </widget>
+        </widget>
+    </widget>
+
+</widget>
+
+</widget_description>
+

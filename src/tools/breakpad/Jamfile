@@ -1,0 +1,42 @@
+SubDir TOP src tools breakpad ;
+if $(REPORTER)
+{
+  if $(TARGET.OS) = "WIN32"
+  {
+    Library breakpad :
+     [ Wildcard common windows : *.cc *.h ]
+     [ Wildcard client windows crash_generation : *.cc *.h ]
+     [ Wildcard client windows handler : *.cc *.h ]
+     [ Wildcard client windows sender : *.cc *.h ]
+     [ Wildcard client windows common : *.h ]
+    ;
+    MsvcDefine breakpad : UNICODE _UNICODE ;
+  }
+
+  if $(TARGET.OS) = "MACOS_X"
+  {
+      Library breakpad :
+       [ Wildcard client mac handler : *.cc ]
+       [ Wildcard client mac crash_generation : *.cc ]
+      ;
+  }
+
+  if $(TARGET.OS) != "WIN32"
+  {
+    if $(TARGET.OS) != "MACOS_X"
+    {
+      ObjectHdrs google_crash_report_sender.cc : $(TOP)/src/tools/breakpad/common/linux/ ;
+      Library breakpad :
+       [ Wildcard common : *.cc *.c ]
+       [ Wildcard common linux : *.cc ]
+       [ Wildcard client : *.cc ]
+       [ Wildcard client linux handler : *.cc ]
+       [ Wildcard client linux minidump_writer : *.cc ]
+       [ Wildcard client linux crash_generation : *.cc ]
+       [ Wildcard client linux log : *.cc ]
+       [ Wildcard third_party curl : *.cc ]
+       [ Wildcard third_party lss : *.cc ]
+      ;
+    }
+  }
+}

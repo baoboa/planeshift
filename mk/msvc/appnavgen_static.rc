@@ -1,0 +1,40 @@
+// This file is generated automatically.
+
+
+1 VERSIONINFO
+FILEVERSION 0,6,1,0
+PRODUCTVERSION 0,6,1,0
+#ifdef CS_DEBUG
+FILEFLAGS 0x1
+#else
+FILEFLAGS 0x0
+#endif
+{
+  BLOCK "StringFileInfo"
+  {
+    BLOCK "040904E4"
+    {
+      VALUE "ProductName", "PlaneShift a 3d MMORPG"
+      VALUE "ProductVersion", "0.6.1"
+      VALUE "FileVersion", "0.6.1"
+      VALUE "LegalCopyright", "Copyright (C)2001-2013 Atomic Blue"
+      VALUE "FileDescription", "navgen_static"
+#ifdef CS_DEBUG
+      VALUE "Comments", "Debug build"
+#else
+      VALUE "Comments", "Release build"
+#endif
+      VALUE "WWW", "http://www.planeshift.it/"
+    }
+  }
+  BLOCK "VarFileInfo"
+  {
+      VALUE "Translation", 0x409, 1200
+  }
+
+}
+// This file is generated automatically.
+
+#if !defined(PROJECTGEN_VERSION) || (PROJECTGEN_VERSION < 8)
+1 24 "appnavgen_static.manifest"
+#endif

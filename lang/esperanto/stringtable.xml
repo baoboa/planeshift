@@ -1,0 +1,486 @@
+<Author text="tomjames" />
+<StringTable>
+    <item orig="750" trans="750" />
+    <item orig="System text color" trans="Tekstokoloro de sistemo" />
+    <item orig="Put an item up for sale or offer to buy something." trans="Vendi ion aŭ oferti aĉeti ion" />
+    <item orig="Stats" trans="Statistikeroj" />
+    <item orig="Admin text color" trans="Tekstokoloro de administrado" />
+    <item orig="Allow spawning item with missing mesh" trans="Permesi generiĝado sen maŝo" />
+    <item orig="Desc" trans="Priskribaĵo" />
+    <item orig="!!!WARNING!!!" trans="!!!AVERTO!!!" />
+    <item orig="Others' attacks (Successful ones)" trans="Atakoj fare de aliuloj (sukcesaj)" />
+    <item orig="Own attacks that missed the target" trans="Propraj atakoj kiuj maltrafis la celon" />
+    <item orig="Graphics" trans="Grafikaĵo" />
+    <item orig="Loading GUI" trans="Ŝarĝas GUI" />
+    <item orig="Can I join you ?" trans="Ĉu mi rajtas akompani vin?" />
+    <item orig="server" trans="servilo" />
+    <item orig="CHILDHOOD" trans="INFANAĜO" />
+    <item orig="LIFE EVENTS" trans="VIV-EVENTOJ" />
+    <item orig="SL" trans="SL" />
+    <item orig="Buy" trans="Aĉeti" />
+    <item orig="Guild message of the day (A short message):" trans="Mesaĝo de la tago de la gildo (mallonga mesaĝo):" />
+    <item orig="Modifiers" trans="Modifiloj" />
+    <item orig="Actions sounds" trans="Ag-sonoj" />
+    <item orig="Randomize" trans="Hazardigi" />
+    <item orig="Create alliance" trans="Krei aliancon" />
+    <item orig="Third Person Lara" trans="Tria persona Lara" />
+    <item orig="Disband" trans="Disbandiĝi" />
+    <item orig="Edit" trans="Redakti" />
+    <item orig="System" trans="Sistemo" />
+    <item orig="Load" trans="Ŝarĝi" />
+    <item orig="Buffs" trans="Helpoj" />
+    <item orig="Stack Count" trans="Stak-kalkulo" />
+    <item orig="Talk to people in your sector." trans="Paroli al homoj en via sektoro" />
+    <item orig="Factions:" trans="Frakcioj" />
+    <item orig="Paths" trans="Vojoj" />
+    <item orig="male " trans="maskla " />
+    <item orig="Petitions are waiting." trans="Peticioj atendas" />
+    <item orig="Active" trans="Aktiva" />
+    <item orig="Creatures:" trans="Vivantaĵoj" />
+    <item orig="View" trans="Vidi" />
+    <item orig="PATHS" trans="VOJOJ" />
+    <item orig="Shadows" trans="Ombroj" />
+    <item orig="Unclaim" trans="Malpretendi" />
+    <item orig="Server:" trans="Servilo" />
+    <item orig="Exit PlaneShift" trans="Eliri PlaneShift" />
+    <item orig="Enable Shadows" trans="Ebligi ombrojn" />
+    <item orig="Escalation Level:" trans="Nivelo" />
+    <item orig="Notify when members login/logout" trans="Sciigi kiam membroj ensalutas/elsalutas" />
+    <item orig="Talk to someone privately." trans="Paroli al iu private" />
+    <item orig="Magic Skills List:" trans="Listo de magio-lertecoj" />
+    <item orig="House:" trans="Domo:" />
+    <item orig="System Base" trans="Sistema bazo" />
+    <item orig="Withdraw" trans="Ĉerpi" />
+    <item orig="%s from %s: %s" trans="%s de %s: %s" />
+    <item orig="%s from %s: %s" trans="%s de %s: %s" />
+    <item orig="Instant Cast" trans="Sorĉi tuj" />
+    <item orig="H:" trans="H:" />
+    <item orig="Amount available to withdraw" trans="Kvanto ĉerpebla" />
+    <item orig="Adaptive distance" trans="Adaptema distanco" />
+    <item orig="Ban" trans="Bloki" />
+    <item orig="Third Person M64" trans="Tria persona M64" />
+    <item orig="Interface Volume" trans="Laŭteco de la interfaco" />
+    <item orig="Edit points" trans="Redakti poentojn" />
+    <item orig="Points" trans="Poentoj" />
+    <item orig="Coins to exchange:" trans="Interŝanĝeblaj moneroj" />
+    <item orig="Are you sure you want to discard the selected quest?" trans="Ĉu vi certas ke vi volas forlasi la elektitan aventuron?" />
+    <item orig="PvP" trans="PvP" />
+    <item orig="landscape" trans="Pejzaĝo" />
+    <item orig="Type:" trans="Speco:" />
+    <item orig="Time: " trans="Horo:" />
+    <item orig="Voices Volume" trans="Laŭteco de voĉoj" />
+    <item orig="Exchange coins" trans="Interŝanĝi monerojn" />
+    <item orig="Log the system messages" trans="Registri sistemajn mesaĝojn" />
+    <item orig="Free Movement" trans="Libera moviĝado" />
+    <item orig="Hostility" trans="Atakemo" />
+    <item orig="Auction" trans="Aŭkcio" />
+    <item orig="Account User Name:" trans="Salutnomo de konto:" />
+    <item orig="You currently have no petitions." trans="Vi nun ne havas peticiojn" />
+    <item orig="Attributes" trans="Atributoj" />
+    <item orig="You will now ignore %s." trans="Vi nun ignoras %s" />
+    <item orig="Study" trans="Studi" />
+    <item orig="Private notes" trans="Privataj notoj" />
+    <item orig="Change name" trans="Ŝanĝi nomon" />
+    <item orig="Getting Characters" trans="Ricevas rolulojn" />
+    <item orig="Main tab" trans="Ĉeftabo" />
+    <item orig="Unknown command" trans="Nekonata komando" />
+    <item orig="Others' attacks that missed the target" trans="Atakoj fare de aliuloj kiuj maltrafis la celon" />
+    <item orig="Min. FPS:" trans="Minimuma FPS" />
+    <item orig="Main" trans="Ĉefa" />
+    <item orig="Change" trans="Ŝanĝi" />
+    <item orig="Descalate" trans="Malleviĝi" />
+    <item orig="Mother Name:" trans="Nomo de patrino:" />
+    <item orig="Privil." trans="Privilegio" />
+    <item orig="Skin Colour" trans="Haŭtkoloro" />
+    <item orig="Master:" trans="Mastro:" />
+    <item orig="Details" trans="Detaloj" />
+    <item orig="Collision Detection" trans="Detektado de kolizioj" />
+    <item orig="Max. FPS:" trans="Maksimuma FPS" />
+    <item orig="Prev" trans="Antaŭa" />
+    <item orig="No Petitions" trans="Neniom da peticioj" />
+    <item orig="Requesting connection" trans="Petas konekton" />
+    <item orig="Prv notes" trans="Notoj" />
+    <item orig="Reload Cache" trans="Reŝarĝi kaŝmemoro" />
+    <item orig="Amount available to deposit" trans="Kvanto deponebla" />
+    <item orig="Movements" trans="Moviĝoj" />
+    <item orig="Mesh:" trans="Maŝo:" />
+    <item orig="Resolution" trans="Distingivo" />
+    <item orig="Refresh MOTD" trans="Aktualigi MOTD" />
+    <item orig="Gender:" trans="Sekso:" />
+    <item orig="Login" trans="Ensaluti" />
+    <item orig="Z:" trans="Z:" />
+    <item orig="Spell Description:" trans="Priskribo de sorĉo:" />
+    <item orig="Petition Info" trans="Informaĵo pri peticio" />
+    <item orig="%s has invited you to join a group. Click Yes to accept or No to reject." trans="%s invitis vin aliĝi al grupo. Alklaku Jes por akcepti aŭ Ne por malakcepti." />
+    <item orig="You must select a petition from the list in order to cancel it." trans="Vi devas elekti peticion en la listo por nuligi ĝin." />
+    <item orig="Alliance" trans="Alianco" />
+    <item orig="Dynamic Follow" trans="Dinamika postirado" />
+    <item orig="Full Mesh" trans="Plena maŝo" />
+    <item orig="I am leaving" trans="Mi foriras" />
+    <item orig="List:" trans="Listo:" />
+    <item orig="LOGIN" trans="ENSALUTI" />
+    <item orig="Remove" trans="Elpreni" />
+    <item orig="Action:" trans="Ago:" />
+    <item orig="Never tired" trans="Neniam lacas" />
+    <item orig="Do you really wish to leave Yliakum?" trans="Ĉu vi vere volas foriri de Yliakum?" />
+    <item orig="Count" trans="Kalkulo" />
+    <item orig="Enter the command(s):" trans="Entajpu la komando(j)n:" />
+    <item orig="Chat" trans="Babili" />
+    <item orig="Month:" trans="Monato:" />
+    <item orig="Mute on focus loss" trans="Mutigi kiam fokuso malaperas" />
+    <item orig="Father Name:" trans="Nomo de patro:" />
+    <item orig="Rank" trans="Rango" />
+    <item orig="Spawn item" trans="Generi ion" />
+    <item orig="o&clock" trans="Horo" />
+    <item orig="Give Kill Experience" trans="Doni mortigo-sperton" />
+    <item orig="Own combat stance changes" trans="Propraj ŝanĝoj de batal-pozo" />
+    <item orig="You see a " trans="Vi vidas " />
+    <item orig="Experience" trans="Sperto" />
+    <item orig="Upload!" trans="Alŝutu!" />
+    <item orig="Deposit" trans="Deponi" />
+    <item orig="? Weight" trans="? Pezo" />
+    <item orig="No Target" trans="Neniu celo" />
+    <item orig="Tria" trans="Tria" />
+    <item orig="Group text color" trans="Tekstokoloro de grupo" />
+    <item orig="No Petitions." trans="Neniom da peticioj" />
+    <item orig="New" trans="Nova" />
+    <item orig="Mute sounds on focus loss" trans="Mutigi sonojn kiam fokuso malaperas" />
+    <item orig="Add Linked" trans="Aldoni ligitaĵon" />
+    <item orig="keyboard" trans="klavaro" />
+    <item orig="Activity:" trans="Agado:" />
+    <item orig="You have been assigned to the selected petition." trans="Vi estis asignita al la elektita peticio." />
+    <item orig="Combat" trans="Batalado" />
+    <item orig="Path" trans="Vojo" />
+    <item orig="Kill Player" trans="Mortigi ludanton" />
+    <item orig="%s says: %s" trans="%s diras: %s" />
+    <item orig="Are you sure you want to upload your character?" trans="Ĉu vi certas ke vi volas alŝuti vian rolulon?" />
+    <item orig="Own attacks that fail to penetrate the armor" trans="Propraj atakoj kiuj malsukcesas penetri la kirason" />
+    <item orig="Magic" trans="Magio" />
+    <item orig="Get Reward" trans="Akiri rekompencon" />
+    <item orig="Credits" trans="Kreditoj" />
+    <item orig="details" trans="detaloj" />
+    <item orig="HP" trans="HP" />
+    <item orig="You have entered edit mode." trans="Vi eniris redakto-reĝimon." />
+    <item orig="%s shouts: %s" trans="%s krias: %" />
+    <item orig="No server running at the moment" trans="Neniu servilo nun funkcias" />
+    <item orig="CHARACTER CREATION" trans="KREADO DE ROLULO" />
+    <item orig="Alliance:" trans="Alianco:" />
+    <item orig="Glyphs" trans="Signobildoj" />
+    <item orig="Various Skill description:" trans="Priskribo de lerteco" />
+    <item orig="100%" trans="100%" />
+    <item orig="Edit level" trans="Redakti nivelon" />
+    <item orig="Leave" trans="Foriri" />
+    <item orig="Capacity:" trans="Kapacito:" />
+    <item orig="Debuffs" trans="Malhelpoj" />
+    <item orig="You have ignored the following players:" trans="Vi ignoris la jenajn ludantojn:" />
+    <item orig="Items:" trans="Aĵoj:" />
+    <item orig="Others' attacks that fail to penetrate the armor" trans="Atakoj fare de aliuloj kiuj malsukcesas penetri la kirason" />
+    <item orig="Admin" trans="Administrado" />
+    <item orig=" in front of you named " trans=" antaŭ vi nomata " />
+    <item orig="mouse" trans="muso" />
+    <item orig="Various Skills List:" trans="Listo de diversaj lertecoj:" />
+    <item orig="Stats description:" trans="Priskribo de statistikeroj:" />
+    <item orig="Lets go !" trans="Ni iru!" />
+    <item orig="Account:" trans="Konto:" />
+    <item orig="%s %s" trans="%s %s" />
+    <item orig="Trias" trans="Trias" />
+    <item orig="General" trans="Generalo" />
+    <item orig="Password:" trans="Pasvorto:" />
+    <item orig="Life" trans="Vivo" />
+    <item orig="female " trans="ina " />
+    <item orig="Currently, there are no petitions." trans="Nun estas neniom da peticioj." />
+    <item orig="Set" trans="Agordi" />
+    <item orig="Actions Volume" trans="Laŭteco de agoj" />
+    <item orig="Quest Testing" trans="Testado de aventuro" />
+    <item orig="Year:" trans="Jaro:" />
+    <item orig="Save" trans="Konservi" />
+    <item orig="Promote" trans="Promocii" />
+    <item orig="Combat Skills" trans="Batal-lertecoj" />
+    <item orig="Apply to all" trans="Apliki al ĉiuj" />
+    <item orig="Polygon:" trans="Poligono:" />
+    <item orig="Talk to everyone in your guild privately." trans="Paroli al ĉiuj en via gildo private." />
+    <item orig="Others' attacks that are dodged" trans="Atakoj fare de aliuloj kiuj estas evititaj" />
+    <item orig="Combat music" trans="Batal-muziko" />
+    <item orig="Own attacks (Successful ones)" trans="Propraj atakoj (sukcesaj)" />
+    <item orig="The selected petition was cancelled." trans="La elektita peticio estis nuligita." />
+    <item orig="Welcome back" trans="Rebonvenon" />
+    <item orig="You are ignoring all replies from that person." trans="Vi ignoras ĉiujn respondojn de tiu persono" />
+    <item orig="Description:" trans="Priskribo:" />
+    <item orig="Chat text color" trans="Tekstokoloro de babilado" />
+    <item orig="Cancel" trans="Nuligi" />
+    <item orig="None" trans="Neniom" />
+    <item orig="Trade" trans="Interŝanĝi" />
+    <item orig="Game Control" trans="Ludo-stirado" />
+    <item orig="Mainchat brackets" trans="Krampoj de ĉefbabilado" />
+    <item orig="Progression Points" trans="Progres-punktoj" />
+    <item orig="Faction" trans="Frakcio" />
+    <item orig="You have ignored no-one." trans="Vi ignoris neniun." />
+    <item orig="NPC text color" trans="Tekstokoloro de NPC" />
+    <item orig="%s tells group: %s" trans="%s diras al grupo: %s" />
+    <item orig="Quick" trans="Rapida" />
+    <item orig="Public notes" trans="Publikaj notoj" />
+    <item orig="Confirmation" trans="Konfirmo" />
+    <item orig="Master Volume" trans="Ĉef-laŭteco" />
+    <item orig="Withdraw and Deposit" trans="Ĉerpi kaj deponi" />
+    <item orig="Labels" trans="Etikedoj" />
+    <item orig="Upload" trans="Alŝuti" />
+    <item orig="Exchange" trans="Interŝanĝi" />
+    <item orig="Combat Skills List:" trans="Listo de batal-lertecoj:" />
+    <item orig="tweaks" trans="agordoj" />
+    <item orig="Confirmation upon PvP duel:" trans="Konfirmo je duelo PvP" />
+    <item orig="Voices" trans="Voĉoj" />
+    <item orig="Petition text:" trans="Teksto de peticio:" />
+    <item orig="Secret guild" trans="Sekreta gildo" />
+    <item orig="List Attributes" trans="Listigi atributojn" />
+    <item orig="OOC" trans="OOC" />
+    <item orig="Claim" trans="Pretendi" />
+    <item orig="Radius:" trans="Radiuso:" />
+    <item orig="CC" trans="CC" />
+    <item orig="0" trans="0" />
+    <item orig="disabled" trans="malŝaltita" />
+    <item orig="Tells" trans="Diras" />
+    <item orig="Manage petitions to help users." trans="Administri peticojn por helpi uzantojn." />
+    <item orig="No Fall Damage" trans="Ne damaĝiĝi je falo" />
+    <item orig="Communication" trans="Komunikiĝado" />
+    <item orig="Cannot connect to server" trans="Ne povas konektiĝi al servilo" />
+    <item orig="Your text color" trans="Via tekstokoloro" />
+    <item orig="1" trans="1" />
+    <item orig="Invisible" trans="Nevidebla" />
+    <item orig="CHARACTER SELECT" trans="ELEKTO DE ROLULO" />
+    <item orig="Pickupable" trans="Prenebla" />
+    <item orig="Detail information:" trans="Informaĵo pri detalo:" />
+    <item orig="You will no longer ignore %s." trans="Vi jam ne ignoras %s." />
+    <item orig="Others' combat stance changes" trans="Ŝanĝoj de batal-pozo fare de aliuloj" />
+    <item orig="Ambiguous command: " trans="Ambigua komando" />
+    <item orig="The selected petition was %s" trans="La elektita peticio estis %s" />
+    <item orig="Loading game" trans="Ŝarĝas ludon" />
+    <item orig="Invite" trans="Inviti" />
+    <item orig="Use Collision Detection" trans="Uzi detekadon de kolizioj" />
+    <item orig="New petition from " trans="Nova peticio de " />
+    <item orig="Sector:" trans="Sektoro:" />
+    <item orig="Mix yourtext color" trans="Miksi vian tekstokoloron" />
+    <item orig="Max. Transparency:" trans="Maksimuma travidebleco" />
+    <item orig="Permissions" trans="Permesoj" />
+    <item orig="X:" trans="X:" />
+    <item orig="5" trans="5" />
+    <item orig="Make leader" trans="Estrigi" />
+    <item orig="Money" trans="Mono" />
+    <item orig="Guild" trans="Gildo" />
+    <item orig="0 Trias" trans="0 Trias" />
+    <item orig="Parents" trans="Gepatroj" />
+    <item orig="Jobs" trans="Taskoj" />
+    <item orig="Chat - Bubbles" trans="Babilado - Vezikoj" />
+    <item orig="DescOC" trans="Priskribo OC" />
+    <item orig="Welcome to PlaneShift!" trans="Bonvenon al PlaneShift!" />
+    <item orig="Delete" trans="Forviŝi" />
+    <item orig="Entities" trans="Entoj" />
+    <item orig="Auction text color" trans="Tekstokoloro de aŭkcio" />
+    <item orig="Hello" trans="Saluton" />
+    <item orig="You're offered" trans="Al vi estas ofertita" />
+    <item orig="Hi" trans="Saluton" />
+    <item orig="Own attacks that are dodged" trans="Propraj atakoj kiuj estas evititaj" />
+    <item orig="Done" trans="Finis" />
+    <item orig="Birth" trans="Naskiĝo" />
+    <item orig="Keys" trans="Ŝlosiloj" />
+    <item orig="Faction description:" trans="Priskribo de frakcio:" />
+    <item orig="Perform an action see by people in your vicinity." trans="Fari agon videblan de homoj en via najbaraĵo" />
+    <item orig="Reload" trans="Reŝarĝi" />
+    <item orig="Players" trans="Ludantoj" />
+    <item orig="Phys Stam." trans="Fizika eltenipovo" />
+    <item orig="Stats:" trans="Statistikeroj:" />
+    <item orig="NPC" trans="NPC" />
+    <item orig="Music Volume" trans="Laŭteco de muziko" />
+    <item orig="Defend me !" trans="Defendu min!" />
+    <item orig="Spell List:" trans="Sorĉlisto:" />
+    <item orig="FPS cap:" trans="Maksimuma FPS:" />
+    <item orig="Tell text color" trans="Tekstokoloro de diroj" />
+    <item orig="CP: 0" trans="CP: 0" />
+    <item orig="BIRTH" trans="NASKIĜO" />
+    <item orig="Unmute Player" trans="Malmutigi ludanton" />
+    <item orig="Online only" trans="Nur enreta" />
+    <item orig="Pub notes" trans="Publikaj notoj" />
+    <item orig="Edit Master" trans="Redakti ĉefaĵon" />
+    <item orig="Amount to deposit" trans="Kvanto por deponi" />
+    <item orig="Join Game" trans="Aliĝi al ludo" />
+    <item orig="Locked" trans="Ŝlosita" />
+    <item orig="Account Password:" trans="Pasvorto de konto:" />
+    <item orig="Items" trans="Aĵoj" />
+    <item orig="Factions" trans="Frakcioj" />
+    <item orig="Weight:" trans="Pezo:" />
+    <item orig="Petition submitted:" trans="Peticio submetita" />
+    <item orig="Men Stam." trans="Mensa eltenipovo" />
+    <item orig="Requesting World" trans="Petas mondon" />
+    <item orig="Group" trans="Grupo" />
+    <item orig="Help text color" trans="Tekstokoloro de helpo" />
+    <item orig="Face" trans="Vizaĝo" />
+    <item orig="OK" trans="Bone" />
+    <item orig="First Person" trans="Unua persono" />
+    <item orig="Selection" trans="Elektaĵo" />
+    <item orig="?" trans="?" />
+    <item orig="Fade Speed:" trans="Fadrapideco:" />
+    <item orig="Trigger:" trans="Baskulo:" />
+    <item orig="Refresh List" trans="Aktualigi liston" />
+    <item orig="Character Name" trans="Nomo de rolulo" />
+    <item orig="Kick Player" trans="Elĵeti ludanton" />
+    <item orig="Filter incoming bad words" trans="Filtri malbonajn envenantajn vortojn" />
+    <item orig="Skill" trans="Lerteco" />
+    <item orig="You must be assigned to a petition in order to close it." trans="Vi devas esti asignita al peticio por fermi ĝin." />
+    <item orig="You must be assigned to a petition in order to cancel it." trans="Vi devas esti asignita al peticio por nuligi ĝin." />
+    <item orig="The selected petition has been escalated." trans="La elektita peticio estis plialtigita." />
+    <item orig="Your notes:" trans="Viaj notoj:" />
+    <item orig="Rotate" trans="Rotacii" />
+    <item orig="Birth Event:" trans="Naskiĝ-evento:" />
+    <item orig="Describe the petition and how you've helped" trans="Priskribu la peticion kaj kiel vi helpis:" />
+    <item orig="Character description:" trans="Priskribo de rolulo" />
+    <item orig="No" trans="Ne" />
+    <item orig="Combat messages regarding me" trans="Batal-mesaĝoj koncerne min" />
+    <item orig="Player name:" trans="Nomo de ludanto:" />
+    <item orig="Mouse" trans="Muso" />
+    <item orig="Position:" trans="Pozicio" />
+    <item orig="Help" trans="Helpo" />
+    <item orig="View chat" trans="Vidi babiladon" />
+    <item orig="Min. distance:" trans="Minimuma distanco:" />
+    <item orig="Quit" trans="Eliri" />
+    <item orig="Lockpicking" trans="Ŝlosilrompado" />
+    <item orig="models" trans="modeloj" />
+    <item orig="Siblings" trans="Gefratoj" />
+    <item orig="Camera" trans="Kamerao" />
+    <item orig="Remember password" trans="Memori pasvorton" />
+    <item orig="Third Person Follow" trans="Sekvado de tria persono" />
+    <item orig="Character Name:" trans="Nomo de rolulo:" />
+    <item orig="Day:" trans="Tago:" />
+    <item orig="This window is what people will read when they click on you; this box is not to be filled with anything other than things that a person could reasonably perceive with their senses. There is no reason to include anything beyond what one can sense when looking at your character. While sensual detail ONLY is to be included, this does not mean that you should be sparing, please include as many appeals to the senses as your character clearly eminates that can be sensed with the five accepted senses (sight, touch, hearing and smell (being primary)(only list taste if you anticipate people tasting your character)). If you are on the non rp server: Not only can you disregard the above, but you are encouraged to include epic descriptions of all sorts, quote great authors and even recite your own unpublished novels with no limitation whatsoever." trans="Oni vidas ĉi tiun fenestron kiam li alklakas vin; ne metu ĉi tien ion ajn kion oni ne povus percepti per siaj sentoj. Ne estas kialo inkludi ion kion oni ne povus senti kiam rigardanta vian rolulon. Dum estu inkluditaj nur senteblaj aferoj, ne estu ŝparema. Bonvolu inkludi plene tiom da aferoj kiom via rolulo montras, kaj estas senteblaj per la kvin sentoj (vido, tuŝo, aŭdo kaj flaro estas precipaj. Inkludu gustumon nur se vi pensas ke oni iel gustumos vian rolulon.) Se vi uzas servilon ne-RP, ignoru la ĉi-suprajn aferojn. Ni kuraĝigas vin inkludi ĉiajn epikajn priskribojn, citu bonegajn aŭtorojn kaj eĉ reciti viajn proprajn neeldonitajn romanojn kun nepre neniuj limigoj." />
+    <item orig="Clear" trans="Klarigi" />
+    <item orig="Next" trans="Daŭrigi" />
+    <item orig="Stat" trans="Statistikero" />
+    <item orig="Min. Transparency:" trans="Minimuma travidebleco" />
+    <item orig="Enabled" trans="Ebligita" />
+    <item orig="%s tells you: %s" trans="%s diras al vi: %s" />
+    <item orig="D:" trans="D:" />
+    <item orig="Jobs Skill description:" trans="Priskribo de task-lerteco" />
+    <item orig="Mana" trans="Manao" />
+    <item orig="Yes" trans="Jes" />
+    <item orig="Reset" trans="Rekomencigi" />
+    <item orig="Interface sounds" trans="Sonoj de interfaco" />
+    <item orig="Here you can place any OOC information except to advertise companies, products, or services from the real world. To disable this feature delete everything in the window by using the Modify Description button." trans="Ĉi tien vi povas meti OOC-an informaĵon. Estas malpermesata reklami kompaniojn, produktojn, aŭ servojn de la reala mondo. Por malaktivigi ĉi tiun trajton, forviŝu ĉion en la fenestro per uzo de la butono Modifi Priskribon." />
+    <item orig="Talk to your group privately." trans="Paroli al via grupo private." />
+    <item orig="Own attacks that are blocked" trans="Propraj atakoj kiuj estas evititaj" />
+    <item orig="Religion:" trans="Religio:" />
+    <item orig="Add Petition" trans="Aldoni peticion" />
+    <item orig="You can not ignore yourself." trans="Vi ne povas ignori vin mem." />
+    <item orig="Members" trans="Membroj" />
+    <item orig="List all of the petitions you have submitted." trans="Listo de ĉiuj peticioj kiujn vi submetis." />
+    <item orig="Settings" trans="Agordoj" />
+    <item orig="You must select a petition from the list in order to assign yourself." trans="Vi devas elekti peticion en la listo por asigni vin." />
+    <item orig="Count:" trans="Kalkulo:" />
+    <item orig="Back" trans="Returnen" />
+    <item orig="graphics" trans="grafiko" />
+    <item orig="You tell %s: %s" trans="Vi diras al %s: %s" />
+    <item orig="Add New" trans="Aldoni novan" />
+    <item orig="Infinite Inventory" trans="Senfina inventaro" />
+    <item orig="Lose focus on send" trans="Perdi fokuson je sendo" />
+    <item orig="Hair Style" trans="Harstilo" />
+    <item orig="Flashing" trans="Ekbrilado" />
+    <item orig="Char Name" trans="Nomo de rolulo" />
+    <item orig="New Character" trans="Nova rolulo" />
+    <item orig="Magic Skill description:" trans="Priskribo de magiolerteco" />
+    <item orig="M:" trans="M:" />
+    <item orig="Infinite Mana" trans="Senfina manao" />
+    <item orig="Status:" trans="Stato:" />
+    <item orig="Teleport To Player" trans="Teleporti al ludanto" />
+    <item orig="Add" trans="Aldoni" />
+    <item orig="PARENTS" trans="GEPATROJ" />
+    <item orig="Petition Text:" trans="Teksto de peticio:" />
+    <item orig="Invincible" trans="Nevenkebla" />
+    <item orig="You're offering" trans="Vi ofertas" />
+    <item orig="Jobs Skills List:" trans="Listo de task-lertecoj" />
+    <item orig="Magic Skills" trans="Magiolertecoj" />
+    <item orig="Combat messages regarding others" trans="Batalmesaĝoj koncerne aliulojn" />
+    <item orig="Actions" trans="Agoj" />
+    <item orig="Chat - Filters" trans="Babilado - Filtroj" />
+    <item orig="Amount to withdraw" trans="Kvanto ĉerpenda" />
+    <item orig="Others' attacks that are blocked" trans="Atakoj de aliuloj kiuj estas evititaj" />
+    <item orig="Talk to the people in your immediate vicinity." trans="Paroli al la homoj en via tuja najbaraĵo" />
+    <item orig="Player name color" trans="Koloro de nomo de ludanto" />
+    <item orig="Random name" trans="Hazarda nomo" />
+    <item orig="Couldn't resolve server hostname." trans="Ne povis trovi nomon de servilo." />
+    <item orig="Escalate" trans="Plialtigi" />
+    <item orig="30" trans="30" />
+    <item orig="Various Skills" trans="Diversaj lertecoj" />
+    <item orig="Events" trans="Eventoj" />
+    <item orig="Trias:" trans="Trias:" />
+    <item orig="Auto Tab selection:" trans="Aŭtomata tab-elektado:" />
+    <item orig="Chat - Tabs" trans="Babilado - Taboj" />
+    <item orig="Makes the server log what target player is saying." trans="Igas la servilon registri diritaĵojn de la ludanto." />
+    <item orig="New Account" trans="Nova konto" />
+    <item orig="Beard Style" trans="Barbstilo" />
+    <item orig="Mute Player" trans="Mutigi ludanton" />
+    <item orig="Shortcut key:" trans="Klavkomando:" />
+    <item orig="Controls" trans="Regiloj" />
+    <item orig="Name:" trans="Nomo:" />
+    <item orig="Discard" trans="Malkonservi" />
+    <item orig="Y:" trans="Y:" />
+    <item orig="Servers:" trans="Serviloj:" />
+    <item orig="Join" trans="Aliĝi" />
+    <item orig="The selected petition isn't Open." trans="La elektita peticio ne estas malfermita." />
+    <item orig="Assigned GM:" trans="Asignita GM:" />
+    <item orig="Lockable" trans="Ŝlosebla" />
+    <item orig="Distance:" trans="Distanco:" />
+    <item orig="Echo screen text" trans="Ripeti ekranotekston" />
+    <item orig="Loading world" trans="Ŝarĝas mondon" />
+    <item orig="New User? Register at http://www.planeshift.it/account/create" trans="Nova ludanto? Registru ĉe http://www.planeshift.it/account/create" />
+    <item orig="Quests" trans="Aventuroj" />
+    <item orig="Please wait for verification from server" trans="Bonvolu atendi konfirmon de la servilo" />
+    <item orig="Scale Font:" trans="Skali tiparon" />
+    <item orig="o'clock" trans="Horo" />
+    <item orig="You must select a petition from the list in order to close it." trans="Vi devas elekti peticion en la listo por fermi ĝin." />
+    <item orig="Name" trans="Nomo" />
+    <item orig="Getting entities" trans="Akiras entojn" />
+    <item orig="You must select a petition from the list in order to escalate it." trans="Vi devas elekti peticion en la listo por plialtigi ĝin." />
+    <item orig="Custom" trans="Tajlorita" />
+    <item orig="Sound" trans="Sono" />
+    <item orig="Background music" trans="Fonmuziko" />
+    <item orig="Uncompleted" trans="Nefinita" />
+    <item orig="Petitons are waiting." trans="Peticioj atendas." />
+    <item orig="Completed" trans="Finita" />
+    ?<item orig="none" trans="neniuj" />
+    <item orig="Alternates" trans="Alternativoj" />
+    <item orig="Save MOTD" trans="Konservi MOTD" />
+    <item orig="network" trans="reto" />
+    <item orig="Interface" trans="Interfaco" />
+    <item orig="Loop background music" trans="Muziko iteracias" />
+    <item orig="Shout text color" trans="Krii tekstokoloron" />
+    <item orig="Log the chat messages" trans="Registri babilmesaĝojn" />
+    <item orig="Filter outgoing bad words" trans="Filtri malbonajn senditajn vortojn" />
+    <item orig="Realm" trans="Regno" />
+    <item orig="cancelled." trans="nuligita." />
+    <item orig="closed." trans="fermita." />
+    <item orig="Waiting on server data.." trans="Atendas datumojn de la servilo.." />
+    <item orig="View all" trans="Vidi ĉiujn" />
+    <item orig="Unknown Chat Type: %d" trans="Nekonata babilspeco:" />
+    <item orig="/ 100" trans="/ 100" />
+    <item orig="Free Rotation" trans="Libera rotaciado" />
+    <item orig="Actual FPS may vary." trans="Vera FPS eble varios." />
+    <item orig="You must select a petition from the list in order to view it." trans="Vi devas elekti peticion en la listo por vidi ĝin." />
+    <item orig="Spells" trans="Sorĉoj" />
+    <item orig="Shortcuts" trans="Klavkomandoj" />
+    <item orig="Guild text color" trans="Tekstokoloro de gildo" />
+    <item orig="Random" trans="Hazarda" />
+    <item orig="Job:" trans="Tasko:" />
+    <item orig="You have been deassigned from the selected petition." trans="Vi estis malasignita de la elektita peticio." />
+    <item orig="Ok" trans="Bone" />
+    <item orig="Sell" trans="Vendi" />
+    <item orig="Way" trans="Vojo" />
+    <item orig="controls" trans="regiloj" />
+    <item orig="Close" trans="Fermi" />
+    <item orig="Website:" trans="Retpaĝaro:" />
+    <item orig="Various" trans="Diversaj" />
+    <item orig="Combat Skill description:" trans="Priskribo de batal-lerteco" />
+    <item orig="Ambient sounds" trans="Ĉirkaŭaj sonoj" />
+    <item orig="Please re-login" trans="Bonvolu re-ensaluti" />
+    <item orig="Fading:" trans="Fadado:" />
+    <item orig="Greetings" trans="Saluton" />
+    <item orig="Select a reward:" trans="Elektu rekompencon:" />
+    <item orig="Ambient Volume" trans="Ĉirkaŭa laŭteco" />
+    <item orig="Hair Colour" trans="Harkoloro" />
+</StringTable>

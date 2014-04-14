@@ -1,0 +1,293 @@
+<widget_description>
+
+    <widget name="BankWindow" factory="pawsBankWindow" visible="no" savepositions="no" movable="yes" configurable="no" resizable="no" style="New Standard GUI">
+
+        <frame x="50" y="50" width="235" height="495" border="yes" />
+        <title resource="Scaling Title Bar" text="Banking" align="left" close_button="yes" />
+
+        <widget name="MoneyButton" factory="pawsButton" id="1000" tooltip="Money depositing and withdrawal" style="Standard Tab" >
+            <frame x="3" y="0" width="66" height="20"/>
+            <label text="Money" />
+        </widget>
+
+        <widget name="AdminButton" factory="pawsButton" id="1002" tooltip="Administrative banking" style="Standard Tab">
+            <frame x="167" y="0" width="66"  height="20"/>
+            <label text="Admin" />
+        </widget>
+
+        <widget name="MoneyWindow" factory="pawsWidget" id="1100" visible="no" savepositions="no" movable="no" configurable="no" resizable="no">
+            <frame x="1" y="21" width="235" height="475" />
+
+            <widget name="Money" factory="pawsTextBox" >
+                <frame x="15" y="5" width="200" height="20" border="no" />
+                <text string="Withdraw and Deposit" horizAdjust="CENTRE" />
+            </widget>
+
+
+    <!-- Withdraw -->
+
+        <widget name="AvailableToWithdraw" factory="pawsTextBox" >
+            <frame x="12" y="25" width="200" height="20" border="no" />
+            <text string="Amount available to withdraw" horizAdjust="CENTRE" />
+        </widget>
+
+        <widget name="CirclesCanWithdraw" factory="pawsTextBox" >
+            <frame x="25" y="43" width="35" height="15" border="no" />
+        </widget>
+
+        <widget name="OctasCanWithdraw" factory="pawsTextBox" >
+            <frame x="75" y="43" width="35" height="15" border="no" />
+        </widget>
+
+        <widget name="HexasCanWithdraw" factory="pawsTextBox" >
+            <frame x="125" y="43" width="35" height="15" border="no" />
+        </widget>
+
+        <widget name="TriasCanWithdraw" factory="pawsTextBox" >
+            <frame x="170" y="43" width="35" height="15" border="no" />
+        </widget>
+
+        <widget name="CirclesImage" factory="pawsWidget" tooltip="Circles available to withdraw." >
+            <frame x="25" y="56" width="30" height="30" border="no" />
+            <bgimage resource="MoneyCircles" />
+        </widget>
+
+        <widget name="OctasImage" factory="pawsWidget" tooltip="Octas available to withdraw." >
+            <frame x="75" y="56" width="28" height="28" border="no" />
+            <bgimage resource="MoneyOctas" />
+        </widget>
+
+        <widget name="HexasImage" factory="pawsWidget" tooltip="Hexas available to withdraw." >
+            <frame x="125" y="56" width="30" height="30" border="no" />
+            <bgimage resource="MoneyHexas" />
+        </widget>
+
+        <widget name="TraisImage" factory="pawsWidget" tooltip="Trias available to withdraw." >
+            <frame x="170" y="56" width="30" height="30" border="no" />
+            <bgimage resource="MoneyTrias" />
+        </widget>
+
+        <widget name="WantToWithdraw" factory="pawsTextBox" >
+            <frame x="10" y="80" width="200" height="20" border="no" />
+            <text string="Amount to withdraw" horizAdjust="CENTRE" />
+        </widget>
+
+        <widget name="CirclesToWithdraw" factory="pawsEditTextBox" tooltip="The number of circles you wish to withdraw." alwaysontop="true" >
+            <frame x="40" y="100" width="30" height="15" border="no" />
+        </widget>
+        <widget name="CirclesImage" factory="pawsWidget" >
+            <frame x="40" y="105" width="30" height="30" border="no" />
+            <bgimage resource="MoneyCircles" />
+        </widget>
+        <widget name="OctasToWithdraw" factory="pawsEditTextBox" tooltip="The number of octas you wish to withdraw." alwaysontop="true">
+            <frame x="80" y="100" width="30" height="15" border="no" />
+        </widget>
+        <widget name="OctasImage" factory="pawsWidget" >
+            <frame x="80" y="105" width="30" height="30" border="no" />
+            <bgimage resource="MoneyOctas" />
+        </widget>
+
+        <widget name="HexasToWithdraw" factory="pawsEditTextBox" tooltip="The number of hexas you wish to withdraw." alwaysontop="true" >
+            <frame x="120" y="100" width="30" height="15" border="no" />
+        </widget>
+        <widget name="HexasImage" factory="pawsWidget" >
+            <frame x="120" y="105" width="30" height="30" border="no" />
+            <bgimage resource="MoneyHexas" />
+        </widget>
+
+        <widget name="TriasToWithdraw" factory="pawsEditTextBox" tooltip="The number of trias you wish to withdraw." alwaysontop="true">
+            <frame x="160" y="100" width="30" height="15" border="no" />
+        </widget>
+        <widget name="TriasImage" factory="pawsWidget" >
+            <frame x="160" y="105" width="30" height="30" border="no" />
+            <bgimage resource="MoneyTrias" />
+        </widget>
+
+        <widget name="Withdraw" factory="pawsButton" id="1101" tooltip="Withdraw" style="Standard Button">
+            <frame x="85" y="135" width="60" height="20"  />
+            <label text="Withdraw" />
+        </widget>
+
+
+    <!-- Deposit -->
+
+
+        <widget name="AvailableToDeposit" factory="pawsTextBox" >
+        <frame x="13" y="163" width="200" height="20" border="no"/>
+        <text string="Amount available to deposit" horizAdjust="CENTRE" />
+        </widget>
+
+        <widget name="CirclesCanDeposit" factory="pawsTextBox" >
+            <frame x="25" y="185" width="35" height="15" border="no" />
+        </widget>
+        <widget name="CircleImage" factory="pawsWidget" >
+            <frame x="25" y="200" width="30" height="30" border="no" />
+            <bgimage resource="MoneyCircles" />
+        </widget>
+
+        <widget name="OctasCanDeposit" factory="pawsTextBox" >
+            <frame x="75" y="185" width="35" height="15" border="no" />
+        </widget>
+        <widget name="OctasImage" factory="pawsWidget" >
+            <frame x="75" y="200" width="30" height="30" border="no" />
+            <bgimage resource="MoneyOctas" />
+        </widget>
+
+        <widget name="HexasCanDeposit" factory="pawsTextBox" >
+            <frame x="125" y="185" width="35" height="15" border="no" />
+        </widget>
+        <widget name="HexasImage" factory="pawsWidget" >
+            <frame x="125" y="200" width="30" height="30" border="no" />
+            <bgimage resource="MoneyHexas" />
+        </widget>
+
+        <widget name="TriasCanDeposit" factory="pawsTextBox" >
+            <frame x="170" y="185" width="30" height="15" border="no" />
+        </widget>
+        <widget name="TriasImage" factory="pawsWidget" >
+            <frame x="170" y="200" width="35" height="30" border="no" />
+            <bgimage resource="MoneyTrias" />
+        </widget>
+
+
+
+
+        <widget name="WantToDeposit" factory="pawsTextBox" >
+            <frame x="15" y="225" width="200" height="20" border="no" />
+            <text string="Amount to deposit" horizAdjust="CENTRE" />
+        </widget>
+
+        <widget name="CirclesToDeposit" factory="pawsEditTextBox" tooltip="The number of circles you wish to deposit." alwaysontop="true">
+             <frame x="45" y="245" width="30" height="15" border="no" />
+        </widget>
+
+        <widget name="OctasToDeposit" factory="pawsEditTextBox" tooltip="The number of octas you wish to deposit." alwaysontop="true">
+             <frame x="85" y="245" width="30" height="15" border="no" />
+        </widget>
+
+        <widget name="HexasToDeposit" factory="pawsEditTextBox" tooltip="The number of hexas you wish to deposit." alwaysontop="true">
+             <frame x="125" y="245" width="30" height="15" border="no" />
+        </widget>
+
+        <widget name="TriasToDeposit" factory="pawsEditTextBox" tooltip="The number of trias you wish to deposit." alwaysontop="true">
+             <frame x="165" y="245" width="30" height="15" border="no" />
+        </widget>
+
+        <widget name="CirclesImage" factory="pawsWidget" tooltip="Circles available to deposit." >
+            <frame x="45" y="250" width="30" height="30" border="no" />
+            <bgimage resource="MoneyCircles" />
+        </widget>
+
+        <widget name="OctasImage" factory="pawsWidget" >
+            <frame x="86" y="250" width="28" height="28" border="no" />
+            <bgimage resource="MoneyOctas" />
+        </widget>
+
+        <widget name="HexasImage" factory="pawsWidget" >
+            <frame x="125" y="250" width="30" height="30" border="no" />
+            <bgimage resource="MoneyHexas" />
+        </widget>
+
+        <widget name="TriasImage" factory="pawsWidget" >
+            <frame x="165" y="250" width="30" height="30" border="no" />
+            <bgimage resource="MoneyTrias" />
+        </widget>
+
+        <widget name="Deposit" factory="pawsButton" id="1102" tooltip="Deposit" style="Standard Button">
+            <frame x="85" y="280" width="60" height="20" />
+            <label text="Deposit" />
+        </widget>
+
+
+
+    <!-- Exchange -->
+            <widget name="MoneyExchange" factory="pawsTextBox" >
+               <frame x="15" y="320" width="200" height="20" border="no" />
+               <text string="Exchange coins" horizAdjust="CENTRE" />
+            </widget>
+
+            <widget name="MoneyExchangeInfo" factory="pawsTextBox" >
+               <frame x="2" y="345" width="230" height="15" border="no" />
+            </widget>
+
+            <widget name="CirclesCanExchange" factory="pawsTextBox" tooltip="The number of circles that you may exchange." >
+                <frame x="50" y="370" width="30" height="15" border="no" />
+            </widget>
+
+            <widget name="OctasCanExchange" factory="pawsTextBox" tooltip="The number of octas that you may exchange." >
+                <frame x="90" y="370" width="30" height="15" border="no" />
+            </widget>
+
+            <widget name="HexasCanExchange" factory="pawsTextBox" tooltip="The number of hexas that you may exchange." >
+                <frame x="130" y="370" width="30" height="15" border="no" />
+            </widget>
+
+            <widget name="TriasCanExchange" factory="pawsTextBox" tooltip="The number of trias that you may exchange." >
+                <frame x="170" y="370" width="30" height="15" border="no" />
+            </widget>
+
+            <widget name="Circles" factory="pawsRadioButton" id="1104">
+                <frame x="30" y="385" width="45" height="15" />
+                <text string="    " position="right"/>
+                <radio size="10" on="radioon2" off="radiooff2"/>
+            </widget>
+        <widget name="CirclesImage" factory="pawsWidget" >
+            <frame x="45" y="381" width="30" height="30" border="no" />
+            <bgimage resource="MoneyCircles" />
+        </widget>
+
+            <widget name="Octas" factory="pawsRadioButton" id="1105">
+                <frame x="70" y="385" width="45" height="15" />
+                <text string="     " position="right"/>
+                <radio size="10" on="radioon2" off="radiooff2"/>
+            </widget>
+        <widget name="OctasImage" factory="pawsWidget" >
+            <frame x="85" y="381" width="30" height="30" border="no" />
+            <bgimage resource="MoneyOctas" />
+        </widget>
+
+           <widget name="Hexas" factory="pawsRadioButton" id="1106">
+                <frame x="110" y="385" width="45" height="15" />
+                <text string="     " position="right"/>
+                <radio size="10" on="radioon2" off="radiooff2"/>
+            </widget>
+        <widget name="HexasImage" factory="pawsWidget" >
+            <frame x="125" y="381" width="30" height="30" border="no" />
+            <bgimage resource="MoneyHexas" />
+        </widget>
+
+            <widget name="Trias" factory="pawsRadioButton" id="1107">
+                <frame x="150" y="385" width="45" height="15" />
+                <text string="     " position="right"/>
+                <radio size="10" on="radioon2" off="radiooff2"/>
+        </widget>
+        <widget name="TriasImage" factory="pawsWidget" >
+            <frame x="165" y="381" width="30" height="30" border="no" />
+            <bgimage resource="MoneyTrias" />
+        </widget>
+
+        <widget name="CoinNumber" factory="pawsTextBox" style="Header Font">
+        <frame x="28" y="415" width="130" height="20" border="no" />
+        <text string="Coins to exchange:" />
+        </widget>
+
+        <widget name="CoinsToExchange" factory="pawsEditTextBox" tooltip="The number of coins you wish to exchange." >
+        <frame x="168" y="415" width="30" height="20" border="no" />
+        </widget>
+
+        <widget name="Exchange" factory="pawsButton" id="1103" tooltip="Exchange" style="Standard Button">
+        <frame x="85" y="445" width="60" height="20" />
+        <label text="Exchange" />
+        </widget>
+
+
+        </widget>
+
+        <widget name="AdminWindow" factory="pawsWidget" id="1300" visible="no" savepositions="no" movable="no" configurable="no" resizable="no" style="New Standard GUI">
+            <frame x="1" y="21" width="235" height="475" />
+	    <bgimage resource="" />
+        </widget>
+
+    </widget>
+
+</widget_description>

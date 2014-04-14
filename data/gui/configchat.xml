@@ -1,0 +1,180 @@
+<widget_description>
+<widget name="ConfigChatTree" factory="pawsConfigChat"
+        visible="no" savepositions="no" movable="no"
+        resizable="no" style="New Standard GUI">
+    <frame x="225" y="0" width="420" height="320" border="no" />
+    <bgimage resource="Scaling Widget Background" />
+
+            <widget name="systemtext" factory="pawsTextBox">
+                <frame x="10" y="0" width="130" height="20" />
+                <text string="System text color" />
+            </widget>
+            <widget name="systemtextr" factory="pawsEditTextBox"><frame border="yes" x="140" y="0" width="30" height="20" /></widget>
+            <widget name="systemtextg" factory="pawsEditTextBox"><frame border="yes" x="180" y="0" width="30" height="20" /></widget>
+            <widget name="systemtextb" factory="pawsEditTextBox"><frame border="yes" x="220" y="0" width="30" height="20" /></widget>
+
+            <widget name="admintext" factory="pawsTextBox">
+                <frame x="10" y="20" width="130" height="20" />
+                <text string="Admin text color" />
+            </widget>
+            <widget name="admintextr" factory="pawsEditTextBox"><frame border="yes" x="140" y="20" width="30" height="20" /></widget>
+            <widget name="admintextg" factory="pawsEditTextBox"><frame border="yes" x="180" y="20" width="30" height="20" /></widget>
+            <widget name="admintextb" factory="pawsEditTextBox"><frame border="yes" x="220" y="20" width="30" height="20" /></widget>
+
+            <widget name="playernametext" factory="pawsTextBox">
+                <frame x="10" y="40" width="130" height="20" />
+                <text string="Player name color" />
+            </widget>
+            <widget name="playernametextr" factory="pawsEditTextBox"><frame border="yes" x="140" y="40" width="30" height="20" /></widget>
+            <widget name="playernametextg" factory="pawsEditTextBox"><frame border="yes" x="180" y="40" width="30" height="20" /></widget>
+            <widget name="playernametextb" factory="pawsEditTextBox"><frame border="yes" x="220" y="40" width="30" height="20" /></widget>
+
+            <widget name="chattext" factory="pawsTextBox">
+                <frame x="10" y="60" width="130" height="20" />
+                <text string="Chat text color" />
+            </widget>
+            <widget name="chattextr" factory="pawsEditTextBox"><frame border="yes" x="140" y="60" width="30" height="20" /></widget>
+            <widget name="chattextg" factory="pawsEditTextBox"><frame border="yes" x="180" y="60" width="30" height="20" /></widget>
+            <widget name="chattextb" factory="pawsEditTextBox"><frame border="yes" x="220" y="60" width="30" height="20" /></widget>
+
+            <widget name="npctext" factory="pawsTextBox">
+                <frame x="10" y="80" width="130" height="20" />
+                <text string="NPC text color" />
+            </widget>
+            <widget name="npctextr" factory="pawsEditTextBox"><frame border="yes" x="140" y="80" width="30" height="20" /></widget>
+            <widget name="npctextg" factory="pawsEditTextBox"><frame border="yes" x="180" y="80" width="30" height="20" /></widget>
+            <widget name="npctextb" factory="pawsEditTextBox"><frame border="yes" x="220" y="80" width="30" height="20" /></widget>
+
+            <widget name="telltext" factory="pawsTextBox">
+                <frame x="10" y="100" width="130" height="20" />
+                <text string="Tell text color" />
+            </widget>
+            <widget name="telltextr" factory="pawsEditTextBox"><frame border="yes" x="140" y="100" width="30" height="20" /></widget>
+            <widget name="telltextg" factory="pawsEditTextBox"><frame border="yes" x="180" y="100" width="30" height="20" /></widget>
+            <widget name="telltextb" factory="pawsEditTextBox"><frame border="yes" x="220" y="100" width="30" height="20" /></widget>
+
+            <widget name="shouttext" factory="pawsTextBox">
+                <frame x="10" y="120" width="120" height="20" />
+                <text string="Shout text color" />
+            </widget>
+            <widget name="shouttextr" factory="pawsEditTextBox"><frame border="yes" x="140" y="120" width="30" height="20" /></widget>
+            <widget name="shouttextg" factory="pawsEditTextBox"><frame border="yes" x="180" y="120" width="30" height="20" /></widget>
+            <widget name="shouttextb" factory="pawsEditTextBox"><frame border="yes" x="220" y="120" width="30" height="20" /></widget>
+
+            <widget name="guildtext" factory="pawsTextBox">
+                <frame x="10" y="140" width="130" height="20" />
+                <text string="Guild text color" />
+            </widget>
+            <widget name="guildtextr" factory="pawsEditTextBox"><frame border="yes" x="140" y="140" width="30" height="20" /></widget>
+            <widget name="guildtextg" factory="pawsEditTextBox"><frame border="yes" x="180" y="140" width="30" height="20" /></widget>
+            <widget name="guildtextb" factory="pawsEditTextBox"><frame border="yes" x="220" y="140" width="30" height="20" /></widget>
+
+            <widget name="alliancetext" factory="pawsTextBox">
+                <frame x="10" y="160" width="130" height="20" />
+                <text string="Alliance text color" />
+            </widget>
+            <widget name="alliancetextr" factory="pawsEditTextBox"><frame border="yes" x="140" y="160" width="30" height="20" /></widget>
+            <widget name="alliancetextg" factory="pawsEditTextBox"><frame border="yes" x="180" y="160" width="30" height="20" /></widget>
+            <widget name="alliancetextb" factory="pawsEditTextBox"><frame border="yes" x="220" y="160" width="30" height="20" /></widget>
+
+            <widget name="yourtext" factory="pawsTextBox">
+                <frame x="10" y="180" width="130" height="20" />
+                <text string="Your text color" />
+            </widget>
+            <widget name="yourtextr" factory="pawsEditTextBox"><frame border="yes" x="140" y="180" width="30" height="20" /></widget>
+            <widget name="yourtextg" factory="pawsEditTextBox"><frame border="yes" x="180" y="180" width="30" height="20" /></widget>
+            <widget name="yourtextb" factory="pawsEditTextBox"><frame border="yes" x="220" y="180" width="30" height="20" /></widget>
+
+            <widget name="grouptext" factory="pawsTextBox">
+                <frame x="10" y="200" width="130" height="20" />
+                <text string="Group text color" />
+            </widget>
+            <widget name="grouptextr" factory="pawsEditTextBox"><frame border="yes" x="140" y="200" width="30" height="20" /></widget>
+            <widget name="grouptextg" factory="pawsEditTextBox"><frame border="yes" x="180" y="200" width="30" height="20" /></widget>
+            <widget name="grouptextb" factory="pawsEditTextBox"><frame border="yes" x="220" y="200" width="30" height="20" /></widget>
+
+            <widget name="auctiontext" factory="pawsTextBox">
+                <frame x="10" y="220" width="130" height="20" />
+                <text string="Auction text color" />
+            </widget>
+            <widget name="auctiontextr" factory="pawsEditTextBox"><frame border="yes" x="140" y="220" width="30" height="20" /></widget>
+            <widget name="auctiontextg" factory="pawsEditTextBox"><frame border="yes" x="180" y="220" width="30" height="20" /></widget>
+            <widget name="auctiontextb" factory="pawsEditTextBox"><frame border="yes" x="220" y="220" width="30" height="20" /></widget>
+
+           <widget name="helptext" factory="pawsTextBox">
+                <frame x="10" y="240" width="130" height="20" />
+                <text string="Help text color" />
+            </widget>
+            <widget name="helptextr" factory="pawsEditTextBox"><frame border="yes" x="140" y="240" width="30" height="20" /></widget>
+            <widget name="helptextg" factory="pawsEditTextBox"><frame border="yes" x="180" y="240" width="30" height="20" /></widget>
+            <widget name="helptextb" factory="pawsEditTextBox"><frame border="yes" x="220" y="240" width="30" height="20" /></widget>
+
+            <widget name="badwordsincoming" factory="pawsCheckBox">
+                <frame x="10" y="280" width="180" height="20" />
+                <text string="Filter incoming bad words" />
+            </widget>
+
+            <widget name="badwordsoutgoing" factory="pawsCheckBox">
+                <frame x="200" y="280" width="180" height="20" />
+                <text string="Filter outgoing bad words" />
+            </widget>
+
+            <widget name="selecttabstyle" factory="pawsRadioButtonGroup">
+                <frame x="255" y="0" width="150" height="120" />
+                <widget factory="pawsTextBox" name="">
+                    <frame x="10" y="0" width="180" height="20" border="no" />
+                    <text string="Auto Tab selection:"/>
+                </widget>
+                <radionode name="none" id="0" >
+                    <frame x="10" y="20" width="180" height="20" />
+                    <text string="Don't autoselect" position="right" />
+                </radionode>
+                <radionode name="fitting" id="1" >
+                    <frame x="10" y="50" width="180" height="20" />
+                    <text string="Select fitting Tab" position="right" />
+                </radionode>
+                <radionode name="alltext" id="2" >
+                    <frame x="10" y="80" width="180" height="20" />
+                    <text string="Select Main Tab" position="right" />
+                </radionode>
+            </widget>
+
+            <widget name="joindefaultchannel" factory="pawsCheckBox">
+                <frame x="255" y="120" width="160" height="20" />
+                <text string="Join default channel"/>
+            </widget>
+
+            <widget name="echoscreeninsystem" factory="pawsCheckBox">
+                <frame x="255" y="140" width="160" height="20" />
+                <text string="Echo screen text" />
+            </widget>
+
+            <widget name="mainbrackets" factory="pawsCheckBox">
+                <frame x="255" y="160" width="160" height="20" />
+                <text string="Main chat brackets" />
+            </widget>
+
+            <widget name="yourcolormix" factory="pawsCheckBox">
+                <frame x="255" y="180" width="160" height="20" />
+                <text string="Mix yourtext color" />
+            </widget>
+
+            <widget name="loosefocus" factory="pawsCheckBox">
+                <frame x="255" y="200" width="160" height="20"/>
+                <text string="Lose focus on send" />
+            </widget>
+
+            <widget name="mousefocus" factory="pawsCheckBox">
+                <frame x="255" y="220" width="160" height="20"/>
+                <text string="Focus on mouse over" />
+            </widget>
+
+            <widget name="defaultlastchat" factory="pawsCheckBox">
+                <frame x="255" y="240" width="160" height="20"/>
+                <text string="Default last chat" />
+            </widget>
+
+</widget>
+
+</widget_description>
+

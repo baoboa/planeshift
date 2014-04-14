@@ -1,0 +1,53 @@
+#! /usr/bin/php
+<?php
+
+function fetchStatSkill($id, $charid)
+{
+    $query = mysql_query("SELECT skill_rank from character_skills where character_id=".$charid." and skill_id=".$id) or die("fatal error: couldn't select stuff: " . mysql_error() . "\n");
+    $row = mysql_fetch_array($query);
+    if($row === FALSE)
+        return 0;
+    else
+        return $row[0];
+}
+
+function checkAndSet($charid, $id, $charvalue, $skillvalue)
+{
+    if($skillvalue < $charvalue)
+    {
+        printf("strength of %d is %d which is higher than %d so adding it\n", $charid, $charvalue, $skillvalue);
+        mysql_query("DELETE from character_skills where character_id=".$charid." and skill_id=".$id);
+        mysql_query("INSERT INTO character_skills (character_id, skill_id, skill_Rank) values (".$charid.",".$id.",".$charvalue.")");
+    }
+
+}
+
+//converter for stats from the old stats fields to skills entries.
+// Change your database settings here:
+$db = mysql_connect("localhost", "planeshift", "planeshift") or die ("Unable to connect!"); // host, user, pass
+mysql_select_db("planeshift", $db) or die("Could not select database");
+
+//loads all the characters
+$chars = mysql_query("SELECT id, base_strength, base_agility, base_endurance, base_intelligence, base_will, base_charisma from characters where npc_master_id=0 or npc_master_id=id") or die("fatal error: couldn't select stuff: " . mysql_error() . "\n");
+while ($row = mysql_fetch_array($chars))
+{
+    //analyze the skills of this char, if they are lower or missing put new entries in the
+    //skills table
+    //get the entry in skills if any
+    $strength = fetchStatSkill(50, $row[0]);
+    $agility = fetchStatSkill(46, $row[0]);
+    $endurance = fetchStatSkill(48, $row[0]);
+    $intelligence = fetchStatSkill(49, $row[0]);
+    $will = fetchStatSkill(51, $row[0]);
+    $charisma = fetchStatSkill(47, $row[0]);
+
+    //now compare each entry if missing or lower set it there
+    checkAndSet($row[0], 50, $row[1], $strength);
+    checkAndSet($row[0], 46, $row[2], $agility);
+    checkAndSet($row[0], 48, $row[3], $endurance);
+    checkAndSet($row[0], 49, $row[4], $intelligence);
+    checkAndSet($row[0], 51, $row[5], $will);
+    checkAndSet($row[0], 47, $row[6], $charisma);
+}
+
+?>

@@ -1,0 +1,548 @@
+<?xml version="1.0"?>
+<widget_description>
+    <widget name="ConfigChatBubblesTree" factory="pawsConfigChatBubbles" visible="no" savepositions="no" movable="no" resizable="no" style="New Standard GUI" >
+        <frame x="225" y="10" width="445" height="313" border="no" />
+        <bgimage resource="Scaling Widget Background" />
+
+            <widget name="allEnabled" factory="pawsCheckBox">
+                <frame x="2" y="5" width="350" height="20"/>
+                <text string="Enable Chat Bubbles" />
+            </widget>
+
+            <widget name="sayText" factory="pawsTextBox">
+                <frame x="10" y="30" width="130" height="20" />
+                <text string="Say text colour" />
+            </widget>
+            <widget name="sayTextR" factory="pawsEditTextBox"><frame border="yes" x="140" y="30" width="30" height="20" /></widget>
+            <widget name="sayTextG" factory="pawsEditTextBox"><frame border="yes" x="180" y="30" width="30" height="20" /></widget>
+            <widget name="sayTextB" factory="pawsEditTextBox"><frame border="yes" x="220" y="30" width="30" height="20" /></widget>
+            <widget name="sayEnabled" factory="pawsCheckBox">
+                <frame x="260" y="30" width="130" height="20"/>
+                <text string="Enable say" />
+            </widget>
+            <widget name="sayShadow" factory="pawsTextBox">
+                <frame x="10" y="50" width="130" height="20" />
+                <text string="Say shadow colour" />
+            </widget>
+            <widget name="sayShadowR" factory="pawsEditTextBox"><frame border="yes" x="140" y="50" width="30" height="20" /></widget>
+            <widget name="sayShadowG" factory="pawsEditTextBox"><frame border="yes" x="180" y="50" width="30" height="20" /></widget>
+            <widget name="sayShadowB" factory="pawsEditTextBox"><frame border="yes" x="220" y="50" width="30" height="20" /></widget>
+            <widget name="sayOutline" factory="pawsTextBox">
+                <frame x="10" y="70" width="130" height="20" />
+                <text string="Say outline colour" />
+            </widget>
+            <widget name="sayOutlineR" factory="pawsEditTextBox"><frame border="yes" x="140" y="70" width="30" height="20" /></widget>
+            <widget name="sayOutlineG" factory="pawsEditTextBox"><frame border="yes" x="140" y="70" width="30" height="20" /></widget>
+            <widget name="sayOutlineB" factory="pawsEditTextBox"><frame border="yes" x="140" y="70" width="30" height="20" /></widget>
+            <widget name="sayAlignText" factory="pawsTextBox">
+                <frame x="10" y="70" width="130" height="20" />
+                <text string="Say Alignment" />
+            </widget>
+            <widget name="sayAlign" factory="pawsComboBox" >
+                <listbox rows="3" height="20" text="Left" />
+                <frame x="150" y="20" width="200" height="25" border="no" />
+            </widget>
+
+            <widget name="tellText" factory="pawsTextBox">
+                <frame x="10" y="30" width="130" height="20" />
+                <text string="Tell text colour" />
+            </widget>
+            <widget name="tellTextR" factory="pawsEditTextBox"><frame border="yes" x="140" y="30" width="30" height="20" /></widget>
+            <widget name="tellTextG" factory="pawsEditTextBox"><frame border="yes" x="180" y="30" width="30" height="20" /></widget>
+            <widget name="tellTextB" factory="pawsEditTextBox"><frame border="yes" x="220" y="30" width="30" height="20" /></widget>
+            <widget name="tellEnabled" factory="pawsCheckBox">
+                <frame x="260" y="30" width="130" height="20"/>
+                <text string="Enable tell" />
+            </widget>
+            <widget name="tellShadow" factory="pawsTextBox">
+                <frame x="10" y="50" width="130" height="20" />
+                <text string="Tell shadow colour" />
+            </widget>
+            <widget name="tellShadowR" factory="pawsEditTextBox"><frame border="yes" x="140" y="50" width="30" height="20" /></widget>
+            <widget name="tellShadowG" factory="pawsEditTextBox"><frame border="yes" x="180" y="50" width="30" height="20" /></widget>
+            <widget name="tellShadowB" factory="pawsEditTextBox"><frame border="yes" x="220" y="50" width="30" height="20" /></widget>
+            <widget name="tellOutline" factory="pawsTextBox">
+                <frame x="10" y="70" width="130" height="20" />
+                <text string="Tell outline colour" />
+            </widget>
+            <widget name="tellOutlineR" factory="pawsEditTextBox"><frame border="yes" x="140" y="70" width="30" height="20" /></widget>
+            <widget name="tellOutlineG" factory="pawsEditTextBox"><frame border="yes" x="140" y="70" width="30" height="20" /></widget>
+            <widget name="tellOutlineB" factory="pawsEditTextBox"><frame border="yes" x="140" y="70" width="30" height="20" /></widget>
+            <widget name="tellAlignText" factory="pawsTextBox">
+                <frame x="10" y="70" width="130" height="20" />
+                <text string="Tell Alignment" />
+            </widget>
+            <widget name="tellAlign" factory="pawsComboBox" >
+                <listbox rows="3" height="20" text="Left" />
+                <frame x="150" y="20" width="200" height="25" border="no" />
+            </widget>
+
+            <widget name="groupText" factory="pawsTextBox">
+                <frame x="10" y="30" width="130" height="20" />
+                <text string="Group text colour" />
+            </widget>
+            <widget name="groupTextR" factory="pawsEditTextBox"><frame border="yes" x="140" y="30" width="30" height="20" /></widget>
+            <widget name="groupTextG" factory="pawsEditTextBox"><frame border="yes" x="180" y="30" width="30" height="20" /></widget>
+            <widget name="groupTextB" factory="pawsEditTextBox"><frame border="yes" x="220" y="30" width="30" height="20" /></widget>
+            <widget name="groupEnabled" factory="pawsCheckBox">
+                <frame x="260" y="30" width="130" height="20"/>
+                <text string="Enable group" />
+            </widget>
+            <widget name="groupShadow" factory="pawsTextBox">
+                <frame x="10" y="50" width="130" height="20" />
+                <text string="Group shadow colour" />
+            </widget>
+            <widget name="groupShadowR" factory="pawsEditTextBox"><frame border="yes" x="140" y="50" width="30" height="20" /></widget>
+            <widget name="groupShadowG" factory="pawsEditTextBox"><frame border="yes" x="180" y="50" width="30" height="20" /></widget>
+            <widget name="groupShadowB" factory="pawsEditTextBox"><frame border="yes" x="220" y="50" width="30" height="20" /></widget>
+            <widget name="groupOutline" factory="pawsTextBox">
+                <frame x="10" y="70" width="130" height="20" />
+                <text string="Group outline colour" />
+            </widget>
+            <widget name="groupOutlineR" factory="pawsEditTextBox"><frame border="yes" x="140" y="70" width="30" height="20" /></widget>
+            <widget name="groupOutlineG" factory="pawsEditTextBox"><frame border="yes" x="140" y="70" width="30" height="20" /></widget>
+            <widget name="groupOutlineB" factory="pawsEditTextBox"><frame border="yes" x="140" y="70" width="30" height="20" /></widget>
+            <widget name="groupAlignText" factory="pawsTextBox">
+                <frame x="10" y="70" width="130" height="20" />
+                <text string="Group Alignment" />
+            </widget>
+            <widget name="groupAlign" factory="pawsComboBox" >
+                <listbox rows="3" height="20" text="Left" />
+                <frame x="150" y="20" width="200" height="25" border="no" />
+            </widget>
+
+            <widget name="guildText" factory="pawsTextBox">
+                <frame x="10" y="30" width="130" height="20" />
+                <text string="Guild text colour" />
+            </widget>
+            <widget name="guildTextR" factory="pawsEditTextBox"><frame border="yes" x="140" y="30" width="30" height="20" /></widget>
+            <widget name="guildTextG" factory="pawsEditTextBox"><frame border="yes" x="180" y="30" width="30" height="20" /></widget>
+            <widget name="guildTextB" factory="pawsEditTextBox"><frame border="yes" x="220" y="30" width="30" height="20" /></widget>
+            <widget name="guildEnabled" factory="pawsCheckBox">
+                <frame x="260" y="30" width="130" height="20"/>
+                <text string="Enable guild" />
+            </widget>
+            <widget name="guildShadow" factory="pawsTextBox">
+                <frame x="10" y="50" width="130" height="20" />
+                <text string="Guild shadow colour" />
+            </widget>
+            <widget name="guildShadowR" factory="pawsEditTextBox"><frame border="yes" x="140" y="50" width="30" height="20" /></widget>
+            <widget name="guildShadowG" factory="pawsEditTextBox"><frame border="yes" x="180" y="50" width="30" height="20" /></widget>
+            <widget name="guildShadowB" factory="pawsEditTextBox"><frame border="yes" x="220" y="50" width="30" height="20" /></widget>
+            <widget name="guildOutline" factory="pawsTextBox">
+                <frame x="10" y="70" width="130" height="20" />
+                <text string="Guild outline colour" />
+            </widget>
+            <widget name="guildOutlineR" factory="pawsEditTextBox"><frame border="yes" x="140" y="70" width="30" height="20" /></widget>
+            <widget name="guildOutlineG" factory="pawsEditTextBox"><frame border="yes" x="140" y="70" width="30" height="20" /></widget>
+            <widget name="guildOutlineB" factory="pawsEditTextBox"><frame border="yes" x="140" y="70" width="30" height="20" /></widget>
+            <widget name="guildAlignText" factory="pawsTextBox">
+                <frame x="10" y="70" width="130" height="20" />
+                <text string="Guild Alignment" />
+            </widget>
+            <widget name="guildAlign" factory="pawsComboBox" >
+                <listbox rows="3" height="20" text="Left" />
+                <frame x="150" y="20" width="200" height="25" border="no" />
+            </widget>
+
+            <widget name="allianceText" factory="pawsTextBox">
+                <frame x="10" y="30" width="130" height="20" />
+                <text string="alliance text colour" />
+            </widget>
+            <widget name="allianceTextR" factory="pawsEditTextBox"><frame border="yes" x="140" y="30" width="30" height="20" /></widget>
+            <widget name="allianceTextG" factory="pawsEditTextBox"><frame border="yes" x="180" y="30" width="30" height="20" /></widget>
+            <widget name="allianceTextB" factory="pawsEditTextBox"><frame border="yes" x="220" y="30" width="30" height="20" /></widget>
+            <widget name="allianceEnabled" factory="pawsCheckBox">
+                <frame x="260" y="30" width="130" height="20"/>
+                <text string="Enable alliance" />
+            </widget>
+            <widget name="allianceShadow" factory="pawsTextBox">
+                <frame x="10" y="50" width="130" height="20" />
+                <text string="alliance shadow colour" />
+            </widget>
+            <widget name="allianceShadowR" factory="pawsEditTextBox"><frame border="yes" x="140" y="50" width="30" height="20" /></widget>
+            <widget name="allianceShadowG" factory="pawsEditTextBox"><frame border="yes" x="180" y="50" width="30" height="20" /></widget>
+            <widget name="allianceShadowB" factory="pawsEditTextBox"><frame border="yes" x="220" y="50" width="30" height="20" /></widget>
+            <widget name="allianceOutline" factory="pawsTextBox">
+                <frame x="10" y="70" width="130" height="20" />
+                <text string="alliance outline colour" />
+            </widget>
+            <widget name="allianceOutlineR" factory="pawsEditTextBox"><frame border="yes" x="140" y="70" width="30" height="20" /></widget>
+            <widget name="allianceOutlineG" factory="pawsEditTextBox"><frame border="yes" x="140" y="70" width="30" height="20" /></widget>
+            <widget name="allianceOutlineB" factory="pawsEditTextBox"><frame border="yes" x="140" y="70" width="30" height="20" /></widget>
+            <widget name="allianceAlignText" factory="pawsTextBox">
+                <frame x="10" y="70" width="130" height="20" />
+                <text string="alliance Alignment" />
+            </widget>
+            <widget name="allianceAlign" factory="pawsComboBox" >
+                <listbox rows="3" height="20" text="Left" />
+                <frame x="150" y="20" width="200" height="25" border="no" />
+            </widget>
+
+            <widget name="auctionText" factory="pawsTextBox">
+                <frame x="10" y="30" width="130" height="20" />
+                <text string="Auction text colour" />
+            </widget>
+            <widget name="auctionTextR" factory="pawsEditTextBox"><frame border="yes" x="140" y="30" width="30" height="20" /></widget>
+            <widget name="auctionTextG" factory="pawsEditTextBox"><frame border="yes" x="180" y="30" width="30" height="20" /></widget>
+            <widget name="auctionTextB" factory="pawsEditTextBox"><frame border="yes" x="220" y="30" width="30" height="20" /></widget>
+            <widget name="auctionEnabled" factory="pawsCheckBox">
+                <frame x="260" y="30" width="130" height="20"/>
+                <text string="Enable auction" />
+            </widget>
+            <widget name="auctionShadow" factory="pawsTextBox">
+                <frame x="10" y="50" width="130" height="20" />
+                <text string="Auction shadow colour" />
+            </widget>
+            <widget name="auctionShadowR" factory="pawsEditTextBox"><frame border="yes" x="140" y="50" width="30" height="20" /></widget>
+            <widget name="auctionShadowG" factory="pawsEditTextBox"><frame border="yes" x="180" y="50" width="30" height="20" /></widget>
+            <widget name="auctionShadowB" factory="pawsEditTextBox"><frame border="yes" x="220" y="50" width="30" height="20" /></widget>
+            <widget name="auctionOutline" factory="pawsTextBox">
+                <frame x="10" y="70" width="130" height="20" />
+                <text string="Auction outline colour" />
+            </widget>
+            <widget name="auctionOutlineR" factory="pawsEditTextBox"><frame border="yes" x="140" y="70" width="30" height="20" /></widget>
+            <widget name="auctionOutlineG" factory="pawsEditTextBox"><frame border="yes" x="140" y="70" width="30" height="20" /></widget>
+            <widget name="auctionOutlineB" factory="pawsEditTextBox"><frame border="yes" x="140" y="70" width="30" height="20" /></widget>
+            <widget name="auctionAlignText" factory="pawsTextBox">
+                <frame x="10" y="70" width="130" height="20" />
+                <text string="Auction Alignment" />
+            </widget>
+            <widget name="auctionAlign" factory="pawsComboBox" >
+                <listbox rows="3" height="20" text="Left" />
+                <frame x="150" y="20" width="200" height="25" border="no" />
+            </widget>
+
+            <widget name="shoutText" factory="pawsTextBox">
+                <frame x="10" y="30" width="130" height="20" />
+                <text string="Shout text colour" />
+            </widget>
+            <widget name="shoutTextR" factory="pawsEditTextBox"><frame border="yes" x="140" y="30" width="30" height="20" /></widget>
+            <widget name="shoutTextG" factory="pawsEditTextBox"><frame border="yes" x="180" y="30" width="30" height="20" /></widget>
+            <widget name="shoutTextB" factory="pawsEditTextBox"><frame border="yes" x="220" y="30" width="30" height="20" /></widget>
+            <widget name="shoutEnabled" factory="pawsCheckBox">
+                <frame x="260" y="30" width="130" height="20"/>
+                <text string="Enable shout" />
+            </widget>
+            <widget name="shoutShadow" factory="pawsTextBox">
+                <frame x="10" y="50" width="130" height="20" />
+                <text string="Shout shadow colour" />
+            </widget>
+            <widget name="shoutShadowR" factory="pawsEditTextBox"><frame border="yes" x="140" y="50" width="30" height="20" /></widget>
+            <widget name="shoutShadowG" factory="pawsEditTextBox"><frame border="yes" x="180" y="50" width="30" height="20" /></widget>
+            <widget name="shoutShadowB" factory="pawsEditTextBox"><frame border="yes" x="220" y="50" width="30" height="20" /></widget>
+            <widget name="shoutOutline" factory="pawsTextBox">
+                <frame x="10" y="70" width="130" height="20" />
+                <text string="Shout outline colour" />
+            </widget>
+            <widget name="shoutOutlineR" factory="pawsEditTextBox"><frame border="yes" x="140" y="70" width="30" height="20" /></widget>
+            <widget name="shoutOutlineG" factory="pawsEditTextBox"><frame border="yes" x="140" y="70" width="30" height="20" /></widget>
+            <widget name="shoutOutlineB" factory="pawsEditTextBox"><frame border="yes" x="140" y="70" width="30" height="20" /></widget>
+            <widget name="shoutAlignText" factory="pawsTextBox">
+                <frame x="10" y="70" width="130" height="20" />
+                <text string="Shout Alignment" />
+            </widget>
+            <widget name="shoutAlign" factory="pawsComboBox" >
+                <listbox rows="3" height="20" text="Left" />
+                <frame x="150" y="20" width="200" height="25" border="no" />
+            </widget>
+
+            <widget name="meText" factory="pawsTextBox">
+                <frame x="10" y="30" width="130" height="20" />
+                <text string="Me text colour" />
+            </widget>
+            <widget name="meTextR" factory="pawsEditTextBox"><frame border="yes" x="140" y="30" width="30" height="20" /></widget>
+            <widget name="meTextG" factory="pawsEditTextBox"><frame border="yes" x="180" y="30" width="30" height="20" /></widget>
+            <widget name="meTextB" factory="pawsEditTextBox"><frame border="yes" x="220" y="30" width="30" height="20" /></widget>
+            <widget name="meEnabled" factory="pawsCheckBox">
+                <frame x="260" y="30" width="130" height="20"/>
+                <text string="Enable me" />
+            </widget>
+            <widget name="meShadow" factory="pawsTextBox">
+                <frame x="10" y="50" width="130" height="20" />
+                <text string="Me shadow colour" />
+            </widget>
+            <widget name="meShadowR" factory="pawsEditTextBox"><frame border="yes" x="140" y="50" width="30" height="20" /></widget>
+            <widget name="meShadowG" factory="pawsEditTextBox"><frame border="yes" x="180" y="50" width="30" height="20" /></widget>
+            <widget name="meShadowB" factory="pawsEditTextBox"><frame border="yes" x="220" y="50" width="30" height="20" /></widget>
+            <widget name="meOutline" factory="pawsTextBox">
+                <frame x="10" y="70" width="130" height="20" />
+                <text string="Me outline colour" />
+            </widget>
+            <widget name="meOutlineR" factory="pawsEditTextBox"><frame border="yes" x="140" y="70" width="30" height="20" /></widget>
+            <widget name="meOutlineG" factory="pawsEditTextBox"><frame border="yes" x="140" y="70" width="30" height="20" /></widget>
+            <widget name="meOutlineB" factory="pawsEditTextBox"><frame border="yes" x="140" y="70" width="30" height="20" /></widget>
+            <widget name="meAlignText" factory="pawsTextBox">
+                <frame x="10" y="70" width="130" height="20" />
+                <text string="Me Alignment" />
+            </widget>
+            <widget name="meAlign" factory="pawsComboBox" >
+                <listbox rows="3" height="20" text="Left" />
+                <frame x="150" y="20" width="200" height="25" border="no" />
+            </widget>
+
+            <widget name="tellselfText" factory="pawsTextBox">
+                <frame x="10" y="30" width="130" height="20" />
+                <text string="Tellself text colour" />
+            </widget>
+            <widget name="tellselfTextR" factory="pawsEditTextBox"><frame border="yes" x="140" y="30" width="30" height="20" /></widget>
+            <widget name="tellselfTextG" factory="pawsEditTextBox"><frame border="yes" x="180" y="30" width="30" height="20" /></widget>
+            <widget name="tellselfTextB" factory="pawsEditTextBox"><frame border="yes" x="220" y="30" width="30" height="20" /></widget>
+            <widget name="tellselfEnabled" factory="pawsCheckBox">
+                <frame x="260" y="30" width="130" height="20"/>
+                <text string="Enable tellself" />
+            </widget>
+            <widget name="tellselfShadow" factory="pawsTextBox">
+                <frame x="10" y="50" width="130" height="20" />
+                <text string="Tellself shadow colour" />
+            </widget>
+            <widget name="tellselfShadowR" factory="pawsEditTextBox"><frame border="yes" x="140" y="50" width="30" height="20" /></widget>
+            <widget name="tellselfShadowG" factory="pawsEditTextBox"><frame border="yes" x="180" y="50" width="30" height="20" /></widget>
+            <widget name="tellselfShadowB" factory="pawsEditTextBox"><frame border="yes" x="220" y="50" width="30" height="20" /></widget>
+            <widget name="tellselfOutline" factory="pawsTextBox">
+                <frame x="10" y="70" width="130" height="20" />
+                <text string="Tellself outline colour" />
+            </widget>
+            <widget name="tellselfOutlineR" factory="pawsEditTextBox"><frame border="yes" x="140" y="70" width="30" height="20" /></widget>
+            <widget name="tellselfOutlineG" factory="pawsEditTextBox"><frame border="yes" x="140" y="70" width="30" height="20" /></widget>
+            <widget name="tellselfOutlineB" factory="pawsEditTextBox"><frame border="yes" x="140" y="70" width="30" height="20" /></widget>
+            <widget name="tellselfAlignText" factory="pawsTextBox">
+                <frame x="10" y="70" width="130" height="20" />
+                <text string="Tellself Alignment" />
+            </widget>
+            <widget name="tellselfAlign" factory="pawsComboBox" >
+                <listbox rows="3" height="20" text="Left" />
+                <frame x="150" y="20" width="200" height="25" border="no" />
+            </widget>
+
+            <widget name="myText" factory="pawsTextBox">
+                <frame x="10" y="30" width="130" height="20" />
+                <text string="My text colour" />
+            </widget>
+            <widget name="myTextR" factory="pawsEditTextBox"><frame border="yes" x="140" y="30" width="30" height="20" /></widget>
+            <widget name="myTextG" factory="pawsEditTextBox"><frame border="yes" x="180" y="30" width="30" height="20" /></widget>
+            <widget name="myTextB" factory="pawsEditTextBox"><frame border="yes" x="220" y="30" width="30" height="20" /></widget>
+            <widget name="myEnabled" factory="pawsCheckBox">
+                <frame x="260" y="30" width="130" height="20"/>
+                <text string="Enable my" />
+            </widget>
+            <widget name="myShadow" factory="pawsTextBox">
+                <frame x="10" y="50" width="130" height="20" />
+                <text string="My shadow colour" />
+            </widget>
+            <widget name="myShadowR" factory="pawsEditTextBox"><frame border="yes" x="140" y="50" width="30" height="20" /></widget>
+            <widget name="myShadowG" factory="pawsEditTextBox"><frame border="yes" x="180" y="50" width="30" height="20" /></widget>
+            <widget name="myShadowB" factory="pawsEditTextBox"><frame border="yes" x="220" y="50" width="30" height="20" /></widget>
+            <widget name="myOutline" factory="pawsTextBox">
+                <frame x="10" y="70" width="130" height="20" />
+                <text string="My outline colour" />
+            </widget>
+            <widget name="myOutlineR" factory="pawsEditTextBox"><frame border="yes" x="140" y="70" width="30" height="20" /></widget>
+            <widget name="myOutlineG" factory="pawsEditTextBox"><frame border="yes" x="140" y="70" width="30" height="20" /></widget>
+            <widget name="myOutlineB" factory="pawsEditTextBox"><frame border="yes" x="140" y="70" width="30" height="20" /></widget>
+            <widget name="myAlignText" factory="pawsTextBox">
+                <frame x="10" y="70" width="130" height="20" />
+                <text string="My Alignment" />
+            </widget>
+            <widget name="myAlign" factory="pawsComboBox" >
+                <listbox rows="3" height="20" text="Left" />
+                <frame x="150" y="20" width="200" height="25" border="no" />
+            </widget>
+
+            <widget name="npcText" factory="pawsTextBox">
+                <frame x="10" y="30" width="130" height="20" />
+                <text string="NPC text colour" />
+            </widget>
+            <widget name="npcTextR" factory="pawsEditTextBox"><frame border="yes" x="140" y="30" width="30" height="20" /></widget>
+            <widget name="npcTextG" factory="pawsEditTextBox"><frame border="yes" x="180" y="30" width="30" height="20" /></widget>
+            <widget name="npcTextB" factory="pawsEditTextBox"><frame border="yes" x="220" y="30" width="30" height="20" /></widget>
+            <widget name="npcEnabled" factory="pawsCheckBox">
+                <frame x="260" y="30" width="130" height="20"/>
+                <text string="Enable NPC" />
+            </widget>
+            <widget name="npcShadow" factory="pawsTextBox">
+                <frame x="10" y="50" width="130" height="20" />
+                <text string="NPC shadow colour" />
+            </widget>
+            <widget name="npcShadowR" factory="pawsEditTextBox"><frame border="yes" x="140" y="50" width="30" height="20" /></widget>
+            <widget name="npcShadowG" factory="pawsEditTextBox"><frame border="yes" x="180" y="50" width="30" height="20" /></widget>
+            <widget name="npcShadowB" factory="pawsEditTextBox"><frame border="yes" x="220" y="50" width="30" height="20" /></widget>
+            <widget name="npcOutline" factory="pawsTextBox">
+                <frame x="10" y="70" width="130" height="20" />
+                <text string="NPC outline colour" />
+            </widget>
+            <widget name="npcOutlineR" factory="pawsEditTextBox"><frame border="yes" x="140" y="70" width="30" height="20" /></widget>
+            <widget name="npcOutlineG" factory="pawsEditTextBox"><frame border="yes" x="140" y="70" width="30" height="20" /></widget>
+            <widget name="npcOutlineB" factory="pawsEditTextBox"><frame border="yes" x="140" y="70" width="30" height="20" /></widget>
+            <widget name="npcAlignText" factory="pawsTextBox">
+                <frame x="10" y="70" width="130" height="20" />
+                <text string="NPC Alignment" />
+            </widget>
+            <widget name="npcAlign" factory="pawsComboBox" >
+                <listbox rows="3" height="20" text="Left" />
+                <frame x="150" y="20" width="200" height="25" border="no" />
+            </widget>
+
+            <widget name="npc_meText" factory="pawsTextBox">
+                <frame x="10" y="30" width="130" height="20" />
+                <text string="NPC_me text colour" />
+            </widget>
+            <widget name="npc_meTextR" factory="pawsEditTextBox"><frame border="yes" x="140" y="30" width="30" height="20" /></widget>
+            <widget name="npc_meTextG" factory="pawsEditTextBox"><frame border="yes" x="180" y="30" width="30" height="20" /></widget>
+            <widget name="npc_meTextB" factory="pawsEditTextBox"><frame border="yes" x="220" y="30" width="30" height="20" /></widget>
+            <widget name="npc_meEnabled" factory="pawsCheckBox">
+                <frame x="260" y="30" width="130" height="20"/>
+                <text string="Enable NPC_me" />
+            </widget>
+            <widget name="npc_meShadow" factory="pawsTextBox">
+                <frame x="10" y="50" width="135" height="20" />
+                <text string="NPC_me shadow colour" />
+            </widget>
+            <widget name="npc_meShadowR" factory="pawsEditTextBox"><frame border="yes" x="140" y="50" width="30" height="20" /></widget>
+            <widget name="npc_meShadowG" factory="pawsEditTextBox"><frame border="yes" x="180" y="50" width="30" height="20" /></widget>
+            <widget name="npc_meShadowB" factory="pawsEditTextBox"><frame border="yes" x="220" y="50" width="30" height="20" /></widget>
+            <widget name="npc_meOutline" factory="pawsTextBox">
+                <frame x="10" y="70" width="130" height="20" />
+                <text string="NPC_me outline colour" />
+            </widget>
+            <widget name="npc_meOutlineR" factory="pawsEditTextBox"><frame border="yes" x="140" y="70" width="30" height="20" /></widget>
+            <widget name="npc_meOutlineG" factory="pawsEditTextBox"><frame border="yes" x="140" y="70" width="30" height="20" /></widget>
+            <widget name="npc_meOutlineB" factory="pawsEditTextBox"><frame border="yes" x="140" y="70" width="30" height="20" /></widget>
+            <widget name="npc_meAlignText" factory="pawsTextBox">
+                <frame x="10" y="70" width="130" height="20" />
+                <text string="NPC_me Alignment" />
+            </widget>
+            <widget name="npc_meAlign" factory="pawsComboBox" >
+                <listbox rows="3" height="20" text="Left" />
+                <frame x="150" y="20" width="200" height="25" border="no" />
+            </widget>
+
+            <widget name="npc_myText" factory="pawsTextBox">
+                <frame x="10" y="30" width="130" height="20" />
+                <text string="NPC_my text colour" />
+            </widget>
+            <widget name="npc_myTextR" factory="pawsEditTextBox"><frame border="yes" x="140" y="30" width="30" height="20" /></widget>
+            <widget name="npc_myTextG" factory="pawsEditTextBox"><frame border="yes" x="180" y="30" width="30" height="20" /></widget>
+            <widget name="npc_myTextB" factory="pawsEditTextBox"><frame border="yes" x="220" y="30" width="30" height="20" /></widget>
+            <widget name="npc_myEnabled" factory="pawsCheckBox">
+                <frame x="260" y="30" width="130" height="20"/>
+                <text string="Enable NPC_my" />
+            </widget>
+            <widget name="npc_myShadow" factory="pawsTextBox">
+                <frame x="10" y="50" width="135" height="20" />
+                <text string="NPC_my shadow colour" />
+            </widget>
+            <widget name="npc_myShadowR" factory="pawsEditTextBox"><frame border="yes" x="140" y="50" width="30" height="20" /></widget>
+            <widget name="npc_myShadowG" factory="pawsEditTextBox"><frame border="yes" x="180" y="50" width="30" height="20" /></widget>
+            <widget name="npc_myShadowB" factory="pawsEditTextBox"><frame border="yes" x="220" y="50" width="30" height="20" /></widget>
+            <widget name="npc_myOutline" factory="pawsTextBox">
+                <frame x="10" y="70" width="130" height="20" />
+                <text string="NPC_my outline colour" />
+            </widget>
+            <widget name="npc_myOutlineR" factory="pawsEditTextBox"><frame border="yes" x="140" y="70" width="30" height="20" /></widget>
+            <widget name="npc_myOutlineG" factory="pawsEditTextBox"><frame border="yes" x="140" y="70" width="30" height="20" /></widget>
+            <widget name="npc_myOutlineB" factory="pawsEditTextBox"><frame border="yes" x="140" y="70" width="30" height="20" /></widget>
+            <widget name="npc_myAlignText" factory="pawsTextBox">
+                <frame x="10" y="70" width="130" height="20" />
+                <text string="NPC_my Alignment" />
+            </widget>
+            <widget name="npc_myAlign" factory="pawsComboBox" >
+                <listbox rows="3" height="20" text="Left" />
+                <frame x="150" y="20" width="200" height="25" border="no" />
+            </widget>
+
+            <widget name="npc_narrateText" factory="pawsTextBox">
+                <frame x="10" y="30" width="135" height="20" />
+                <text string="NPC_narrate text colour" />
+            </widget>
+            <widget name="npc_narrateTextR" factory="pawsEditTextBox"><frame border="yes" x="140" y="30" width="30" height="20" /></widget>
+            <widget name="npc_narrateTextG" factory="pawsEditTextBox"><frame border="yes" x="180" y="30" width="30" height="20" /></widget>
+            <widget name="npc_narrateTextB" factory="pawsEditTextBox"><frame border="yes" x="220" y="30" width="30" height="20" /></widget>
+            <widget name="npc_narrateEnabled" factory="pawsCheckBox">
+                <frame x="260" y="30" width="135" height="20"/>
+                <text string="Enable NPC_narrate" />
+            </widget>
+            <widget name="npc_narrateShadow" factory="pawsTextBox">
+                <frame x="10" y="50" width="155" height="20" />
+                <text string="NPC_narrate shadow colour" />
+            </widget>
+            <widget name="npc_narrateShadowR" factory="pawsEditTextBox"><frame border="yes" x="140" y="50" width="30" height="20" /></widget>
+            <widget name="npc_narrateShadowG" factory="pawsEditTextBox"><frame border="yes" x="180" y="50" width="30" height="20" /></widget>
+            <widget name="npc_narrateShadowB" factory="pawsEditTextBox"><frame border="yes" x="220" y="50" width="30" height="20" /></widget>
+            <widget name="npc_narrateOutline" factory="pawsTextBox">
+                <frame x="10" y="70" width="150" height="20" />
+                <text string="NPC_narrate outline colour" />
+            </widget>
+            <widget name="npc_narrateOutlineR" factory="pawsEditTextBox"><frame border="yes" x="140" y="70" width="30" height="20" /></widget>
+            <widget name="npc_narrateOutlineG" factory="pawsEditTextBox"><frame border="yes" x="140" y="70" width="30" height="20" /></widget>
+            <widget name="npc_narrateOutlineB" factory="pawsEditTextBox"><frame border="yes" x="140" y="70" width="30" height="20" /></widget>
+            <widget name="npc_narrateAlignText" factory="pawsTextBox">
+                <frame x="10" y="70" width="135" height="20" />
+                <text string="NPC_narrate Alignment" />
+            </widget>
+            <widget name="npc_narrateAlign" factory="pawsComboBox" >
+                <listbox rows="3" height="20" text="Left" />
+                <frame x="150" y="20" width="200" height="25" border="no" />
+            </widget>
+
+            <widget name="maxLineLenText" factory="pawsTextBox">
+                <frame x="10" y="50" width="210" height="20" />
+                <text string="Max Line Length" />
+            </widget>
+            <widget name="maxLineLen" factory="pawsEditTextBox"><frame border="yes" x="140" y="50" width="30" height="20" /></widget>
+
+            <widget name="shortPhraseCharCountText" factory="pawsTextBox">
+                <frame x="10" y="50" width="210" height="20" />
+                <text string="Short Phrase Char Count" />
+            </widget>
+            <widget name="shortPhraseCharCount" factory="pawsEditTextBox"><frame border="yes" x="140" y="50" width="30" height="20" /></widget>
+
+            <widget name="longPhraseLineCountText" factory="pawsTextBox">
+                <frame x="10" y="50" width="210" height="20" />
+                <text string="Long Phrase Line Count" />
+            </widget>
+            <widget name="longPhraseLineCount" factory="pawsEditTextBox"><frame border="yes" x="140" y="50" width="30" height="20" /></widget>
+
+            <widget name="mixActionColours" factory="pawsCheckBox">
+                <frame x="10" y="50" width="350" height="20"/>
+                <text string="Mix Action colours" />
+            </widget>
+
+            <widget name="npcinternalText" factory="pawsTextBox">
+                <frame x="10" y="30" width="130" height="20" />
+                <text string="npcinternal text colour" />
+            </widget>
+            <widget name="npcinternalTextR" factory="pawsEditTextBox"><frame border="yes" x="140" y="30" width="30" height="20" /></widget>
+            <widget name="npcinternalTextG" factory="pawsEditTextBox"><frame border="yes" x="180" y="30" width="30" height="20" /></widget>
+            <widget name="npcinternalTextB" factory="pawsEditTextBox"><frame border="yes" x="220" y="30" width="30" height="20" /></widget>
+            <widget name="npcinternalEnabled" factory="pawsCheckBox">
+                <frame x="260" y="30" width="130" height="20"/>
+                <text string="Enable npcinternal" />
+            </widget>
+            <widget name="npcinternalShadow" factory="pawsTextBox">
+                <frame x="10" y="50" width="150" height="20" />
+                <text string="npcinternal shadow colour" />
+            </widget>
+            <widget name="npcinternalShadowR" factory="pawsEditTextBox"><frame border="yes" x="140" y="50" width="30" height="20" /></widget>
+            <widget name="npcinternalShadowG" factory="pawsEditTextBox"><frame border="yes" x="180" y="50" width="30" height="20" /></widget>
+            <widget name="npcinternalShadowB" factory="pawsEditTextBox"><frame border="yes" x="220" y="50" width="30" height="20" /></widget>
+            <widget name="npcinternalOutline" factory="pawsTextBox">
+                <frame x="10" y="70" width="140" height="20" />
+                <text string="npcinternal outline colour" />
+            </widget>
+            <widget name="npcinternalOutlineR" factory="pawsEditTextBox"><frame border="yes" x="140" y="70" width="30" height="20" /></widget>
+            <widget name="npcinternalOutlineG" factory="pawsEditTextBox"><frame border="yes" x="140" y="70" width="30" height="20" /></widget>
+            <widget name="npcinternalOutlineB" factory="pawsEditTextBox"><frame border="yes" x="140" y="70" width="30" height="20" /></widget>
+            <widget name="npcinternalAlignText" factory="pawsTextBox">
+                <frame x="10" y="70" width="130" height="20" />
+                <text string="npcinternal Alignment" />
+            </widget>
+            <widget name="npcinternalAlign" factory="pawsComboBox" >
+                <listbox rows="3" height="20" text="Left" />
+                <frame x="150" y="20" width="200" height="25" border="no" />
+            </widget>
+
+
+    </widget>
+
+</widget_description>

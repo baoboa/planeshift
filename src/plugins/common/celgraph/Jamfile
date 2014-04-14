@@ -1,0 +1,7 @@
+SubDir TOP src plugins common celgraph ;
+
+Plugin celgraph
+       : celgraph.cpp celgraph.h
+;
+ExternalLibs celgraph : CRYSTAL ;
+CompileGroups celgraph : psclient psnpcclient ;

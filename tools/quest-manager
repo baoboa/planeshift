@@ -1,0 +1,19 @@
+#! /usr/bin/php
+<?php
+// Quest dumper from db to txt files
+
+// Change your database settings here:
+$db = mysql_connect("localhost", "planeshift", "planeshift") or die ("Unable to connect!"); // host, user, pass
+mysql_select_db("planeshift", $db) or die("Could not select database");
+
+$scripts = mysql_query("SELECT l.name, q.script, l.id from quests as l, quest_scripts as q where q.quest_id=l.id") or die("fatal error: couldn't select stuff: " . mysql_error() . "\n");
+while ($row = mysql_fetch_array($scripts))
+{
+    $filename = $row[0] . ".txt";
+    printf("dumping %d (%s) on %s\n", $row[2], $row[0], $filename);
+    $handle = fopen($filename, "w+");
+    fwrite($handle, $row[1]);
+    fclose($handle);
+}
+
+?>

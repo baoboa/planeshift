@@ -1,0 +1,161 @@
+<widget_description>
+<widget name="MerchantWindow" factory="pawsMerchantWindow" visible="no" movable="yes" keepaspect="no" resizable="yes" style="New Standard GUI" savepositions="yes" >
+
+    <frame x="100" y="100" width="620" height="400" border="yes" />
+    <minframe width="550" height="165" />
+    <title resource="Scaling Title Bar" text="Merchant" align="left" close_button="yes"/>
+	<font  r="121" g="147" b="42" size="15"/>
+	
+    <widget name="Transact" factory="pawsButton" id="100" tooltip="Buy/Sell items">
+        <frame x="560" y="10" width="48" height="48" border="no" />
+        <bgimage resource="MerchantTrade" alpha="0" />
+        <attachpoints>
+            <attach point="ATTACH_RIGHT" />
+        </attachpoints>
+    </widget>
+
+     <widget name="TransactAll" factory="pawsButton" id="110" tooltip="Buy/Sell all selected items">
+       <frame x="560" y="62" width="48" height="48" border="no" />
+       <bgimage resource="MerchantTrade" alpha="0" />
+        <attachpoints>
+            <attach point="ATTACH_RIGHT" />
+        </attachpoints>
+    </widget>
+
+    <widget name="AllLabel" factory="pawsTextBox">
+            <frame x="560" y="100" width="48" height="20" />
+            <font name="LiberationSans-Regular.ttf" r="246" g="223" b="166" size="8" scalefont="no" />
+            <text string="ALL" horizAdjust="CENTRE" />
+        <attachpoints>
+            <attach point="ATTACH_RIGHT" />
+        </attachpoints>
+    </widget>
+
+     <widget name="TransactSingle" factory="pawsButton" id="120" tooltip="Buy/Sell one item">
+       <frame x="560" y="114" width="48" height="48" border="no" />
+       <bgimage resource="MerchantTrade" alpha="0" />
+        <attachpoints>
+            <attach point="ATTACH_RIGHT" />
+        </attachpoints>
+    </widget>
+
+    <widget name="SingleLabel" factory="pawsTextBox">
+            <frame x="560" y="150" width="48" height="20" />
+            <font name="LiberationSans-Regular.ttf" r="246" g="223" b="166" size="8" scalefont="no" />
+            <text string="SINGLE" horizAdjust="CENTRE" />
+        <attachpoints>
+            <attach point="ATTACH_RIGHT" />
+        </attachpoints>
+    </widget>
+
+    <widget name="View" factory="pawsButton" id="150" tooltip="View item">
+        <frame x="560" y="338" width="48" height="48" border="no" />
+        <bgimage resource="view" alpha="0" />
+        <attachpoints>
+            <attach point="ATTACH_RIGHT" />
+        </attachpoints>
+    </widget>
+
+    <widget name="BuySell" factory="pawsRadioButtonGroup" >
+        <frame x="10" y="10" width="190" height="35" border="no" />
+
+            <widget name="Buy" factory="pawsRadioButton" id="1000">
+                <frame x="0" y="2" width="75" height="30" />
+                <text string="Buy" position="right"/>
+            </widget>
+
+            <widget name="Sell" factory="pawsRadioButton" id="2000">
+                <frame x="115" y="2" width="75" height="30" />
+                <text string="Sell" position="right"/>
+            </widget>
+    </widget>
+
+
+    <widget name="Categories" factory="pawsListBox" id="10">
+        <frame x="12" y="45" width="190" height="340" border="no" />
+        <attachpoints>
+            <attach point="ATTACH_LEFT" />
+            <attach point="ATTACH_TOP" />
+            <attach point="ATTACH_BOTTOM" />
+        </attachpoints>
+
+        <columns height="23">
+            <column width="200" >
+                <widget name="Category" factory="pawsTextBox"></widget>
+            </column>
+        </columns>
+    </widget>
+
+
+    <widget name="Items" factory="pawsListBox" id="11" sortBy="5">
+        <frame x="220" y="45" width="330" height="340" border="no" />
+        <attachpoints>
+            <attach point="ATTACH_LEFT" />
+            <attach point="ATTACH_RIGHT" />
+            <attach point="ATTACH_TOP" />
+            <attach point="ATTACH_BOTTOM" />
+        </attachpoints>
+        <columns height="32">
+            <column width="30" >
+                <widget name="#" factory="pawsTextBox"></widget>
+            </column>
+            <column width="40" >
+                <widget name="Item" factory="pawsWidget"></widget>
+            </column>
+            <column width="60" >
+                <widget name="Price" factory="pawsTextBox"></widget>
+            </column>
+            <column width="195" >
+                <widget name="Name" factory="pawsTextBox"> <!-- This is for formated output -->
+                    <attachpoints>
+                        <attach point="ATTACH_LEFT" />
+                        <attach point="ATTACH_RIGHT" />
+                    </attachpoints>
+                </widget>
+            </column>
+
+
+            <column width="0" >
+                <widget name="" factory="pawsTextBox" visible="no"></widget>
+            </column>
+            <column width="0" >
+                <widget name="ItemName" factory="pawsTextBox" visible="no"></widget> <!-- This is the real item name -->
+            </column>
+        </columns>
+    </widget>
+
+    <!-- Slots for the money -->
+    <!--
+    <widget name="circles" factory="pawsSlot" tooltip="Circles">
+        <frame x="350" y="340" width="48" height="48"/>
+        <bgimage resource="MoneyCircles" alpha="0"/>
+    </widget>
+
+    <widget name="octas" factory="pawsSlot" tooltip="Octas">
+        <frame x="400" y="340" width="48" height="48"/>
+        <bgimage resource="MoneyOctas" alpha="0"/>
+    </widget>
+
+    <widget name="hexas" factory="pawsSlot" tooltip="Hexas">
+        <frame x="450" y="340" width="48" height="48"/>
+        <bgimage resource="MoneyHexas" alpha="0"/>
+    </widget>
+
+    <widget name="trias" factory="pawsSlot" tooltip="Trias">
+        <frame x="500" y="340" width="48" height="48"/>
+        <bgimage resource="MoneyTrias" alpha="0"/>
+    </widget>
+    -->
+
+    <widget name="TotalTrias" factory="pawsTextBox">
+        <frame x="330" y="15" width="220" height="20" />
+        <text string="0 Trias" horizAdjust="RIGHT" />
+        <attachpoints>
+            <attach point="ATTACH_RIGHT" />
+        </attachpoints>
+    </widget>
+
+</widget>
+
+
+</widget_description>

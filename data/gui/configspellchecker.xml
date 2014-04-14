@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<widget_description>
+<widget name="ConfigSpellCheckerTree" factory="pawsConfigSpellChecker"
+        visible="no" savepositions="no" movable="no"
+        resizable="no" style="New Standard GUI" >
+    <frame x="225" y="10" width="400" height="300" border="no" />
+    <bgimage resource="Scaling Widget Background" />
+    <widget name="PersonalDictionaryLabel" factory="pawsTextBox" style="Header Font">
+       <frame x="10" y="10" width="350" height="20" />
+       <text string="Personal Dictionary:" />
+    </widget>
+    <widget name="PersonalDictionaryBox" factory="pawsMultilineEditTextBox">
+       <frame x="10" y="40" width="200" height="250" border="no" />
+       <bgimage resource="Scaling Field Background"/>
+       <pawsScrollBar width="15" />
+    </widget>
+    <widget name="enabled" factory="pawsCheckBox">
+        <frame x="220" y="40" width="250" height="20"/>
+        <text string="Enable spell checker in chat window" />
+    </widget>
+    <widget name="typoColorLabel" factory="pawsTextBox">
+	<frame x="220" y="70" width="250" height="20" />
+	<text string="Color of Typos" />
+    </widget>
+    <widget name="typoColorR" factory="pawsEditTextBox">
+	<frame border="yes" x="220" y="90" width="30" height="20" />
+    </widget>
+    <widget name="typoColorG" factory="pawsEditTextBox">
+	<frame border="yes" x="260" y="90" width="30" height="20" />
+    </widget>
+    <widget name="typoColorB" factory="pawsEditTextBox">
+	<frame border="yes" x="300" y="90" width="30" height="20" />
+    </widget>
+    <widget name="ErrorLabel1" factory="pawsTextBox" style="Header Font" visible="no">
+       <frame x="10" y="110" width="420" height="20" />
+       <text string="Sorry, no dictionary found. To use the spell checker get one" />
+    </widget>
+    <widget name="ErrorLabel2" factory="pawsTextBox" style="Header Font" visible="no">
+       <frame x="10" y="130" width="420" height="20" />
+       <text string="at &quot;http://wiki.services.openoffice.org/wiki/Dictionaries&quot; and" />
+    </widget>
+    <widget name="ErrorLabel3" factory="pawsTextBox" style="Header Font" visible="no">
+       <frame x="10" y="150" width="420" height="20" />
+       <text string="unzip it in &quot;<PlaneShift-Installation-Directory>/data/dict&quot;." />
+    </widget>
+</widget>
+
+</widget_description>

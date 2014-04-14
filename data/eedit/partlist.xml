@@ -1,0 +1,219 @@
+<widget_description>
+
+<widget name="PartListToolbox" factory="EEditParticleListToolbox" 
+        visible="yes" savepositions="yes" movable="yes" resizable="no" resizetoscreen="no" >
+        
+    <frame x="0" y="490" width="530" height="250" border="yes" justtitle="yes" />
+    <title resource="TitleBar" text="Particle Systems" align="left" />
+    <font name="LiberationSans-Regular.ttf" r="255" g="255" b="255" size="9"  sr="0" sg="0" sb="0" shadow="yes" />   
+    <bgimage resource="BackTall" alpha="75" />
+
+    <widget name="part_list" factory="pawsListBox">	
+        <frame x="5" y="5" width="170" height="210" border="no"/>
+        <bgimage resource="Shaded" alpha="100" />
+        <font name="LiberationSans-Regular.ttf" r="255" g="255" b="255" size="9"  sr="0" sg="0" sb="0" shadow="yes" />   
+        <highlight resource="ListSelect" alpha="100" />
+        <columns height="20" headings="no">
+            <column width="180">            
+                <widget name="PartSys" factory="pawsTextBox">
+                </widget>
+            </column>                                               
+        </columns>
+	</widget>
+
+    <widget name="edit_list" factory="pawsListBox">	
+        <frame x="180" y="5" width="170" height="85" border="no"/>
+        <bgimage resource="Shaded" alpha="100" />
+        <font name="LiberationSans-Regular.ttf" r="255" g="255" b="255" size="9"  sr="0" sg="0" sb="0" shadow="yes" />   
+        <highlight resource="ListSelect" alpha="100" />
+        <columns height="20" headings="no">
+            <column width="40">            
+                <widget name="Type" factory="pawsTextBox">
+                </widget>
+            </column>                                               
+            <column width="140">
+                <widget name="Description" factory="pawsTextBox">
+                </widget>
+            </column>                                               
+        </columns>
+	</widget>
+
+    <widget name="add_emit_button" factory="pawsButton">
+        <frame x="355" y="5" width="25" height="20" border="no" />
+        <font name="LiberationSans-Regular.ttf" r="255" g="255" b="255" size="7"  sr="0" sg="0" sb="0" shadow="yes" />   
+        <buttonup resource="ButtonUp"/>
+        <buttondown resource="ButtonDown" />
+        <label text="Em+"/>
+    </widget>
+    <widget name="add_effector_button" factory="pawsButton">
+        <frame x="355" y="27" width="25" height="20" border="no" />
+        <font name="LiberationSans-Regular.ttf" r="255" g="255" b="255" size="7"  sr="0" sg="0" sb="0" shadow="yes" />   
+        <buttonup resource="ButtonUp"/>
+        <buttondown resource="ButtonDown" />
+        <label text="Ef+"/>
+    </widget>
+    <widget name="del_ee_button" factory="pawsButton">
+        <frame x="355" y="49" width="25" height="20" border="no" />
+        <font name="LiberationSans-Regular.ttf" r="255" g="255" b="255" size="7"  sr="0" sg="0" sb="0" shadow="yes" />   
+        <buttonup resource="ButtonUp"/>
+        <buttondown resource="ButtonDown" />
+        <label text="-"/>
+    </widget>
+
+    <widget name="parm_list" factory="pawsListBox">	
+        <frame x="180" y="95" width="200" height="120" border="no"/>
+        <bgimage resource="Shaded" alpha="100" />
+        <font name="LiberationSans-Regular.ttf" r="255" g="255" b="255" size="9"  sr="0" sg="0" sb="0" shadow="yes" />   
+        <highlight resource="ListSelect" alpha="100" />
+        <columns height="20" headings="no">
+            <column width="80">            
+                <widget name="Name" factory="pawsTextBox">
+                </widget>
+            </column>                                               
+            <column width="110">            
+                <widget name="Value" factory="pawsTextBox">
+                </widget>
+            </column>                                               
+        </columns>
+	</widget>
+
+    <widget name="value_list" factory="pawsListBox">	
+        <frame x="385" y="5" width="135" height="210" border="no"/>
+        <bgimage resource="Shaded" alpha="100" />
+        <font name="LiberationSans-Regular.ttf" r="255" g="255" b="255" size="9"  sr="0" sg="0" sb="0" shadow="yes" />   
+        <highlight resource="ListSelect" alpha="100" />
+        <columns height="20" headings="no">
+            <column width="135">            
+                <widget name="Name" factory="pawsTextBox">
+                </widget>
+            </column>                                               
+        </columns>
+	</widget>
+
+    <widget name="value_bool" factory="pawsCheckBox">
+        <frame x="385" y="5" width="140" height="25" border="yes" />
+        <font name="LiberationSans-Regular.ttf" r="255" g="255" b="255" size="9"  sr="0" sg="0" sb="0" shadow="yes" />
+	<checkbox off="RadioOff" on="RadioOn" />
+	<text string="..." />
+        <bgimage resource="Shaded" alpha="75" />
+    </widget>
+
+    <widget name="value_bool2" factory="pawsCheckBox">
+        <frame x="385" y="35" width="140" height="25" border="yes" />
+        <font name="LiberationSans-Regular.ttf" r="255" g="255" b="255" size="9"  sr="0" sg="0" sb="0" shadow="yes" />
+	<checkbox off="RadioOff" on="RadioOn" />
+	<text string="..." />
+        <bgimage resource="Shaded" alpha="75" />
+    </widget>
+
+    <widget name="value_bool3" factory="pawsCheckBox">
+        <frame x="385" y="65" width="140" height="25" border="yes" />
+        <font name="LiberationSans-Regular.ttf" r="255" g="255" b="255" size="9"  sr="0" sg="0" sb="0" shadow="yes" />
+	<checkbox off="RadioOff" on="RadioOn" />
+	<text string="..." />
+        <bgimage resource="Shaded" alpha="75" />
+    </widget>
+
+    <widget name="value_bool4" factory="pawsCheckBox">
+        <frame x="385" y="95" width="140" height="25" border="yes" />
+        <font name="LiberationSans-Regular.ttf" r="255" g="255" b="255" size="9"  sr="0" sg="0" sb="0" shadow="yes" />
+	<checkbox off="RadioOff" on="RadioOn" />
+	<text string="..." />
+        <bgimage resource="Shaded" alpha="75" />
+    </widget>
+
+    <widget name="value_bool5" factory="pawsCheckBox">
+        <frame x="385" y="125" width="140" height="25" border="yes" />
+        <font name="LiberationSans-Regular.ttf" r="255" g="255" b="255" size="9"  sr="0" sg="0" sb="0" shadow="yes" />
+	<checkbox off="RadioOff" on="RadioOn" />
+	<text string="..." />
+        <bgimage resource="Shaded" alpha="75" />
+    </widget>
+
+    <widget name="add_par_button" factory="pawsButton">
+        <frame x="385" y="155" width="25" height="25" border="no" />
+        <font name="LiberationSans-Regular.ttf" r="255" g="255" b="255" size="7"  sr="0" sg="0" sb="0" shadow="yes" />   
+        <buttonup resource="ButtonUp"/>
+        <buttondown resource="ButtonDown" />
+        <label text="+"/>
+    </widget>
+
+    <widget name="del_par_button" factory="pawsButton">
+        <frame x="415" y="155" width="25" height="25" border="no" />
+        <font name="LiberationSans-Regular.ttf" r="255" g="255" b="255" size="7"  sr="0" sg="0" sb="0" shadow="yes" />   
+        <buttonup resource="ButtonUp"/>
+        <buttondown resource="ButtonDown" />
+        <label text="-"/>
+    </widget>
+
+    <widget name="value_choices" factory="pawsComboBox">
+        <frame x="385" y="5" width="140" height="25" border="yes" />
+        <bgimage resource="Shaded" alpha="100" />
+	<listbox rows="7" height="25" useScrollBar="true"/>
+    </widget>
+
+    <widget name="value_scroll1" factory="pawsScrollBar" direction="horizontal" style="Standard Scrollbar Horizontal">
+        <frame x="385" y="35" width="140" height="20" border="no" />
+    </widget>
+    <widget name="value_scroll2" factory="pawsScrollBar" direction="horizontal" style="Standard Scrollbar Horizontal">
+        <frame x="385" y="56" width="140" height="20" border="no" />
+    </widget>
+    <widget name="value_scroll3" factory="pawsScrollBar" direction="horizontal" style="Standard Scrollbar Horizontal">
+        <frame x="385" y="77" width="140" height="20" border="no" />
+    </widget>
+    <widget name="value_scroll4" factory="pawsScrollBar" direction="horizontal" style="Standard Scrollbar Horizontal">
+        <frame x="385" y="98" width="140" height="20" border="no" />
+    </widget>
+
+    <widget name="value_num" factory="pawsSpinBox">
+        <frame x="385" y="5" width="140" height="25" border="no" />
+        <font name="LiberationSans-Regular.ttf" r="255" g="255" b="255" size="9"  sr="0" sg="0" sb="0" shadow="yes" />
+        <bgimage resource="Shaded" alpha="75" />
+        <number default="0.0" min="1" max="300" inc="1" position="left"/>
+    </widget>
+
+    <widget name="value2_num" factory="pawsSpinBox">
+        <frame x="385" y="35" width="140" height="25" border="no" />
+        <font name="LiberationSans-Regular.ttf" r="255" g="255" b="255" size="9"  sr="0" sg="0" sb="0" shadow="yes" />
+        <bgimage resource="Shaded" alpha="75" />
+        <number default="0.0" min="1" max="300" inc="1" position="left"/>
+    </widget>
+
+    <widget name="value3_num" factory="pawsSpinBox">
+        <frame x="385" y="65" width="140" height="25" border="no" />
+        <font name="LiberationSans-Regular.ttf" r="255" g="255" b="255" size="9"  sr="0" sg="0" sb="0" shadow="yes" />
+        <bgimage resource="Shaded" alpha="75" />
+        <number default="0.0" min="1" max="300" inc="1" position="left"/>
+    </widget>
+
+    <widget name="reload_part_button" factory="pawsButton">
+        <frame x="320" y="220" width="95" height="25" border="no" />
+        <font name="LiberationSans-Regular.ttf" r="255" g="255" b="255" size="7"  sr="0" sg="0" sb="0" shadow="yes" />   
+        <buttonup resource="ButtonUp"/>
+        <buttondown resource="ButtonDown" />
+        <label text="Reload"/>
+    </widget>
+    <widget name="save_part_button" factory="pawsButton">
+        <frame x="215" y="220" width="95" height="25" border="no" />
+        <font name="LiberationSans-Regular.ttf" r="255" g="255" b="255" size="7"  sr="0" sg="0" sb="0" shadow="yes" />   
+        <buttonup resource="ButtonUp"/>
+        <buttondown resource="ButtonDown" />
+        <label text="Save"/>
+    </widget>
+    <widget name="load_part_button" factory="pawsButton">
+        <frame x="110" y="220" width="95" height="25" border="no" />
+        <font name="LiberationSans-Regular.ttf" r="255" g="255" b="255" size="7"  sr="0" sg="0" sb="0" shadow="yes" />   
+        <buttonup resource="ButtonUp"/>
+        <buttondown resource="ButtonDown" />
+        <label text="Open Particles"/>
+    </widget>
+    <widget name="refresh_button" factory="pawsButton">
+        <frame x="5" y="220" width="95" height="25" border="no" />
+        <font name="LiberationSans-Regular.ttf" r="255" g="255" b="255" size="7"  sr="0" sg="0" sb="0" shadow="yes" />   
+        <buttonup resource="ButtonUp"/>
+        <buttondown resource="ButtonDown" />
+        <label text="Refresh"/>
+    </widget>
+</widget>
+
+</widget_description>

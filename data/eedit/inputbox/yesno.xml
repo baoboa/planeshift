@@ -1,0 +1,27 @@
+<widget_description>
+
+<widget name="SelectYesNo" factory="EEditSelectYesNo" 
+        visible="yes" savepositions="no" movable="yes" resizable="no" resizetoscreen="no" >
+        
+    <frame x="0" y="0" width="160" height="30" border="yes" justtitle="yes" />
+    <title resource="TitleBar" text="Select" align="left" />
+    <font name="LiberationSans-Regular.ttf" r="255" g="255" b="255" size="9"  sr="0" sg="0" sb="0" shadow="yes" />   
+    <bgimage resource="Back" alpha="0" />
+
+    <widget name="yesno_selection" factory="pawsRadioButtonGroup">
+        <frame x ="0" y="0" width="160" height="30" border="no" />
+        <font name="LiberationSans-Regular.ttf" r="255" g="255" b="255" size="9"  sr="0" sg="0" sb="0" shadow="yes" />   
+        <radio on="RadioOn" off="RadioOff"/>
+                      
+        <widget name="select_yes" factory="pawsRadioButton">
+            <frame x="5" y="5" width="75" height="20"/>            
+            <text string="Yes" position="right"/>            
+        </widget> 
+        <widget name="select_no" factory="pawsRadioButton">
+            <frame x="80" y="5" width="80" height="20"/>            
+            <text string="No" position="right"/>            
+        </widget>         
+    </widget>
+</widget>
+
+</widget_description>

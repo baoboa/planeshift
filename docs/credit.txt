@@ -1,0 +1,99 @@
+@PlaneShift Team at Azure Spirit 0.6.0 Release (released November 2013)
+
+&Project Leader, Director
+
+Luca "Talad" Pancallo, for building a great team to make a dream come true, and 12 years continuous leadership.
+
+&Client and Server engine
+
+Stefano "weltall" Angeleri, for very important contributions on engine side, new features and constant improvement of the game, maintenance of test server, producing all our final binaries.
+
+Andrea "Lucubro" Rizzi, for the implementation of musical instruments and score, plus other sound engine fixes.
+
+Anders "Magodra" Reggestad, for magic system implementation, NPC AI, tribes and a lot more.
+
+Joe "Eredin" Lyon, for the new shortcut bar, active magic window, and many bug fixes.
+
+Ralph "Jilare" Campbell, for improving memory management, removing memory leaks, bug fixes.
+
+
+&Settings
+
+Mordaan, for new quests and books, quest chains reorganization, spellchecking and more.
+
+Venalan, for new quests and books, NPC dialogues, NPC lore, work on quest chains.
+
+Taya, for many quests and books, NPC dialog and descriptions, settings item placement, and testing.
+
+Cirerey, for Klyros history books, new quests
+
+Giacomo "drJack" Mariani, for the wizard quests, overall background ideas, and factions.
+
+Mariana, Laggninja, and Teshia for writing books.
+
+
+&2D Art
+
+Sergios "Cale" Daskarolis, for the models and textures of new hydlaa plaza and nolthrir model.
+
+Jerome "Tuux" Ornech, for spells effects and textures.
+
+Maria "Renepolumorfous" Dedevesi, for the new Azure Spirit splash screen.
+
+Alex "Zalk" Constantino, for the molthrir plate armor.
+
+&3D Art
+
+Sergios "Cale" Daskarolis, for the models and textures of new hydlaa plaza and nolthrir model.
+
+Jerome "Tuux" Ornech, for new wands geometry and textures.
+
+Arco "Arcooo" Mul, for lava cave model.
+
+Alex "Zalk" Constantino, for the molthrir plate armor.
+
+&Rules
+
+Davide "eonwind" Vescovini, for extensive work on crafting rules, in particular alchemy and herbalism and for improving the NPCs scripted AI.
+
+George "Tuathanach" Parkinson for expanding crafting rules for rare metal weapons and Mace Making.
+
+Eddie "Rheos" Payne for expanding crafting rules for cooking fish dishes.
+
+&Music and sounds
+
+Jerome "Tuux" Ornech, for environment sounds, spells sounds, creatures sounds, nice videos and good french accent.
+
+Richard Ludlow and the Berklee College of Music, for the amazing 60 minutes ambiance background music.
+
+Video Symphony team, for the great contributions of sounds and voiceovers.
+
+Ruslan "Ellarion" Perezhilo, for travel songs, death jingles and lot of nice sounds.
+
+Jiri "GeorgeD" Ptacek, for death realm song, victory jingles and lot of nice sounds.
+
+Bruno "CyberMozart" Largarde, for the main theme, intro songs and battle theme.
+
+Thanks to Kevin Budd for providing the flute sounds.
+
+&Game Masters
+
+Casey "Sarva" Kerrigan, for his work as GM Team Leader, constant presence in game, support of our events, and coordination of GM activities
+
+The GM Team: Sarva, Daxa, Sarko, Gythul, Pathogatha for holding events, answering petitions, testing and more ...
+
+@Very Special Thanks to
+
+Jorrit Tyberghein, for his great 3D engine (Crystal Space), for the continuous and passionate support to our team, quaternions and other e=mc2 things.
+
+Frank "res" Richter, from Crystal Space team, for continuous support on lighting, performances and stability.
+
+www.teamix.de for providing the necessary hardware and bandwidth.
+
+All the former developers for their work and contributions to PlaneShift.
+
+.... and to all our players, fans and supporters!
+
+@Be sure to read the other credits files in docs directory to have a full list of developers of previous releases.
+
+Sonora font is used with permission of the author: Christian Texier (christian.texier.pagespro-orange.fr)

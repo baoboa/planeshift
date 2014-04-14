@@ -1,0 +1,12 @@
+<widget_description>
+    <widget name="CraftWindow" factory="pawsCraftWindow" visible="no"  movable="yes" resizable="no" configurable="yes" style="New Standard GUI" savepositions="yes">
+
+        <frame x="70" y="70" width="670" height="285" border="yes"/>
+        <title resource="Scaling Title Bar" text="Study notes:" align="left" close_button="yes"/>
+
+    <widget name="HelpText" factory="pawsMultiLineTextBox">
+        <frame x="10" y="10" width="655" height="270" border="no"/>
+    </widget>
+
+    </widget>
+</widget_description>

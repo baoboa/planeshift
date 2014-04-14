@@ -1,0 +1,77 @@
+/**
+ * \mainpage
+ *
+ * This is the Application Programers's Interface (API) reference for Planeshift.
+ */
+
+/**
+ * \defgroup client Client
+ * @{ */
+
+      /**
+       * \defgroup client_gui Client GUI
+       */
+
+/** @} */
+
+/**
+ * \defgroup common Common libaries
+ * @{ */
+
+      /**
+       * \defgroup common_effects Effects
+       */
+
+      /**
+        * \defgroup common_net Net
+        * @{ */
+
+             /**
+              * \defgroup messages Messages
+              */
+
+      /** @} */
+
+      /**
+       * \defgroup common_paws PAWS
+       */
+
+      /**
+       * \defgroup common_util Util
+       */
+
+/** @} */
+
+/**
+ * \defgroup eedit Effect editor
+ */
+
+/**
+ * \defgroup npcclient NPC Client
+ * @{ */
+
+       /**
+        * \defgroup perceptions Perceptions
+        * @{ */
+
+           /**
+            * \defgroup pet_perceptions NPC Pet Perceptions
+            */
+
+       /** @} */
+
+       /**
+        * \defgroup script_operations Script operations
+        */
+
+ /** @} */
+
+/**
+ * \defgroup server Server
+ * @{ */
+
+       /**
+        * \defgroup bulkobjects Bulk objects
+       */
+
+/** @} */

@@ -1,0 +1,8 @@
+<emotes>
+
+<emote command="/greet" general="%s greets everyone." specific="%s greets %s" anim="greet" enabled="0" />
+<emote command="/flee" general="%s flees in panic." specific="%s flees from %s" anim="run" enabled="0" />
+<emote command="/divide" general="%s starts his cell division." specific="%s can't cell-divide together with anyone." anim="idle" enabled="0" />
+<emote command="/work" general="%s starts working." specific="%s invites %s to work." anim="idle" enabled="0" />
+
+</emotes>

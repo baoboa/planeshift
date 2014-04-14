@@ -1,0 +1,60 @@
+<widget_description>
+
+    <widget name="ConfigTooltips" factory="pawsConfigTooltips" visible="no" savepositions="no" movable="no" resizable="no" configurable="no" style="New Standard GUI">
+      <bgimage resource="Scaling Widget Background" />
+
+           <pawsCheckBox name="EnableTooltips" id="100">
+	      <frame x="10" y="20" width="200" height="20" border="no" />
+	      <text string="Enable Tooltips" />
+           </pawsCheckBox>
+
+	   <pawsCheckBox name="EnableBgColor" id="101">
+             <frame x="20" y="50" width="200" height="20" border="no" />
+	     <text string="Enable background color" />
+           </pawsCheckBox>
+	   <pawsButton name="BgColorBtn" id="0" style="Scaling Button">
+             <frame x="260" y="55" width="25" height="15" border="no" />
+             <label text="Set" />
+           </pawsButton>
+	   <pawsTextBox name="BgColorFrame">
+             <frame x="310" y="55" width="15" height="15" border="no" />
+           </pawsTextBox>
+	   <pawsButton name="DefBgColorBtn" id="3" style="Scaling Button">
+             <frame x="355" y="55" width="45" height="15" border="no" />
+             <label text="Default" />
+           </pawsButton>
+
+	   <pawsTextBox name="FontColor" >
+             <frame x="43" y="82" width="200" height="20" border="no" />
+	     <text string="Font color" />
+           </pawsTextBox>
+	   <pawsButton name="FontColorBtn" id="1" style="Scaling Button">
+             <frame x="260" y="85" width="25" height="15" border="no" />
+             <label text="Set" />
+           </pawsButton>
+	   <pawsTextBox name="FontColorFrame">
+             <frame x="310" y="85" width="15" height="15" border="no" />
+           </pawsTextBox>
+	   <pawsButton name="DefFontColorBtn" id="4" style="Scaling Button">
+             <frame x="355" y="85" width="45" height="15" border="no" />
+             <label text="Default" />
+           </pawsButton>
+
+	   <pawsTextBox name="ShadowColor" >
+             <frame x="43" y="112" width="200" height="20" border="no" />
+	     <text string="Shadow color" />
+           </pawsTextBox>
+	   <pawsButton name="ShadowColorBtn" id="2" style="Scaling Button">
+             <frame x="260" y="115" width="25" height="15" border="no" />
+             <label text="Set" />
+           </pawsButton>
+	   <pawsTextBox name="ShadowColorFrame">
+             <frame x="310" y="115" width="15" height="15" border="no" />
+           </pawsTextBox>
+	   <pawsButton name="DefShadowColorBtn" id="5" style="Scaling Button">
+             <frame x="355" y="115" width="45" height="15" border="no" />
+             <label text="Default" />
+           </pawsButton>
+    </widget>
+
+</widget_description>

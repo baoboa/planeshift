@@ -1,0 +1,16 @@
+SubDir TOP src plugins common ;
+
+SubInclude TOP src plugins common bgloader ;
+SubInclude TOP src plugins common recast ;
+SubInclude TOP src plugins common celgraph ;
+SubInclude TOP src plugins common soundmanager ;
+SubInclude TOP src plugins common dummysndmngr ;
+
+if $(HUNSPELL.AVAILABLE) = "yes"
+{
+SubInclude TOP src plugins common spellchecker ;
+}
+
+
+StaticPluginLibrary planeshift_staticplugins ;
+
